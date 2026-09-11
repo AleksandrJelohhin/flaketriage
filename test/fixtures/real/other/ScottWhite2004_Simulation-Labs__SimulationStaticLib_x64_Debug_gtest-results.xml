@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="72" failures="8" disabled="0" errors="0" timestamp="2026-03-25T16:50:47" time="0.022" name="AllTests">
+  <testsuite name="SphereSphereCollision" tests="6" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="NoIntersectionCentreAtOrigin" status="run" time="0" classname="SphereSphereCollision" />
+    <testcase name="NoIntersectionOffsetOrigin" status="run" time="0" classname="SphereSphereCollision" />
+    <testcase name="OverlappingSphereCentreAtOrigin" status="run" time="0" classname="SphereSphereCollision" />
+    <testcase name="OverlappingSphereOffsetOrigin" status="run" time="0" classname="SphereSphereCollision" />
+    <testcase name="FullyContainedCentreAtOrigin" status="run" time="0" classname="SphereSphereCollision" />
+    <testcase name="FullyContainedOffsetCentre" status="run" time="0" classname="SphereSphereCollision" />
+  </testsuite>
+  <testsuite name="ShortestDistanceToLine" tests="5" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="ClosestPointOnLine" status="run" time="0" classname="ShortestDistanceToLine" />
+    <testcase name="GeneralPointIsOnLine" status="run" time="0" classname="ShortestDistanceToLine" />
+    <testcase name="VerticalLineCase" status="run" time="0" classname="ShortestDistanceToLine" />
+    <testcase name="HorizontalLineCase" status="run" time="0" classname="ShortestDistanceToLine" />
+    <testcase name="DiagonalLineCase" status="run" time="0" classname="ShortestDistanceToLine" />
+  </testsuite>
+  <testsuite name="SphereLineIntersection" tests="4" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="NoIntersectionCentreAtOrigin" status="run" time="0" classname="SphereLineIntersection" />
+    <testcase name="IntersectsSphereCentreAtOrigin" status="run" time="0" classname="SphereLineIntersection" />
+    <testcase name="IntersectsSphereLineStartInSphere" status="run" time="0" classname="SphereLineIntersection" />
+    <testcase name="IntersectsSphereLinePassesThroughSphereCentre" status="run" time="0" classname="SphereLineIntersection" />
+  </testsuite>
+  <testsuite name="ShortestDistanceToPlane" tests="7" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="PointAbovePlane" status="run" time="0" classname="ShortestDistanceToPlane" />
+    <testcase name="PointBelowPlane" status="run" time="0" classname="ShortestDistanceToPlane" />
+    <testcase name="PointOnPlane" status="run" time="0" classname="ShortestDistanceToPlane" />
+    <testcase name="PointCloseToPlane" status="run" time="0" classname="ShortestDistanceToPlane" />
+    <testcase name="PointWithNegativeCoordinates" status="run" time="0" classname="ShortestDistanceToPlane" />
+    <testcase name="PointAlongNormalVectorDirection" status="run" time="0" classname="ShortestDistanceToPlane" />
+    <testcase name="PointNearPlaneInRandomDirection" status="run" time="0" classname="ShortestDistanceToPlane" />
+  </testsuite>
+  <testsuite name="SpherePlaneCollision" tests="11" failures="0" disabled="0" errors="0" time="0.002">
+    <testcase name="NoIntersectionSphereAbovePlane" status="run" time="0" classname="SpherePlaneCollision" />
+    <testcase name="TangentTouchingSphereAbovePlane" status="run" time="0" classname="SpherePlaneCollision" />
+    <testcase name="IntersectingSphereAbovePlane" status="run" time="0" classname="SpherePlaneCollision" />
+    <testcase name="CentreOnPlane" status="run" time="0" classname="SpherePlaneCollision" />
+    <testcase name="NoIntersectionSphereBelowPlane" status="run" time="0" classname="SpherePlaneCollision" />
+    <testcase name="TangentTouchingSphereBelowPlane" status="run" time="0" classname="SpherePlaneCollision" />
+    <testcase name="IntersectingWithSkewedPlaneAdjustedRadius" status="run" time="0" classname="SpherePlaneCollision" />
+    <testcase name="NoIntersectionWithSkewedPlaneAdjustedRadius" status="run" time="0" classname="SpherePlaneCollision" />
+    <testcase name="IntersectsWithSkewedPlaneAdjustedRadius" status="run" time="0" classname="SpherePlaneCollision" />
+    <testcase name="NonNormalizedPlaneNormalHandled" status="run" time="0" classname="SpherePlaneCollision" />
+    <testcase name="LargeRadiusAlwaysCollidesWithPlane" status="run" time="0" classname="SpherePlaneCollision" />
+  </testsuite>
+  <testsuite name="PhysicsResolution" tests="5" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="HeadOnEqualMass_VelocitiesSwapAlongNormal" status="run" time="0" classname="PhysicsResolution" />
+    <testcase name="OneMovingOneStationary_HeadOn" status="run" time="0" classname="PhysicsResolution" />
+    <testcase name="GlancingCollision_NormalComponentSwapped_TangentPreserved" status="run" time="0" classname="PhysicsResolution" />
+    <testcase name="NoCollisionWhenSeparatingAlongNormal" status="run" time="0" classname="PhysicsResolution" />
+    <testcase name="DegenerateCase_CoincidentCenters_PicksArbitraryNormal" status="run" time="0" classname="PhysicsResolution" />
+  </testsuite>
+  <testsuite name="PhysicsResolution_DifferentMass" tests="3" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="HeadOn_HeavyHitsLight" status="run" time="0" classname="PhysicsResolution_DifferentMass" />
+    <testcase name="HeadOn_LightHitsHeavy_StationaryHeavy" status="run" time="0" classname="PhysicsResolution_DifferentMass" />
+    <testcase name="GlancingCollision_NormalUsesMass_TangentPreserved" status="run" time="0" classname="PhysicsResolution_DifferentMass" />
+  </testsuite>
+  <testsuite name="AngularDisplacement" tests="16" failures="0" disabled="0" errors="0" time="0.003">
+    <testcase name="90DegreesXAxis" status="run" time="0" classname="AngularDisplacement" />
+    <testcase name="90DegreesYAxis" status="run" time="0" classname="AngularDisplacement" />
+    <testcase name="90DegreesZAxis" status="run" time="0" classname="AngularDisplacement" />
+    <testcase name="180DegreesXAxis" status="run" time="0" classname="AngularDisplacement" />
+    <testcase name="180DegreesYAxis" status="run" time="0" classname="AngularDisplacement" />
+    <testcase name="180DegreesZAxis" status="run" time="0" classname="AngularDisplacement" />
+    <testcase name="270DegreesXAxis" status="run" time="0" classname="AngularDisplacement" />
+    <testcase name="270DegreesYAxis" status="run" time="0" classname="AngularDisplacement" />
+    <testcase name="270DegreesZAxis" status="run" time="0" classname="AngularDisplacement" />
+    <testcase name="360DegreesXAxis" status="run" time="0" classname="AngularDisplacement" />
+    <testcase name="360DegreesYAxis" status="run" time="0" classname="AngularDisplacement" />
+    <testcase name="360DegreesZAxis" status="run" time="0" classname="AngularDisplacement" />
+    <testcase name="90DegreesXYZAxis" status="run" time="0" classname="AngularDisplacement" />
+    <testcase name="90DegreesXYAxis180DegreesZAxis" status="run" time="0" classname="AngularDisplacement" />
+    <testcase name="90DegreesXZAxis180DegreesYAxis" status="run" time="0" classname="AngularDisplacement" />
+    <testcase name="90DegreesYZAxis180DegreesXAxis" status="run" time="0" classname="AngularDisplacement" />
+  </testsuite>
+  <testsuite name="AngularVelocity" tests="8" failures="3" disabled="0" errors="0" time="0.004">
+    <testcase name="90DegreesXAxis_1Second" status="run" time="0" classname="AngularVelocity" />
+    <testcase name="90DegreesYAxis_HalfSecond" status="run" time="0" classname="AngularVelocity" />
+    <testcase name="90DegreesZAxis_TwoSeconds" status="run" time="0.001" classname="AngularVelocity">
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:822&#x0A;The difference between q.w and 0.7071f is 1.11518594622612, which exceeds 0.001f, where&#x0A;q.w evaluates to -0.40808597207069397,&#x0A;0.7071f evaluates to 0.70709997415542603, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:822
+The difference between q.w and 0.7071f is 1.11518594622612, which exceeds 0.001f, where
+q.w evaluates to -0.40808597207069397,
+0.7071f evaluates to 0.70709997415542603, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:823&#x0A;The difference between q.x and 0.0f is 0.52708816528320312, which exceeds 0.001f, where&#x0A;q.x evaluates to -0.52708816528320312,&#x0A;0.0f evaluates to 0, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:823
+The difference between q.x and 0.0f is 0.52708816528320312, which exceeds 0.001f, where
+q.x evaluates to -0.52708816528320312,
+0.0f evaluates to 0, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:824&#x0A;The difference between q.y and 0.0f is 0.52708816528320312, which exceeds 0.001f, where&#x0A;q.y evaluates to -0.52708816528320312,&#x0A;0.0f evaluates to 0, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:824
+The difference between q.y and 0.0f is 0.52708816528320312, which exceeds 0.001f, where
+q.y evaluates to -0.52708816528320312,
+0.0f evaluates to 0, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:825&#x0A;The difference between q.z and 0.7071f is 1.2341881394386292, which exceeds 0.001f, where&#x0A;q.z evaluates to -0.52708816528320312,&#x0A;0.7071f evaluates to 0.70709997415542603, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:825
+The difference between q.z and 0.7071f is 1.2341881394386292, which exceeds 0.001f, where
+q.z evaluates to -0.52708816528320312,
+0.7071f evaluates to 0.70709997415542603, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+    </testcase>
+    <testcase name="180DegreesXAxis_QuarterSecond" status="run" time="0" classname="AngularVelocity" />
+    <testcase name="180DegreesYAxis_0_1Second" status="run" time="0" classname="AngularVelocity" />
+    <testcase name="270DegreesZAxis_SemiImplicit_1Second" status="run" time="0.001" classname="AngularVelocity">
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:866&#x0A;The difference between q.w and -0.7071f is 1.0516598224639893, which exceeds 0.001f, where&#x0A;q.w evaluates to 0.34455984830856323,&#x0A;-0.7071f evaluates to -0.70709997415542603, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:866
+The difference between q.w and -0.7071f is 1.0516598224639893, which exceeds 0.001f, where
+q.w evaluates to 0.34455984830856323,
+-0.7071f evaluates to -0.70709997415542603, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:867&#x0A;The difference between q.x and 0.0f is 0.54199588298797607, which exceeds 0.001f, where&#x0A;q.x evaluates to 0.54199588298797607,&#x0A;0.0f evaluates to 0, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:867
+The difference between q.x and 0.0f is 0.54199588298797607, which exceeds 0.001f, where
+q.x evaluates to 0.54199588298797607,
+0.0f evaluates to 0, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:868&#x0A;The difference between q.y and 0.0f is 0.54199588298797607, which exceeds 0.001f, where&#x0A;q.y evaluates to 0.54199588298797607,&#x0A;0.0f evaluates to 0, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:868
+The difference between q.y and 0.0f is 0.54199588298797607, which exceeds 0.001f, where
+q.y evaluates to 0.54199588298797607,
+0.0f evaluates to 0, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:869&#x0A;The difference between q.z and 0.7071f is 0.16510415077209473, which exceeds 0.001f, where&#x0A;q.z evaluates to 0.5419958233833313,&#x0A;0.7071f evaluates to 0.70709997415542603, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:869
+The difference between q.z and 0.7071f is 0.16510415077209473, which exceeds 0.001f, where
+q.z evaluates to 0.5419958233833313,
+0.7071f evaluates to 0.70709997415542603, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+    </testcase>
+    <testcase name="360DegreesXAxis_MultipleSteps" status="run" time="0" classname="AngularVelocity">
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:882&#x0A;The difference between q.w and -1.0f is 1.2756751477718353, which exceeds 0.001f, where&#x0A;q.w evaluates to 0.27567514777183533,&#x0A;-1.0f evaluates to -1, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:882
+The difference between q.w and -1.0f is 1.2756751477718353, which exceeds 0.001f, where
+q.w evaluates to 0.27567514777183533,
+-1.0f evaluates to -1, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:883&#x0A;The difference between q.x and 0.0f is 0.87864077091217041, which exceeds 0.001f, where&#x0A;q.x evaluates to 0.87864077091217041,&#x0A;0.0f evaluates to 0, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:883
+The difference between q.x and 0.0f is 0.87864077091217041, which exceeds 0.001f, where
+q.x evaluates to 0.87864077091217041,
+0.0f evaluates to 0, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:884&#x0A;The difference between q.y and 0.0f is 0.27567517757415771, which exceeds 0.001f, where&#x0A;q.y evaluates to 0.27567517757415771,&#x0A;0.0f evaluates to 0, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:884
+The difference between q.y and 0.0f is 0.27567517757415771, which exceeds 0.001f, where
+q.y evaluates to 0.27567517757415771,
+0.0f evaluates to 0, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:885&#x0A;The difference between q.z and 0.0f is 0.27567517757415771, which exceeds 0.001f, where&#x0A;q.z evaluates to -0.27567517757415771,&#x0A;0.0f evaluates to 0, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:885
+The difference between q.z and 0.0f is 0.27567517757415771, which exceeds 0.001f, where
+q.z evaluates to -0.27567517757415771,
+0.0f evaluates to 0, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+    </testcase>
+    <testcase name="90DegreesXYZAxis_2Seconds" status="run" time="0" classname="AngularVelocity" />
+  </testsuite>
+  <testsuite name="TorqueAccumulation" tests="2" failures="2" disabled="0" errors="0" time="0.001">
+    <testcase name="MultipleTorquesInSingleStep_AccumulateIntoAngularVelocity" status="run" time="0.001" classname="TorqueAccumulation">
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:912&#x0A;The difference between actual.x and expected.x is 107374176, which exceeds tolerance, where&#x0A;actual.x evaluates to -107374176,&#x0A;expected.x evaluates to 0, and&#x0A;tolerance evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:912
+The difference between actual.x and expected.x is 107374176, which exceeds tolerance, where
+actual.x evaluates to -107374176,
+expected.x evaluates to 0, and
+tolerance evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:913&#x0A;The difference between actual.y and expected.y is 107374176, which exceeds tolerance, where&#x0A;actual.y evaluates to -107374176,&#x0A;expected.y evaluates to 0, and&#x0A;tolerance evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:913
+The difference between actual.y and expected.y is 107374176, which exceeds tolerance, where
+actual.y evaluates to -107374176,
+expected.y evaluates to 0, and
+tolerance evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:914&#x0A;The difference between actual.z and expected.z is 107374177.57079637, which exceeds tolerance, where&#x0A;actual.z evaluates to -107374176,&#x0A;expected.z evaluates to 1.5707963705062866, and&#x0A;tolerance evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:914
+The difference between actual.z and expected.z is 107374177.57079637, which exceeds tolerance, where
+actual.z evaluates to -107374176,
+expected.z evaluates to 1.5707963705062866, and
+tolerance evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:934&#x0A;The difference between q.w and 0.7071f is 0.29290002584457397, which exceeds 0.001f, where&#x0A;q.w evaluates to 1,&#x0A;0.7071f evaluates to 0.70709997415542603, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:934
+The difference between q.w and 0.7071f is 0.29290002584457397, which exceeds 0.001f, where
+q.w evaluates to 1,
+0.7071f evaluates to 0.70709997415542603, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:937&#x0A;The difference between q.z and 0.7071f is 0.70709997415542603, which exceeds 0.001f, where&#x0A;q.z evaluates to 0,&#x0A;0.7071f evaluates to 0.70709997415542603, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:937
+The difference between q.z and 0.7071f is 0.70709997415542603, which exceeds 0.001f, where
+q.z evaluates to 0,
+0.7071f evaluates to 0.70709997415542603, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+    </testcase>
+    <testcase name="OpposingTorquesInSingleStep_CancelOut" status="run" time="0" classname="TorqueAccumulation">
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:912&#x0A;The difference between actual.x and expected.x is 107374176, which exceeds tolerance, where&#x0A;actual.x evaluates to -107374176,&#x0A;expected.x evaluates to 0, and&#x0A;tolerance evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:912
+The difference between actual.x and expected.x is 107374176, which exceeds tolerance, where
+actual.x evaluates to -107374176,
+expected.x evaluates to 0, and
+tolerance evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:913&#x0A;The difference between actual.y and expected.y is 107374176, which exceeds tolerance, where&#x0A;actual.y evaluates to -107374176,&#x0A;expected.y evaluates to 0, and&#x0A;tolerance evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:913
+The difference between actual.y and expected.y is 107374176, which exceeds tolerance, where
+actual.y evaluates to -107374176,
+expected.y evaluates to 0, and
+tolerance evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:914&#x0A;The difference between actual.z and expected.z is 107374176, which exceeds tolerance, where&#x0A;actual.z evaluates to -107374176,&#x0A;expected.z evaluates to 0, and&#x0A;tolerance evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:914
+The difference between actual.z and expected.z is 107374176, which exceeds tolerance, where
+actual.z evaluates to -107374176,
+expected.z evaluates to 0, and
+tolerance evaluates to 0.0010000000474974513.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="AngularVelocityAccumulation" tests="1" failures="1" disabled="0" errors="0" time="0">
+    <testcase name="RepeatedEqualTorqueAcrossSteps_AccumulatesAngularVelocity" status="run" time="0" classname="AngularVelocityAccumulation">
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:912&#x0A;The difference between actual.x and expected.x is 107374176, which exceeds tolerance, where&#x0A;actual.x evaluates to -107374176,&#x0A;expected.x evaluates to 0, and&#x0A;tolerance evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:912
+The difference between actual.x and expected.x is 107374176, which exceeds tolerance, where
+actual.x evaluates to -107374176,
+expected.x evaluates to 0, and
+tolerance evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:913&#x0A;The difference between actual.y and expected.y is 107374176, which exceeds tolerance, where&#x0A;actual.y evaluates to -107374176,&#x0A;expected.y evaluates to 0, and&#x0A;tolerance evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:913
+The difference between actual.y and expected.y is 107374176, which exceeds tolerance, where
+actual.y evaluates to -107374176,
+expected.y evaluates to 0, and
+tolerance evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:914&#x0A;The difference between actual.z and expected.z is 107374179.14159274, which exceeds tolerance, where&#x0A;actual.z evaluates to -107374176,&#x0A;expected.z evaluates to 3.1415927410125732, and&#x0A;tolerance evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:914
+The difference between actual.z and expected.z is 107374179.14159274, which exceeds tolerance, where
+actual.z evaluates to -107374176,
+expected.z evaluates to 3.1415927410125732, and
+tolerance evaluates to 0.0010000000474974513.]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="ForceAtPoint" tests="4" failures="2" disabled="0" errors="0" time="0.002">
+    <testcase name="ForceThroughCentreOfMass_ChangesLinearVelocityOnly" status="run" time="0" classname="ForceAtPoint">
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:992&#x0A;The difference between obj.getAngularVel().x and 0.0f is 107374176, which exceeds 0.001f, where&#x0A;obj.getAngularVel().x evaluates to -107374176,&#x0A;0.0f evaluates to 0, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:992
+The difference between obj.getAngularVel().x and 0.0f is 107374176, which exceeds 0.001f, where
+obj.getAngularVel().x evaluates to -107374176,
+0.0f evaluates to 0, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:993&#x0A;The difference between obj.getAngularVel().y and 0.0f is 107374176, which exceeds 0.001f, where&#x0A;obj.getAngularVel().y evaluates to -107374176,&#x0A;0.0f evaluates to 0, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:993
+The difference between obj.getAngularVel().y and 0.0f is 107374176, which exceeds 0.001f, where
+obj.getAngularVel().y evaluates to -107374176,
+0.0f evaluates to 0, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:994&#x0A;The difference between obj.getAngularVel().z and 0.0f is 107374176, which exceeds 0.001f, where&#x0A;obj.getAngularVel().z evaluates to -107374176,&#x0A;0.0f evaluates to 0, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:994
+The difference between obj.getAngularVel().z and 0.0f is 107374176, which exceeds 0.001f, where
+obj.getAngularVel().z evaluates to -107374176,
+0.0f evaluates to 0, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+    </testcase>
+    <testcase name="ForceOffCentre_ChangesLinearAndAngularVelocity" status="run" time="0" classname="ForceAtPoint" />
+    <testcase name="EqualOppositeForcesAtDifferentPoints_CreatePureTorque" status="run" time="0.001" classname="ForceAtPoint" />
+    <testcase name="SameDirectionForcesAtMirroredPoints_CreatePureTranslation" status="run" time="0" classname="ForceAtPoint">
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:1050&#x0A;The difference between obj.getAngularVel().x and 0.0f is 107374176, which exceeds 0.001f, where&#x0A;obj.getAngularVel().x evaluates to -107374176,&#x0A;0.0f evaluates to 0, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:1050
+The difference between obj.getAngularVel().x and 0.0f is 107374176, which exceeds 0.001f, where
+obj.getAngularVel().x evaluates to -107374176,
+0.0f evaluates to 0, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:1051&#x0A;The difference between obj.getAngularVel().y and 0.0f is 107374176, which exceeds 0.001f, where&#x0A;obj.getAngularVel().y evaluates to -107374176,&#x0A;0.0f evaluates to 0, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:1051
+The difference between obj.getAngularVel().y and 0.0f is 107374176, which exceeds 0.001f, where
+obj.getAngularVel().y evaluates to -107374176,
+0.0f evaluates to 0, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+      <failure message="C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:1052&#x0A;The difference between obj.getAngularVel().z and 0.0f is 107374176, which exceeds 0.001f, where&#x0A;obj.getAngularVel().z evaluates to -107374176,&#x0A;0.0f evaluates to 0, and&#x0A;0.001f evaluates to 0.0010000000474974513." type=""><![CDATA[C:\Users\712769\Workspace\Simulation-Labs\SimulationStaticLib\CppGoogleTest\test.cpp:1052
+The difference between obj.getAngularVel().z and 0.0f is 107374176, which exceeds 0.001f, where
+obj.getAngularVel().z evaluates to -107374176,
+0.0f evaluates to 0, and
+0.001f evaluates to 0.0010000000474974513.]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

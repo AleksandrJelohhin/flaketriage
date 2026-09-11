@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="57" skipped="0" tests="70" time="6.557" timestamp="2026-07-20T09:39:53.915086+05:30" hostname="DESKTOP-N9S1VK6"><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_data_001_source_loader_enforces_audited_identity" time="0.144"><failure message="Failed: EXPECTED_RED[TC-DATA-001]: missing implementation module churn_app.data.loader">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-DATA-001]: missing implementation module churn_app.data.loader</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_data_002_unknown_is_a_legitimate_category" time="0.047"><failure message="Failed: EXPECTED_RED[TC-DATA-002]: missing implementation module churn_app.data.schema">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-DATA-002]: missing implementation module churn_app.data.schema</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_data_003_schema_errors_are_structured" time="0.008"><failure message="Failed: EXPECTED_RED[TC-DATA-003]: missing implementation module churn_app.data.schema">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-DATA-003]: missing implementation module churn_app.data.schema</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_data_004_numeric_validation_rejects_nonfinite_and_lossy_values" time="0.010"><failure message="Failed: EXPECTED_RED[TC-DATA-004]: missing implementation module churn_app.data.schema">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-DATA-004]: missing implementation module churn_app.data.schema</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_leak_001_training_loader_detaches_all_nonpredictors" time="0.001"><failure message="Failed: EXPECTED_RED[TC-LEAK-001]: missing implementation module churn_app.data.loader">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-LEAK-001]: missing implementation module churn_app.data.loader</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_leak_002_every_boundary_rejects_forbidden_fields" time="0.007"><failure message="Failed: EXPECTED_RED[TC-LEAK-002]: missing implementation module churn_app.data.schema">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-LEAK-002]: missing implementation module churn_app.data.schema</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_leak_003_redundant_open_to_buy_is_never_selected" time="0.007"><failure message="Failed: EXPECTED_RED[TC-LEAK-003]: missing implementation module churn_app.data.feature_selection">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-LEAK-003]: missing implementation module churn_app.data.feature_selection</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_leak_004_clientnum_is_trace_sidecar_only" time="0.010"><failure message="Failed: EXPECTED_RED[TC-LEAK-004]: missing implementation module churn_app.inference.upload">No module named 'churn_app.inference'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-LEAK-004]: missing implementation module churn_app.inference.upload</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_leak_005_external_partition_mutation_cannot_change_selection" time="0.007"><failure message="Failed: EXPECTED_RED[TC-LEAK-005]: missing implementation module churn_app.data.feature_selection">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-LEAK-005]: missing implementation module churn_app.data.feature_selection</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_feat_001_all_eligible_fields_receive_fold_decisions" time="0.008"><failure message="Failed: EXPECTED_RED[TC-FEAT-001]: missing implementation module churn_app.data.feature_selection">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-FEAT-001]: missing implementation module churn_app.data.feature_selection</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_feat_002_four_of_five_folds_admits_variable" time="0.001"><failure message="Failed: EXPECTED_RED[TC-FEAT-002]: missing implementation module churn_app.data.feature_selection">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-FEAT-002]: missing implementation module churn_app.data.feature_selection</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_feat_003_three_of_five_folds_rejects_variable" time="0.001"><failure message="Failed: EXPECTED_RED[TC-FEAT-003]: missing implementation module churn_app.data.feature_selection">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-FEAT-003]: missing implementation module churn_app.data.feature_selection</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_feat_004_high_correlation_reduction_uses_mi_then_name" time="0.001"><failure message="Failed: EXPECTED_RED[TC-FEAT-004]: missing implementation module churn_app.data.feature_selection">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-FEAT-004]: missing implementation module churn_app.data.feature_selection</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_feat_005_selector_is_deterministic" time="0.008"><failure message="Failed: EXPECTED_RED[TC-FEAT-005]: missing implementation module churn_app.data.feature_selection">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-FEAT-005]: missing implementation module churn_app.data.feature_selection</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_feat_006_all_model_preprocessors_share_raw_names" time="0.008"><failure message="Failed: EXPECTED_RED[TC-FEAT-006]: missing implementation module churn_app.data.preprocessing">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-FEAT-006]: missing implementation module churn_app.data.preprocessing</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_feat_007_fewer_than_five_features_blocks" time="0.003"><failure message="Failed: EXPECTED_RED[TC-FEAT-007]: missing implementation module churn_app.data.feature_selection">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-FEAT-007]: missing implementation module churn_app.data.feature_selection</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_split_001_is_deterministic_70_15_15" time="0.007"><failure message="Failed: EXPECTED_RED[TC-SPLIT-001]: missing implementation module churn_app.data.split">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-SPLIT-001]: missing implementation module churn_app.data.split</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_split_002_partitions_are_disjoint_and_exhaustive" time="0.008"><failure message="Failed: EXPECTED_RED[TC-SPLIT-002]: missing implementation module churn_app.data.split">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-SPLIT-002]: missing implementation module churn_app.data.split</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_split_003_preserves_target_rate" time="0.008"><failure message="Failed: EXPECTED_RED[TC-SPLIT-003]: missing implementation module churn_app.data.split">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-SPLIT-003]: missing implementation module churn_app.data.split</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_split_004_test_accessor_is_sealed_before_final_evaluation" time="0.080"><failure message="Failed: EXPECTED_RED[TC-SPLIT-004]: missing implementation module churn_app.data.split">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-SPLIT-004]: missing implementation module churn_app.data.split</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_prep_001_fit_statistics_are_training_only" time="0.017"><failure message="Failed: EXPECTED_RED[TC-PREP-001]: missing implementation module churn_app.data.preprocessing">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-PREP-001]: missing implementation module churn_app.data.preprocessing</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_prep_002_unseen_category_maps_to_reserved_token" time="0.010"><failure message="Failed: EXPECTED_RED[TC-PREP-002]: missing implementation module churn_app.data.preprocessing">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-PREP-002]: missing implementation module churn_app.data.preprocessing</failure></testcase><testcase classname="tests.data.test_data_feature_split_preprocessing" name="test_tc_prep_003_transform_is_stable_after_reload" time="0.025"><failure message="Failed: EXPECTED_RED[TC-PREP-003]: missing implementation module churn_app.data.preprocessing">No module named 'churn_app.data'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-PREP-003]: missing implementation module churn_app.data.preprocessing</failure></testcase><testcase classname="tests.e2e.test_performance_reproducibility_e2e" name="test_tc_perf_001_cold_app_reaches_http_200_within_ten_seconds" time="0.002"><failure message="Failed: EXPECTED_RED[TC-PERF-001]: missing implementation module churn_app.testing.performance">No module named 'churn_app.testing'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-PERF-001]: missing implementation module churn_app.testing.performance</failure></testcase><testcase classname="tests.e2e.test_performance_reproducibility_e2e" name="test_tc_perf_002_cold_four_model_load_within_eight_seconds" time="0.002"><failure message="Failed: EXPECTED_RED[TC-PERF-002]: missing implementation module churn_app.testing.performance">No module named 'churn_app.testing'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-PERF-002]: missing implementation module churn_app.testing.performance</failure></testcase><testcase classname="tests.e2e.test_performance_reproducibility_e2e" name="test_tc_perf_003_warm_thousand_row_inference_within_five_seconds" time="0.012"><failure message="Failed: EXPECTED_RED[TC-PERF-003]: missing implementation module churn_app.testing.performance">No module named 'churn_app.testing'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-PERF-003]: missing implementation module churn_app.testing.performance</failure></testcase><testcase classname="tests.e2e.test_performance_reproducibility_e2e" name="test_tc_rep_001_repeated_bounded_training_is_reproducible" time="0.004"><failure message="Failed: EXPECTED_RED[TC-REP-001]: missing implementation module churn_app.training.orchestrator">No module named 'churn_app.training'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-REP-001]: missing implementation module churn_app.training.orchestrator</failure></testcase><testcase classname="tests.e2e.test_performance_reproducibility_e2e" name="test_tc_e2e_001_valid_upload_runs_complete_application_workflow" time="0.013"><failure message="Failed: EXPECTED_RED[TC-E2E-001]: missing implementation module churn_app.testing.e2e">No module named 'churn_app.testing'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-E2E-001]: missing implementation module churn_app.testing.e2e</failure></testcase><testcase classname="tests.e2e.test_performance_reproducibility_e2e" name="test_tc_e2e_002_invalid_uploads_are_safe_and_app_remains_healthy" time="0.002"><failure message="Failed: EXPECTED_RED[TC-E2E-002]: missing implementation module churn_app.testing.e2e">No module named 'churn_app.testing'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-E2E-002]: missing implementation module churn_app.testing.e2e</failure></testcase><testcase classname="tests.gpu.test_gpu_models" name="test_tc_gpu_001_startup_guard_proves_all_library_capabilities" time="0.002"><failure message="Failed: EXPECTED_RED[TC-GPU-001]: missing implementation module churn_app.gpu.guard">No module named 'churn_app.gpu'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-GPU-001]: missing implementation module churn_app.gpu.guard</failure></testcase><testcase classname="tests.gpu.test_gpu_models" name="test_tc_gpu_002_m1_is_linear_and_trains_predicts_on_cuda" time="4.156"><failure message="Failed: EXPECTED_RED[TC-GPU-002]: missing implementation module churn_app.models.logistic_torch">No module named 'churn_app.models'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-GPU-002]: missing implementation module churn_app.models.logistic_torch</failure></testcase><testcase classname="tests.gpu.test_gpu_models" name="test_tc_gpu_003_m2_effective_device_remains_cuda_after_reload" time="0.004"><failure message="Failed: EXPECTED_RED[TC-GPU-003]: missing implementation module churn_app.models.xgboost_gpu">No module named 'churn_app.models'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-GPU-003]: missing implementation module churn_app.models.xgboost_gpu</failure></testcase><testcase classname="tests.gpu.test_gpu_models" name="test_tc_gpu_004_m3_fit_and_predict_evidence_is_gpu" time="0.003"><failure message="Failed: EXPECTED_RED[TC-GPU-004]: missing implementation module churn_app.models.catboost_gpu">No module named 'churn_app.models'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-GPU-004]: missing implementation module churn_app.models.catboost_gpu</failure></testcase><testcase classname="tests.gpu.test_gpu_models" name="test_tc_gpu_005_m4_early_stops_and_restores_cuda_best_state" time="0.002"><failure message="Failed: EXPECTED_RED[TC-GPU-005]: missing implementation module churn_app.models.mlp_torch">No module named 'churn_app.models'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-GPU-005]: missing implementation module churn_app.models.mlp_torch</failure></testcase><testcase classname="tests.gpu.test_gpu_models" name="test_tc_gpu_006_cpu_fallback_is_impossible" time="0.002"><failure message="Failed: EXPECTED_RED[TC-GPU-006]: missing implementation module churn_app.gpu.guard">No module named 'churn_app.gpu'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-GPU-006]: missing implementation module churn_app.gpu.guard</failure></testcase><testcase classname="tests.gpu.test_gpu_models" name="test_tc_gpu_007_production_evidence_has_train_and_infer_for_every_model" time="0.001"><failure message="Failed: EXPECTED_RED[TC-GPU-007]: missing implementation module churn_app.gpu.evidence">No module named 'churn_app.gpu'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-GPU-007]: missing implementation module churn_app.gpu.evidence</failure></testcase><testcase classname="tests.gpu.test_gpu_models" name="test_tc_mod_001_catalog_contains_exactly_four_required_models" time="0.002"><failure message="Failed: EXPECTED_RED[TC-MOD-001]: missing implementation module churn_app.models.registry">No module named 'churn_app.models'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-MOD-001]: missing implementation module churn_app.models.registry</failure></testcase><testcase classname="tests.gpu.test_gpu_models" name="test_tc_mod_002_m1_has_no_hidden_layer" time="0.001"><failure message="Failed: EXPECTED_RED[TC-MOD-002]: missing implementation module churn_app.models.logistic_torch">No module named 'churn_app.models'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-MOD-002]: missing implementation module churn_app.models.logistic_torch</failure></testcase><testcase classname="tests.gpu.test_gpu_models" name="test_tc_mod_003_search_spaces_cover_required_bounded_dimensions" time="0.002"><failure message="Failed: EXPECTED_RED[TC-MOD-003]: missing implementation module churn_app.training.tuning">No module named 'churn_app.training'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-MOD-003]: missing implementation module churn_app.training.tuning</failure></testcase><testcase classname="tests.gpu.test_gpu_models" name="test_tc_mod_004_class_weights_use_training_counts_only" time="0.002"><failure message="Failed: EXPECTED_RED[TC-MOD-004]: missing implementation module churn_app.training.tuning">No module named 'churn_app.training'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-MOD-004]: missing implementation module churn_app.training.tuning</failure></testcase><testcase classname="tests.ml.test_evaluation_and_artifacts" name="test_tc_eval_001_metrics_match_reference_implementations" time="0.002"><failure message="Failed: EXPECTED_RED[TC-EVAL-001]: missing implementation module churn_app.evaluation.metrics">No module named 'churn_app.evaluation'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-EVAL-001]: missing implementation module churn_app.evaluation.metrics</failure></testcase><testcase classname="tests.ml.test_evaluation_and_artifacts" name="test_tc_eval_002_threshold_maximizes_f1_subject_to_recall_floor" time="0.002"><failure message="Failed: EXPECTED_RED[TC-EVAL-002]: missing implementation module churn_app.evaluation.selection">No module named 'churn_app.evaluation'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-EVAL-002]: missing implementation module churn_app.evaluation.selection</failure></testcase><testcase classname="tests.ml.test_evaluation_and_artifacts" name="test_tc_eval_003_best_model_uses_pr_auc_first_tie_break_order" time="0.002"><failure message="Failed: EXPECTED_RED[TC-EVAL-003]: missing implementation module churn_app.evaluation.selection">No module named 'churn_app.evaluation'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-EVAL-003]: missing implementation module churn_app.evaluation.selection</failure></testcase><testcase classname="tests.ml.test_evaluation_and_artifacts" name="test_tc_eval_004_test_metrics_cannot_change_winner" time="0.002"><failure message="Failed: EXPECTED_RED[TC-EVAL-004]: missing implementation module churn_app.evaluation.selection">No module named 'churn_app.evaluation'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-EVAL-004]: missing implementation module churn_app.evaluation.selection</failure></testcase><testcase classname="tests.ml.test_evaluation_and_artifacts" name="test_tc_eval_005_curve_and_confusion_dtos_are_complete" time="0.002"><failure message="Failed: EXPECTED_RED[TC-EVAL-005]: missing implementation module churn_app.evaluation.curves">No module named 'churn_app.evaluation'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-EVAL-005]: missing implementation module churn_app.evaluation.curves</failure></testcase><testcase classname="tests.ml.test_evaluation_and_artifacts" name="test_tc_art_001_four_native_artifacts_round_trip_probabilities" time="0.003"><failure message="Failed: EXPECTED_RED[TC-ART-001]: missing implementation module churn_app.models.registry">No module named 'churn_app.models'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-ART-001]: missing implementation module churn_app.models.registry</failure></testcase><testcase classname="tests.ml.test_evaluation_and_artifacts" name="test_tc_art_002_tampered_artifact_is_rejected" time="0.004"><failure message="Failed: EXPECTED_RED[TC-ART-002]: missing implementation module churn_app.models.registry">No module named 'churn_app.models'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-ART-002]: missing implementation module churn_app.models.registry</failure></testcase><testcase classname="tests.ml.test_evaluation_and_artifacts" name="test_tc_art_003_registry_with_forbidden_feature_is_rejected" time="0.004"><failure message="Failed: EXPECTED_RED[TC-ART-003]: missing implementation module churn_app.models.registry">No module named 'churn_app.models'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-ART-003]: missing implementation module churn_app.models.registry</failure></testcase><testcase classname="tests.ml.test_evaluation_and_artifacts" name="test_tc_art_004_registry_requires_exact_model_set" time="0.004"><failure message="Failed: EXPECTED_RED[TC-ART-004]: missing implementation module churn_app.models.registry">No module named 'churn_app.models'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-ART-004]: missing implementation module churn_app.models.registry</failure></testcase><testcase classname="tests.security.test_upload_and_privacy" name="test_tc_up_001_valid_target_free_upload_waits_for_click" time="0.035" /><testcase classname="tests.security.test_upload_and_privacy" name="test_tc_up_002_target_and_clientnum_are_optional_nonfeatures" time="0.022" /><testcase classname="tests.security.test_upload_and_privacy" name="test_tc_up_003_original_source_shape_is_supported" time="0.017" /><testcase classname="tests.security.test_upload_and_privacy" name="test_tc_up_004_upload_without_button_never_calls_model" time="0.014" /><testcase classname="tests.security.test_upload_and_privacy" name="test_tc_up_005_missing_selected_column_blocks_prediction" time="0.011"><failure message="Failed: EXPECTED_RED[TC-UP-005]: missing implementation module churn_app.inference.upload">No module named 'churn_app.inference'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-UP-005]: missing implementation module churn_app.inference.upload</failure></testcase><testcase classname="tests.security.test_upload_and_privacy" name="test_tc_up_006_duplicate_header_is_rejected_before_mangling" time="0.004"><failure message="Failed: EXPECTED_RED[TC-UP-006]: missing implementation module churn_app.inference.upload">No module named 'churn_app.inference'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-UP-006]: missing implementation module churn_app.inference.upload</failure></testcase><testcase classname="tests.security.test_upload_and_privacy" name="test_tc_up_007_type_binary_and_size_checks_precede_parse" time="0.007"><failure message="Failed: EXPECTED_RED[TC-UP-007]: missing implementation module churn_app.inference.upload">No module named 'churn_app.inference'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-UP-007]: missing implementation module churn_app.inference.upload</failure></testcase><testcase classname="tests.security.test_upload_and_privacy" name="test_tc_up_008_unexpected_column_rejected_in_strict_mode" time="0.012"><failure message="Failed: EXPECTED_RED[TC-UP-008]: missing implementation module churn_app.inference.upload">No module named 'churn_app.inference'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-UP-008]: missing implementation module churn_app.inference.upload</failure></testcase><testcase classname="tests.security.test_upload_and_privacy" name="test_tc_up_009_upload_never_executes_or_deserializes_content" time="0.002"><failure message="Failed: EXPECTED_RED[TC-UP-009]: missing implementation module churn_app.inference.upload">No module named 'churn_app.inference'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-UP-009]: missing implementation module churn_app.inference.upload</failure></testcase><testcase classname="tests.security.test_upload_and_privacy" name="test_tc_up_010_thousand_rows_return_four_aligned_models" time="0.011"><failure message="Failed: EXPECTED_RED[TC-UP-010]: missing implementation module churn_app.inference.prediction_service">No module named 'churn_app.inference'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-UP-010]: missing implementation module churn_app.inference.prediction_service</failure></testcase><testcase classname="tests.security.test_upload_and_privacy" name="test_tc_priv_001_logs_never_contain_customer_rows_or_identifiers" time="0.011"><failure message="Failed: EXPECTED_RED[TC-PRIV-001]: missing implementation module churn_app.inference.upload">No module named 'churn_app.inference'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-PRIV-001]: missing implementation module churn_app.inference.upload</failure></testcase><testcase classname="tests.security.test_upload_and_privacy" name="test_tc_priv_002_download_escapes_spreadsheet_formulas" time="0.002"><failure message="Failed: EXPECTED_RED[TC-PRIV-002]: missing implementation module churn_app.inference.upload">No module named 'churn_app.inference'
+
+During handling of the above exception, another exception occurred:
+EXPECTED_RED[TC-PRIV-002]: missing implementation module churn_app.inference.upload</failure></testcase><testcase classname="tests.test_phase2_harness" name="test_harness_traceability_ids_are_unique_and_complete" time="0.046" /><testcase classname="tests.test_phase2_harness" name="test_harness_dataset_fixture_matches_audit" time="0.002" /><testcase classname="tests.test_phase2_harness" name="test_harness_feature_contract_is_disjoint_and_complete" time="0.001" /><testcase classname="tests.test_phase2_harness" name="test_harness_pytest_markers_are_registered" time="0.002" /><testcase classname="tests.ui.test_streamlit_ui" name="test_tc_ui_001_all_five_pages_navigate_and_render" time="0.002" /><testcase classname="tests.ui.test_streamlit_ui" name="test_tc_ui_002_comparison_has_required_metrics_and_charts" time="0.001" /><testcase classname="tests.ui.test_streamlit_ui" name="test_tc_ui_003_training_visuals_are_model_appropriate" time="0.001" /><testcase classname="tests.ui.test_streamlit_ui" name="test_tc_ui_004_overview_and_diagnostics_show_controls_and_evidence" time="0.001" /><testcase classname="tests.ui.test_streamlit_ui" name="test_tc_ui_005_missing_or_corrupt_artifacts_have_safe_states" time="0.002" /></testsuite></testsuites>

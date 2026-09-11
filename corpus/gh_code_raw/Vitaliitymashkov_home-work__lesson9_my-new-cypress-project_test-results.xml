@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="31.737" tests="7" failures="6">
+  <testsuite name="Root Suite" timestamp="2023-10-28T08:58:17" tests="0" file="cypress/e2e/3-our-own-cases/login.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="sauce demo login tests" timestamp="2023-10-28T08:58:17" tests="7" time="31.729" failures="6">
+    <testcase name="sauce demo login tests verifies that a user is able to correctly login to the site" time="0.000" classname="verifies that a user is able to correctly login to the site">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `.product_label`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `.product_label`, but never found it.
+    at Context.eval (webpack://my-new-cypress-project/./cypress/e2e/3-our-own-cases/login.cy.js:15:13)]]></failure>
+    </testcase>
+    <testcase name="sauce demo login tests verifies that a user is able to correctly add an item to the cart" time="0.000" classname="verifies that a user is able to correctly add an item to the cart">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `.product_label`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `.product_label`, but never found it.
+    at Context.eval (webpack://my-new-cypress-project/./cypress/e2e/3-our-own-cases/login.cy.js:32:13)]]></failure>
+    </testcase>
+    <testcase name="sauce demo login tests verifies that a user is able to correctly delete items from the shopping cart" time="0.000" classname="verifies that a user is able to correctly delete items from the shopping cart">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `.product_label`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `.product_label`, but never found it.
+    at Context.eval (webpack://my-new-cypress-project/./cypress/e2e/3-our-own-cases/login.cy.js:50:13)]]></failure>
+    </testcase>
+    <testcase name="sauce demo login tests should intercept network requests" time="3.127" classname="should intercept network requests">
+    </testcase>
+    <testcase name="sauce demo login tests should allow a visitor to sign up, login and logout" time="0.000" classname="should allow a visitor to sign up, login and logout">
+      <failure message="`cy.visit()` failed trying to load:
+
+http://localhost:3000/
+
+We attempted to make an http request to this URL but the request failed without a response.
+
+We received this error at the network level:
+
+  &gt; Error: connect ECONNREFUSED 127.0.0.1:3000
+
+Common situations why this would fail:
+  - you don&apos;t have internet access
+  - you forgot to run / boot your web server
+  - your web server isn&apos;t accessible
+  - you have weird network configuration settings on your computer" type="CypressError"><![CDATA[CypressError: `cy.visit()` failed trying to load:
+
+http://localhost:3000/
+
+We attempted to make an http request to this URL but the request failed without a response.
+
+We received this error at the network level:
+
+  > Error: connect ECONNREFUSED 127.0.0.1:3000
+
+Common situations why this would fail:
+  - you don't have internet access
+  - you forgot to run / boot your web server
+  - your web server isn't accessible
+  - you have weird network configuration settings on your computer
+    at <unknown> (https://www.browserstack.com/__cypress/runner/cypress_runner.js:130996:74)
+    at visitFailedByErr (https://www.browserstack.com/__cypress/runner/cypress_runner.js:130388:12)
+    at <unknown> (https://www.browserstack.com/__cypress/runner/cypress_runner.js:130995:11)
+    at tryCatcher (https://www.browserstack.com/__cypress/runner/cypress_runner.js:1807:23)
+    at Promise._settlePromiseFromHandler (https://www.browserstack.com/__cypress/runner/cypress_runner.js:1519:31)
+    at Promise._settlePromise (https://www.browserstack.com/__cypress/runner/cypress_runner.js:1576:18)
+    at Promise._settlePromise0 (https://www.browserstack.com/__cypress/runner/cypress_runner.js:1621:10)
+    at Promise._settlePromises (https://www.browserstack.com/__cypress/runner/cypress_runner.js:1697:18)
+    at _drainQueueStep (https://www.browserstack.com/__cypress/runner/cypress_runner.js:2407:12)
+    at _drainQueue (https://www.browserstack.com/__cypress/runner/cypress_runner.js:2400:9)
+    at Async._drainQueues (https://www.browserstack.com/__cypress/runner/cypress_runner.js:2416:5)
+    at Async.drainQueues (https://www.browserstack.com/__cypress/runner/cypress_runner.js:2286:14)
+From Your Spec Code:
+    at Context.eval (webpack://my-new-cypress-project/./cypress/e2e/3-our-own-cases/login.cy.js:95:11)
+
+From Node.js Internals:
+  Error: connect ECONNREFUSED 127.0.0.1:3000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)]]></failure>
+    </testcase>
+    <testcase name="sauce demo login tests creates a new bank account" time="0.000" classname="creates a new bank account">
+      <failure message="`cy.visit()` failed trying to load:
+
+http://localhost:3000/
+
+We attempted to make an http request to this URL but the request failed without a response.
+
+We received this error at the network level:
+
+  &gt; Error: connect ECONNREFUSED 127.0.0.1:3000
+
+Common situations why this would fail:
+  - you don&apos;t have internet access
+  - you forgot to run / boot your web server
+  - your web server isn&apos;t accessible
+  - you have weird network configuration settings on your computer" type="CypressError"><![CDATA[CypressError: `cy.visit()` failed trying to load:
+
+http://localhost:3000/
+
+We attempted to make an http request to this URL but the request failed without a response.
+
+We received this error at the network level:
+
+  > Error: connect ECONNREFUSED 127.0.0.1:3000
+
+Common situations why this would fail:
+  - you don't have internet access
+  - you forgot to run / boot your web server
+  - your web server isn't accessible
+  - you have weird network configuration settings on your computer
+    at <unknown> (https://www.browserstack.com/__cypress/runner/cypress_runner.js:130996:74)
+    at visitFailedByErr (https://www.browserstack.com/__cypress/runner/cypress_runner.js:130388:12)
+    at <unknown> (https://www.browserstack.com/__cypress/runner/cypress_runner.js:130995:11)
+    at tryCatcher (https://www.browserstack.com/__cypress/runner/cypress_runner.js:1807:23)
+    at Promise._settlePromiseFromHandler (https://www.browserstack.com/__cypress/runner/cypress_runner.js:1519:31)
+    at Promise._settlePromise (https://www.browserstack.com/__cypress/runner/cypress_runner.js:1576:18)
+    at Promise._settlePromise0 (https://www.browserstack.com/__cypress/runner/cypress_runner.js:1621:10)
+    at Promise._settlePromises (https://www.browserstack.com/__cypress/runner/cypress_runner.js:1697:18)
+    at _drainQueueStep (https://www.browserstack.com/__cypress/runner/cypress_runner.js:2407:12)
+    at _drainQueue (https://www.browserstack.com/__cypress/runner/cypress_runner.js:2400:9)
+    at Async._drainQueues (https://www.browserstack.com/__cypress/runner/cypress_runner.js:2416:5)
+    at Async.drainQueues (https://www.browserstack.com/__cypress/runner/cypress_runner.js:2286:14)
+From Your Spec Code:
+    at Context.eval (webpack://my-new-cypress-project/./cypress/e2e/3-our-own-cases/login.cy.js:134:11)
+
+From Node.js Internals:
+  Error: connect ECONNREFUSED 127.0.0.1:3000
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)]]></failure>
+    </testcase>
+    <testcase name="sauce demo login tests Checks extra actions" time="0.000" classname="Checks extra actions">
+      <failure message="Timed out retrying after 4050ms: expected &apos;&lt;div.action-div.hidden&gt;&apos; to be &apos;visible&apos;
+
+This element `&lt;div.action-div.hidden&gt;` is not visible because it has CSS property: `display: none`" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4050ms: expected '<div.action-div.hidden>' to be 'visible'
+
+This element `<div.action-div.hidden>` is not visible because it has CSS property: `display: none`
+    at Context.eval (webpack://my-new-cypress-project/./cypress/e2e/3-our-own-cases/login.cy.js:230:41)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="17" skipped="0" tests="17" time="544.455" timestamp="2025-10-08T13:39:37.505348+05:30" hostname="MAC-NB-131.local"><testcase classname="CampaignSetupPage.Test_Cases.test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload" name="test_BL01_attach_brand_logo_link_appears" time="22.304"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: &lt;element(s) not found&gt; &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; with timeout 5000ms&#10;  - waiting for locator(&quot;//a[@class='action-brand']&quot;)">self = &lt;test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload object at 0x11939fd90&gt;
+browser_context = &lt;Page url='https://stg-acmss.silverpush.co/go-live/setup'&gt;
+
+    def test_BL01_attach_brand_logo_link_appears(self, browser_context: Page):
+        logger.info("Starting test: BL01 attach brand logo link appears")
+        page = browser_context
+        self.go_to_form_and_select_brand(page)
+&gt;       expect(page.locator(ATTACH_BRAND_LOGO_LINK_XPATH)).to_be_visible()
+E       AssertionError: Locator expected to be visible
+E       Actual value: &lt;element(s) not found&gt; 
+E       Call log:
+E         - Expect "to_be_visible" with timeout 5000ms
+E         - waiting for locator("//a[@class='action-brand']")
+
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:102: AssertionError</failure></testcase><testcase classname="CampaignSetupPage.Test_Cases.test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload" name="test_BL02_allowed_file_types_upload_and_label_changes_after_file_save[valid_png.png]" time="14.591"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: &lt;element(s) not found&gt; &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; with timeout 5000ms&#10;  - waiting for locator(&quot;//a[@class='action-brand']&quot;)">self = &lt;test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload object at 0x119719a90&gt;
+browser_context = &lt;Page url='https://stg-acmss.silverpush.co/go-live/setup'&gt;, file_name = 'valid_png.png'
+
+    @pytest.mark.parametrize("file_name", ["valid_png.png", "valid_jpg.jpg", "valid_svg.svg"])
+    def test_BL02_allowed_file_types_upload_and_label_changes_after_file_save(self, browser_context: Page, file_name):
+        logger.info(f"Starting test: BL02 allowed file types upload and label changes after file save with {file_name}")
+        page = browser_context
+        self.go_to_form_and_select_brand(page)
+        label_locator = page.locator(ATTACH_BRAND_LOGO_LINK_XPATH)
+&gt;       expect(label_locator).to_be_visible(timeout=5000)
+E       AssertionError: Locator expected to be visible
+E       Actual value: &lt;element(s) not found&gt; 
+E       Call log:
+E         - Expect "to_be_visible" with timeout 5000ms
+E         - waiting for locator("//a[@class='action-brand']")
+
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:114: AssertionError</failure></testcase><testcase classname="CampaignSetupPage.Test_Cases.test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload" name="test_BL02_allowed_file_types_upload_and_label_changes_after_file_save[valid_jpg.jpg]" time="13.766"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: &lt;element(s) not found&gt; &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; with timeout 5000ms&#10;  - waiting for locator(&quot;//a[@class='action-brand']&quot;)">self = &lt;test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload object at 0x119714c30&gt;
+browser_context = &lt;Page url='https://stg-acmss.silverpush.co/go-live/setup'&gt;, file_name = 'valid_jpg.jpg'
+
+    @pytest.mark.parametrize("file_name", ["valid_png.png", "valid_jpg.jpg", "valid_svg.svg"])
+    def test_BL02_allowed_file_types_upload_and_label_changes_after_file_save(self, browser_context: Page, file_name):
+        logger.info(f"Starting test: BL02 allowed file types upload and label changes after file save with {file_name}")
+        page = browser_context
+        self.go_to_form_and_select_brand(page)
+        label_locator = page.locator(ATTACH_BRAND_LOGO_LINK_XPATH)
+&gt;       expect(label_locator).to_be_visible(timeout=5000)
+E       AssertionError: Locator expected to be visible
+E       Actual value: &lt;element(s) not found&gt; 
+E       Call log:
+E         - Expect "to_be_visible" with timeout 5000ms
+E         - waiting for locator("//a[@class='action-brand']")
+
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:114: AssertionError</failure></testcase><testcase classname="CampaignSetupPage.Test_Cases.test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload" name="test_BL02_allowed_file_types_upload_and_label_changes_after_file_save[valid_svg.svg]" time="14.145"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: &lt;element(s) not found&gt; &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; with timeout 5000ms&#10;  - waiting for locator(&quot;//a[@class='action-brand']&quot;)">self = &lt;test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload object at 0x119714e90&gt;
+browser_context = &lt;Page url='https://stg-acmss.silverpush.co/go-live/setup'&gt;, file_name = 'valid_svg.svg'
+
+    @pytest.mark.parametrize("file_name", ["valid_png.png", "valid_jpg.jpg", "valid_svg.svg"])
+    def test_BL02_allowed_file_types_upload_and_label_changes_after_file_save(self, browser_context: Page, file_name):
+        logger.info(f"Starting test: BL02 allowed file types upload and label changes after file save with {file_name}")
+        page = browser_context
+        self.go_to_form_and_select_brand(page)
+        label_locator = page.locator(ATTACH_BRAND_LOGO_LINK_XPATH)
+&gt;       expect(label_locator).to_be_visible(timeout=5000)
+E       AssertionError: Locator expected to be visible
+E       Actual value: &lt;element(s) not found&gt; 
+E       Call log:
+E         - Expect "to_be_visible" with timeout 5000ms
+E         - waiting for locator("//a[@class='action-brand']")
+
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:114: AssertionError</failure></testcase><testcase classname="CampaignSetupPage.Test_Cases.test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload" name="test_BL03_invalid_file_type_upload[invalid_file.pdf]" time="43.787"><failure message="playwright._impl._errors.TimeoutError: Locator.get_attribute: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;//input[@id='fileInput']&quot;)">self = &lt;test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload object at 0x11973d5b0&gt;
+browser_context = &lt;Page url='https://stg-acmss.silverpush.co/go-live/setup'&gt;, file_name = 'invalid_file.pdf'
+
+    @pytest.mark.parametrize("file_name", ["invalid_file.pdf", "Invalid_ts.ts"])
+    def test_BL03_invalid_file_type_upload(self, browser_context: Page, file_name):
+        logger.info(f"Starting test: BL03 invalid file type upload with {file_name}")
+        page = browser_context
+        self.go_to_form_and_select_brand(page)
+    
+        safe_click(page, ATTACH_BRAND_LOGO_LINK_XPATH, "Attach Brand Logo Link")
+        input_locator = page.locator(BRAND_LOGO_UPLOAD_INPUT_XPATH)
+&gt;       accept_types = input_locator.get_attribute("accept")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:160: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py:16855: in get_attribute
+    self._sync(self._impl_obj.get_attribute(name=name, timeout=timeout))
+../venv/lib/python3.13/site-packages/playwright/_impl/_locator.py:426: in get_attribute
+    return await self._frame.get_attribute(
+../venv/lib/python3.13/site-packages/playwright/_impl/_frame.py:709: in get_attribute
+    return await self._channel.send(
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x11969cd70&gt;, cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x119b067a0&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        st: List[inspect.FrameInfo] = getattr(
+            task, "__pw_stack__", None
+        ) or inspect.stack(0)
+    
+        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Locator.get_attribute: Timeout 30000ms exceeded.
+E           Call log:
+E             - waiting for locator("//input[@id='fileInput']")
+
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:558: TimeoutError</failure></testcase><testcase classname="CampaignSetupPage.Test_Cases.test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload" name="test_BL03_invalid_file_type_upload[Invalid_ts.ts]" time="43.771"><failure message="playwright._impl._errors.TimeoutError: Locator.get_attribute: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;//input[@id='fileInput']&quot;)">self = &lt;test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload object at 0x11963ead0&gt;
+browser_context = &lt;Page url='https://stg-acmss.silverpush.co/go-live/setup'&gt;, file_name = 'Invalid_ts.ts'
+
+    @pytest.mark.parametrize("file_name", ["invalid_file.pdf", "Invalid_ts.ts"])
+    def test_BL03_invalid_file_type_upload(self, browser_context: Page, file_name):
+        logger.info(f"Starting test: BL03 invalid file type upload with {file_name}")
+        page = browser_context
+        self.go_to_form_and_select_brand(page)
+    
+        safe_click(page, ATTACH_BRAND_LOGO_LINK_XPATH, "Attach Brand Logo Link")
+        input_locator = page.locator(BRAND_LOGO_UPLOAD_INPUT_XPATH)
+&gt;       accept_types = input_locator.get_attribute("accept")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:160: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py:16855: in get_attribute
+    self._sync(self._impl_obj.get_attribute(name=name, timeout=timeout))
+../venv/lib/python3.13/site-packages/playwright/_impl/_locator.py:426: in get_attribute
+    return await self._frame.get_attribute(
+../venv/lib/python3.13/site-packages/playwright/_impl/_frame.py:709: in get_attribute
+    return await self._channel.send(
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x11969cd70&gt;, cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x119b06e80&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        st: List[inspect.FrameInfo] = getattr(
+            task, "__pw_stack__", None
+        ) or inspect.stack(0)
+    
+        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Locator.get_attribute: Timeout 30000ms exceeded.
+E           Call log:
+E             - waiting for locator("//input[@id='fileInput']")
+
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:558: TimeoutError</failure></testcase><testcase classname="CampaignSetupPage.Test_Cases.test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload" name="test_BL04_minimum_dimensions_validation[small_image.png]" time="43.864"><failure message="playwright._impl._errors.TimeoutError: Page.set_input_files: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;//input[@id='fileInput']&quot;)">self = &lt;test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload object at 0x11963dd00&gt;
+browser_context = &lt;Page url='https://stg-acmss.silverpush.co/go-live/setup'&gt;, file_name = 'small_image.png'
+
+    @pytest.mark.parametrize("file_name", ["small_image.png"])
+    def test_BL04_minimum_dimensions_validation(self, browser_context: Page, file_name):
+        logger.info(f"Starting test: BL04 minimum dimensions validation with {file_name}")
+        page = browser_context
+        self.go_to_form_and_select_brand(page)
+        safe_click(page, ATTACH_BRAND_LOGO_LINK_XPATH, "Attach Brand Logo Link")
+        file_path = base_dir / file_name
+&gt;       page.set_input_files(BRAND_LOGO_UPLOAD_INPUT_XPATH, file_path)
+
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:184: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py:11200: in set_input_files
+    self._sync(
+../venv/lib/python3.13/site-packages/playwright/_impl/_page.py:1053: in set_input_files
+    return await self._main_frame.set_input_files(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv/lib/python3.13/site-packages/playwright/_impl/_frame.py:786: in set_input_files
+    await self._channel.send(
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x11969cd70&gt;, cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x119b07b00&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        st: List[inspect.FrameInfo] = getattr(
+            task, "__pw_stack__", None
+        ) or inspect.stack(0)
+    
+        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Page.set_input_files: Timeout 30000ms exceeded.
+E           Call log:
+E             - waiting for locator("//input[@id='fileInput']")
+
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:558: TimeoutError</failure></testcase><testcase classname="CampaignSetupPage.Test_Cases.test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload" name="test_BL05_max_file_size_validation[large_file.jpg]" time="44.378"><failure message="playwright._impl._errors.TimeoutError: Page.set_input_files: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;//input[@id='fileInput']&quot;)">self = &lt;test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload object at 0x1196ddc50&gt;
+browser_context = &lt;Page url='https://stg-acmss.silverpush.co/go-live/setup'&gt;, file_name = 'large_file.jpg'
+
+    @pytest.mark.parametrize("file_name", ["large_file.jpg"])
+    def test_BL05_max_file_size_validation(self, browser_context: Page, file_name):
+        logger.info(f"Starting test: BL05 maximum file size validation with {file_name}")
+        page = browser_context
+        self.go_to_form_and_select_brand(page)
+        safe_click(page, ATTACH_BRAND_LOGO_LINK_XPATH, "Attach Brand Logo Link")
+        file_path = base_dir / file_name
+&gt;       page.set_input_files(BRAND_LOGO_UPLOAD_INPUT_XPATH, file_path)
+
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:208: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py:11200: in set_input_files
+    self._sync(
+../venv/lib/python3.13/site-packages/playwright/_impl/_page.py:1053: in set_input_files
+    return await self._main_frame.set_input_files(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv/lib/python3.13/site-packages/playwright/_impl/_frame.py:786: in set_input_files
+    await self._channel.send(
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x11969cd70&gt;, cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x119bfd580&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        st: List[inspect.FrameInfo] = getattr(
+            task, "__pw_stack__", None
+        ) or inspect.stack(0)
+    
+        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Page.set_input_files: Timeout 30000ms exceeded.
+E           Call log:
+E             - waiting for locator("//input[@id='fileInput']")
+
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:558: TimeoutError</failure></testcase><testcase classname="CampaignSetupPage.Test_Cases.test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload" name="test_BL06_aspect_ratio_validation[bad_aspect_ratio.png]" time="43.758"><failure message="playwright._impl._errors.TimeoutError: Page.set_input_files: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;//input[@id='fileInput']&quot;)">self = &lt;test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload object at 0x1196dde50&gt;
+browser_context = &lt;Page url='https://stg-acmss.silverpush.co/go-live/setup'&gt;, file_name = 'bad_aspect_ratio.png'
+
+    @pytest.mark.parametrize("file_name", ["bad_aspect_ratio.png"])
+    def test_BL06_aspect_ratio_validation(self, browser_context: Page, file_name):
+        logger.info(f"Starting test: BL06 aspect ratio validation with {file_name}")
+        page = browser_context
+        self.go_to_form_and_select_brand(page)
+        safe_click(page, ATTACH_BRAND_LOGO_LINK_XPATH, "Attach Brand Logo Link")
+        file_path = base_dir / file_name
+&gt;       page.set_input_files(BRAND_LOGO_UPLOAD_INPUT_XPATH, file_path)
+
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:232: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py:11200: in set_input_files
+    self._sync(
+../venv/lib/python3.13/site-packages/playwright/_impl/_page.py:1053: in set_input_files
+    return await self._main_frame.set_input_files(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv/lib/python3.13/site-packages/playwright/_impl/_frame.py:786: in set_input_files
+    await self._channel.send(
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x11969cd70&gt;, cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x119bfe8e0&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        st: List[inspect.FrameInfo] = getattr(
+            task, "__pw_stack__", None
+        ) or inspect.stack(0)
+    
+        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Page.set_input_files: Timeout 30000ms exceeded.
+E           Call log:
+E             - waiting for locator("//input[@id='fileInput']")
+
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:558: TimeoutError</failure></testcase><testcase classname="CampaignSetupPage.Test_Cases.test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload" name="test_BL07_label_changes_after_upload[valid_png.png]" time="18.850"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: &lt;element(s) not found&gt; &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; with timeout 5000ms&#10;  - waiting for locator(&quot;//div[@class='upload-box step1']&quot;)">self = &lt;test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload object at 0x11972caa0&gt;
+browser_context = &lt;Page url='https://stg-acmss.silverpush.co/go-live/setup'&gt;, file_name = 'valid_png.png'
+
+    @pytest.mark.parametrize("file_name", ["valid_png.png"])
+    def test_BL07_label_changes_after_upload(self, browser_context: Page, file_name):
+        logger.info(f"Starting test: BL07 label changes after upload with {file_name}")
+        page = browser_context
+        self.go_to_form_and_select_brand(page)
+    
+        safe_click(page, ATTACH_BRAND_LOGO_LINK_XPATH, "Attach Brand Logo Link")
+        # Before upload
+        label_locator_before = page.locator("//div[@class='upload-box step1']")
+&gt;       expect(label_locator_before).to_be_visible(timeout=5000)
+E       AssertionError: Locator expected to be visible
+E       Actual value: &lt;element(s) not found&gt; 
+E       Call log:
+E         - Expect "to_be_visible" with timeout 5000ms
+E         - waiting for locator("//div[@class='upload-box step1']")
+
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:258: AssertionError</failure></testcase><testcase classname="CampaignSetupPage.Test_Cases.test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload" name="test_BL08_click_file_name_opens_preview_modal" time="43.618"><failure message="playwright._impl._errors.TimeoutError: Page.set_input_files: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;//input[@id='fileInput']&quot;)">self = &lt;test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload object at 0x11972cb90&gt;
+browser_context = &lt;Page url='https://stg-acmss.silverpush.co/go-live/setup'&gt;
+
+    def test_BL08_click_file_name_opens_preview_modal(self, browser_context: Page):
+            logger.info("Starting test: BL08 click file name opens preview modal")
+            page = browser_context
+            self.go_to_form_and_select_brand(page)
+            safe_click(page, ATTACH_BRAND_LOGO_LINK_XPATH, "Attach Brand Logo Link")
+            file_path = base_dir / "valid_png.png"
+&gt;           page.set_input_files(BRAND_LOGO_UPLOAD_INPUT_XPATH, file_path)
+
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:298: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py:11200: in set_input_files
+    self._sync(
+../venv/lib/python3.13/site-packages/playwright/_impl/_page.py:1053: in set_input_files
+    return await self._main_frame.set_input_files(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv/lib/python3.13/site-packages/playwright/_impl/_frame.py:786: in set_input_files
+    await self._channel.send(
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x11969cd70&gt;, cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x119bfdee0&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        st: List[inspect.FrameInfo] = getattr(
+            task, "__pw_stack__", None
+        ) or inspect.stack(0)
+    
+        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Page.set_input_files: Timeout 30000ms exceeded.
+E           Call log:
+E             - waiting for locator("//input[@id='fileInput']")
+
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:558: TimeoutError</failure></testcase><testcase classname="CampaignSetupPage.Test_Cases.test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload" name="test_BL09_replace_logo" time="44.952"><failure message="playwright._impl._errors.TimeoutError: Page.set_input_files: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;//input[@id='fileInput']&quot;)">self = &lt;test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload object at 0x119760050&gt;
+browser_context = &lt;Page url='https://stg-acmss.silverpush.co/go-live/setup'&gt;
+
+    def test_BL09_replace_logo(self, browser_context: Page):
+        logger.info("Starting test: BL09 replace logo functionality")
+        page = browser_context
+        self.go_to_form_and_select_brand(page)
+        safe_click(page, ATTACH_BRAND_LOGO_LINK_XPATH, "Attach Brand Logo Link")
+    
+        # Upload first logo
+        file_path = base_dir / "valid_png.png"
+&gt;       page.set_input_files(BRAND_LOGO_UPLOAD_INPUT_XPATH, file_path)
+
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:315: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py:11200: in set_input_files
+    self._sync(
+../venv/lib/python3.13/site-packages/playwright/_impl/_page.py:1053: in set_input_files
+    return await self._main_frame.set_input_files(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv/lib/python3.13/site-packages/playwright/_impl/_frame.py:786: in set_input_files
+    await self._channel.send(
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x11969cd70&gt;, cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x119bff7e0&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        st: List[inspect.FrameInfo] = getattr(
+            task, "__pw_stack__", None
+        ) or inspect.stack(0)
+    
+        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Page.set_input_files: Timeout 30000ms exceeded.
+E           Call log:
+E             - waiting for locator("//input[@id='fileInput']")
+
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:558: TimeoutError</failure></testcase><testcase classname="CampaignSetupPage.Test_Cases.test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload" name="test_BL10_remove_logo" time="18.961"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: &lt;element(s) not found&gt; &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; with timeout 5000ms&#10;  - waiting for locator(&quot;//div[@class='upload-box step1']&quot;)">self = &lt;test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload object at 0x1197602f0&gt;
+browser_context = &lt;Page url='https://stg-acmss.silverpush.co/go-live/setup'&gt;
+
+    def test_BL10_remove_logo(self, browser_context: Page):
+        logger.info("Starting test: BL10 remove logo functionality")
+        page = browser_context
+        self.go_to_form_and_select_brand(page)
+        safe_click(page, ATTACH_BRAND_LOGO_LINK_XPATH, "Attach Brand Logo Link")
+        # Before upload
+        label_locator = page.locator("//div[@class='upload-box step1']")
+&gt;       expect(label_locator).to_be_visible(timeout=5000)
+E       AssertionError: Locator expected to be visible
+E       Actual value: &lt;element(s) not found&gt; 
+E       Call log:
+E         - Expect "to_be_visible" with timeout 5000ms
+E         - waiting for locator("//div[@class='upload-box step1']")
+
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:349: AssertionError</failure></testcase><testcase classname="CampaignSetupPage.Test_Cases.test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload" name="test_BL11_remove_logo_and_upload_same_file" time="18.909"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: &lt;element(s) not found&gt; &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; with timeout 5000ms&#10;  - waiting for locator(&quot;//div[@class='upload-box step1']&quot;)">self = &lt;test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload object at 0x1196e5640&gt;
+browser_context = &lt;Page url='https://stg-acmss.silverpush.co/go-live/setup'&gt;
+
+    def test_BL11_remove_logo_and_upload_same_file(self, browser_context: Page):
+        logger.info("Starting test: BL10 remove logo functionality")
+        page = browser_context
+        self.go_to_form_and_select_brand(page)
+        safe_click(page, ATTACH_BRAND_LOGO_LINK_XPATH, "Attach Brand Logo Link")
+        # Before upload
+        label_locator = page.locator("//div[@class='upload-box step1']")
+&gt;       expect(label_locator).to_be_visible(timeout=5000)
+E       AssertionError: Locator expected to be visible
+E       Actual value: &lt;element(s) not found&gt; 
+E       Call log:
+E         - Expect "to_be_visible" with timeout 5000ms
+E         - waiting for locator("//div[@class='upload-box step1']")
+
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:404: AssertionError</failure></testcase><testcase classname="CampaignSetupPage.Test_Cases.test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload" name="test_BL11_download_logo" time="43.857"><failure message="playwright._impl._errors.TimeoutError: Page.set_input_files: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;//input[@id='fileInput']&quot;)">self = &lt;test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload object at 0x1193f7f50&gt;
+browser_context = &lt;Page url='https://stg-acmss.silverpush.co/go-live/setup'&gt;
+
+    def test_BL11_download_logo(self, browser_context: Page):
+        logger.info("Starting test: BL11 download logo functionality")
+        page = browser_context
+        self.go_to_form_and_select_brand(page)
+        safe_click(page, ATTACH_BRAND_LOGO_LINK_XPATH, "Attach Brand Logo Link")
+        # Upload file first
+        file_name = "valid_png.png"
+        file_path = base_dir / file_name
+&gt;       page.set_input_files(BRAND_LOGO_UPLOAD_INPUT_XPATH, file_path)
+
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:469: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py:11200: in set_input_files
+    self._sync(
+../venv/lib/python3.13/site-packages/playwright/_impl/_page.py:1053: in set_input_files
+    return await self._main_frame.set_input_files(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv/lib/python3.13/site-packages/playwright/_impl/_frame.py:786: in set_input_files
+    await self._channel.send(
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x11969cd70&gt;, cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x119b05760&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        st: List[inspect.FrameInfo] = getattr(
+            task, "__pw_stack__", None
+        ) or inspect.stack(0)
+    
+        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Page.set_input_files: Timeout 30000ms exceeded.
+E           Call log:
+E             - waiting for locator("//input[@id='fileInput']")
+
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:558: TimeoutError</failure></testcase><testcase classname="CampaignSetupPage.Test_Cases.test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload" name="test_BL12_drag_and_drop_upload[valid_png.png]" time="43.683"><failure message="playwright._impl._errors.TimeoutError: Locator.inner_text: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;//div[@class='upload-box step1']&quot;)">self = &lt;test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload object at 0x119768050&gt;
+browser_context = &lt;Page url='https://stg-acmss.silverpush.co/go-live/setup'&gt;, file_name = 'valid_png.png'
+
+    @pytest.mark.parametrize("file_name", ["valid_png.png"])
+    def test_BL12_drag_and_drop_upload(self, browser_context: Page, file_name):
+        logger.info(f"Starting test: BL12 drag and drop upload with {file_name}")
+        page = browser_context
+        self.go_to_form_and_select_brand(page)
+        safe_click(page, ATTACH_BRAND_LOGO_LINK_XPATH, "Attach Brand Logo Link")
+    
+        # --- Before upload check ---
+        before_upload_text = (
+&gt;           page.locator("//div[@class='upload-box step1']").inner_text().strip()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        )
+
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:507: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+../venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py:16969: in inner_text
+    self._sync(self._impl_obj.inner_text(timeout=timeout))
+../venv/lib/python3.13/site-packages/playwright/_impl/_locator.py:458: in inner_text
+    return await self._frame.inner_text(
+../venv/lib/python3.13/site-packages/playwright/_impl/_frame.py:695: in inner_text
+    return await self._channel.send(
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x11969cd70&gt;, cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x119b05440&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        st: List[inspect.FrameInfo] = getattr(
+            task, "__pw_stack__", None
+        ) or inspect.stack(0)
+    
+        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Locator.inner_text: Timeout 30000ms exceeded.
+E           Call log:
+E             - waiting for locator("//div[@class='upload-box step1']")
+
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:558: TimeoutError</failure></testcase><testcase classname="CampaignSetupPage.Test_Cases.test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload" name="test_BL13_logo_not_saved_without_saving" time="24.327"><failure message="playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 10000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;//input[@id='fileInput']&quot;) to be visible">self = &lt;test_BrandLogoUpload_SIL-1322.TestBrandLogoUpload object at 0x119758730&gt;
+browser_context = &lt;Page url='https://stg-acmss.silverpush.co/go-live/setup'&gt;
+
+    def test_BL13_logo_not_saved_without_saving(self, browser_context: Page):
+        """
+        Upload logo but don’t save → open new Go-Live should not have logo.
+        The file name should NOT appear after reload because it was never saved.
+        """
+        logger.info("#x1F680 BL13: Upload logo but DO NOT save, then verify new Go-Live is empty.")
+        page = browser_context
+    
+        # 1️⃣ Go to form &amp; select brand
+        self.go_to_form_and_select_brand(page)
+    
+    
+        # 2️⃣ Upload logo file
+&gt;       self.upload_logo(page, "valid_png.png")
+
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:551: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+CampaignSetupPage/Test_Cases/test_BrandLogoUpload_SIL-1322.py:33: in upload_logo
+    page.wait_for_selector(BRAND_LOGO_UPLOAD_INPUT_XPATH, state="visible", timeout=10000)
+../venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py:8182: in wait_for_selector
+    self._sync(
+../venv/lib/python3.13/site-packages/playwright/_impl/_page.py:423: in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv/lib/python3.13/site-packages/playwright/_impl/_frame.py:369: in wait_for_selector
+    await self._channel.send(
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;playwright._impl._connection.Connection object at 0x11969cd70&gt;, cb = &lt;function Channel.send.&lt;locals&gt;.&lt;lambda&gt; at 0x119b07a60&gt;
+is_internal = False, title = None
+
+    async def wrap_api_call(
+        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None
+    ) -&gt; Any:
+        if self._api_zone.get():
+            return await cb()
+        task = asyncio.current_task(self._loop)
+        st: List[inspect.FrameInfo] = getattr(
+            task, "__pw_stack__", None
+        ) or inspect.stack(0)
+    
+        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)
+        self._api_zone.set(parsed_st)
+        try:
+            return await cb()
+        except Exception as error:
+&gt;           raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E           playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 10000ms exceeded.
+E           Call log:
+E             - waiting for locator("//input[@id='fileInput']") to be visible
+
+../venv/lib/python3.13/site-packages/playwright/_impl/_connection.py:558: TimeoutError</failure></testcase></testsuite></testsuites>

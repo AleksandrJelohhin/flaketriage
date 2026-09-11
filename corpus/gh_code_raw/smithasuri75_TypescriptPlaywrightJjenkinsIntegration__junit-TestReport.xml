@@ -1,0 +1,77 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="5.614529999999999">
+<testsuite name="Chapter01\02_OrangeHrm.spec.ts" timestamp="2025-10-24T03:45:31.054Z" hostname="Google Chrome" tests="1" failures="1" skipped="0" time="0.831" errors="0">
+<testcase name="Orange Hrm login" classname="Chapter01\02_OrangeHrm.spec.ts" time="0.831">
+<failure message="02_OrangeHrm.spec.ts:3:5 Orange Hrm login" type="FAILURE">
+<![CDATA[  [Google Chrome] › Chapter01\02_OrangeHrm.spec.ts:3:5 › Orange Hrm login ──────────────────────────
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Windows\system32\config\systemprofile\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-02_OrangeHrm-Orange-Hrm-login-Google-Chrome\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\Chapter01-02_OrangeHrm-Orange-Hrm-login-Google-Chrome\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Windows\system32\config\systemprofile\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-02_OrangeHrm-Orange-Hrm-login-Google-Chrome-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\Chapter01-02_OrangeHrm-Orange-Hrm-login-Google-Chrome-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Windows\system32\config\systemprofile\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\Chapter01-02_OrangeHrm-Orange-Hrm-login-Google-Chrome-retry2\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\Chapter01-02_OrangeHrm-Orange-Hrm-login-Google-Chrome-retry2\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Chapter01-02_OrangeHrm-Orange-Hrm-login-Google-Chrome\trace.zip]]
+
+[[ATTACHMENT|test-results\Chapter01-02_OrangeHrm-Orange-Hrm-login-Google-Chrome-retry1\trace.zip]]
+
+[[ATTACHMENT|test-results\Chapter01-02_OrangeHrm-Orange-Hrm-login-Google-Chrome-retry2\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

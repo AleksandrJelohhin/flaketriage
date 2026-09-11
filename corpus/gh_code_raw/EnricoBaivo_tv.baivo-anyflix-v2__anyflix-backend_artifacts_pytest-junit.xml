@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="5" failures="52" skipped="0" tests="70" time="35.465" timestamp="2025-12-18T19:59:48.167365+01:00" hostname="DESKTOP-746SGPU"><testcase classname="" name="tests.extractors.test_filemoon" time="0.000"><error message="collection failure">ImportError while importing test module 'E:\dev\tv\tv.baivo-anyflix-v2\anyflix-backend\tests\extractors\test_filemoon.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+.venv\Lib\site-packages\_pytest\python.py:498: in importtestmodule
+    mod = import_path(
+.venv\Lib\site-packages\_pytest\pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+C:\Users\ebono\AppData\Roaming\uv\python\cpython-3.13.11-windows-x86_64-none\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;frozen importlib._bootstrap&gt;:1387: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1360: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1331: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:935: in _load_unlocked
+    ???
+.venv\Lib\site-packages\_pytest\assertion\rewrite.py:186: in exec_module
+    exec(co, module.__dict__)
+tests\extractors\test_filemoon.py:7: in &lt;module&gt;
+    from tests.extractor_test_base import SingleURLExtractorTest
+E   ModuleNotFoundError: No module named 'tests.extractor_test_base'</error></testcase><testcase classname="" name="tests.extractors.test_vidmoly" time="0.000"><error message="collection failure">ImportError while importing test module 'E:\dev\tv\tv.baivo-anyflix-v2\anyflix-backend\tests\extractors\test_vidmoly.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+.venv\Lib\site-packages\_pytest\python.py:498: in importtestmodule
+    mod = import_path(
+.venv\Lib\site-packages\_pytest\pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+C:\Users\ebono\AppData\Roaming\uv\python\cpython-3.13.11-windows-x86_64-none\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;frozen importlib._bootstrap&gt;:1387: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1360: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1331: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:935: in _load_unlocked
+    ???
+.venv\Lib\site-packages\_pytest\assertion\rewrite.py:186: in exec_module
+    exec(co, module.__dict__)
+tests\extractors\test_vidmoly.py:7: in &lt;module&gt;
+    from tests.extractor_test_base import SingleURLExtractorTest
+E   ModuleNotFoundError: No module named 'tests.extractor_test_base'</error></testcase><testcase classname="" name="tests.extractors.test_vidoza" time="0.000"><error message="collection failure">ImportError while importing test module 'E:\dev\tv\tv.baivo-anyflix-v2\anyflix-backend\tests\extractors\test_vidoza.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+.venv\Lib\site-packages\_pytest\python.py:498: in importtestmodule
+    mod = import_path(
+.venv\Lib\site-packages\_pytest\pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+C:\Users\ebono\AppData\Roaming\uv\python\cpython-3.13.11-windows-x86_64-none\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;frozen importlib._bootstrap&gt;:1387: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1360: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1331: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:935: in _load_unlocked
+    ???
+.venv\Lib\site-packages\_pytest\assertion\rewrite.py:186: in exec_module
+    exec(co, module.__dict__)
+tests\extractors\test_vidoza.py:7: in &lt;module&gt;
+    from tests.extractor_test_base import SingleURLExtractorTest
+E   ModuleNotFoundError: No module named 'tests.extractor_test_base'</error></testcase><testcase classname="" name="tests.extractors.test_voe" time="0.000"><error message="collection failure">ImportError while importing test module 'E:\dev\tv\tv.baivo-anyflix-v2\anyflix-backend\tests\extractors\test_voe.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+.venv\Lib\site-packages\_pytest\python.py:498: in importtestmodule
+    mod = import_path(
+.venv\Lib\site-packages\_pytest\pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+C:\Users\ebono\AppData\Roaming\uv\python\cpython-3.13.11-windows-x86_64-none\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;frozen importlib._bootstrap&gt;:1387: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1360: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1331: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:935: in _load_unlocked
+    ???
+.venv\Lib\site-packages\_pytest\assertion\rewrite.py:186: in exec_module
+    exec(co, module.__dict__)
+tests\extractors\test_voe.py:7: in &lt;module&gt;
+    from tests.extractor_test_base import SingleURLExtractorTest
+E   ModuleNotFoundError: No module named 'tests.extractor_test_base'</error></testcase><testcase classname="" name="tests.extractors.test_ytdlp" time="0.000"><error message="collection failure">ImportError while importing test module 'E:\dev\tv\tv.baivo-anyflix-v2\anyflix-backend\tests\extractors\test_ytdlp.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+.venv\Lib\site-packages\_pytest\python.py:498: in importtestmodule
+    mod = import_path(
+.venv\Lib\site-packages\_pytest\pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+C:\Users\ebono\AppData\Roaming\uv\python\cpython-3.13.11-windows-x86_64-none\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;frozen importlib._bootstrap&gt;:1387: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1360: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1331: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:935: in _load_unlocked
+    ???
+.venv\Lib\site-packages\_pytest\assertion\rewrite.py:186: in exec_module
+    exec(co, module.__dict__)
+tests\extractors\test_ytdlp.py:7: in &lt;module&gt;
+    from tests.extractor_test_base import MultiURLExtractorTest
+E   ModuleNotFoundError: No module named 'tests.extractor_test_base'</error></testcase><testcase classname="tests.providers.test_api_endpoints.TestSourcesEndpoints" name="test_list_sources" time="0.006"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestSourcesEndpoints object at 0x000001135A75BC50&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AB0DC60&gt;
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    async def test_list_sources(self, async_client: AsyncClient):
+        """Test GET /sources/ returns available sources."""
+&gt;       response = await async_client.get("/sources/")
+                         ^^^^^^^^^^^^^^^^
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:23: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestSourcesEndpoints" name="test_get_source_preferences[aniworld]" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestSourcesEndpoints object at 0x000001135AF1C550&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AB0E6B0&gt;
+source = 'aniworld'
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.parametrize("source", ["aniworld", "serienstream"])
+    async def test_get_source_preferences(self, async_client: AsyncClient, source: str):
+        """Test GET /sources/{source}/preferences returns valid preferences."""
+&gt;       response = await async_client.get(f"/sources/{source}/preferences")
+                         ^^^^^^^^^^^^^^^^
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:38: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestSourcesEndpoints" name="test_get_source_preferences[serienstream]" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestSourcesEndpoints object at 0x000001135A6D7E10&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AB0F100&gt;
+source = 'serienstream'
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.parametrize("source", ["aniworld", "serienstream"])
+    async def test_get_source_preferences(self, async_client: AsyncClient, source: str):
+        """Test GET /sources/{source}/preferences returns valid preferences."""
+&gt;       response = await async_client.get(f"/sources/{source}/preferences")
+                         ^^^^^^^^^^^^^^^^
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:38: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestSourcesEndpoints" name="test_get_preferences_invalid_source" time="0.003"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestSourcesEndpoints object at 0x000001135AC9C050&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AB0FA60&gt;
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    async def test_get_preferences_invalid_source(self, async_client: AsyncClient):
+        """Test GET /sources/{source}/preferences with invalid source returns 404."""
+&gt;       response = await async_client.get("/sources/invalid_source/preferences")
+                         ^^^^^^^^^^^^^^^^
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:59: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestPopularEndpoints" name="test_get_popular_content[aniworld-anime]" time="0.003"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestPopularEndpoints object at 0x000001135AF1CB90&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC68400&gt;
+source = 'aniworld', expected_type = 'anime'
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.parametrize("source,expected_type", [
+        ("aniworld", "anime"),
+        ("serienstream", "normal"),
+    ])
+    async def test_get_popular_content(
+        self, async_client: AsyncClient, source: str, expected_type: str
+    ):
+        """Test GET /sources/{source}/popular returns valid paginated results."""
+&gt;       response = await async_client.get(f"/sources/{source}/popular")
+                         ^^^^^^^^^^^^^^^^
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:76: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestPopularEndpoints" name="test_get_popular_content[serienstream-normal]" time="0.003"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestPopularEndpoints object at 0x000001135AF1C2D0&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC68C70&gt;
+source = 'serienstream', expected_type = 'normal'
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.parametrize("source,expected_type", [
+        ("aniworld", "anime"),
+        ("serienstream", "normal"),
+    ])
+    async def test_get_popular_content(
+        self, async_client: AsyncClient, source: str, expected_type: str
+    ):
+        """Test GET /sources/{source}/popular returns valid paginated results."""
+&gt;       response = await async_client.get(f"/sources/{source}/popular")
+                         ^^^^^^^^^^^^^^^^
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:76: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestPopularEndpoints" name="test_get_popular_pagination[aniworld]" time="0.003"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestPopularEndpoints object at 0x000001135AC9C2B0&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC697B0&gt;
+source = 'aniworld'
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.parametrize("source", ["aniworld", "serienstream"])
+    async def test_get_popular_pagination(self, async_client: AsyncClient, source: str):
+        """Test GET /sources/{source}/popular with page parameter."""
+&gt;       response = await async_client.get(f"/sources/{source}/popular", params={"page": 1})
+                         ^^^^^^^^^^^^^^^^
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:106: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestPopularEndpoints" name="test_get_popular_pagination[serienstream]" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestPopularEndpoints object at 0x000001135AC9C510&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AB0FC40&gt;
+source = 'serienstream'
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.parametrize("source", ["aniworld", "serienstream"])
+    async def test_get_popular_pagination(self, async_client: AsyncClient, source: str):
+        """Test GET /sources/{source}/popular with page parameter."""
+&gt;       response = await async_client.get(f"/sources/{source}/popular", params={"page": 1})
+                         ^^^^^^^^^^^^^^^^
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:106: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestLatestEndpoints" name="test_get_latest_updates[aniworld-anime]" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestLatestEndpoints object at 0x000001135AF1C050&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AB0EC50&gt;
+source = 'aniworld', expected_type = 'anime'
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.parametrize("source,expected_type", [
+        ("aniworld", "anime"),
+        ("serienstream", "normal"),
+    ])
+    async def test_get_latest_updates(
+        self, async_client: AsyncClient, source: str, expected_type: str
+    ):
+        """Test GET /sources/{source}/latest returns valid paginated results."""
+&gt;       response = await async_client.get(f"/sources/{source}/latest")
+                         ^^^^^^^^^^^^^^^^
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:128: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestLatestEndpoints" name="test_get_latest_updates[serienstream-normal]" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestLatestEndpoints object at 0x000001135AF1CE10&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AB0E890&gt;
+source = 'serienstream', expected_type = 'normal'
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.parametrize("source,expected_type", [
+        ("aniworld", "anime"),
+        ("serienstream", "normal"),
+    ])
+    async def test_get_latest_updates(
+        self, async_client: AsyncClient, source: str, expected_type: str
+    ):
+        """Test GET /sources/{source}/latest returns valid paginated results."""
+&gt;       response = await async_client.get(f"/sources/{source}/latest")
+                         ^^^^^^^^^^^^^^^^
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:128: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestSearchEndpoints" name="test_search_aniworld" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestSearchEndpoints object at 0x000001135AF1D090&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AB0E020&gt;
+aniworld_test_data = {'base_url': 'https://aniworld.to', 'episode_num': 1, 'episode_url': 'https://aniworld.to/anime/stream/one-punch-man/staffel-1/episode-1', 'expected_type': 'anime', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    async def test_search_aniworld(self, async_client: AsyncClient, aniworld_test_data):
+        """Test GET /sources/aniworld/search returns valid results."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{aniworld_test_data['source']}/search",
+            params={"q": aniworld_test_data["search_query"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:158: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestSearchEndpoints" name="test_search_serienstream" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestSearchEndpoints object at 0x000001135AF1D1D0&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC69D50&gt;
+serienstream_test_data = {'base_url': 'https://serienstream.to', 'episode_num': 1, 'episode_url': 'https://serienstream.to/serie/stream/the-witcher/staffel-1/episode-1', 'expected_type': 'normal', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    async def test_search_serienstream(self, async_client: AsyncClient, serienstream_test_data):
+        """Test GET /sources/serienstream/search returns valid results."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{serienstream_test_data['source']}/search",
+            params={"q": serienstream_test_data["search_query"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:186: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestSearchEndpoints" name="test_search_empty_query" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestSearchEndpoints object at 0x000001135AC9C180&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC685E0&gt;
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    async def test_search_empty_query(self, async_client: AsyncClient):
+        """Test GET /sources/{source}/search with empty query returns error."""
+&gt;       response = await async_client.get("/sources/aniworld/search", params={"q": ""})
+                         ^^^^^^^^^^^^^^^^
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:206: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestSearchEndpoints" name="test_search_no_results[aniworld]" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestSearchEndpoints object at 0x000001135AC9C640&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC6A020&gt;
+source = 'aniworld'
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.parametrize("source", ["aniworld", "serienstream"])
+    async def test_search_no_results(self, async_client: AsyncClient, source: str):
+        """Test GET /sources/{source}/search with nonsense query returns empty list."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{source}/search",
+            params={"q": "xyznonexistentquery12345"},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:215: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestSearchEndpoints" name="test_search_no_results[serienstream]" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestSearchEndpoints object at 0x000001135ABF8EF0&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC6A7A0&gt;
+source = 'serienstream'
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.parametrize("source", ["aniworld", "serienstream"])
+    async def test_search_no_results(self, async_client: AsyncClient, source: str):
+        """Test GET /sources/{source}/search with nonsense query returns empty list."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{source}/search",
+            params={"q": "xyznonexistentquery12345"},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:215: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestSeriesEndpoints" name="test_get_series_overview_aniworld" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestSeriesEndpoints object at 0x000001135AF1D310&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC6AF20&gt;
+aniworld_test_data = {'base_url': 'https://aniworld.to', 'episode_num': 1, 'episode_url': 'https://aniworld.to/anime/stream/one-punch-man/staffel-1/episode-1', 'expected_type': 'anime', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_get_series_overview_aniworld(
+        self, async_client: AsyncClient, aniworld_test_data
+    ):
+        """Test GET /sources/aniworld/series returns series overview."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{aniworld_test_data['source']}/series",
+            params={"url": aniworld_test_data["series_url"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:238: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestSeriesEndpoints" name="test_get_series_overview_serienstream" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestSeriesEndpoints object at 0x000001135AF1D450&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC6B6A0&gt;
+serienstream_test_data = {'base_url': 'https://serienstream.to', 'episode_num': 1, 'episode_url': 'https://serienstream.to/serie/stream/the-witcher/staffel-1/episode-1', 'expected_type': 'normal', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_get_series_overview_serienstream(
+        self, async_client: AsyncClient, serienstream_test_data
+    ):
+        """Test GET /sources/serienstream/series returns series overview."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{serienstream_test_data['source']}/series",
+            params={"url": serienstream_test_data["series_url"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:263: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestSeriesEndpoints" name="test_get_series_seasons_aniworld" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestSeriesEndpoints object at 0x000001135AC9C770&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC6BE20&gt;
+aniworld_test_data = {'base_url': 'https://aniworld.to', 'episode_num': 1, 'episode_url': 'https://aniworld.to/anime/stream/one-punch-man/staffel-1/episode-1', 'expected_type': 'anime', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_get_series_seasons_aniworld(
+        self, async_client: AsyncClient, aniworld_test_data
+    ):
+        """Test GET /sources/aniworld/series/seasons returns all seasons."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{aniworld_test_data['source']}/series/seasons",
+            params={"url": aniworld_test_data["series_url"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:282: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestSeriesEndpoints" name="test_get_series_seasons_serienstream" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestSeriesEndpoints object at 0x000001135AC9C8A0&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC305E0&gt;
+serienstream_test_data = {'base_url': 'https://serienstream.to', 'episode_num': 1, 'episode_url': 'https://serienstream.to/serie/stream/the-witcher/staffel-1/episode-1', 'expected_type': 'normal', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_get_series_seasons_serienstream(
+        self, async_client: AsyncClient, serienstream_test_data
+    ):
+        """Test GET /sources/serienstream/series/seasons returns all seasons."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{serienstream_test_data['source']}/series/seasons",
+            params={"url": serienstream_test_data["series_url"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:315: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestSeasonEndpoints" name="test_get_specific_season_aniworld" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestSeasonEndpoints object at 0x000001135AF1D590&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC6BA60&gt;
+aniworld_test_data = {'base_url': 'https://aniworld.to', 'episode_num': 1, 'episode_url': 'https://aniworld.to/anime/stream/one-punch-man/staffel-1/episode-1', 'expected_type': 'anime', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_get_specific_season_aniworld(
+        self, async_client: AsyncClient, aniworld_test_data
+    ):
+        """Test GET /sources/aniworld/series/seasons/{season_num} returns specific season."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{aniworld_test_data['source']}/series/seasons/{aniworld_test_data['season_num']}",
+            params={"url": aniworld_test_data["series_url"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:338: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestSeasonEndpoints" name="test_get_specific_season_serienstream" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestSeasonEndpoints object at 0x000001135AF1D6D0&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC69990&gt;
+serienstream_test_data = {'base_url': 'https://serienstream.to', 'episode_num': 1, 'episode_url': 'https://serienstream.to/serie/stream/the-witcher/staffel-1/episode-1', 'expected_type': 'normal', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_get_specific_season_serienstream(
+        self, async_client: AsyncClient, serienstream_test_data
+    ):
+        """Test GET /sources/serienstream/series/seasons/{season_num} returns specific season."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{serienstream_test_data['source']}/series/seasons/{serienstream_test_data['season_num']}",
+            params={"url": serienstream_test_data["series_url"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:362: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestSeasonEndpoints" name="test_get_nonexistent_season" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestSeasonEndpoints object at 0x000001135AC9C9D0&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC6B4C0&gt;
+aniworld_test_data = {'base_url': 'https://aniworld.to', 'episode_num': 1, 'episode_url': 'https://aniworld.to/anime/stream/one-punch-man/staffel-1/episode-1', 'expected_type': 'anime', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_get_nonexistent_season(
+        self, async_client: AsyncClient, aniworld_test_data
+    ):
+        """Test GET /sources/{source}/series/seasons/{season_num} with invalid season returns 404."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{aniworld_test_data['source']}/series/seasons/999",
+            params={"url": aniworld_test_data["series_url"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:380: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestEpisodeEndpoints" name="test_get_specific_episode_aniworld" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestEpisodeEndpoints object at 0x000001135AF1D810&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC6AD40&gt;
+aniworld_test_data = {'base_url': 'https://aniworld.to', 'episode_num': 1, 'episode_url': 'https://aniworld.to/anime/stream/one-punch-man/staffel-1/episode-1', 'expected_type': 'anime', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_get_specific_episode_aniworld(
+        self, async_client: AsyncClient, aniworld_test_data
+    ):
+        """Test GET /sources/aniworld/series/seasons/.../episodes/... returns specific episode."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{aniworld_test_data['source']}/series/seasons/{aniworld_test_data['season_num']}/episodes/{aniworld_test_data['episode_num']}",
+            params={"url": aniworld_test_data["series_url"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:398: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestEpisodeEndpoints" name="test_get_specific_episode_serienstream" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestEpisodeEndpoints object at 0x000001135A75B4D0&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC6A5C0&gt;
+serienstream_test_data = {'base_url': 'https://serienstream.to', 'episode_num': 1, 'episode_url': 'https://serienstream.to/serie/stream/the-witcher/staffel-1/episode-1', 'expected_type': 'normal', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_get_specific_episode_serienstream(
+        self, async_client: AsyncClient, serienstream_test_data
+    ):
+        """Test GET /sources/serienstream/series/seasons/.../episodes/... returns specific episode."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{serienstream_test_data['source']}/series/seasons/{serienstream_test_data['season_num']}/episodes/{serienstream_test_data['episode_num']}",
+            params={"url": serienstream_test_data["series_url"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:422: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestEpisodeEndpoints" name="test_get_nonexistent_episode" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestEpisodeEndpoints object at 0x000001135A6D7CE0&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC69E40&gt;
+aniworld_test_data = {'base_url': 'https://aniworld.to', 'episode_num': 1, 'episode_url': 'https://aniworld.to/anime/stream/one-punch-man/staffel-1/episode-1', 'expected_type': 'anime', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_get_nonexistent_episode(
+        self, async_client: AsyncClient, aniworld_test_data
+    ):
+        """Test GET episode with invalid episode number returns 404."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{aniworld_test_data['source']}/series/seasons/1/episodes/999",
+            params={"url": aniworld_test_data["series_url"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:442: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestMoviesEndpoints" name="test_get_series_movies_aniworld" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestMoviesEndpoints object at 0x000001135AF1D950&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC688B0&gt;
+aniworld_test_data = {'base_url': 'https://aniworld.to', 'episode_num': 1, 'episode_url': 'https://aniworld.to/anime/stream/one-punch-man/staffel-1/episode-1', 'expected_type': 'anime', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_get_series_movies_aniworld(
+        self, async_client: AsyncClient, aniworld_test_data
+    ):
+        """Test GET /sources/aniworld/series/movies returns movies list."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{aniworld_test_data['source']}/series/movies",
+            params={"url": aniworld_test_data["series_url"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:460: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestMoviesEndpoints" name="test_get_series_movies_serienstream" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestMoviesEndpoints object at 0x000001135AF1DA90&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC68E50&gt;
+serienstream_test_data = {'base_url': 'https://serienstream.to', 'episode_num': 1, 'episode_url': 'https://serienstream.to/serie/stream/the-witcher/staffel-1/episode-1', 'expected_type': 'normal', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_get_series_movies_serienstream(
+        self, async_client: AsyncClient, serienstream_test_data
+    ):
+        """Test GET /sources/serienstream/series/movies returns movies list."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{serienstream_test_data['source']}/series/movies",
+            params={"url": serienstream_test_data["series_url"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:487: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestVideoEndpoints" name="test_get_video_sources_aniworld" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestVideoEndpoints object at 0x000001135AF1DBD0&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AB0D3F0&gt;
+aniworld_test_data = {'base_url': 'https://aniworld.to', 'episode_num': 1, 'episode_url': 'https://aniworld.to/anime/stream/one-punch-man/staffel-1/episode-1', 'expected_type': 'anime', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_get_video_sources_aniworld(
+        self, async_client: AsyncClient, aniworld_test_data
+    ):
+        """Test GET /sources/aniworld/videos returns video sources."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{aniworld_test_data['source']}/videos",
+            params={"url": aniworld_test_data["episode_url"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:509: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestVideoEndpoints" name="test_get_video_sources_serienstream" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestVideoEndpoints object at 0x000001135AF1DD10&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AB0E020&gt;
+serienstream_test_data = {'base_url': 'https://serienstream.to', 'episode_num': 1, 'episode_url': 'https://serienstream.to/serie/stream/the-witcher/staffel-1/episode-1', 'expected_type': 'normal', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_get_video_sources_serienstream(
+        self, async_client: AsyncClient, serienstream_test_data
+    ):
+        """Test GET /sources/serienstream/videos returns video sources."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{serienstream_test_data['source']}/videos",
+            params={"url": serienstream_test_data["episode_url"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:533: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestVideoEndpoints" name="test_get_video_sources_with_lang_filter" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestVideoEndpoints object at 0x000001135A6D6520&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AB0E4D0&gt;
+aniworld_test_data = {'base_url': 'https://aniworld.to', 'episode_num': 1, 'episode_url': 'https://aniworld.to/anime/stream/one-punch-man/staffel-1/episode-1', 'expected_type': 'anime', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_get_video_sources_with_lang_filter(
+        self, async_client: AsyncClient, aniworld_test_data
+    ):
+        """Test GET /sources/{source}/videos with language filter."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{aniworld_test_data['source']}/videos",
+            params={
+                "url": aniworld_test_data["episode_url"],
+                "lang": "de",
+            },
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:552: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestTMDBEnrichment" name="test_series_overview_has_tmdb_data" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestTMDBEnrichment object at 0x000001135AF1DE50&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AB0F100&gt;
+aniworld_test_data = {'base_url': 'https://aniworld.to', 'episode_num': 1, 'episode_url': 'https://aniworld.to/anime/stream/one-punch-man/staffel-1/episode-1', 'expected_type': 'anime', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_series_overview_has_tmdb_data(
+        self, async_client: AsyncClient, aniworld_test_data
+    ):
+        """Test that series overview includes TMDB data when available."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{aniworld_test_data['source']}/series",
+            params={"url": aniworld_test_data["series_url"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:577: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestTMDBEnrichment" name="test_season_has_tmdb_enrichment" time="0.024"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestTMDBEnrichment object at 0x000001135AF1DF90&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AB0F5B0&gt;
+aniworld_test_data = {'base_url': 'https://aniworld.to', 'episode_num': 1, 'episode_url': 'https://aniworld.to/anime/stream/one-punch-man/staffel-1/episode-1', 'expected_type': 'anime', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_season_has_tmdb_enrichment(
+        self, async_client: AsyncClient, aniworld_test_data
+    ):
+        """Test that specific season includes TMDB season data when available."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{aniworld_test_data['source']}/series/seasons/{aniworld_test_data['season_num']}",
+            params={"url": aniworld_test_data["series_url"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:604: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestTMDBEnrichment" name="test_episode_has_tmdb_enrichment" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestTMDBEnrichment object at 0x000001135AC9CB00&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC69120&gt;
+aniworld_test_data = {'base_url': 'https://aniworld.to', 'episode_num': 1, 'episode_url': 'https://aniworld.to/anime/stream/one-punch-man/staffel-1/episode-1', 'expected_type': 'anime', ...}
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_episode_has_tmdb_enrichment(
+        self, async_client: AsyncClient, aniworld_test_data
+    ):
+        """Test that specific episode includes TMDB episode data when available."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{aniworld_test_data['source']}/series/seasons/{aniworld_test_data['season_num']}/episodes/{aniworld_test_data['episode_num']}",
+            params={"url": aniworld_test_data["series_url"]},
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:623: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestErrorHandling" name="test_invalid_source_returns_404" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestErrorHandling object at 0x000001135AF1E210&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC68130&gt;
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    async def test_invalid_source_returns_404(self, async_client: AsyncClient):
+        """Test that invalid source returns 404."""
+&gt;       response = await async_client.get("/sources/nonexistent_source/popular")
+                         ^^^^^^^^^^^^^^^^
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:643: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestErrorHandling" name="test_missing_url_param_returns_422" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestErrorHandling object at 0x000001135AF1E350&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC6A200&gt;
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    async def test_missing_url_param_returns_422(self, async_client: AsyncClient):
+        """Test that missing required URL parameter returns 422."""
+&gt;       response = await async_client.get("/sources/aniworld/series")
+                         ^^^^^^^^^^^^^^^^
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:650: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestErrorHandling" name="test_invalid_page_param_returns_422" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestErrorHandling object at 0x000001135AC9CC30&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC6A980&gt;
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    async def test_invalid_page_param_returns_422(self, async_client: AsyncClient):
+        """Test that invalid page parameter returns 422."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            "/sources/aniworld/popular", params={"page": 0}
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:657: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestResponseTypes" name="test_popular_response_type[aniworld-anime]" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestResponseTypes object at 0x000001135AF1E490&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC6B100&gt;
+source = 'aniworld', expected_type = 'anime'
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.parametrize("source,expected_type", [
+        ("aniworld", "anime"),
+        ("serienstream", "normal"),
+    ])
+    async def test_popular_response_type(
+        self, async_client: AsyncClient, source: str, expected_type: str
+    ):
+        """Test that popular endpoint returns correct type."""
+&gt;       response = await async_client.get(f"/sources/{source}/popular")
+                         ^^^^^^^^^^^^^^^^
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:681: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestResponseTypes" name="test_popular_response_type[serienstream-normal]" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestResponseTypes object at 0x000001135AF1E5D0&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AC696C0&gt;
+source = 'serienstream', expected_type = 'normal'
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.parametrize("source,expected_type", [
+        ("aniworld", "anime"),
+        ("serienstream", "normal"),
+    ])
+    async def test_popular_response_type(
+        self, async_client: AsyncClient, source: str, expected_type: str
+    ):
+        """Test that popular endpoint returns correct type."""
+&gt;       response = await async_client.get(f"/sources/{source}/popular")
+                         ^^^^^^^^^^^^^^^^
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:681: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestResponseTypes" name="test_latest_response_type[aniworld-anime]" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestResponseTypes object at 0x000001135AC9CD60&gt;
+async_client = &lt;async_generator object async_client at 0x000001135A743970&gt;
+source = 'aniworld', expected_type = 'anime'
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.parametrize("source,expected_type", [
+        ("aniworld", "anime"),
+        ("serienstream", "normal"),
+    ])
+    async def test_latest_response_type(
+        self, async_client: AsyncClient, source: str, expected_type: str
+    ):
+        """Test that latest endpoint returns correct type."""
+&gt;       response = await async_client.get(f"/sources/{source}/latest")
+                         ^^^^^^^^^^^^^^^^
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:695: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestResponseTypes" name="test_latest_response_type[serienstream-normal]" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestResponseTypes object at 0x000001135AC9CE90&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AB0E7A0&gt;
+source = 'serienstream', expected_type = 'normal'
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.parametrize("source,expected_type", [
+        ("aniworld", "anime"),
+        ("serienstream", "normal"),
+    ])
+    async def test_latest_response_type(
+        self, async_client: AsyncClient, source: str, expected_type: str
+    ):
+        """Test that latest endpoint returns correct type."""
+&gt;       response = await async_client.get(f"/sources/{source}/latest")
+                         ^^^^^^^^^^^^^^^^
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:695: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestResponseTypes" name="test_search_response_type[aniworld-anime]" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestResponseTypes object at 0x000001135ABFB770&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AB0DF30&gt;
+source = 'aniworld', expected_type = 'anime'
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.parametrize("source,expected_type", [
+        ("aniworld", "anime"),
+        ("serienstream", "normal"),
+    ])
+    async def test_search_response_type(
+        self, async_client: AsyncClient, source: str, expected_type: str
+    ):
+        """Test that search endpoint returns correct type."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{source}/search", params={"q": "test"}
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:709: AttributeError</failure></testcase><testcase classname="tests.providers.test_api_endpoints.TestResponseTypes" name="test_search_response_type[serienstream-normal]" time="0.002"><failure message="AttributeError: 'async_generator' object has no attribute 'get'">self = &lt;tests.providers.test_api_endpoints.TestResponseTypes object at 0x000001135A732AD0&gt;
+async_client = &lt;async_generator object async_client at 0x000001135AB0C130&gt;
+source = 'serienstream', expected_type = 'normal'
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.parametrize("source,expected_type", [
+        ("aniworld", "anime"),
+        ("serienstream", "normal"),
+    ])
+    async def test_search_response_type(
+        self, async_client: AsyncClient, source: str, expected_type: str
+    ):
+        """Test that search endpoint returns correct type."""
+&gt;       response = await async_client.get(
+                         ^^^^^^^^^^^^^^^^
+            f"/sources/{source}/search", params={"q": "test"}
+        )
+E       AttributeError: 'async_generator' object has no attribute 'get'
+
+tests\providers\test_api_endpoints.py:709: AttributeError</failure></testcase><testcase classname="tests.providers.test_providers.TestAniWorldProvider" name="test_provider_properties" time="0.016"><failure message="AttributeError: 'AniWorldProvider' object has no attribute 'name'">self = &lt;tests.providers.test_providers.TestAniWorldProvider object at 0x000001135AF1E850&gt;
+provider = &lt;lib.providers.aniworld.AniWorldProvider object at 0x000001135ABD4CD0&gt;
+
+    def test_provider_properties(self, provider):
+        """Test provider basic properties."""
+&gt;       assert provider.name == "AniWorld"
+               ^^^^^^^^^^^^^
+E       AttributeError: 'AniWorldProvider' object has no attribute 'name'
+
+tests\providers\test_providers.py:38: AttributeError</failure></testcase><testcase classname="tests.providers.test_providers.TestAniWorldProvider" name="test_get_source_preferences" time="0.016"><failure message="AssertionError: assert 'language' in ['lang', 'type', 'res', 'host', 'lang_filter', 'host_filter']">self = &lt;tests.providers.test_providers.TestAniWorldProvider object at 0x000001135AF1E710&gt;
+provider = &lt;lib.providers.aniworld.AniWorldProvider object at 0x000001135ABD4E10&gt;
+
+    def test_get_source_preferences(self, provider):
+        """Test that source preferences are returned correctly."""
+        preferences = provider.get_source_preferences()
+    
+        assert preferences is not None
+        assert isinstance(preferences, list)
+        assert len(preferences) &gt; 0
+    
+        # Check that we have the expected preference keys
+        pref_keys = [p.key for p in preferences]
+&gt;       assert "language" in pref_keys
+E       AssertionError: assert 'language' in ['lang', 'type', 'res', 'host', 'lang_filter', 'host_filter']
+
+tests\providers\test_providers.py:53: AssertionError</failure></testcase><testcase classname="tests.providers.test_providers.TestAniWorldProvider" name="test_search" time="0.747"><failure message="AssertionError: assert 'AniWorld' == 'aniworld'&#10;  &#10;  - aniworld&#10;  ? ^  ^&#10;  + AniWorld&#10;  ? ^  ^">self = &lt;tests.providers.test_providers.TestAniWorldProvider object at 0x000001135AC9CFC0&gt;
+provider = &lt;lib.providers.aniworld.AniWorldProvider object at 0x000001135AF1FB10&gt;
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    async def test_search(self, provider):
+        """Test search functionality."""
+        async with provider:
+            result = await provider.search("one punch", page=1)
+    
+        assert result is not None
+        assert hasattr(result, "list")
+        assert hasattr(result, "has_next_page")
+        assert hasattr(result, "type")
+        assert result.type == "anime"
+    
+        # Should find results for "one punch"
+        assert len(result.list) &gt; 0, "Should find results for 'one punch'"
+    
+        # Validate first result structure
+        first = result.list[0]
+        assert first.name
+        assert first.link
+&gt;       assert first.provider == "aniworld"
+E       AssertionError: assert 'AniWorld' == 'aniworld'
+E         
+E         - aniworld
+E         ? ^  ^
+E         + AniWorld
+E         ? ^  ^
+
+tests\providers\test_providers.py:78: AssertionError</failure></testcase><testcase classname="tests.providers.test_providers.TestAniWorldProvider" name="test_get_popular" time="3.690" /><testcase classname="tests.providers.test_providers.TestAniWorldProvider" name="test_get_latest_updates" time="1.443" /><testcase classname="tests.providers.test_providers.TestAniWorldProvider" name="test_get_detail" time="0.726" /><testcase classname="tests.providers.test_providers.TestAniWorldProvider" name="test_get_detail_without_episodes" time="0.325" /><testcase classname="tests.providers.test_providers.TestAniWorldProvider" name="test_get_video_list" time="9.926" /><testcase classname="tests.providers.test_providers.TestSerienStreamProvider" name="test_provider_properties" time="0.025"><failure message="AttributeError: 'SerienStreamProvider' object has no attribute 'name'">self = &lt;tests.providers.test_providers.TestSerienStreamProvider object at 0x000001135AF1EAD0&gt;
+provider = &lt;lib.providers.serienstream.SerienStreamProvider object at 0x000001135AF1CCD0&gt;
+
+    def test_provider_properties(self, provider):
+        """Test provider basic properties."""
+&gt;       assert provider.name == "SerienStream"
+               ^^^^^^^^^^^^^
+E       AttributeError: 'SerienStreamProvider' object has no attribute 'name'
+
+tests\providers\test_providers.py:180: AttributeError</failure></testcase><testcase classname="tests.providers.test_providers.TestSerienStreamProvider" name="test_get_source_preferences" time="0.028"><failure message="AssertionError: assert 'language' in ['lang', 'type', 'res', 'host', 'lang_filter', 'host_filter']">self = &lt;tests.providers.test_providers.TestSerienStreamProvider object at 0x000001135AF1E990&gt;
+provider = &lt;lib.providers.serienstream.SerienStreamProvider object at 0x000001135AF1F610&gt;
+
+    def test_get_source_preferences(self, provider):
+        """Test that source preferences are returned correctly."""
+        preferences = provider.get_source_preferences()
+    
+        assert preferences is not None
+        assert isinstance(preferences, list)
+        assert len(preferences) &gt; 0
+    
+        pref_keys = [p.key for p in preferences]
+&gt;       assert "language" in pref_keys
+E       AssertionError: assert 'language' in ['lang', 'type', 'res', 'host', 'lang_filter', 'host_filter']
+
+tests\providers\test_providers.py:194: AssertionError</failure></testcase><testcase classname="tests.providers.test_providers.TestSerienStreamProvider" name="test_search" time="1.405"><failure message="AssertionError: assert 'SerienStream' == 'serienstream'&#10;  &#10;  - serienstream&#10;  ? ^     ^&#10;  + SerienStream&#10;  ? ^     ^">self = &lt;tests.providers.test_providers.TestSerienStreamProvider object at 0x000001135AC9D220&gt;
+provider = &lt;lib.providers.serienstream.SerienStreamProvider object at 0x000001135C272350&gt;
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    async def test_search(self, provider):
+        """Test search functionality."""
+        async with provider:
+            result = await provider.search("witcher", page=1)
+    
+        assert result is not None
+        assert result.type == "normal"
+        assert len(result.list) &gt; 0, "Should find results for 'witcher'"
+    
+        first = result.list[0]
+        assert first.name
+        assert first.link
+&gt;       assert first.provider == "serienstream"
+E       AssertionError: assert 'SerienStream' == 'serienstream'
+E         
+E         - serienstream
+E         ? ^     ^
+E         + SerienStream
+E         ? ^     ^
+
+tests\providers\test_providers.py:211: AssertionError</failure></testcase><testcase classname="tests.providers.test_providers.TestSerienStreamProvider" name="test_get_popular" time="3.037" /><testcase classname="tests.providers.test_providers.TestSerienStreamProvider" name="test_get_latest_updates" time="1.482" /><testcase classname="tests.providers.test_providers.TestSerienStreamProvider" name="test_get_detail" time="0.799" /><testcase classname="tests.providers.test_providers.TestSerienStreamProvider" name="test_get_video_list" time="7.063" /><testcase classname="tests.providers.test_providers.TestProviderContextManager" name="test_aniworld_context_manager" time="0.016"><failure message="AttributeError: 'AniWorldProvider' object has no attribute '_client'. Did you mean: 'client'?">self = &lt;tests.providers.test_providers.TestProviderContextManager object at 0x000001135AF1EC10&gt;
+
+    @pytest.mark.asyncio
+    async def test_aniworld_context_manager(self):
+        """Test AniWorld provider context manager."""
+        provider = AniWorldProvider()
+    
+        # Should work with async context manager
+        async with provider:
+&gt;           assert provider._client is not None
+                   ^^^^^^^^^^^^^^^^
+E           AttributeError: 'AniWorldProvider' object has no attribute '_client'. Did you mean: 'client'?
+
+tests\providers\test_providers.py:273: AttributeError</failure></testcase><testcase classname="tests.providers.test_providers.TestProviderContextManager" name="test_serienstream_context_manager" time="0.016"><failure message="AttributeError: 'SerienStreamProvider' object has no attribute '_client'. Did you mean: 'client'?">self = &lt;tests.providers.test_providers.TestProviderContextManager object at 0x000001135AF1ED50&gt;
+
+    @pytest.mark.asyncio
+    async def test_serienstream_context_manager(self):
+        """Test SerienStream provider context manager."""
+        provider = SerienStreamProvider()
+    
+        async with provider:
+&gt;           assert provider._client is not None
+                   ^^^^^^^^^^^^^^^^
+E           AttributeError: 'SerienStreamProvider' object has no attribute '_client'. Did you mean: 'client'?
+
+tests\providers\test_providers.py:284: AttributeError</failure></testcase><testcase classname="tests.providers.test_providers.TestSearchResultStructure" name="test_aniworld_search_result_has_media_info" time="0.500" /><testcase classname="tests.providers.test_providers.TestSearchResultStructure" name="test_serienstream_search_result_has_media_info" time="1.015" /><testcase classname="tests.providers.test_providers.TestEpisodeParsing" name="test_aniworld_episode_parsing" time="0.016"><failure message="AttributeError: 'str' object has no attribute 'episodes'">self = &lt;tests.providers.test_providers.TestEpisodeParsing object at 0x000001135AF1F110&gt;
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_aniworld_episode_parsing(self):
+        """Test that AniWorld correctly parses episode data."""
+        provider = AniWorldProvider()
+        url = "https://aniworld.to/anime/stream/one-punch-man"
+    
+        async with provider:
+            result = await provider.get_detail(url, episodes=True)
+    
+        # Find season 1 episodes
+&gt;       season_1_eps = [ep for ep in result.episodes if ep.season == 1]
+                                     ^^^^^^^^^^^^^^^
+E       AttributeError: 'str' object has no attribute 'episodes'
+
+tests\providers\test_providers.py:336: AttributeError</failure></testcase><testcase classname="tests.providers.test_providers.TestEpisodeParsing" name="test_serienstream_episode_parsing" time="0.016"><failure message="AttributeError: 'str' object has no attribute 'episodes'">self = &lt;tests.providers.test_providers.TestEpisodeParsing object at 0x000001135AF1F250&gt;
+
+    @pytest.mark.asyncio
+    @pytest.mark.integration
+    @pytest.mark.slow
+    async def test_serienstream_episode_parsing(self):
+        """Test that SerienStream correctly parses episode data."""
+        provider = SerienStreamProvider()
+        url = "https://serienstream.to/serie/stream/the-witcher"
+    
+        async with provider:
+            result = await provider.get_detail(url, episodes=True)
+    
+&gt;       season_1_eps = [ep for ep in result.episodes if ep.season == 1]
+                                     ^^^^^^^^^^^^^^^
+E       AttributeError: 'str' object has no attribute 'episodes'
+
+tests\providers\test_providers.py:354: AttributeError</failure></testcase><testcase classname="tests.providers.test_providers.TestLanguageHandling" name="test_aniworld_language_filter" time="0.894" /><testcase classname="tests.providers.test_providers.TestLanguageHandling" name="test_serienstream_language_filter" time="0.802" /></testsuite></testsuites>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TestNG Suite" tests="5" failures="1" errors="0" skipped="1" time="3.456">
+  <testsuite name="com.example.UserServiceTest" tests="3" failures="1" errors="0" skipped="0" time="2.234" timestamp="2024-01-15T10:00:00">
+    <testcase classname="com.example.UserServiceTest" name="testCreateUser" time="0.456">
+    </testcase>
+    <testcase classname="com.example.UserServiceTest" name="testUpdateUser" time="0.678">
+    </testcase>
+    <testcase classname="com.example.UserServiceTest" name="testDeleteUser" time="1.100">
+      <failure message="Expected no exception but got: DataIntegrityViolationException" type="org.testng.AssertJUnit">
+org.testng.AssertJUnit: Expected no exception but got: DataIntegrityViolationException
+  at com.example.UserServiceTest.testDeleteUser(UserServiceTest.java:89)
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="com.example.PaymentServiceTest" tests="2" failures="0" errors="0" skipped="1" time="1.222" timestamp="2024-01-15T10:00:03">
+    <testcase classname="com.example.PaymentServiceTest" name="testProcessPayment" time="1.100">
+    </testcase>
+    <testcase classname="com.example.PaymentServiceTest" name="testRefundPayment" time="0.0">
+      <skipped message="Payment gateway sandbox not available"/>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+	<testsuite
+			name="example"
+			errors="2"
+			failures="3"
+			skipped="6"
+			tests="18"
+			time="0.035"
+			timestamp="2023-12-19T18:56:43.325550"
+			hostname="MacBook-Pro-whenessel.local">
+		<testcase classname="tests.example.test_example" name="test_ok" file="tests/example/test_example.py" line="9" time="0.000" />
+		<testcase classname="tests.example.test_example" name="test_fail" file="tests/example/test_example.py" line="13" time="0.000">
+			<failure message="assert 0">def test_fail():
+&gt;       assert 0
+E       assert 0
+
+tests/example/test_example.py:15: AssertionError</failure>
+		</testcase>
+		<testcase
+				classname="tests.example.test_example"
+				name="test_error"
+				file="tests/example/test_example.py"
+				line="17"
+				time="0.000">
+			<error message="failed on setup with &quot;assert 0&quot;">@pytest.fixture
+    def error_fixture():
+&gt;       assert 0
+E       assert 0
+
+tests/example/test_example.py:7: AssertionError</error>
+		</testcase>
+		<testcase classname="tests.example.test_example" name="test_skip" file="tests/example/test_example.py" line="21" time="0.000">
+			<skipped type="pytest.skip" message="skipping this test">/Users/whenessel/Development/PycharmProjects/appsurify-testbrain-cli/tests/example/test_example.py:23: skipping this test</skipped>
+		</testcase>
+		<testcase classname="tests.example.test_example" name="test_xfail" file="tests/example/test_example.py" line="25" time="0.000">
+			<skipped type="pytest.xfail" message="xfailing this test" />
+		</testcase>
+		<testcase classname="tests.example.test_example" name="test_xpass" file="tests/example/test_example.py" line="29" time="0.000" />
+		<testcase classname="tests.example.test_example.TestExample" name="test_example_ok" file="tests/example/test_example.py" line="39" time="0.000" />
+		<testcase classname="tests.example.test_example.TestExample" name="test_example_fail" file="tests/example/test_example.py" line="42" time="0.000">
+			<failure message="assert 0">self = &lt;test_example.TestExample object at 0x1068a7260&gt;
+
+    def test_example_fail(self):
+&gt;       assert 0
+E       assert 0
+
+tests/example/test_example.py:44: AssertionError</failure>
+		</testcase>
+		<testcase classname="tests.example.test_example.TestExample" name="test_example_error" file="tests/example/test_example.py" line="45" time="0.000">
+			<error message="failed on setup with &quot;assert 0&quot;">@pytest.fixture
+    def error_fixture():
+&gt;       assert 0
+E       assert 0
+
+tests/example/test_example.py:7: AssertionError</error>
+		</testcase>
+		<testcase classname="tests.example.test_example.TestExample" name="test_example_skip" file="tests/example/test_example.py" line="48" time="0.000">
+			<skipped type="pytest.skip" message="skipping this test">/Users/whenessel/Development/PycharmProjects/appsurify-testbrain-cli/tests/example/test_example.py:50: skipping this test</skipped>
+		</testcase>
+		<testcase classname="tests.example.test_example.TestExample" name="test_example_xfail" file="tests/example/test_example.py" line="51" time="0.000">
+			<skipped type="pytest.xfail" message="xfailing this test" />
+		</testcase>
+		<testcase classname="tests.example.test_example.TestExample" name="test_example_xpass" file="tests/example/test_example.py" line="54" time="0.000" />
+		<testcase classname="tests.example.test_example.TestUnitExample" name="test_unit_example_error" file="tests/example/test_example.py" line="70" time="0.000" />
+		<testcase classname="tests.example.test_example.TestUnitExample" name="test_unit_example_fail" file="tests/example/test_example.py" line="67" time="0.000">
+			<failure message="assert 0">self = &lt;test_example.TestUnitExample testMethod=test_unit_example_fail&gt;
+
+    def test_unit_example_fail(self):
+&gt;       assert 0
+E       assert 0
+
+tests/example/test_example.py:69: AssertionError</failure>
+		</testcase>
+		<testcase classname="tests.example.test_example.TestUnitExample" name="test_unit_example_ok" file="tests/example/test_example.py" line="64" time="0.000" />
+		<testcase classname="tests.example.test_example.TestUnitExample" name="test_unit_example_skip" file="tests/example/test_example.py" line="73" time="0.000">
+			<skipped type="pytest.skip" message="skipping this test">/Users/whenessel/Development/PycharmProjects/appsurify-testbrain-cli/tests/example/test_example.py:75: skipping this test</skipped>
+		</testcase>
+		<testcase classname="tests.example.test_example.TestUnitExample" name="test_unit_example_xfail" file="tests/example/test_example.py" line="76" time="0.000">
+			<skipped type="pytest.xfail" message="xfailing this test" />
+		</testcase>
+		<testcase classname="tests.example.test_example.TestUnitExample" name="test_unit_example_xpass" file="tests/example/test_example.py" line="79" time="0.000" />
+	</testsuite>
+</testsuites>

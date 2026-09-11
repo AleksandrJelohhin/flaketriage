@@ -1,0 +1,34 @@
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="59.151498">
+<testsuite name="Record1.spec.js" timestamp="2025-05-07T15:12:12.613Z" hostname="chromium" tests="2" failures="1" skipped="0" time="57.004" errors="0">
+<testcase name="TestA" classname="Record1.spec.js" time="26.828">
+</testcase>
+<testcase name="TestB" classname="Record1.spec.js" time="30.176">
+<failure message="Record1.spec.js:12:5 TestB" type="FAILURE">
+<![CDATA[  [chromium] › Record1.spec.js:12:5 › TestB ────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('span').filter({ hasText: 'manda userjjjjjjj' })
+
+
+      15 |   await page.getByRole('textbox', { name: 'Password' }).fill('admin123');
+      16 |   await page.getByRole('button', { name: 'Login' }).click();
+    > 17 |   await page.locator('span').filter({ hasText: 'manda userjjjjjjj' }).click();
+         |                                                                       ^
+      18 |   await page.getByRole('menuitem', { name: 'Logout' }).click();
+      19 | });
+        at D:\VSC\PlayWright_Automation\tests\Record1.spec.js:17:71
+
+    Error Context: ..\test-results\Record1-TestB-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Record1-TestB-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

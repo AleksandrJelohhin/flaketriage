@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="20.08" tests="51" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.1+12-LTS-39"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.1\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\workspace\LMSAPIAutomation"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\workspace\LMSAPIAutomation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17.0.1+12-LTS-39"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\shent\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf17406797332243711460.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\app\shent\product\21c\dbhomeXE\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Softwares\apache-maven-3.8.4\bin;C:\Program Files\Java\jdk-17.0.1\bin;C:\Softwares\apache-maven-3.8.4\bin;C:\Softwares\allure-commandline-2.14.0\allure-2.14.0\bin;C:\Program Files\Git\cmd;C:\Users\shent\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\shent"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="shent"/>
+    <property name="java.class.path" value="C:\Users\shent\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.18.1.20211011-2139\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.1"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.1"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\workspace\LMSAPIAutomation\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="getRequestPositive" classname="lmsapiautomation.LMSGet" time="1.545"/>
+  <testcase name="getRequestPositive" classname="lmsapiautomation.LMSGet" time="0.463"/>
+  <testcase name="getRequestPositive" classname="lmsapiautomation.LMSGet" time="0.484"/>
+  <testcase name="getRequestPositive" classname="lmsapiautomation.LMSGet" time="0.479"/>
+  <testcase name="getRequestNegative" classname="lmsapiautomation.LMSGet" time="0.381"/>
+  <testcase name="getRequestNegative" classname="lmsapiautomation.LMSGet" time="0.551"/>
+  <testcase name="getRequestNegative" classname="lmsapiautomation.LMSGet" time="0.348"/>
+  <testcase name="postProgramPositiveCases" classname="lmsapiautomation.LMSPost" time="0.771"/>
+  <testcase name="postProgramPositiveCases" classname="lmsapiautomation.LMSPost" time="0.474"/>
+  <testcase name="postProgramPositiveCases" classname="lmsapiautomation.LMSPost" time="0.427"/>
+  <testcase name="postProgramPositiveCases" classname="lmsapiautomation.LMSPost" time="0.424"/>
+  <testcase name="postProgramPositiveCases" classname="lmsapiautomation.LMSPost" time="0.428"/>
+  <testcase name="postProgramPositiveCases" classname="lmsapiautomation.LMSPost" time="0.414"/>
+  <testcase name="postProgramNegativeCases" classname="lmsapiautomation.LMSPost" time="0.385"/>
+  <testcase name="postProgramNegativeCases" classname="lmsapiautomation.LMSPost" time="0.446"/>
+  <testcase name="postProgramNegativeCases" classname="lmsapiautomation.LMSPost" time="0.467"/>
+  <testcase name="postProgramNegativeCases" classname="lmsapiautomation.LMSPost" time="0.414"/>
+  <testcase name="putPositiveCases" classname="lmsapiautomation.LMSPut" time="0.62"/>
+  <testcase name="putPositiveCases" classname="lmsapiautomation.LMSPut" time="0.448"/>
+  <testcase name="putPositiveCases" classname="lmsapiautomation.LMSPut" time="0.489"/>
+  <testcase name="putPositiveCases" classname="lmsapiautomation.LMSPut" time="0.444"/>
+  <testcase name="putPositiveCases" classname="lmsapiautomation.LMSPut" time="0.475"/>
+  <testcase name="putPositiveCases" classname="lmsapiautomation.LMSPut" time="0.448"/>
+  <testcase name="putPositiveCases" classname="lmsapiautomation.LMSPut" time="0.43"/>
+  <testcase name="putNegativeCases" classname="lmsapiautomation.LMSPut" time="0.338"/>
+  <testcase name="putNegativeCases" classname="lmsapiautomation.LMSPut" time="0.371"/>
+  <testcase name="deletePositiveCases" classname="lmsapiautomation.LMSDelete" time="0.392">
+    <failure message="expected [8563] but found [500]" type="java.lang.AssertionError">java.lang.AssertionError: expected [8563] but found [500]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at lmsapiautomation.LMSDelete.deletePositiveCases(LMSDelete.java:28)
+</failure>
+    <system-out>testCaseName: Delete Existing ProgramId
+Response :{"timestamp":"2022-02-22T17:17:36.891+00:00","status":500,"error":"Internal Server Error","path":"/programs/1"}
+</system-out>
+  </testcase>
+  <testcase name="deleteProgramNegativeCases" classname="lmsapiautomation.LMSDelete" time="0.379"/>
+  <testcase name="deleteProgramNegativeCases" classname="lmsapiautomation.LMSDelete" time="0.392"/>
+  <testcase name="deleteProgramNegativeCases" classname="lmsapiautomation.LMSDelete" time="0.446"/>
+  <testcase name="validateSchema" classname="lmsapiautomation.LMSSchemaValidation" time="0.461"/>
+  <testcase name="getRequestPositive" classname="jobsapiautomation.JobsGet" time="0.214"/>
+  <testcase name="getRequestNegative" classname="jobsapiautomation.JobsGet" time="0.232"/>
+  <testcase name="postProgramPositiveCases" classname="jobsapiautomation.JobsPost" time="0.273"/>
+  <testcase name="postProgramPositiveCases" classname="jobsapiautomation.JobsPost" time="0.294"/>
+  <testcase name="postProgramPositiveCases" classname="jobsapiautomation.JobsPost" time="0.272"/>
+  <testcase name="postProgramNegativeCases" classname="jobsapiautomation.JobsPost" time="0.207"/>
+  <testcase name="postProgramNegativeCases" classname="jobsapiautomation.JobsPost" time="0.258"/>
+  <testcase name="postProgramNegativeCases" classname="jobsapiautomation.JobsPost" time="0.252"/>
+  <testcase name="postProgramNegativeCases" classname="jobsapiautomation.JobsPost" time="0.259"/>
+  <testcase name="postProgramNegativeCases" classname="jobsapiautomation.JobsPost" time="0.262"/>
+  <testcase name="postProgramNegativeCases" classname="jobsapiautomation.JobsPost" time="0.272"/>
+  <testcase name="postProgramNegativeCases" classname="jobsapiautomation.JobsPost" time="0.274"/>
+  <testcase name="putPositiveCases" classname="jobsapiautomation.JobsPut" time="0.218"/>
+  <testcase name="putPositiveCases" classname="jobsapiautomation.JobsPut" time="0.256"/>
+  <testcase name="putNegativeCases" classname="jobsapiautomation.JobsPut" time="0.255"/>
+  <testcase name="putNegativeCases" classname="jobsapiautomation.JobsPut" time="0.284"/>
+  <testcase name="deletePositiveCases" classname="jobsapiautomation.JobsDelete" time="0.234">
+    <failure message="&#10;Expected: a value equal to &lt;200&gt;&#10;     got: &lt;404&gt;&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+Expected: a value equal to <200>
+     got: <404>
+
+	at org.junit.Assert.assertThat(Assert.java:780)
+	at org.junit.Assert.assertThat(Assert.java:738)
+	at jobsapiautomation.JobsDelete.deletePositiveCases(JobsDelete.java:39)
+]]></failure>
+    <system-out>testCaseName: Delete existing JobId
+Response :{"message": "'1' Job  not found."}
+
+</system-out>
+  </testcase>
+  <testcase name="deletePositiveCases" classname="jobsapiautomation.JobsDelete" time="0.248">
+    <failure message="&#10;Expected: a value equal to &lt;200&gt;&#10;     got: &lt;404&gt;&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+Expected: a value equal to <200>
+     got: <404>
+
+	at org.junit.Assert.assertThat(Assert.java:780)
+	at org.junit.Assert.assertThat(Assert.java:738)
+	at jobsapiautomation.JobsDelete.deletePositiveCases(JobsDelete.java:39)
+]]></failure>
+    <system-out>testCaseName: Delete existing JobId
+Response :{"message": "'2' Job  not found."}
+
+</system-out>
+  </testcase>
+  <testcase name="deleteProgramNegativeCases" classname="jobsapiautomation.JobsDelete" time="0.208"/>
+  <testcase name="deleteProgramNegativeCases" classname="jobsapiautomation.JobsDelete" time="0.274"/>
+</testsuite>

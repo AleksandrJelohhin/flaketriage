@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="f1tenth-desktop" name="pytest" skipped="0" tests="3" time="11.540" timestamp="2026-07-27T16:56:31.218781"><testcase classname="hardware_manager.test.test_copyright" file="test/test_copyright.py" line="18" name="test_copyright" time="0.703"><failure message="AssertionError: Found errors
+assert 1 == 0">test/test_copyright.py:23: in test_copyright
+    assert rc == 0, &apos;Found errors&apos;
+E   AssertionError: Found errors
+E   assert 1 == 0</failure><system-err>hardware_manager/__init__.py: copyright=OpenDrive Team (2026), license=&lt;unknown&gt;
+hardware_manager/camera_detector.py: copyright=OpenDrive Team (2026), license=&lt;unknown&gt;
+hardware_manager/device_scanner.py: copyright=OpenDrive Team (2026), license=&lt;unknown&gt;
+hardware_manager/diagnostics_publisher.py: copyright=OpenDrive Team (2026), license=&lt;unknown&gt;
+hardware_manager/hardware_registry.py: copyright=OpenDrive Team (2026), license=&lt;unknown&gt;
+hardware_manager/lidar_detector.py: copyright=OpenDrive Team (2026), license=&lt;unknown&gt;
+hardware_manager/serial_detector.py: copyright=OpenDrive Team (2026), license=&lt;unknown&gt;
+hardware_manager/utils.py: copyright=OpenDrive Team (2026), license=&lt;unknown&gt;
+launch/hardware_manager.launch.py: copyright=OpenDrive Team (2026), license=&lt;unknown&gt;
+9 errors, checked 12 files
+</system-err></testcase><testcase classname="hardware_manager.test.test_flake8" file="test/test_flake8.py" line="18" name="test_flake8" time="7.574"><system-out>
+13 files checked
+No problems found
+
+Checked files:
+
+* ./setup.py
+* ./launch/hardware_manager.launch.py
+* ./hardware_manager/hardware_registry.py
+* ./hardware_manager/camera_detector.py
+* ./hardware_manager/__init__.py
+* ./hardware_manager/serial_detector.py
+* ./hardware_manager/device_scanner.py
+* ./hardware_manager/diagnostics_publisher.py
+* ./hardware_manager/utils.py
+* ./hardware_manager/lidar_detector.py
+* ./test/test_copyright.py
+* ./test/test_pep257.py
+* ./test/test_flake8.py
+</system-out></testcase><testcase classname="hardware_manager.test.test_pep257" file="test/test_pep257.py" line="18" name="test_pep257" time="2.197"><system-out>checking ./hardware_manager/__init__.py
+checking ./hardware_manager/camera_detector.py
+checking ./hardware_manager/device_scanner.py
+checking ./hardware_manager/diagnostics_publisher.py
+checking ./hardware_manager/hardware_registry.py
+checking ./hardware_manager/lidar_detector.py
+checking ./hardware_manager/serial_detector.py
+checking ./hardware_manager/utils.py
+checking ./launch/hardware_manager.launch.py
+checking ./setup.py
+checking ./test/test_copyright.py
+checking ./test/test_flake8.py
+checking ./test/test_pep257.py
+checking test/test_copyright.py
+checking test/test_flake8.py
+checking test/test_pep257.py
+No problems found
+</system-out></testcase></testsuite></testsuites>

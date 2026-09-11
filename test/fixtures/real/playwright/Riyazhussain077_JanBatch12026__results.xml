@@ -1,0 +1,39 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="8.974347999999999">
+<testsuite name="report.spec.js" timestamp="2026-01-28T08:16:06.904Z" hostname="chromium" tests="3" failures="1" skipped="0" time="7.442" errors="0">
+<testcase name="Amazon" classname="report.spec.js" time="0.683">
+</testcase>
+<testcase name="Flipkart" classname="report.spec.js" time="1.514">
+</testcase>
+<testcase name="Meesho" classname="report.spec.js" time="5.245">
+<failure message="report.spec.js:15:1 Meesho" type="FAILURE">
+<![CDATA[  [chromium] › report.spec.js:15:1 › Meesho ────────────────────────────────────────────────────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected: "Online Shopping Site for Fashion, Electronics, Home & More | Meesho"
+    Received: "Access Denied"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        9 × unexpected value "Access Denied"
+
+
+      16 |
+      17 |     await page.goto('https://www.meesho.com/');
+    > 18 |     await expect(page).toHaveTitle('Online Shopping Site for Fashion, Electronics, Home & More | Meesho');
+         |                        ^
+      19 | })
+        at D:\Users\Riyaz Hussain N\Desktop\SFT Playwright Jan 2026 Batch 1\tests\report.spec.js:18:24
+
+    Error Context: ..\test-results\report-Meesho-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\report-Meesho-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

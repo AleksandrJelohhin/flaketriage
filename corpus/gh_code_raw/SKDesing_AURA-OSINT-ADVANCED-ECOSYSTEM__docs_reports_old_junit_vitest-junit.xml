@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="30" failures="3" errors="0" time="0.053940553">
+    <testsuite name="ai/router/router.test.ts" timestamp="2025-10-10T15:09:47.463Z" hostname="soufiane-HP-Laptop-15s-eq1xxx" tests="8" failures="0" errors="0" skipped="0" time="0.009186583">
+        <testcase classname="ai/router/router.test.ts" name="AlgorithmRouter &gt; should route to ner for Entity extraction with multiple entities" time="0.002968326">
+        </testcase>
+        <testcase classname="ai/router/router.test.ts" name="AlgorithmRouter &gt; should route to forensic for Forensic timeline analysis" time="0.000505523">
+        </testcase>
+        <testcase classname="ai/router/router.test.ts" name="AlgorithmRouter &gt; should route to nlp for NLP classification for toxicity" time="0.000269035">
+        </testcase>
+        <testcase classname="ai/router/router.test.ts" name="AlgorithmRouter &gt; should route to rag+llm for RAG retrieval query" time="0.000230062">
+        </testcase>
+        <testcase classname="ai/router/router.test.ts" name="AlgorithmRouter &gt; should route to llm for General knowledge query" time="0.001039333">
+        </testcase>
+        <testcase classname="ai/router/router.test.ts" name="AlgorithmRouter &gt; should detect harassment with high lexical score" time="0.00112517">
+        </testcase>
+        <testcase classname="ai/router/router.test.ts" name="AlgorithmRouter &gt; should extract entities correctly" time="0.001252075">
+        </testcase>
+        <testcase classname="ai/router/router.test.ts" name="AlgorithmRouter &gt; should estimate token savings" time="0.00024012">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/roadmap-integration.test.js" timestamp="2025-10-10T15:09:47.465Z" hostname="soufiane-HP-Laptop-15s-eq1xxx" tests="12" failures="2" errors="0" skipped="0" time="0.02864106">
+        <testcase classname="tests/integration/roadmap-integration.test.js" name="AURA Roadmap Integration Tests &gt; Configuration System &gt; should load unified configuration" time="0.001871023">
+        </testcase>
+        <testcase classname="tests/integration/roadmap-integration.test.js" name="AURA Roadmap Integration Tests &gt; Configuration System &gt; should validate configuration" time="0.000325748">
+        </testcase>
+        <testcase classname="tests/integration/roadmap-integration.test.js" name="AURA Roadmap Integration Tests &gt; Domain-Driven Design Architecture &gt; should create incident entity" time="0.000541074">
+        </testcase>
+        <testcase classname="tests/integration/roadmap-integration.test.js" name="AURA Roadmap Integration Tests &gt; Domain-Driven Design Architecture &gt; should handle business rules" time="0.000179007">
+        </testcase>
+        <testcase classname="tests/integration/roadmap-integration.test.js" name="AURA Roadmap Integration Tests &gt; Harassment Detection Algorithm &gt; should detect harassment in messages" time="0.000449649">
+        </testcase>
+        <testcase classname="tests/integration/roadmap-integration.test.js" name="AURA Roadmap Integration Tests &gt; Harassment Detection Algorithm &gt; should provide detailed analysis" time="0.0001202">
+        </testcase>
+        <testcase classname="tests/integration/roadmap-integration.test.js" name="AURA Roadmap Integration Tests &gt; Forensic Timeline Analyzer &gt; should analyze incident timeline" time="0.000438823">
+        </testcase>
+        <testcase classname="tests/integration/roadmap-integration.test.js" name="AURA Roadmap Integration Tests &gt; Forensic Timeline Analyzer &gt; should detect coordinated attacks" time="0.000185084">
+        </testcase>
+        <testcase classname="tests/integration/roadmap-integration.test.js" name="AURA Roadmap Integration Tests &gt; Anti-Harassment Engine &gt; should initialize successfully" time="0.000535207">
+        </testcase>
+        <testcase classname="tests/integration/roadmap-integration.test.js" name="AURA Roadmap Integration Tests &gt; Anti-Harassment Engine &gt; should analyze messages and create incidents" time="0.020488082">
+            <failure message="The expression evaluated to a falsy value:
+
+  assert(result.isHarassment === true)
+" type="AssertionError">
+AssertionError: The expression evaluated to a falsy value:
+
+  assert(result.isHarassment === true)
+
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ tests/integration/roadmap-integration.test.js:196:7
+            </failure>
+        </testcase>
+        <testcase classname="tests/integration/roadmap-integration.test.js" name="AURA Roadmap Integration Tests &gt; Anti-Harassment Engine &gt; should analyze session data" time="0.000488342">
+        </testcase>
+        <testcase classname="tests/integration/roadmap-integration.test.js" name="AURA Roadmap Integration Tests &gt; Integration Flow &gt; should handle complete harassment detection flow" time="0.001142142">
+            <failure message="The expression evaluated to a falsy value:
+
+  assert(result.isHarassment === true)
+" type="AssertionError">
+AssertionError: The expression evaluated to a falsy value:
+
+  assert(result.isHarassment === true)
+
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ tests/integration/roadmap-integration.test.js:270:7
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/unit/backend.test.ts" timestamp="2025-10-10T15:09:47.468Z" hostname="soufiane-HP-Laptop-15s-eq1xxx" tests="2" failures="0" errors="0" skipped="0" time="0.003991525">
+        <testcase classname="tests/unit/backend.test.ts" name="Backend OSINT API &gt; should validate job schema" time="0.001477597">
+        </testcase>
+        <testcase classname="tests/unit/backend.test.ts" name="Backend OSINT API &gt; should generate unique job IDs" time="0.001026203">
+        </testcase>
+    </testsuite>
+    <testsuite name="ai/gateway/src/preintel/preintel.test.ts" timestamp="2025-10-10T15:09:47.469Z" hostname="soufiane-HP-Laptop-15s-eq1xxx" tests="7" failures="0" errors="0" skipped="0" time="0.012121385">
+        <testcase classname="ai/gateway/src/preintel/preintel.test.ts" name="PreIntelPipeline &gt; run &gt; should process text and return metadata" time="0.005209097">
+        </testcase>
+        <testcase classname="ai/gateway/src/preintel/preintel.test.ts" name="PreIntelPipeline &gt; run &gt; should detect cache hits on repeated inputs" time="0.000504196">
+        </testcase>
+        <testcase classname="ai/gateway/src/preintel/preintel.test.ts" name="PreIntelPipeline &gt; run &gt; should handle dry run mode" time="0.000463059">
+        </testcase>
+        <testcase classname="ai/gateway/src/preintel/preintel.test.ts" name="PreIntelPipeline &gt; run &gt; should apply pruning when enabled" time="0.001395322">
+        </testcase>
+        <testcase classname="ai/gateway/src/preintel/preintel.test.ts" name="PreIntelPipeline &gt; run &gt; should detect language correctly" time="0.001137392">
+        </testcase>
+        <testcase classname="ai/gateway/src/preintel/preintel.test.ts" name="PreIntelPipeline &gt; cache management &gt; should clear cache" time="0.000906003">
+        </testcase>
+        <testcase classname="ai/gateway/src/preintel/preintel.test.ts" name="PreIntelPipeline &gt; cache management &gt; should provide cache statistics" time="0.000641787">
+        </testcase>
+    </testsuite>
+    <testsuite name="ai/gateway/src/router/decision-engine.test.ts" timestamp="2025-10-10T15:09:47.470Z" hostname="soufiane-HP-Laptop-15s-eq1xxx" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="ai/gateway/src/router/decision-engine.test.ts" name="ai/gateway/src/router/decision-engine.test.ts" time="0">
+            <failure message="
+Something went wrong installing the &quot;sharp&quot; module
+
+Cannot find module &apos;../build/Release/sharp-linux-x64.node&apos;
+Require stack:
+- /home/soufiane/AURA-OSINT-ADVANCED-ECOSYSTEM/node_modules/.pnpm/sharp@0.32.6/node_modules/sharp/lib/sharp.js
+- /home/soufiane/AURA-OSINT-ADVANCED-ECOSYSTEM/node_modules/.pnpm/sharp@0.32.6/node_modules/sharp/lib/constructor.js
+- /home/soufiane/AURA-OSINT-ADVANCED-ECOSYSTEM/node_modules/.pnpm/sharp@0.32.6/node_modules/sharp/lib/index.js
+
+Possible solutions:
+- Install with verbose logging and look for errors: &quot;npm install --ignore-scripts=false --foreground-scripts --verbose sharp&quot;
+- Install for the current linux-x64 runtime: &quot;npm install --platform=linux --arch=x64 sharp&quot;
+- Consult the installation documentation: https://sharp.pixelplumbing.com/install" type="Error">
+Error: 
+Something went wrong installing the &quot;sharp&quot; module
+
+Cannot find module &apos;../build/Release/sharp-linux-x64.node&apos;
+Require stack:
+- /home/soufiane/AURA-OSINT-ADVANCED-ECOSYSTEM/node_modules/.pnpm/sharp@0.32.6/node_modules/sharp/lib/sharp.js
+- /home/soufiane/AURA-OSINT-ADVANCED-ECOSYSTEM/node_modules/.pnpm/sharp@0.32.6/node_modules/sharp/lib/constructor.js
+- /home/soufiane/AURA-OSINT-ADVANCED-ECOSYSTEM/node_modules/.pnpm/sharp@0.32.6/node_modules/sharp/lib/index.js
+
+Possible solutions:
+- Install with verbose logging and look for errors: &quot;npm install --ignore-scripts=false --foreground-scripts --verbose sharp&quot;
+- Install for the current linux-x64 runtime: &quot;npm install --platform=linux --arch=x64 sharp&quot;
+- Consult the installation documentation: https://sharp.pixelplumbing.com/install
+ ❯ Object.&lt;anonymous&gt; node_modules/.pnpm/sharp@0.32.6/node_modules/sharp/lib/sharp.js:37:9
+ ❯ Object.&lt;anonymous&gt; node_modules/.pnpm/sharp@0.32.6/node_modules/sharp/lib/constructor.js:11:1
+            </failure>
+        </testcase>
+    </testsuite>
+</testsuites>

@@ -1,0 +1,1671 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="207" failures="29" errors="0" time="49.675">
+    <testsuite name="tests/integration/assembly.integration.test.ts" timestamp="2026-06-09T21:35:54.600Z" hostname="PaulsLaptop" tests="5" failures="1" errors="0" skipped="0" time="0.032">
+        <testcase classname="tests/integration/assembly.integration.test.ts" name="Assembly Operations Integration Tests (Feature 006 US6) &gt; creates assembly and adds instances with locations" time="0">
+        </testcase>
+        <testcase classname="tests/integration/assembly.integration.test.ts" name="Assembly Operations Integration Tests (Feature 006 US6) &gt; performs mate rigid operation on planar faces" time="0">
+        </testcase>
+        <testcase classname="tests/integration/assembly.integration.test.ts" name="Assembly Operations Integration Tests (Feature 006 US6) &gt; rolls back assembly changes on rollback" time="0">
+        </testcase>
+        <testcase classname="tests/integration/assembly.integration.test.ts" name="Assembly Operations Integration Tests (Feature 006 US6) &gt; throws TRANSACTION_REQUIRED for assembly document creation without tx" time="0">
+        </testcase>
+        <testcase classname="tests/integration/assembly.integration.test.ts" name="Assembly Operations Integration Tests (Feature 006 US6)" time="0.03">
+            <failure message="connect ECONNREFUSED 127.0.0.1:3306" type="Error">
+Error: connect ECONNREFUSED 127.0.0.1:3306
+ ❯ tests/integration/assembly.integration.test.ts:27:29
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { errno: -4078, code: &apos;ECONNREFUSED&apos;, syscall: &apos;connect&apos;, address: &apos;127.0.0.1&apos;, port: 3306, fatal: true }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/booleans.integration.test.ts" timestamp="2026-06-09T21:35:54.619Z" hostname="PaulsLaptop" tests="6" failures="1" errors="0" skipped="0" time="0.029">
+        <testcase classname="tests/integration/booleans.integration.test.ts" name="Boolean Operations Integration Tests (Feature 006 US1) &gt; fuses overlapping solids and detects disjoint panels" time="0">
+        </testcase>
+        <testcase classname="tests/integration/booleans.integration.test.ts" name="Boolean Operations Integration Tests (Feature 006 US1) &gt; cuts body with keep_tools false/true" time="0">
+        </testcase>
+        <testcase classname="tests/integration/booleans.integration.test.ts" name="Boolean Operations Integration Tests (Feature 006 US1) &gt; intersects overlapping and disjoint shapes" time="0">
+        </testcase>
+        <testcase classname="tests/integration/booleans.integration.test.ts" name="Boolean Operations Integration Tests (Feature 006 US1) &gt; rolls back transaction after fuse, restoring original shapes" time="0">
+        </testcase>
+        <testcase classname="tests/integration/booleans.integration.test.ts" name="Boolean Operations Integration Tests (Feature 006 US1) &gt; performs semantic remapping end-to-end after fuse" time="0">
+        </testcase>
+        <testcase classname="tests/integration/booleans.integration.test.ts" name="Boolean Operations Integration Tests (Feature 006 US1)" time="0.027">
+            <failure message="connect ECONNREFUSED 127.0.0.1:3306" type="Error">
+Error: connect ECONNREFUSED 127.0.0.1:3306
+ ❯ tests/integration/booleans.integration.test.ts:28:29
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { errno: -4078, code: &apos;ECONNREFUSED&apos;, syscall: &apos;connect&apos;, address: &apos;127.0.0.1&apos;, port: 3306, fatal: true }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/build_shell_acute_fold.integration.test.ts" timestamp="2026-06-09T21:35:54.648Z" hostname="PaulsLaptop" tests="2" failures="0" errors="0" skipped="0" time="0.385">
+        <testcase classname="tests/integration/build_shell_acute_fold.integration.test.ts" name="buildShellFromFlatPattern: acute-angle refold (canonical) &gt; folds 90° → Panel B stands vertical (+Z)" time="0.142">
+            <system-out>
+[acute 90] x[0.0..100.0] z[0.0..98.0]
+
+            </system-out>
+        </testcase>
+        <testcase classname="tests/integration/build_shell_acute_fold.integration.test.ts" name="buildShellFromFlatPattern: acute-angle refold (canonical) &gt; folds 45° → Panel B leans (X and Z both ~69mm)" time="0.239">
+            <system-out>
+[acute 45] x[0.0..169.3] z[0.0..70.4]
+
+            </system-out>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/cube_box_workflow.functional.test.ts" timestamp="2026-06-09T21:35:54.651Z" hostname="PaulsLaptop" tests="13" failures="1" errors="0" skipped="0" time="0.245">
+        <testcase classname="tests/integration/cube_box_workflow.functional.test.ts" name="Cube Box Sheet Metal Workflow &gt; decomposes a 200 mm hollow cube into panels, adjusts geometry, merges into L-assemblies, and adds flanges" time="0.086">
+            <failure message="target.normal must be an object with numeric x, y, z">
+Unknown Error: target.normal must be an object with numeric x, y, z
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;GE_EXTEND_FAILED&apos;, recoverable: false, suggestedTool: undefined }
+            </failure>
+        </testcase>
+        <testcase classname="tests/integration/cube_box_workflow.functional.test.ts" name="Cube Box Sheet Metal Workflow &gt; check_boundary_compliance reports violations for an oversized panel" time="0.009">
+        </testcase>
+        <testcase classname="tests/integration/cube_box_workflow.functional.test.ts" name="Cube Box Sheet Metal Workflow &gt; offset_face rejects zero distance" time="0.006">
+        </testcase>
+        <testcase classname="tests/integration/cube_box_workflow.functional.test.ts" name="Cube Box Sheet Metal Workflow &gt; split_body_by_plane rejects missing cutting_plane" time="0.009">
+        </testcase>
+        <testcase classname="tests/integration/cube_box_workflow.functional.test.ts" name="Cube Box Sheet Metal Workflow &gt; compute_intersections rejects a single-part array" time="0.004">
+        </testcase>
+        <testcase classname="tests/integration/cube_box_workflow.functional.test.ts" name="Cube Box Sheet Metal Workflow &gt; merge_bodies_with_bend rejects zero bend radius" time="0.011">
+        </testcase>
+        <testcase classname="tests/integration/cube_box_workflow.functional.test.ts" name="Cube Box Sheet Metal Workflow &gt; add_flange rejects angle of 0" time="0.003">
+        </testcase>
+        <testcase classname="tests/integration/cube_box_workflow.functional.test.ts" name="Cube Box Sheet Metal Workflow &gt; split_body_by_bends decomposes a closed cube into 6 flat panels" time="0.021">
+        </testcase>
+        <testcase classname="tests/integration/cube_box_workflow.functional.test.ts" name="Cube Box Sheet Metal Workflow &gt; split_body_by_bends in surface mode extrudes panels by default_thickness_mm" time="0.026">
+        </testcase>
+        <testcase classname="tests/integration/cube_box_workflow.functional.test.ts" name="Cube Box Sheet Metal Workflow &gt; split_body_by_bends returns protrusions separately from panels" time="0.041">
+        </testcase>
+        <testcase classname="tests/integration/cube_box_workflow.functional.test.ts" name="Cube Box Sheet Metal Workflow &gt; split_body_by_bends with max_recursion_depth accumulates panels from all levels" time="0.005">
+        </testcase>
+        <testcase classname="tests/integration/cube_box_workflow.functional.test.ts" name="Cube Box Sheet Metal Workflow &gt; split_body_by_bends with max_recursion_depth=0 returns only first-pass panels" time="0.004">
+        </testcase>
+        <testcase classname="tests/integration/cube_box_workflow.functional.test.ts" name="Cube Box Sheet Metal Workflow &gt; split_body_by_bends rejects a negative angle_threshold_deg" time="0.012">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/direct_edits.integration.test.ts" timestamp="2026-06-09T21:35:54.664Z" hostname="PaulsLaptop" tests="7" failures="1" errors="0" skipped="0" time="0.059">
+        <testcase classname="tests/integration/direct_edits.integration.test.ts" name="Direct Edit Operations Integration Tests (Feature 006 US4) &gt; fillets and chamfers edges of a body" time="0">
+        </testcase>
+        <testcase classname="tests/integration/direct_edits.integration.test.ts" name="Direct Edit Operations Integration Tests (Feature 006 US4) &gt; throws GE_FILLET_TOO_LARGE for overly large fillet radius" time="0">
+        </testcase>
+        <testcase classname="tests/integration/direct_edits.integration.test.ts" name="Direct Edit Operations Integration Tests (Feature 006 US4) &gt; simplifies same domain topology" time="0">
+        </testcase>
+        <testcase classname="tests/integration/direct_edits.integration.test.ts" name="Direct Edit Operations Integration Tests (Feature 006 US4) &gt; heals advanced geometry" time="0">
+        </testcase>
+        <testcase classname="tests/integration/direct_edits.integration.test.ts" name="Direct Edit Operations Integration Tests (Feature 006 US4) &gt; offsets boundary of a solid" time="0">
+        </testcase>
+        <testcase classname="tests/integration/direct_edits.integration.test.ts" name="Direct Edit Operations Integration Tests (Feature 006 US4) &gt; deletes faces from a shell" time="0">
+        </testcase>
+        <testcase classname="tests/integration/direct_edits.integration.test.ts" name="Direct Edit Operations Integration Tests (Feature 006 US4)" time="0.058">
+            <failure message="connect ECONNREFUSED 127.0.0.1:3306" type="Error">
+Error: connect ECONNREFUSED 127.0.0.1:3306
+ ❯ tests/integration/direct_edits.integration.test.ts:28:29
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { errno: -4078, code: &apos;ECONNREFUSED&apos;, syscall: &apos;connect&apos;, address: &apos;127.0.0.1&apos;, port: 3306, fatal: true }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/dolt_smoke.integration.test.ts" timestamp="2026-06-09T21:35:54.676Z" hostname="PaulsLaptop" tests="3" failures="1" errors="0" skipped="0" time="0.035">
+        <testcase classname="tests/integration/dolt_smoke.integration.test.ts" name="Dolt smoke test &gt; inserts and reads back a semantic_entity row" time="0">
+        </testcase>
+        <testcase classname="tests/integration/dolt_smoke.integration.test.ts" name="Dolt smoke test &gt; migrations are idempotent — applying twice does not error" time="0">
+        </testcase>
+        <testcase classname="tests/integration/dolt_smoke.integration.test.ts" name="Dolt smoke test" time="0.033">
+            <failure message="connect ECONNREFUSED 127.0.0.1:3306" type="Error">
+Error: connect ECONNREFUSED 127.0.0.1:3306
+ ❯ tests/integration/dolt_smoke.integration.test.ts:25:29
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { errno: -4078, code: &apos;ECONNREFUSED&apos;, syscall: &apos;connect&apos;, address: &apos;127.0.0.1&apos;, port: 3306, fatal: true }
+            </failure>
+            <failure message="Cannot read properties of undefined (reading &apos;disconnect&apos;)" type="TypeError">
+TypeError: Cannot read properties of undefined (reading &apos;disconnect&apos;)
+ ❯ tests/integration/dolt_smoke.integration.test.ts:55:19
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/error_model.integration.test.ts" timestamp="2026-06-09T21:35:54.683Z" hostname="PaulsLaptop" tests="1" failures="0" errors="0" skipped="0" time="0.065">
+        <testcase classname="tests/integration/error_model.integration.test.ts" name="Error Model Compliance &gt; returns structured error output for invalid inputs" time="0.06">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/fuse_orientation_preserved.integration.test.ts" timestamp="2026-06-09T21:35:54.685Z" hostname="PaulsLaptop" tests="1" failures="1" errors="0" skipped="0" time="0.754">
+        <testcase classname="tests/integration/fuse_orientation_preserved.integration.test.ts" name="fuse_bodies: manufacturing plan + 3D placement &gt; builds the correct flat plan AND places the fused body where the panels are" time="0.75">
+            <failure message="{&quot;code&quot;:&quot;GE_SOLID_NOT_FOUND&quot;,&quot;message&quot;:&quot;Solid not found: 5b2176be-63b6-4fbc-912f-5d1fa7b1af8a&quot;,&quot;recoverable&quot;:false}">
+Unknown Error: {&quot;code&quot;:&quot;GE_SOLID_NOT_FOUND&quot;,&quot;message&quot;:&quot;Solid not found: 5b2176be-63b6-4fbc-912f-5d1fa7b1af8a&quot;,&quot;recoverable&quot;:false}
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;GE_SOLID_NOT_FOUND&apos;, recoverable: false, suggestedTool: undefined }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/fuse_shell_resolution.test.ts" timestamp="2026-06-09T21:35:54.687Z" hostname="PaulsLaptop" tests="4" failures="2" errors="0" skipped="0" time="12.848">
+        <testcase classname="tests/integration/fuse_shell_resolution.test.ts" name="Regression: fuse_bodies after translate_body &gt; should resolve shell IDs correctly when fusing translated graph-backed parts" time="12.463">
+            <failure message="{&quot;code&quot;:&quot;GE_SHELL_NOT_FOUND&quot;,&quot;message&quot;:&quot;Shell/solid not found: 27d1ed70-d804-47b7-be89-1557f1de8ef1&quot;,&quot;recoverable&quot;:false}">
+Unknown Error: {&quot;code&quot;:&quot;GE_SHELL_NOT_FOUND&quot;,&quot;message&quot;:&quot;Shell/solid not found: 27d1ed70-d804-47b7-be89-1557f1de8ef1&quot;,&quot;recoverable&quot;:false}
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;GE_SHELL_NOT_FOUND&apos;, recoverable: false, suggestedTool: undefined }
+            </failure>
+        </testcase>
+        <testcase classname="tests/integration/fuse_shell_resolution.test.ts" name="Regression: fuse_bodies after translate_body &gt; should handle multiple translated parts in fuse" time="0.115">
+            <failure message="{&quot;code&quot;:&quot;GE_SHELL_NOT_FOUND&quot;,&quot;message&quot;:&quot;Shell not found: 79f12eaf-2ace-4285-8a74-0c3a48d2d2df&quot;,&quot;recoverable&quot;:false}">
+Unknown Error: {&quot;code&quot;:&quot;GE_SHELL_NOT_FOUND&quot;,&quot;message&quot;:&quot;Shell not found: 79f12eaf-2ace-4285-8a74-0c3a48d2d2df&quot;,&quot;recoverable&quot;:false}
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;GE_SHELL_NOT_FOUND&apos;, recoverable: false, suggestedTool: undefined }
+            </failure>
+        </testcase>
+        <testcase classname="tests/integration/fuse_shell_resolution.test.ts" name="T016: cut_bodies GRAPH_INTEGRITY_ERROR guard (FR-005) &gt; rejects cut_bodies when blank is a graph-tracked panel" time="0.212">
+        </testcase>
+        <testcase classname="tests/integration/fuse_shell_resolution.test.ts" name="T016: cut_bodies GRAPH_INTEGRITY_ERROR guard (FR-005) &gt; allows cut_bodies when blank is not graph-tracked" time="0.055">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/fuse_unfold_graph_regression.test.ts" timestamp="2026-06-09T21:35:54.693Z" hostname="PaulsLaptop" tests="4" failures="2" errors="0" skipped="0" time="25.15">
+        <testcase classname="tests/integration/fuse_unfold_graph_regression.test.ts" name="T025: Graph-first fuse round-trip (SC-006, SC-007) &gt; fuses two graph-tracked panels and returns graphs_fused with a valid part_id" time="11.128">
+        </testcase>
+        <testcase classname="tests/integration/fuse_unfold_graph_regression.test.ts" name="Regression: fuse after moved graph parts &gt; should resolve shell IDs when fusing translated graph-backed parts" time="0.57">
+            <failure message="{&quot;code&quot;:&quot;GE_SHELL_NOT_FOUND&quot;,&quot;message&quot;:&quot;Shell/solid not found: 8328388d-01c8-4ce3-b949-f3125d20046c&quot;,&quot;recoverable&quot;:false}">
+Unknown Error: {&quot;code&quot;:&quot;GE_SHELL_NOT_FOUND&quot;,&quot;message&quot;:&quot;Shell/solid not found: 8328388d-01c8-4ce3-b949-f3125d20046c&quot;,&quot;recoverable&quot;:false}
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;GE_SHELL_NOT_FOUND&apos;, recoverable: false, suggestedTool: undefined }
+            </failure>
+        </testcase>
+        <testcase classname="tests/integration/fuse_unfold_graph_regression.test.ts" name="Regression: fuse after moved graph parts &gt; should preserve combined footprint when merging two perpendicular panels with a bend" time="3.334">
+            <failure message="{&quot;code&quot;:&quot;GE_SOLID_NOT_FOUND&quot;,&quot;message&quot;:&quot;Solid not found: c2e341e0-4c35-4a5d-a402-0cfd05e69f39&quot;,&quot;recoverable&quot;:false}">
+Unknown Error: {&quot;code&quot;:&quot;GE_SOLID_NOT_FOUND&quot;,&quot;message&quot;:&quot;Solid not found: c2e341e0-4c35-4a5d-a402-0cfd05e69f39&quot;,&quot;recoverable&quot;:false}
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;GE_SOLID_NOT_FOUND&apos;, recoverable: false, suggestedTool: undefined }
+            </failure>
+        </testcase>
+        <testcase classname="tests/integration/fuse_unfold_graph_regression.test.ts" name="Regression: fuse after moved graph parts &gt; should produce a non-rectangular flat shape when a smaller same-thickness panel is fused as a protrusion" time="10.115">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/graph-workflow.test.ts" timestamp="2026-06-09T21:35:54.704Z" hostname="PaulsLaptop" tests="6" failures="0" errors="0" skipped="0" time="0.043">
+        <testcase classname="tests/integration/graph-workflow.test.ts" name="DRC gate integration (T054) &gt; does not call mergeBodiesWithBend when DRC_BEND_RADIUS_VIOLATION fires" time="0.01">
+        </testcase>
+        <testcase classname="tests/integration/graph-workflow.test.ts" name="DRC gate integration (T054) &gt; calls mergeBodiesWithBend when DRC passes" time="0.007">
+        </testcase>
+        <testcase classname="tests/integration/graph-workflow.test.ts" name="Golden path: bootstrap → add_bend → query_graph (T065) &gt; adds a BendNode and BA is within expected tolerance" time="0.002">
+        </testcase>
+        <testcase classname="tests/integration/graph-workflow.test.ts" name="Performance: binding invoked once per dirty node (T066) &gt; 100-node batch: binding called exactly once per dirty node" time="0.012">
+        </testcase>
+        <testcase classname="tests/integration/graph-workflow.test.ts" name="SC-005 rollback regression (T067) &gt; removeNode(bend) restores graph to pre-bend state; re-add succeeds" time="0.005">
+        </testcase>
+        <testcase classname="tests/integration/graph-workflow.test.ts" name="SC-005 real transaction rollback (D1 remediation) &gt; rollback() sets state to rolled_back and restores geometry snapshot" time="0.003">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/interrogation.integration.test.ts" timestamp="2026-06-09T21:35:54.707Z" hostname="PaulsLaptop" tests="5" failures="0" errors="0" skipped="0" time="8.923">
+        <testcase classname="tests/integration/interrogation.integration.test.ts" name="Topological Interrogation Integration Tests (Feature 006 US2) &gt; computes bounding box and mass properties on a loaded solid" time="4.808">
+        </testcase>
+        <testcase classname="tests/integration/interrogation.integration.test.ts" name="Topological Interrogation Integration Tests (Feature 006 US2) &gt; measures distance and angles between faces" time="3.187">
+        </testcase>
+        <testcase classname="tests/integration/interrogation.integration.test.ts" name="Topological Interrogation Integration Tests (Feature 006 US2) &gt; throws GE_ALIGN_UNSUPPORTED for angle measurement on non-planar input" time="0.384">
+        </testcase>
+        <testcase classname="tests/integration/interrogation.integration.test.ts" name="Topological Interrogation Integration Tests (Feature 006 US2) &gt; explores topology on identical input deterministically" time="0.206">
+        </testcase>
+        <testcase classname="tests/integration/interrogation.integration.test.ts" name="Topological Interrogation Integration Tests (Feature 006 US2) &gt; throws GE_SOLID_NOT_FOUND for unknown entity id" time="0.332">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/mcp_b.integration.test.ts" timestamp="2026-06-09T21:35:54.710Z" hostname="PaulsLaptop" tests="1" failures="0" errors="0" skipped="0" time="0.07">
+        <testcase classname="tests/integration/mcp_b.integration.test.ts" name="MCP Phase B integration &gt; STEP -&gt; clean -&gt; decompose -&gt; synthesize_joints flow" time="0.067">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/md_config.integration.test.ts" timestamp="2026-06-09T21:35:54.711Z" hostname="PaulsLaptop" tests="20" failures="0" errors="0" skipped="0" time="0.045">
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: MaterialStore &gt; has() returns true for known material" time="0.002">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: MaterialStore &gt; has() returns false for unknown material" time="0">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: MaterialStore &gt; get() returns material with correct properties" time="0.001">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: MaterialStore &gt; all() returns all materials" time="0">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: MaterialStore &gt; throws on get() unknown material" time="0.004">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: bend allowance formula &gt; computeBendAllowance(180°, r=0, k=0.33, t=1.0) ≈ 0" time="0.001">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: bend allowance formula &gt; computeBendAllowance(90°, r=1.0, k=0.33, t=1.0) &gt; 0" time="0">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: bend allowance formula &gt; computeBendAllowance(45°, r=2.0, k=0.33, t=1.0) computed correctly" time="0.001">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: bend allowance formula &gt; k_factor affects bend allowance linearly" time="0">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: tooling capability access &gt; press brake max tonnage accessible" time="0.001">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: tooling capability access &gt; press brake V-die widths is array" time="0">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: tooling capability access &gt; laser kerf width in valid range [0.1, 0.2] mm" time="0.001">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: logistics constraints &gt; shipping envelope has all dimensions" time="0.001">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: logistics constraints &gt; coating envelope is subset of shipping envelope" time="0">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: logistics constraints &gt; max weight is positive" time="0">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: environmental context &gt; environmental flags are boolean" time="0.001">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: environmental context &gt; highVibration flag accessible" time="0">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: ConfigValidationError &gt; loadConfig throws ConfigValidationError for invalid YAML" time="0.015">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: ConfigValidationError &gt; ConfigValidationError has issues array and formatted message" time="0.007">
+        </testcase>
+        <testcase classname="tests/integration/md_config.integration.test.ts" name="MD Integration: ConfigValidationError &gt; loadConfig loads the actual config.yaml successfully" time="0.006">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/md_rules.integration.test.ts" timestamp="2026-06-09T21:35:54.723Z" hostname="PaulsLaptop" tests="2" failures="0" errors="0" skipped="0" time="0.04">
+        <testcase classname="tests/integration/md_rules.integration.test.ts" name="MD rules integration &gt; loads config and validates intentional violations" time="0.031">
+        </testcase>
+        <testcase classname="tests/integration/md_rules.integration.test.ts" name="MD rules integration &gt; blocks adhesive in fire-rated context" time="0.001">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/md_scoring.integration.test.ts" timestamp="2026-06-09T21:35:54.724Z" hostname="PaulsLaptop" tests="10" failures="0" errors="0" skipped="0" time="0.015">
+        <testcase classname="tests/integration/md_scoring.integration.test.ts" name="MD Scoring Integration: MD-JTBD-02 violations &gt; score &lt; 0.5 for heavily violating feature set" time="0.004">
+        </testcase>
+        <testcase classname="tests/integration/md_scoring.integration.test.ts" name="MD Scoring Integration: MD-JTBD-02 violations &gt; feasible=false for heavily violating feature set" time="0.001">
+        </testcase>
+        <testcase classname="tests/integration/md_scoring.integration.test.ts" name="MD Scoring Integration: MD-JTBD-02 violations &gt; detects MIN_BEND_RADIUS violations" time="0">
+        </testcase>
+        <testcase classname="tests/integration/md_scoring.integration.test.ts" name="MD Scoring Integration: MD-JTBD-02 violations &gt; detects MIN_HOLE_DIAMETER violation" time="0.001">
+        </testcase>
+        <testcase classname="tests/integration/md_scoring.integration.test.ts" name="MD Scoring Integration: MD-JTBD-02 violations &gt; detects MIN_FLANGE_WIDTH violation" time="0">
+        </testcase>
+        <testcase classname="tests/integration/md_scoring.integration.test.ts" name="MD Scoring Integration: MD-JTBD-05 passing feature set &gt; score &gt; 0.9 for fully valid feature set" time="0">
+        </testcase>
+        <testcase classname="tests/integration/md_scoring.integration.test.ts" name="MD Scoring Integration: MD-JTBD-05 passing feature set &gt; feasible=true for valid feature set" time="0.001">
+        </testcase>
+        <testcase classname="tests/integration/md_scoring.integration.test.ts" name="MD Scoring Integration: MD-JTBD-05 passing feature set &gt; violations array is empty for valid feature set" time="0.002">
+        </testcase>
+        <testcase classname="tests/integration/md_scoring.integration.test.ts" name="MD Scoring Integration: MD-JTBD-05 passing feature set &gt; bend sequence is feasible for valid feature set" time="0.002">
+        </testcase>
+        <testcase classname="tests/integration/md_scoring.integration.test.ts" name="MD Scoring Integration: MD-JTBD-05 passing feature set &gt; outside-in order: 90deg bend before 45deg bend" time="0">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/merge_edge_alignment.integration.test.ts" timestamp="2026-06-09T21:35:54.732Z" hostname="PaulsLaptop" tests="2" failures="0" errors="0" skipped="0" time="2.832">
+        <testcase classname="tests/integration/merge_edge_alignment.integration.test.ts" name="merge_bodies_with_bend edge alignment (BUG-03) &gt; BUG-03: merge on well-aligned panels succeeds with edge_alignment_correction_mm in result" time="2.23">
+            <system-err>
+Unfold failed — skipping merge test
+
+            </system-err>
+        </testcase>
+        <testcase classname="tests/integration/merge_edge_alignment.integration.test.ts" name="merge_bodies_with_bend edge alignment (BUG-03) &gt; BUG-03: merge on panels with &gt; THRESHOLD offset returns GE_MERGE_EDGE_MISALIGNED" time="0.597">
+            <system-err>
+Unfold failed — skipping
+
+            </system-err>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/merge_orientation_preserved.integration.test.ts" timestamp="2026-06-09T21:35:54.735Z" hostname="PaulsLaptop" tests="2" failures="1" errors="0" skipped="1" time="5.016">
+        <testcase classname="tests/integration/merge_orientation_preserved.integration.test.ts" name="merge_bodies_with_bend: 3D orientation is preserved &gt; does not invert or rotate the part out of plane (fold stays in −Z, Y preserved, Panel A in place)" time="5.013">
+            <system-out>
+[orientation] union (before): x[0.0..171.8] y[0.0..200.0] z[-70.7..0.1]
+[orientation] merged (after): x[-0.0..243.4] y[49.0..151.0] z[-141.8..0.3]
+
+            </system-out>
+            <failure message="expected 48.96433982821995 to be close to +0, received difference is 48.96433982821995, but expected 0.5" type="AssertionError">
+AssertionError: expected 48.96433982821995 to be close to +0, received difference is 48.96433982821995, but expected 0.5
+ ❯ tests/integration/merge_orientation_preserved.integration.test.ts:116:25
+            </failure>
+        </testcase>
+        <testcase classname="tests/integration/merge_orientation_preserved.integration.test.ts" name="merge_bodies_with_bend: 3D orientation is preserved &gt; merged shell occupies the exact same 3D region as the pre-merge panels" time="0">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/merge_protrusion_flat_layout.integration.test.ts" timestamp="2026-06-09T21:35:54.738Z" hostname="PaulsLaptop" tests="1" failures="1" errors="0" skipped="0" time="0.292">
+        <testcase classname="tests/integration/merge_protrusion_flat_layout.integration.test.ts" name="merge_bodies_with_bend: protrusion flat-pattern layout &gt; uses fold-perpendicular (flatHeight) not fold-parallel (flatWidth) for each panel section" time="0.29">
+            <failure message="{&quot;code&quot;:&quot;GE_SOLID_NOT_FOUND&quot;,&quot;message&quot;:&quot;Solid not found: 9121bfcf-6ff8-4dcb-ba82-ab05fa12fc27&quot;,&quot;recoverable&quot;:false}">
+Unknown Error: {&quot;code&quot;:&quot;GE_SOLID_NOT_FOUND&quot;,&quot;message&quot;:&quot;Solid not found: 9121bfcf-6ff8-4dcb-ba82-ab05fa12fc27&quot;,&quot;recoverable&quot;:false}
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;GE_SOLID_NOT_FOUND&apos;, recoverable: false, suggestedTool: undefined }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/merge_unfold_dxf_content.test.ts" timestamp="2026-06-09T21:35:54.740Z" hostname="PaulsLaptop" tests="1" failures="1" errors="0" skipped="0" time="7.452">
+        <testcase classname="tests/integration/merge_unfold_dxf_content.test.ts" name="apply_unfold dxf_content for merged panels &gt; apply_unfold includes dxf_content in response for canonical merged panel" time="7.45">
+            <failure message="{&quot;code&quot;:&quot;GE_SHELL_NOT_FOUND&quot;,&quot;message&quot;:&quot;Shell not found: aeb4a992-70fd-4004-bf39-7d9db909b445&quot;,&quot;recoverable&quot;:false}">
+Unknown Error: {&quot;code&quot;:&quot;GE_SHELL_NOT_FOUND&quot;,&quot;message&quot;:&quot;Shell not found: aeb4a992-70fd-4004-bf39-7d9db909b445&quot;,&quot;recoverable&quot;:false}
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;GE_SHELL_NOT_FOUND&apos;, recoverable: false, suggestedTool: undefined }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/merge_unfold_panel_selection_bug.test.ts" timestamp="2026-06-09T21:35:54.742Z" hostname="PaulsLaptop" tests="3" failures="0" errors="0" skipped="0" time="31.986">
+        <testcase classname="tests/integration/merge_unfold_panel_selection_bug.test.ts" name="Bug: merge_unfold panel selection (MCP team) &gt; DEMONSTRATES BUG FIX: apply_unfold NOW REJECTS stale panel A with clear error message" time="10.864">
+            <system-out>
+[BUG FIX] Post-merge graph has 3 PanelNodes: [
+  { id: [32m&apos;panel-a-7fd4bfaf&apos;[39m, canonical: [33mfalse[39m },
+  { id: [32m&apos;7fd4bfaf-cb6e-4d66-a0fd-203de485d327&apos;[39m, canonical: [33mtrue[39m },
+  { id: [32m&apos;0b79c047-2ba4-4084-bbd4-3d97e3b446a5&apos;[39m, canonical: [33mtrue[39m }
+]
+[BUG FIX] Attempting unfold with NON-CANONICAL panel: id=panel-a-7fd4bfaf (canonical=false)
+[BUG FIX] ✓ Correctly rejected: Panel &quot;panel-a-7fd4bfaf&quot; is non-canonical in part &quot;7fd4bfaf-cb6e-4d66-a0fd-203de485d327&quot;. Use preserved_part_id as panel_id for unfold operations.
+[BUG FIX] ✓ Canonical panel unfolds correctly: 401.0×200.0mm, bends=1
+
+            </system-out>
+        </testcase>
+        <testcase classname="tests/integration/merge_unfold_panel_selection_bug.test.ts" name="Bug: merge_unfold panel selection (MCP team) &gt; CORRECT BEHAVIOR: apply_unfold with canonical merged_part_id produces combined geometry" time="10.691">
+            <system-out>
+[CORRECT] flat=400.9896016858808×200mm bends=1 thickness=1
+[CORRECT] ✓ Canonical panel_id produces correct merged geometry
+
+            </system-out>
+        </testcase>
+        <testcase classname="tests/integration/merge_unfold_panel_selection_bug.test.ts" name="Bug: merge_unfold panel selection (MCP team) &gt; ACCEPTANCE: query_graph post-merge clearly identifies canonical unfold target" time="10.422">
+            <system-out>
+[ACCEPTANCE] merged_part_id=3f2bb4c8-ee16-4704-887b-1227727ae1f9 maps to PanelNode in graph
+[ACCEPTANCE] Canonical node: {
+  id: [32m&apos;3f2bb4c8-ee16-4704-887b-1227727ae1f9&apos;[39m,
+  bodyId: [32m&apos;52647282-710c-4b09-bb94-de426a98524b&apos;[39m,
+  canonical: [33mtrue[39m
+}
+
+            </system-out>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/multi-part-graph.test.ts" timestamp="2026-06-09T21:35:54.746Z" hostname="PaulsLaptop" tests="8" failures="0" errors="0" skipped="0" time="0.027">
+        <testcase classname="tests/integration/multi-part-graph.test.ts" name="Manufacturing Graph Multi-Part Support (Feature 009) &gt; Part isolation: mutations on part-a do not affect part-b &gt; separate parts maintain independent node collections" time="0.009">
+        </testcase>
+        <testcase classname="tests/integration/multi-part-graph.test.ts" name="Manufacturing Graph Multi-Part Support (Feature 009) &gt; Part isolation: mutations on part-a do not affect part-b &gt; removing a node from part A does not affect part B" time="0.005">
+        </testcase>
+        <testcase classname="tests/integration/multi-part-graph.test.ts" name="Manufacturing Graph Multi-Part Support (Feature 009) &gt; Part isolation: mutations on part-a do not affect part-b &gt; resetting part A does not affect part B state" time="0.002">
+        </testcase>
+        <testcase classname="tests/integration/multi-part-graph.test.ts" name="Manufacturing Graph Multi-Part Support (Feature 009) &gt; Part isolation: mutations on part-a do not affect part-b &gt; bend operations on part A do not cross-reference part B nodes" time="0.002">
+        </testcase>
+        <testcase classname="tests/integration/multi-part-graph.test.ts" name="Manufacturing Graph Multi-Part Support (Feature 009) &gt; Part isolation: mutations on part-a do not affect part-b &gt; node ID rename on part A does not affect part B with same ID" time="0.002">
+        </testcase>
+        <testcase classname="tests/integration/multi-part-graph.test.ts" name="Manufacturing Graph Multi-Part Support (Feature 009) &gt; Concurrent multi-part editing scenarios &gt; adding nodes to both parts simultaneously maintains isolation" time="0.001">
+        </testcase>
+        <testcase classname="tests/integration/multi-part-graph.test.ts" name="Manufacturing Graph Multi-Part Support (Feature 009) &gt; Concurrent multi-part editing scenarios &gt; querying parts independently returns correct topological order" time="0.001">
+        </testcase>
+        <testcase classname="tests/integration/multi-part-graph.test.ts" name="Manufacturing Graph Multi-Part Support (Feature 009) &gt; Part-level flat pattern dimensions &gt; getFlatPatternDimensions returns correct per-part flat dimensions" time="0.002">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/semantic_mapping.integration.test.ts" timestamp="2026-06-09T21:35:54.751Z" hostname="PaulsLaptop" tests="19" failures="4" errors="0" skipped="0" time="0.037">
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 2 (US1) &gt; (a) declare → bind face_group → resolve returns the same face IDs" time="0">
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 2 (US1) &gt; (b) declare with a duplicate id returns SEMANTIC_ID_EXISTS" time="0">
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 2 (US1) &gt; (c) bind a non-existent entity returns SEMANTIC_ID_NOT_FOUND" time="0">
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 2 (US1) &gt; (d) resolve with no binding returns SEMANTIC_ID_NOT_FOUND" time="0">
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 2 (US1) &gt; (e) declare with invalid URI returns SEMANTIC_ID_INVALID" time="0">
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 2 (US1) &gt; (f) declare with unknown type returns SEMANTIC_TYPE_NOT_SUPPORTED" time="0">
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 2 (US1) &gt; (g) spatial_region with non-existent constituent returns SEMANTIC_CONSTITUENT_NOT_FOUND" time="0">
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 2 (US1) &gt; (h) spatial_region resolves to union of constituent face IDs" time="0">
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 3 US2 (remap after split) &gt; (a) firebox panel binding remaps — new face IDs, remap_reason set" time="0">
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 3 US2 (remap after split) &gt; (b) untouched outer panel binding carries forward via a new row" time="0">
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 3 US2 (remap after split) &gt; (c) IsDeleted verdict produces empty face_ids and remap_reason" time="0">
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 3 US3 (spatial region refresh) &gt; (a) resolve spatial region after remap includes new face IDs from constituent" time="0">
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 3 US3 (spatial region refresh) &gt; (b) spatial_region with non-existent constituent returns SEMANTIC_CONSTITUENT_NOT_FOUND" time="0">
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 4 US4 (lineage + time travel) &gt; (a) getMappingLineage returns ≥2 rows with transaction_id and remap_reason" time="0">
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 4 US4 (lineage + time travel) &gt; (b) resolveAtRevision with non-existent revision returns REVISION_NOT_FOUND" time="0">
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 2 (US1)" time="0.025">
+            <failure message="connect ECONNREFUSED 127.0.0.1:3306" type="Error">
+Error: connect ECONNREFUSED 127.0.0.1:3306
+ ❯ tests/integration/semantic_mapping.integration.test.ts:31:29
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { errno: -4078, code: &apos;ECONNREFUSED&apos;, syscall: &apos;connect&apos;, address: &apos;127.0.0.1&apos;, port: 3306, fatal: true }
+            </failure>
+            <failure message="Cannot read properties of undefined (reading &apos;disconnect&apos;)" type="TypeError">
+TypeError: Cannot read properties of undefined (reading &apos;disconnect&apos;)
+ ❯ tests/integration/semantic_mapping.integration.test.ts:62:19
+            </failure>
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 3 US2 (remap after split)" time="0.003">
+            <failure message="connect ECONNREFUSED 127.0.0.1:3306" type="Error">
+Error: connect ECONNREFUSED 127.0.0.1:3306
+ ❯ tests/integration/semantic_mapping.integration.test.ts:232:29
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { errno: -4078, code: &apos;ECONNREFUSED&apos;, syscall: &apos;connect&apos;, address: &apos;127.0.0.1&apos;, port: 3306, fatal: true }
+            </failure>
+            <failure message="Cannot read properties of undefined (reading &apos;disconnect&apos;)" type="TypeError">
+TypeError: Cannot read properties of undefined (reading &apos;disconnect&apos;)
+ ❯ tests/integration/semantic_mapping.integration.test.ts:271:19
+            </failure>
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 3 US3 (spatial region refresh)" time="0.004">
+            <failure message="connect ECONNREFUSED 127.0.0.1:3306" type="Error">
+Error: connect ECONNREFUSED 127.0.0.1:3306
+ ❯ tests/integration/semantic_mapping.integration.test.ts:363:29
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { errno: -4078, code: &apos;ECONNREFUSED&apos;, syscall: &apos;connect&apos;, address: &apos;127.0.0.1&apos;, port: 3306, fatal: true }
+            </failure>
+            <failure message="Cannot read properties of undefined (reading &apos;disconnect&apos;)" type="TypeError">
+TypeError: Cannot read properties of undefined (reading &apos;disconnect&apos;)
+ ❯ tests/integration/semantic_mapping.integration.test.ts:387:19
+            </failure>
+        </testcase>
+        <testcase classname="tests/integration/semantic_mapping.integration.test.ts" name="Semantic Mapping Layer — Phase 4 US4 (lineage + time travel)" time="0.003">
+            <failure message="connect ECONNREFUSED 127.0.0.1:3306" type="Error">
+Error: connect ECONNREFUSED 127.0.0.1:3306
+ ❯ tests/integration/semantic_mapping.integration.test.ts:438:29
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { errno: -4078, code: &apos;ECONNREFUSED&apos;, syscall: &apos;connect&apos;, address: &apos;127.0.0.1&apos;, port: 3306, fatal: true }
+            </failure>
+            <failure message="Cannot read properties of undefined (reading &apos;disconnect&apos;)" type="TypeError">
+TypeError: Cannot read properties of undefined (reading &apos;disconnect&apos;)
+ ❯ tests/integration/semantic_mapping.integration.test.ts:475:19
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/sew.integration.test.ts" timestamp="2026-06-09T21:35:54.774Z" hostname="PaulsLaptop" tests="3" failures="1" errors="0" skipped="0" time="0.021">
+        <testcase classname="tests/integration/sew.integration.test.ts" name="Sewing Operations Integration Tests (Feature 006 US5) &gt; sews adjacent faces together" time="0">
+        </testcase>
+        <testcase classname="tests/integration/sew.integration.test.ts" name="Sewing Operations Integration Tests (Feature 006 US5) &gt; rolls back sewing on transaction abort" time="0">
+        </testcase>
+        <testcase classname="tests/integration/sew.integration.test.ts" name="Sewing Operations Integration Tests (Feature 006 US5)" time="0.021">
+            <failure message="connect ECONNREFUSED 127.0.0.1:3306" type="Error">
+Error: connect ECONNREFUSED 127.0.0.1:3306
+ ❯ tests/integration/sew.integration.test.ts:27:29
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { errno: -4078, code: &apos;ECONNREFUSED&apos;, syscall: &apos;connect&apos;, address: &apos;127.0.0.1&apos;, port: 3306, fatal: true }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/split_by_bends.integration.test.ts" timestamp="2026-06-09T21:35:54.777Z" hostname="PaulsLaptop" tests="11" failures="0" errors="0" skipped="0" time="24.469">
+        <testcase classname="tests/integration/split_by_bends.integration.test.ts" name="split_body_by_bends integration &gt; hollow cube → thin_solid mode, 6 panels, 0 protrusions" time="1.751">
+            <system-out>
+split_body_by_bends.hollow cube tests starting...
+
+            </system-out>
+        </testcase>
+        <testcase classname="tests/integration/split_by_bends.integration.test.ts" name="split_body_by_bends integration &gt; two hollow cubes → thin_solid mode, 12 panels, 4 bridge flanges" time="5.356">
+            <system-out>
+split_body_by_bends.two hollow cubes tests starting...
+split_body_by_bends result: {
+  &quot;panel_ids&quot;: [
+    &quot;5341dc85-5b2a-4afb-9b25-bdd0be918d78&quot;,
+    &quot;a4bff768-6b9d-4586-8b7a-6f2e2ba473be&quot;,
+    &quot;6224f2ac-878f-4720-82b5-255428e65f96&quot;,
+    &quot;f726c112-0cf4-46c0-a151-92b6e80f8384&quot;,
+    &quot;b27f4616-01f4-4d51-87da-abfa8b41410e&quot;,
+    &quot;1c4df29b-a032-4f0d-a1d3-a3731947513f&quot;,
+    &quot;a3f61195-f6d3-481c-b9be-dda08205f5fc&quot;,
+    &quot;78245f0f-cc45-49e7-a3e7-c84614922f89&quot;,
+    &quot;3f6d73a3-b75b-4bb3-a820-6e3ff1e9d7bc&quot;,
+    &quot;d6adae41-a944-43c1-8dfb-ab7cb0c47c84&quot;,
+    &quot;a9fbb127-1bbc-4e71-9ed7-981a978077b0&quot;,
+    &quot;caa6a210-c7b6-410b-be85-f38b716b251a&quot;
+  ],
+  &quot;panel_count&quot;: 12,
+  &quot;panel_bboxes&quot;: [
+    {
+      &quot;x_min&quot;: -100,
+      &quot;y_min&quot;: 98.55,
+      &quot;z_min&quot;: -100,
+      &quot;x_max&quot;: 100,
+      &quot;y_max&quot;: 100,
+      &quot;z_max&quot;: 100
+    },
+    {
+      &quot;x_min&quot;: 98.55,
+      &quot;y_min&quot;: -100,
+      &quot;z_min&quot;: -100,
+      &quot;x_max&quot;: 100,
+      &quot;y_max&quot;: 100,
+      &quot;z_max&quot;: 100
+    },
+    {
+      &quot;x_min&quot;: -100,
+      &quot;y_min&quot;: -100,
+      &quot;z_min&quot;: 98.5,
+      &quot;x_max&quot;: 100,
+      &quot;y_max&quot;: 100,
+      &quot;z_max&quot;: 100
+    },
+    {
+      &quot;x_min&quot;: -100,
+      &quot;y_min&quot;: -100,
+      &quot;z_min&quot;: -100,
+      &quot;x_max&quot;: 100,
+      &quot;y_max&quot;: 100,
+      &quot;z_max&quot;: -98.5
+    },
+    {
+      &quot;x_min&quot;: -100,
+      &quot;y_min&quot;: -100,
+      &quot;z_min&quot;: -100,
+      &quot;x_max&quot;: -98.55,
+      &quot;y_max&quot;: 100,
+      &quot;z_max&quot;: 100
+    },
+    {
+      &quot;x_min&quot;: -100,
+      &quot;y_min&quot;: -100,
+      &quot;z_min&quot;: -100,
+      &quot;x_max&quot;: 100,
+      &quot;y_max&quot;: -98.55,
+      &quot;z_max&quot;: 100
+    },
+    {
+      &quot;x_min&quot;: -75,
+      &quot;y_min&quot;: 73.55,
+      &quot;z_min&quot;: -75.00000000000001,
+      &quot;x_max&quot;: 75,
+      &quot;y_max&quot;: 75,
+      &quot;z_max&quot;: 75
+    },
+    {
+      &quot;x_min&quot;: 73.55,
+      &quot;y_min&quot;: -75,
+      &quot;z_min&quot;: -75.00000000000001,
+      &quot;x_max&quot;: 75,
+      &quot;y_max&quot;: 75,
+      &quot;z_max&quot;: 75
+    },
+    {
+      &quot;x_min&quot;: -75,
+      &quot;y_min&quot;: -75,
+      &quot;z_min&quot;: 73.49999999999999,
+      &quot;x_max&quot;: 75,
+      &quot;y_max&quot;: 75,
+      &quot;z_max&quot;: 75
+    },
+    {
+      &quot;x_min&quot;: -75,
+      &quot;y_min&quot;: -75,
+      &quot;z_min&quot;: -75.00000000000001,
+      &quot;x_max&quot;: 75,
+      &quot;y_max&quot;: 75,
+      &quot;z_max&quot;: -73.49999999999999
+    },
+    {
+      &quot;x_min&quot;: -75,
+      &quot;y_min&quot;: -75,
+      &quot;z_min&quot;: -75.00000000000001,
+      &quot;x_max&quot;: -73.55000000000001,
+      &quot;y_max&quot;: 75,
+      &quot;z_max&quot;: 75
+    },
+    {
+      &quot;x_min&quot;: -75,
+      &quot;y_min&quot;: -75,
+      &quot;z_min&quot;: -75.00000000000001,
+      &quot;x_max&quot;: 75,
+      &quot;y_max&quot;: -73.55000000000001,
+      &quot;z_max&quot;: 75
+    }
+  ],
+  &quot;protrusion_ids&quot;: [
+    &quot;e196a2ef-d2ea-45fb-86d0-31605194c44b&quot;,
+    &quot;6a893fa2-2795-4bac-a65b-06a679da0d57&quot;,
+    &quot;820cfb7c-a930-482e-8d8a-57fe788b2bad&quot;,
+    &quot;59345e26-911c-4d1f-9edc-eb08f7dd2b32&quot;
+  ],
+  &quot;protrusion_count&quot;: 4,
+  &quot;protrusion_bboxes&quot;: [
+    {
+      &quot;x_min&quot;: 74.95,
+      &quot;y_min&quot;: -0.05,
+      &quot;z_min&quot;: -75.05,
+      &quot;x_max&quot;: 99.05000000000001,
+      &quot;y_max&quot;: 1.05,
+      &quot;z_max&quot;: 75.05
+    },
+    {
+      &quot;x_min&quot;: -99.05,
+      &quot;y_min&quot;: -0.05,
+      &quot;z_min&quot;: -75.05,
+      &quot;x_max&quot;: -74.94999999999999,
+      &quot;y_max&quot;: 1.05,
+      &quot;z_max&quot;: 75.05
+    },
+    {
+      &quot;x_min&quot;: -0.050000000000000044,
+      &quot;y_min&quot;: 74.95,
+      &quot;z_min&quot;: -75.05,
+      &quot;x_max&quot;: 1.05,
+      &quot;y_max&quot;: 99.05000000000001,
+      &quot;z_max&quot;: 75.05
+    },
+    {
+      &quot;x_min&quot;: -0.050000000000000044,
+      &quot;y_min&quot;: -99.05,
+      &quot;z_min&quot;: -75.05,
+      &quot;x_max&quot;: 1.05,
+      &quot;y_max&quot;: -74.94999999999999,
+      &quot;z_max&quot;: 75.05
+    }
+  ],
+  &quot;protrusion_parents&quot;: [
+    {
+      &quot;protrusion_id&quot;: &quot;e196a2ef-d2ea-45fb-86d0-31605194c44b&quot;,
+      &quot;parent_panel_id&quot;: null
+    },
+    {
+      &quot;protrusion_id&quot;: &quot;6a893fa2-2795-4bac-a65b-06a679da0d57&quot;,
+      &quot;parent_panel_id&quot;: null
+    },
+    {
+      &quot;protrusion_id&quot;: &quot;820cfb7c-a930-482e-8d8a-57fe788b2bad&quot;,
+      &quot;parent_panel_id&quot;: null
+    },
+    {
+      &quot;protrusion_id&quot;: &quot;59345e26-911c-4d1f-9edc-eb08f7dd2b32&quot;,
+      &quot;parent_panel_id&quot;: null
+    }
+  ],
+  &quot;detected_mode&quot;: &quot;thin_solid&quot;,
+  &quot;rollback_token&quot;: &quot;a2348737-ad2c-4bbc-ba24-af5cbf0c831a&quot;,
+  &quot;mesh_urls&quot;: [
+    &quot;http://localhost:3001/mesh/5341dc85-5b2a-4afb-9b25-bdd0be918d78.glb&quot;,
+    &quot;http://localhost:3001/mesh/a4bff768-6b9d-4586-8b7a-6f2e2ba473be.glb&quot;,
+    &quot;http://localhost:3001/mesh/6224f2ac-878f-4720-82b5-255428e65f96.glb&quot;,
+    &quot;http://localhost:3001/mesh/f726c112-0cf4-46c0-a151-92b6e80f8384.glb&quot;,
+    &quot;http://localhost:3001/mesh/b27f4616-01f4-4d51-87da-abfa8b41410e.glb&quot;,
+    &quot;http://localhost:3001/mesh/1c4df29b-a032-4f0d-a1d3-a3731947513f.glb&quot;,
+    &quot;http://localhost:3001/mesh/a3f61195-f6d3-481c-b9be-dda08205f5fc.glb&quot;,
+    &quot;http://localhost:3001/mesh/78245f0f-cc45-49e7-a3e7-c84614922f89.glb&quot;,
+    &quot;http://localhost:3001/mesh/3f6d73a3-b75b-4bb3-a820-6e3ff1e9d7bc.glb&quot;,
+    &quot;http://localhost:3001/mesh/d6adae41-a944-43c1-8dfb-ab7cb0c47c84.glb&quot;,
+    &quot;http://localhost:3001/mesh/a9fbb127-1bbc-4e71-9ed7-981a978077b0.glb&quot;,
+    &quot;http://localhost:3001/mesh/caa6a210-c7b6-410b-be85-f38b716b251a.glb&quot;,
+    &quot;http://localhost:3001/mesh/e196a2ef-d2ea-45fb-86d0-31605194c44b.glb&quot;,
+    &quot;http://localhost:3001/mesh/6a893fa2-2795-4bac-a65b-06a679da0d57.glb&quot;,
+    &quot;http://localhost:3001/mesh/820cfb7c-a930-482e-8d8a-57fe788b2bad.glb&quot;,
+    &quot;http://localhost:3001/mesh/59345e26-911c-4d1f-9edc-eb08f7dd2b32.glb&quot;
+  ],
+  &quot;shape_history&quot;: [],
+  &quot;created_parts&quot;: [
+    {
+      &quot;part_id&quot;: &quot;5341dc85-5b2a-4afb-9b25-bdd0be918d78&quot;,
+      &quot;panel_id&quot;: &quot;5341dc85-5b2a-4afb-9b25-bdd0be918d78&quot;
+    },
+    {
+      &quot;part_id&quot;: &quot;a4bff768-6b9d-4586-8b7a-6f2e2ba473be&quot;,
+      &quot;panel_id&quot;: &quot;a4bff768-6b9d-4586-8b7a-6f2e2ba473be&quot;
+    },
+    {
+      &quot;part_id&quot;: &quot;6224f2ac-878f-4720-82b5-255428e65f96&quot;,
+      &quot;panel_id&quot;: &quot;6224f2ac-878f-4720-82b5-255428e65f96&quot;
+    },
+    {
+      &quot;part_id&quot;: &quot;f726c112-0cf4-46c0-a151-92b6e80f8384&quot;,
+      &quot;panel_id&quot;: &quot;f726c112-0cf4-46c0-a151-92b6e80f8384&quot;
+    },
+    {
+      &quot;part_id&quot;: &quot;b27f4616-01f4-4d51-87da-abfa8b41410e&quot;,
+      &quot;panel_id&quot;: &quot;b27f4616-01f4-4d51-87da-abfa8b41410e&quot;
+    },
+    {
+      &quot;part_id&quot;: &quot;1c4df29b-a032-4f0d-a1d3-a3731947513f&quot;,
+      &quot;panel_id&quot;: &quot;1c4df29b-a032-4f0d-a1d3-a3731947513f&quot;
+    },
+    {
+      &quot;part_id&quot;: &quot;a3f61195-f6d3-481c-b9be-dda08205f5fc&quot;,
+      &quot;panel_id&quot;: &quot;a3f61195-f6d3-481c-b9be-dda08205f5fc&quot;
+    },
+    {
+      &quot;part_id&quot;: &quot;78245f0f-cc45-49e7-a3e7-c84614922f89&quot;,
+      &quot;panel_id&quot;: &quot;78245f0f-cc45-49e7-a3e7-c84614922f89&quot;
+    },
+    {
+      &quot;part_id&quot;: &quot;3f6d73a3-b75b-4bb3-a820-6e3ff1e9d7bc&quot;,
+      &quot;panel_id&quot;: &quot;3f6d73a3-b75b-4bb3-a820-6e3ff1e9d7bc&quot;
+    },
+    {
+      &quot;part_id&quot;: &quot;d6adae41-a944-43c1-8dfb-ab7cb0c47c84&quot;,
+      &quot;panel_id&quot;: &quot;d6adae41-a944-43c1-8dfb-ab7cb0c47c84&quot;
+    },
+    {
+      &quot;part_id&quot;: &quot;a9fbb127-1bbc-4e71-9ed7-981a978077b0&quot;,
+      &quot;panel_id&quot;: &quot;a9fbb127-1bbc-4e71-9ed7-981a978077b0&quot;
+    },
+    {
+      &quot;part_id&quot;: &quot;caa6a210-c7b6-410b-be85-f38b716b251a&quot;,
+      &quot;panel_id&quot;: &quot;caa6a210-c7b6-410b-be85-f38b716b251a&quot;
+    },
+    {
+      &quot;part_id&quot;: &quot;e196a2ef-d2ea-45fb-86d0-31605194c44b&quot;,
+      &quot;panel_id&quot;: &quot;e196a2ef-d2ea-45fb-86d0-31605194c44b&quot;
+    },
+    {
+      &quot;part_id&quot;: &quot;6a893fa2-2795-4bac-a65b-06a679da0d57&quot;,
+      &quot;panel_id&quot;: &quot;6a893fa2-2795-4bac-a65b-06a679da0d57&quot;
+    },
+    {
+      &quot;part_id&quot;: &quot;820cfb7c-a930-482e-8d8a-57fe788b2bad&quot;,
+      &quot;panel_id&quot;: &quot;820cfb7c-a930-482e-8d8a-57fe788b2bad&quot;
+    },
+    {
+      &quot;part_id&quot;: &quot;59345e26-911c-4d1f-9edc-eb08f7dd2b32&quot;,
+      &quot;panel_id&quot;: &quot;59345e26-911c-4d1f-9edc-eb08f7dd2b32&quot;
+    }
+  ],
+  &quot;hidden_source_part_ids&quot;: [
+    &quot;a0549a60-6416-4dca-9d14-ac4ff13ea1a5&quot;
+  ],
+  &quot;visibility_policy&quot;: &quot;show_only_recreated&quot;,
+  &quot;pipeline_executed&quot;: true
+}
+
+            </system-out>
+        </testcase>
+        <testcase classname="tests/integration/split_by_bends.integration.test.ts" name="split_body_by_bends integration &gt; testcube: protrusion bboxes are local features, not panel-sized" time="4.102">
+            <system-out>
+panel bbox volumes (sorted desc): [
+  [32m&apos;60000&apos;[39m, [32m&apos;60000&apos;[39m,
+  [32m&apos;58000&apos;[39m, [32m&apos;58000&apos;[39m,
+  [32m&apos;58000&apos;[39m, [32m&apos;58000&apos;[39m,
+  [32m&apos;33750&apos;[39m, [32m&apos;33750&apos;[39m,
+  [32m&apos;32625&apos;[39m, [32m&apos;32625&apos;[39m,
+  [32m&apos;32625&apos;[39m, [32m&apos;32625&apos;[39m
+]
+protrusion bbox volumes (sorted desc): [ [32m&apos;3979&apos;[39m, [32m&apos;3979&apos;[39m, [32m&apos;3979&apos;[39m, [32m&apos;3979&apos;[39m ]
+protrusion bbox max-dimensions: [ [32m&apos;150.1&apos;[39m, [32m&apos;150.1&apos;[39m, [32m&apos;150.1&apos;[39m, [32m&apos;150.1&apos;[39m ]
+largest panel volume: 60000 largest panel max-dim: 200.0
+protrusion bbox coords:
+  [0] x[75.0..99.1] y[-0.1..1.1] z[-75.0..75.0] dims=24.1×1.1×150.1
+  [1] x[-99.0..-74.9] y[-0.1..1.1] z[-75.0..75.0] dims=24.1×1.1×150.1
+  [2] x[-0.1..1.1] y[75.0..99.1] z[-75.0..75.0] dims=1.1×24.1×150.1
+  [3] x[-0.1..1.1] y[-99.0..-74.9] z[-75.0..75.0] dims=1.1×24.1×150.1
+panel bbox coords:
+  [0] x[-100.0..100.0] y[98.5..100.0] z[-100.0..100.0] dims=200.0×1.5×200.0
+  [1] x[98.5..100.0] y[-100.0..100.0] z[-100.0..100.0] dims=1.5×200.0×200.0
+  [2] x[-100.0..100.0] y[-100.0..100.0] z[98.5..100.0] dims=200.0×200.0×1.5
+  [3] x[-100.0..100.0] y[-100.0..100.0] z[-100.0..-98.5] dims=200.0×200.0×1.5
+  [4] x[-100.0..-98.5] y[-100.0..100.0] z[-100.0..100.0] dims=1.5×200.0×200.0
+  [5] x[-100.0..100.0] y[-100.0..-98.5] z[-100.0..100.0] dims=200.0×1.5×200.0
+  [6] x[-75.0..75.0] y[73.5..75.0] z[-75.0..75.0] dims=150.0×1.5×150.0
+  [7] x[73.5..75.0] y[-75.0..75.0] z[-75.0..75.0] dims=1.5×150.0×150.0
+  [8] x[-75.0..75.0] y[-75.0..75.0] z[73.5..75.0] dims=150.0×150.0×1.5
+  [9] x[-75.0..75.0] y[-75.0..75.0] z[-75.0..-73.5] dims=150.0×150.0×1.5
+  [10] x[-75.0..-73.6] y[-75.0..75.0] z[-75.0..75.0] dims=1.4×150.0×150.0
+  [11] x[-75.0..75.0] y[-75.0..-73.6] z[-75.0..75.0] dims=150.0×1.4×150.0
+
+            </system-out>
+        </testcase>
+        <testcase classname="tests/integration/split_by_bends.integration.test.ts" name="split_body_by_bends integration &gt; cube with flanges → thin_solid mode, 10 clean isolated panels (6 walls + 4 flanges)" time="2.068">
+        </testcase>
+        <testcase classname="tests/integration/split_by_bends.integration.test.ts" name="split_body_by_bends integration &gt; cauldron.step → decomposes correctly into flat trapezoidal panels without isolated triangles" time="4.156">
+        </testcase>
+        <testcase classname="tests/integration/split_by_bends.integration.test.ts" name="split_body_by_bends integration &gt; cauldron.step → center_and_align_body translates centroid to [0,0,0] and aligns dominant axis" time="0.353">
+        </testcase>
+        <testcase classname="tests/integration/split_by_bends.integration.test.ts" name="split_body_by_bends integration &gt; cauldron adjacent split panels → merge_bodies_with_bend watertight fuse" time="2.944">
+        </testcase>
+        <testcase classname="tests/integration/split_by_bends.integration.test.ts" name="split_body_by_bends integration &gt; angle_bracket_15deg: split → 2 panels, merge_bodies_with_bend succeeds" time="0.306">
+        </testcase>
+        <testcase classname="tests/integration/split_by_bends.integration.test.ts" name="split_body_by_bends integration &gt; angle_bracket_30deg: split → 2 panels, merge_bodies_with_bend succeeds" time="0.315">
+        </testcase>
+        <testcase classname="tests/integration/split_by_bends.integration.test.ts" name="split_body_by_bends integration &gt; angle_bracket_45deg: split → 2 panels, merge_bodies_with_bend succeeds" time="0.419">
+        </testcase>
+        <testcase classname="tests/integration/split_by_bends.integration.test.ts" name="split_body_by_bends integration &gt; cauldron.step → remove_protrusions loop_traversal vs legacy_volumetric" time="2.692">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/split_pipeline_compliance.integration.test.ts" timestamp="2026-06-09T21:35:54.786Z" hostname="PaulsLaptop" tests="7" failures="0" errors="0" skipped="0" time="11.122">
+        <testcase classname="tests/integration/split_pipeline_compliance.integration.test.ts" name="split_body_by_bends pipeline compliance (BUG-01, BUG-02) &gt; BUG-01: split result includes pipeline_executed:true flag" time="1.767">
+        </testcase>
+        <testcase classname="tests/integration/split_pipeline_compliance.integration.test.ts" name="split_body_by_bends pipeline compliance (BUG-01, BUG-02) &gt; BUG-01: split sub-part geometry is not the same as the source solid" time="4.645">
+        </testcase>
+        <testcase classname="tests/integration/split_pipeline_compliance.integration.test.ts" name="split_body_by_bends pipeline compliance (BUG-01, BUG-02) &gt; BUG-01: each created_part has a manufacturing graph with correct bodyId" time="0.724">
+        </testcase>
+        <testcase classname="tests/integration/split_pipeline_compliance.integration.test.ts" name="split_body_by_bends pipeline compliance (BUG-01, BUG-02) &gt; BUG-02: shapeDxf for each split panel is non-null and contains a LWPOLYLINE" time="3.432">
+        </testcase>
+        <testcase classname="tests/integration/split_pipeline_compliance.integration.test.ts" name="split_body_by_bends pipeline compliance (BUG-01, BUG-02) &gt; BUG-02: split panels on a non-rectangular fixture have LWPOLYLINE with more than 4 vertices" time="0.002">
+            <system-err>
+Non-rectangular fixture not found — skipping BUG-02 polygon test
+
+            </system-err>
+        </testcase>
+        <testcase classname="tests/integration/split_pipeline_compliance.integration.test.ts" name="split_body_by_bends pipeline compliance (BUG-01, BUG-02) &gt; BUG-02: non-rectangular split flat patterns align dominant edges to X/Y axes" time="0.001">
+            <system-err>
+Non-rectangular fixture not found — skipping alignment test
+
+            </system-err>
+        </testcase>
+        <testcase classname="tests/integration/split_pipeline_compliance.integration.test.ts" name="split_body_by_bends pipeline compliance (BUG-01, BUG-02) &gt; T035: sequential split operations on fixture demonstrate pipeline compliance" time="0.548">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/sys_jtbd_01_decompose.integration.test.ts" timestamp="2026-06-09T21:35:54.794Z" hostname="PaulsLaptop" tests="1" failures="1" errors="0" skipped="0" time="0.391">
+        <testcase classname="tests/integration/sys_jtbd_01_decompose.integration.test.ts" name="SYS-JTBD-01 Full Decompose System Integration &gt; runs STEP -&gt; clean -&gt; decompose -&gt; joints -&gt; unfold end-to-end" time="0.384">
+            <failure message="{&quot;code&quot;:&quot;GE_SOLID_NOT_FOUND&quot;,&quot;message&quot;:&quot;Solid/Shell not found: d1d2d978-347d-4b81-822d-e74ca1bd9c3a&quot;,&quot;recoverable&quot;:false}">
+Unknown Error: {&quot;code&quot;:&quot;GE_SOLID_NOT_FOUND&quot;,&quot;message&quot;:&quot;Solid/Shell not found: d1d2d978-347d-4b81-822d-e74ca1bd9c3a&quot;,&quot;recoverable&quot;:false}
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;GE_SOLID_NOT_FOUND&apos;, recoverable: false, suggestedTool: undefined }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/sys_jtbd_02_safety.integration.test.ts" timestamp="2026-06-09T21:35:54.797Z" hostname="PaulsLaptop" tests="3" failures="0" errors="0" skipped="0" time="0.099">
+        <testcase classname="tests/integration/sys_jtbd_02_safety.integration.test.ts" name="SYS-JTBD-02 Safety Integration &gt; rejects adhesive joint when fire_rated is true" time="0.028">
+        </testcase>
+        <testcase classname="tests/integration/sys_jtbd_02_safety.integration.test.ts" name="SYS-JTBD-02 Safety Integration &gt; rejects plastic_fastener joint when fire_rated is true" time="0.006">
+        </testcase>
+        <testcase classname="tests/integration/sys_jtbd_02_safety.integration.test.ts" name="SYS-JTBD-02 Safety Integration &gt; allows tab_slot joint when fire_rated is true (but fails with geometry error since panels are fake)" time="0.059">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/sys_jtbd_03_unfold_score.integration.test.ts" timestamp="2026-06-09T21:35:54.800Z" hostname="PaulsLaptop" tests="1" failures="1" errors="0" skipped="0" time="7.672">
+        <testcase classname="tests/integration/sys_jtbd_03_unfold_score.integration.test.ts" name="SYS-JTBD-03 Unfold and Score Integration &gt; runs unfold + evaluate deterministically across 3 iterations" time="7.667">
+            <system-out>
+[UnfoldScoreTest] Iter 0 clean_geometry result: {
+  solid_id: [32m&apos;e9e8aaed-c6e2-4c30-aead-121db2eaa429&apos;[39m,
+  is_manifold: [33mtrue[39m,
+  face_count: [33m6[39m,
+  issues_found: [33m0[39m,
+  healed: [33mfalse[39m,
+  rollback_token: [32m&apos;0739f0c7-11cf-4786-989d-2fcf7a668b31&apos;[39m,
+  mesh_url: [32m&apos;http://localhost:3001/mesh/e9e8aaed-c6e2-4c30-aead-121db2eaa429.glb&apos;[39m
+}
+[UnfoldScoreTest] Iter 0 decompose_volume result: {
+  parts: [
+    {
+      id: [32m&apos;72070602-4b2d-4dd6-943d-393f40cb163a&apos;[39m,
+      mesh_url: [32m&apos;http://localhost:3001/mesh/72070602-4b2d-4dd6-943d-393f40cb163a.glb&apos;[39m
+    }
+  ],
+  panel_ids: [ [32m&apos;72070602-4b2d-4dd6-943d-393f40cb163a&apos;[39m ],
+  panel_count: [33m1[39m,
+  strategy_applied: [32m&apos;Integrity&apos;[39m,
+  rollback_token: [32m&apos;d5decf92-099a-4c39-8f63-a97bd6e8b853&apos;[39m
+}
+
+            </system-out>
+            <system-err>
+[UnfoldScoreTest] Iter 0 apply_unfold failed: {
+  code: [32m&apos;GE_SOLID_NOT_FOUND&apos;[39m,
+  message: [32m&apos;{&quot;code&quot;:&quot;GE_SOLID_NOT_FOUND&quot;,&quot;message&quot;:&quot;Shell not found: 72070602-4b2d-4dd6-943d-393f40cb163a&quot;,&quot;recoverable&quot;:false}&apos;[39m,
+  recoverable: [33mfalse[39m,
+  suggestedTool: [90mundefined[39m
+}
+
+            </system-err>
+            <failure message="{&quot;code&quot;:&quot;GE_SOLID_NOT_FOUND&quot;,&quot;message&quot;:&quot;Shell not found: 72070602-4b2d-4dd6-943d-393f40cb163a&quot;,&quot;recoverable&quot;:false}">
+Unknown Error: {&quot;code&quot;:&quot;GE_SOLID_NOT_FOUND&quot;,&quot;message&quot;:&quot;Shell not found: 72070602-4b2d-4dd6-943d-393f40cb163a&quot;,&quot;recoverable&quot;:false}
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;GE_SOLID_NOT_FOUND&apos;, recoverable: false, suggestedTool: undefined }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/sys_jtbd_04_export_lifecycle.integration.test.ts" timestamp="2026-06-09T21:35:54.803Z" hostname="PaulsLaptop" tests="1" failures="1" errors="0" skipped="0" time="7.797">
+        <testcase classname="tests/integration/sys_jtbd_04_export_lifecycle.integration.test.ts" name="SYS-JTBD-04 Export Lifecycle Integration &gt; verifies export lifecycle state transitions" time="7.791">
+            <failure message="{&quot;code&quot;:&quot;GE_SOLID_NOT_FOUND&quot;,&quot;message&quot;:&quot;Shell not found: dc864af0-afc4-4b13-8422-e4f3b7b16f61&quot;,&quot;recoverable&quot;:false}">
+Unknown Error: {&quot;code&quot;:&quot;GE_SOLID_NOT_FOUND&quot;,&quot;message&quot;:&quot;Shell not found: dc864af0-afc4-4b13-8422-e4f3b7b16f61&quot;,&quot;recoverable&quot;:false}
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;GE_SOLID_NOT_FOUND&apos;, recoverable: false, suggestedTool: undefined }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/sys_jtbd_05_rollback.integration.test.ts" timestamp="2026-06-09T21:35:54.805Z" hostname="PaulsLaptop" tests="1" failures="0" errors="0" skipped="0" time="0.216">
+        <testcase classname="tests/integration/sys_jtbd_05_rollback.integration.test.ts" name="SYS-JTBD-05 Rollback Integration &gt; restores state correctly after rollback tool call" time="0.205">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/transaction_primitive.integration.test.ts" timestamp="2026-06-09T21:35:54.806Z" hostname="PaulsLaptop" tests="25" failures="2" errors="0" skipped="0" time="0.214">
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive (Feature 004 Phase 1) &gt; begin → decompose → synthesise → rollback restores the pre-transaction state" time="0.028">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive (Feature 004 Phase 1) &gt; begin → decompose → commit persists changes; subsequent rollback errors" time="0.005">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive (Feature 004 Phase 1) &gt; a second begin_transaction while one is active returns TRANSACTION_ALREADY_ACTIVE" time="0.005">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive (Feature 004 Phase 1) &gt; commit_transaction with an unknown id returns TRANSACTION_NOT_FOUND" time="0.005">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive (Feature 004 Phase 1) &gt; rollback_transaction with an unknown id returns TRANSACTION_NOT_FOUND" time="0.004">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive Phase 2 — mutating tools accept transaction_id &gt; begin → split_body_by_bends without transaction_id auto-joins the active transaction" time="0.005">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive Phase 2 — mutating tools accept transaction_id &gt; begin → split_body_by_bends with wrong transaction_id returns TRANSACTION_MISMATCH" time="0.006">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive Phase 2 — mutating tools accept transaction_id &gt; begin → split_body_by_bends with matching transaction_id returns transaction_id as rollback_token" time="0.003">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive Phase 2 — mutating tools accept transaction_id &gt; split_body_by_bends without any active transaction returns per-op rollback_token" time="0.004">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive Phase 2 — mutating tools accept transaction_id &gt; decompose_volume without any active transaction creates its own snapshot" time="0.003">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive Phase 2 — mutating tools accept transaction_id &gt; decompose_volume inside a transaction skips per-op snapshot creation" time="0.003">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive Phase 3 — shape history capture &gt; begin → split_body_by_bends → get_transaction_history returns 3 records" time="0.012">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive Phase 3 — shape history capture &gt; begin → split → commit → get_transaction_history still returns records" time="0.017">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive Phase 3 — shape history capture &gt; begin → split → rollback → get_transaction_history returns TRANSACTION_NOT_FOUND" time="0.005">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive Phase 3 — shape history capture &gt; get_transaction_history with unknown id returns TRANSACTION_NOT_FOUND" time="0.003">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive (Feature 004 Phase 4) — shape_history for all ops &gt; split_body_by_plane appends shape_history to transaction" time="0.007">
+            <failure message="Shell UUID &apos;cube-solid&apos; belongs to manufacturing-graph-tracked part &apos;cube-solid&apos;. Raw plane splits on graph-tracked shells are not permitted. Use graph mutation tools instead.">
+Unknown Error: Shell UUID &apos;cube-solid&apos; belongs to manufacturing-graph-tracked part &apos;cube-solid&apos;. Raw plane splits on graph-tracked shells are not permitted. Use graph mutation tools instead.
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;GRAPH_INTEGRITY_ERROR&apos;, recoverable: true, suggestedTool: &apos;solve_geometry&apos; }
+            </failure>
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive (Feature 004 Phase 4) — shape_history for all ops &gt; merge_bodies_with_bend appends shape_history to transaction" time="0.038">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive (Feature 004 Phase 4) — shape_history for all ops &gt; extend_face_to_target appends shape_history to transaction" time="0.005">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive (Feature 004 Phase 4) — shape_history for all ops &gt; offset_face appends shape_history to transaction" time="0.012">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive (Feature 004 Phase 4) — shape_history for all ops &gt; add_flange returns empty shape_history (sewing stub)" time="0.006">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive (Feature 004 Phase 4) — shape_history for all ops &gt; rip_edge appends 2 shape_history records to transaction" time="0.004">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive (Feature 004 Phase 4) — shape_history for all ops &gt; trim_body_with_plane appends shape_history to transaction" time="0.006">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive (Feature 004 Phase 4) — shape_history for all ops &gt; synthesize_joints (tab_slot) returns empty shape_history (stub)" time="0.006">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive (Feature 004 Phase 4) — shape_history for all ops &gt; apply_unfold returns empty shape_history (stub)" time="0.01">
+        </testcase>
+        <testcase classname="tests/integration/transaction_primitive.integration.test.ts" name="Transaction primitive (Feature 004 Phase 4) — shape_history for all ops &gt; multiple ops accumulate shape_history in transaction" time="0.006">
+            <failure message="Shell UUID &apos;cube-solid&apos; belongs to manufacturing-graph-tracked part &apos;cube-solid&apos;. Raw face offsets on graph-tracked shells are not permitted. Use graph mutation tools instead.">
+Unknown Error: Shell UUID &apos;cube-solid&apos; belongs to manufacturing-graph-tracked part &apos;cube-solid&apos;. Raw face offsets on graph-tracked shells are not permitted. Use graph mutation tools instead.
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;GRAPH_INTEGRITY_ERROR&apos;, recoverable: true, suggestedTool: &apos;solve_geometry&apos; }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/transforms.integration.test.ts" timestamp="2026-06-09T21:35:54.823Z" hostname="PaulsLaptop" tests="8" failures="1" errors="0" skipped="0" time="0.031">
+        <testcase classname="tests/integration/transforms.integration.test.ts" name="Geometric Transformations Integration Tests (Feature 006 US3) &gt; translates bodies and shifts bounding box" time="0">
+        </testcase>
+        <testcase classname="tests/integration/transforms.integration.test.ts" name="Geometric Transformations Integration Tests (Feature 006 US3) &gt; translate_body preserves orientation (no implicit rotation)" time="0">
+        </testcase>
+        <testcase classname="tests/integration/transforms.integration.test.ts" name="Geometric Transformations Integration Tests (Feature 006 US3) &gt; rotates bodies around axis" time="0">
+        </testcase>
+        <testcase classname="tests/integration/transforms.integration.test.ts" name="Geometric Transformations Integration Tests (Feature 006 US3) &gt; mirrors bodies across plane" time="0">
+        </testcase>
+        <testcase classname="tests/integration/transforms.integration.test.ts" name="Geometric Transformations Integration Tests (Feature 006 US3) &gt; scales bodies uniformly and rejects non-positive scale" time="0">
+        </testcase>
+        <testcase classname="tests/integration/transforms.integration.test.ts" name="Geometric Transformations Integration Tests (Feature 006 US3) &gt; aligns planar faces and rejects non-planar faces" time="0">
+        </testcase>
+        <testcase classname="tests/integration/transforms.integration.test.ts" name="Geometric Transformations Integration Tests (Feature 006 US3) &gt; rolls back geometric transformations correctly" time="0">
+        </testcase>
+        <testcase classname="tests/integration/transforms.integration.test.ts" name="Geometric Transformations Integration Tests (Feature 006 US3)" time="0.03">
+            <failure message="connect ECONNREFUSED 127.0.0.1:3306" type="Error">
+Error: connect ECONNREFUSED 127.0.0.1:3306
+ ❯ tests/integration/transforms.integration.test.ts:29:29
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { errno: -4078, code: &apos;ECONNREFUSED&apos;, syscall: &apos;connect&apos;, address: &apos;127.0.0.1&apos;, port: 3306, fatal: true }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/unfold.integration.test.ts" timestamp="2026-06-09T21:35:54.827Z" hostname="PaulsLaptop" tests="8" failures="1" errors="0" skipped="0" time="35.92">
+        <testcase classname="tests/integration/unfold.integration.test.ts" name="Advanced Sheet Metal Unfolding Integration Tests &gt; validate_sheet_metal on solid box fails validation" time="0.065">
+        </testcase>
+        <testcase classname="tests/integration/unfold.integration.test.ts" name="Advanced Sheet Metal Unfolding Integration Tests &gt; validate_sheet_metal on sheet_1panel passes validation" time="0.054">
+        </testcase>
+        <testcase classname="tests/integration/unfold.integration.test.ts" name="Advanced Sheet Metal Unfolding Integration Tests &gt; reconstruct_curved_bends on sheet_3panel replaces sharp joints with fillets" time="0.31">
+        </testcase>
+        <testcase classname="tests/integration/unfold.integration.test.ts" name="Advanced Sheet Metal Unfolding Integration Tests &gt; apply_unfold and export_dxf produces layered DXF with CUT, BEND_UP/DOWN and text annotations" time="0.086">
+            <system-out>
+[DEBUG sheet_1panel] DXF Content:
+  0
+SECTION
+  2
+HEADER
+  0
+ENDSEC
+  0
+SECTION
+  2
+TABLES
+  0
+TABLE
+  2
+LTYPE
+ 70
+1
+  0
+LTYPE
+  2
+CONTINUOUS
+ 70
+0
+  3
+Solid line
+ 72
+65
+ 73
+0
+ 40
+0.0
+  0
+LTYPE
+  2
+DASHED
+ 70
+0
+  3
+Dashed line __ __ __ __ __
+ 72
+65
+ 73
+2
+ 40
+6.35
+ 49
+3.175
+ 49
+-3.175
+  0
+ENDTAB
+  0
+TABLE
+  2
+LAYER
+ 70
+4
+  0
+LAYER
+  2
+0
+ 70
+0
+ 62
+7
+  6
+CONTINUOUS
+  0
+LAYER
+  2
+CUT
+ 70
+0
+ 62
+1
+  6
+CONTINUOUS
+  0
+LAYER
+  2
+BEND_UP
+ 70
+0
+ 62
+3
+  6
+DASHED
+  0
+LAYER
+  2
+BEND_DOWN
+ 70
+0
+ 62
+4
+  6
+DASHED
+  0
+ENDTAB
+  0
+ENDSEC
+  0
+SECTION
+  2
+ENTITIES
+  0
+LINE
+  8
+CUT
+ 10
+0
+ 20
+200
+ 30
+0.0
+ 11
+0
+ 21
+0
+ 31
+0.0
+  0
+LINE
+  8
+CUT
+ 10
+0
+ 20
+0
+ 30
+0.0
+ 11
+300
+ 21
+0
+ 31
+0.0
+  0
+LINE
+  8
+CUT
+ 10
+300
+ 20
+200
+ 30
+0.0
+ 11
+0
+ 21
+200
+ 31
+0.0
+  0
+LINE
+  8
+CUT
+ 10
+300
+ 20
+0
+ 30
+0.0
+ 11
+300
+ 21
+200
+ 31
+0.0
+  0
+ENDSEC
+  0
+EOF
+
+
+            </system-out>
+        </testcase>
+        <testcase classname="tests/integration/unfold.integration.test.ts" name="Advanced Sheet Metal Unfolding Integration Tests &gt; unfold merged perpendicular panels shows combined 400x200 flat dimensions and 1 bend" time="12.375">
+            <system-out>
+[DEBUG merge_unfold] flat_width_mm=400.9896016858808, flat_height_mm=200, bend_count=1
+[DEBUG merge_unfold] DXF Content:
+  0
+SECTION
+  2
+HEADER
+  0
+ENDSEC
+  0
+SECTION
+  2
+TABLES
+  0
+TABLE
+  2
+LTYPE
+ 70
+1
+  0
+LTYPE
+  2
+CONTINUOUS
+ 70
+0
+  3
+Solid line
+ 72
+65
+ 73
+0
+ 40
+0.0
+  0
+LTYPE
+  2
+DASHED
+ 70
+0
+  3
+Dashed line __ __ __ __ __
+ 72
+65
+ 73
+2
+ 40
+6.35
+ 49
+3.175
+ 49
+-3.175
+  0
+ENDTAB
+  0
+TABLE
+  2
+LAYER
+ 70
+4
+  0
+LAYER
+  2
+0
+ 70
+0
+ 62
+7
+  6
+CONTINUOUS
+  0
+LAYER
+  2
+CUT
+ 70
+0
+ 62
+1
+  6
+CONTINUOUS
+  0
+LAYER
+  2
+BEND_UP
+ 70
+0
+ 62
+3
+  6
+DASHED
+  0
+LAYER
+  2
+BEND_DOWN
+ 70
+0
+ 62
+4
+  6
+DASHED
+  0
+ENDTAB
+  0
+ENDSEC
+  0
+SECTION
+  2
+ENTITIES
+  0
+LINE
+  8
+CUT
+ 10
+197.96
+ 20
+200
+ 30
+0.0
+ 11
+197.96
+ 21
+0
+ 31
+0.0
+  0
+LINE
+  8
+CUT
+ 10
+197.96
+ 20
+0
+ 30
+0.0
+ 11
+397.96
+ 21
+0
+ 31
+0.0
+  0
+LINE
+  8
+CUT
+ 10
+397.96
+ 20
+200
+ 30
+0.0
+ 11
+197.96
+ 21
+200
+ 31
+0.0
+  0
+LINE
+  8
+CUT
+ 10
+397.96
+ 20
+0
+ 30
+0.0
+ 11
+397.96
+ 21
+200
+ 31
+0.0
+  0
+LINE
+  8
+CUT
+ 10
+1.42109e-14
+ 20
+200
+ 30
+0.0
+ 11
+1.42109e-14
+ 21
+0
+ 31
+0.0
+  0
+LINE
+  8
+CUT
+ 10
+1.42109e-14
+ 20
+0
+ 30
+0.0
+ 11
+198.96
+ 21
+0
+ 31
+0.0
+  0
+LINE
+  8
+CUT
+ 10
+198.96
+ 20
+200
+ 30
+0.0
+ 11
+0
+ 21
+200
+ 31
+0.0
+  0
+LINE
+  8
+BEND_DOWN
+ 10
+198.96
+ 20
+200
+ 30
+0.0
+ 11
+198.96
+ 21
+0
+ 31
+0.0
+  0
+TEXT
+  8
+BEND_DOWN
+ 10
+201.96
+ 20
+100
+ 30
+0.0
+ 40
+2.5
+  1
+90.0%%d DOWN
+  0
+ENDSEC
+  0
+EOF
+
+
+            </system-out>
+            <failure message="expected 3.0296016858808343 to be less than 3" type="AssertionError">
+AssertionError: expected 3.0296016858808343 to be less than 3
+ ❯ tests/integration/unfold.integration.test.ts:278:55
+            </failure>
+        </testcase>
+        <testcase classname="tests/integration/unfold.integration.test.ts" name="Advanced Sheet Metal Unfolding Integration Tests &gt; unfold of a 0-bend split panel returns dimensions matching the panel face, not a sliver" time="13.798">
+            <system-out>
+[unfold_splitpanel] panel e5052017-0ce6-474b-8ed9-65473471277b rejected: GRAPH_INTEGRITY_ERROR
+[unfold_splitpanel] panel 96bd0fe4-a10c-4af5-8149-407cdaac518f rejected: GRAPH_INTEGRITY_ERROR
+[unfold_splitpanel] panel 52304933-0dab-410f-8c67-95571fc7dc5c rejected: GRAPH_INTEGRITY_ERROR
+[unfold_splitpanel] panel 988d5e94-652f-49f3-b87f-dfff587660a5 rejected: GRAPH_INTEGRITY_ERROR
+[unfold_splitpanel] panel 359b8267-7b93-478b-b478-c207bbb1bfcd rejected: GRAPH_INTEGRITY_ERROR
+[unfold_splitpanel] panel fcf5f904-4b75-4211-8b09-17e1c0de80ec rejected: GRAPH_INTEGRITY_ERROR
+[unfold_splitpanel] panel e86d0f3a-1ea3-4983-b858-c547eb5f55b2 rejected: GRAPH_INTEGRITY_ERROR
+[unfold_splitpanel] panel 4cf7ffe6-08fb-4535-b701-3568cfb463b0 rejected: GRAPH_INTEGRITY_ERROR
+[unfold_splitpanel] panel e7550e4a-1d95-4819-b67d-0533222068e4 rejected: GRAPH_INTEGRITY_ERROR
+[unfold_splitpanel] panel 24ed6851-54f4-4b98-90ba-7ec68d27c481 rejected: GRAPH_INTEGRITY_ERROR
+[unfold_splitpanel] panel a5f37890-4477-43e7-a82e-39e74d3a2b2e rejected: GRAPH_INTEGRITY_ERROR
+[unfold_splitpanel] panel 37e0c5d0-ec81-486c-831e-2b2ea42525a7 rejected: GRAPH_INTEGRITY_ERROR
+
+            </system-out>
+        </testcase>
+        <testcase classname="tests/integration/unfold.integration.test.ts" name="Advanced Sheet Metal Unfolding Integration Tests &gt; apply_unfold on a solid cube panel rejects with GE_PANEL_INVALID" time="8.628">
+        </testcase>
+        <testcase classname="tests/integration/unfold.integration.test.ts" name="Advanced Sheet Metal Unfolding Integration Tests &gt; apply_unfold on the pre-split testcube whole body is rejected or returns correct bbox dims" time="0.598">
+            <system-out>
+[unfold_wholecube] correctly rejected with code: GE_PANEL_INVALID
+
+            </system-out>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/unfold_roundtrip.integration.test.ts" timestamp="2026-06-09T21:35:54.835Z" hostname="PaulsLaptop" tests="7" failures="3" errors="0" skipped="0" time="45.114">
+        <testcase classname="tests/integration/unfold_roundtrip.integration.test.ts" name="Unfold round-trip harness &gt; CASE 1-app: merge of two perpendicular outer panels at app-default radius 1.0mm (regression for user report)" time="0.434">
+            <failure message="{&quot;code&quot;:&quot;GE_SOLID_NOT_FOUND&quot;,&quot;message&quot;:&quot;Solid not found: d69b7aca-9353-439a-86d3-2ef375e21fef&quot;,&quot;recoverable&quot;:false}">
+Unknown Error: {&quot;code&quot;:&quot;GE_SOLID_NOT_FOUND&quot;,&quot;message&quot;:&quot;Solid not found: d69b7aca-9353-439a-86d3-2ef375e21fef&quot;,&quot;recoverable&quot;:false}
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;GE_SOLID_NOT_FOUND&apos;, recoverable: false, suggestedTool: undefined }
+            </failure>
+        </testcase>
+        <testcase classname="tests/integration/unfold_roundtrip.integration.test.ts" name="Unfold round-trip harness &gt; CASE 1: one merge of two perpendicular outer panels unfolds to 400×200 / 1 bend" time="12.224">
+            <system-out>
+[CASE 1] flat=400.9896016858808×200mm bends=1 thickness=1
+
+            </system-out>
+        </testcase>
+        <testcase classname="tests/integration/unfold_roundtrip.integration.test.ts" name="Unfold round-trip harness &gt; CASE 2: chained merge of 3 mutually-perpendicular cube faces is correctly rejected" time="9.854">
+            <failure message="{&quot;code&quot;:&quot;GE_SHELL_NOT_FOUND&quot;,&quot;message&quot;:&quot;Shell not found: db34e41d-018e-4ced-80aa-edb0ac64d75b&quot;,&quot;recoverable&quot;:false}">
+Unknown Error: {&quot;code&quot;:&quot;GE_SHELL_NOT_FOUND&quot;,&quot;message&quot;:&quot;Shell not found: db34e41d-018e-4ced-80aa-edb0ac64d75b&quot;,&quot;recoverable&quot;:false}
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;GE_SHELL_NOT_FOUND&apos;, recoverable: false, suggestedTool: undefined }
+            </failure>
+        </testcase>
+        <testcase classname="tests/integration/unfold_roundtrip.integration.test.ts" name="Unfold round-trip harness &gt; CASE 3: translate one panel by 0.05mm then merge — sewing tolerance probe" time="4.173">
+            <failure message="{&quot;code&quot;:&quot;GE_SHELL_NOT_FOUND&quot;,&quot;message&quot;:&quot;Shell/solid not found: a11dc516-e185-4179-b905-2b23235c051f&quot;,&quot;recoverable&quot;:false}">
+Unknown Error: {&quot;code&quot;:&quot;GE_SHELL_NOT_FOUND&quot;,&quot;message&quot;:&quot;Shell/solid not found: a11dc516-e185-4179-b905-2b23235c051f&quot;,&quot;recoverable&quot;:false}
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;GE_SHELL_NOT_FOUND&apos;, recoverable: false, suggestedTool: undefined }
+            </failure>
+        </testcase>
+        <testcase classname="tests/integration/unfold_roundtrip.integration.test.ts" name="Unfold round-trip harness &gt; CASE 4: all six paired-cube unfolds are 2:1 rectangles with central bend" time="12.272">
+            <system-out>
+[CASE 4 OUTER pair 0] pA(+X) + pB(+Y) → 401.0×200.0mm bends=1 thickness=1.000
+[CASE 4 OUTER pair 1] pA(-X) + pB(+Z) → 401.0×200.0mm bends=1 thickness=1.000
+[CASE 4 OUTER pair 2] pA(-Y) + pB(-Z) → 401.0×200.0mm bends=1 thickness=1.000
+[CASE 4 INNER pair 0] pA(+X) + pB(+Y) → 297.0×150.0mm bends=1 thickness=1.000
+[CASE 4 INNER pair 1] pA(-X) + pB(+Z) → 299.0×150.0mm bends=1 thickness=1.000
+[CASE 4 INNER pair 2] pA(-Y) + pB(-Z) → 299.0×150.0mm bends=1 thickness=1.000
+
+            </system-out>
+        </testcase>
+        <testcase classname="tests/integration/unfold_roundtrip.integration.test.ts" name="Unfold round-trip harness &gt; CASE 5a: asymmetric L (two cube faces, one offset along seam) unfolds to exactly 1 bend" time="2.912">
+            <system-out>
+[CASE 5] shift pB(X) by 25mm along Z, new id=05849b08-1a8d-43e0-8410-7d09c9a71a4d
+[CASE 5] flat=401.0×225.0mm bends=1 thickness=0.985
+
+            </system-out>
+        </testcase>
+        <testcase classname="tests/integration/unfold_roundtrip.integration.test.ts" name="Unfold round-trip harness &gt; CASE 5b: chained merge A+B+C with parallel A/C correctly rejects empty fuse" time="3.24">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/validate_assembly.integration.test.ts" timestamp="2026-06-09T21:35:54.841Z" hostname="PaulsLaptop" tests="5" failures="1" errors="0" skipped="0" time="9.499">
+        <testcase classname="tests/integration/validate_assembly.integration.test.ts" name="Validate Assembly Integration Tests (Feature 009) &gt; runs validation on clean single-part assembly (passing sheet metal)" time="4.665">
+        </testcase>
+        <testcase classname="tests/integration/validate_assembly.integration.test.ts" name="Validate Assembly Integration Tests (Feature 009) &gt; detects sheet metal unfold failure and recommends split_body_by_bends" time="0.088">
+        </testcase>
+        <testcase classname="tests/integration/validate_assembly.integration.test.ts" name="Validate Assembly Integration Tests (Feature 009) &gt; runs custom registered rules and appends them to the report" time="0.001">
+        </testcase>
+        <testcase classname="tests/integration/validate_assembly.integration.test.ts" name="Validate Assembly Integration Tests (Feature 009) &gt; detects clashes, recommends trim, and verifies the autofix resolves it" time="0.25">
+            <system-out>
+REPORT BEFORE: {
+  &quot;valid&quot;: false,
+  &quot;errors&quot;: [
+    {
+      &quot;id&quot;: &quot;err-clash-3649ba0a-1b76-46ce-8267-30ead8ec9fa4-8ecfb1be-fb62-45ee-ba43-9cceb96d2728&quot;,
+      &quot;category&quot;: &quot;clash_detection&quot;,
+      &quot;severity&quot;: &quot;error&quot;,
+      &quot;message&quot;: &quot;Physical overlap detected between adjacent parts 3649ba0a-1b76-46ce-8267-30ead8ec9fa4 and 8ecfb1be-fb62-45ee-ba43-9cceb96d2728 (volume: 45125.00 mm³)&quot;,
+      &quot;affected_part_ids&quot;: [
+        &quot;3649ba0a-1b76-46ce-8267-30ead8ec9fa4&quot;,
+        &quot;8ecfb1be-fb62-45ee-ba43-9cceb96d2728&quot;
+      ],
+      &quot;autofix&quot;: {
+        &quot;tool_name&quot;: &quot;trim_body_with_plane&quot;,
+        &quot;arguments&quot;: {
+          &quot;part_id&quot;: &quot;8ecfb1be-fb62-45ee-ba43-9cceb96d2728&quot;,
+          &quot;plane&quot;: {
+            &quot;normal&quot;: {
+              &quot;x&quot;: 0.5773502691896263,
+              &quot;y&quot;: 0.5773502691896246,
+              &quot;z&quot;: 0.5773502691896263
+            },
+            &quot;origin&quot;: {
+              &quot;x&quot;: 35.00000015000001,
+              &quot;y&quot;: 85.00000014999992,
+              &quot;z&quot;: 35.00000015000001
+            }
+          },
+          &quot;keep_positive_side&quot;: true
+        }
+      }
+    }
+  ],
+  &quot;summary&quot;: {
+    &quot;total_parts_checked&quot;: 2,
+    &quot;rule_count&quot;: 2,
+    &quot;execution_time_ms&quot;: 25
+  }
+}
+
+            </system-out>
+        </testcase>
+        <testcase classname="tests/integration/validate_assembly.integration.test.ts" name="Validate Assembly Integration Tests (Feature 009) &gt; loads a multi-error assembly, asserts that all error categories are reported, applies recommended autofixes sequentially, and verifies assembly resolves to clean state (T021)" time="4.452">
+            <system-out>
+REPORT AFTER: {
+  &quot;valid&quot;: false,
+  &quot;errors&quot;: [
+    {
+      &quot;id&quot;: &quot;err-unfold-fail-1a04a856-2b12-4564-ba1a-6729368a97c6&quot;,
+      &quot;category&quot;: &quot;sheet_metal&quot;,
+      &quot;severity&quot;: &quot;error&quot;,
+      &quot;message&quot;: &quot;Unfold check failed for part 1a04a856-2b12-4564-ba1a-6729368a97c6: [object Object]&quot;,
+      &quot;affected_part_ids&quot;: [
+        &quot;1a04a856-2b12-4564-ba1a-6729368a97c6&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;err-unfold-fail-8743d99b-b4fb-4ee3-ae26-5634fe3f5917&quot;,
+      &quot;category&quot;: &quot;sheet_metal&quot;,
+      &quot;severity&quot;: &quot;error&quot;,
+      &quot;message&quot;: &quot;Unfold check failed for part 8743d99b-b4fb-4ee3-ae26-5634fe3f5917: [object Object]&quot;,
+      &quot;affected_part_ids&quot;: [
+        &quot;8743d99b-b4fb-4ee3-ae26-5634fe3f5917&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;err-unfold-fail-0eafedd1-bcbd-461d-a804-6804f60ef6f9&quot;,
+      &quot;category&quot;: &quot;sheet_metal&quot;,
+      &quot;severity&quot;: &quot;error&quot;,
+      &quot;message&quot;: &quot;Unfold check failed for part 0eafedd1-bcbd-461d-a804-6804f60ef6f9: [object Object]&quot;,
+      &quot;affected_part_ids&quot;: [
+        &quot;0eafedd1-bcbd-461d-a804-6804f60ef6f9&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;err-unfold-fail-810969d3-b120-46f1-abfc-79c7069afe5b&quot;,
+      &quot;category&quot;: &quot;sheet_metal&quot;,
+      &quot;severity&quot;: &quot;error&quot;,
+      &quot;message&quot;: &quot;Unfold check failed for part 810969d3-b120-46f1-abfc-79c7069afe5b: [object Object]&quot;,
+      &quot;affected_part_ids&quot;: [
+        &quot;810969d3-b120-46f1-abfc-79c7069afe5b&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;err-unfold-fail-348e34b5-4f83-49e9-bbc4-9e771bf75c0b&quot;,
+      &quot;category&quot;: &quot;sheet_metal&quot;,
+      &quot;severity&quot;: &quot;error&quot;,
+      &quot;message&quot;: &quot;Unfold check failed for part 348e34b5-4f83-49e9-bbc4-9e771bf75c0b: [object Object]&quot;,
+      &quot;affected_part_ids&quot;: [
+        &quot;348e34b5-4f83-49e9-bbc4-9e771bf75c0b&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;err-unfold-fail-bf977a06-ede2-4f89-bec6-0f3a6594776f&quot;,
+      &quot;category&quot;: &quot;sheet_metal&quot;,
+      &quot;severity&quot;: &quot;error&quot;,
+      &quot;message&quot;: &quot;Unfold check failed for part bf977a06-ede2-4f89-bec6-0f3a6594776f: [object Object]&quot;,
+      &quot;affected_part_ids&quot;: [
+        &quot;bf977a06-ede2-4f89-bec6-0f3a6594776f&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;err-clash-fail&quot;,
+      &quot;category&quot;: &quot;clash_detection&quot;,
+      &quot;severity&quot;: &quot;error&quot;,
+      &quot;message&quot;: &quot;Clash detection failed: [object Object]&quot;,
+      &quot;affected_part_ids&quot;: [
+        &quot;80e52ce6-8b1b-4c67-99f1-ecb6a3f4aa9d&quot;,
+        &quot;bc879b0d-cf7f-4f4c-9af1-f4a5baf5abd1&quot;,
+        &quot;3d0cae25-3f13-4fd1-9790-ff8a3052cce8&quot;,
+        &quot;f49d63cf-ba85-4dc5-963a-72827230e058&quot;,
+        &quot;a3f90c0b-6708-4a75-a202-c75c0ebbde89&quot;,
+        &quot;a6ce042a-158d-45b6-bfcb-30f5adf3d244&quot;,
+        &quot;1a04a856-2b12-4564-ba1a-6729368a97c6&quot;,
+        &quot;8743d99b-b4fb-4ee3-ae26-5634fe3f5917&quot;,
+        &quot;0eafedd1-bcbd-461d-a804-6804f60ef6f9&quot;,
+        &quot;810969d3-b120-46f1-abfc-79c7069afe5b&quot;,
+        &quot;348e34b5-4f83-49e9-bbc4-9e771bf75c0b&quot;,
+        &quot;bf977a06-ede2-4f89-bec6-0f3a6594776f&quot;
+      ]
+    }
+  ],
+  &quot;summary&quot;: {
+    &quot;total_parts_checked&quot;: 12,
+    &quot;rule_count&quot;: 2,
+    &quot;execution_time_ms&quot;: 155
+  }
+}
+
+            </system-out>
+            <failure message="expected false to be true // Object.is equality" type="AssertionError">
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ tests/integration/validate_assembly.integration.test.ts:338:31
+            </failure>
+        </testcase>
+    </testsuite>
+</testsuites>

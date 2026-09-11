@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SimpleCacheTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-08-04T03:45:32.419Z" hostname="Amandas-MacBook-Pro.local" time="0.055">
+  <properties/>
+  <testcase name="Break simple cache with concurrent get calls()" classname="SimpleCacheTest" time="0.055">
+    <failure message="org.opentest4j.AssertionFailedError: Loader should be called only once for the same key ==&gt; expected: &lt;1&gt; but was: &lt;10&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Loader should be called only once for the same key ==&gt; expected: &lt;1&gt; but was: &lt;10&gt;
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at app//kotlin.test.junit5.JUnit5Asserter.assertEquals(JUnitSupport.kt:32)
+	at app//kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:63)
+	at app//kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at app//SimpleCacheTest.Break simple cache with concurrent get calls(SimpleCacheTest.kt:44)
+	at java.base@17.0.13/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base@17.0.13/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.13/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Loader was called 10 times
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

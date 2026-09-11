@@ -1,0 +1,90 @@
+<testsuites id="" name="" tests="6" failures="2" skipped="0" errors="0" time="2.450017">
+<testsuite name="auth.spec.ts" timestamp="2025-11-08T07:57:21.353Z" hostname="" tests="2" failures="1" skipped="0" time="1.019" errors="0">
+<testcase name="Auth - reqres demo › should login and return token (schema validated)" classname="auth.spec.ts" time="0.724">
+<failure message="auth.spec.ts:6:3 should login and return token (schema validated)" type="FAILURE">
+<![CDATA[  auth.spec.ts:6:3 › Auth - reqres demo › should login and return token (schema validated) ─────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 200
+    Received: 401
+
+      11 |       }
+      12 |     });
+    > 13 |     expect(res.status()).toBe(200);
+         |                          ^
+      14 |     const body = await res.json();
+      15 |
+      16 |     const v = validateJson(loginSchema as object, body);
+        at /Users/amirchoshov/Desktop/playwright-api-automation-framework/tests/api/auth.spec.ts:13:26
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 200
+    Received: 401
+
+      11 |       }
+      12 |     });
+    > 13 |     expect(res.status()).toBe(200);
+         |                          ^
+      14 |     const body = await res.json();
+      15 |
+      16 |     const v = validateJson(loginSchema as object, body);
+        at /Users/amirchoshov/Desktop/playwright-api-automation-framework/tests/api/auth.spec.ts:13:26
+]]>
+</failure>
+</testcase>
+<testcase name="Auth - reqres demo › negative: invalid login returns error" classname="auth.spec.ts" time="0.295">
+</testcase>
+</testsuite>
+<testsuite name="contract.spec.ts" timestamp="2025-11-08T07:57:21.353Z" hostname="" tests="1" failures="0" skipped="0" time="0.197" errors="0">
+<testcase name="contract: list users conforms to contract schema" classname="contract.spec.ts" time="0.197">
+</testcase>
+</testsuite>
+<testsuite name="pagination.spec.ts" timestamp="2025-11-08T07:57:21.353Z" hostname="" tests="1" failures="0" skipped="0" time="0.212" errors="0">
+<testcase name="Pagination › page param changes result page" classname="pagination.spec.ts" time="0.212">
+</testcase>
+</testsuite>
+<testsuite name="user.spec.ts" timestamp="2025-11-08T07:57:21.353Z" hostname="" tests="2" failures="1" skipped="0" time="0.902" errors="0">
+<testcase name="Users CRUD-ish (reqres) › list users page 1 matches schema" classname="user.spec.ts" time="0.2">
+</testcase>
+<testcase name="Users CRUD-ish (reqres) › create user returns success" classname="user.spec.ts" time="0.702">
+<failure message="user.spec.ts:16:3 create user returns success" type="FAILURE">
+<![CDATA[  user.spec.ts:16:3 › Users CRUD-ish (reqres) › create user returns success ────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 201
+    Received: 401
+
+      22 |       } 
+      23 |     });
+    > 24 |     expect(res.status()).toBe(201);
+         |                          ^
+      25 |     const body = await res.json();
+      26 |     expect(body).toHaveProperty('id');
+      27 |     expect(body).toHaveProperty('createdAt');
+        at /Users/amirchoshov/Desktop/playwright-api-automation-framework/tests/api/user.spec.ts:24:26
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 201
+    Received: 401
+
+      22 |       } 
+      23 |     });
+    > 24 |     expect(res.status()).toBe(201);
+         |                          ^
+      25 |     const body = await res.json();
+      26 |     expect(body).toHaveProperty('id');
+      27 |     expect(body).toHaveProperty('createdAt');
+        at /Users/amirchoshov/Desktop/playwright-api-automation-framework/tests/api/user.spec.ts:24:26
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

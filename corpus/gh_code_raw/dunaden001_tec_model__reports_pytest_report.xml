@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="3" time="0.427" timestamp="2024-05-09T17:54:25.940275" hostname="c9daa502ea51"><testcase classname="tests.unit.test_example" name="test__gen_damped_data" time="0.001" /><testcase classname="tests.unit.test_example" name="test__gen_undamped_data" time="0.002" /><testcase classname="tests.unit.test_example" name="test__gen_underdamped_data" time="0.001"><failure message="assert False&#10; +  where False = &lt;function isclose at 0x75a2c4fb9630&gt;(2.0, 5.0, atol=1e-08)&#10; +    where &lt;function isclose at 0x75a2c4fb9630&gt; = np.isclose">def test__gen_underdamped_data() -&gt; None:
+        """Unit test for the gen_undamped_data function."""
+        x_vals, y_vals = example.gen_underdamped_data()
+        assert len(x_vals) == len(y_vals) == 50
+    
+        for x, y in zip(x_vals, y_vals, strict=True):
+            assert isinstance(x, float)
+            assert isinstance(y, float)
+            expected_y = np.cos(2 * np.pi * x) * np.exp(0.2 * x)
+            assert np.isclose(y, expected_y, atol=1e-8)
+    
+        max_x = max(x_vals)
+&gt;       assert np.isclose(max_x, 5.0, atol=1e-8)
+E       assert False
+E        +  where False = &lt;function isclose at 0x75a2c4fb9630&gt;(2.0, 5.0, atol=1e-08)
+E        +    where &lt;function isclose at 0x75a2c4fb9630&gt; = np.isclose
+
+tests/unit/test_example.py:62: AssertionError</failure></testcase></testsuite></testsuites>

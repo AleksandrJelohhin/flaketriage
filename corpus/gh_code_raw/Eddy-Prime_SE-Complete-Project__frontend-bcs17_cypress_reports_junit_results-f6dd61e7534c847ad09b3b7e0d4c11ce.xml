@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="49.171" tests="5" failures="5">
+  <testsuite name="Root Suite" timestamp="2025-05-09T18:50:52" tests="0" file="cypress/e2e/features/assignment_creation.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Assignment Creation" timestamp="2025-05-09T18:50:56" tests="5" time="44.897" failures="5">
+    <testcase name="Assignment Creation Successfully creating an assignment with required fields" time="0.000" classname="Successfully creating an assignment with required fields">
+      <failure message="`cy.request()` failed trying to load:
+
+http://localhost:8080/test-utils/reset-database
+
+We attempted to make an http request to this URL but the request failed without a response.
+
+We received this error at the network level:
+
+  &gt; Error: connect ECONNREFUSED 127.0.0.1:8080
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: http://localhost:8080/test-utils/reset-database
+
+-----------------------------------------------------------
+
+Common situations why this would fail:
+  - you don&apos;t have internet access
+  - you forgot to run / boot your web server
+  - your web server isn&apos;t accessible
+  - you have weird network configuration settings on your computer
+
+https://on.cypress.io/request" type="CypressError"><![CDATA[CypressError: `cy.request()` failed trying to load:
+
+http://localhost:8080/test-utils/reset-database
+
+We attempted to make an http request to this URL but the request failed without a response.
+
+We received this error at the network level:
+
+  > Error: connect ECONNREFUSED 127.0.0.1:8080
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: http://localhost:8080/test-utils/reset-database
+
+-----------------------------------------------------------
+
+Common situations why this would fail:
+  - you don't have internet access
+  - you forgot to run / boot your web server
+  - your web server isn't accessible
+  - you have weird network configuration settings on your computer
+
+https://on.cypress.io/request
+    at <unknown> (http://localhost:3001/__cypress/runner/cypress_runner.js:132388:70)
+    at tryCatcher (http://localhost:3001/__cypress/runner/cypress_runner.js:1807:23)
+    at <unknown> (http://localhost:3001/__cypress/runner/cypress_runner.js:4203:37)
+    at tryCatcher (http://localhost:3001/__cypress/runner/cypress_runner.js:1807:23)
+    at Promise._settlePromiseFromHandler (http://localhost:3001/__cypress/runner/cypress_runner.js:1519:31)
+    at Promise._settlePromise (http://localhost:3001/__cypress/runner/cypress_runner.js:1576:18)
+    at Promise._settlePromise0 (http://localhost:3001/__cypress/runner/cypress_runner.js:1621:10)
+    at Promise._settlePromises (http://localhost:3001/__cypress/runner/cypress_runner.js:1697:18)
+    at _drainQueueStep (http://localhost:3001/__cypress/runner/cypress_runner.js:2407:12)
+    at _drainQueue (http://localhost:3001/__cypress/runner/cypress_runner.js:2400:9)
+    at Async._drainQueues (http://localhost:3001/__cypress/runner/cypress_runner.js:2416:5)
+    at Async.drainQueues (http://localhost:3001/__cypress/runner/cypress_runner.js:2286:14)
+From Your Spec Code:
+    at Context.eval (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:11991:12)
+    at Registry.runHook (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:9264:31)
+    at Object.fn (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:10112:39)
+    at runStepWithLogGroup (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:9860:36)
+    at Context.eval (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:10111:51)
+
+From Node.js Internals:
+  RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+      at new r (<embedded>:1868:354814)
+      at ee.callback (<embedded>:1868:360815)
+      at e.callback.s.callback [as _callback] (<embedded>:1868:360261)
+      at s._callback.s.callback.s.callback (<embedded>:2086:91494)
+      at ee.emit (node:events:527:28)
+      at ee.onRequestError (<embedded>:2086:100436)
+      at ClientRequest.emit (node:events:539:35)
+      at Socket.socketErrorListener (node:_http_client:454:9)
+      at Socket.emit (node:events:527:28)
+      at emitErrorNT (node:internal/streams/destroy:157:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:83:21)]]></failure>
+    </testcase>
+    <testcase name="Assignment Creation Attempting to create an assignment without required fields" time="0.000" classname="Attempting to create an assignment without required fields">
+      <failure message="`cy.request()` failed trying to load:
+
+http://localhost:8080/test-utils/reset-database
+
+We attempted to make an http request to this URL but the request failed without a response.
+
+We received this error at the network level:
+
+  &gt; Error: connect ECONNREFUSED 127.0.0.1:8080
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: http://localhost:8080/test-utils/reset-database
+
+-----------------------------------------------------------
+
+Common situations why this would fail:
+  - you don&apos;t have internet access
+  - you forgot to run / boot your web server
+  - your web server isn&apos;t accessible
+  - you have weird network configuration settings on your computer
+
+https://on.cypress.io/request" type="CypressError"><![CDATA[CypressError: `cy.request()` failed trying to load:
+
+http://localhost:8080/test-utils/reset-database
+
+We attempted to make an http request to this URL but the request failed without a response.
+
+We received this error at the network level:
+
+  > Error: connect ECONNREFUSED 127.0.0.1:8080
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: http://localhost:8080/test-utils/reset-database
+
+-----------------------------------------------------------
+
+Common situations why this would fail:
+  - you don't have internet access
+  - you forgot to run / boot your web server
+  - your web server isn't accessible
+  - you have weird network configuration settings on your computer
+
+https://on.cypress.io/request
+    at <unknown> (http://localhost:3001/__cypress/runner/cypress_runner.js:132388:70)
+    at tryCatcher (http://localhost:3001/__cypress/runner/cypress_runner.js:1807:23)
+    at <unknown> (http://localhost:3001/__cypress/runner/cypress_runner.js:4203:37)
+    at tryCatcher (http://localhost:3001/__cypress/runner/cypress_runner.js:1807:23)
+    at Promise._settlePromiseFromHandler (http://localhost:3001/__cypress/runner/cypress_runner.js:1519:31)
+    at Promise._settlePromise (http://localhost:3001/__cypress/runner/cypress_runner.js:1576:18)
+    at Promise._settlePromise0 (http://localhost:3001/__cypress/runner/cypress_runner.js:1621:10)
+    at Promise._settlePromises (http://localhost:3001/__cypress/runner/cypress_runner.js:1697:18)
+    at _drainQueueStep (http://localhost:3001/__cypress/runner/cypress_runner.js:2407:12)
+    at _drainQueue (http://localhost:3001/__cypress/runner/cypress_runner.js:2400:9)
+    at Async._drainQueues (http://localhost:3001/__cypress/runner/cypress_runner.js:2416:5)
+    at Async.drainQueues (http://localhost:3001/__cypress/runner/cypress_runner.js:2286:14)
+From Your Spec Code:
+    at Context.eval (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:11991:12)
+    at Registry.runHook (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:9264:31)
+    at Object.fn (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:10112:39)
+    at runStepWithLogGroup (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:9860:36)
+    at Context.eval (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:10111:51)
+
+From Node.js Internals:
+  RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+      at new r (<embedded>:1868:354814)
+      at ee.callback (<embedded>:1868:360815)
+      at e.callback.s.callback [as _callback] (<embedded>:1868:360261)
+      at s._callback.s.callback.s.callback (<embedded>:2086:91494)
+      at ee.emit (node:events:527:28)
+      at ee.onRequestError (<embedded>:2086:100436)
+      at ClientRequest.emit (node:events:539:35)
+      at Socket.socketErrorListener (node:_http_client:454:9)
+      at Socket.emit (node:events:527:28)
+      at emitErrorNT (node:internal/streams/destroy:157:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:83:21)]]></failure>
+    </testcase>
+    <testcase name="Assignment Creation Creating an assignment with file attachments" time="0.000" classname="Creating an assignment with file attachments">
+      <failure message="`cy.request()` failed trying to load:
+
+http://localhost:8080/test-utils/reset-database
+
+We attempted to make an http request to this URL but the request failed without a response.
+
+We received this error at the network level:
+
+  &gt; Error: connect ECONNREFUSED 127.0.0.1:8080
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: http://localhost:8080/test-utils/reset-database
+
+-----------------------------------------------------------
+
+Common situations why this would fail:
+  - you don&apos;t have internet access
+  - you forgot to run / boot your web server
+  - your web server isn&apos;t accessible
+  - you have weird network configuration settings on your computer
+
+https://on.cypress.io/request" type="CypressError"><![CDATA[CypressError: `cy.request()` failed trying to load:
+
+http://localhost:8080/test-utils/reset-database
+
+We attempted to make an http request to this URL but the request failed without a response.
+
+We received this error at the network level:
+
+  > Error: connect ECONNREFUSED 127.0.0.1:8080
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: http://localhost:8080/test-utils/reset-database
+
+-----------------------------------------------------------
+
+Common situations why this would fail:
+  - you don't have internet access
+  - you forgot to run / boot your web server
+  - your web server isn't accessible
+  - you have weird network configuration settings on your computer
+
+https://on.cypress.io/request
+    at <unknown> (http://localhost:3001/__cypress/runner/cypress_runner.js:132388:70)
+    at tryCatcher (http://localhost:3001/__cypress/runner/cypress_runner.js:1807:23)
+    at <unknown> (http://localhost:3001/__cypress/runner/cypress_runner.js:4203:37)
+    at tryCatcher (http://localhost:3001/__cypress/runner/cypress_runner.js:1807:23)
+    at Promise._settlePromiseFromHandler (http://localhost:3001/__cypress/runner/cypress_runner.js:1519:31)
+    at Promise._settlePromise (http://localhost:3001/__cypress/runner/cypress_runner.js:1576:18)
+    at Promise._settlePromise0 (http://localhost:3001/__cypress/runner/cypress_runner.js:1621:10)
+    at Promise._settlePromises (http://localhost:3001/__cypress/runner/cypress_runner.js:1697:18)
+    at _drainQueueStep (http://localhost:3001/__cypress/runner/cypress_runner.js:2407:12)
+    at _drainQueue (http://localhost:3001/__cypress/runner/cypress_runner.js:2400:9)
+    at Async._drainQueues (http://localhost:3001/__cypress/runner/cypress_runner.js:2416:5)
+    at Async.drainQueues (http://localhost:3001/__cypress/runner/cypress_runner.js:2286:14)
+From Your Spec Code:
+    at Context.eval (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:11991:12)
+    at Registry.runHook (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:9264:31)
+    at Object.fn (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:10112:39)
+    at runStepWithLogGroup (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:9860:36)
+    at Context.eval (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:10111:51)
+
+From Node.js Internals:
+  RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+      at new r (<embedded>:1868:354814)
+      at ee.callback (<embedded>:1868:360815)
+      at e.callback.s.callback [as _callback] (<embedded>:1868:360261)
+      at s._callback.s.callback.s.callback (<embedded>:2086:91494)
+      at ee.emit (node:events:527:28)
+      at ee.onRequestError (<embedded>:2086:100436)
+      at ClientRequest.emit (node:events:539:35)
+      at Socket.socketErrorListener (node:_http_client:454:9)
+      at Socket.emit (node:events:527:28)
+      at emitErrorNT (node:internal/streams/destroy:157:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:83:21)]]></failure>
+    </testcase>
+    <testcase name="Assignment Creation Creating an assignment with a past due date" time="0.000" classname="Creating an assignment with a past due date">
+      <failure message="`cy.request()` failed trying to load:
+
+http://localhost:8080/test-utils/reset-database
+
+We attempted to make an http request to this URL but the request failed without a response.
+
+We received this error at the network level:
+
+  &gt; Error: connect ECONNREFUSED 127.0.0.1:8080
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: http://localhost:8080/test-utils/reset-database
+
+-----------------------------------------------------------
+
+Common situations why this would fail:
+  - you don&apos;t have internet access
+  - you forgot to run / boot your web server
+  - your web server isn&apos;t accessible
+  - you have weird network configuration settings on your computer
+
+https://on.cypress.io/request" type="CypressError"><![CDATA[CypressError: `cy.request()` failed trying to load:
+
+http://localhost:8080/test-utils/reset-database
+
+We attempted to make an http request to this URL but the request failed without a response.
+
+We received this error at the network level:
+
+  > Error: connect ECONNREFUSED 127.0.0.1:8080
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: http://localhost:8080/test-utils/reset-database
+
+-----------------------------------------------------------
+
+Common situations why this would fail:
+  - you don't have internet access
+  - you forgot to run / boot your web server
+  - your web server isn't accessible
+  - you have weird network configuration settings on your computer
+
+https://on.cypress.io/request
+    at <unknown> (http://localhost:3001/__cypress/runner/cypress_runner.js:132388:70)
+    at tryCatcher (http://localhost:3001/__cypress/runner/cypress_runner.js:1807:23)
+    at <unknown> (http://localhost:3001/__cypress/runner/cypress_runner.js:4203:37)
+    at tryCatcher (http://localhost:3001/__cypress/runner/cypress_runner.js:1807:23)
+    at Promise._settlePromiseFromHandler (http://localhost:3001/__cypress/runner/cypress_runner.js:1519:31)
+    at Promise._settlePromise (http://localhost:3001/__cypress/runner/cypress_runner.js:1576:18)
+    at Promise._settlePromise0 (http://localhost:3001/__cypress/runner/cypress_runner.js:1621:10)
+    at Promise._settlePromises (http://localhost:3001/__cypress/runner/cypress_runner.js:1697:18)
+    at _drainQueueStep (http://localhost:3001/__cypress/runner/cypress_runner.js:2407:12)
+    at _drainQueue (http://localhost:3001/__cypress/runner/cypress_runner.js:2400:9)
+    at Async._drainQueues (http://localhost:3001/__cypress/runner/cypress_runner.js:2416:5)
+    at Async.drainQueues (http://localhost:3001/__cypress/runner/cypress_runner.js:2286:14)
+From Your Spec Code:
+    at Context.eval (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:11991:12)
+    at Registry.runHook (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:9264:31)
+    at Object.fn (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:10112:39)
+    at runStepWithLogGroup (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:9860:36)
+    at Context.eval (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:10111:51)
+
+From Node.js Internals:
+  RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+      at new r (<embedded>:1868:354814)
+      at ee.callback (<embedded>:1868:360815)
+      at e.callback.s.callback [as _callback] (<embedded>:1868:360261)
+      at s._callback.s.callback.s.callback (<embedded>:2086:91494)
+      at ee.emit (node:events:527:28)
+      at ee.onRequestError (<embedded>:2086:100436)
+      at ClientRequest.emit (node:events:539:35)
+      at Socket.socketErrorListener (node:_http_client:454:9)
+      at Socket.emit (node:events:527:28)
+      at emitErrorNT (node:internal/streams/destroy:157:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:83:21)]]></failure>
+    </testcase>
+    <testcase name="Assignment Creation Creating an assignment with a very long description" time="0.000" classname="Creating an assignment with a very long description">
+      <failure message="`cy.request()` failed trying to load:
+
+http://localhost:8080/test-utils/reset-database
+
+We attempted to make an http request to this URL but the request failed without a response.
+
+We received this error at the network level:
+
+  &gt; Error: connect ECONNREFUSED 127.0.0.1:8080
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: http://localhost:8080/test-utils/reset-database
+
+-----------------------------------------------------------
+
+Common situations why this would fail:
+  - you don&apos;t have internet access
+  - you forgot to run / boot your web server
+  - your web server isn&apos;t accessible
+  - you have weird network configuration settings on your computer
+
+https://on.cypress.io/request" type="CypressError"><![CDATA[CypressError: `cy.request()` failed trying to load:
+
+http://localhost:8080/test-utils/reset-database
+
+We attempted to make an http request to this URL but the request failed without a response.
+
+We received this error at the network level:
+
+  > Error: connect ECONNREFUSED 127.0.0.1:8080
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: http://localhost:8080/test-utils/reset-database
+
+-----------------------------------------------------------
+
+Common situations why this would fail:
+  - you don't have internet access
+  - you forgot to run / boot your web server
+  - your web server isn't accessible
+  - you have weird network configuration settings on your computer
+
+https://on.cypress.io/request
+    at <unknown> (http://localhost:3001/__cypress/runner/cypress_runner.js:132388:70)
+    at tryCatcher (http://localhost:3001/__cypress/runner/cypress_runner.js:1807:23)
+    at <unknown> (http://localhost:3001/__cypress/runner/cypress_runner.js:4203:37)
+    at tryCatcher (http://localhost:3001/__cypress/runner/cypress_runner.js:1807:23)
+    at Promise._settlePromiseFromHandler (http://localhost:3001/__cypress/runner/cypress_runner.js:1519:31)
+    at Promise._settlePromise (http://localhost:3001/__cypress/runner/cypress_runner.js:1576:18)
+    at Promise._settlePromise0 (http://localhost:3001/__cypress/runner/cypress_runner.js:1621:10)
+    at Promise._settlePromises (http://localhost:3001/__cypress/runner/cypress_runner.js:1697:18)
+    at _drainQueueStep (http://localhost:3001/__cypress/runner/cypress_runner.js:2407:12)
+    at _drainQueue (http://localhost:3001/__cypress/runner/cypress_runner.js:2400:9)
+    at Async._drainQueues (http://localhost:3001/__cypress/runner/cypress_runner.js:2416:5)
+    at Async.drainQueues (http://localhost:3001/__cypress/runner/cypress_runner.js:2286:14)
+From Your Spec Code:
+    at Context.eval (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:11991:12)
+    at Registry.runHook (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:9264:31)
+    at Object.fn (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:10112:39)
+    at runStepWithLogGroup (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:9860:36)
+    at Context.eval (http://localhost:3001/__cypress/tests?p=cypress/e2e/features/assignment_creation.feature:10111:51)
+
+From Node.js Internals:
+  RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+      at new r (<embedded>:1868:354814)
+      at ee.callback (<embedded>:1868:360815)
+      at e.callback.s.callback [as _callback] (<embedded>:1868:360261)
+      at s._callback.s.callback.s.callback (<embedded>:2086:91494)
+      at ee.emit (node:events:527:28)
+      at ee.onRequestError (<embedded>:2086:100436)
+      at ClientRequest.emit (node:events:539:35)
+      at Socket.socketErrorListener (node:_http_client:454:9)
+      at Socket.emit (node:events:527:28)
+      at emitErrorNT (node:internal/streams/destroy:157:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:83:21)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

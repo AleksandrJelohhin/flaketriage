@@ -1,0 +1,60 @@
+<testsuites id="" name="" tests="6" failures="1" skipped="4" errors="0" time="36.99747599999999">
+<testsuite name="SampleBungalowProject_detailedEstimate.spec.ts" timestamp="2026-03-14T07:25:01.859Z" hostname="chromium" tests="6" failures="1" skipped="4" time="31.815" errors="0">
+<testcase name="Sample bunglow project  › Verify user is able to Login to Site Book" classname="SampleBungalowProject_detailedEstimate.spec.ts" time="1.809">
+<system-out>
+<![CDATA[Mobile number is entered
+Clicked on Continue button
+Password is entered
+Clicked on Login button
+
+[[ATTACHMENT|..\..\test-results\SampleBungalowProject_detailedEstimate-Sample--588f3-oject-Verify-user-is-able-to-Login-to-Site-Book-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|..\..\test-results\SampleBungalowProject_detailedEstimate-Sample--588f3-oject-Verify-user-is-able-to-Login-to-Site-Book-chromium\test-finished-2.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Sample bunglow project  › Verify user is able to click on Sample Bungalow Project G+1 card" classname="SampleBungalowProject_detailedEstimate.spec.ts" time="30.006">
+<failure message="SampleBungalowProject_detailedEstimate.spec.ts:32:9 Verify user is able to click on Sample Bungalow Project G+1 card" type="FAILURE">
+<![CDATA[  [chromium] › SampleBungalowProject_detailedEstimate.spec.ts:32:9 › Sample bunglow project  › Verify user is able to click on Sample Bungalow Project G+1 card 
+
+    Test timeout of 30000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\SampleBungalowProject_detailedEstimate-Sample--455fd-le-to-click-on-Sample-Bungalow-Project-G-1-card-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\SampleBungalowProject_detailedEstimate-Sample--455fd-le-to-click-on-Sample-Bungalow-Project-G-1-card-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\SampleBungalowProject_detailedEstimate-Sample--455fd-le-to-click-on-Sample-Bungalow-Project-G-1-card-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\SampleBungalowProject_detailedEstimate-Sample--455fd-le-to-click-on-Sample-Bungalow-Project-G-1-card-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\..\test-results\SampleBungalowProject_detailedEstimate-Sample--455fd-le-to-click-on-Sample-Bungalow-Project-G-1-card-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Sample bunglow project  › Verify user is able to click on Detailed Estimate" classname="SampleBungalowProject_detailedEstimate.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Sample bunglow project  › Verify Quanitity for Ground Flooring" classname="SampleBungalowProject_detailedEstimate.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Sample bunglow project  › Verify Unit for Ground Flooring" classname="SampleBungalowProject_detailedEstimate.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Sample bunglow project  › Verify Total Cost for Ground Flooring" classname="SampleBungalowProject_detailedEstimate.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>

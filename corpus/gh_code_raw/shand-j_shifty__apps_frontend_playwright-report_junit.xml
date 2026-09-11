@@ -1,0 +1,692 @@
+<testsuites id="" name="" tests="40" failures="30" skipped="0" errors="0" time="12.446376">
+<testsuite name="auth/login.spec.ts" timestamp="2025-12-09T20:21:05.228Z" hostname="chromium" tests="8" failures="3" skipped="0" time="26.334" errors="0">
+<testcase name="Login Flow › should display login form" classname="auth/login.spec.ts" time="6.349">
+<failure message="login.spec.ts:16:7 should display login form" type="FAILURE">
+<![CDATA[  [chromium] › auth/login.spec.ts:16:7 › Login Flow › should display login form ────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('h2, h1').filter({ hasText: /Welcome back|Login|Sign in/i })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('h2, h1').filter({ hasText: /Welcome back|Login|Sign in/i })
+
+
+      16 |   test('should display login form', async ({ page }) => {
+      17 |     // Verify page title/heading
+    > 18 |     await expect(page.locator('h2, h1').filter({ hasText: /Welcome back|Login|Sign in/i })).toBeVisible();
+         |                                                                                             ^
+      19 |     
+      20 |     // Verify form elements are present
+      21 |     await expect(page.getByLabel(/email/i)).toBeVisible();
+        at /Users/home/Projects/shifty/apps/frontend/tests/auth/login.spec.ts:18:93
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/auth-login-Login-Flow-should-display-login-form-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/auth-login-Login-Flow-should-display-login-form-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/auth-login-Login-Flow-should-display-login-form-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-should-display-login-form-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-should-display-login-form-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-should-display-login-form-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Flow › should successfully login with valid credentials" classname="auth/login.spec.ts" time="1.833">
+</testcase>
+<testcase name="Login Flow › should show error message with invalid credentials" classname="auth/login.spec.ts" time="6.443">
+<failure message="login.spec.ts:46:7 should show error message with invalid credentials" type="FAILURE">
+<![CDATA[  [chromium] › auth/login.spec.ts:46:7 › Login Flow › should show error message with invalid credentials 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('text=/invalid credentials|email or password/i')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('text=/invalid credentials|email or password/i')
+
+
+      53 |     
+      54 |     // Wait for error message
+    > 55 |     await expect(page.locator('text=/invalid credentials|email or password/i')).toBeVisible({ timeout: 5000 });
+         |                                                                                 ^
+      56 |     
+      57 |     // Verify we're still on login page
+      58 |     expect(page.url()).toContain('/login');
+        at /Users/home/Projects/shifty/apps/frontend/tests/auth/login.spec.ts:55:81
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/auth-login-Login-Flow-shou-a52e1-ge-with-invalid-credentials-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/auth-login-Login-Flow-shou-a52e1-ge-with-invalid-credentials-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/auth-login-Login-Flow-shou-a52e1-ge-with-invalid-credentials-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-shou-a52e1-ge-with-invalid-credentials-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-shou-a52e1-ge-with-invalid-credentials-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-shou-a52e1-ge-with-invalid-credentials-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Flow › should show error message when email is missing" classname="auth/login.spec.ts" time="1.427">
+</testcase>
+<testcase name="Login Flow › should show error message when password is missing" classname="auth/login.spec.ts" time="1.454">
+</testcase>
+<testcase name="Login Flow › should toggle password visibility" classname="auth/login.spec.ts" time="1.485">
+</testcase>
+<testcase name="Login Flow › should show loading state during login" classname="auth/login.spec.ts" time="6.498">
+<failure message="login.spec.ts:110:7 should show loading state during login" type="FAILURE">
+<![CDATA[  [chromium] › auth/login.spec.ts:110:7 › Login Flow › should show loading state during login ──────
+
+    Error: expect(locator).toBeDisabled() failed
+
+    Locator: getByRole('button', { name: /log in|sign in/i })
+    Expected: disabled
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeDisabled" with timeout 5000ms
+      - waiting for getByRole('button', { name: /log in|sign in/i })
+
+
+      124 |     
+      125 |     // Verify button shows loading state (disabled or shows spinner)
+    > 126 |     await expect(loginButton).toBeDisabled();
+          |                               ^
+      127 |   });
+      128 |
+      129 |   test('should allow navigation to register page', async ({ page }) => {
+        at /Users/home/Projects/shifty/apps/frontend/tests/auth/login.spec.ts:126:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/auth-login-Login-Flow-should-show-loading-state-during-login-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/auth-login-Login-Flow-should-show-loading-state-during-login-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/auth-login-Login-Flow-should-show-loading-state-during-login-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-should-show-loading-state-during-login-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-should-show-loading-state-during-login-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-should-show-loading-state-during-login-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Flow › should allow navigation to register page" classname="auth/login.spec.ts" time="0.845">
+</testcase>
+</testsuite>
+<testsuite name="auth/login.spec.ts" timestamp="2025-12-09T20:21:05.228Z" hostname="firefox" tests="8" failures="8" skipped="0" time="0.007" errors="0">
+<testcase name="Login Flow › should display login form" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:16:7 should display login form" type="FAILURE">
+<![CDATA[  [firefox] › auth/login.spec.ts:16:7 › Login Flow › should display login form ─────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/firefox-1497/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should successfully login with valid credentials" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:26:7 should successfully login with valid credentials" type="FAILURE">
+<![CDATA[  [firefox] › auth/login.spec.ts:26:7 › Login Flow › should successfully login with valid credentials 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/firefox-1497/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should show error message with invalid credentials" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:46:7 should show error message with invalid credentials" type="FAILURE">
+<![CDATA[  [firefox] › auth/login.spec.ts:46:7 › Login Flow › should show error message with invalid credentials 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/firefox-1497/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should show error message when email is missing" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:61:7 should show error message when email is missing" type="FAILURE">
+<![CDATA[  [firefox] › auth/login.spec.ts:61:7 › Login Flow › should show error message when email is missing 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/firefox-1497/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should show error message when password is missing" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:74:7 should show error message when password is missing" type="FAILURE">
+<![CDATA[  [firefox] › auth/login.spec.ts:74:7 › Login Flow › should show error message when password is missing 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/firefox-1497/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should toggle password visibility" classname="auth/login.spec.ts" time="0">
+<failure message="login.spec.ts:87:7 should toggle password visibility" type="FAILURE">
+<![CDATA[  [firefox] › auth/login.spec.ts:87:7 › Login Flow › should toggle password visibility ─────────────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/firefox-1497/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should show loading state during login" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:110:7 should show loading state during login" type="FAILURE">
+<![CDATA[  [firefox] › auth/login.spec.ts:110:7 › Login Flow › should show loading state during login ───────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/firefox-1497/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should allow navigation to register page" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:129:7 should allow navigation to register page" type="FAILURE">
+<![CDATA[  [firefox] › auth/login.spec.ts:129:7 › Login Flow › should allow navigation to register page ─────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/firefox-1497/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="auth/login.spec.ts" timestamp="2025-12-09T20:21:05.228Z" hostname="webkit" tests="8" failures="8" skipped="0" time="0.009" errors="0">
+<testcase name="Login Flow › should display login form" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:16:7 should display login form" type="FAILURE">
+<![CDATA[  [webkit] › auth/login.spec.ts:16:7 › Login Flow › should display login form ──────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/webkit-2227/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should successfully login with valid credentials" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:26:7 should successfully login with valid credentials" type="FAILURE">
+<![CDATA[  [webkit] › auth/login.spec.ts:26:7 › Login Flow › should successfully login with valid credentials 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/webkit-2227/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should show error message with invalid credentials" classname="auth/login.spec.ts" time="0.002">
+<failure message="login.spec.ts:46:7 should show error message with invalid credentials" type="FAILURE">
+<![CDATA[  [webkit] › auth/login.spec.ts:46:7 › Login Flow › should show error message with invalid credentials 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/webkit-2227/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should show error message when email is missing" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:61:7 should show error message when email is missing" type="FAILURE">
+<![CDATA[  [webkit] › auth/login.spec.ts:61:7 › Login Flow › should show error message when email is missing 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/webkit-2227/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should show error message when password is missing" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:74:7 should show error message when password is missing" type="FAILURE">
+<![CDATA[  [webkit] › auth/login.spec.ts:74:7 › Login Flow › should show error message when password is missing 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/webkit-2227/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should toggle password visibility" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:87:7 should toggle password visibility" type="FAILURE">
+<![CDATA[  [webkit] › auth/login.spec.ts:87:7 › Login Flow › should toggle password visibility ──────────────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/webkit-2227/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should show loading state during login" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:110:7 should show loading state during login" type="FAILURE">
+<![CDATA[  [webkit] › auth/login.spec.ts:110:7 › Login Flow › should show loading state during login ────────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/webkit-2227/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should allow navigation to register page" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:129:7 should allow navigation to register page" type="FAILURE">
+<![CDATA[  [webkit] › auth/login.spec.ts:129:7 › Login Flow › should allow navigation to register page ──────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/webkit-2227/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="auth/login.spec.ts" timestamp="2025-12-09T20:21:05.228Z" hostname="Mobile Chrome" tests="8" failures="3" skipped="0" time="22.674" errors="0">
+<testcase name="Login Flow › should display login form" classname="auth/login.spec.ts" time="5.856">
+<failure message="login.spec.ts:16:7 should display login form" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › auth/login.spec.ts:16:7 › Login Flow › should display login form ───────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('h2, h1').filter({ hasText: /Welcome back|Login|Sign in/i })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('h2, h1').filter({ hasText: /Welcome back|Login|Sign in/i })
+
+
+      16 |   test('should display login form', async ({ page }) => {
+      17 |     // Verify page title/heading
+    > 18 |     await expect(page.locator('h2, h1').filter({ hasText: /Welcome back|Login|Sign in/i })).toBeVisible();
+         |                                                                                             ^
+      19 |     
+      20 |     // Verify form elements are present
+      21 |     await expect(page.getByLabel(/email/i)).toBeVisible();
+        at /Users/home/Projects/shifty/apps/frontend/tests/auth/login.spec.ts:18:93
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/auth-login-Login-Flow-should-display-login-form-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/auth-login-Login-Flow-should-display-login-form-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/auth-login-Login-Flow-should-display-login-form-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-should-display-login-form-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-should-display-login-form-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-should-display-login-form-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Flow › should successfully login with valid credentials" classname="auth/login.spec.ts" time="1.339">
+</testcase>
+<testcase name="Login Flow › should show error message with invalid credentials" classname="auth/login.spec.ts" time="6.025">
+<failure message="login.spec.ts:46:7 should show error message with invalid credentials" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › auth/login.spec.ts:46:7 › Login Flow › should show error message with invalid credentials 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('text=/invalid credentials|email or password/i')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('text=/invalid credentials|email or password/i')
+
+
+      53 |     
+      54 |     // Wait for error message
+    > 55 |     await expect(page.locator('text=/invalid credentials|email or password/i')).toBeVisible({ timeout: 5000 });
+         |                                                                                 ^
+      56 |     
+      57 |     // Verify we're still on login page
+      58 |     expect(page.url()).toContain('/login');
+        at /Users/home/Projects/shifty/apps/frontend/tests/auth/login.spec.ts:55:81
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/auth-login-Login-Flow-shou-a52e1-ge-with-invalid-credentials-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/auth-login-Login-Flow-shou-a52e1-ge-with-invalid-credentials-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/auth-login-Login-Flow-shou-a52e1-ge-with-invalid-credentials-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-shou-a52e1-ge-with-invalid-credentials-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-shou-a52e1-ge-with-invalid-credentials-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-shou-a52e1-ge-with-invalid-credentials-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Flow › should show error message when email is missing" classname="auth/login.spec.ts" time="1.026">
+</testcase>
+<testcase name="Login Flow › should show error message when password is missing" classname="auth/login.spec.ts" time="0.864">
+</testcase>
+<testcase name="Login Flow › should toggle password visibility" classname="auth/login.spec.ts" time="0.861">
+</testcase>
+<testcase name="Login Flow › should show loading state during login" classname="auth/login.spec.ts" time="5.912">
+<failure message="login.spec.ts:110:7 should show loading state during login" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › auth/login.spec.ts:110:7 › Login Flow › should show loading state during login ─
+
+    Error: expect(locator).toBeDisabled() failed
+
+    Locator: getByRole('button', { name: /log in|sign in/i })
+    Expected: disabled
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeDisabled" with timeout 5000ms
+      - waiting for getByRole('button', { name: /log in|sign in/i })
+
+
+      124 |     
+      125 |     // Verify button shows loading state (disabled or shows spinner)
+    > 126 |     await expect(loginButton).toBeDisabled();
+          |                               ^
+      127 |   });
+      128 |
+      129 |   test('should allow navigation to register page', async ({ page }) => {
+        at /Users/home/Projects/shifty/apps/frontend/tests/auth/login.spec.ts:126:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/auth-login-Login-Flow-should-show-loading-state-during-login-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/auth-login-Login-Flow-should-show-loading-state-during-login-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/auth-login-Login-Flow-should-show-loading-state-during-login-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-should-show-loading-state-during-login-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-should-show-loading-state-during-login-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|../test-results/auth-login-Login-Flow-should-show-loading-state-during-login-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Flow › should allow navigation to register page" classname="auth/login.spec.ts" time="0.791">
+</testcase>
+</testsuite>
+<testsuite name="auth/login.spec.ts" timestamp="2025-12-09T20:21:05.228Z" hostname="Mobile Safari" tests="8" failures="8" skipped="0" time="0.007" errors="0">
+<testcase name="Login Flow › should display login form" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:16:7 should display login form" type="FAILURE">
+<![CDATA[  [Mobile Safari] › auth/login.spec.ts:16:7 › Login Flow › should display login form ───────────────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/webkit-2227/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should successfully login with valid credentials" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:26:7 should successfully login with valid credentials" type="FAILURE">
+<![CDATA[  [Mobile Safari] › auth/login.spec.ts:26:7 › Login Flow › should successfully login with valid credentials 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/webkit-2227/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should show error message with invalid credentials" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:46:7 should show error message with invalid credentials" type="FAILURE">
+<![CDATA[  [Mobile Safari] › auth/login.spec.ts:46:7 › Login Flow › should show error message with invalid credentials 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/webkit-2227/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should show error message when email is missing" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:61:7 should show error message when email is missing" type="FAILURE">
+<![CDATA[  [Mobile Safari] › auth/login.spec.ts:61:7 › Login Flow › should show error message when email is missing 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/webkit-2227/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should show error message when password is missing" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:74:7 should show error message when password is missing" type="FAILURE">
+<![CDATA[  [Mobile Safari] › auth/login.spec.ts:74:7 › Login Flow › should show error message when password is missing 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/webkit-2227/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should toggle password visibility" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:87:7 should toggle password visibility" type="FAILURE">
+<![CDATA[  [Mobile Safari] › auth/login.spec.ts:87:7 › Login Flow › should toggle password visibility ───────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/webkit-2227/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should show loading state during login" classname="auth/login.spec.ts" time="0">
+<failure message="login.spec.ts:110:7 should show loading state during login" type="FAILURE">
+<![CDATA[  [Mobile Safari] › auth/login.spec.ts:110:7 › Login Flow › should show loading state during login ─
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/webkit-2227/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Login Flow › should allow navigation to register page" classname="auth/login.spec.ts" time="0.001">
+<failure message="login.spec.ts:129:7 should allow navigation to register page" type="FAILURE">
+<![CDATA[  [Mobile Safari] › auth/login.spec.ts:129:7 › Login Flow › should allow navigation to register page 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/home/Library/Caches/ms-playwright/webkit-2227/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

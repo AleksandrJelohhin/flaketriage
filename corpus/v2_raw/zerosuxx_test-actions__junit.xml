@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<testsuites tests="16" failures="7">
+<testsuite name="k6 thresholds" tests="16" failures="7"><testcase name="http_req_duration{scenario:loadProductListAndSearch} - p(95)&lt;2000"><failure message="failed" /></testcase>
+<testcase name="http_req_duration{scenario:loadProductListAndSearch} - p(99)&lt;5000"><failure message="failed" /></testcase>
+<testcase name="http_req_duration{scenario:stressPromotionListAndSearch} - p(95)&lt;3000" />
+<testcase name="http_req_duration{scenario:stressPromotionListAndSearch} - p(99)&lt;5000" />
+<testcase name="http_req_duration{scenario:stressSellerListAndSearch} - p(99)&lt;5000" />
+<testcase name="http_req_duration{scenario:stressSellerListAndSearch} - p(95)&lt;3000" />
+<testcase name="http_req_duration{scenario:loadSellerListAndSearch} - p(95)&lt;2000"><failure message="failed" /></testcase>
+<testcase name="http_req_duration{scenario:loadSellerListAndSearch} - p(99)&lt;5000"><failure message="failed" /></testcase>
+<testcase name="http_req_duration{scenario:stressProductListAndSearch} - p(95)&lt;3000" />
+<testcase name="http_req_duration{scenario:stressProductListAndSearch} - p(99)&lt;5000" />
+<testcase name="http_req_duration{scenario:stressOrderListAndSearch} - p(99)&lt;5000" />
+<testcase name="http_req_duration{scenario:stressOrderListAndSearch} - p(95)&lt;3000" />
+<testcase name="http_req_duration{scenario:loadPromotionListAndSearch} - p(95)&lt;2000"><failure message="failed" /></testcase>
+<testcase name="http_req_duration{scenario:loadPromotionListAndSearch} - p(99)&lt;5000" />
+<testcase name="http_req_duration{scenario:loadOrderListAndSearch} - p(95)&lt;2000"><failure message="failed" /></testcase>
+<testcase name="http_req_duration{scenario:loadOrderListAndSearch} - p(99)&lt;5000"><failure message="failed" /></testcase>
+</testsuite >
+</testsuites >

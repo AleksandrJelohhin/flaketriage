@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/var/www/html/phpunit.xml" tests="158" assertions="274" errors="18" failures="33" skipped="0" time="56.306182">
+    <testsuite name="Unit" tests="124" assertions="224" errors="18" failures="1" skipped="0" time="44.392845">
+      <testsuite name="Tests\Unit\AlunoTest" file="/var/www/html/tests/Unit/AlunoTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="13.578919">
+        <testcase name="test_nome_completo" file="/var/www/html/tests/Unit/AlunoTest.php" line="17" class="Tests\Unit\AlunoTest" classname="Tests.Unit.AlunoTest" assertions="1" time="13.578919"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\ExampleTest" file="/var/www/html/tests/Unit/ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.011372">
+        <testcase name="test_that_true_is_true" file="/var/www/html/tests/Unit/ExampleTest.php" line="12" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" assertions="1" time="0.011372"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Middleware\CheckPerfilTest" file="/var/www/html/tests/Unit/Middleware/CheckPerfilTest.php" tests="5" assertions="6" errors="0" failures="0" skipped="0" time="1.835973">
+        <testcase name="test_handle_allows_web_user_with_correct_perfil" file="/var/www/html/tests/Unit/Middleware/CheckPerfilTest.php" line="25" class="Tests\Unit\Middleware\CheckPerfilTest" classname="Tests.Unit.Middleware.CheckPerfilTest" assertions="1" time="0.838067"/>
+        <testcase name="test_handle_aborts_403_for_web_user_wrong_perfil" file="/var/www/html/tests/Unit/Middleware/CheckPerfilTest.php" line="38" class="Tests\Unit\Middleware\CheckPerfilTest" classname="Tests.Unit.Middleware.CheckPerfilTest" assertions="1" time="0.237862"/>
+        <testcase name="test_handle_allows_aluno_guard_for_aluno_perfil" file="/var/www/html/tests/Unit/Middleware/CheckPerfilTest.php" line="54" class="Tests\Unit\Middleware\CheckPerfilTest" classname="Tests.Unit.Middleware.CheckPerfilTest" assertions="1" time="0.245285"/>
+        <testcase name="test_handle_aborts_403_for_aluno_guard_wrong_perfil" file="/var/www/html/tests/Unit/Middleware/CheckPerfilTest.php" line="67" class="Tests\Unit\Middleware\CheckPerfilTest" classname="Tests.Unit.Middleware.CheckPerfilTest" assertions="1" time="0.242267"/>
+        <testcase name="test_handle_redirects_when_no_auth" file="/var/www/html/tests/Unit/Middleware/CheckPerfilTest.php" line="83" class="Tests\Unit\Middleware\CheckPerfilTest" classname="Tests.Unit.Middleware.CheckPerfilTest" assertions="2" time="0.272492">
+          <system-out>erro</system-out>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Unit\Middleware\IsAdminTest" file="/var/www/html/tests/Unit/Middleware/IsAdminTest.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.729224">
+        <testcase name="test_handle_allows_admin_user" file="/var/www/html/tests/Unit/Middleware/IsAdminTest.php" line="24" class="Tests\Unit\Middleware\IsAdminTest" classname="Tests.Unit.Middleware.IsAdminTest" assertions="1" time="0.306484"/>
+        <testcase name="test_handle_aborts_403_for_non_admin" file="/var/www/html/tests/Unit/Middleware/IsAdminTest.php" line="37" class="Tests\Unit\Middleware\IsAdminTest" classname="Tests.Unit.Middleware.IsAdminTest" assertions="1" time="0.211685"/>
+        <testcase name="test_handle_aborts_403_when_not_authenticated" file="/var/www/html/tests/Unit/Middleware/IsAdminTest.php" line="53" class="Tests\Unit\Middleware\IsAdminTest" classname="Tests.Unit.Middleware.IsAdminTest" assertions="1" time="0.211054"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Models\AlunoTest" file="/var/www/html/tests/Unit/Models/AlunoTest.php" tests="7" assertions="18" errors="0" failures="0" skipped="0" time="2.152396">
+        <testcase name="test_nome_completo_accessor" file="/var/www/html/tests/Unit/Models/AlunoTest.php" line="15" class="Tests\Unit\Models\AlunoTest" classname="Tests.Unit.Models.AlunoTest" assertions="1" time="0.213520"/>
+        <testcase name="test_fillable_attributes" file="/var/www/html/tests/Unit/Models/AlunoTest.php" line="25" class="Tests\Unit\Models\AlunoTest" classname="Tests.Unit.Models.AlunoTest" assertions="8" time="0.244510"/>
+        <testcase name="test_hidden_attributes_not_in_array" file="/var/www/html/tests/Unit/Models/AlunoTest.php" line="48" class="Tests\Unit\Models\AlunoTest" classname="Tests.Unit.Models.AlunoTest" assertions="2" time="0.306183"/>
+        <testcase name="test_appends_includes_nome_completo" file="/var/www/html/tests/Unit/Models/AlunoTest.php" line="58" class="Tests\Unit\Models\AlunoTest" classname="Tests.Unit.Models.AlunoTest" assertions="1" time="0.242345"/>
+        <testcase name="test_enderecos_relationship" file="/var/www/html/tests/Unit/Models/AlunoTest.php" line="67" class="Tests\Unit\Models\AlunoTest" classname="Tests.Unit.Models.AlunoTest" assertions="2" time="0.639856"/>
+        <testcase name="test_cursos_relationship" file="/var/www/html/tests/Unit/Models/AlunoTest.php" line="75" class="Tests\Unit\Models\AlunoTest" classname="Tests.Unit.Models.AlunoTest" assertions="2" time="0.289396"/>
+        <testcase name="test_authenticatable_trait" file="/var/www/html/tests/Unit/Models/AlunoTest.php" line="83" class="Tests\Unit\Models\AlunoTest" classname="Tests.Unit.Models.AlunoTest" assertions="2" time="0.216586"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Models\CursoTest" file="/var/www/html/tests/Unit/Models/CursoTest.php" tests="4" assertions="8" errors="0" failures="0" skipped="0" time="0.977555">
+        <testcase name="test_fillable_attributes" file="/var/www/html/tests/Unit/Models/CursoTest.php" line="14" class="Tests\Unit\Models\CursoTest" classname="Tests.Unit.Models.CursoTest" assertions="2" time="0.221743"/>
+        <testcase name="test_alunos_relationship" file="/var/www/html/tests/Unit/Models/CursoTest.php" line="25" class="Tests\Unit\Models\CursoTest" classname="Tests.Unit.Models.CursoTest" assertions="2" time="0.279536"/>
+        <testcase name="test_authenticatable_trait" file="/var/www/html/tests/Unit/Models/CursoTest.php" line="33" class="Tests\Unit\Models\CursoTest" classname="Tests.Unit.Models.CursoTest" assertions="2" time="0.238453"/>
+        <testcase name="test_notifiable_trait" file="/var/www/html/tests/Unit/Models/CursoTest.php" line="41" class="Tests\Unit\Models\CursoTest" classname="Tests.Unit.Models.CursoTest" assertions="2" time="0.237822"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Models\EnderecoTest" file="/var/www/html/tests/Unit/Models/EnderecoTest.php" tests="7" assertions="13" errors="0" failures="0" skipped="0" time="1.805189">
+        <testcase name="test_fillable_attributes" file="/var/www/html/tests/Unit/Models/EnderecoTest.php" line="14" class="Tests\Unit\Models\EnderecoTest" classname="Tests.Unit.Models.EnderecoTest" assertions="4" time="0.247980"/>
+        <testcase name="test_alunos_relationship" file="/var/www/html/tests/Unit/Models/EnderecoTest.php" line="29" class="Tests\Unit\Models\EnderecoTest" classname="Tests.Unit.Models.EnderecoTest" assertions="2" time="0.246899"/>
+        <testcase name="test_hidden_attributes_not_in_array" file="/var/www/html/tests/Unit/Models/EnderecoTest.php" line="37" class="Tests\Unit\Models\EnderecoTest" classname="Tests.Unit.Models.EnderecoTest" assertions="2" time="0.309648"/>
+        <testcase name="test_appends_includes_aluno" file="/var/www/html/tests/Unit/Models/EnderecoTest.php" line="47" class="Tests\Unit\Models\EnderecoTest" classname="Tests.Unit.Models.EnderecoTest" assertions="1" time="0.265345"/>
+        <testcase name="test_get_aluno_attribute" file="/var/www/html/tests/Unit/Models/EnderecoTest.php" line="56" class="Tests\Unit\Models\EnderecoTest" classname="Tests.Unit.Models.EnderecoTest" assertions="1" time="0.244624"/>
+        <testcase name="test_authenticatable_trait" file="/var/www/html/tests/Unit/Models/EnderecoTest.php" line="65" class="Tests\Unit\Models\EnderecoTest" classname="Tests.Unit.Models.EnderecoTest" assertions="2" time="0.209722"/>
+        <testcase name="test_notifiable_trait" file="/var/www/html/tests/Unit/Models/EnderecoTest.php" line="73" class="Tests\Unit\Models\EnderecoTest" classname="Tests.Unit.Models.EnderecoTest" assertions="1" time="0.280971"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Models\UserTest" file="/var/www/html/tests/Unit/Models/UserTest.php" tests="6" assertions="14" errors="0" failures="0" skipped="0" time="1.588118">
+        <testcase name="test_fillable_attributes" file="/var/www/html/tests/Unit/Models/UserTest.php" line="13" class="Tests\Unit\Models\UserTest" classname="Tests.Unit.Models.UserTest" assertions="3" time="0.207134"/>
+        <testcase name="test_hidden_attributes_not_in_array" file="/var/www/html/tests/Unit/Models/UserTest.php" line="27" class="Tests\Unit\Models\UserTest" classname="Tests.Unit.Models.UserTest" assertions="2" time="0.212919"/>
+        <testcase name="test_casts_method" file="/var/www/html/tests/Unit/Models/UserTest.php" line="40" class="Tests\Unit\Models\UserTest" classname="Tests.Unit.Models.UserTest" assertions="4" time="0.246613"/>
+        <testcase name="test_password_is_hashed" file="/var/www/html/tests/Unit/Models/UserTest.php" line="55" class="Tests\Unit\Models\UserTest" classname="Tests.Unit.Models.UserTest" assertions="2" time="0.531726"/>
+        <testcase name="test_authenticatable_trait" file="/var/www/html/tests/Unit/Models/UserTest.php" line="65" class="Tests\Unit\Models\UserTest" classname="Tests.Unit.Models.UserTest" assertions="2" time="0.199944"/>
+        <testcase name="test_notifiable_trait" file="/var/www/html/tests/Unit/Models/UserTest.php" line="73" class="Tests\Unit\Models\UserTest" classname="Tests.Unit.Models.UserTest" assertions="1" time="0.189783"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Requests\AlunoPostRequestTest" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" tests="19" assertions="1" errors="18" failures="0" skipped="0" time="4.587975">
+        <testcase name="test_authorize_returns_true" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="22" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="1" time="0.273993"/>
+        <testcase name="test_valid_data_passes_validation" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="36" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.484164">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_valid_data_passes_validation
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:39</error>
+        </testcase>
+        <testcase name="test_invalid_primeiro_nome_too_short" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="44" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.191179">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_invalid_primeiro_nome_too_short
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:47</error>
+        </testcase>
+        <testcase name="test_invalid_sobrenome_too_short" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="53" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.220975">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_invalid_sobrenome_too_short
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:56</error>
+        </testcase>
+        <testcase name="test_invalid_matricula_too_short" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="62" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.209113">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_invalid_matricula_too_short
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:65</error>
+        </testcase>
+        <testcase name="test_invalid_email_format" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="71" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.222793">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_invalid_email_format
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:74</error>
+        </testcase>
+        <testcase name="test_invalid_user_status_not_in_config" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="80" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.215171">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_invalid_user_status_not_in_config
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:83</error>
+        </testcase>
+        <testcase name="test_valid_user_status_ativo" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="89" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.195696">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_valid_user_status_ativo
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:92</error>
+        </testcase>
+        <testcase name="test_valid_user_status_inativo" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="97" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.224339">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_valid_user_status_inativo
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:100</error>
+        </testcase>
+        <testcase name="test_invalid_celular_too_short" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="105" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.238401">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_invalid_celular_too_short
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:108</error>
+        </testcase>
+        <testcase name="test_invalid_unidade_de_ensino_too_short" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="114" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.194004">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_invalid_unidade_de_ensino_too_short
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:117</error>
+        </testcase>
+        <testcase name="test_invalid_enderecos_not_array" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="123" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.195316">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_invalid_enderecos_not_array
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:126</error>
+        </testcase>
+        <testcase name="test_invalid_curso_not_array" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="132" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.197056">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_invalid_curso_not_array
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:135</error>
+        </testcase>
+        <testcase name="test_invalid_password_too_short" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="141" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.211626">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_invalid_password_too_short
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:147</error>
+        </testcase>
+        <testcase name="test_invalid_password_not_confirmed" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="153" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.213397">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_invalid_password_not_confirmed
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:159</error>
+        </testcase>
+        <testcase name="test_duplicate_matricula_fails_unique" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="165" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.405426">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_duplicate_matricula_fails_unique
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:170</error>
+        </testcase>
+        <testcase name="test_duplicate_email_fails_unique" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="176" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.222404">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_duplicate_email_fails_unique
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:181</error>
+        </testcase>
+        <testcase name="test_duplicate_celular_fails_unique" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="187" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.248173">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_duplicate_celular_fails_unique
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:192</error>
+        </testcase>
+        <testcase name="test_unique_ignores_current_aluno_id" file="/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php" line="198" class="Tests\Unit\Requests\AlunoPostRequestTest" classname="Tests.Unit.Requests.AlunoPostRequestTest" assertions="0" time="0.224750">
+          <error type="LogicException">Tests\Unit\Requests\AlunoPostRequestTest::test_unique_ignores_current_aluno_id
+LogicException: Route is not bound.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:477
+/var/www/html/vendor/laravel/framework/src/Illuminate/Routing/Route.php:422
+/var/www/html/vendor/laravel/framework/src/Illuminate/Http/Request.php:642
+/var/www/html/app/Http/Requests/AlunoPostRequest.php:25
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:33
+/var/www/html/tests/Unit/Requests/AlunoPostRequestTest.php:215</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Unit\Requests\AlunoUpdateRequestTest" file="/var/www/html/tests/Unit/Requests/AlunoUpdateRequestTest.php" tests="9" assertions="18" errors="0" failures="1" skipped="0" time="2.251076">
+        <testcase name="test_authorize_returns_true" file="/var/www/html/tests/Unit/Requests/AlunoUpdateRequestTest.php" line="21" class="Tests\Unit\Requests\AlunoUpdateRequestTest" classname="Tests.Unit.Requests.AlunoUpdateRequestTest" assertions="1" time="0.211504"/>
+        <testcase name="test_valid_optional_data_passes" file="/var/www/html/tests/Unit/Requests/AlunoUpdateRequestTest.php" line="26" class="Tests\Unit\Requests\AlunoUpdateRequestTest" classname="Tests.Unit.Requests.AlunoUpdateRequestTest" assertions="1" time="0.476259"/>
+        <testcase name="test_empty_data_passes" file="/var/www/html/tests/Unit/Requests/AlunoUpdateRequestTest.php" line="46" class="Tests\Unit\Requests\AlunoUpdateRequestTest" classname="Tests.Unit.Requests.AlunoUpdateRequestTest" assertions="1" time="0.206379"/>
+        <testcase name="test_invalid_primeiro_nome_too_short" file="/var/www/html/tests/Unit/Requests/AlunoUpdateRequestTest.php" line="55" class="Tests\Unit\Requests\AlunoUpdateRequestTest" classname="Tests.Unit.Requests.AlunoUpdateRequestTest" assertions="2" time="0.203585"/>
+        <testcase name="test_invalid_email_format" file="/var/www/html/tests/Unit/Requests/AlunoUpdateRequestTest.php" line="65" class="Tests\Unit\Requests\AlunoUpdateRequestTest" classname="Tests.Unit.Requests.AlunoUpdateRequestTest" assertions="2" time="0.273536"/>
+        <testcase name="test_password_nullable" file="/var/www/html/tests/Unit/Requests/AlunoUpdateRequestTest.php" line="75" class="Tests\Unit\Requests\AlunoUpdateRequestTest" classname="Tests.Unit.Requests.AlunoUpdateRequestTest" assertions="1" time="0.217352"/>
+        <testcase name="test_password_min_8_chars" file="/var/www/html/tests/Unit/Requests/AlunoUpdateRequestTest.php" line="84" class="Tests\Unit\Requests\AlunoUpdateRequestTest" classname="Tests.Unit.Requests.AlunoUpdateRequestTest" assertions="2" time="0.201859"/>
+        <testcase name="test_password_confirmed" file="/var/www/html/tests/Unit/Requests/AlunoUpdateRequestTest.php" line="97" class="Tests\Unit\Requests\AlunoUpdateRequestTest" classname="Tests.Unit.Requests.AlunoUpdateRequestTest" assertions="2" time="0.209421"/>
+        <testcase name="test_sometimes_fields_are_optional" file="/var/www/html/tests/Unit/Requests/AlunoUpdateRequestTest.php" line="110" class="Tests\Unit\Requests\AlunoUpdateRequestTest" classname="Tests.Unit.Requests.AlunoUpdateRequestTest" assertions="6" time="0.251181">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Unit\Requests\AlunoUpdateRequestTest::test_sometimes_fields_are_optional
+Field enderecos should be optional
+Failed asserting that false is true.
+
+/var/www/html/tests/Unit/Requests/AlunoUpdateRequestTest.php:120</failure>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Unit\Requests\CursoPostRequestTest" file="/var/www/html/tests/Unit/Requests/CursoPostRequestTest.php" tests="8" assertions="12" errors="0" failures="0" skipped="0" time="1.825296">
+        <testcase name="test_authorize_returns_true" file="/var/www/html/tests/Unit/Requests/CursoPostRequestTest.php" line="22" class="Tests\Unit\Requests\CursoPostRequestTest" classname="Tests.Unit.Requests.CursoPostRequestTest" assertions="1" time="0.216005"/>
+        <testcase name="test_valid_data_passes" file="/var/www/html/tests/Unit/Requests/CursoPostRequestTest.php" line="27" class="Tests\Unit\Requests\CursoPostRequestTest" classname="Tests.Unit.Requests.CursoPostRequestTest" assertions="1" time="0.189623"/>
+        <testcase name="test_formacao_optional" file="/var/www/html/tests/Unit/Requests/CursoPostRequestTest.php" line="39" class="Tests\Unit\Requests\CursoPostRequestTest" classname="Tests.Unit.Requests.CursoPostRequestTest" assertions="1" time="0.238163"/>
+        <testcase name="test_invalid_nome_too_short" file="/var/www/html/tests/Unit/Requests/CursoPostRequestTest.php" line="48" class="Tests\Unit\Requests\CursoPostRequestTest" classname="Tests.Unit.Requests.CursoPostRequestTest" assertions="2" time="0.213331"/>
+        <testcase name="test_invalid_nome_too_long" file="/var/www/html/tests/Unit/Requests/CursoPostRequestTest.php" line="58" class="Tests\Unit\Requests\CursoPostRequestTest" classname="Tests.Unit.Requests.CursoPostRequestTest" assertions="2" time="0.200242"/>
+        <testcase name="test_duplicate_nome_fails_unique" file="/var/www/html/tests/Unit/Requests/CursoPostRequestTest.php" line="68" class="Tests\Unit\Requests\CursoPostRequestTest" classname="Tests.Unit.Requests.CursoPostRequestTest" assertions="2" time="0.358508"/>
+        <testcase name="test_valid_formacao_from_config" file="/var/www/html/tests/Unit/Requests/CursoPostRequestTest.php" line="80" class="Tests\Unit\Requests\CursoPostRequestTest" classname="Tests.Unit.Requests.CursoPostRequestTest" assertions="1" time="0.210576"/>
+        <testcase name="test_invalid_formacao_not_in_config" file="/var/www/html/tests/Unit/Requests/CursoPostRequestTest.php" line="92" class="Tests\Unit\Requests\CursoPostRequestTest" classname="Tests.Unit.Requests.CursoPostRequestTest" assertions="2" time="0.198848"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Requests\CursoUpdateRequestTest" file="/var/www/html/tests/Unit/Requests/CursoUpdateRequestTest.php" tests="5" assertions="8" errors="0" failures="0" skipped="0" time="1.007879">
+        <testcase name="test_authorize_returns_true" file="/var/www/html/tests/Unit/Requests/CursoUpdateRequestTest.php" line="21" class="Tests\Unit\Requests\CursoUpdateRequestTest" classname="Tests.Unit.Requests.CursoUpdateRequestTest" assertions="1" time="0.211905"/>
+        <testcase name="test_valid_data_passes" file="/var/www/html/tests/Unit/Requests/CursoUpdateRequestTest.php" line="26" class="Tests\Unit\Requests\CursoUpdateRequestTest" classname="Tests.Unit.Requests.CursoUpdateRequestTest" assertions="1" time="0.206420"/>
+        <testcase name="test_invalid_nome_too_short" file="/var/www/html/tests/Unit/Requests/CursoUpdateRequestTest.php" line="35" class="Tests\Unit\Requests\CursoUpdateRequestTest" classname="Tests.Unit.Requests.CursoUpdateRequestTest" assertions="2" time="0.193771"/>
+        <testcase name="test_invalid_nome_too_long" file="/var/www/html/tests/Unit/Requests/CursoUpdateRequestTest.php" line="45" class="Tests\Unit\Requests\CursoUpdateRequestTest" classname="Tests.Unit.Requests.CursoUpdateRequestTest" assertions="2" time="0.186058"/>
+        <testcase name="test_nome_required" file="/var/www/html/tests/Unit/Requests/CursoUpdateRequestTest.php" line="55" class="Tests\Unit\Requests\CursoUpdateRequestTest" classname="Tests.Unit.Requests.CursoUpdateRequestTest" assertions="2" time="0.209724"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Requests\EnderecoPostRequestTest" file="/var/www/html/tests/Unit/Requests/EnderecoPostRequestTest.php" tests="6" assertions="9" errors="0" failures="0" skipped="0" time="1.295373">
+        <testcase name="test_authorize_returns_true" file="/var/www/html/tests/Unit/Requests/EnderecoPostRequestTest.php" line="21" class="Tests\Unit\Requests\EnderecoPostRequestTest" classname="Tests.Unit.Requests.EnderecoPostRequestTest" assertions="1" time="0.222975"/>
+        <testcase name="test_valid_enderecos_array_passes" file="/var/www/html/tests/Unit/Requests/EnderecoPostRequestTest.php" line="26" class="Tests\Unit\Requests\EnderecoPostRequestTest" classname="Tests.Unit.Requests.EnderecoPostRequestTest" assertions="1" time="0.200651"/>
+        <testcase name="test_enderecos_required" file="/var/www/html/tests/Unit/Requests/EnderecoPostRequestTest.php" line="42" class="Tests\Unit\Requests\EnderecoPostRequestTest" classname="Tests.Unit.Requests.EnderecoPostRequestTest" assertions="2" time="0.260181"/>
+        <testcase name="test_enderecos_must_be_array" file="/var/www/html/tests/Unit/Requests/EnderecoPostRequestTest.php" line="52" class="Tests\Unit\Requests\EnderecoPostRequestTest" classname="Tests.Unit.Requests.EnderecoPostRequestTest" assertions="2" time="0.200394"/>
+        <testcase name="test_optional_fields_are_strings" file="/var/www/html/tests/Unit/Requests/EnderecoPostRequestTest.php" line="62" class="Tests\Unit\Requests\EnderecoPostRequestTest" classname="Tests.Unit.Requests.EnderecoPostRequestTest" assertions="2" time="0.212880"/>
+        <testcase name="test_optional_fields_when_strings_pass" file="/var/www/html/tests/Unit/Requests/EnderecoPostRequestTest.php" line="79" class="Tests\Unit\Requests\EnderecoPostRequestTest" classname="Tests.Unit.Requests.EnderecoPostRequestTest" assertions="1" time="0.198291"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Requests\EnderecoUpdateRequestTest" file="/var/www/html/tests/Unit/Requests/EnderecoUpdateRequestTest.php" tests="8" assertions="12" errors="0" failures="0" skipped="0" time="1.810258">
+        <testcase name="test_authorize_returns_true" file="/var/www/html/tests/Unit/Requests/EnderecoUpdateRequestTest.php" line="21" class="Tests\Unit\Requests\EnderecoUpdateRequestTest" classname="Tests.Unit.Requests.EnderecoUpdateRequestTest" assertions="1" time="0.212908"/>
+        <testcase name="test_empty_data_passes" file="/var/www/html/tests/Unit/Requests/EnderecoUpdateRequestTest.php" line="26" class="Tests\Unit\Requests\EnderecoUpdateRequestTest" classname="Tests.Unit.Requests.EnderecoUpdateRequestTest" assertions="1" time="0.192079"/>
+        <testcase name="test_valid_data_passes" file="/var/www/html/tests/Unit/Requests/EnderecoUpdateRequestTest.php" line="35" class="Tests\Unit\Requests\EnderecoUpdateRequestTest" classname="Tests.Unit.Requests.EnderecoUpdateRequestTest" assertions="1" time="0.180683"/>
+        <testcase name="test_rua_max_255" file="/var/www/html/tests/Unit/Requests/EnderecoUpdateRequestTest.php" line="49" class="Tests\Unit\Requests\EnderecoUpdateRequestTest" classname="Tests.Unit.Requests.EnderecoUpdateRequestTest" assertions="2" time="0.210297"/>
+        <testcase name="test_cep_max_20" file="/var/www/html/tests/Unit/Requests/EnderecoUpdateRequestTest.php" line="59" class="Tests\Unit\Requests\EnderecoUpdateRequestTest" classname="Tests.Unit.Requests.EnderecoUpdateRequestTest" assertions="2" time="0.205540"/>
+        <testcase name="test_numero_da_casa_max_10" file="/var/www/html/tests/Unit/Requests/EnderecoUpdateRequestTest.php" line="69" class="Tests\Unit\Requests\EnderecoUpdateRequestTest" classname="Tests.Unit.Requests.EnderecoUpdateRequestTest" assertions="2" time="0.189683"/>
+        <testcase name="test_bairro_max_255" file="/var/www/html/tests/Unit/Requests/EnderecoUpdateRequestTest.php" line="79" class="Tests\Unit\Requests\EnderecoUpdateRequestTest" classname="Tests.Unit.Requests.EnderecoUpdateRequestTest" assertions="2" time="0.265839"/>
+        <testcase name="test_fields_must_be_strings" file="/var/www/html/tests/Unit/Requests/EnderecoUpdateRequestTest.php" line="89" class="Tests\Unit\Requests\EnderecoUpdateRequestTest" classname="Tests.Unit.Requests.EnderecoUpdateRequestTest" assertions="1" time="0.353228"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Resources\AlunoResourceTest" file="/var/www/html/tests/Unit/Resources/AlunoResourceTest.php" tests="4" assertions="25" errors="0" failures="0" skipped="0" time="1.461625">
+        <testcase name="test_to_array_returns_correct_structure" file="/var/www/html/tests/Unit/Resources/AlunoResourceTest.php" line="16" class="Tests\Unit\Resources\AlunoResourceTest" classname="Tests.Unit.Resources.AlunoResourceTest" assertions="9" time="0.750250"/>
+        <testcase name="test_enderecos_mapping" file="/var/www/html/tests/Unit/Resources/AlunoResourceTest.php" line="42" class="Tests\Unit\Resources\AlunoResourceTest" classname="Tests.Unit.Resources.AlunoResourceTest" assertions="7" time="0.230757"/>
+        <testcase name="test_cursos_mapping" file="/var/www/html/tests/Unit/Resources/AlunoResourceTest.php" line="60" class="Tests\Unit\Resources\AlunoResourceTest" classname="Tests.Unit.Resources.AlunoResourceTest" assertions="5" time="0.233872"/>
+        <testcase name="test_empty_relationships_return_empty_arrays" file="/var/www/html/tests/Unit/Resources/AlunoResourceTest.php" line="76" class="Tests\Unit\Resources\AlunoResourceTest" classname="Tests.Unit.Resources.AlunoResourceTest" assertions="4" time="0.246746"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Services\AlunoServiceTest" file="/var/www/html/tests/Unit/Services/AlunoServiceTest.php" tests="11" assertions="26" errors="0" failures="0" skipped="0" time="2.949348">
+        <testcase name="test_get_all_returns_paginated_collection" file="/var/www/html/tests/Unit/Services/AlunoServiceTest.php" line="27" class="Tests\Unit\Services\AlunoServiceTest" classname="Tests.Unit.Services.AlunoServiceTest" assertions="2" time="0.459364"/>
+        <testcase name="test_get_all_includes_relationships" file="/var/www/html/tests/Unit/Services/AlunoServiceTest.php" line="37" class="Tests\Unit\Services\AlunoServiceTest" classname="Tests.Unit.Services.AlunoServiceTest" assertions="2" time="0.233399"/>
+        <testcase name="test_get_by_id_returns_aluno_with_enderecos" file="/var/www/html/tests/Unit/Services/AlunoServiceTest.php" line="48" class="Tests\Unit\Services\AlunoServiceTest" classname="Tests.Unit.Services.AlunoServiceTest" assertions="3" time="0.244505"/>
+        <testcase name="test_get_by_id_returns_null_for_nonexistent" file="/var/www/html/tests/Unit/Services/AlunoServiceTest.php" line="59" class="Tests\Unit\Services\AlunoServiceTest" classname="Tests.Unit.Services.AlunoServiceTest" assertions="1" time="0.262246"/>
+        <testcase name="test_create_aluno" file="/var/www/html/tests/Unit/Services/AlunoServiceTest.php" line="66" class="Tests\Unit\Services\AlunoServiceTest" classname="Tests.Unit.Services.AlunoServiceTest" assertions="7" time="0.238605"/>
+        <testcase name="test_create_aluno_with_endereco_and_curso" file="/var/www/html/tests/Unit/Services/AlunoServiceTest.php" line="92" class="Tests\Unit\Services\AlunoServiceTest" classname="Tests.Unit.Services.AlunoServiceTest" assertions="1" time="0.227854"/>
+        <testcase name="test_delete_aluno" file="/var/www/html/tests/Unit/Services/AlunoServiceTest.php" line="112" class="Tests\Unit\Services\AlunoServiceTest" classname="Tests.Unit.Services.AlunoServiceTest" assertions="2" time="0.226591"/>
+        <testcase name="test_delete_nonexistent_aluno_returns_zero" file="/var/www/html/tests/Unit/Services/AlunoServiceTest.php" line="122" class="Tests\Unit\Services\AlunoServiceTest" classname="Tests.Unit.Services.AlunoServiceTest" assertions="1" time="0.216969"/>
+        <testcase name="test_update_aluno" file="/var/www/html/tests/Unit/Services/AlunoServiceTest.php" line="129" class="Tests\Unit\Services\AlunoServiceTest" classname="Tests.Unit.Services.AlunoServiceTest" assertions="4" time="0.214656"/>
+        <testcase name="test_update_aluno_removes_enderecos_and_curso_from_data" file="/var/www/html/tests/Unit/Services/AlunoServiceTest.php" line="153" class="Tests\Unit\Services\AlunoServiceTest" classname="Tests.Unit.Services.AlunoServiceTest" assertions="2" time="0.269690"/>
+        <testcase name="test_update_nonexistent_aluno_returns_null" file="/var/www/html/tests/Unit/Services/AlunoServiceTest.php" line="169" class="Tests\Unit\Services\AlunoServiceTest" classname="Tests.Unit.Services.AlunoServiceTest" assertions="1" time="0.355468"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Services\CursoServiceTest" file="/var/www/html/tests/Unit/Services/CursoServiceTest.php" tests="11" assertions="26" errors="0" failures="0" skipped="0" time="2.363117">
+        <testcase name="test_get_all_returns_paginated_ordered" file="/var/www/html/tests/Unit/Services/CursoServiceTest.php" line="23" class="Tests\Unit\Services\CursoServiceTest" classname="Tests.Unit.Services.CursoServiceTest" assertions="2" time="0.242464"/>
+        <testcase name="test_get_all_with_alunos" file="/var/www/html/tests/Unit/Services/CursoServiceTest.php" line="35" class="Tests\Unit\Services\CursoServiceTest" classname="Tests.Unit.Services.CursoServiceTest" assertions="3" time="0.208567"/>
+        <testcase name="test_get_by_id_returns_curso_with_alunos" file="/var/www/html/tests/Unit/Services/CursoServiceTest.php" line="46" class="Tests\Unit\Services\CursoServiceTest" classname="Tests.Unit.Services.CursoServiceTest" assertions="4" time="0.224862"/>
+        <testcase name="test_get_by_id_returns_null_for_nonexistent" file="/var/www/html/tests/Unit/Services/CursoServiceTest.php" line="58" class="Tests\Unit\Services\CursoServiceTest" classname="Tests.Unit.Services.CursoServiceTest" assertions="1" time="0.193073"/>
+        <testcase name="test_create_curso_returns_existing_if_same_name" file="/var/www/html/tests/Unit/Services/CursoServiceTest.php" line="65" class="Tests\Unit\Services\CursoServiceTest" classname="Tests.Unit.Services.CursoServiceTest" assertions="2" time="0.192557"/>
+        <testcase name="test_create_curso_creates_new" file="/var/www/html/tests/Unit/Services/CursoServiceTest.php" line="76" class="Tests\Unit\Services\CursoServiceTest" classname="Tests.Unit.Services.CursoServiceTest" assertions="4" time="0.204225"/>
+        <testcase name="test_update_curso" file="/var/www/html/tests/Unit/Services/CursoServiceTest.php" line="87" class="Tests\Unit\Services\CursoServiceTest" classname="Tests.Unit.Services.CursoServiceTest" assertions="3" time="0.211388"/>
+        <testcase name="test_update_curso_handles_nested_curso_key" file="/var/www/html/tests/Unit/Services/CursoServiceTest.php" line="99" class="Tests\Unit\Services\CursoServiceTest" classname="Tests.Unit.Services.CursoServiceTest" assertions="2" time="0.249144"/>
+        <testcase name="test_update_nonexistent_curso_throws_exception" file="/var/www/html/tests/Unit/Services/CursoServiceTest.php" line="110" class="Tests\Unit\Services\CursoServiceTest" classname="Tests.Unit.Services.CursoServiceTest" assertions="2" time="0.224628"/>
+        <testcase name="test_delete_by_id" file="/var/www/html/tests/Unit/Services/CursoServiceTest.php" line="118" class="Tests\Unit\Services\CursoServiceTest" classname="Tests.Unit.Services.CursoServiceTest" assertions="2" time="0.210094"/>
+        <testcase name="test_delete_nonexistent_returns_zero" file="/var/www/html/tests/Unit/Services/CursoServiceTest.php" line="128" class="Tests\Unit\Services\CursoServiceTest" classname="Tests.Unit.Services.CursoServiceTest" assertions="1" time="0.202114"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\Services\EnderecoServiceTest" file="/var/www/html/tests/Unit/Services/EnderecoServiceTest.php" tests="9" assertions="23" errors="0" failures="0" skipped="0" time="2.162152">
+        <testcase name="test_get_all_returns_collection_with_alunos" file="/var/www/html/tests/Unit/Services/EnderecoServiceTest.php" line="23" class="Tests\Unit\Services\EnderecoServiceTest" classname="Tests.Unit.Services.EnderecoServiceTest" assertions="2" time="0.212755"/>
+        <testcase name="test_get_by_id_returns_endereco_with_alunos" file="/var/www/html/tests/Unit/Services/EnderecoServiceTest.php" line="33" class="Tests\Unit\Services\EnderecoServiceTest" classname="Tests.Unit.Services.EnderecoServiceTest" assertions="4" time="0.237211"/>
+        <testcase name="test_get_by_id_returns_null_for_nonexistent" file="/var/www/html/tests/Unit/Services/EnderecoServiceTest.php" line="45" class="Tests\Unit\Services\EnderecoServiceTest" classname="Tests.Unit.Services.EnderecoServiceTest" assertions="1" time="0.246727"/>
+        <testcase name="test_create_endereco" file="/var/www/html/tests/Unit/Services/EnderecoServiceTest.php" line="52" class="Tests\Unit\Services\EnderecoServiceTest" classname="Tests.Unit.Services.EnderecoServiceTest" assertions="6" time="0.219626"/>
+        <testcase name="test_delete" file="/var/www/html/tests/Unit/Services/EnderecoServiceTest.php" line="71" class="Tests\Unit\Services\EnderecoServiceTest" classname="Tests.Unit.Services.EnderecoServiceTest" assertions="2" time="0.215365"/>
+        <testcase name="test_delete_nonexistent_returns_zero" file="/var/www/html/tests/Unit/Services/EnderecoServiceTest.php" line="81" class="Tests\Unit\Services\EnderecoServiceTest" classname="Tests.Unit.Services.EnderecoServiceTest" assertions="1" time="0.248495"/>
+        <testcase name="test_update_endereco" file="/var/www/html/tests/Unit/Services/EnderecoServiceTest.php" line="88" class="Tests\Unit\Services\EnderecoServiceTest" classname="Tests.Unit.Services.EnderecoServiceTest" assertions="3" time="0.220430"/>
+        <testcase name="test_update_endereco_handles_nested_enderecos_key" file="/var/www/html/tests/Unit/Services/EnderecoServiceTest.php" line="107" class="Tests\Unit\Services\EnderecoServiceTest" classname="Tests.Unit.Services.EnderecoServiceTest" assertions="2" time="0.363566"/>
+        <testcase name="test_update_nonexistent_throws_exception" file="/var/www/html/tests/Unit/Services/EnderecoServiceTest.php" line="118" class="Tests\Unit\Services\EnderecoServiceTest" classname="Tests.Unit.Services.EnderecoServiceTest" assertions="2" time="0.197977"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="34" assertions="50" errors="0" failures="32" skipped="0" time="11.913337">
+      <testsuite name="Tests\Feature\AlunoFeatureTest" file="/var/www/html/tests/Feature/AlunoFeatureTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="0.269737">
+        <testcase name="test_criar_aluno_com_endereco" file="/var/www/html/tests/Feature/AlunoFeatureTest.php" line="14" class="Tests\Feature\AlunoFeatureTest" classname="Tests.Feature.AlunoFeatureTest" assertions="3" time="0.269737"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\Controllers\AlunosControllerTest" file="/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php" tests="10" assertions="10" errors="0" failures="10" skipped="0" time="5.126418">
+        <testcase name="test_index_returns_view_with_paginated_alunos" file="/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php" line="18" class="Tests\Feature\Controllers\AlunosControllerTest" classname="Tests.Feature.Controllers.AlunosControllerTest" assertions="1" time="0.821908">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\AlunosControllerTest::test_index_returns_view_with_paginated_alunos
+Expected response status code [200] but received 302.
+Failed asserting that 302 is identical to 200.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:160
+/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php:24</failure>
+        </testcase>
+        <testcase name="test_get_by_id_returns_resource" file="/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php" line="29" class="Tests\Feature\Controllers\AlunosControllerTest" classname="Tests.Feature.Controllers.AlunosControllerTest" assertions="1" time="0.352556">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\AlunosControllerTest::test_get_by_id_returns_resource
+Expected response status code [200] but received 401.
+Failed asserting that 401 is identical to 200.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:160
+/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php:35</failure>
+        </testcase>
+        <testcase name="test_get_by_id_not_found_returns_404" file="/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php" line="42" class="Tests\Feature\Controllers\AlunosControllerTest" classname="Tests.Feature.Controllers.AlunosControllerTest" assertions="1" time="0.223065">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\AlunosControllerTest::test_get_by_id_not_found_returns_404
+Expected response status code [404] but received 401.
+Failed asserting that 401 is identical to 404.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:160
+/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php:46</failure>
+        </testcase>
+        <testcase name="test_delete_aluno_redirects_with_success" file="/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php" line="49" class="Tests\Feature\Controllers\AlunosControllerTest" classname="Tests.Feature.Controllers.AlunosControllerTest" assertions="1" time="0.629092">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\AlunosControllerTest::test_delete_aluno_redirects_with_success
+Expected response status code [201, 301, 302, 303, 307, 308] but received 419.
+Failed asserting that false is true.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:185
+/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php:55</failure>
+        </testcase>
+        <testcase name="test_delete_nonexistent_aluno_redirects_with_error" file="/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php" line="60" class="Tests\Feature\Controllers\AlunosControllerTest" classname="Tests.Feature.Controllers.AlunosControllerTest" assertions="1" time="0.589178">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\AlunosControllerTest::test_delete_nonexistent_aluno_redirects_with_error
+Expected response status code [201, 301, 302, 303, 307, 308] but received 419.
+Failed asserting that false is true.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:185
+/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php:64</failure>
+        </testcase>
+        <testcase name="test_create_returns_view_with_cursos_and_enderecos" file="/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php" line="68" class="Tests\Feature\Controllers\AlunosControllerTest" classname="Tests.Feature.Controllers.AlunosControllerTest" assertions="1" time="0.396657">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\AlunosControllerTest::test_create_returns_view_with_cursos_and_enderecos
+Expected response status code [200] but received 302.
+Failed asserting that 302 is identical to 200.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:160
+/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php:75</failure>
+        </testcase>
+        <testcase name="test_edit_returns_view_with_aluno_and_cursos" file="/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php" line="81" class="Tests\Feature\Controllers\AlunosControllerTest" classname="Tests.Feature.Controllers.AlunosControllerTest" assertions="1" time="0.348000">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\AlunosControllerTest::test_edit_returns_view_with_aluno_and_cursos
+Expected response status code [200] but received 302.
+Failed asserting that 302 is identical to 200.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:160
+/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php:88</failure>
+        </testcase>
+        <testcase name="test_edit_nonexistent_returns_404" file="/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php" line="94" class="Tests\Feature\Controllers\AlunosControllerTest" classname="Tests.Feature.Controllers.AlunosControllerTest" assertions="1" time="0.898694">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\AlunosControllerTest::test_edit_nonexistent_returns_404
+Expected response status code [404] but received 302.
+Failed asserting that 302 is identical to 404.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:160
+/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php:98</failure>
+        </testcase>
+        <testcase name="test_update_aluno_redirects_with_success" file="/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php" line="101" class="Tests\Feature\Controllers\AlunosControllerTest" classname="Tests.Feature.Controllers.AlunosControllerTest" assertions="1" time="0.472013">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\AlunosControllerTest::test_update_aluno_redirects_with_success
+Expected response status code [201, 301, 302, 303, 307, 308] but received 419.
+Failed asserting that false is true.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:185
+/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php:127</failure>
+        </testcase>
+        <testcase name="test_update_aluno_with_validation_error_redirects_back" file="/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php" line="132" class="Tests\Feature\Controllers\AlunosControllerTest" classname="Tests.Feature.Controllers.AlunosControllerTest" assertions="1" time="0.395255">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\AlunosControllerTest::test_update_aluno_with_validation_error_redirects_back
+Expected response status code [201, 301, 302, 303, 307, 308] but received 419.
+Failed asserting that false is true.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:185
+/var/www/html/tests/Feature/Controllers/AlunosControllerTest.php:150</failure>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\Controllers\CursoControllerTest" file="/var/www/html/tests/Feature/Controllers/CursoControllerTest.php" tests="14" assertions="15" errors="0" failures="14" skipped="0" time="3.943192">
+        <testcase name="test_index_returns_view_with_paginated_cursos" file="/var/www/html/tests/Feature/Controllers/CursoControllerTest.php" line="14" class="Tests\Feature\Controllers\CursoControllerTest" classname="Tests.Feature.Controllers.CursoControllerTest" assertions="1" time="0.345325">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CursoControllerTest::test_index_returns_view_with_paginated_cursos
+Expected response status code [200] but received 302.
+Failed asserting that 302 is identical to 200.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:160
+/var/www/html/tests/Feature/Controllers/CursoControllerTest.php:20</failure>
+        </testcase>
+        <testcase name="test_get_by_id_returns_json" file="/var/www/html/tests/Feature/Controllers/CursoControllerTest.php" line="25" class="Tests\Feature\Controllers\CursoControllerTest" classname="Tests.Feature.Controllers.CursoControllerTest" assertions="1" time="0.230838">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CursoControllerTest::test_get_by_id_returns_json
+Expected response status code [200] but received 401.
+Failed asserting that 401 is identical to 200.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:160
+/var/www/html/tests/Feature/Controllers/CursoControllerTest.php:31</failure>
+        </testcase>
+        <testcase name="test_get_by_id_not_found_returns_404" file="/var/www/html/tests/Feature/Controllers/CursoControllerTest.php" line="37" class="Tests\Feature\Controllers\CursoControllerTest" classname="Tests.Feature.Controllers.CursoControllerTest" assertions="1" time="0.249215">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CursoControllerTest::test_get_by_id_not_found_returns_404
+Expected response status code [404] but received 401.
+Failed asserting that 401 is identical to 404.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:160
+/var/www/html/tests/Feature/Controllers/CursoControllerTest.php:41</failure>
+        </testcase>
+        <testcase name="test_create_returns_view" file="/var/www/html/tests/Feature/Controllers/CursoControllerTest.php" line="44" class="Tests\Feature\Controllers\CursoControllerTest" classname="Tests.Feature.Controllers.CursoControllerTest" assertions="1" time="0.248668">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CursoControllerTest::test_create_returns_view
+Expected response status code [200] but received 302.
+Failed asserting that 302 is identical to 200.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:160
+/var/www/html/tests/Feature/Controllers/CursoControllerTest.php:48</failure>
+        </testcase>
+        <testcase name="test_store_redirects_with_success" file="/var/www/html/tests/Feature/Controllers/CursoControllerTest.php" line="52" class="Tests\Feature\Controllers\CursoControllerTest" classname="Tests.Feature.Controllers.CursoControllerTest" assertions="1" time="0.279999">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CursoControllerTest::test_store_redirects_with_success
+Expected response status code [201, 301, 302, 303, 307, 308] but received 419.
+Failed asserting that false is true.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:185
+/var/www/html/tests/Feature/Controllers/CursoControllerTest.php:61</failure>
+        </testcase>
+        <testcase name="test_store_duplicate_name_returns_existing" file="/var/www/html/tests/Feature/Controllers/CursoControllerTest.php" line="66" class="Tests\Feature\Controllers\CursoControllerTest" classname="Tests.Feature.Controllers.CursoControllerTest" assertions="1" time="0.266933">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CursoControllerTest::test_store_duplicate_name_returns_existing
+Expected response status code [201, 301, 302, 303, 307, 308] but received 419.
+Failed asserting that false is true.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:185
+/var/www/html/tests/Feature/Controllers/CursoControllerTest.php:74</failure>
+        </testcase>
+        <testcase name="test_store_validation_error_redirects_back" file="/var/www/html/tests/Feature/Controllers/CursoControllerTest.php" line="79" class="Tests\Feature\Controllers\CursoControllerTest" classname="Tests.Feature.Controllers.CursoControllerTest" assertions="1" time="0.289551">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CursoControllerTest::test_store_validation_error_redirects_back
+Expected response status code [201, 301, 302, 303, 307, 308] but received 419.
+Failed asserting that false is true.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:185
+/var/www/html/tests/Feature/Controllers/CursoControllerTest.php:85</failure>
+        </testcase>
+        <testcase name="test_update_redirects_with_success" file="/var/www/html/tests/Feature/Controllers/CursoControllerTest.php" line="89" class="Tests\Feature\Controllers\CursoControllerTest" classname="Tests.Feature.Controllers.CursoControllerTest" assertions="1" time="0.283173">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CursoControllerTest::test_update_redirects_with_success
+Expected response status code [201, 301, 302, 303, 307, 308] but received 419.
+Failed asserting that false is true.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:185
+/var/www/html/tests/Feature/Controllers/CursoControllerTest.php:97</failure>
+        </testcase>
+        <testcase name="test_update_nonexistent_redirects_with_error" file="/var/www/html/tests/Feature/Controllers/CursoControllerTest.php" line="102" class="Tests\Feature\Controllers\CursoControllerTest" classname="Tests.Feature.Controllers.CursoControllerTest" assertions="1" time="0.338937">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CursoControllerTest::test_update_nonexistent_redirects_with_error
+Expected response status code [201, 301, 302, 303, 307, 308] but received 419.
+Failed asserting that false is true.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:185
+/var/www/html/tests/Feature/Controllers/CursoControllerTest.php:108</failure>
+        </testcase>
+        <testcase name="test_update_validation_error_redirects_back" file="/var/www/html/tests/Feature/Controllers/CursoControllerTest.php" line="112" class="Tests\Feature\Controllers\CursoControllerTest" classname="Tests.Feature.Controllers.CursoControllerTest" assertions="1" time="0.303273">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CursoControllerTest::test_update_validation_error_redirects_back
+Expected response status code [201, 301, 302, 303, 307, 308] but received 419.
+Failed asserting that false is true.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:185
+/var/www/html/tests/Feature/Controllers/CursoControllerTest.php:120</failure>
+        </testcase>
+        <testcase name="test_edit_returns_view_with_curso" file="/var/www/html/tests/Feature/Controllers/CursoControllerTest.php" line="124" class="Tests\Feature\Controllers\CursoControllerTest" classname="Tests.Feature.Controllers.CursoControllerTest" assertions="1" time="0.244666">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CursoControllerTest::test_edit_returns_view_with_curso
+Expected response status code [200] but received 302.
+Failed asserting that 302 is identical to 200.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:160
+/var/www/html/tests/Feature/Controllers/CursoControllerTest.php:130</failure>
+        </testcase>
+        <testcase name="test_edit_nonexistent_redirects_with_error" file="/var/www/html/tests/Feature/Controllers/CursoControllerTest.php" line="135" class="Tests\Feature\Controllers\CursoControllerTest" classname="Tests.Feature.Controllers.CursoControllerTest" assertions="2" time="0.297484">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CursoControllerTest::test_edit_nonexistent_redirects_with_error
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'http://localhost:8000/admin/cursos'
++'http://localhost:8000/login'
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:342
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:191
+/var/www/html/tests/Feature/Controllers/CursoControllerTest.php:139</failure>
+        </testcase>
+        <testcase name="test_destroy_redirects_with_success" file="/var/www/html/tests/Feature/Controllers/CursoControllerTest.php" line="143" class="Tests\Feature\Controllers\CursoControllerTest" classname="Tests.Feature.Controllers.CursoControllerTest" assertions="1" time="0.275632">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CursoControllerTest::test_destroy_redirects_with_success
+Expected response status code [201, 301, 302, 303, 307, 308] but received 419.
+Failed asserting that false is true.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:185
+/var/www/html/tests/Feature/Controllers/CursoControllerTest.php:149</failure>
+        </testcase>
+        <testcase name="test_destroy_nonexistent_redirects_with_error" file="/var/www/html/tests/Feature/Controllers/CursoControllerTest.php" line="154" class="Tests\Feature\Controllers\CursoControllerTest" classname="Tests.Feature.Controllers.CursoControllerTest" assertions="1" time="0.289498">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\CursoControllerTest::test_destroy_nonexistent_redirects_with_error
+Expected response status code [201, 301, 302, 303, 307, 308] but received 419.
+Failed asserting that false is true.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:185
+/var/www/html/tests/Feature/Controllers/CursoControllerTest.php:158</failure>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\Controllers\EnderecoControllerTest" file="/var/www/html/tests/Feature/Controllers/EnderecoControllerTest.php" tests="8" assertions="21" errors="0" failures="8" skipped="0" time="2.313895">
+        <testcase name="test_index_returns_json_collection" file="/var/www/html/tests/Feature/Controllers/EnderecoControllerTest.php" line="14" class="Tests\Feature\Controllers\EnderecoControllerTest" classname="Tests.Feature.Controllers.EnderecoControllerTest" assertions="8" time="0.479437">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\EnderecoControllerTest::test_index_returns_json_collection
+Failed asserting that an array has the key 'alunos'.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/AssertableJsonString.php:302
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/AssertableJsonString.php:277
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/AssertableJsonString.php:295
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:912
+/var/www/html/tests/Feature/Controllers/EnderecoControllerTest.php:21</failure>
+        </testcase>
+        <testcase name="test_get_by_id_returns_json" file="/var/www/html/tests/Feature/Controllers/EnderecoControllerTest.php" line="26" class="Tests\Feature\Controllers\EnderecoControllerTest" classname="Tests.Feature.Controllers.EnderecoControllerTest" assertions="7" time="0.300047">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\EnderecoControllerTest::test_get_by_id_returns_json
+Failed asserting that an array has the key 'alunos'.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/AssertableJsonString.php:302
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:912
+/var/www/html/tests/Feature/Controllers/EnderecoControllerTest.php:33</failure>
+        </testcase>
+        <testcase name="test_get_by_id_not_found_returns_404" file="/var/www/html/tests/Feature/Controllers/EnderecoControllerTest.php" line="38" class="Tests\Feature\Controllers\EnderecoControllerTest" classname="Tests.Feature.Controllers.EnderecoControllerTest" assertions="1" time="0.272076">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\EnderecoControllerTest::test_get_by_id_not_found_returns_404
+Expected response status code [404] but received 200.
+Failed asserting that 200 is identical to 404.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:160
+/var/www/html/tests/Feature/Controllers/EnderecoControllerTest.php:42</failure>
+        </testcase>
+        <testcase name="test_create_endereco_returns_json" file="/var/www/html/tests/Feature/Controllers/EnderecoControllerTest.php" line="45" class="Tests\Feature\Controllers\EnderecoControllerTest" classname="Tests.Feature.Controllers.EnderecoControllerTest" assertions="1" time="0.276630">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\EnderecoControllerTest::test_create_endereco_returns_json
+Expected response status code [200] but received 419.
+Failed asserting that 419 is identical to 200.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:160
+/var/www/html/tests/Feature/Controllers/EnderecoControllerTest.php:58</failure>
+        </testcase>
+        <testcase name="test_create_endereco_validation_error_returns_400" file="/var/www/html/tests/Feature/Controllers/EnderecoControllerTest.php" line="65" class="Tests\Feature\Controllers\EnderecoControllerTest" classname="Tests.Feature.Controllers.EnderecoControllerTest" assertions="1" time="0.255989">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\EnderecoControllerTest::test_create_endereco_validation_error_returns_400
+Expected response status code [400] but received 419.
+Failed asserting that 419 is identical to 400.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:160
+/var/www/html/tests/Feature/Controllers/EnderecoControllerTest.php:71</failure>
+        </testcase>
+        <testcase name="test_update_endereco_returns_json" file="/var/www/html/tests/Feature/Controllers/EnderecoControllerTest.php" line="74" class="Tests\Feature\Controllers\EnderecoControllerTest" classname="Tests.Feature.Controllers.EnderecoControllerTest" assertions="1" time="0.241997">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\EnderecoControllerTest::test_update_endereco_returns_json
+Expected response status code [200] but received 419.
+Failed asserting that 419 is identical to 200.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:160
+/var/www/html/tests/Feature/Controllers/EnderecoControllerTest.php:85</failure>
+        </testcase>
+        <testcase name="test_update_nonexistent_returns_400" file="/var/www/html/tests/Feature/Controllers/EnderecoControllerTest.php" line="90" class="Tests\Feature\Controllers\EnderecoControllerTest" classname="Tests.Feature.Controllers.EnderecoControllerTest" assertions="1" time="0.240725">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\EnderecoControllerTest::test_update_nonexistent_returns_400
+Expected response status code [400] but received 419.
+Failed asserting that 419 is identical to 400.
+
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponseAssert.php:45
+/var/www/html/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:160
+/var/www/html/tests/Feature/Controllers/EnderecoControllerTest.php:96</failure>
+        </testcase>
+        <testcase name="test_update_validation_error_returns_400" file="/var/www/html/tests/Feature/Controllers/EnderecoControllerTest.php" line="100" class="Tests\Feature\Controllers\EnderecoControllerTest" classname="Tests.Feature.Controllers.EnderecoControllerTest" assertions="1" time="0.246994">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Controllers\EnderecoControllerTest::test_update_validation_error_returns_400
+Failed asserting that false is true.
+
+/var/www/html/tests/Feature/Controllers/EnderecoControllerTest.php:109</failure>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\ExampleTest" file="/var/www/html/tests/Feature/ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.260096">
+        <testcase name="test_the_application_returns_a_successful_response" file="/var/www/html/tests/Feature/ExampleTest.php" line="13" class="Tests\Feature\ExampleTest" classname="Tests.Feature.ExampleTest" assertions="1" time="0.260096"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

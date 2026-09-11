@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="27" assertions="63" errors="0" warnings="0" failures="5" skipped="0" time="19.156935">
+    <testsuite name="Unit" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.006070">
+      <testsuite name="Tests\Unit\ExampleTest" file="F:\Projects\vms\backend\tests\Unit\ExampleTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.006070">
+        <testcase name="test_that_true_is_true" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" file="F:\Projects\vms\backend\tests\Unit\ExampleTest.php" line="14" assertions="1" time="0.006070"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="26" assertions="62" errors="0" warnings="0" failures="5" skipped="0" time="19.150864">
+      <testsuite name="Tests\Feature\AuthTest" file="F:\Projects\vms\backend\tests\Feature\AuthTest.php" tests="8" assertions="28" errors="0" warnings="0" failures="1" skipped="0" time="16.151987">
+        <testcase name="test_student_registration_succeeds" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="F:\Projects\vms\backend\tests\Feature\AuthTest.php" line="35" assertions="5" time="15.121375"/>
+        <testcase name="test_duplicate_email_registration_fails" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="F:\Projects\vms\backend\tests\Feature\AuthTest.php" line="52" assertions="3" time="0.142488"/>
+        <testcase name="test_registration_cannot_choose_admin_role" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="F:\Projects\vms\backend\tests\Feature\AuthTest.php" line="69" assertions="3" time="0.067277"/>
+        <testcase name="test_valid_login_succeeds" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="F:\Projects\vms\backend\tests\Feature\AuthTest.php" line="83" assertions="6" time="0.112882"/>
+        <testcase name="test_invalid_credentials_return_401" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="F:\Projects\vms\backend\tests\Feature\AuthTest.php" line="106" assertions="1" time="0.485995"/>
+        <testcase name="test_unauthenticated_me_request_fails" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="F:\Projects\vms\backend\tests\Feature\AuthTest.php" line="116" assertions="1" time="0.066868"/>
+        <testcase name="test_authenticated_me_succeeds" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="F:\Projects\vms\backend\tests\Feature\AuthTest.php" line="121" assertions="4" time="0.079645"/>
+        <testcase name="test_logout_revokes_the_current_token" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="F:\Projects\vms\backend\tests\Feature\AuthTest.php" line="140" assertions="5" time="0.075458">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\AuthTest::test_logout_revokes_the_current_token
+Expected response status code [401] but received 200.
+Failed asserting that 401 is identical to 200.
+
+F:\Projects\vms\backend\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:123
+F:\Projects\vms\backend\tests\Feature\AuthTest.php:168</failure>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\ClassEnrollmentFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ClassEnrollmentFoundationTest.php" tests="12" assertions="21" errors="0" warnings="0" failures="4" skipped="0" time="2.507151">
+        <testcase name="test_teacher_can_create_own_class" class="Tests\Feature\ClassEnrollmentFoundationTest" classname="Tests.Feature.ClassEnrollmentFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ClassEnrollmentFoundationTest.php" line="62" assertions="4" time="0.298052"/>
+        <testcase name="test_teacher_cannot_create_class_for_another_teacher" class="Tests\Feature\ClassEnrollmentFoundationTest" classname="Tests.Feature.ClassEnrollmentFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ClassEnrollmentFoundationTest.php" line="83" assertions="1" time="0.139994"/>
+        <testcase name="test_admin_can_create_class_for_selected_teacher" class="Tests\Feature\ClassEnrollmentFoundationTest" classname="Tests.Feature.ClassEnrollmentFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ClassEnrollmentFoundationTest.php" line="97" assertions="3" time="0.089341"/>
+        <testcase name="test_student_cannot_create_class" class="Tests\Feature\ClassEnrollmentFoundationTest" classname="Tests.Feature.ClassEnrollmentFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ClassEnrollmentFoundationTest.php" line="113" assertions="1" time="0.088012"/>
+        <testcase name="test_teacher_sees_only_own_classes" class="Tests\Feature\ClassEnrollmentFoundationTest" classname="Tests.Feature.ClassEnrollmentFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ClassEnrollmentFoundationTest.php" line="125" assertions="3" time="0.111481"/>
+        <testcase name="test_student_sees_only_enrolled_classes" class="Tests\Feature\ClassEnrollmentFoundationTest" classname="Tests.Feature.ClassEnrollmentFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ClassEnrollmentFoundationTest.php" line="141" assertions="3" time="0.677705"/>
+        <testcase name="test_student_cannot_access_unenrolled_class" class="Tests\Feature\ClassEnrollmentFoundationTest" classname="Tests.Feature.ClassEnrollmentFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ClassEnrollmentFoundationTest.php" line="159" assertions="1" time="0.554717"/>
+        <testcase name="test_teacher_can_update_own_class" class="Tests\Feature\ClassEnrollmentFoundationTest" classname="Tests.Feature.ClassEnrollmentFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ClassEnrollmentFoundationTest.php" line="172" assertions="1" time="0.078046">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\ClassEnrollmentFoundationTest::test_teacher_can_update_own_class
+Expected response status code [200] but received 403.
+Failed asserting that 200 is identical to 403.
+
+F:\Projects\vms\backend\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:123
+F:\Projects\vms\backend\tests\Feature\ClassEnrollmentFoundationTest.php:183</failure>
+        </testcase>
+        <testcase name="test_teacher_cannot_update_another_teachers_class" class="Tests\Feature\ClassEnrollmentFoundationTest" classname="Tests.Feature.ClassEnrollmentFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ClassEnrollmentFoundationTest.php" line="188" assertions="1" time="0.075422"/>
+        <testcase name="test_teacher_can_enroll_a_student" class="Tests\Feature\ClassEnrollmentFoundationTest" classname="Tests.Feature.ClassEnrollmentFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ClassEnrollmentFoundationTest.php" line="202" assertions="1" time="0.199386">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\ClassEnrollmentFoundationTest::test_teacher_can_enroll_a_student
+Expected response status code [201] but received 403.
+Failed asserting that 201 is identical to 403.
+
+F:\Projects\vms\backend\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:123
+F:\Projects\vms\backend\tests\Feature\ClassEnrollmentFoundationTest.php:213</failure>
+        </testcase>
+        <testcase name="test_duplicate_enrollment_fails" class="Tests\Feature\ClassEnrollmentFoundationTest" classname="Tests.Feature.ClassEnrollmentFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ClassEnrollmentFoundationTest.php" line="222" assertions="1" time="0.108809">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\ClassEnrollmentFoundationTest::test_duplicate_enrollment_fails
+Expected response status code [201] but received 403.
+Failed asserting that 201 is identical to 403.
+
+F:\Projects\vms\backend\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:123
+F:\Projects\vms\backend\tests\Feature\ClassEnrollmentFoundationTest.php:231</failure>
+        </testcase>
+        <testcase name="test_teacher_can_remove_student_enrollment" class="Tests\Feature\ClassEnrollmentFoundationTest" classname="Tests.Feature.ClassEnrollmentFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ClassEnrollmentFoundationTest.php" line="239" assertions="1" time="0.086186">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\ClassEnrollmentFoundationTest::test_teacher_can_remove_student_enrollment
+Expected response status code [200] but received 403.
+Failed asserting that 200 is identical to 403.
+
+F:\Projects\vms\backend\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:123
+F:\Projects\vms\backend\tests\Feature\ClassEnrollmentFoundationTest.php:249</failure>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\ExampleTest" file="F:\Projects\vms\backend\tests\Feature\ExampleTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.043175">
+        <testcase name="test_the_application_returns_a_successful_response" class="Tests\Feature\ExampleTest" classname="Tests.Feature.ExampleTest" file="F:\Projects\vms\backend\tests\Feature\ExampleTest.php" line="15" assertions="1" time="0.043175"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\ProfileFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ProfileFoundationTest.php" tests="5" assertions="12" errors="0" warnings="0" failures="0" skipped="0" time="0.448552">
+        <testcase name="test_student_registration_creates_student_profile" class="Tests\Feature\ProfileFoundationTest" classname="Tests.Feature.ProfileFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ProfileFoundationTest.php" line="26" assertions="5" time="0.073196"/>
+        <testcase name="test_student_user_has_student_relation" class="Tests\Feature\ProfileFoundationTest" classname="Tests.Feature.ProfileFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ProfileFoundationTest.php" line="44" assertions="2" time="0.088119"/>
+        <testcase name="test_seeded_teacher_has_teacher_profile" class="Tests\Feature\ProfileFoundationTest" classname="Tests.Feature.ProfileFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ProfileFoundationTest.php" line="59" assertions="2" time="0.054873"/>
+        <testcase name="test_admin_does_not_have_student_or_teacher_profile" class="Tests\Feature\ProfileFoundationTest" classname="Tests.Feature.ProfileFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ProfileFoundationTest.php" line="74" assertions="2" time="0.133306"/>
+        <testcase name="test_one_user_cannot_have_duplicate_student_profiles" class="Tests\Feature\ProfileFoundationTest" classname="Tests.Feature.ProfileFoundationTest" file="F:\Projects\vms\backend\tests\Feature\ProfileFoundationTest.php" line="87" assertions="1" time="0.099057"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,115 @@
+<testsuites id="" name="" tests="4" failures="4" skipped="0" errors="0" time="17.94322">
+<testsuite name="api.spec.ts" timestamp="2025-12-05T15:52:02.601Z" hostname="chromium" tests="3" failures="3" skipped="0" time="0.139" errors="0">
+<testcase name="API smoke (mock-friendly) › OpenAPI fixture contains recommendations paths" classname="api.spec.ts" time="0.023">
+<failure message="api.spec.ts:13:7 OpenAPI fixture contains recommendations paths" type="FAILURE">
+<![CDATA[  [chromium] › api.spec.ts:13:7 › API smoke (mock-friendly) › OpenAPI fixture contains recommendations paths 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: undefined
+
+      14 |     test.skip(!fs.existsSync(fixtureOpenApi), 'OpenAPI fixture not found; run python tests/e2e/export_openapi.py');
+      15 |     const schema = JSON.parse(fs.readFileSync(fixtureOpenApi, 'utf-8'));
+    > 16 |     expect(schema.paths['/api/v1/recommend/v2']).toBeTruthy();
+         |                                                  ^
+      17 |     expect(schema.paths['/api/v1/recommend/v2/alternatives']).toBeTruthy();
+      18 |   });
+      19 |
+        at /Users/stephen/Desktop/OderWhat/tests/e2e/api.spec.ts:16:50
+]]>
+</failure>
+</testcase>
+<testcase name="API smoke (mock-friendly) › POST /api/v1/recommend/v2 returns items" classname="api.spec.ts" time="0.056">
+<failure message="api.spec.ts:20:7 POST /api/v1/recommend/v2 returns items" type="FAILURE">
+<![CDATA[  [chromium] › api.spec.ts:20:7 › API smoke (mock-friendly) › POST /api/v1/recommend/v2 returns items 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:8000
+    Call log:
+      - → POST http://127.0.0.1:8000/api/v1/recommend/v2
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - Content-Type: application/json
+        - Authorization: Bearer fake-token
+        - content-length: 179
+
+
+      30 |     };
+      31 |
+    > 32 |     const res = await ctx.post('/api/v1/recommend/v2', {
+         |                           ^
+      33 |       data: payload,
+      34 |       headers: {
+      35 |         'Content-Type': 'application/json',
+        at /Users/stephen/Desktop/OderWhat/tests/e2e/api.spec.ts:32:27
+]]>
+</failure>
+</testcase>
+<testcase name="API smoke (mock-friendly) › GET /api/v1/recommend/v2/alternatives returns list" classname="api.spec.ts" time="0.06">
+<failure message="api.spec.ts:51:7 GET /api/v1/recommend/v2/alternatives returns list" type="FAILURE">
+<![CDATA[  [chromium] › api.spec.ts:51:7 › API smoke (mock-friendly) › GET /api/v1/recommend/v2/alternatives returns list 
+
+    Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8000
+    Call log:
+      - → GET http://127.0.0.1:8000/api/v1/recommend/v2/alternatives?recommendation_id=test-rec-id&category=%E7%86%B1%E8%8F%9C&exclude=%E5%AE%AE%E4%BF%9D%E9%9B%9E%E4%B8%81
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.4 Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - Authorization: Bearer fake-token
+
+
+      51 |   test('GET /api/v1/recommend/v2/alternatives returns list', async () => {
+      52 |     const ctx = await request.newContext({ baseURL: apiBase });
+    > 53 |     const res = await ctx.get('/api/v1/recommend/v2/alternatives', {
+         |                           ^
+      54 |       params: {
+      55 |         recommendation_id: 'test-rec-id',
+      56 |         category: '熱菜',
+        at /Users/stephen/Desktop/OderWhat/tests/e2e/api.spec.ts:53:27
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="flows.spec.ts" timestamp="2025-12-05T15:52:02.601Z" hostname="chromium" tests="1" failures="1" skipped="0" time="12.865" errors="0">
+<testcase name="UI flow (mock login + recommendation) › user can reach input and see recommendations" classname="flows.spec.ts" time="12.865">
+<failure message="flows.spec.ts:12:7 user can reach input and see recommendations" type="FAILURE">
+<![CDATA[  [chromium] › flows.spec.ts:12:7 › UI flow (mock login + recommendation) › user can reach input and see recommendations 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('h1:has-text("讓 AI 為你策劃")')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('h1:has-text("讓 AI 為你策劃")')
+
+
+      13 |     await page.goto('/');
+      14 |     if (locators.landing?.heroTitle) {
+    > 15 |       await expect(page.locator(locators.landing.heroTitle)).toBeVisible();
+         |                                                              ^
+      16 |     }
+      17 |
+      18 |     // 使用 error=mock_bypass 以略過未登入自動跳轉（前端判斷 unauth + !error 才會 redirect）
+        at /Users/stephen/Desktop/OderWhat/tests/e2e/flows.spec.ts:15:62
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../test-results/flows-UI-flow-mock-login-r-8c032-put-and-see-recommendations-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../test-results/flows-UI-flow-mock-login-r-8c032-put-and-see-recommendations-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../../../../../../../../test-results/flows-UI-flow-mock-login-r-8c032-put-and-see-recommendations-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../../../../../../../../test-results/flows-UI-flow-mock-login-r-8c032-put-and-see-recommendations-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

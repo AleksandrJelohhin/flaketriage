@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<testsuite failures="1" skipped="0" name="cucumber-js" time="3.761240195" tests="1">
+  <testcase classname="To test the Partner Module Scenarios" name="To test the delete funcationality of the Partner." time="3.761240195">
+    <failure type="Error" message="page.waitForTimeout: Target page, context or browser has been closed"><![CDATA[page.waitForTimeout: Target page, context or browser has been closed
+    at LoginPage.clickOnLoginButton (D:\Data_Old\PlaywrightCucumber\e2etests\tests\pages\loginpage.ts:28:25)
+    at async World.<anonymous> (D:\Data_Old\PlaywrightCucumber\e2etests\tests\steps\loginSteps.spec.ts:22:3)]]></failure>
+    <system-out><![CDATA[Given User is at login Page...............................................passed
+When Enter your "superadmin@assetmanagement.com" and "Abc@123456".........passed
+Then Click on Login Button................................................failed
+Then Dashboard Page should be displayed..................................skipped
+Then Click on the MasterData.............................................skipped
+Then Click on the Master Data Partners Icon..............................skipped
+Then Enter the Partner Name to search in search field....................skipped
+Then Click on the Partner Name to Edit the same..........................skipped
+Then Navigate to Locations Tab...........................................skipped
+Then Click on the Location Name to edit in the Locations Tab.............skipped
+Then Click on Delete button for Locations................................skipped]]></system-out>
+  </testcase>
+</testsuite>

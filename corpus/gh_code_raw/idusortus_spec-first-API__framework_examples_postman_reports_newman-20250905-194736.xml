@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="E-commerce API Collection" tests="21" time="0.000">
+  <testsuite name="Authentication / Login as Customer" id="d2b88860-dda7-422c-956d-856cf42dc870" timestamp="2025-09-06T00:47:51.944Z" tests="3" failures="3" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="AuthenticationLoginAsCustomer">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Authentication / Login as Customer.]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status 200" time="0.000" classname="AuthenticationLoginAsCustomer">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Authentication / Login as Customer.]]>
+        <![CDATA[Test description: Status 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="JSON response" time="0.000" classname="AuthenticationLoginAsCustomer">
+      <failure type="AssertionFailure" message="expected response body to be a valid json but got error &quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Authentication / Login as Customer.]]>
+        <![CDATA[Test description: JSON response.]]>
+        <![CDATA[Error message: expected response body to be a valid json but got error "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to be a valid json but got error "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:1).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Authentication / Login as Admin" id="46c12b18-afc0-48cc-8473-3c5b4708c976" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="AuthenticationLoginAsAdmin">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Authentication / Login as Admin.]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status 200" time="0.000" classname="AuthenticationLoginAsAdmin">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Authentication / Login as Admin.]]>
+        <![CDATA[Test description: Status 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:2).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Authentication / Refresh Token" id="04e4322e-2f11-46ce-bf3d-50a9c9be1589" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="AuthenticationRefreshToken">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Authentication / Refresh Token.]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:3).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status 200" time="0.000" classname="AuthenticationRefreshToken">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Authentication / Refresh Token.]]>
+        <![CDATA[Test description: Status 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:3).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Negative Tests / Unauthorized access (no token)" id="7adc3d97-5dfc-4a70-86a9-8284d09af5e6" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="NegativeTestsUnauthorizedAccessNoToken">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Negative Tests / Unauthorized access (no token).]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:4).]]>
+      </failure>
+    </testcase>
+    <testcase name="401 Unauthorized" time="0.000" classname="NegativeTestsUnauthorizedAccessNoToken">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Negative Tests / Unauthorized access (no token).]]>
+        <![CDATA[Test description: 401 Unauthorized.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:4).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Negative Tests / Forbidden (customer hits admin route)" id="54537e7f-c045-48ec-8e8d-24fb1ef4f728" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="1" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="NegativeTestsForbiddenCustomerHitsAdminRoute">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Negative Tests / Forbidden (customer hits admin route).]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:5).]]>
+      </failure>
+    </testcase>
+    <testcase name="403 Forbidden" time="0.000" classname="NegativeTestsForbiddenCustomerHitsAdminRoute"/>
+  </testsuite>
+  <testsuite name="Negative Tests / Not Found (bad product)" id="441751f7-9111-4c45-bd94-e6b9c8280742" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="NegativeTestsNotFoundBadProduct">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Negative Tests / Not Found (bad product).]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:6).]]>
+      </failure>
+    </testcase>
+    <testcase name="404 Not Found" time="0.000" classname="NegativeTestsNotFoundBadProduct">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Negative Tests / Not Found (bad product).]]>
+        <![CDATA[Test description: 404 Not Found.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:6).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Negative Tests / Validation Error (create product missing name)" id="757ad945-d499-45e4-aa3d-1d47b6b0c380" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="NegativeTestsValidationErrorCreateProductMissingName">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Negative Tests / Validation Error (create product missing name).]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:7).]]>
+      </failure>
+    </testcase>
+    <testcase name="422/400 Validation error" time="0.000" classname="NegativeTestsValidationErrorCreateProductMissingName">
+      <failure type="AssertionFailure" message="expected [ 400, 422 ] to include undefined">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Negative Tests / Validation Error (create product missing name).]]>
+        <![CDATA[Test description: 422/400 Validation error.]]>
+        <![CDATA[Error message: expected [ 400, 422 ] to include undefined.]]>
+        <![CDATA[Stacktrace: AssertionError: expected [ 400, 422 ] to include undefined
+   at Object.eval sandbox-script.js:1:7).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Products / List Products" id="64f6d715-97da-4c17-8891-fa65c686bb2a" timestamp="2025-09-06T00:47:51.944Z" tests="3" failures="3" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="ProductsListProducts">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Products / List Products.]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:8).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status 200" time="0.000" classname="ProductsListProducts">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Products / List Products.]]>
+        <![CDATA[Test description: Status 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:8).]]>
+      </failure>
+    </testcase>
+    <testcase name="JSON response" time="0.000" classname="ProductsListProducts">
+      <failure type="AssertionFailure" message="expected response body to be a valid json but got error &quot;undefined&quot; is not valid JSON">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Products / List Products.]]>
+        <![CDATA[Test description: JSON response.]]>
+        <![CDATA[Error message: expected response body to be a valid json but got error "undefined" is not valid JSON.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response body to be a valid json but got error "undefined" is not valid JSON
+   at Object.eval sandbox-script.js:2:8).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Products / Get Product" id="8d998b5a-fd29-4aa5-91b4-2f7794156c92" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="ProductsGetProduct">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Products / Get Product.]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:9).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status 200" time="0.000" classname="ProductsGetProduct">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Products / Get Product.]]>
+        <![CDATA[Test description: Status 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:9).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Products / Create Product (Admin)" id="f4cc056a-9a63-4640-a223-9f7a10fa3912" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="ProductsCreateProductAdmin">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Products / Create Product (Admin).]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:10).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status 201" time="0.000" classname="ProductsCreateProductAdmin">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Products / Create Product (Admin).]]>
+        <![CDATA[Test description: Status 201.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:10).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Products / Update Product (Admin)" id="0dfffbcc-f32b-4430-91be-68f64792ba12" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="ProductsUpdateProductAdmin">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Products / Update Product (Admin).]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:11).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status 200" time="0.000" classname="ProductsUpdateProductAdmin">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Products / Update Product (Admin).]]>
+        <![CDATA[Test description: Status 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:11).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Products / Delete Product (Admin)" id="f89393f5-6658-4ced-88f1-0d6d98d80519" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="ProductsDeleteProductAdmin">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Products / Delete Product (Admin).]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:12).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status 204" time="0.000" classname="ProductsDeleteProductAdmin">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Products / Delete Product (Admin).]]>
+        <![CDATA[Test description: Status 204.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:12).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Cart / Get Cart" id="c272a243-d44f-4afb-a4fd-7dee87208712" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="CartGetCart">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Cart / Get Cart.]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:13).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status 200" time="0.000" classname="CartGetCart">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Cart / Get Cart.]]>
+        <![CDATA[Test description: Status 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:13).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Cart / Add Item" id="f5f3ef06-7e58-40e3-ac2a-ad87f79087dc" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="CartAddItem">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Cart / Add Item.]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:14).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status 201" time="0.000" classname="CartAddItem">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Cart / Add Item.]]>
+        <![CDATA[Test description: Status 201.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:14).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Cart / Update Item" id="1bb5371d-95ac-4546-a9e3-24695b25cefe" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="CartUpdateItem">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Cart / Update Item.]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:15).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status 200" time="0.000" classname="CartUpdateItem">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Cart / Update Item.]]>
+        <![CDATA[Test description: Status 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:15).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Cart / Remove Item" id="4e927793-1217-4e2f-94e6-e0591bd9bb2d" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="CartRemoveItem">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Cart / Remove Item.]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:16).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status 204" time="0.000" classname="CartRemoveItem">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Cart / Remove Item.]]>
+        <![CDATA[Test description: Status 204.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:16).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Orders / List Orders" id="2661b773-9b3c-4b3d-9064-e058660a9d58" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="OrdersListOrders">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Orders / List Orders.]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:17).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status 200" time="0.000" classname="OrdersListOrders">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Orders / List Orders.]]>
+        <![CDATA[Test description: Status 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:17).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Orders / Create Order" id="dcd17a92-86ca-477b-a15d-4d729d7e4044" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="OrdersCreateOrder">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Orders / Create Order.]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:18).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status 201" time="0.000" classname="OrdersCreateOrder">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Orders / Create Order.]]>
+        <![CDATA[Test description: Status 201.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:18).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Orders / Get Order" id="a4e146af-2dd8-4dcc-a065-eaefd4b7c915" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="OrdersGetOrder">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Orders / Get Order.]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:19).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status 200" time="0.000" classname="OrdersGetOrder">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Orders / Get Order.]]>
+        <![CDATA[Test description: Status 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:19).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Customers / Get Profile" id="ec36c6cb-2724-4ecf-9804-5a41b35f311c" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="CustomersGetProfile">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Customers / Get Profile.]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:20).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status 200" time="0.000" classname="CustomersGetProfile">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Customers / Get Profile.]]>
+        <![CDATA[Test description: Status 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:20).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Customers / Update Profile" id="6bd463af-7eeb-4ae8-9e39-214982f91ca6" timestamp="2025-09-06T00:47:51.944Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+]]></system-err>
+    <testcase name="Response time &lt; 1500ms" time="0.000" classname="CustomersUpdateProfile">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Customers / Update Profile.]]>
+        <![CDATA[Test description: Response time < 1500ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:1:21).]]>
+      </failure>
+    </testcase>
+    <testcase name="Status 200" time="0.000" classname="CustomersUpdateProfile">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 6a0d1de1-4a8d-4f67-8c87-b9d9f0e0c1ab.]]>
+        <![CDATA[Collection name: E-commerce API Collection.]]>
+        <![CDATA[Request name: Customers / Update Profile.]]>
+        <![CDATA[Test description: Status 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:21).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,110 @@
+# Manual, self-contained run of the FlakeTriage action against this repo's own
+# curated JUnit fixtures (test/fixtures/*.xml — real failures, used by the test
+# suite too) so you can see what a report looks like without wiring up a real
+# PR. This is not part of CI (see ci.yml) and never fails the run.
+name: FlakeTriage Demo
+on:
+  workflow_dispatch:
+    inputs:
+      use_llm:
+        description: Escalate ambiguous verdicts to the LLM (needs an ANTHROPIC_API_KEY secret)
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  actions: write # actions/cache, used by the FlakeTriage action for history
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # FlakeTriage diffs base..head for blame correlation
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Stage sample JUnit reports
+        run: |
+          mkdir -p demo-reports
+          cp test/fixtures/jest.junit.xml demo-reports/
+          cp test/fixtures/playwright.junit.xml demo-reports/
+          cp test/fixtures/pytest.junit.xml demo-reports/
+          cp test/fixtures/xml-entities.junit.xml demo-reports/
+
+      # A test that genuinely flips pass/fail, tied to github.run_number parity
+      # (not $RANDOM) so it's a real, reproducible flip rather than a fabricated
+      # verdict: odd runs report it failed as attempt 1, even runs report it
+      # passed as attempt 2 — same commit, different attempt, different outcome,
+      # which is exactly what flake_confirmed (src/core/classify.ts) looks for.
+      - name: Stage a genuinely flaky fixture
+        id: flip
+        run: |
+          mkdir -p demo-reports
+          if (( GITHUB_RUN_NUMBER % 2 == 0 )); then
+            echo "attempt=2" >> "$GITHUB_OUTPUT"
+            cat > demo-reports/flaky-retry.xml <<'XML'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <testsuite name="FlakyRetryDemo" tests="1" failures="0" errors="0" time="0.4">
+            <testcase name="passes on retry" classname="FlakyRetryDemo" time="0.4" />
+          </testsuite>
+          XML
+          else
+            echo "attempt=1" >> "$GITHUB_OUTPUT"
+            cat > demo-reports/flaky-retry.xml <<'XML'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <testsuite name="FlakyRetryDemo" tests="1" failures="1" errors="0" time="0.4">
+            <testcase name="passes on retry" classname="FlakyRetryDemo" time="0.4">
+              <failure message="expected 200 but got 503" type="AssertionError">AssertionError: expected 200 but got 503
+            at FlakyRetryDemo.passesOnRetry (demo/flaky.spec.js:12:9)</failure>
+            </testcase>
+          </testsuite>
+          XML
+          fi
+        env:
+          GITHUB_RUN_NUMBER: ${{ github.run_number }}
+
+      # demo/regression-fixture.xml is a real, versioned file (not generated
+      # inline) whose content only changes when a PR to this workflow changes
+      # it, in step with a real edit to demo/pricing.js. Right now it passes,
+      # recording a green baseline at this commit. A follow-up PR introduces a
+      # bug in demo/pricing.js and swaps this fixture to a failure whose stack
+      # frame lands on the exact line that PR's diff touches — a pass on the
+      # parent commit, a fail here, blame landing on the changed line — which
+      # is exactly what real_regression (src/core/classify.ts) needs.
+      - name: Stage the real_regression fixture
+        run: cp demo/regression-fixture.xml demo-reports/
+
+      # infra_failure needs no history at all — it's the second check in the
+      # decision tree (src/core/classify.ts), matched purely by the failure
+      # message against a known infrastructure signature (ECONNREFUSED here).
+      - name: Stage an infra_failure fixture
+        run: cp demo/infra-fixture.xml demo-reports/
+
+      - name: FlakeTriage
+        id: flaketriage
+        uses: ./action
+        with:
+          reports: demo-reports/**/*.xml
+          db-path: .flaketriage/demo-history.db
+          fail-on: never
+          comment: false
+          attempt: ${{ steps.flip.outputs.attempt }}
+          no-llm: ${{ inputs.use_llm && 'false' || 'true' }}
+          anthropic-api-key: ${{ inputs.use_llm && secrets.ANTHROPIC_API_KEY || '' }}
+
+      # The action already writes report-summary to the job summary tab (see
+      # its "Summary" link on this run's page) — this is just for anyone
+      # reading the raw logs.
+      - name: Print sticky-comment report
+        env:
+          REPORT: ${{ steps.flaketriage.outputs.report-markdown }}
+        run: echo "$REPORT"
+
+      - name: Print job-summary report
+        env:
+          REPORT: ${{ steps.flaketriage.outputs.report-summary }}
+        run: echo "$REPORT"

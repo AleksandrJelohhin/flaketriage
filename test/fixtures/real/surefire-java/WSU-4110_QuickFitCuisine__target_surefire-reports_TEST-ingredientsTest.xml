@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ingredientsTest" time="0.001" tests="5" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\dguec\eclipse-workspace\QuickFitCuisine\target\test-classes;C:\Users\dguec\eclipse-workspace\QuickFitCuisine\target\classes;C:\Users\dguec\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.0.0-M1\junit-jupiter-api-5.0.0-M1.jar;C:\Users\dguec\.m2\repository\org\opentest4j\opentest4j\1.0.0-M1\opentest4j-1.0.0-M1.jar;C:\Users\dguec\.m2\repository\org\junit\platform\junit-platform-commons\1.0.0-M1\junit-platform-commons-1.0.0-M1.jar;C:\Users\dguec\.m2\repository\javax\servlet\javax.servlet-api\4.0.0\javax.servlet-api-4.0.0.jar;C:\Users\dguec\.m2\repository\javax\servlet\jsp\javax.servlet.jsp-api\2.3.0\javax.servlet.jsp-api-2.3.0.jar;C:\Users\dguec\.m2\repository\javax\el\javax.el-api\3.0.0\javax.el-api-3.0.0.jar;C:\Users\dguec\.m2\repository\javax\websocket\javax.websocket-api\1.1\javax.websocket-api-1.1.jar;C:\Users\dguec\.m2\repository\javax\security\enterprise\javax.security.enterprise-api\1.0\javax.security.enterprise-api-1.0.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Users\dguec\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\dguec\AppData\Local\Temp\surefire341077498267400793\surefirebooter18161918557065207350.jar C:\Users\dguec\AppData\Local\Temp\surefire341077498267400793 2022-12-12T16-44-15_106-jvmRun1 surefire18384780977914191088tmp surefire_014391018375842486084tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\dguec\eclipse-workspace\QuickFitCuisine\target\test-classes;C:\Users\dguec\eclipse-workspace\QuickFitCuisine\target\classes;C:\Users\dguec\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.0.0-M1\junit-jupiter-api-5.0.0-M1.jar;C:\Users\dguec\.m2\repository\org\opentest4j\opentest4j\1.0.0-M1\opentest4j-1.0.0-M1.jar;C:\Users\dguec\.m2\repository\org\junit\platform\junit-platform-commons\1.0.0-M1\junit-platform-commons-1.0.0-M1.jar;C:\Users\dguec\.m2\repository\javax\servlet\javax.servlet-api\4.0.0\javax.servlet-api-4.0.0.jar;C:\Users\dguec\.m2\repository\javax\servlet\jsp\javax.servlet.jsp-api\2.3.0\javax.servlet.jsp-api-2.3.0.jar;C:\Users\dguec\.m2\repository\javax\el\javax.el-api\3.0.0\javax.el-api-3.0.0.jar;C:\Users\dguec\.m2\repository\javax\websocket\javax.websocket-api\1.1\javax.websocket-api-1.1.jar;C:\Users\dguec\.m2\repository\javax\security\enterprise\javax.security.enterprise-api\1.0\javax.security.enterprise-api-1.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\dguec"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-19"/>
+    <property name="java.home" value="C:\Users\dguec\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\dguec\eclipse-workspace\QuickFitCuisine"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\dguec\AppData\Local\Temp\surefire341077498267400793\surefirebooter18161918557065207350.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.3+7"/>
+    <property name="user.name" value="dguec"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.3+7"/>
+    <property name="localRepository" value="C:\Users\dguec\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\dguec\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.3"/>
+    <property name="user.dir" value="C:\Users\dguec\eclipse-workspace\QuickFitCuisine"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\dguec\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/dguec/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220903-1038/jre/bin/server;C:/Users/dguec/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220903-1038/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Foundation\jdk-16.0.2.7-hotspot\bin;C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git LFS;C:\Program Files\Git\cmd;Q:\flutter\bin;C:\Program Files\php-8.1.11;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\dguec\AppData\Local\Microsoft\WindowsApps;C:\Program Files\CMake\bin;C:\Users\dguec\AppData\Local\GitHubDesktop\bin;C:\Users\dguec\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\dguec\.dotnet\tools;C:\Users\dguec\Desktop;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.3+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="ingredientsTest.testGetRecipeid" classname="ingredientsTest" time="0">
+    <failure message="expected: &lt;1&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <1> but was: <0>
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:1308)
+	at org.junit.jupiter.api.Assertions.failNotEqual(Assertions.java:1304)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:288)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:272)
+	at ingredientsTest.testGetRecipeid(ingredientsTest.java:26)
+]]></failure>
+  </testcase>
+  <testcase name="ingredientsTest.testGetIngredient1" classname="ingredientsTest" time="0">
+    <failure message="expected: &lt;chicken&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <chicken> but was: <null>
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:1308)
+	at org.junit.jupiter.api.Assertions.failNotEqual(Assertions.java:1304)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:490)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:467)
+	at ingredientsTest.testGetIngredient1(ingredientsTest.java:39)
+]]></failure>
+  </testcase>
+  <testcase name="ingredientsTest.testSetIngredient1" classname="ingredientsTest" time="0"/>
+  <testcase name="ingredientsTest.testSetRecipeid" classname="ingredientsTest" time="0"/>
+  <testcase name="ingredientsTest.testGetIngredient2" classname="ingredientsTest" time="0">
+    <failure message="expected: &lt;greenbeans&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <greenbeans> but was: <null>
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:1308)
+	at org.junit.jupiter.api.Assertions.failNotEqual(Assertions.java:1304)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:490)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:467)
+	at ingredientsTest.testGetIngredient2(ingredientsTest.java:52)
+]]></failure>
+  </testcase>
+</testsuite>

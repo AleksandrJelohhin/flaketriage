@@ -1,0 +1,2392 @@
+<testsuites id="" name="" tests="145" failures="101" skipped="36" errors="0" time="79.729759">
+<testsuite name="auth/signin.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="chromium" tests="4" failures="4" skipped="0" time="21.439" errors="0">
+<testcase name="Authentication Flow › should display landing page with sign in option" classname="auth/signin.spec.ts" time="9.045">
+<failure message="signin.spec.ts:13:3 should display landing page with sign in option" type="FAILURE">
+<![CDATA[  [chromium] › auth/signin.spec.ts:13:3 › Authentication Flow › should display landing page with sign in option 
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Smart Reader|Immersive Reader/
+    Received string:  "ryzomatic | Intelligent Reading Platform"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        9 × unexpected value "ryzomatic | Intelligent Reading Platform"
+
+
+      12 |
+      13 |   test('should display landing page with sign in option', async ({ page }) => {
+    > 14 |     await expect(page).toHaveTitle(/Smart Reader|Immersive Reader/);
+         |                        ^
+      15 |     
+      16 |     // Check for sign in button or link
+      17 |     const signInButton = page.getByRole('button', { name: /sign in|get started|start free trial/i });
+        at /Users/aminamouhadi/smart-reader-serverless/tests/e2e/auth/signin.spec.ts:14:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/auth-signin-Authentication-13b20-ng-page-with-sign-in-option-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/auth-signin-Authentication-13b20-ng-page-with-sign-in-option-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/auth-signin-Authentication-13b20-ng-page-with-sign-in-option-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/auth-signin-Authentication-13b20-ng-page-with-sign-in-option-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/auth-signin-Authentication-13b20-ng-page-with-sign-in-option-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/auth-signin-Authentication-13b20-ng-page-with-sign-in-option-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication Flow › should open auth modal when sign in is clicked" classname="auth/signin.spec.ts" time="4.131">
+<failure message="signin.spec.ts:21:3 should open auth modal when sign in is clicked" type="FAILURE">
+<![CDATA[  [chromium] › auth/signin.spec.ts:21:3 › Authentication Flow › should open auth modal when sign in is clicked 
+
+    Error: locator.click: Error: strict mode violation: getByRole('button', { name: /sign in|get started/i }) resolved to 2 elements:
+        1) <button class="hidden rounded-full px-4 py-2 text-slate-600 transition hover:text-slate-900 lg:inline-flex">Sign in</button> aka getByRole('button', { name: 'Sign in' })
+        2) <button class="w-full rounded-full px-4 py-3 text-sm font-semibold transition border border-slate-300 text-slate-700 hover:bg-slate-50">Get Started Free</button> aka getByRole('button', { name: 'Get Started Free' })
+
+    Call log:
+      - waiting for getByRole('button', { name: /sign in|get started/i })
+
+
+      21 |   test('should open auth modal when sign in is clicked', async ({ page }) => {
+      22 |     // Click sign in
+    > 23 |     await page.getByRole('button', { name: /sign in|get started/i }).click();
+         |                                                                      ^
+      24 |     
+      25 |     // Wait for auth modal to appear
+      26 |     const authModal = page.locator('[role="dialog"], .auth-modal, #auth-modal');
+        at /Users/aminamouhadi/smart-reader-serverless/tests/e2e/auth/signin.spec.ts:23:70
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/auth-signin-Authentication-9bf05-dal-when-sign-in-is-clicked-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/auth-signin-Authentication-9bf05-dal-when-sign-in-is-clicked-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/auth-signin-Authentication-9bf05-dal-when-sign-in-is-clicked-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/auth-signin-Authentication-9bf05-dal-when-sign-in-is-clicked-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/auth-signin-Authentication-9bf05-dal-when-sign-in-is-clicked-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/auth-signin-Authentication-9bf05-dal-when-sign-in-is-clicked-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication Flow › should show Google OAuth option" classname="auth/signin.spec.ts" time="4.124">
+<failure message="signin.spec.ts:30:3 should show Google OAuth option" type="FAILURE">
+<![CDATA[  [chromium] › auth/signin.spec.ts:30:3 › Authentication Flow › should show Google OAuth option ────
+
+    Error: locator.click: Error: strict mode violation: getByRole('button', { name: /sign in|get started/i }) resolved to 2 elements:
+        1) <button class="hidden rounded-full px-4 py-2 text-slate-600 transition hover:text-slate-900 lg:inline-flex">Sign in</button> aka getByRole('button', { name: 'Sign in' })
+        2) <button class="w-full rounded-full px-4 py-3 text-sm font-semibold transition border border-slate-300 text-slate-700 hover:bg-slate-50">Get Started Free</button> aka getByRole('button', { name: 'Get Started Free' })
+
+    Call log:
+      - waiting for getByRole('button', { name: /sign in|get started/i })
+
+
+      30 |   test('should show Google OAuth option', async ({ page }) => {
+      31 |     // Open auth modal
+    > 32 |     await page.getByRole('button', { name: /sign in|get started/i }).click();
+         |                                                                      ^
+      33 |     await page.waitForSelector('[role="dialog"]', { state: 'visible' });
+      34 |     
+      35 |     // Check for Google sign in button
+        at /Users/aminamouhadi/smart-reader-serverless/tests/e2e/auth/signin.spec.ts:32:70
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/auth-signin-Authentication-38702-ld-show-Google-OAuth-option-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/auth-signin-Authentication-38702-ld-show-Google-OAuth-option-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/auth-signin-Authentication-38702-ld-show-Google-OAuth-option-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/auth-signin-Authentication-38702-ld-show-Google-OAuth-option-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/auth-signin-Authentication-38702-ld-show-Google-OAuth-option-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/auth-signin-Authentication-38702-ld-show-Google-OAuth-option-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication Flow › should close auth modal when cancel is clicked" classname="auth/signin.spec.ts" time="4.139">
+<failure message="signin.spec.ts:40:3 should close auth modal when cancel is clicked" type="FAILURE">
+<![CDATA[  [chromium] › auth/signin.spec.ts:40:3 › Authentication Flow › should close auth modal when cancel is clicked 
+
+    Error: locator.click: Error: strict mode violation: getByRole('button', { name: /sign in|get started/i }) resolved to 2 elements:
+        1) <button class="hidden rounded-full px-4 py-2 text-slate-600 transition hover:text-slate-900 lg:inline-flex">Sign in</button> aka getByRole('button', { name: 'Sign in' })
+        2) <button class="w-full rounded-full px-4 py-3 text-sm font-semibold transition border border-slate-300 text-slate-700 hover:bg-slate-50">Get Started Free</button> aka getByRole('button', { name: 'Get Started Free' })
+
+    Call log:
+      - waiting for getByRole('button', { name: /sign in|get started/i })
+
+
+      40 |   test('should close auth modal when cancel is clicked', async ({ page }) => {
+      41 |     // Open auth modal
+    > 42 |     await page.getByRole('button', { name: /sign in|get started/i }).click();
+         |                                                                      ^
+      43 |     await page.waitForSelector('[role="dialog"]', { state: 'visible' });
+      44 |     
+      45 |     // Click cancel/close
+        at /Users/aminamouhadi/smart-reader-serverless/tests/e2e/auth/signin.spec.ts:42:70
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/auth-signin-Authentication-54a49-odal-when-cancel-is-clicked-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/auth-signin-Authentication-54a49-odal-when-cancel-is-clicked-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/auth-signin-Authentication-54a49-odal-when-cancel-is-clicked-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/auth-signin-Authentication-54a49-odal-when-cancel-is-clicked-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/auth-signin-Authentication-54a49-odal-when-cancel-is-clicked-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/auth-signin-Authentication-54a49-odal-when-cancel-is-clicked-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="documents/upload.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="chromium" tests="5" failures="3" skipped="2" time="45.129" errors="0">
+<testcase name="Document Upload Flow › should display upload button in header" classname="documents/upload.spec.ts" time="9.029">
+<failure message="upload.spec.ts:18:3 should display upload button in header" type="FAILURE">
+<![CDATA[  [chromium] › documents/upload.spec.ts:18:3 › Document Upload Flow › should display upload button in header 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('button', { name: /upload|add document|add book/i })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('button', { name: /upload|add document|add book/i })
+
+
+      18 |   test('should display upload button in header', async ({ page }) => {
+      19 |     const uploadButton = page.getByRole('button', { name: /upload|add document|add book/i });
+    > 20 |     await expect(uploadButton).toBeVisible();
+         |                                ^
+      21 |   });
+      22 |
+      23 |   test('should open upload modal when upload is clicked', async ({ page }) => {
+        at /Users/aminamouhadi/smart-reader-serverless/tests/e2e/documents/upload.spec.ts:20:32
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/documents-upload-Document--27358-lay-upload-button-in-header-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/documents-upload-Document--27358-lay-upload-button-in-header-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/documents-upload-Document--27358-lay-upload-button-in-header-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/documents-upload-Document--27358-lay-upload-button-in-header-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/documents-upload-Document--27358-lay-upload-button-in-header-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/documents-upload-Document--27358-lay-upload-button-in-header-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Document Upload Flow › should open upload modal when upload is clicked" classname="documents/upload.spec.ts" time="30.719">
+<failure message="upload.spec.ts:23:3 should open upload modal when upload is clicked" type="FAILURE">
+<![CDATA[  [chromium] › documents/upload.spec.ts:23:3 › Document Upload Flow › should open upload modal when upload is clicked 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /upload|add document/i })
+
+
+      22 |
+      23 |   test('should open upload modal when upload is clicked', async ({ page }) => {
+    > 24 |     await page.getByRole('button', { name: /upload|add document/i }).click();
+         |                                                                      ^
+      25 |     
+      26 |     // Wait for upload modal/dialog
+      27 |     const uploadDialog = page.locator('[role="dialog"], .upload-modal');
+        at /Users/aminamouhadi/smart-reader-serverless/tests/e2e/documents/upload.spec.ts:24:70
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/documents-upload-Document--c32c5-odal-when-upload-is-clicked-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/documents-upload-Document--c32c5-odal-when-upload-is-clicked-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/documents-upload-Document--c32c5-odal-when-upload-is-clicked-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/documents-upload-Document--c32c5-odal-when-upload-is-clicked-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/documents-upload-Document--c32c5-odal-when-upload-is-clicked-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/documents-upload-Document--c32c5-odal-when-upload-is-clicked-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Document Upload Flow › should accept PDF files in file input" classname="documents/upload.spec.ts" time="2.445">
+<failure message="upload.spec.ts:31:3 should accept PDF files in file input" type="FAILURE">
+<![CDATA[  [chromium] › documents/upload.spec.ts:31:3 › Document Upload Flow › should accept PDF files in file input 
+
+    ReferenceError: __dirname is not defined
+
+      31 |   test('should accept PDF files in file input', async ({ page }) => {
+      32 |     // Create a test PDF file path
+    > 33 |     const testFilePath = path.join(__dirname, '../fixtures/test-document.pdf');
+         |                                    ^
+      34 |     
+      35 |     // Open upload modal
+      36 |     await page.getByRole('button', { name: /upload/i }).click();
+        at /Users/aminamouhadi/smart-reader-serverless/tests/e2e/documents/upload.spec.ts:33:36
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/documents-upload-Document--1d55a-ept-PDF-files-in-file-input-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/documents-upload-Document--1d55a-ept-PDF-files-in-file-input-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/documents-upload-Document--1d55a-ept-PDF-files-in-file-input-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/documents-upload-Document--1d55a-ept-PDF-files-in-file-input-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/documents-upload-Document--1d55a-ept-PDF-files-in-file-input-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/documents-upload-Document--1d55a-ept-PDF-files-in-file-input-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Document Upload Flow › should show validation error for large files" classname="documents/upload.spec.ts" time="2.413">
+<properties>
+<property name="skip" value="Large file testing requires proper fixture setup">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Document Upload Flow › should show progress indicator during upload" classname="documents/upload.spec.ts" time="0.523">
+<properties>
+<property name="skip" value="Upload progress testing requires file fixtures">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="pdf-viewer-v2/features.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="chromium" tests="11" failures="0" skipped="9" time="49.42" errors="0">
+<testcase name="PDF Viewer V2 - Features › Page Navigation › should navigate to next page" classname="pdf-viewer-v2/features.spec.ts" time="4.805">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Page Navigation › should navigate to previous page" classname="pdf-viewer-v2/features.spec.ts" time="3.69">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Page Navigation › should navigate to first page" classname="pdf-viewer-v2/features.spec.ts" time="5.416">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Zoom Functionality › should zoom in" classname="pdf-viewer-v2/features.spec.ts" time="5.406">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Zoom Functionality › should zoom out" classname="pdf-viewer-v2/features.spec.ts" time="4.443">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Rotation › should rotate PDF clockwise" classname="pdf-viewer-v2/features.spec.ts" time="3.67">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Search Functionality › should open search dialog" classname="pdf-viewer-v2/features.spec.ts" time="4.373">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Search Functionality › should search for text in PDF" classname="pdf-viewer-v2/features.spec.ts" time="4.64">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Reading Mode › should toggle reading mode" classname="pdf-viewer-v2/features.spec.ts" time="4.6">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Notes Integration › should open notes panel" classname="pdf-viewer-v2/features.spec.ts" time="4.27">
+<system-out>
+<![CDATA[🔍 Ensuring authentication...
+🔧 Setting up network-level auth mocking...
+✅ Network-level auth mocking configured
+📍 Reloading page to apply auth...
+⚠️  Could not verify authentication UI, but continuing...
+]]>
+</system-out>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › TTS Integration › should display TTS controls" classname="pdf-viewer-v2/features.spec.ts" time="4.107">
+<system-out>
+<![CDATA[🔍 Ensuring authentication...
+🔧 Setting up network-level auth mocking...
+✅ Network-level auth mocking configured
+📍 Reloading page to apply auth...
+⚠️  Could not verify authentication UI, but continuing...
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="pdf-viewer-v2/highlighting.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="chromium" tests="9" failures="0" skipped="7" time="36.743" errors="0">
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should display PDF viewer when document is loaded" classname="pdf-viewer-v2/highlighting.spec.ts" time="6.453">
+<properties>
+<property name="skip" value="PDF viewer not available - document may need to be uploaded first">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should allow text selection in PDF" classname="pdf-viewer-v2/highlighting.spec.ts" time="4.463">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should show highlight popup after text selection" classname="pdf-viewer-v2/highlighting.spec.ts" time="4.471">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should save highlight with default color" classname="pdf-viewer-v2/highlighting.spec.ts" time="3.508">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should allow color selection for highlights" classname="pdf-viewer-v2/highlighting.spec.ts" time="3.693">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Management › should display highlight management panel" classname="pdf-viewer-v2/highlighting.spec.ts" time="3.788">
+<system-out>
+<![CDATA[🔍 Ensuring authentication...
+🔧 Setting up network-level auth mocking...
+✅ Network-level auth mocking configured
+📍 Reloading page to apply auth...
+⚠️  Could not verify authentication UI, but continuing...
+]]>
+</system-out>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Management › should list saved highlights in management panel" classname="pdf-viewer-v2/highlighting.spec.ts" time="3.485">
+<system-out>
+<![CDATA[🔍 Ensuring authentication...
+🔧 Setting up network-level auth mocking...
+✅ Network-level auth mocking configured
+📍 Reloading page to apply auth...
+⚠️  Could not verify authentication UI, but continuing...
+]]>
+</system-out>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Management › should allow deleting highlights" classname="pdf-viewer-v2/highlighting.spec.ts" time="3.47">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Persistence › should persist highlights across page navigation" classname="pdf-viewer-v2/highlighting.spec.ts" time="3.412">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="auth/signin.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="firefox" tests="4" failures="4" skipped="0" time="0.004" errors="0">
+<testcase name="Authentication Flow › should display landing page with sign in option" classname="auth/signin.spec.ts" time="0.001">
+<failure message="signin.spec.ts:13:3 should display landing page with sign in option" type="FAILURE">
+<![CDATA[  [firefox] › auth/signin.spec.ts:13:3 › Authentication Flow › should display landing page with sign in option 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Authentication Flow › should open auth modal when sign in is clicked" classname="auth/signin.spec.ts" time="0.001">
+<failure message="signin.spec.ts:21:3 should open auth modal when sign in is clicked" type="FAILURE">
+<![CDATA[  [firefox] › auth/signin.spec.ts:21:3 › Authentication Flow › should open auth modal when sign in is clicked 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Authentication Flow › should show Google OAuth option" classname="auth/signin.spec.ts" time="0.001">
+<failure message="signin.spec.ts:30:3 should show Google OAuth option" type="FAILURE">
+<![CDATA[  [firefox] › auth/signin.spec.ts:30:3 › Authentication Flow › should show Google OAuth option ─────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Authentication Flow › should close auth modal when cancel is clicked" classname="auth/signin.spec.ts" time="0.001">
+<failure message="signin.spec.ts:40:3 should close auth modal when cancel is clicked" type="FAILURE">
+<![CDATA[  [firefox] › auth/signin.spec.ts:40:3 › Authentication Flow › should close auth modal when cancel is clicked 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="documents/upload.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="firefox" tests="5" failures="5" skipped="0" time="0.006" errors="0">
+<testcase name="Document Upload Flow › should display upload button in header" classname="documents/upload.spec.ts" time="0.002">
+<failure message="upload.spec.ts:18:3 should display upload button in header" type="FAILURE">
+<![CDATA[  [firefox] › documents/upload.spec.ts:18:3 › Document Upload Flow › should display upload button in header 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Document Upload Flow › should open upload modal when upload is clicked" classname="documents/upload.spec.ts" time="0.001">
+<failure message="upload.spec.ts:23:3 should open upload modal when upload is clicked" type="FAILURE">
+<![CDATA[  [firefox] › documents/upload.spec.ts:23:3 › Document Upload Flow › should open upload modal when upload is clicked 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Document Upload Flow › should accept PDF files in file input" classname="documents/upload.spec.ts" time="0.001">
+<failure message="upload.spec.ts:31:3 should accept PDF files in file input" type="FAILURE">
+<![CDATA[  [firefox] › documents/upload.spec.ts:31:3 › Document Upload Flow › should accept PDF files in file input 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Document Upload Flow › should show validation error for large files" classname="documents/upload.spec.ts" time="0.001">
+<failure message="upload.spec.ts:47:3 should show validation error for large files" type="FAILURE">
+<![CDATA[  [firefox] › documents/upload.spec.ts:47:3 › Document Upload Flow › should show validation error for large files 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Document Upload Flow › should show progress indicator during upload" classname="documents/upload.spec.ts" time="0.001">
+<failure message="upload.spec.ts:56:3 should show progress indicator during upload" type="FAILURE">
+<![CDATA[  [firefox] › documents/upload.spec.ts:56:3 › Document Upload Flow › should show progress indicator during upload 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="pdf-viewer-v2/features.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="firefox" tests="11" failures="11" skipped="0" time="0.012" errors="0">
+<testcase name="PDF Viewer V2 - Features › Page Navigation › should navigate to next page" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:38:5 should navigate to next page" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/features.spec.ts:38:5 › PDF Viewer V2 - Features › Page Navigation › should navigate to next page 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Page Navigation › should navigate to previous page" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:79:5 should navigate to previous page" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/features.spec.ts:79:5 › PDF Viewer V2 - Features › Page Navigation › should navigate to previous page 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Page Navigation › should navigate to first page" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:123:5 should navigate to first page" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/features.spec.ts:123:5 › PDF Viewer V2 - Features › Page Navigation › should navigate to first page 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Zoom Functionality › should zoom in" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:163:5 should zoom in" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/features.spec.ts:163:5 › PDF Viewer V2 - Features › Zoom Functionality › should zoom in 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Zoom Functionality › should zoom out" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:200:5 should zoom out" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/features.spec.ts:200:5 › PDF Viewer V2 - Features › Zoom Functionality › should zoom out 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Rotation › should rotate PDF clockwise" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:240:5 should rotate PDF clockwise" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/features.spec.ts:240:5 › PDF Viewer V2 - Features › Rotation › should rotate PDF clockwise 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Search Functionality › should open search dialog" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:270:5 should open search dialog" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/features.spec.ts:270:5 › PDF Viewer V2 - Features › Search Functionality › should open search dialog 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Search Functionality › should search for text in PDF" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:302:5 should search for text in PDF" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/features.spec.ts:302:5 › PDF Viewer V2 - Features › Search Functionality › should search for text in PDF 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Reading Mode › should toggle reading mode" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:338:5 should toggle reading mode" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/features.spec.ts:338:5 › PDF Viewer V2 - Features › Reading Mode › should toggle reading mode 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Notes Integration › should open notes panel" classname="pdf-viewer-v2/features.spec.ts" time="0.002">
+<failure message="features.spec.ts:372:5 should open notes panel" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/features.spec.ts:372:5 › PDF Viewer V2 - Features › Notes Integration › should open notes panel 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › TTS Integration › should display TTS controls" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:396:5 should display TTS controls" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/features.spec.ts:396:5 › PDF Viewer V2 - Features › TTS Integration › should display TTS controls 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="pdf-viewer-v2/highlighting.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="firefox" tests="9" failures="9" skipped="0" time="0.011" errors="0">
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should display PDF viewer when document is loaded" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:37:5 should display PDF viewer when document is loaded" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/highlighting.spec.ts:37:5 › PDF Viewer V2 - Highlighting › Highlight Creation › should display PDF viewer when document is loaded 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should allow text selection in PDF" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:53:5 should allow text selection in PDF" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/highlighting.spec.ts:53:5 › PDF Viewer V2 - Highlighting › Highlight Creation › should allow text selection in PDF 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should show highlight popup after text selection" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:87:5 should show highlight popup after text selection" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/highlighting.spec.ts:87:5 › PDF Viewer V2 - Highlighting › Highlight Creation › should show highlight popup after text selection 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should save highlight with default color" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.002">
+<failure message="highlighting.spec.ts:127:5 should save highlight with default color" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/highlighting.spec.ts:127:5 › PDF Viewer V2 - Highlighting › Highlight Creation › should save highlight with default color 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should allow color selection for highlights" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:176:5 should allow color selection for highlights" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/highlighting.spec.ts:176:5 › PDF Viewer V2 - Highlighting › Highlight Creation › should allow color selection for highlights 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Management › should display highlight management panel" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:228:5 should display highlight management panel" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/highlighting.spec.ts:228:5 › PDF Viewer V2 - Highlighting › Highlight Management › should display highlight management panel 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Management › should list saved highlights in management panel" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.002">
+<failure message="highlighting.spec.ts:254:5 should list saved highlights in management panel" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/highlighting.spec.ts:254:5 › PDF Viewer V2 - Highlighting › Highlight Management › should list saved highlights in management panel 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Management › should allow deleting highlights" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:277:5 should allow deleting highlights" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/highlighting.spec.ts:277:5 › PDF Viewer V2 - Highlighting › Highlight Management › should allow deleting highlights 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Persistence › should persist highlights across page navigation" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:321:5 should persist highlights across page navigation" type="FAILURE">
+<![CDATA[  [firefox] › pdf-viewer-v2/highlighting.spec.ts:321:5 › PDF Viewer V2 - Highlighting › Highlight Persistence › should persist highlights across page navigation 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/firefox-1495/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="auth/signin.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="webkit" tests="4" failures="4" skipped="0" time="0.004" errors="0">
+<testcase name="Authentication Flow › should display landing page with sign in option" classname="auth/signin.spec.ts" time="0.001">
+<failure message="signin.spec.ts:13:3 should display landing page with sign in option" type="FAILURE">
+<![CDATA[  [webkit] › auth/signin.spec.ts:13:3 › Authentication Flow › should display landing page with sign in option 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Authentication Flow › should open auth modal when sign in is clicked" classname="auth/signin.spec.ts" time="0.001">
+<failure message="signin.spec.ts:21:3 should open auth modal when sign in is clicked" type="FAILURE">
+<![CDATA[  [webkit] › auth/signin.spec.ts:21:3 › Authentication Flow › should open auth modal when sign in is clicked 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Authentication Flow › should show Google OAuth option" classname="auth/signin.spec.ts" time="0.001">
+<failure message="signin.spec.ts:30:3 should show Google OAuth option" type="FAILURE">
+<![CDATA[  [webkit] › auth/signin.spec.ts:30:3 › Authentication Flow › should show Google OAuth option ──────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Authentication Flow › should close auth modal when cancel is clicked" classname="auth/signin.spec.ts" time="0.001">
+<failure message="signin.spec.ts:40:3 should close auth modal when cancel is clicked" type="FAILURE">
+<![CDATA[  [webkit] › auth/signin.spec.ts:40:3 › Authentication Flow › should close auth modal when cancel is clicked 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="documents/upload.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="webkit" tests="5" failures="5" skipped="0" time="0.005" errors="0">
+<testcase name="Document Upload Flow › should display upload button in header" classname="documents/upload.spec.ts" time="0.001">
+<failure message="upload.spec.ts:18:3 should display upload button in header" type="FAILURE">
+<![CDATA[  [webkit] › documents/upload.spec.ts:18:3 › Document Upload Flow › should display upload button in header 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Document Upload Flow › should open upload modal when upload is clicked" classname="documents/upload.spec.ts" time="0.001">
+<failure message="upload.spec.ts:23:3 should open upload modal when upload is clicked" type="FAILURE">
+<![CDATA[  [webkit] › documents/upload.spec.ts:23:3 › Document Upload Flow › should open upload modal when upload is clicked 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Document Upload Flow › should accept PDF files in file input" classname="documents/upload.spec.ts" time="0.001">
+<failure message="upload.spec.ts:31:3 should accept PDF files in file input" type="FAILURE">
+<![CDATA[  [webkit] › documents/upload.spec.ts:31:3 › Document Upload Flow › should accept PDF files in file input 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Document Upload Flow › should show validation error for large files" classname="documents/upload.spec.ts" time="0.001">
+<failure message="upload.spec.ts:47:3 should show validation error for large files" type="FAILURE">
+<![CDATA[  [webkit] › documents/upload.spec.ts:47:3 › Document Upload Flow › should show validation error for large files 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Document Upload Flow › should show progress indicator during upload" classname="documents/upload.spec.ts" time="0.001">
+<failure message="upload.spec.ts:56:3 should show progress indicator during upload" type="FAILURE">
+<![CDATA[  [webkit] › documents/upload.spec.ts:56:3 › Document Upload Flow › should show progress indicator during upload 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="pdf-viewer-v2/features.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="webkit" tests="11" failures="11" skipped="0" time="0.012" errors="0">
+<testcase name="PDF Viewer V2 - Features › Page Navigation › should navigate to next page" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:38:5 should navigate to next page" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/features.spec.ts:38:5 › PDF Viewer V2 - Features › Page Navigation › should navigate to next page 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Page Navigation › should navigate to previous page" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:79:5 should navigate to previous page" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/features.spec.ts:79:5 › PDF Viewer V2 - Features › Page Navigation › should navigate to previous page 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Page Navigation › should navigate to first page" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:123:5 should navigate to first page" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/features.spec.ts:123:5 › PDF Viewer V2 - Features › Page Navigation › should navigate to first page 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Zoom Functionality › should zoom in" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:163:5 should zoom in" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/features.spec.ts:163:5 › PDF Viewer V2 - Features › Zoom Functionality › should zoom in 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Zoom Functionality › should zoom out" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:200:5 should zoom out" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/features.spec.ts:200:5 › PDF Viewer V2 - Features › Zoom Functionality › should zoom out 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Rotation › should rotate PDF clockwise" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:240:5 should rotate PDF clockwise" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/features.spec.ts:240:5 › PDF Viewer V2 - Features › Rotation › should rotate PDF clockwise 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Search Functionality › should open search dialog" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:270:5 should open search dialog" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/features.spec.ts:270:5 › PDF Viewer V2 - Features › Search Functionality › should open search dialog 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Search Functionality › should search for text in PDF" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:302:5 should search for text in PDF" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/features.spec.ts:302:5 › PDF Viewer V2 - Features › Search Functionality › should search for text in PDF 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Reading Mode › should toggle reading mode" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:338:5 should toggle reading mode" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/features.spec.ts:338:5 › PDF Viewer V2 - Features › Reading Mode › should toggle reading mode 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Notes Integration › should open notes panel" classname="pdf-viewer-v2/features.spec.ts" time="0.002">
+<failure message="features.spec.ts:372:5 should open notes panel" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/features.spec.ts:372:5 › PDF Viewer V2 - Features › Notes Integration › should open notes panel 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › TTS Integration › should display TTS controls" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:396:5 should display TTS controls" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/features.spec.ts:396:5 › PDF Viewer V2 - Features › TTS Integration › should display TTS controls 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="pdf-viewer-v2/highlighting.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="webkit" tests="9" failures="9" skipped="0" time="0.016" errors="0">
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should display PDF viewer when document is loaded" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.002">
+<failure message="highlighting.spec.ts:37:5 should display PDF viewer when document is loaded" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/highlighting.spec.ts:37:5 › PDF Viewer V2 - Highlighting › Highlight Creation › should display PDF viewer when document is loaded 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should allow text selection in PDF" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.002">
+<failure message="highlighting.spec.ts:53:5 should allow text selection in PDF" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/highlighting.spec.ts:53:5 › PDF Viewer V2 - Highlighting › Highlight Creation › should allow text selection in PDF 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should show highlight popup after text selection" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.002">
+<failure message="highlighting.spec.ts:87:5 should show highlight popup after text selection" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/highlighting.spec.ts:87:5 › PDF Viewer V2 - Highlighting › Highlight Creation › should show highlight popup after text selection 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should save highlight with default color" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.002">
+<failure message="highlighting.spec.ts:127:5 should save highlight with default color" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/highlighting.spec.ts:127:5 › PDF Viewer V2 - Highlighting › Highlight Creation › should save highlight with default color 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should allow color selection for highlights" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:176:5 should allow color selection for highlights" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/highlighting.spec.ts:176:5 › PDF Viewer V2 - Highlighting › Highlight Creation › should allow color selection for highlights 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Management › should display highlight management panel" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.002">
+<failure message="highlighting.spec.ts:228:5 should display highlight management panel" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/highlighting.spec.ts:228:5 › PDF Viewer V2 - Highlighting › Highlight Management › should display highlight management panel 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Management › should list saved highlights in management panel" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.002">
+<failure message="highlighting.spec.ts:254:5 should list saved highlights in management panel" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/highlighting.spec.ts:254:5 › PDF Viewer V2 - Highlighting › Highlight Management › should list saved highlights in management panel 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Management › should allow deleting highlights" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.002">
+<failure message="highlighting.spec.ts:277:5 should allow deleting highlights" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/highlighting.spec.ts:277:5 › PDF Viewer V2 - Highlighting › Highlight Management › should allow deleting highlights 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Persistence › should persist highlights across page navigation" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:321:5 should persist highlights across page navigation" type="FAILURE">
+<![CDATA[  [webkit] › pdf-viewer-v2/highlighting.spec.ts:321:5 › PDF Viewer V2 - Highlighting › Highlight Persistence › should persist highlights across page navigation 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="auth/signin.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="Mobile Chrome" tests="4" failures="4" skipped="0" time="77.33" errors="0">
+<testcase name="Authentication Flow › should display landing page with sign in option" classname="auth/signin.spec.ts" time="7.865">
+<failure message="signin.spec.ts:13:3 should display landing page with sign in option" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › auth/signin.spec.ts:13:3 › Authentication Flow › should display landing page with sign in option 
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Smart Reader|Immersive Reader/
+    Received string:  "ryzomatic | Intelligent Reading Platform"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        9 × unexpected value "ryzomatic | Intelligent Reading Platform"
+
+
+      12 |
+      13 |   test('should display landing page with sign in option', async ({ page }) => {
+    > 14 |     await expect(page).toHaveTitle(/Smart Reader|Immersive Reader/);
+         |                        ^
+      15 |     
+      16 |     // Check for sign in button or link
+      17 |     const signInButton = page.getByRole('button', { name: /sign in|get started|start free trial/i });
+        at /Users/aminamouhadi/smart-reader-serverless/tests/e2e/auth/signin.spec.ts:14:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/auth-signin-Authentication-13b20-ng-page-with-sign-in-option-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/auth-signin-Authentication-13b20-ng-page-with-sign-in-option-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/auth-signin-Authentication-13b20-ng-page-with-sign-in-option-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/auth-signin-Authentication-13b20-ng-page-with-sign-in-option-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/auth-signin-Authentication-13b20-ng-page-with-sign-in-option-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|../test-results/auth-signin-Authentication-13b20-ng-page-with-sign-in-option-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication Flow › should open auth modal when sign in is clicked" classname="auth/signin.spec.ts" time="8.497">
+<failure message="signin.spec.ts:21:3 should open auth modal when sign in is clicked" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › auth/signin.spec.ts:21:3 › Authentication Flow › should open auth modal when sign in is clicked 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('[role="dialog"], .auth-modal, #auth-modal')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[role="dialog"], .auth-modal, #auth-modal')
+
+
+      25 |     // Wait for auth modal to appear
+      26 |     const authModal = page.locator('[role="dialog"], .auth-modal, #auth-modal');
+    > 27 |     await expect(authModal).toBeVisible();
+         |                             ^
+      28 |   });
+      29 |
+      30 |   test('should show Google OAuth option', async ({ page }) => {
+        at /Users/aminamouhadi/smart-reader-serverless/tests/e2e/auth/signin.spec.ts:27:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/auth-signin-Authentication-9bf05-dal-when-sign-in-is-clicked-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/auth-signin-Authentication-9bf05-dal-when-sign-in-is-clicked-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/auth-signin-Authentication-9bf05-dal-when-sign-in-is-clicked-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/auth-signin-Authentication-9bf05-dal-when-sign-in-is-clicked-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/auth-signin-Authentication-9bf05-dal-when-sign-in-is-clicked-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|../test-results/auth-signin-Authentication-9bf05-dal-when-sign-in-is-clicked-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication Flow › should show Google OAuth option" classname="auth/signin.spec.ts" time="30.528">
+<failure message="signin.spec.ts:30:3 should show Google OAuth option" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › auth/signin.spec.ts:30:3 › Authentication Flow › should show Google OAuth option 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForSelector: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[role="dialog"]') to be visible
+
+
+      31 |     // Open auth modal
+      32 |     await page.getByRole('button', { name: /sign in|get started/i }).click();
+    > 33 |     await page.waitForSelector('[role="dialog"]', { state: 'visible' });
+         |                ^
+      34 |     
+      35 |     // Check for Google sign in button
+      36 |     const googleButton = page.getByRole('button', { name: /sign in with google|continue with google/i });
+        at /Users/aminamouhadi/smart-reader-serverless/tests/e2e/auth/signin.spec.ts:33:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/auth-signin-Authentication-38702-ld-show-Google-OAuth-option-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/auth-signin-Authentication-38702-ld-show-Google-OAuth-option-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/auth-signin-Authentication-38702-ld-show-Google-OAuth-option-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/auth-signin-Authentication-38702-ld-show-Google-OAuth-option-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/auth-signin-Authentication-38702-ld-show-Google-OAuth-option-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|../test-results/auth-signin-Authentication-38702-ld-show-Google-OAuth-option-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication Flow › should close auth modal when cancel is clicked" classname="auth/signin.spec.ts" time="30.44">
+<failure message="signin.spec.ts:40:3 should close auth modal when cancel is clicked" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › auth/signin.spec.ts:40:3 › Authentication Flow › should close auth modal when cancel is clicked 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForSelector: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[role="dialog"]') to be visible
+
+
+      41 |     // Open auth modal
+      42 |     await page.getByRole('button', { name: /sign in|get started/i }).click();
+    > 43 |     await page.waitForSelector('[role="dialog"]', { state: 'visible' });
+         |                ^
+      44 |     
+      45 |     // Click cancel/close
+      46 |     const cancelButton = page.getByRole('button', { name: /cancel|close/i });
+        at /Users/aminamouhadi/smart-reader-serverless/tests/e2e/auth/signin.spec.ts:43:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/auth-signin-Authentication-54a49-odal-when-cancel-is-clicked-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/auth-signin-Authentication-54a49-odal-when-cancel-is-clicked-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/auth-signin-Authentication-54a49-odal-when-cancel-is-clicked-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/auth-signin-Authentication-54a49-odal-when-cancel-is-clicked-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/auth-signin-Authentication-54a49-odal-when-cancel-is-clicked-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|../test-results/auth-signin-Authentication-54a49-odal-when-cancel-is-clicked-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="documents/upload.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="Mobile Chrome" tests="5" failures="3" skipped="2" time="43.406" errors="0">
+<testcase name="Document Upload Flow › should display upload button in header" classname="documents/upload.spec.ts" time="8.102">
+<failure message="upload.spec.ts:18:3 should display upload button in header" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › documents/upload.spec.ts:18:3 › Document Upload Flow › should display upload button in header 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('button', { name: /upload|add document|add book/i })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('button', { name: /upload|add document|add book/i })
+
+
+      18 |   test('should display upload button in header', async ({ page }) => {
+      19 |     const uploadButton = page.getByRole('button', { name: /upload|add document|add book/i });
+    > 20 |     await expect(uploadButton).toBeVisible();
+         |                                ^
+      21 |   });
+      22 |
+      23 |   test('should open upload modal when upload is clicked', async ({ page }) => {
+        at /Users/aminamouhadi/smart-reader-serverless/tests/e2e/documents/upload.spec.ts:20:32
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/documents-upload-Document--27358-lay-upload-button-in-header-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/documents-upload-Document--27358-lay-upload-button-in-header-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/documents-upload-Document--27358-lay-upload-button-in-header-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/documents-upload-Document--27358-lay-upload-button-in-header-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/documents-upload-Document--27358-lay-upload-button-in-header-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|../test-results/documents-upload-Document--27358-lay-upload-button-in-header-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Document Upload Flow › should open upload modal when upload is clicked" classname="documents/upload.spec.ts" time="30.456">
+<failure message="upload.spec.ts:23:3 should open upload modal when upload is clicked" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › documents/upload.spec.ts:23:3 › Document Upload Flow › should open upload modal when upload is clicked 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /upload|add document/i })
+
+
+      22 |
+      23 |   test('should open upload modal when upload is clicked', async ({ page }) => {
+    > 24 |     await page.getByRole('button', { name: /upload|add document/i }).click();
+         |                                                                      ^
+      25 |     
+      26 |     // Wait for upload modal/dialog
+      27 |     const uploadDialog = page.locator('[role="dialog"], .upload-modal');
+        at /Users/aminamouhadi/smart-reader-serverless/tests/e2e/documents/upload.spec.ts:24:70
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/documents-upload-Document--c32c5-odal-when-upload-is-clicked-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/documents-upload-Document--c32c5-odal-when-upload-is-clicked-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/documents-upload-Document--c32c5-odal-when-upload-is-clicked-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/documents-upload-Document--c32c5-odal-when-upload-is-clicked-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/documents-upload-Document--c32c5-odal-when-upload-is-clicked-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|../test-results/documents-upload-Document--c32c5-odal-when-upload-is-clicked-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Document Upload Flow › should accept PDF files in file input" classname="documents/upload.spec.ts" time="1.694">
+<failure message="upload.spec.ts:31:3 should accept PDF files in file input" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › documents/upload.spec.ts:31:3 › Document Upload Flow › should accept PDF files in file input 
+
+    ReferenceError: __dirname is not defined
+
+      31 |   test('should accept PDF files in file input', async ({ page }) => {
+      32 |     // Create a test PDF file path
+    > 33 |     const testFilePath = path.join(__dirname, '../fixtures/test-document.pdf');
+         |                                    ^
+      34 |     
+      35 |     // Open upload modal
+      36 |     await page.getByRole('button', { name: /upload/i }).click();
+        at /Users/aminamouhadi/smart-reader-serverless/tests/e2e/documents/upload.spec.ts:33:36
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../test-results/documents-upload-Document--1d55a-ept-PDF-files-in-file-input-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../test-results/documents-upload-Document--1d55a-ept-PDF-files-in-file-input-Mobile-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/documents-upload-Document--1d55a-ept-PDF-files-in-file-input-Mobile-Chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/documents-upload-Document--1d55a-ept-PDF-files-in-file-input-Mobile-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/documents-upload-Document--1d55a-ept-PDF-files-in-file-input-Mobile-Chrome/video.webm]]
+
+[[ATTACHMENT|../test-results/documents-upload-Document--1d55a-ept-PDF-files-in-file-input-Mobile-Chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Document Upload Flow › should show validation error for large files" classname="documents/upload.spec.ts" time="1.688">
+<properties>
+<property name="skip" value="Large file testing requires proper fixture setup">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Document Upload Flow › should show progress indicator during upload" classname="documents/upload.spec.ts" time="1.466">
+<properties>
+<property name="skip" value="Upload progress testing requires file fixtures">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="pdf-viewer-v2/features.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="Mobile Chrome" tests="11" failures="0" skipped="9" time="38.001" errors="0">
+<testcase name="PDF Viewer V2 - Features › Page Navigation › should navigate to next page" classname="pdf-viewer-v2/features.spec.ts" time="3.657">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Page Navigation › should navigate to previous page" classname="pdf-viewer-v2/features.spec.ts" time="3.41">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Page Navigation › should navigate to first page" classname="pdf-viewer-v2/features.spec.ts" time="3.463">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Zoom Functionality › should zoom in" classname="pdf-viewer-v2/features.spec.ts" time="3.409">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Zoom Functionality › should zoom out" classname="pdf-viewer-v2/features.spec.ts" time="3.426">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Rotation › should rotate PDF clockwise" classname="pdf-viewer-v2/features.spec.ts" time="3.411">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Search Functionality › should open search dialog" classname="pdf-viewer-v2/features.spec.ts" time="3.403">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Search Functionality › should search for text in PDF" classname="pdf-viewer-v2/features.spec.ts" time="3.428">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Reading Mode › should toggle reading mode" classname="pdf-viewer-v2/features.spec.ts" time="3.41">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Notes Integration › should open notes panel" classname="pdf-viewer-v2/features.spec.ts" time="3.413">
+<system-out>
+<![CDATA[🔍 Ensuring authentication...
+🔧 Setting up network-level auth mocking...
+✅ Network-level auth mocking configured
+📍 Reloading page to apply auth...
+⚠️  Could not verify authentication UI, but continuing...
+]]>
+</system-out>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › TTS Integration › should display TTS controls" classname="pdf-viewer-v2/features.spec.ts" time="3.571">
+<system-out>
+<![CDATA[🔍 Ensuring authentication...
+🔧 Setting up network-level auth mocking...
+✅ Network-level auth mocking configured
+📍 Reloading page to apply auth...
+⚠️  Could not verify authentication UI, but continuing...
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="pdf-viewer-v2/highlighting.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="Mobile Chrome" tests="9" failures="0" skipped="7" time="40.507" errors="0">
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should display PDF viewer when document is loaded" classname="pdf-viewer-v2/highlighting.spec.ts" time="5.52">
+<properties>
+<property name="skip" value="PDF viewer not available - document may need to be uploaded first">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should allow text selection in PDF" classname="pdf-viewer-v2/highlighting.spec.ts" time="5.327">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should show highlight popup after text selection" classname="pdf-viewer-v2/highlighting.spec.ts" time="5.355">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should save highlight with default color" classname="pdf-viewer-v2/highlighting.spec.ts" time="3.805">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should allow color selection for highlights" classname="pdf-viewer-v2/highlighting.spec.ts" time="3.939">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Management › should display highlight management panel" classname="pdf-viewer-v2/highlighting.spec.ts" time="4.144">
+<system-out>
+<![CDATA[🔍 Ensuring authentication...
+🔧 Setting up network-level auth mocking...
+✅ Network-level auth mocking configured
+📍 Reloading page to apply auth...
+⚠️  Could not verify authentication UI, but continuing...
+]]>
+</system-out>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Management › should list saved highlights in management panel" classname="pdf-viewer-v2/highlighting.spec.ts" time="4.107">
+<system-out>
+<![CDATA[🔍 Ensuring authentication...
+🔧 Setting up network-level auth mocking...
+✅ Network-level auth mocking configured
+📍 Reloading page to apply auth...
+⚠️  Could not verify authentication UI, but continuing...
+]]>
+</system-out>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Management › should allow deleting highlights" classname="pdf-viewer-v2/highlighting.spec.ts" time="4.008">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Persistence › should persist highlights across page navigation" classname="pdf-viewer-v2/highlighting.spec.ts" time="4.302">
+<properties>
+<property name="skip" value="PDF viewer not available">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="auth/signin.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="Mobile Safari" tests="4" failures="4" skipped="0" time="0.006" errors="0">
+<testcase name="Authentication Flow › should display landing page with sign in option" classname="auth/signin.spec.ts" time="0.001">
+<failure message="signin.spec.ts:13:3 should display landing page with sign in option" type="FAILURE">
+<![CDATA[  [Mobile Safari] › auth/signin.spec.ts:13:3 › Authentication Flow › should display landing page with sign in option 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Authentication Flow › should open auth modal when sign in is clicked" classname="auth/signin.spec.ts" time="0.001">
+<failure message="signin.spec.ts:21:3 should open auth modal when sign in is clicked" type="FAILURE">
+<![CDATA[  [Mobile Safari] › auth/signin.spec.ts:21:3 › Authentication Flow › should open auth modal when sign in is clicked 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Authentication Flow › should show Google OAuth option" classname="auth/signin.spec.ts" time="0.002">
+<failure message="signin.spec.ts:30:3 should show Google OAuth option" type="FAILURE">
+<![CDATA[  [Mobile Safari] › auth/signin.spec.ts:30:3 › Authentication Flow › should show Google OAuth option 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Authentication Flow › should close auth modal when cancel is clicked" classname="auth/signin.spec.ts" time="0.002">
+<failure message="signin.spec.ts:40:3 should close auth modal when cancel is clicked" type="FAILURE">
+<![CDATA[  [Mobile Safari] › auth/signin.spec.ts:40:3 › Authentication Flow › should close auth modal when cancel is clicked 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="documents/upload.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="Mobile Safari" tests="5" failures="5" skipped="0" time="0.006" errors="0">
+<testcase name="Document Upload Flow › should display upload button in header" classname="documents/upload.spec.ts" time="0.001">
+<failure message="upload.spec.ts:18:3 should display upload button in header" type="FAILURE">
+<![CDATA[  [Mobile Safari] › documents/upload.spec.ts:18:3 › Document Upload Flow › should display upload button in header 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Document Upload Flow › should open upload modal when upload is clicked" classname="documents/upload.spec.ts" time="0.002">
+<failure message="upload.spec.ts:23:3 should open upload modal when upload is clicked" type="FAILURE">
+<![CDATA[  [Mobile Safari] › documents/upload.spec.ts:23:3 › Document Upload Flow › should open upload modal when upload is clicked 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Document Upload Flow › should accept PDF files in file input" classname="documents/upload.spec.ts" time="0.001">
+<failure message="upload.spec.ts:31:3 should accept PDF files in file input" type="FAILURE">
+<![CDATA[  [Mobile Safari] › documents/upload.spec.ts:31:3 › Document Upload Flow › should accept PDF files in file input 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Document Upload Flow › should show validation error for large files" classname="documents/upload.spec.ts" time="0.001">
+<failure message="upload.spec.ts:47:3 should show validation error for large files" type="FAILURE">
+<![CDATA[  [Mobile Safari] › documents/upload.spec.ts:47:3 › Document Upload Flow › should show validation error for large files 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Document Upload Flow › should show progress indicator during upload" classname="documents/upload.spec.ts" time="0.001">
+<failure message="upload.spec.ts:56:3 should show progress indicator during upload" type="FAILURE">
+<![CDATA[  [Mobile Safari] › documents/upload.spec.ts:56:3 › Document Upload Flow › should show progress indicator during upload 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="pdf-viewer-v2/features.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="Mobile Safari" tests="11" failures="11" skipped="0" time="0.013" errors="0">
+<testcase name="PDF Viewer V2 - Features › Page Navigation › should navigate to next page" classname="pdf-viewer-v2/features.spec.ts" time="0.002">
+<failure message="features.spec.ts:38:5 should navigate to next page" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/features.spec.ts:38:5 › PDF Viewer V2 - Features › Page Navigation › should navigate to next page 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Page Navigation › should navigate to previous page" classname="pdf-viewer-v2/features.spec.ts" time="0.002">
+<failure message="features.spec.ts:79:5 should navigate to previous page" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/features.spec.ts:79:5 › PDF Viewer V2 - Features › Page Navigation › should navigate to previous page 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Page Navigation › should navigate to first page" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:123:5 should navigate to first page" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/features.spec.ts:123:5 › PDF Viewer V2 - Features › Page Navigation › should navigate to first page 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Zoom Functionality › should zoom in" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:163:5 should zoom in" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/features.spec.ts:163:5 › PDF Viewer V2 - Features › Zoom Functionality › should zoom in 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Zoom Functionality › should zoom out" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:200:5 should zoom out" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/features.spec.ts:200:5 › PDF Viewer V2 - Features › Zoom Functionality › should zoom out 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Rotation › should rotate PDF clockwise" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:240:5 should rotate PDF clockwise" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/features.spec.ts:240:5 › PDF Viewer V2 - Features › Rotation › should rotate PDF clockwise 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Search Functionality › should open search dialog" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:270:5 should open search dialog" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/features.spec.ts:270:5 › PDF Viewer V2 - Features › Search Functionality › should open search dialog 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Search Functionality › should search for text in PDF" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:302:5 should search for text in PDF" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/features.spec.ts:302:5 › PDF Viewer V2 - Features › Search Functionality › should search for text in PDF 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Reading Mode › should toggle reading mode" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:338:5 should toggle reading mode" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/features.spec.ts:338:5 › PDF Viewer V2 - Features › Reading Mode › should toggle reading mode 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › Notes Integration › should open notes panel" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:372:5 should open notes panel" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/features.spec.ts:372:5 › PDF Viewer V2 - Features › Notes Integration › should open notes panel 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Features › TTS Integration › should display TTS controls" classname="pdf-viewer-v2/features.spec.ts" time="0.001">
+<failure message="features.spec.ts:396:5 should display TTS controls" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/features.spec.ts:396:5 › PDF Viewer V2 - Features › TTS Integration › should display TTS controls 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="pdf-viewer-v2/highlighting.spec.ts" timestamp="2025-11-21T09:03:31.505Z" hostname="Mobile Safari" tests="9" failures="9" skipped="0" time="0.009" errors="0">
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should display PDF viewer when document is loaded" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:37:5 should display PDF viewer when document is loaded" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/highlighting.spec.ts:37:5 › PDF Viewer V2 - Highlighting › Highlight Creation › should display PDF viewer when document is loaded 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should allow text selection in PDF" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:53:5 should allow text selection in PDF" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/highlighting.spec.ts:53:5 › PDF Viewer V2 - Highlighting › Highlight Creation › should allow text selection in PDF 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should show highlight popup after text selection" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:87:5 should show highlight popup after text selection" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/highlighting.spec.ts:87:5 › PDF Viewer V2 - Highlighting › Highlight Creation › should show highlight popup after text selection 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should save highlight with default color" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:127:5 should save highlight with default color" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/highlighting.spec.ts:127:5 › PDF Viewer V2 - Highlighting › Highlight Creation › should save highlight with default color 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Creation › should allow color selection for highlights" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:176:5 should allow color selection for highlights" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/highlighting.spec.ts:176:5 › PDF Viewer V2 - Highlighting › Highlight Creation › should allow color selection for highlights 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Management › should display highlight management panel" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:228:5 should display highlight management panel" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/highlighting.spec.ts:228:5 › PDF Viewer V2 - Highlighting › Highlight Management › should display highlight management panel 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Management › should list saved highlights in management panel" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:254:5 should list saved highlights in management panel" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/highlighting.spec.ts:254:5 › PDF Viewer V2 - Highlighting › Highlight Management › should list saved highlights in management panel 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Management › should allow deleting highlights" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:277:5 should allow deleting highlights" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/highlighting.spec.ts:277:5 › PDF Viewer V2 - Highlighting › Highlight Management › should allow deleting highlights 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="PDF Viewer V2 - Highlighting › Highlight Persistence › should persist highlights across page navigation" classname="pdf-viewer-v2/highlighting.spec.ts" time="0.001">
+<failure message="highlighting.spec.ts:321:5 should persist highlights across page navigation" type="FAILURE">
+<![CDATA[  [Mobile Safari] › pdf-viewer-v2/highlighting.spec.ts:321:5 › PDF Viewer V2 - Highlighting › Highlight Persistence › should persist highlights across page navigation 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/aminamouhadi/Library/Caches/ms-playwright/webkit-2215/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

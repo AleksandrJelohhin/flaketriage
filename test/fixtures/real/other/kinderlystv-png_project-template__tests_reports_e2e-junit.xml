@@ -1,0 +1,407 @@
+<testsuites id="" name="" tests="25" failures="9" skipped="0" errors="0" time="41.341899000000005">
+<testsuite name="real-e2e.spec.ts" timestamp="2025-09-07T18:22:13.814Z" hostname="chromium" tests="5" failures="1" skipped="0" time="8.132" errors="0">
+<testcase name="Real E2E Tests › should load homepage successfully" classname="real-e2e.spec.ts" time="1.458">
+</testcase>
+<testcase name="Real E2E Tests › should have working navigation" classname="real-e2e.spec.ts" time="1.423">
+</testcase>
+<testcase name="Real E2E Tests › should be responsive" classname="real-e2e.spec.ts" time="2.647">
+</testcase>
+<testcase name="Real E2E Tests › should have accessible content" classname="real-e2e.spec.ts" time="1.527">
+<failure message="real-e2e.spec.ts:42:3 should have accessible content" type="FAILURE">
+<![CDATA[  [chromium] › real-e2e.spec.ts:42:3 › Real E2E Tests › should have accessible content ─────────────
+
+    Error: expect.toBeVisible: Error: strict mode violation: locator('main, [role="main"], body') resolved to 2 elements:
+        1) <body data-sveltekit-preload-data="hover">…</body> aka locator('body')
+        2) <main class="container svelte-18kc5xu">…</main> aka getByRole('main')
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('main, [role="main"], body')
+
+
+      43 |     // Базовые проверки доступности
+      44 |     const mainContent = page.locator('main, [role="main"], body');
+    > 45 |     await expect(mainContent).toBeVisible();
+         |                               ^
+      46 |
+      47 |     // Проверяем, что есть заголовки
+      48 |     const headings = page.locator('h1, h2, h3, h4, h5, h6');
+        at C:\alphacore\SHINOMONTAGKA\tests\e2e\real-e2e.spec.ts:45:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-chromium\video.webm]]
+
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Real E2E Tests › should handle JavaScript interactions" classname="real-e2e.spec.ts" time="1.077">
+</testcase>
+</testsuite>
+<testsuite name="real-e2e.spec.ts" timestamp="2025-09-07T18:22:13.814Z" hostname="firefox" tests="5" failures="5" skipped="0" time="20.731" errors="0">
+<testcase name="Real E2E Tests › should load homepage successfully" classname="real-e2e.spec.ts" time="3.66">
+<failure message="real-e2e.spec.ts:8:3 should load homepage successfully" type="FAILURE">
+<![CDATA[  [firefox] › real-e2e.spec.ts:8:3 › Real E2E Tests › should load homepage successfully ────────────
+
+    Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE
+    Call log:
+      - navigating to "http://localhost:4173/", waiting until "load"
+
+
+      3 | test.describe('Real E2E Tests', () => {
+      4 |   test.beforeEach(async ({ page }) => {
+    > 5 |     await page.goto('/');
+        |                ^
+      6 |   });
+      7 |
+      8 |   test('should load homepage successfully', async ({ page }) => {
+        at C:\alphacore\SHINOMONTAGKA\tests\e2e\real-e2e.spec.ts:5:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-should-load-homepage-successfully-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-should-load-homepage-successfully-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\real-e2e-Real-E2E-Tests-should-load-homepage-successfully-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-load-homepage-successfully-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-load-homepage-successfully-firefox\video.webm]]
+
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-load-homepage-successfully-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Real E2E Tests › should have working navigation" classname="real-e2e.spec.ts" time="4.705">
+<failure message="real-e2e.spec.ts:16:3 should have working navigation" type="FAILURE">
+<![CDATA[  [firefox] › real-e2e.spec.ts:16:3 › Real E2E Tests › should have working navigation ──────────────
+
+    Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE
+    Call log:
+      - navigating to "http://localhost:4173/", waiting until "load"
+
+
+      3 | test.describe('Real E2E Tests', () => {
+      4 |   test.beforeEach(async ({ page }) => {
+    > 5 |     await page.goto('/');
+        |                ^
+      6 |   });
+      7 |
+      8 |   test('should load homepage successfully', async ({ page }) => {
+        at C:\alphacore\SHINOMONTAGKA\tests\e2e\real-e2e.spec.ts:5:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-working-navigation-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-working-navigation-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-working-navigation-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-working-navigation-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-working-navigation-firefox\video.webm]]
+
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-working-navigation-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Real E2E Tests › should be responsive" classname="real-e2e.spec.ts" time="4.264">
+<failure message="real-e2e.spec.ts:29:3 should be responsive" type="FAILURE">
+<![CDATA[  [firefox] › real-e2e.spec.ts:29:3 › Real E2E Tests › should be responsive ────────────────────────
+
+    Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE
+    Call log:
+      - navigating to "http://localhost:4173/", waiting until "load"
+
+
+      3 | test.describe('Real E2E Tests', () => {
+      4 |   test.beforeEach(async ({ page }) => {
+    > 5 |     await page.goto('/');
+        |                ^
+      6 |   });
+      7 |
+      8 |   test('should load homepage successfully', async ({ page }) => {
+        at C:\alphacore\SHINOMONTAGKA\tests\e2e\real-e2e.spec.ts:5:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-should-be-responsive-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-should-be-responsive-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\real-e2e-Real-E2E-Tests-should-be-responsive-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-be-responsive-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-be-responsive-firefox\video.webm]]
+
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-be-responsive-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Real E2E Tests › should have accessible content" classname="real-e2e.spec.ts" time="4.084">
+<failure message="real-e2e.spec.ts:42:3 should have accessible content" type="FAILURE">
+<![CDATA[  [firefox] › real-e2e.spec.ts:42:3 › Real E2E Tests › should have accessible content ──────────────
+
+    Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE
+    Call log:
+      - navigating to "http://localhost:4173/", waiting until "load"
+
+
+      3 | test.describe('Real E2E Tests', () => {
+      4 |   test.beforeEach(async ({ page }) => {
+    > 5 |     await page.goto('/');
+        |                ^
+      6 |   });
+      7 |
+      8 |   test('should load homepage successfully', async ({ page }) => {
+        at C:\alphacore\SHINOMONTAGKA\tests\e2e\real-e2e.spec.ts:5:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-firefox\video.webm]]
+
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Real E2E Tests › should handle JavaScript interactions" classname="real-e2e.spec.ts" time="4.018">
+<failure message="real-e2e.spec.ts:53:3 should handle JavaScript interactions" type="FAILURE">
+<![CDATA[  [firefox] › real-e2e.spec.ts:53:3 › Real E2E Tests › should handle JavaScript interactions ───────
+
+    Error: page.goto: NS_ERROR_NET_ERROR_RESPONSE
+    Call log:
+      - navigating to "http://localhost:4173/", waiting until "load"
+
+
+      3 | test.describe('Real E2E Tests', () => {
+      4 |   test.beforeEach(async ({ page }) => {
+    > 5 |     await page.goto('/');
+        |                ^
+      6 |   });
+      7 |
+      8 |   test('should load homepage successfully', async ({ page }) => {
+        at C:\alphacore\SHINOMONTAGKA\tests\e2e\real-e2e.spec.ts:5:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-sh-3274b-dle-JavaScript-interactions-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-sh-3274b-dle-JavaScript-interactions-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-sh-3274b-dle-JavaScript-interactions-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-sh-3274b-dle-JavaScript-interactions-firefox\video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="real-e2e.spec.ts" timestamp="2025-09-07T18:22:13.814Z" hostname="webkit" tests="5" failures="1" skipped="0" time="17.487" errors="0">
+<testcase name="Real E2E Tests › should load homepage successfully" classname="real-e2e.spec.ts" time="4.531">
+</testcase>
+<testcase name="Real E2E Tests › should have working navigation" classname="real-e2e.spec.ts" time="3.952">
+</testcase>
+<testcase name="Real E2E Tests › should be responsive" classname="real-e2e.spec.ts" time="5.341">
+</testcase>
+<testcase name="Real E2E Tests › should have accessible content" classname="real-e2e.spec.ts" time="1.617">
+<failure message="real-e2e.spec.ts:42:3 should have accessible content" type="FAILURE">
+<![CDATA[  [webkit] › real-e2e.spec.ts:42:3 › Real E2E Tests › should have accessible content ───────────────
+
+    Error: expect.toBeVisible: Error: strict mode violation: locator('main, [role="main"], body') resolved to 2 elements:
+        1) <body data-sveltekit-preload-data="hover">…</body> aka locator('body')
+        2) <main class="container svelte-18kc5xu">…</main> aka getByRole('main')
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('main, [role="main"], body')
+
+
+      43 |     // Базовые проверки доступности
+      44 |     const mainContent = page.locator('main, [role="main"], body');
+    > 45 |     await expect(mainContent).toBeVisible();
+         |                               ^
+      46 |
+      47 |     // Проверяем, что есть заголовки
+      48 |     const headings = page.locator('h1, h2, h3, h4, h5, h6');
+        at C:\alphacore\SHINOMONTAGKA\tests\e2e\real-e2e.spec.ts:45:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-webkit\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-webkit\video.webm]]
+
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-webkit\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Real E2E Tests › should handle JavaScript interactions" classname="real-e2e.spec.ts" time="2.046">
+</testcase>
+</testsuite>
+<testsuite name="real-e2e.spec.ts" timestamp="2025-09-07T18:22:13.814Z" hostname="Mobile Chrome" tests="5" failures="1" skipped="0" time="10.283" errors="0">
+<testcase name="Real E2E Tests › should load homepage successfully" classname="real-e2e.spec.ts" time="1.321">
+</testcase>
+<testcase name="Real E2E Tests › should have working navigation" classname="real-e2e.spec.ts" time="0.961">
+</testcase>
+<testcase name="Real E2E Tests › should be responsive" classname="real-e2e.spec.ts" time="5.145">
+</testcase>
+<testcase name="Real E2E Tests › should have accessible content" classname="real-e2e.spec.ts" time="1.016">
+<failure message="real-e2e.spec.ts:42:3 should have accessible content" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › real-e2e.spec.ts:42:3 › Real E2E Tests › should have accessible content ────────
+
+    Error: expect.toBeVisible: Error: strict mode violation: locator('main, [role="main"], body') resolved to 2 elements:
+        1) <body data-sveltekit-preload-data="hover">…</body> aka locator('body')
+        2) <main class="container svelte-18kc5xu">…</main> aka getByRole('main')
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('main, [role="main"], body')
+
+
+      43 |     // Базовые проверки доступности
+      44 |     const mainContent = page.locator('main, [role="main"], body');
+    > 45 |     await expect(mainContent).toBeVisible();
+         |                               ^
+      46 |
+      47 |     // Проверяем, что есть заголовки
+      48 |     const headings = page.locator('h1, h2, h3, h4, h5, h6');
+        at C:\alphacore\SHINOMONTAGKA\tests\e2e\real-e2e.spec.ts:45:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-Mobile-Chrome\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-Mobile-Chrome\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Real E2E Tests › should handle JavaScript interactions" classname="real-e2e.spec.ts" time="1.84">
+</testcase>
+</testsuite>
+<testsuite name="real-e2e.spec.ts" timestamp="2025-09-07T18:22:13.814Z" hostname="Mobile Safari" tests="5" failures="1" skipped="0" time="9.327" errors="0">
+<testcase name="Real E2E Tests › should load homepage successfully" classname="real-e2e.spec.ts" time="1.466">
+</testcase>
+<testcase name="Real E2E Tests › should have working navigation" classname="real-e2e.spec.ts" time="1.378">
+</testcase>
+<testcase name="Real E2E Tests › should be responsive" classname="real-e2e.spec.ts" time="3.751">
+</testcase>
+<testcase name="Real E2E Tests › should have accessible content" classname="real-e2e.spec.ts" time="0.692">
+<failure message="real-e2e.spec.ts:42:3 should have accessible content" type="FAILURE">
+<![CDATA[  [Mobile Safari] › real-e2e.spec.ts:42:3 › Real E2E Tests › should have accessible content ────────
+
+    Error: expect.toBeVisible: Error: strict mode violation: locator('main, [role="main"], body') resolved to 2 elements:
+        1) <body data-sveltekit-preload-data="hover">…</body> aka locator('body')
+        2) <main class="container svelte-18kc5xu">…</main> aka getByRole('main')
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('main, [role="main"], body')
+
+
+      43 |     // Базовые проверки доступности
+      44 |     const mainContent = page.locator('main, [role="main"], body');
+    > 45 |     await expect(mainContent).toBeVisible();
+         |                               ^
+      46 |
+      47 |     // Проверяем, что есть заголовки
+      48 |     const headings = page.locator('h1, h2, h3, h4, h5, h6');
+        at C:\alphacore\SHINOMONTAGKA\tests\e2e\real-e2e.spec.ts:45:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-Mobile-Safari\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-Mobile-Safari\video.webm]]
+
+[[ATTACHMENT|..\..\test-results\real-e2e-Real-E2E-Tests-should-have-accessible-content-Mobile-Safari\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Real E2E Tests › should handle JavaScript interactions" classname="real-e2e.spec.ts" time="2.04">
+</testcase>
+</testsuite>
+</testsuites>

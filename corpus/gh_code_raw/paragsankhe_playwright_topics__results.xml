@@ -1,0 +1,46 @@
+<testsuites id="" name="" tests="6" failures="1" skipped="0" errors="0" time="11.281078">
+<testsuite name="reporters_demo.spec.js" timestamp="2025-03-28T18:31:37.200Z" hostname="chromium" tests="6" failures="1" skipped="0" time="1.047" errors="0">
+<testcase name="test case 1 : valid login" classname="reporters_demo.spec.js" time="0.047">
+</testcase>
+<testcase name="test case 2 : invalid login" classname="reporters_demo.spec.js" time="0.022">
+</testcase>
+<testcase name="test case 3 : add product to cart" classname="reporters_demo.spec.js" time="0.881">
+<failure message="reporters_demo.spec.js:11:5 test case 3 : add product to cart" type="FAILURE">
+<![CDATA[  [chromium] › reporters_demo.spec.js:11:5 › test case 3 : add product to cart ─────────────────────
+
+    Error: expect(received).toBeFalsy()
+
+    Received: true
+
+      10 |
+      11 | test('test case 3 : add product to cart',async({page})=>{
+    > 12 |   expect(true).toBeFalsy() 
+         |                ^
+      13 |   })
+      14 |
+      15 | test('test case 4 : remove product from cart',async()=>{
+        at C:\new_playwright_project\tests\reporters_demo.spec.js:12:16
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\reporters_demo-test-case-3-add-product-to-cart-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\reporters_demo-test-case-3-add-product-to-cart-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\reporters_demo-test-case-3-add-product-to-cart-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="test case 4 : remove product from cart" classname="reporters_demo.spec.js" time="0.059">
+</testcase>
+<testcase name="test case 5 : add user" classname="reporters_demo.spec.js" time="0.019">
+</testcase>
+<testcase name="test case 6 : remove user" classname="reporters_demo.spec.js" time="0.019">
+</testcase>
+</testsuite>
+</testsuites>

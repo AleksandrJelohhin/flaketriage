@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ApiSpec" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-07-07T06:20:54" hostname="rudhvi-Inspiron-15-5510" time="0.503">
+  <properties/>
+  <testcase name="User attempt to login" classname="ApiSpec" time="0.503">
+    <failure message="Condition not satisfied:&#10;&#10;response.status == 200&#10;|        |      |&#10;|        400    false&#10;groovyx.net.http.HttpResponseDecorator@46492f54&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+response.status == 200
+|        |      |
+|        400    false
+groovyx.net.http.HttpResponseDecorator@46492f54
+
+	at ApiSpec.User attempt to login(ApiSpec.groovy:26)
+</failure>
+  </testcase>
+  <system-out><![CDATA[User Login Attempt Request: {
+    "password": "1236",
+    "uuid": "3146a606-e44d-4bae-b3e2-2bb754e94dc9",
+    "app_type": "CUSTOMER",
+    "device_id": "106ffe7227178a24",
+    "device_type": "ANDROID",
+    "mobile_number": "01900000096"
+}
+Customer Login Attempt Response: {
+    "code": 4040,
+    "message": "Device not registered",
+    "errors": null,
+    "error": null,
+    "error_description": null
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

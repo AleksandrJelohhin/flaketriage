@@ -1,0 +1,55 @@
+<testsuites id="" name="" tests="7" failures="1" skipped="5" errors="0" time="58.35606">
+<testsuite name="register.spec.ts" timestamp="2025-06-15T13:53:21.697Z" hostname="chromium" tests="2" failures="1" skipped="0" time="45.418" errors="0">
+<testcase name="register-touchpoint" classname="register.spec.ts" time="30.684">
+<failure message="register.spec.ts:5:5 register-touchpoint" type="FAILURE">
+<![CDATA[  [chromium] › register.spec.ts:5:5 › register-touchpoint ──────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByTestId('FormSubmit') to be visible
+
+
+       6 |
+       7 |     // register
+    >  8 |     await _page.getByTestId('FormSubmit').waitFor();
+         |                                           ^
+       9 |     await _page.getByTestId('userid-input').fill(data.users.cashier.username);
+      10 |     await _page.getByTestId('password-input').fill(data.users.cashier.password);
+      11 |     await _page.getByTestId('touchpoint-input').fill(data.registration.touchpointId);
+        at /root/emeraldgx-playwright/tests/register.spec.ts:8:43
+
+    Error Context: ../test-results/register-register-touchpoint-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/register-register-touchpoint-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="user-login" classname="register.spec.ts" time="14.734">
+</testcase>
+</testsuite>
+<testsuite name="sale.spec.ts" timestamp="2025-06-15T13:53:21.697Z" hostname="chromium" tests="5" failures="0" skipped="5" time="10.702" errors="0">
+<testcase name="sale-regular-items" classname="sale.spec.ts" time="10.702">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="save-and-recall" classname="sale.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="transaction-based-return" classname="sale.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="void-transaction" classname="sale.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="return-item" classname="sale.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>

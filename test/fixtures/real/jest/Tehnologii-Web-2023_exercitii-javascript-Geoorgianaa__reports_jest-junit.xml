@@ -1,0 +1,1613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="85" failures="84" errors="0" time="0.702">
+  <testsuite name="test/exercise005.test.js" errors="0" failures="15" skipped="0" timestamp="2023-11-25T19:01:06" time="0.306" tests="15">
+    <testcase classname="findNextNumber" name="returns the next number after the given number in the array" time="0.002">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 8
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise005.test.js:13:52)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="findNextNumber" name="if the number is not found in the array, returns null" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: null
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise005.test.js:19:53)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="findNextNumber" name="if the number is found more than once, returns the number after the first instance" time="0.001">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 7
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise005.test.js:23:55)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="findNextNumber" name="if the number is found in the final index position of the array, returns null" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: null
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise005.test.js:27:56)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="count1sand0s" name="returns an object with the count of 1s and 0s in a string" time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: {&quot;0&quot;: 3, &quot;1&quot;: 2}
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise005.test.js:33:35)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="reverseNumber" name="reverses the digits of a number" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 5
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise005.test.js:57:30)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="sumArrays" name="returns the total of the numbers in all sub arrays" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 44
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise005.test.js:67:29)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="arrShift" name="returns an array with the first and last items swapped" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [2, 1]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise005.test.js:73:30)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="arrShift" name="makes no difference when the array length is &lt; 2" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [1]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise005.test.js:79:27)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="findNeedle" name="returns true if any of the properties of an object contain the specified string" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: true
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise005.test.js:93:39)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="findNeedle" name="returns false if none of the properties of an object contain the specified string" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: false
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise005.test.js:114:39)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="findNeedle" name="The search string should not be case sensitive" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: true
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise005.test.js:136:44)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getWordFrequencies" name="returns the frequencies of each word in a string" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: {&quot;hello&quot;: 1, &quot;world&quot;: 1}
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise005.test.js:144:47)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getWordFrequencies" name="ignores capitalisation" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: {&quot;hello&quot;: 3}
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise005.test.js:164:53)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getWordFrequencies" name="ignores punctuation" time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: {&quot;have&quot;: 1, &quot;hello&quot;: 3, &quot;here&quot;: 1, &quot;we&quot;: 1, &quot;what&quot;: 1}
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise005.test.js:171:74)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="test/exercise001.test.js" errors="0" failures="25" skipped="0" timestamp="2023-11-25T19:01:06" time="0.098" tests="25">
+    <testcase classname="capitalize" name="returns a capitalized string" time="0.001">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;Hello&quot;
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:16:33)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="capitalize" name="does nothing if the string is already capitalized" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;Hello&quot;
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:22:33)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="generateInitials" name="returns the initials of a firstname and surname" time="0.001">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;F.B&quot;
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:28:56)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="addVAT" name="adds a VAT of 20% to a price of 100" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 120
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:34:29)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="addVAT" name="adds a VAT of 17.5% to a price of 40" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 47
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:38:30)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="addVAT" name="adds a VAT of 17.5% to a price of 33.50" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 39.36
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:42:32)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="addVAT" name="adds a VAT of 0% to a price of 25" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 25
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:46:27)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getSalePrice" name="reduces a price of 100 by 50%" time="0.001">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 50
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:52:35)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getSalePrice" name="reduces a price of 100 by 33.3%" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 66.7
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:56:37)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getSalePrice" name="reduces a price of 79.99 by 15%" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 67.99
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:60:37)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getSalePrice" name="reduces a price of 50 by 0%" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 50
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:64:33)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getMiddleCharacter" name="returns the middle character from a string of odd length" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;s&quot;
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:70:45)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getMiddleCharacter" name="returns the middle 2 characters from a string of even length" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;lp&quot;
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:74:42)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="reverseWord" name="returns the provided word, reversed" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;oof&quot;
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:80:32)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="reverseWord" name="returns a longer sentence, reversed" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;?siht od ot tnaw neve uoy dluow yhw&quot;
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:84:64)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="reverseAllWords" name="reverses a single word in an array" time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [&quot;tsej&quot;]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:90:39)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="reverseAllWords" name="reverses a multiple words in an array" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [&quot;tsej&quot;, &quot;ahcom&quot;, &quot;cepsr&quot;, &quot;enimsaj&quot;, &quot;muineles&quot;]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:94:80)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="countLinuxUsers" name="returns 0 if no Linux users found" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 0
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:112:36)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="countLinuxUsers" name="returns the correct number of Linux users found" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 5
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:125:36)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getMeanScore" name="returns the mean score from an array of scores" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 8
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:131:37)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getMeanScore" name="returns the mean to 2 decimal places" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 28.29
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:136:56)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="simpleFizzBuzz" name="returns &apos;fizz&apos; if the number is divisible by 3" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;fizz&quot;
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:142:31)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="simpleFizzBuzz" name="returns &apos;buzz&apos; if the number is divisible by 5" time="0.001">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;buzz&quot;
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:146:31)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="simpleFizzBuzz" name="returns the number if the number is divisible by neither 3 nor 5" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 4
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:150:31)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="simpleFizzBuzz" name="returns &apos;fizzbuzz&apos; if the number is divisible by 3 and 5" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;fizzbuzz&quot;
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise001.test.js:154:32)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="test/exercise003.test.js" errors="0" failures="13" skipped="0" timestamp="2023-11-25T19:01:06" time="0.068" tests="13">
+    <testcase classname="camelCaseWords" name="camel cases a single word (i.e. no capital letter at beginning)" time="0.002">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;my&quot;
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise003.test.js:5:36)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="camelCaseWords" name="camel cases two words (i.e. second word is capitalized)" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;myVariable&quot;
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise003.test.js:9:48)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="camelCaseWords" name="camel cases two+ words (i.e. all words after 1st are capitalized)" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;myVariable&quot;
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise003.test.js:13:48)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getSquares" name="returns an empty array if empty array passed" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: []
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise003.test.js:22:28)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getSquares" name="returns an array of squares of the original numbers" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [4, 16, 36]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise003.test.js:26:35)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getTotalSubjects" name="returns 0 if no people have subjects" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 0
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise003.test.js:40:38)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getTotalSubjects" name="returns 1 if 1 person has a subject" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 1
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise003.test.js:49:38)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getTotalSubjects" name="returns the correct number of subjects studied in total for all people" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 9
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise003.test.js:61:38)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="checkIngredients" name="returns false if no menu items include the specified ingredient" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: false
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise003.test.js:86:44)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="checkIngredients" name="returns true if a menu item includes the specified ingredient" time="0.001">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: true
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise003.test.js:109:54)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="duplicateNumbers" name="returns an array of numbers which appear in both arr1 and arr2" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [55]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise003.test.js:117:42)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="duplicateNumbers" name="returns the duplicate numbers in ascending order" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [1, 55]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise003.test.js:127:42)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="duplicateNumbers" name="returns each number only once, even if it appears in one array multiple times" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [1, 2]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise003.test.js:137:42)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="test/exercise002.test.js" errors="0" failures="14" skipped="0" timestamp="2023-11-25T19:01:07" time="0.068" tests="14">
+    <testcase classname="getFillings" name="returns the fillings of a sandwich" time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [&quot;brie&quot;, &quot;relish&quot;, &quot;lettuce&quot;]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise002.test.js:10:35)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="isFromManchester" name="returns true if the person is from Manchester" time="0.001">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: true
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise002.test.js:28:38)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="isFromManchester" name="returns false if the person is not Manchester" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: false
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise002.test.js:37:38)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getBusNumbers" name="returns 1 if all the people fit in 1 bus" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 1
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise002.test.js:44:30)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getBusNumbers" name="returns 2 if 2 buses are required" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 2
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise002.test.js:52:31)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getBusNumbers" name="returns 3 if 3 buses are required" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 3
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise002.test.js:59:31)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getBusNumbers" name="returns the correct number of buses for larger numbers of people" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 1094
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise002.test.js:66:34)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="countSheep" name="returns 0 if there are 0 sheep in the array" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 0
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise002.test.js:73:29)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="countSheep" name="returns 1 if there is 1 sheep in the array" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 1
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise002.test.js:78:29)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="countSheep" name="returns 2 if there are 2 sheep in the array" time="0.001">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 2
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise002.test.js:83:29)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="countSheep" name="returns 5 if there are 5 sheep in the array" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 5
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise002.test.js:88:29)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="hasMPostCode" name="returns true if the person has a postcode starting with M" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: true
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise002.test.js:103:34)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="hasMPostCode" name="returns false if the person does not have a postcode starting with M" time="0.001">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: false
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise002.test.js:116:34)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="hasMPostCode" name="returns false if the postcode starts with M but is not for Manchester" time="0">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: false
+Received: undefined
+    at Object.toBe (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise002.test.js:129:34)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="test/exercise004.test.js" errors="0" failures="10" skipped="0" timestamp="2023-11-25T19:01:07" time="0.066" tests="10">
+    <testcase classname="findSmallNums" name="returns an array of numbers smaller than 1" time="0.002">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [0.9, 0.4, -1]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise004.test.js:14:54)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="findNamesBeginningWith" name="returns an array of names beginning with the specified character" time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [&quot;Sally&quot;, &quot;Susan&quot;, &quot;Sam&quot;]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise004.test.js:24:48)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="findVerbs" name="returns an array of words that are considered verbs (because they begin with &apos;to &apos;)" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [&quot;to eat&quot;, &quot;to sneak&quot;, &quot;to squeak&quot;]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise004.test.js:33:30)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="findVerbs" name="does not mistake words that include &apos;to&apos; elsewhere" time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [&quot;to eat&quot;, &quot;to sneak&quot;, &quot;to squeak&quot;]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise004.test.js:39:30)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getIntegers" name="returns an array containing only integers" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [1, 1, 4, 9]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise004.test.js:46:31)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getCities" name="returns an array of the cities of each user" time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [&quot;MCR&quot;, &quot;LVP&quot;, &quot;LVP&quot;, &quot;GLW&quot;]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise004.test.js:92:30)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getSquareRoots" name="gets the square root of each number to 2 decimal places" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [6, 8.77, 3.46, 18.84, 9.59, 2.24]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise004.test.js:99:34)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="findSentencesContaining" name="returns only the sentences containing the specified string" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [&quot;You should specify a license for your package so that people know how they are permitted to use it&quot;]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise004.test.js:118:75)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="findSentencesContaining" name="it should not be case sensitive" time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [&quot;Dependencies are specified in a simple object that maps a package name to a version range&quot;, &quot;It&apos;s best to map these additional items such as a test framework, which is not needed for running your project, in a devDependencies object&quot;]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise004.test.js:126:80)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="getLongestSides" name="returns the longest side of each set of triangle data" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [10, 9, 6, 13, 12]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise004.test.js:142:35)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="test/exercise008-optional.test.js" errors="0" failures="7" skipped="0" timestamp="2023-11-25T19:01:07" time="0.056" tests="8">
+    <testcase classname="colours" name="returns a list of colours" time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [&quot;red&quot;, &quot;orange&quot;, &quot;green&quot;]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise008-optional.test.js:6:35)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="shoppingList" name="returns a list with an extra item" time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [&quot;one apple&quot;, &quot;two dozen organic eggs&quot;, &quot;cucumber&quot;, &quot;bread&quot;, &quot;earl grey tea&quot;]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise008-optional.test.js:14:41)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="shoppingList" name="returns an empty list with new items added to it" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [&quot;jelly&quot;, &quot;melon&quot;, &quot;pear&quot;]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise008-optional.test.js:26:41)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="highestNumber" name="returns the highest number" time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 20
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise008-optional.test.js:33:36)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="splitThatString" name="returns a string split up" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [&quot;U&quot;, &quot;S&quot;, &quot;A&quot;]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise008-optional.test.js:40:37)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="splitThatString" name="returns a string split up with numbers" time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;]
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise008-optional.test.js:44:37)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="addressLookUp" name="returns a users postcode" time="0">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;H12 333&quot;
+Received: undefined
+    at Object.toEqual (/Users/placatus/personal/iulia/2023/js_coding_exercises/test/exercise008-optional.test.js:62:33)
+    at Promise.then.completed (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:316:40)
+    at _runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/placatus/personal/iulia/2023/js_coding_exercises/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="addressLookUp" name="returns undefined if address isn&apos;t provided" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>

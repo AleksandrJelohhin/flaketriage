@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="29" assertions="117" errors="0" warnings="0" failures="1" skipped="0" time="4.890461">
+    <testsuite name="Feature" tests="29" assertions="117" errors="0" warnings="0" failures="1" skipped="0" time="4.890461">
+      <testsuite name="tests\Feature\Admin\Products\CreateProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/CreateProductsTest.php" tests="4" assertions="19" errors="0" warnings="0" failures="0" skipped="0" time="3.505456">
+        <testcase name="testCreateProductScreenCanBeRendered" class="tests\Feature\Admin\Products\CreateProductsTest" classname="tests.Feature.Admin.Products.CreateProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/CreateProductsTest.php" line="19" assertions="4" time="3.366975"/>
+        <testcase name="testNotAdminUserCantRenderCreateProductScreen" class="tests\Feature\Admin\Products\CreateProductsTest" classname="tests.Feature.Admin.Products.CreateProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/CreateProductsTest.php" line="42" assertions="3" time="0.035944"/>
+        <testcase name="testProductCanBeCreated" class="tests\Feature\Admin\Products\CreateProductsTest" classname="tests.Feature.Admin.Products.CreateProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/CreateProductsTest.php" line="59" assertions="9" time="0.066040"/>
+        <testcase name="testNotAdminUserCantCreateProducts" class="tests\Feature\Admin\Products\CreateProductsTest" classname="tests.Feature.Admin.Products.CreateProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/CreateProductsTest.php" line="96" assertions="3" time="0.036497"/>
+      </testsuite>
+      <testsuite name="tests\Feature\Admin\Products\DeleteProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/DeleteProductsTest.php" tests="2" assertions="10" errors="0" warnings="0" failures="0" skipped="0" time="0.122245">
+        <testcase name="testProductCanBeDelete" class="tests\Feature\Admin\Products\DeleteProductsTest" classname="tests.Feature.Admin.Products.DeleteProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/DeleteProductsTest.php" line="20" assertions="6" time="0.072361"/>
+        <testcase name="testNotAdminUserCantDeleteProducts" class="tests\Feature\Admin\Products\DeleteProductsTest" classname="tests.Feature.Admin.Products.DeleteProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/DeleteProductsTest.php" line="46" assertions="4" time="0.049884"/>
+      </testsuite>
+      <testsuite name="tests\Feature\Admin\Products\EditProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/EditProductsTest.php" tests="4" assertions="19" errors="0" warnings="0" failures="0" skipped="0" time="0.270505">
+        <testcase name="testEditProductScreenCanBeRendered" class="tests\Feature\Admin\Products\EditProductsTest" classname="tests.Feature.Admin.Products.EditProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/EditProductsTest.php" line="19" assertions="4" time="0.077424"/>
+        <testcase name="testNotAdminUserCantRenderEditProductScreen" class="tests\Feature\Admin\Products\EditProductsTest" classname="tests.Feature.Admin.Products.EditProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/EditProductsTest.php" line="44" assertions="3" time="0.061629"/>
+        <testcase name="testProductCanBeEdited" class="tests\Feature\Admin\Products\EditProductsTest" classname="tests.Feature.Admin.Products.EditProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/EditProductsTest.php" line="65" assertions="9" time="0.080076"/>
+        <testcase name="testNotAdminUserCantEditProducts" class="tests\Feature\Admin\Products\EditProductsTest" classname="tests.Feature.Admin.Products.EditProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/EditProductsTest.php" line="104" assertions="3" time="0.051375"/>
+      </testsuite>
+      <testsuite name="tests\Feature\Admin\Products\IndexProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/IndexProductsTest.php" tests="2" assertions="6" errors="0" warnings="0" failures="0" skipped="0" time="0.068325">
+        <testcase name="testProductsListScreenCanBeRendered" class="tests\Feature\Admin\Products\IndexProductsTest" classname="tests.Feature.Admin.Products.IndexProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/IndexProductsTest.php" line="19" assertions="3" time="0.051744"/>
+        <testcase name="testUnauthenticatedUserCantRenderProductsListScreen" class="tests\Feature\Admin\Products\IndexProductsTest" classname="tests.Feature.Admin.Products.IndexProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/IndexProductsTest.php" line="39" assertions="3" time="0.016582"/>
+      </testsuite>
+      <testsuite name="tests\Feature\Admin\Products\ShowProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/ShowProductsTest.php" tests="2" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.126917">
+        <testcase name="testShowProductScreenCanBeRendered" class="tests\Feature\Admin\Products\ShowProductsTest" classname="tests.Feature.Admin.Products.ShowProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/ShowProductsTest.php" line="19" assertions="4" time="0.077902"/>
+        <testcase name="testNotAdminUserCantSeeProducts" class="tests\Feature\Admin\Products\ShowProductsTest" classname="tests.Feature.Admin.Products.ShowProductsTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Products/ShowProductsTest.php" line="44" assertions="3" time="0.049016"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\Admin\Users\DeleteUserTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/DeleteUserTest.php" tests="2" assertions="9" errors="0" warnings="0" failures="0" skipped="0" time="0.107282">
+        <testcase name="testUserCanBeDelete" class="Tests\Feature\Admin\Users\DeleteUserTest" classname="Tests.Feature.Admin.Users.DeleteUserTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/DeleteUserTest.php" line="17" assertions="5" time="0.056906"/>
+        <testcase name="testNotAdminUserCantDeleteUsers" class="Tests\Feature\Admin\Users\DeleteUserTest" classname="Tests.Feature.Admin.Users.DeleteUserTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/DeleteUserTest.php" line="41" assertions="4" time="0.050376"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\Admin\Users\EditUserTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/EditUserTest.php" tests="4" assertions="16" errors="0" warnings="0" failures="0" skipped="0" time="0.272401">
+        <testcase name="testEditUserScreenCanBeRendered" class="Tests\Feature\Admin\Users\EditUserTest" classname="Tests.Feature.Admin.Users.EditUserTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/EditUserTest.php" line="17" assertions="4" time="0.065644"/>
+        <testcase name="testNotAdminUserCantRenderEditUserScreen" class="Tests\Feature\Admin\Users\EditUserTest" classname="Tests.Feature.Admin.Users.EditUserTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/EditUserTest.php" line="38" assertions="3" time="0.057766"/>
+        <testcase name="testUserCanBeEdited" class="Tests\Feature\Admin\Users\EditUserTest" classname="Tests.Feature.Admin.Users.EditUserTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/EditUserTest.php" line="55" assertions="6" time="0.097963"/>
+        <testcase name="testNotAdminUserCantEditUsers" class="Tests\Feature\Admin\Users\EditUserTest" classname="Tests.Feature.Admin.Users.EditUserTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/EditUserTest.php" line="88" assertions="3" time="0.051028"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\Admin\Users\IndexUsersTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/IndexUsersTest.php" tests="3" assertions="11" errors="0" warnings="0" failures="0" skipped="0" time="0.141855">
+        <testcase name="testUsersListScreenCanBeRendered" class="Tests\Feature\Admin\Users\IndexUsersTest" classname="Tests.Feature.Admin.Users.IndexUsersTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/IndexUsersTest.php" line="18" assertions="4" time="0.071318"/>
+        <testcase name="testUnauthenticatedUserCantRenderUsersListScreen" class="Tests\Feature\Admin\Users\IndexUsersTest" classname="Tests.Feature.Admin.Users.IndexUsersTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/IndexUsersTest.php" line="39" assertions="4" time="0.025187"/>
+        <testcase name="testNotAdminUserCantRenderUsersListScreen" class="Tests\Feature\Admin\Users\IndexUsersTest" classname="Tests.Feature.Admin.Users.IndexUsersTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/IndexUsersTest.php" line="49" assertions="3" time="0.045349"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\Admin\Users\ShowUserTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/ShowUserTest.php" tests="2" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.115911">
+        <testcase name="testShowUserScreenCanBeRendered" class="Tests\Feature\Admin\Users\ShowUserTest" classname="Tests.Feature.Admin.Users.ShowUserTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/ShowUserTest.php" line="17" assertions="4" time="0.071187"/>
+        <testcase name="testNotAdminUserCantSeeUsers" class="Tests\Feature\Admin\Users\ShowUserTest" classname="Tests.Feature.Admin.Users.ShowUserTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/ShowUserTest.php" line="38" assertions="3" time="0.044725"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\Admin\Users\ToggleUserTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/ToggleUserTest.php" tests="3" assertions="12" errors="0" warnings="0" failures="0" skipped="0" time="0.134668">
+        <testcase name="testDisabledUserCantDoAnything" class="Tests\Feature\Admin\Users\ToggleUserTest" classname="Tests.Feature.Admin.Users.ToggleUserTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/ToggleUserTest.php" line="18" assertions="4" time="0.034503"/>
+        <testcase name="testUserCanBeDisabled" class="Tests\Feature\Admin\Users\ToggleUserTest" classname="Tests.Feature.Admin.Users.ToggleUserTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/ToggleUserTest.php" line="35" assertions="4" time="0.047813"/>
+        <testcase name="testUserCanBeEnabled" class="Tests\Feature\Admin\Users\ToggleUserTest" classname="Tests.Feature.Admin.Users.ToggleUserTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Admin/Users/ToggleUserTest.php" line="58" assertions="4" time="0.052352"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\Api\Orders\CreateOrdersTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Api/Orders/CreateOrdersTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="1" skipped="0" time="0.024896">
+        <testcase name="testOrderCanBeCreated" class="Tests\Feature\Api\Orders\CreateOrdersTest" classname="Tests.Feature.Api.Orders.CreateOrdersTest" file="/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Api/Orders/CreateOrdersTest.php" line="10" assertions="1" time="0.024896">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\Api\Orders\CreateOrdersTest::testOrderCanBeCreated
+Expected response status code [200] but received 302.
+Failed asserting that 200 is identical to 302.
+
+/home/jomgarciaro/Evertec/mercatodo/vendor/laravel/framework/src/Illuminate/Testing/TestResponse.php:177
+/home/jomgarciaro/Evertec/mercatodo/tests/Feature/Api/Orders/CreateOrdersTest.php:16</failure>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

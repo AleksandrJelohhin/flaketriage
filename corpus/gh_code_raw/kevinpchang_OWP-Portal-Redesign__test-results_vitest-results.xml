@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="172" failures="11" errors="0" time="8.4286191">
+    <testsuite name="src/__tests__/ActiveCourseIntegrationTest.spec.js" timestamp="2026-04-27T02:46:16.565Z" hostname="Kevin" tests="5" failures="1" errors="0" skipped="0" time="0.3771">
+        <testcase classname="src/__tests__/ActiveCourseIntegrationTest.spec.js" name="ActiveCourse &gt; loads and displays course summary information correctly" time="0.1834808">
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/ActiveCourseIntegrationTest.spec.js" name="ActiveCourse &gt; loads and displays chapter progress correctly" time="0.046773">
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/ActiveCourseIntegrationTest.spec.js" name="ActiveCourse &gt; displays purchase history correctly" time="0.0409089">
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/ActiveCourseIntegrationTest.spec.js" name="ActiveCourse &gt; shows empty chapter state when no chapter data exists" time="0.0398659">
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/ActiveCourseIntegrationTest.spec.js" name="ActiveCourse &gt; shows error state when enrollment record fails to load" time="0.0643826">
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+Error: [vitest] No &quot;loadFromSession&quot; export is defined on the &quot;@/services/owpAPI&quot; mock. Did you forget to return it from &quot;vi.mock&quot;?
+If you need to partially mock a module, you can use &quot;importOriginal&quot; helper inside:
+
+    at VitestMocker.createError [90m(file:///C:/Users/kevin_8plxna7/Desktop/OWP/OWP-Portal-Redesign/frontend/[39mnode_modules/[4mvitest[24m/dist/chunks/execute.B7h3T_Hc.js:284:17[90m)[39m
+    at Object.get [90m(file:///C:/Users/kevin_8plxna7/Desktop/OWP/OWP-Portal-Redesign/frontend/[39mnode_modules/[4mvitest[24m/dist/chunks/execute.B7h3T_Hc.js:330:16[90m)[39m
+    at loadCourse [90m(C:\Users\kevin_8plxna7\Desktop\OWP\OWP-Portal-Redesign\frontend\[39msrc\pages\ActiveCourse.vue:241:32[90m)[39m
+    at async Promise.all (index 0)
+    at [90mC:\Users\kevin_8plxna7\Desktop\OWP\OWP-Portal-Redesign\frontend\[39msrc\pages\ActiveCourse.vue:331:3 {
+  codeFrame: [32m&apos;vi\x1B[33m.\x1B[39m\x1B[34mmock\x1B[39m(\x1B[35mimport\x1B[39m(\x1B[32m&quot;@/services/owpAPI&quot;\x1B[39m)\x1B[33m,\x1B[39m \x1B[35masync\x1B[39m (importOriginal) \x1B[33m=&gt;\x1B[39m {\n&apos;[39m +
+    [32m&apos;  \x1B[35mconst\x1B[39m actual \x1B[33m=\x1B[39m \x1B[35mawait\x1B[39m \x1B[34mimportOriginal\x1B[39m()\n&apos;[39m +
+    [32m&apos;  \x1B[35mreturn\x1B[39m {\n&apos;[39m +
+    [32m&apos;    \x1B[33m...\x1B[39mactual\x1B[33m,\x1B[39m\n&apos;[39m +
+    [32m&apos;    \x1B[90m// your mocked methods\x1B[39m\n&apos;[39m +
+    [32m&apos;  }\n&apos;[39m +
+    [32m&apos;})&apos;[39m
+}
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;ActiveCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+            <failure message="expected &apos;Courses[vitest] No &quot;loadFromSession&quot; …&apos; to contain &apos;Failed to load active course data&apos;" type="AssertionError">
+AssertionError: expected &apos;Courses[vitest] No &quot;loadFromSession&quot; …&apos; to contain &apos;Failed to load active course data&apos;
+
+- Expected
++ Received
+
+- Failed to load active course data
++ Courses[vitest] No &quot;loadFromSession&quot; export is defined on the &quot;@/services/owpAPI&quot; mock. Did you forget to return it from &quot;vi.mock&quot;?
++ If you need to partially mock a module, you can use &quot;importOriginal&quot; helper inside:
++ Active EnrollmentsCourse title unavailableExpires: —Completed: ——Total Chapters—Grade Average—CEUs—Contact Hours0%Chapter Progress We couldn’t load this chapter data right now. ← Back to CoursesMessages Loading messages…  (View all messages) Purchase History No purchase history available.  (View all purchases)
+
+ ❯ src/__tests__/ActiveCourseIntegrationTest.spec.js:201:28
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/ActiveCourseUnitTest.spec.js" timestamp="2026-04-27T02:46:16.571Z" hostname="Kevin" tests="12" failures="0" errors="0" skipped="0" time="0.006043">
+        <testcase classname="src/__tests__/ActiveCourseUnitTest.spec.js" name="calcAveragePctCompleted &gt; returns the rounded average percent for attempted or graded sections" time="0.0018536">
+        </testcase>
+        <testcase classname="src/__tests__/ActiveCourseUnitTest.spec.js" name="calcAveragePctCompleted &gt; returns em dash if there are no valid attempted or graded sections" time="0.0001624">
+        </testcase>
+        <testcase classname="src/__tests__/ActiveCourseUnitTest.spec.js" name="calcAveragePctCompleted &gt; returns em dash if the input is not an array" time="0.0001114">
+        </testcase>
+        <testcase classname="src/__tests__/ActiveCourseUnitTest.spec.js" name="getInvoiceName &gt; returns the correct course title for a given invoice number" time="0.0001485">
+        </testcase>
+        <testcase classname="src/__tests__/ActiveCourseUnitTest.spec.js" name="getInvoiceName &gt; returns fallback text if no course title is found" time="0.0001029">
+        </testcase>
+        <testcase classname="src/__tests__/ActiveCourseUnitTest.spec.js" name="getCourseImage &gt; returns the correct image for the corresponding abbreviation" time="0.0002478">
+        </testcase>
+        <testcase classname="src/__tests__/ActiveCourseUnitTest.spec.js" name="getCourseImage &gt; returns null if no abbreviation matches" time="0.0001382">
+        </testcase>
+        <testcase classname="src/__tests__/ActiveCourseUnitTest.spec.js" name="getCourseCompletion &gt; returns 60 if 3 out of 5 sections are completed" time="0.0002195">
+        </testcase>
+        <testcase classname="src/__tests__/ActiveCourseUnitTest.spec.js" name="getCourseCompletion &gt; returns 0 if there are no completed sections" time="0.0001177">
+        </testcase>
+        <testcase classname="src/__tests__/ActiveCourseUnitTest.spec.js" name="getCourseCompletion &gt; returns 0 if there are no sections" time="0.0001151">
+        </testcase>
+        <testcase classname="src/__tests__/ActiveCourseUnitTest.spec.js" name="getMappedChapters &gt; sorts chapters by ordinal and maps display values correctly" time="0.0010164">
+        </testcase>
+        <testcase classname="src/__tests__/ActiveCourseUnitTest.spec.js" name="getMappedChapters &gt; uses fallback values when chapter data is missing" time="0.0002487">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/App.spec.js" timestamp="2026-04-27T02:46:16.574Z" hostname="Kevin" tests="1" failures="1" errors="0" skipped="0" time="0.1088275">
+        <testcase classname="src/__tests__/App.spec.js" name="App &gt; mounts renders properly" time="0.1074905">
+            <system-out>
+loadHeader called
+
+            </system-out>
+            <system-err>
+[Vue warn]: injection &quot;Symbol(route location)&quot; not found. 
+  at &lt;App ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+[Vue warn]: Failed to resolve component: router-view
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;App ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+[Vue warn]: injection &quot;Symbol(route location)&quot; not found. 
+  at &lt;HeaderComponent&gt; 
+  at &lt;App ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;HeaderComponent&gt; 
+  at &lt;App ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+[Vue warn]: injection &quot;Symbol(route location)&quot; not found. 
+  at &lt;SidebarComponent&gt; 
+  at &lt;App ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;SidebarComponent&gt; 
+  at &lt;App ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+            <failure message="Cannot read properties of undefined (reading &apos;fullPath&apos;)" type="TypeError">
+TypeError: Cannot read properties of undefined (reading &apos;fullPath&apos;)
+ ❯ src/App.vue:20:21
+ ❯ callWithErrorHandling node_modules/@vue/runtime-core/dist/runtime-core.cjs.js:200:33
+ ❯ callWithAsyncErrorHandling node_modules/@vue/runtime-core/dist/runtime-core.cjs.js:207:17
+ ❯ baseWatchOptions.call node_modules/@vue/runtime-core/dist/runtime-core.cjs.js:877:47
+ ❯ ReactiveEffect.getter [as fn] node_modules/@vue/reactivity/dist/reactivity.cjs.js:1831:29
+ ❯ ReactiveEffect.run node_modules/@vue/reactivity/dist/reactivity.cjs.js:243:19
+ ❯ Object.watch node_modules/@vue/reactivity/dist/reactivity.cjs.js:1932:25
+ ❯ doWatch node_modules/@vue/runtime-core/dist/runtime-core.cjs.js:905:34
+ ❯ watch node_modules/@vue/runtime-core/dist/runtime-core.cjs.js:838:10
+ ❯ setup src/App.vue:20:8
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/CertificatesPageIntegrationTest.spec.js" timestamp="2026-04-27T02:46:16.575Z" hostname="Kevin" tests="21" failures="5" errors="0" skipped="0" time="0.4502441">
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; renders the page header correctly" time="0.062566">
+            <failure message="Cannot call text on an empty DOMWrapper." type="Error">
+Error: Cannot call text on an empty DOMWrapper.
+ ❯ Object.get node_modules/@vue/test-utils/dist/vue-test-utils.cjs.js:1574:27
+ ❯ src/__tests__/CertificatesPageIntegrationTest.spec.js:81:45
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; renders the page description" time="0.0375438">
+            <failure message="Cannot call text on an empty DOMWrapper." type="Error">
+Error: Cannot call text on an empty DOMWrapper.
+ ❯ Object.get node_modules/@vue/test-utils/dist/vue-test-utils.cjs.js:1574:27
+ ❯ src/__tests__/CertificatesPageIntegrationTest.spec.js:86:45
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; renders the search input" time="0.0222877">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; renders the sidebar with Messages, Transcripts, and Purchase History cards" time="0.0128085">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; displays the logged-in account name after loading" time="0.0343639">
+            <failure message="expected &apos;CertificatesEarned CertificatesOWPAdv…&apos; to contain &apos;John Doe&apos;" type="AssertionError">
+AssertionError: expected &apos;CertificatesEarned CertificatesOWPAdv…&apos; to contain &apos;John Doe&apos;
+
+Expected: &quot;John Doe&quot;
+Received: &quot;CertificatesEarned CertificatesOWPAdvanced Water Treatment📅 Completed: 01/15/2025🎓 Grade: CR (Pass)CEUs: 1.5Contact Hours: 15⬇ Download CertificateOWPWater Distribution Systems📅 Completed: 03/20/2025🎓 Grade: CR (Pass)CEUs: 1.5Contact Hours: 15⬇ Download CertificateMessagesEmail message (11/10/2025)Email message (11/08/2025)Email message (11/05/2025)(View all messages)TranscriptsView TranscriptPurchase Transcript(View all transcripts)Purchase HistoryOperation of Wastewater Treatment Plants, Vol 1Advanced Water TreatmentWater Distribution System Operation(View all purchases)&quot;
+
+ ❯ src/__tests__/CertificatesPageIntegrationTest.spec.js:106:28
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; shows loading state for account before API resolves" time="0.0249231">
+            <failure message="expected &apos;CertificatesEarned Certificates Loadi…&apos; to contain &apos;Loading account&apos;" type="AssertionError">
+AssertionError: expected &apos;CertificatesEarned Certificates Loadi…&apos; to contain &apos;Loading account&apos;
+
+Expected: &quot;Loading account&quot;
+Received: &quot;CertificatesEarned Certificates Loading certificates… MessagesEmail message (11/10/2025)Email message (11/08/2025)Email message (11/05/2025)(View all messages)TranscriptsView TranscriptPurchase Transcript(View all transcripts)Purchase HistoryOperation of Wastewater Treatment Plants, Vol 1Advanced Water TreatmentWater Distribution System Operation(View all purchases)&quot;
+
+ ❯ src/__tests__/CertificatesPageIntegrationTest.spec.js:112:28
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; shows error message if account API fails" time="0.0465763">
+            <system-err>
+[Vue warn]: Unhandled error during execution of mounted hook 
+  at &lt;CertificatesPage ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+            <failure message="expected false to be true // Object.is equality" type="AssertionError">
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ src/__tests__/CertificatesPageIntegrationTest.spec.js:118:64
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; shows loading state while certificates are fetching" time="0.0060677">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; renders only completed CR-graded certificates" time="0.0155751">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; renders certificate titles correctly" time="0.0083874">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; does NOT render incomplete/non-CR courses as certificates" time="0.0126449">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; shows empty state message when no completed certificates exist" time="0.0263159">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; shows error message if certificates API fails" time="0.0135699">
+            <system-err>
+Not implemented: Window&apos;s alert() method
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; filters certificates as user types in search box" time="0.016377">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; shows no-match message when search returns no results" time="0.0104533">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; shows all certificates when search is cleared" time="0.0119685">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; renders a Download Certificate button for each certificate" time="0.0097271">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; download button is enabled by default" time="0.0106801">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; renders CEU and contact hours chips from enrollment record" time="0.0409432">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; renders a router-link to /messages" time="0.0162716">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageIntegrationTest.spec.js" name="CertificatesPage — Integration Tests &gt; renders a router-link to /purchase-history" time="0.0081922">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/CertificatesPageUnitTest.spec.js" timestamp="2026-04-27T02:46:16.580Z" hostname="Kevin" tests="18" failures="0" errors="0" skipped="0" time="0.0070049">
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="filterCertificates &gt; returns all certificates when search query is empty" time="0.0021277">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="filterCertificates &gt; returns all certificates when search query is only whitespace" time="0.000195">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="filterCertificates &gt; filters certificates by partial title match (case-insensitive)" time="0.0001427">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="filterCertificates &gt; filters certificates by specific title keyword" time="0.000296">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="filterCertificates &gt; is case-insensitive when filtering" time="0.000772">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="filterCertificates &gt; returns empty array when no certificates match query" time="0.0001641">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="filterCertificates &gt; returns empty array when certificates list is empty" time="0.0001641">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="filterCertificates &gt; trims whitespace from search query before filtering" time="0.0002721">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="formatCeu &gt; formats a valid number to one decimal place" time="0.0001907">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="formatCeu &gt; returns &quot;—&quot; for null" time="0.0000981">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="formatCeu &gt; returns &quot;—&quot; for undefined" time="0.0001038">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="formatCeu &gt; returns &quot;—&quot; for a non-numeric string" time="0.0000843">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="formatCeu &gt; parses a numeric string correctly" time="0.000086">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="buildSafeFilename &gt; replaces spaces with underscores" time="0.0003244">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="buildSafeFilename &gt; replaces special characters with underscores" time="0.0000945">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="buildSafeFilename &gt; collapses multiple consecutive underscores into one" time="0.000228">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="buildSafeFilename &gt; truncates to 40 characters" time="0.0001693">
+        </testcase>
+        <testcase classname="src/__tests__/CertificatesPageUnitTest.spec.js" name="buildSafeFilename &gt; returns empty string for empty input" time="0.0001057">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/CompletedCourseIntegrationTest.spec.js" timestamp="2026-04-27T02:46:16.583Z" hostname="Kevin" tests="6" failures="1" errors="0" skipped="0" time="5.2655418">
+        <testcase classname="src/__tests__/CompletedCourseIntegrationTest.spec.js" name="CompletedCourse &gt; loads and displays completed course summary information correctly" time="1.1377741">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseIntegrationTest.spec.js" name="CompletedCourse &gt; falls back to gradeAverage when record grade is missing" time="1.0362716">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseIntegrationTest.spec.js" name="CompletedCourse &gt; loads and displays chapter progress correctly" time="1.0154343">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseIntegrationTest.spec.js" name="CompletedCourse &gt; displays purchase history correctly" time="1.020327">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseIntegrationTest.spec.js" name="CompletedCourse &gt; shows empty chapter state when no chapter data exists" time="0.0202069">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseIntegrationTest.spec.js" name="CompletedCourse &gt; shows error state when enrollment record fails to load" time="1.0340078">
+            <system-err>
+Error: [vitest] No &quot;loadFromSession&quot; export is defined on the &quot;@/services/owpAPI&quot; mock. Did you forget to return it from &quot;vi.mock&quot;?
+If you need to partially mock a module, you can use &quot;importOriginal&quot; helper inside:
+
+    at VitestMocker.createError [90m(file:///C:/Users/kevin_8plxna7/Desktop/OWP/OWP-Portal-Redesign/frontend/[39mnode_modules/[4mvitest[24m/dist/chunks/execute.B7h3T_Hc.js:284:17[90m)[39m
+    at Object.get [90m(file:///C:/Users/kevin_8plxna7/Desktop/OWP/OWP-Portal-Redesign/frontend/[39mnode_modules/[4mvitest[24m/dist/chunks/execute.B7h3T_Hc.js:330:16[90m)[39m
+    at loadCourse [90m(C:\Users\kevin_8plxna7\Desktop\OWP\OWP-Portal-Redesign\frontend\[39msrc\pages\CompletedCourse.vue:307:32[90m)[39m
+    at async Promise.all (index 0)
+    at [90mC:\Users\kevin_8plxna7\Desktop\OWP\OWP-Portal-Redesign\frontend\[39msrc\pages\CompletedCourse.vue:415:3 {
+  codeFrame: [32m&apos;vi\x1B[33m.\x1B[39m\x1B[34mmock\x1B[39m(\x1B[35mimport\x1B[39m(\x1B[32m&quot;@/services/owpAPI&quot;\x1B[39m)\x1B[33m,\x1B[39m \x1B[35masync\x1B[39m (importOriginal) \x1B[33m=&gt;\x1B[39m {\n&apos;[39m +
+    [32m&apos;  \x1B[35mconst\x1B[39m actual \x1B[33m=\x1B[39m \x1B[35mawait\x1B[39m \x1B[34mimportOriginal\x1B[39m()\n&apos;[39m +
+    [32m&apos;  \x1B[35mreturn\x1B[39m {\n&apos;[39m +
+    [32m&apos;    \x1B[33m...\x1B[39mactual\x1B[33m,\x1B[39m\n&apos;[39m +
+    [32m&apos;    \x1B[90m// your mocked methods\x1B[39m\n&apos;[39m +
+    [32m&apos;  }\n&apos;[39m +
+    [32m&apos;})&apos;[39m
+}
+
+            </system-err>
+            <failure message="expected &apos;Courses[vitest] No &quot;loadFromSession&quot; …&apos; to contain &apos;Failed to load completed course data&apos;" type="AssertionError">
+AssertionError: expected &apos;Courses[vitest] No &quot;loadFromSession&quot; …&apos; to contain &apos;Failed to load completed course data&apos;
+
+- Expected
++ Received
+
+- Failed to load completed course data
++ Courses[vitest] No &quot;loadFromSession&quot; export is defined on the &quot;@/services/owpAPI&quot; mock. Did you forget to return it from &quot;vi.mock&quot;?
++ If you need to partially mock a module, you can use &quot;importOriginal&quot; helper inside:
++ Completed EnrollmentsNO IMAGE AVAILABLECourse title unavailableStatus Date: —Final Grade: —Completed—Total Chapters—Grade—CEUs—Contact Hours0%Chapter Progress We couldn’t load this chapter data right now. ChapterDateGrade← Back to CoursesMessages No messages available.  (View all messages) Purchase History No purchase history available.  (View all purchases)
+
+ ❯ src/__tests__/CompletedCourseIntegrationTest.spec.js:306:28
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/CompletedCourseUnitTest.spec.js" timestamp="2026-04-27T02:46:16.585Z" hostname="Kevin" tests="14" failures="0" errors="0" skipped="0" time="0.0057085">
+        <testcase classname="src/__tests__/CompletedCourseUnitTest.spec.js" name="calcAveragePctCompleted &gt; returns the rounded average percent for attempted or graded sections" time="0.0014545">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseUnitTest.spec.js" name="calcAveragePctCompleted &gt; returns em dash if there are no valid attempted or graded sections" time="0.000136">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseUnitTest.spec.js" name="getInvoiceName &gt; returns the correct course title for a given invoice number" time="0.0001465">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseUnitTest.spec.js" name="getInvoiceName &gt; returns fallback text if no course title is found" time="0.0001202">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseUnitTest.spec.js" name="getCourseImage &gt; returns the correct image for the corresponding abbreviation" time="0.0002283">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseUnitTest.spec.js" name="getCourseImage &gt; returns null if no abbreviation matches" time="0.0001143">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseUnitTest.spec.js" name="getCourseCompletion &gt; returns 60 if 3 out of 5 sections are completed" time="0.0002033">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseUnitTest.spec.js" name="getCourseCompletion &gt; returns 100 if there are no sections" time="0.0001061">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseUnitTest.spec.js" name="getFormattedCeus &gt; returns CEUs formatted to one decimal place" time="0.000172">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseUnitTest.spec.js" name="getFormattedCeus &gt; returns em dash when CEUs are invalid" time="0.0001241">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseUnitTest.spec.js" name="getMappedChapters &gt; sorts chapters by ordinal and maps display values correctly" time="0.0011171">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseUnitTest.spec.js" name="getMappedChapters &gt; uses fallback values when chapter data is missing" time="0.0001565">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseUnitTest.spec.js" name="getFinalCourseGrade &gt; uses gradeAverage when courseGrade is em dash" time="0.0001148">
+        </testcase>
+        <testcase classname="src/__tests__/CompletedCourseUnitTest.spec.js" name="getFinalCourseGrade &gt; keeps the original courseGrade when it exists" time="0.0001005">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/CoursesPageIntegrationTest.spec.js" timestamp="2026-04-27T02:46:16.587Z" hostname="Kevin" tests="8" failures="0" errors="0" skipped="0" time="0.2145681">
+        <testcase classname="src/__tests__/CoursesPageIntegrationTest.spec.js" name="CoursesPage &gt; loads and displays active enrollments correctly" time="0.060793">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageIntegrationTest.spec.js" name="CoursesPage &gt; shows empty state when no active enrollments exist" time="0.0152024">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageIntegrationTest.spec.js" name="CoursesPage &gt; loads and displays completed enrollments correctly" time="0.0372506">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageIntegrationTest.spec.js" name="CoursesPage &gt; shows empty state when no completed enrollments exist" time="0.0230551">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageIntegrationTest.spec.js" name="CoursesPage &gt; shows empty state for recommended courses" time="0.0151406">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageIntegrationTest.spec.js" name="CoursesPage &gt; loads and displays purchase history correctly" time="0.0165204">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageIntegrationTest.spec.js" name="CoursesPage &gt; shows empty state when no purchase history exists" time="0.030653">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageIntegrationTest.spec.js" name="CoursesPage &gt; shows empty state for messages" time="0.0137801">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/CoursesPageUnitTest.spec.js" timestamp="2026-04-27T02:46:16.588Z" hostname="Kevin" tests="14" failures="0" errors="0" skipped="0" time="0.0060597">
+        <testcase classname="src/__tests__/CoursesPageUnitTest.spec.js" name="getInvoiceName &gt; returns the correct course title for a given invoice number" time="0.0013394">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageUnitTest.spec.js" name="getInvoiceName &gt; returns fallback text if no course title is found" time="0.0001365">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageUnitTest.spec.js" name="getCourseImage &gt; returns the correct image for the corresponding abbreviation" time="0.0002284">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageUnitTest.spec.js" name="getCourseImage &gt; returns null if no abbreviation matches" time="0.0001079">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageUnitTest.spec.js" name="getActiveEnrollments &gt; filters only enrollments with statustxt &quot;Enrolled&quot;" time="0.0016155">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageUnitTest.spec.js" name="getActiveEnrollments &gt; returns an empty array if no enrollments are active" time="0.0001347">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageUnitTest.spec.js" name="getCompletedEnrollments &gt; filters only enrollments with statustxt &quot;Complete&quot; or &quot;Dropped&quot;" time="0.0002287">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageUnitTest.spec.js" name="getCompletedEnrollments &gt; returns an empty array if no enrollments are completed or dropped" time="0.0000977">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageUnitTest.spec.js" name="getCourseProgress &gt; returns 60% if 3 out of 5 sections are graded" time="0.000155">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageUnitTest.spec.js" name="getCourseProgress &gt; returns 0% if no sections are graded" time="0.000121">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageUnitTest.spec.js" name="getCourseProgress &gt; returns 0% if there are no sections" time="0.0000864">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageUnitTest.spec.js" name="getCompletedCourseStatus &gt; returns Pass when grade is CR" time="0.0001553">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageUnitTest.spec.js" name="getCompletedCourseStatus &gt; returns Fail when grade is not CR" time="0.0001214">
+        </testcase>
+        <testcase classname="src/__tests__/CoursesPageUnitTest.spec.js" name="getCompletedCourseStatus &gt; returns dropped state when statustxt is Dropped" time="0.000099">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/DashboardPageIntegrationTest.spec.js" timestamp="2026-04-27T02:46:16.590Z" hostname="Kevin" tests="4" failures="1" errors="0" skipped="0" time="0.2494759">
+        <testcase classname="src/__tests__/DashboardPageIntegrationTest.spec.js" name="DashboardPage &gt; getAccountDetails loads firstname" time="0.0632779">
+            <system-out>
+loadDash called
+
+            </system-out>
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;DashboardPage ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;DashboardPage ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+[Vue warn]: Unhandled error during execution of mounted hook 
+  at &lt;DashboardPage ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/DashboardPageIntegrationTest.spec.js" name="DashboardPage &gt; getActiveEnrollment loads and filters objects only active enrollments. Objects also load all dynamic components" time="0.0416359">
+            <system-out>
+loadDash called
+
+            </system-out>
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;DashboardPage ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;DashboardPage ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+[Vue warn]: Unhandled error during execution of mounted hook 
+  at &lt;DashboardPage ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/DashboardPageIntegrationTest.spec.js" name="DashboardPage &gt; getActiveEnrollment and getCourseGrades correctly compute course progress" time="0.0208344">
+            <system-out>
+loadDash called
+
+            </system-out>
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;DashboardPage ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;DashboardPage ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+[Vue warn]: Unhandled error during execution of mounted hook 
+  at &lt;DashboardPage ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+            <failure message="expected &apos;0%&apos; to contain &apos;60%&apos;" type="AssertionError">
+AssertionError: expected &apos;0%&apos; to contain &apos;60%&apos;
+
+Expected: &quot;60%&quot;
+Received: &quot;0%&quot;
+
+ ❯ src/__tests__/DashboardPageIntegrationTest.spec.js:143:31
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/DashboardPageIntegrationTest.spec.js" name="DashboardPage &gt; getActiveEnrollment loads expiredate" time="0.0949916">
+            <system-out>
+loadDash called
+
+            </system-out>
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;DashboardPage ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;DashboardPage ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;DashboardPage ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;DashboardPage ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/DashboardPageUnitTest.spec.js" timestamp="2026-04-27T02:46:16.593Z" hostname="Kevin" tests="8" failures="0" errors="0" skipped="0" time="0.0053226">
+        <testcase classname="src/__tests__/DashboardPageUnitTest.spec.js" name="getActiveEnrollments &gt; filters only enrollments with statustxt &quot;Enrolled&quot;" time="0.0028783">
+        </testcase>
+        <testcase classname="src/__tests__/DashboardPageUnitTest.spec.js" name="getActiveEnrollments &gt; returns an empty array if no enrollments have statustxt &quot;Enrolled&quot;" time="0.0002797">
+        </testcase>
+        <testcase classname="src/__tests__/DashboardPageUnitTest.spec.js" name="getCourseImage &gt; returns the correct image to the corresponding abbreviation" time="0.0003472">
+        </testcase>
+        <testcase classname="src/__tests__/DashboardPageUnitTest.spec.js" name="getCourseImage &gt; returns null if no abbreviation matches" time="0.0000922">
+        </testcase>
+        <testcase classname="src/__tests__/DashboardPageUnitTest.spec.js" name="getCourseCompletion &gt; returns 60% if 3 out of 5 sections are completed" time="0.0001096">
+        </testcase>
+        <testcase classname="src/__tests__/DashboardPageUnitTest.spec.js" name="getCourseCompletion &gt; returns 0% if no sections are completed" time="0.0000701">
+        </testcase>
+        <testcase classname="src/__tests__/DashboardPageUnitTest.spec.js" name="getInvoiceName &gt; returns the correct course title for a given invoice number" time="0.0000945">
+        </testcase>
+        <testcase classname="src/__tests__/DashboardPageUnitTest.spec.js" name="getInvoiceName &gt; returns an error message if no course title is found for the given invoice number" time="0.0000679">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/Header.spec.js" timestamp="2026-04-27T02:46:16.594Z" hostname="Kevin" tests="1" failures="0" errors="0" skipped="0" time="0.0612183">
+        <testcase classname="src/__tests__/Header.spec.js" name="HeaderComponent &gt; getAccountDetails loads dynamic components on page and in dialog menus" time="0.060041">
+            <system-out>
+loadHeader called
+
+            </system-out>
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;HeaderComponent ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;HeaderComponent ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/MyAccountPageIntegrationTest.spec.js" timestamp="2026-04-27T02:46:16.595Z" hostname="Kevin" tests="15" failures="0" errors="0" skipped="0" time="0.6869956">
+        <testcase classname="src/__tests__/MyAccountPageIntegrationTest.spec.js" name="MyAccountPage &gt; loads and displays firstname in the profile card" time="0.0914992">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageIntegrationTest.spec.js" name="MyAccountPage &gt; loads email and address in contact info" time="0.0196269">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageIntegrationTest.spec.js" name="MyAccountPage &gt; loads operator numbers" time="0.1003263">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageIntegrationTest.spec.js" name="MyAccountPage &gt; loads transcript preview from CR grade enrollments only" time="0.0334804">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageIntegrationTest.spec.js" name="MyAccountPage &gt; loads purchase history preview with invoice titles" time="0.0289957">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageIntegrationTest.spec.js" name="MyAccountPage &gt; opens contact dialog and pre-fills contact fields" time="0.0250228">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageIntegrationTest.spec.js" name="MyAccountPage &gt; formats phone input as the user types" time="0.2392982">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageIntegrationTest.spec.js" name="MyAccountPage &gt; saveContactInfo sends parsed phone data to updateContactInfo" time="0.038269">
+            <system-out>
+updateContactInfo response: { response: { success: [33mtrue[39m } }
+
+            </system-out>
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageIntegrationTest.spec.js" name="MyAccountPage &gt; shows loading fallback when operator list is empty" time="0.0337254">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageIntegrationTest.spec.js" name="MyAccountPage &gt; shows transcript empty state when no transcript items are available" time="0.0177195">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageIntegrationTest.spec.js" name="MyAccountPage &gt; shows purchase history empty state when there are no invoices" time="0.0109104">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageIntegrationTest.spec.js" name="MyAccountPage &gt; falls back to cached account data when account request fails" time="0.0141982">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageIntegrationTest.spec.js" name="MyAccountPage &gt; falls back to cached operator list when operator request fails" time="0.0123156">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageIntegrationTest.spec.js" name="MyAccountPage &gt; falls back to cached invoices and invoice data when purchase history requests fail" time="0.0100758">
+            <system-out>
+{ [32m&apos;2001&apos;[39m: [ { coursetitle: [32m&apos;Cached Water Course&apos;[39m } ] }
+
+            </system-out>
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageIntegrationTest.spec.js" name="MyAccountPage &gt; uses loading placeholders when account request fails and no cache exists" time="0.0089168">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/MyAccountPageUnitTest.spec.js" timestamp="2026-04-27T02:46:16.598Z" hostname="Kevin" tests="15" failures="0" errors="0" skipped="0" time="0.0048376">
+        <testcase classname="src/__tests__/MyAccountPageUnitTest.spec.js" name="addressLine2 &gt; formats city, state, and zip correctly" time="0.0013209">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageUnitTest.spec.js" name="addressLine2 &gt; omits blank/null values safely" time="0.0001281">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageUnitTest.spec.js" name="addressLine2 &gt; returns empty string when all values are missing" time="0.0000864">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageUnitTest.spec.js" name="digitsOnly &gt; removes all non-digit characters" time="0.0001512">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageUnitTest.spec.js" name="digitsOnly &gt; returns empty string for nullish input" time="0.0001036">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageUnitTest.spec.js" name="formatPhoneDisplay &gt; formats a full 10-digit phone number" time="0.000113">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageUnitTest.spec.js" name="formatPhoneDisplay &gt; formats partial phone input" time="0.0000773">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageUnitTest.spec.js" name="formatPhoneDisplay &gt; returns empty string for empty input" time="0.0000694">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageUnitTest.spec.js" name="splitPhoneFromDisplay &gt; extracts area code and local number from a formatted phone number" time="0.0006743">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageUnitTest.spec.js" name="splitPhoneFromDisplay &gt; returns only area when input is incomplete" time="0.0001194">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageUnitTest.spec.js" name="splitPhoneFromDisplay &gt; returns null values when no digits exist" time="0.0001883">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageUnitTest.spec.js" name="getTranscriptItems &gt; returns only Complete and Dropped enrollments, max 2" time="0.0002099">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageUnitTest.spec.js" name="getTranscriptItems &gt; uses fallback title when title is missing" time="0.0001068">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageUnitTest.spec.js" name="getInvoiceName &gt; returns the first non-null course title for an invoice" time="0.000126">
+        </testcase>
+        <testcase classname="src/__tests__/MyAccountPageUnitTest.spec.js" name="getInvoiceName &gt; returns fallback text when invoice has no course title" time="0.0000865">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/OperatorNumbersIntegrationTest.spec.js" timestamp="2026-04-27T02:46:16.600Z" hostname="Kevin" tests="6" failures="1" errors="0" skipped="0" time="0.1527218">
+        <testcase classname="src/__tests__/OperatorNumbersIntegrationTest.spec.js" name="OperatorNumbers &gt; loads and displays state in table" time="0.0636401">
+            <system-out>
+loadTable called
+
+Numbers loaded
+
+Error loading operator numbers: [vitest] No &quot;loadFromSession&quot; export is defined on the &quot;@/services/owpAPI&quot; mock. Did you forget to return it from &quot;vi.mock&quot;?
+If you need to partially mock a module, you can use &quot;importOriginal&quot; helper inside:
+
+
+            </system-out>
+            <system-err>
+Not implemented: Window&apos;s alert() method
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/OperatorNumbersIntegrationTest.spec.js" name="OperatorNumbers &gt; loads and displays operator number in table" time="0.0112923">
+            <system-out>
+loadTable called
+
+Numbers loaded
+
+Error loading operator numbers: [vitest] No &quot;loadFromSession&quot; export is defined on the &quot;@/services/owpAPI&quot; mock. Did you forget to return it from &quot;vi.mock&quot;?
+If you need to partially mock a module, you can use &quot;importOriginal&quot; helper inside:
+
+
+            </system-out>
+            <system-err>
+Not implemented: Window&apos;s alert() method
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/OperatorNumbersIntegrationTest.spec.js" name="OperatorNumbers &gt; loads certificates preview from Complete enrollments only" time="0.028154">
+            <system-out>
+loadTable called
+
+Numbers loaded
+
+            </system-out>
+            <failure message="expected &apos;Operator NumbersView and edit your Op…&apos; to contain &apos;Course B&apos;" type="AssertionError">
+AssertionError: expected &apos;Operator NumbersView and edit your Op…&apos; to contain &apos;Course B&apos;
+
+Expected: &quot;Course B&quot;
+Received: &quot;Operator NumbersView and edit your Operator NumbersAdd Operator NumberState/ProvinceOperator NumberCalifornia12345EditRemoveMessages No messages available. (View all messages)CertificatesNo certificates available.(View all certificates)&quot;
+
+ ❯ src/__tests__/OperatorNumbersIntegrationTest.spec.js:118:32
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/OperatorNumbersIntegrationTest.spec.js" name="OperatorNumbers &gt; shows certificates empty state when no there is no completed enrollments" time="0.0251676">
+            <system-out>
+loadTable called
+
+Numbers loaded
+
+            </system-out>
+        </testcase>
+        <testcase classname="src/__tests__/OperatorNumbersIntegrationTest.spec.js" name="OperatorNumbers &gt; shows operator numbers empty state when no operator numbers are available" time="0.0126531">
+            <system-out>
+loadTable called
+
+Numbers loaded
+
+            </system-out>
+        </testcase>
+        <testcase classname="src/__tests__/OperatorNumbersIntegrationTest.spec.js" name="OperatorNumbers &gt; shows no new messages when there are no messages" time="0.0092906">
+            <system-out>
+loadTable called
+
+Numbers loaded
+
+            </system-out>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/OperatorNumbersUnitTest.spec.js" timestamp="2026-04-27T02:46:16.603Z" hostname="Kevin" tests="4" failures="0" errors="0" skipped="0" time="0.0036302">
+        <testcase classname="src/__tests__/OperatorNumbersUnitTest.spec.js" name="get Certificates &gt; returns only Complete enrollments with grade &quot;CR&quot;, &quot;A&quot;, &quot;B&quot;, or &quot;C&quot;" time="0.0019102">
+        </testcase>
+        <testcase classname="src/__tests__/OperatorNumbersUnitTest.spec.js" name="update number &gt; returns the correct payload for a valid original" time="0.0003044">
+        </testcase>
+        <testcase classname="src/__tests__/OperatorNumbersUnitTest.spec.js" name="delete number &gt; deletes correct number based on oprlicid" time="0.0001564">
+        </testcase>
+        <testcase classname="src/__tests__/OperatorNumbersUnitTest.spec.js" name="add number &gt; generates correct payload for adding a new number" time="0.0001161">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/PurchaseHistoryPage.spec.js" timestamp="2026-04-27T02:46:16.604Z" hostname="Kevin" tests="6" failures="1" errors="0" skipped="0" time="0.3319332">
+        <testcase classname="src/__tests__/PurchaseHistoryPage.spec.js" name="PurchaseHistoryPage &gt; loads invoice cards from getInvoices" time="0.0787548">
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/PurchaseHistoryPage.spec.js" name="PurchaseHistoryPage &gt; shows an error message when getInvoices fails" time="0.0515899">
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+Not implemented: Window&apos;s alert() method
+
+            </system-err>
+            <failure message="expected &apos;Purchase History View your invoices a…&apos; to contain &apos;Failed to load invoices&apos;" type="AssertionError">
+AssertionError: expected &apos;Purchase History View your invoices a…&apos; to contain &apos;Failed to load invoices&apos;
+
+- Expected
++ Received
+
+- Failed to load invoices
++ Purchase History View your invoices and payment details for your purchases. [vitest] No &quot;loadFromSession&quot; export is defined on the &quot;@/services/owpAPI&quot; mock. Did you forget to return it from &quot;vi.mock&quot;?
++ If you need to partially mock a module, you can use &quot;importOriginal&quot; helper inside:
+
+ ❯ src/__tests__/PurchaseHistoryPage.spec.js:68:28
+            </failure>
+        </testcase>
+        <testcase classname="src/__tests__/PurchaseHistoryPage.spec.js" name="PurchaseHistoryPage &gt; loads invoice details when an invoice card is clicked" time="0.099746">
+            <system-out>
+invoice id: [33m1234[39m
+in try
+
+            </system-out>
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/PurchaseHistoryPage.spec.js" name="PurchaseHistoryPage &gt; renders refund values correctly for negative payment and quantity" time="0.0754616">
+            <system-out>
+invoice id: [33m4321[39m
+in try
+
+            </system-out>
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/PurchaseHistoryPage.spec.js" name="PurchaseHistoryPage &gt; shows fallback item text when no invoice items are returned" time="0.0125998">
+            <system-out>
+invoice id: [33m9999[39m
+in try
+
+            </system-out>
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/PurchaseHistoryPage.spec.js" name="PurchaseHistoryPage &gt; goes back to purchase history when Return to Purchase History is clicked" time="0.0122455">
+            <system-out>
+invoice id: [33m1234[39m
+in try
+
+            </system-out>
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/PurchaseHistoryRoute.spec.js" timestamp="2026-04-27T02:46:16.607Z" hostname="Kevin" tests="2" failures="0" errors="0" skipped="0" time="0.0883183">
+        <testcase classname="src/__tests__/PurchaseHistoryRoute.spec.js" name="PurchaseHistoryPage Route Tests &gt; loads invoice detail directly from route id" time="0.0794709">
+            <system-out>
+invoice id: [33m1234[39m
+in try
+
+            </system-out>
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/PurchaseHistoryRoute.spec.js" name="PurchaseHistoryPage Route Tests &gt; does not open detail if route id is not found in invoices" time="0.0073975">
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;PurchaseHistory ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/RecommendedCourseIntegrationTest.spec.js" timestamp="2026-04-27T02:46:16.608Z" hostname="Kevin" tests="5" failures="0" errors="0" skipped="0" time="0.3984368">
+        <testcase classname="src/__tests__/RecommendedCourseIntegrationTest.spec.js" name="RecommendedCourse &gt; loads and displays recommended course information correctly" time="0.2255629">
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;RecommendedCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;RecommendedCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;RecommendedCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/RecommendedCourseIntegrationTest.spec.js" name="RecommendedCourse &gt; loads and displays course contents correctly" time="0.0551243">
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;RecommendedCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;RecommendedCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;RecommendedCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/RecommendedCourseIntegrationTest.spec.js" name="RecommendedCourse &gt; displays purchase history correctly" time="0.0191236">
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;RecommendedCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;RecommendedCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;RecommendedCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/RecommendedCourseIntegrationTest.spec.js" name="RecommendedCourse &gt; shows fallback state when the recommended course id does not exist" time="0.0341618">
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;RecommendedCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;RecommendedCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;RecommendedCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/RecommendedCourseIntegrationTest.spec.js" name="RecommendedCourse &gt; shows fallback chapter content when a recommended course has no chapters" time="0.0547586">
+            <system-err>
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;RecommendedCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;RecommendedCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+[Vue warn]: Failed to resolve component: router-link
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement. 
+  at &lt;RecommendedCourse ref=&quot;VTU_COMPONENT&quot; &gt; 
+  at &lt;VTUROOT&gt;
+
+            </system-err>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/RecommendedCourseUnitTest.spec.js" timestamp="2026-04-27T02:46:16.610Z" hostname="Kevin" tests="7" failures="0" errors="0" skipped="0" time="0.0046312">
+        <testcase classname="src/__tests__/RecommendedCourseUnitTest.spec.js" name="getInvoiceName &gt; returns the correct course title for a given invoice number" time="0.0015985">
+        </testcase>
+        <testcase classname="src/__tests__/RecommendedCourseUnitTest.spec.js" name="getInvoiceName &gt; returns fallback text if no course title is found" time="0.0001974">
+        </testcase>
+        <testcase classname="src/__tests__/RecommendedCourseUnitTest.spec.js" name="getRecommendedCourseState &gt; returns the selected recommended course data when a matching id exists" time="0.0009146">
+        </testcase>
+        <testcase classname="src/__tests__/RecommendedCourseUnitTest.spec.js" name="getRecommendedCourseState &gt; returns fallback empty state when no matching course exists" time="0.0001449">
+        </testcase>
+        <testcase classname="src/__tests__/RecommendedCourseUnitTest.spec.js" name="getRecommendedCourseState &gt; uses fallback chapter content when a course has no chapters" time="0.000154">
+        </testcase>
+        <testcase classname="src/__tests__/RecommendedCourseUnitTest.spec.js" name="getRecommendedCourseState &gt; uses fallback text for missing description fields" time="0.0001383">
+        </testcase>
+        <testcase classname="src/__tests__/RecommendedCourseUnitTest.spec.js" name="getRecommendedCourseState &gt; uses fallback title text when the course title is missing" time="0.0001651">
+        </testcase>
+    </testsuite>
+</testsuites>

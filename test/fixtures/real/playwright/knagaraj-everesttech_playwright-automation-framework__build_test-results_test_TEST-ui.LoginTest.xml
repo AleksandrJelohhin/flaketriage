@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ui.LoginTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2025-04-29T14:24:19.918Z" hostname="ETECH-PG03QSRW" time="0.187">
+  <properties/>
+  <testcase name="testInvalidLogin" classname="ui.LoginTest" time="0.158"/>
+  <testcase name="testValidLogin" classname="ui.LoginTest" time="0.84">
+    <failure message="java.lang.AssertionError: Login should be successful for valid credentials. expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Login should be successful for valid credentials. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at ui.LoginTest.testValidLogin(LoginTest.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</failure>
+  </testcase>
+  <system-out><![CDATA[19:54:19.271 [TestNG-test=Gradle test-1] INFO utils.WaitUtils -- Waiting for element: .new-todo
+19:54:19.372 [TestNG-test=Gradle test-1] INFO utils.WaitUtils -- Waiting for element: .new-todo
+19:54:19.442 [TestNG-test=Gradle test-1] INFO utils.WaitUtils -- Waiting for element: .new-todo
+19:54:19.492 [TestNG-test=Gradle test-2] INFO base.PlaywrightManager -- Created new chrome browser page in headless mode for thread 41
+19:54:19.497 [TestNG-test=Gradle test-3] INFO base.PlaywrightManager -- Created new chrome browser page in headless mode for thread 42
+19:54:19.920 [TestNG-test=Gradle test-3] INFO utils.WaitUtils -- Waiting for element: .new-todo
+19:54:19.960 [TestNG-test=Gradle test-3] INFO utils.WaitUtils -- Waiting for element: .new-todo
+19:54:20.021 [TestNG-test=Gradle test-3] INFO utils.WaitUtils -- Waiting for element: .new-todo
+19:54:20.068 [TestNG-test=Gradle test-3] INFO utils.WaitUtils -- Waiting for element: .new-todo
+19:54:20.073 [TestNG-test=Gradle test-3] WARN pages.LoginPage -- Error checking login error status: Object doesn't exist: handle@0b047ed36fe8107ce7ec49af200aff2e
+19:54:20.105 [TestNG-test=Gradle test-1] WARN pages.LoginPage -- Error checking login status: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError:Target page, context or browser has been closed
+Error
+    at captureRawStack (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\utils\stackTrace.js:50:17)
+    at LongStandingScope._race (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\utils\manualPromise.js:91:52)
+    at LongStandingScope.race (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\utils\manualPromise.js:84:17)
+    at FrameDispatcher._handleCommand (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:86:36)
+    at DispatcherConnection.dispatch (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:351:39)
+}
+Call log:
+- waiting for locator(".todo-list li") to be visible
+
+19:54:20.278 [TestNG-test=Gradle test-1] INFO BaseTest -- Screenshot saved to: test-output/screenshots/testValidLogin.png
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

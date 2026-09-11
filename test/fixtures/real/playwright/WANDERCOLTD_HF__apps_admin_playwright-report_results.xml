@@ -1,0 +1,262 @@
+<testsuites id="" name="" tests="10" failures="2" skipped="0" errors="0" time="447.480247">
+<testsuite name="tests/cloud/smoke.spec.ts" timestamp="2026-04-15T20:43:03.083Z" hostname="cloud" tests="10" failures="2" skipped="0" time="1134.062" errors="0">
+<testcase name="Cloud Smoke › should load dashboard after login" classname="tests/cloud/smoke.spec.ts" time="90.568">
+</testcase>
+<testcase name="Cloud Smoke › should display sidebar with navigation" classname="tests/cloud/smoke.spec.ts" time="90.502">
+</testcase>
+<testcase name="Cloud Smoke › should load Callers page" classname="tests/cloud/smoke.spec.ts" time="90.369">
+</testcase>
+<testcase name="Cloud Smoke › should load Domains page" classname="tests/cloud/smoke.spec.ts" time="90.95">
+</testcase>
+<testcase name="Cloud Smoke › should load Pipeline page" classname="tests/cloud/smoke.spec.ts" time="46.42">
+</testcase>
+<testcase name="Cloud Smoke › should load Specs page" classname="tests/cloud/smoke.spec.ts" time="46.634">
+</testcase>
+<testcase name="Cloud Smoke › should load Quick Launch page" classname="tests/cloud/smoke.spec.ts" time="46.074">
+</testcase>
+<testcase name="Cloud Smoke › should load Settings page" classname="tests/cloud/smoke.spec.ts" time="45.743">
+</testcase>
+<testcase name="Cloud Smoke › health API should return ok" classname="tests/cloud/smoke.spec.ts" time="293.403">
+<failure message="smoke.spec.ts:65:7 health API should return ok" type="FAILURE">
+<![CDATA[  [cloud] › tests/cloud/smoke.spec.ts:65:7 › Cloud Smoke › health API should return ok ─────────────
+
+    TimeoutError: page.goto: Timeout 60000ms exceeded.
+    Call log:
+      - navigating to "http://localhost:3000/login", waiting until "load"
+
+
+       at fixtures/auth.fixture.ts:21
+
+      19 |     const login = async (email: string, password = process.env.SEED_ADMIN_PASSWORD || 'admin123') => {
+      20 |       const isCloud = !!process.env.CLOUD_E2E;
+    > 21 |       await page.goto('/login', { timeout: isCloud ? 60000 : 30000 });
+         |                  ^
+      22 |       await page.waitForLoadState('networkidle', { timeout: isCloud ? 30000 : 15000 });
+      23 |
+      24 |       // Fill credentials
+        at loginAs (/Users/paulwander/projects/HF/apps/admin/e2e/fixtures/auth.fixture.ts:21:18)
+        at /Users/paulwander/projects/HF/apps/admin/e2e/tests/cloud/smoke.spec.ts:13:11
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/tests-cloud-smoke-Cloud-Smoke-health-API-should-return-ok-cloud/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/tests-cloud-smoke-Cloud-Smoke-health-API-should-return-ok-cloud/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: page.goto: Timeout 60000ms exceeded.
+    Call log:
+      - navigating to "http://localhost:3000/login", waiting until "load"
+
+
+       at fixtures/auth.fixture.ts:21
+
+      19 |     const login = async (email: string, password = process.env.SEED_ADMIN_PASSWORD || 'admin123') => {
+      20 |       const isCloud = !!process.env.CLOUD_E2E;
+    > 21 |       await page.goto('/login', { timeout: isCloud ? 60000 : 30000 });
+         |                  ^
+      22 |       await page.waitForLoadState('networkidle', { timeout: isCloud ? 30000 : 15000 });
+      23 |
+      24 |       // Fill credentials
+        at loginAs (/Users/paulwander/projects/HF/apps/admin/e2e/fixtures/auth.fixture.ts:21:18)
+        at /Users/paulwander/projects/HF/apps/admin/e2e/tests/cloud/smoke.spec.ts:13:11
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/tests-cloud-smoke-Cloud-Smoke-health-API-should-return-ok-cloud-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/tests-cloud-smoke-Cloud-Smoke-health-API-should-return-ok-cloud-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/tests-cloud-smoke-Cloud-Smoke-health-API-should-return-ok-cloud-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: page.goto: Timeout 60000ms exceeded.
+    Call log:
+      - navigating to "http://localhost:3000/login", waiting until "load"
+
+
+       at fixtures/auth.fixture.ts:21
+
+      19 |     const login = async (email: string, password = process.env.SEED_ADMIN_PASSWORD || 'admin123') => {
+      20 |       const isCloud = !!process.env.CLOUD_E2E;
+    > 21 |       await page.goto('/login', { timeout: isCloud ? 60000 : 30000 });
+         |                  ^
+      22 |       await page.waitForLoadState('networkidle', { timeout: isCloud ? 30000 : 15000 });
+      23 |
+      24 |       // Fill credentials
+        at loginAs (/Users/paulwander/projects/HF/apps/admin/e2e/fixtures/auth.fixture.ts:21:18)
+        at /Users/paulwander/projects/HF/apps/admin/e2e/tests/cloud/smoke.spec.ts:13:11
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/tests-cloud-smoke-Cloud-Smoke-health-API-should-return-ok-cloud-retry2/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #3 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: page.goto: Timeout 60000ms exceeded.
+    Call log:
+      - navigating to "http://localhost:3000/login", waiting until "load"
+
+
+       at fixtures/auth.fixture.ts:21
+
+      19 |     const login = async (email: string, password = process.env.SEED_ADMIN_PASSWORD || 'admin123') => {
+      20 |       const isCloud = !!process.env.CLOUD_E2E;
+    > 21 |       await page.goto('/login', { timeout: isCloud ? 60000 : 30000 });
+         |                  ^
+      22 |       await page.waitForLoadState('networkidle', { timeout: isCloud ? 30000 : 15000 });
+      23 |
+      24 |       // Fill credentials
+        at loginAs (/Users/paulwander/projects/HF/apps/admin/e2e/fixtures/auth.fixture.ts:21:18)
+        at /Users/paulwander/projects/HF/apps/admin/e2e/tests/cloud/smoke.spec.ts:13:11
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/tests-cloud-smoke-Cloud-Smoke-health-API-should-return-ok-cloud-retry3/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/tests-cloud-smoke-Cloud-Smoke-health-API-should-return-ok-cloud/video.webm]]
+
+[[ATTACHMENT|../test-results/tests-cloud-smoke-Cloud-Smoke-health-API-should-return-ok-cloud/error-context.md]]
+
+[[ATTACHMENT|../test-results/tests-cloud-smoke-Cloud-Smoke-health-API-should-return-ok-cloud-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/tests-cloud-smoke-Cloud-Smoke-health-API-should-return-ok-cloud-retry1/trace.zip]]
+
+[[ATTACHMENT|../test-results/tests-cloud-smoke-Cloud-Smoke-health-API-should-return-ok-cloud-retry2/video.webm]]
+
+[[ATTACHMENT|../test-results/tests-cloud-smoke-Cloud-Smoke-health-API-should-return-ok-cloud-retry3/video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Cloud Smoke › ready API should confirm specs loaded" classname="tests/cloud/smoke.spec.ts" time="293.399">
+<failure message="smoke.spec.ts:72:7 ready API should confirm specs loaded" type="FAILURE">
+<![CDATA[  [cloud] › tests/cloud/smoke.spec.ts:72:7 › Cloud Smoke › ready API should confirm specs loaded ───
+
+    TimeoutError: page.goto: Timeout 60000ms exceeded.
+    Call log:
+      - navigating to "http://localhost:3000/login", waiting until "load"
+
+
+       at fixtures/auth.fixture.ts:21
+
+      19 |     const login = async (email: string, password = process.env.SEED_ADMIN_PASSWORD || 'admin123') => {
+      20 |       const isCloud = !!process.env.CLOUD_E2E;
+    > 21 |       await page.goto('/login', { timeout: isCloud ? 60000 : 30000 });
+         |                  ^
+      22 |       await page.waitForLoadState('networkidle', { timeout: isCloud ? 30000 : 15000 });
+      23 |
+      24 |       // Fill credentials
+        at loginAs (/Users/paulwander/projects/HF/apps/admin/e2e/fixtures/auth.fixture.ts:21:18)
+        at /Users/paulwander/projects/HF/apps/admin/e2e/tests/cloud/smoke.spec.ts:13:11
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/tests-cloud-smoke-Cloud-Sm-c3e0c-should-confirm-specs-loaded-cloud/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/tests-cloud-smoke-Cloud-Sm-c3e0c-should-confirm-specs-loaded-cloud/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: page.goto: Timeout 60000ms exceeded.
+    Call log:
+      - navigating to "http://localhost:3000/login", waiting until "load"
+
+
+       at fixtures/auth.fixture.ts:21
+
+      19 |     const login = async (email: string, password = process.env.SEED_ADMIN_PASSWORD || 'admin123') => {
+      20 |       const isCloud = !!process.env.CLOUD_E2E;
+    > 21 |       await page.goto('/login', { timeout: isCloud ? 60000 : 30000 });
+         |                  ^
+      22 |       await page.waitForLoadState('networkidle', { timeout: isCloud ? 30000 : 15000 });
+      23 |
+      24 |       // Fill credentials
+        at loginAs (/Users/paulwander/projects/HF/apps/admin/e2e/fixtures/auth.fixture.ts:21:18)
+        at /Users/paulwander/projects/HF/apps/admin/e2e/tests/cloud/smoke.spec.ts:13:11
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/tests-cloud-smoke-Cloud-Sm-c3e0c-should-confirm-specs-loaded-cloud-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/tests-cloud-smoke-Cloud-Sm-c3e0c-should-confirm-specs-loaded-cloud-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/tests-cloud-smoke-Cloud-Sm-c3e0c-should-confirm-specs-loaded-cloud-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: page.goto: Timeout 60000ms exceeded.
+    Call log:
+      - navigating to "http://localhost:3000/login", waiting until "load"
+
+
+       at fixtures/auth.fixture.ts:21
+
+      19 |     const login = async (email: string, password = process.env.SEED_ADMIN_PASSWORD || 'admin123') => {
+      20 |       const isCloud = !!process.env.CLOUD_E2E;
+    > 21 |       await page.goto('/login', { timeout: isCloud ? 60000 : 30000 });
+         |                  ^
+      22 |       await page.waitForLoadState('networkidle', { timeout: isCloud ? 30000 : 15000 });
+      23 |
+      24 |       // Fill credentials
+        at loginAs (/Users/paulwander/projects/HF/apps/admin/e2e/fixtures/auth.fixture.ts:21:18)
+        at /Users/paulwander/projects/HF/apps/admin/e2e/tests/cloud/smoke.spec.ts:13:11
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/tests-cloud-smoke-Cloud-Sm-c3e0c-should-confirm-specs-loaded-cloud-retry2/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #3 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: page.goto: Timeout 60000ms exceeded.
+    Call log:
+      - navigating to "http://localhost:3000/login", waiting until "load"
+
+
+       at fixtures/auth.fixture.ts:21
+
+      19 |     const login = async (email: string, password = process.env.SEED_ADMIN_PASSWORD || 'admin123') => {
+      20 |       const isCloud = !!process.env.CLOUD_E2E;
+    > 21 |       await page.goto('/login', { timeout: isCloud ? 60000 : 30000 });
+         |                  ^
+      22 |       await page.waitForLoadState('networkidle', { timeout: isCloud ? 30000 : 15000 });
+      23 |
+      24 |       // Fill credentials
+        at loginAs (/Users/paulwander/projects/HF/apps/admin/e2e/fixtures/auth.fixture.ts:21:18)
+        at /Users/paulwander/projects/HF/apps/admin/e2e/tests/cloud/smoke.spec.ts:13:11
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/tests-cloud-smoke-Cloud-Sm-c3e0c-should-confirm-specs-loaded-cloud-retry3/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/tests-cloud-smoke-Cloud-Sm-c3e0c-should-confirm-specs-loaded-cloud/video.webm]]
+
+[[ATTACHMENT|../test-results/tests-cloud-smoke-Cloud-Sm-c3e0c-should-confirm-specs-loaded-cloud/error-context.md]]
+
+[[ATTACHMENT|../test-results/tests-cloud-smoke-Cloud-Sm-c3e0c-should-confirm-specs-loaded-cloud-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/tests-cloud-smoke-Cloud-Sm-c3e0c-should-confirm-specs-loaded-cloud-retry1/trace.zip]]
+
+[[ATTACHMENT|../test-results/tests-cloud-smoke-Cloud-Sm-c3e0c-should-confirm-specs-loaded-cloud-retry2/video.webm]]
+
+[[ATTACHMENT|../test-results/tests-cloud-smoke-Cloud-Sm-c3e0c-should-confirm-specs-loaded-cloud-retry3/video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

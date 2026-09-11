@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="9" time="20.409" timestamp="2025-10-23T23:19:11.697099" hostname="Danielles-MacBook-Pro.local"><testcase classname="tests.test_acceptance_api" name="test_acceptance_api" time="4.634" /><testcase classname="tests.test_account_subscription_state" name="test_account_api_shows_subscription_fields" time="2.193" /><testcase classname="tests.test_account_subscription_state" name="test_account_api_reflects_canceled_state" time="2.092" /><testcase classname="tests.test_admin_reconcile" name="test_admin_reconcile_csrf_and_auth" time="3.954" /><testcase classname="tests.test_auth" name="test_signup_and_login" time="1.529" /><testcase classname="tests.test_auth" name="test_password_reset_flow" time="2.437" /><testcase classname="tests.test_cancel_subscription" name="test_cancel_subscription_with_stripe" time="2.168" /><testcase classname="tests.test_checkout" name="test_create_checkout_session_not_configured" time="0.613" /><testcase classname="tests.test_dev_admin" name="test_dev_admin_seed_and_create_user" time="0.615"><failure message="RuntimeError: Working outside of application context.&#10;&#10;This typically means that you attempted to use functionality that needed&#10;the current application. To solve this, set up an application context&#10;with app.app_context(). See the documentation for more information.">client = &lt;FlaskClient &lt;Flask 'app'&gt;&gt;
+
+    def test_dev_admin_seed_and_create_user(client):
+        # ensure the init_db seeding created the dev admin when running in test fixture
+        # Note: tests run without FLASK_ENV=development by default; ensure seed runs by setting env var
+        os.environ['ALLOW_DEV_DEBUG'] = '1'
+        with togetherly_app.app.app_context():
+            togetherly_app.init_db()
+        # dev admin should exist in DB
+&gt;       row = client.application.DB_PATH and togetherly_app.get_user_by_email('hi.scott.jones@gmail.com')
+
+tests/test_dev_admin.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+app.py:441: in get_user_by_email
+    db = get_db()
+app.py:37: in get_db
+    if "db" not in g:
+.venv/lib/python3.9/site-packages/werkzeug/local.py:318: in __get__
+    obj = instance._get_current_object()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _get_current_object() -&gt; T:
+        try:
+            obj = local.get()
+        except LookupError:
+&gt;           raise RuntimeError(unbound_message) from None
+E           RuntimeError: Working outside of application context.
+E           
+E           This typically means that you attempted to use functionality that needed
+E           the current application. To solve this, set up an application context
+E           with app.app_context(). See the documentation for more information.
+
+.venv/lib/python3.9/site-packages/werkzeug/local.py:519: RuntimeError</failure></testcase></testsuite></testsuites>

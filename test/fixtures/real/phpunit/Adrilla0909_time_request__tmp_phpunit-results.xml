@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\Users\adril\jeda\phpunit.xml" tests="21" assertions="37" errors="3" failures="1" skipped="0" time="5.423105">
+    <testsuite name="Unit" tests="5" assertions="13" errors="0" failures="0" skipped="0" time="2.514641">
+      <testsuite name="Tests\Unit\ExampleTest" file="C:\Users\adril\jeda\tests\Unit\ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.008292">
+        <testcase name="test_that_true_is_true" file="C:\Users\adril\jeda\tests\Unit\ExampleTest.php" line="12" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" assertions="1" time="0.008292"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\LeaveComputationTest" file="C:\Users\adril\jeda\tests\Unit\LeaveComputationTest.php" tests="4" assertions="12" errors="0" failures="0" skipped="0" time="2.506350">
+        <testcase name="single_day_approved_reduces_remaining_by_one" file="C:\Users\adril\jeda\tests\Unit\LeaveComputationTest.php" line="15" class="Tests\Unit\LeaveComputationTest" classname="Tests.Unit.LeaveComputationTest" assertions="3" time="2.262617"/>
+        <testcase name="multi_day_approved_reduces_by_date_range_length" file="C:\Users\adril\jeda\tests\Unit\LeaveComputationTest.php" line="51" class="Tests\Unit\LeaveComputationTest" classname="Tests.Unit.LeaveComputationTest" assertions="3" time="0.067061"/>
+        <testcase name="missing_dates_treated_as_one_day" file="C:\Users\adril\jeda\tests\Unit\LeaveComputationTest.php" line="85" class="Tests\Unit\LeaveComputationTest" classname="Tests.Unit.LeaveComputationTest" assertions="3" time="0.069713"/>
+        <testcase name="multiple_approved_leaves_sum_correctly" file="C:\Users\adril\jeda\tests\Unit\LeaveComputationTest.php" line="106" class="Tests\Unit\LeaveComputationTest" classname="Tests.Unit.LeaveComputationTest" assertions="3" time="0.106959"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="16" assertions="24" errors="3" failures="1" skipped="0" time="2.908464">
+      <testsuite name="Tests\Feature\AdminUserManagementTest" file="C:\Users\adril\jeda\tests\Feature\AdminUserManagementTest.php" tests="3" assertions="9" errors="0" failures="0" skipped="0" time="0.182644">
+        <testcase name="test_hrd_can_create_user_with_role" file="C:\Users\adril\jeda\tests\Feature\AdminUserManagementTest.php" line="13" class="Tests\Feature\AdminUserManagementTest" classname="Tests.Feature.AdminUserManagementTest" assertions="3" time="0.070882"/>
+        <testcase name="test_hrd_can_edit_user_and_assign_manager" file="C:\Users\adril\jeda\tests\Feature\AdminUserManagementTest.php" line="32" class="Tests\Feature\AdminUserManagementTest" classname="Tests.Feature.AdminUserManagementTest" assertions="3" time="0.067293"/>
+        <testcase name="test_hrd_can_delete_user" file="C:\Users\adril\jeda\tests\Feature\AdminUserManagementTest.php" line="53" class="Tests\Feature\AdminUserManagementTest" classname="Tests.Feature.AdminUserManagementTest" assertions="3" time="0.044469"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\ApprovalPageTest" file="C:\Users\adril\jeda\tests\Feature\ApprovalPageTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="0.098824">
+        <testcase name="test_approval_page_renders_for_authenticated_user" file="C:\Users\adril\jeda\tests\Feature\ApprovalPageTest.php" line="14" class="Tests\Feature\ApprovalPageTest" classname="Tests.Feature.ApprovalPageTest" assertions="3" time="0.098824"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\ChatReactTest" file="C:\Users\adril\jeda\tests\Feature\ChatReactTest.php" tests="1" assertions="0" errors="1" failures="0" skipped="0" time="0.186818">
+        <testcase name="test_user_can_react_and_event_is_broadcast" file="C:\Users\adril\jeda\tests\Feature\ChatReactTest.php" line="21" class="Tests\Feature\ChatReactTest" classname="Tests.Feature.ChatReactTest" assertions="0" time="0.186818">
+          <error type="Symfony\Component\Routing\Exception\RouteNotFoundException">Tests\Feature\ChatReactTest::test_user_can_react_and_event_is_broadcast&#13;
+Symfony\Component\Routing\Exception\RouteNotFoundException: Route [chat.react] not defined.
+&#13;
+C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php:517
+C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php:853
+C:\Users\adril\jeda\tests\Feature\ChatReactTest.php:30</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\ExampleTest" file="C:\Users\adril\jeda\tests\Feature\ExampleTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.020669">
+        <testcase name="test_the_application_returns_a_successful_response" file="C:\Users\adril\jeda\tests\Feature\ExampleTest.php" line="13" class="Tests\Feature\ExampleTest" classname="Tests.Feature.ExampleTest" assertions="1" time="0.020669"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\LeaveFlowTest" file="C:\Users\adril\jeda\tests\Feature\LeaveFlowTest.php" tests="2" assertions="1" errors="1" failures="1" skipped="0" time="1.496707">
+        <testcase name="test_employee_submit_then_manager_approves_and_notifications_sent" file="C:\Users\adril\jeda\tests\Feature\LeaveFlowTest.php" line="17" class="Tests\Feature\LeaveFlowTest" classname="Tests.Feature.LeaveFlowTest" assertions="1" time="0.993254">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\LeaveFlowTest::test_employee_submit_then_manager_approves_and_notifications_sent&#13;
+Expected response status code [201, 301, 302, 303, 307, 308] but received 500.
+Failed asserting that false is true.&#13;
+&#13;
+The following exception occurred during the last request:
+
+ParseError: syntax error, unexpected token "&lt;" in C:\Users\adril\jeda\app\Policies\LeaveRequestPolicy.php:40
+Stack trace:
+#0 C:\Users\adril\jeda\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\Users\\adril\\...')
+#1 [internal function]: Composer\Autoload\ClassLoader-&gt;loadClass('App\\Policies\\Le...')
+#2 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Container\Container.php(944): ReflectionClass-&gt;__construct('App\\Policies\\Le...')
+#3 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Container\Container.php(819): Illuminate\Container\Container-&gt;build('App\\Policies\\Le...')
+#4 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1074): Illuminate\Container\Container-&gt;resolve('App\\Policies\\Le...', Array, true)
+#5 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Container\Container.php(755): Illuminate\Foundation\Application-&gt;resolve('App\\Policies\\Le...', Array)
+#6 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(1056): Illuminate\Container\Container-&gt;make('App\\Policies\\Le...', Array)
+#7 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Auth\Access\Gate.php(734): Illuminate\Foundation\Application-&gt;make('App\\Policies\\Le...')
+#8 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Auth\Access\Gate.php(670): Illuminate\Auth\Access\Gate-&gt;resolvePolicy('App\\Policies\\Le...')
+#9 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Auth\Access\Gate.php(630): Illuminate\Auth\Access\Gate-&gt;getPolicyFor('App\\Models\\Leav...')
+#10 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Auth\Access\Gate.php(551): Illuminate\Auth\Access\Gate-&gt;resolveAuthCallback(Object(App\Models\User), 'create', Array)
+#11 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Auth\Access\Gate.php(448): Illuminate\Auth\Access\Gate-&gt;callAuthCallback(Object(App\Models\User), 'create', Array)
+#12 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Auth\Access\Gate.php(411): Illuminate\Auth\Access\Gate-&gt;raw('create', Array)
+#13 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Auth\Access\Gate.php(398): Illuminate\Auth\Access\Gate-&gt;inspect('create', 'App\\Models\\Leav...')
+#14 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\Auth\Access\AuthorizesRequests.php(25): Illuminate\Auth\Access\Gate-&gt;authorize('create', 'App\\Models\\Leav...')
+#15 C:\Users\adril\jeda\app\Http\Controllers\LeaveController.php(33): App\Http\Controllers\LeaveController-&gt;authorize('create', 'App\\Models\\Leav...')
+#16 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(47): App\Http\Controllers\LeaveController-&gt;store(Object(Illuminate\Http\Request))
+#17 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Routing\Route.php(266): Illuminate\Routing\ControllerDispatcher-&gt;dispatch(Object(Illuminate\Routing\Route), Object(App\Http\Controllers\LeaveController), 'store')
+#18 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Routing\Route.php(212): Illuminate\Routing\Route-&gt;runController()
+#19 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Routing\Router.php(808): Illuminate\Routing\Route-&gt;run()
+#20 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(170): Illuminate\Routing\Router-&gt;Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#21 C:\Users\adril\jeda\app\Http\Middleware\RoleMiddleware.php(58): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#22 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(209): App\Http\Middleware\RoleMiddleware-&gt;handle(Object(Illuminate\Http\Request), Object(Closure), 'employee', 'manager')
+#23 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php(51): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#24 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(209): Illuminate\Routing\Middleware\SubstituteBindings-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#25 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Auth\Middleware\Authenticate.php(64): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#26 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(209): Illuminate\Auth\Middleware\Authenticate-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#27 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\VerifyCsrfToken.php(88): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#28 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(209): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#29 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\View\Middleware\ShareErrorsFromSession.php(49): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#30 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(209): Illuminate\View\Middleware\ShareErrorsFromSession-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#31 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(121): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#32 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(64): Illuminate\Session\Middleware\StartSession-&gt;handleStatefulRequest(Object(Illuminate\Http\Request), Object(Illuminate\Session\Store), Object(Closure))
+#33 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(209): Illuminate\Session\Middleware\StartSession-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#34 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse.php(37): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#35 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(209): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\EncryptCookies.php(75): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#37 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(209): Illuminate\Cookie\Middleware\EncryptCookies-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#38 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(127): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#39 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Routing\Router.php(807): Illuminate\Pipeline\Pipeline-&gt;then(Object(Closure))
+#40 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Routing\Router.php(786): Illuminate\Routing\Router-&gt;runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#41 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Routing\Router.php(750): Illuminate\Routing\Router-&gt;runRoute(Object(Illuminate\Http\Request), Object(Illuminate\Routing\Route))
+#42 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Routing\Router.php(739): Illuminate\Routing\Router-&gt;dispatchToRoute(Object(Illuminate\Http\Request))
+#43 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(201): Illuminate\Routing\Router-&gt;dispatch(Object(Illuminate\Http\Request))
+#44 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(170): Illuminate\Foundation\Http\Kernel-&gt;Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#45 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#46 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#47 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(209): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#48 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#49 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#50 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(209): Illuminate\Foundation\Http\Middleware\TrimStrings-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#51 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#52 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(209): Illuminate\Http\Middleware\ValidatePostSize-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#53 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php(110): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#54 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(209): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#55 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php(49): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#56 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(209): Illuminate\Http\Middleware\HandleCors-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#57 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php(58): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#58 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(209): Illuminate\Http\Middleware\TrustProxies-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#59 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#60 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(209): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#61 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(127): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#62 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(176): Illuminate\Pipeline\Pipeline-&gt;then(Object(Closure))
+#63 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(145): Illuminate\Foundation\Http\Kernel-&gt;sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#64 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel-&gt;handle(Object(Illuminate\Http\Request))
+#65 C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(397): Illuminate\Foundation\Testing\TestCase-&gt;call('POST', 'http://localhos...', Array, Array, Array, Array)
+#66 C:\Users\adril\jeda\tests\Feature\LeaveFlowTest.php(26): Illuminate\Foundation\Testing\TestCase-&gt;post('http://localhos...', Array)
+#67 C:\Users\adril\jeda\vendor\phpunit\phpunit\src\Framework\TestCase.php(1235): Tests\Feature\LeaveFlowTest-&gt;test_employee_submit_then_manager_approves_and_notifications_sent()
+#68 C:\Users\adril\jeda\vendor\phpunit\phpunit\src\Framework\TestCase.php(514): PHPUnit\Framework\TestCase-&gt;runTest()
+#69 C:\Users\adril\jeda\vendor\phpunit\phpunit\src\Framework\TestRunner\TestRunner.php(87): PHPUnit\Framework\TestCase-&gt;runBare()
+#70 C:\Users\adril\jeda\vendor\phpunit\phpunit\src\Framework\TestCase.php(361): PHPUnit\Framework\TestRunner-&gt;run(Object(Tests\Feature\LeaveFlowTest))
+#71 C:\Users\adril\jeda\vendor\phpunit\phpunit\src\Framework\TestSuite.php(369): PHPUnit\Framework\TestCase-&gt;run()
+#72 C:\Users\adril\jeda\vendor\phpunit\phpunit\src\Framework\TestSuite.php(369): PHPUnit\Framework\TestSuite-&gt;run()
+#73 C:\Users\adril\jeda\vendor\phpunit\phpunit\src\Framework\TestSuite.php(369): PHPUnit\Framework\TestSuite-&gt;run()
+#74 C:\Users\adril\jeda\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(64): PHPUnit\Framework\TestSuite-&gt;run()
+#75 C:\Users\adril\jeda\vendor\phpunit\phpunit\src\TextUI\Application.php(210): PHPUnit\TextUI\TestRunner-&gt;run(Object(PHPUnit\TextUI\Configuration\Configuration), Object(PHPUnit\Runner\ResultCache\DefaultResultCache), Object(PHPUnit\Framework\TestSuite))
+#76 C:\Users\adril\jeda\vendor\phpunit\phpunit\phpunit(104): PHPUnit\TextUI\Application-&gt;run(Array)
+#77 C:\Users\adril\jeda\vendor\bin\phpunit(122): include('C:\\Users\\adril\\...')
+#78 {main}
+
+----------------------------------------------------------------------------------
+
+syntax error, unexpected token "&lt;"
+&#13;
+C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Testing\TestResponseAssert.php:45
+C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:185
+C:\Users\adril\jeda\tests\Feature\LeaveFlowTest.php:31</failure>
+        </testcase>
+        <testcase name="test_manager_rejects_leave_and_notification_sent" file="C:\Users\adril\jeda\tests\Feature\LeaveFlowTest.php" line="51" class="Tests\Feature\LeaveFlowTest" classname="Tests.Feature.LeaveFlowTest" assertions="0" time="0.503453">
+          <error type="ErrorException">Tests\Feature\LeaveFlowTest::test_manager_rejects_leave_and_notification_sent&#13;
+ErrorException: Attempt to read property "id" on null
+&#13;
+C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php:256
+C:\Users\adril\jeda\tests\Feature\LeaveFlowTest.php:69</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\PositiveAuthorizationTest" file="C:\Users\adril\jeda\tests\Feature\PositiveAuthorizationTest.php" tests="2" assertions="1" errors="1" failures="0" skipped="0" time="0.555702">
+        <testcase name="test_hrd_can_access_admin_pages" file="C:\Users\adril\jeda\tests\Feature\PositiveAuthorizationTest.php" line="14" class="Tests\Feature\PositiveAuthorizationTest" classname="Tests.Feature.PositiveAuthorizationTest" assertions="1" time="0.048563"/>
+        <testcase name="test_manager_can_approve_department_leaves" file="C:\Users\adril\jeda\tests\Feature\PositiveAuthorizationTest.php" line="23" class="Tests\Feature\PositiveAuthorizationTest" classname="Tests.Feature.PositiveAuthorizationTest" assertions="0" time="0.507139">
+          <error type="ErrorException">Tests\Feature\PositiveAuthorizationTest::test_manager_can_approve_department_leaves&#13;
+ErrorException: Attempt to read property "id" on null
+&#13;
+C:\Users\adril\jeda\vendor\laravel\framework\src\Illuminate\Foundation\Bootstrap\HandleExceptions.php:256
+C:\Users\adril\jeda\tests\Feature\PositiveAuthorizationTest.php:41</error>
+        </testcase>
+      </testsuite>
+      <testsuite name="Tests\Feature\RegistrationRoleTest" file="C:\Users\adril\jeda\tests\Feature\RegistrationRoleTest.php" tests="2" assertions="4" errors="0" failures="0" skipped="0" time="0.124857">
+        <testcase name="guest_registration_defaults_to_employee" file="C:\Users\adril\jeda\tests\Feature\RegistrationRoleTest.php" line="14" class="Tests\Feature\RegistrationRoleTest" classname="Tests.Feature.RegistrationRoleTest" assertions="2" time="0.059053"/>
+        <testcase name="hrd_can_create_user_with_custom_role" file="C:\Users\adril\jeda\tests\Feature\RegistrationRoleTest.php" line="31" class="Tests\Feature\RegistrationRoleTest" classname="Tests.Feature.RegistrationRoleTest" assertions="2" time="0.065803"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\RoleAuthorizationTest" file="C:\Users\adril\jeda\tests\Feature\RoleAuthorizationTest.php" tests="4" assertions="5" errors="0" failures="0" skipped="0" time="0.242242">
+        <testcase name="test_employee_cannot_access_manager_pages" file="C:\Users\adril\jeda\tests\Feature\RoleAuthorizationTest.php" line="13" class="Tests\Feature\RoleAuthorizationTest" classname="Tests.Feature.RoleAuthorizationTest" assertions="1" time="0.071792"/>
+        <testcase name="test_manager_cannot_access_admin_pages" file="C:\Users\adril\jeda\tests\Feature\RoleAuthorizationTest.php" line="22" class="Tests\Feature\RoleAuthorizationTest" classname="Tests.Feature.RoleAuthorizationTest" assertions="1" time="0.046858"/>
+        <testcase name="test_employee_cannot_access_approval_index" file="C:\Users\adril\jeda\tests\Feature\RoleAuthorizationTest.php" line="31" class="Tests\Feature\RoleAuthorizationTest" classname="Tests.Feature.RoleAuthorizationTest" assertions="1" time="0.061859"/>
+        <testcase name="test_guest_is_redirected_from_apply" file="C:\Users\adril\jeda\tests\Feature\RoleAuthorizationTest.php" line="40" class="Tests\Feature\RoleAuthorizationTest" classname="Tests.Feature.RoleAuthorizationTest" assertions="2" time="0.061732"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

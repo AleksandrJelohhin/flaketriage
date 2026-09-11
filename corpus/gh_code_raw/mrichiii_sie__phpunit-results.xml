@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\xampp\htdocs\sie\phpunit.xml" tests="8" assertions="20" errors="0" failures="6" skipped="0" time="3.096046">
+    <testsuite name="Feature" tests="8" assertions="20" errors="0" failures="6" skipped="0" time="3.096046">
+      <testsuite name="Tests\Feature\PaymentFlowTest" file="C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php" tests="8" assertions="20" errors="0" failures="6" skipped="0" time="3.096046">
+        <testcase name="test_bookings_can_be_created_with_qris_and_upload_proof_status_waiting_verification" file="C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php" line="63" class="Tests\Feature\PaymentFlowTest" classname="Tests.Feature.PaymentFlowTest" assertions="1" time="1.213949">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\PaymentFlowTest::test_bookings_can_be_created_with_qris_and_upload_proof_status_waiting_verification&#13;
+Expected response status code [201, 301, 302, 303, 307, 308] but received 500.
+Failed asserting that false is true.&#13;
+&#13;
+The following exception occurred during the last request:
+
+Error: Interface "Illuminate\Broadcasting\ShouldBroadcast" not found in C:\xampp\htdocs\sie\app\Events\BookingNotificationCreated.php:14
+Stack trace:
+#0 C:\xampp\htdocs\sie\vendor\composer\ClassLoader.php(576): include()
+#1 C:\xampp\htdocs\sie\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sie\app\Services\NotificationService.php(26): Composer\Autoload\ClassLoader-&gt;loadClass('App\\Events\\Book...')
+#3 C:\xampp\htdocs\sie\app\Http\Controllers\BookingController.php(52): App\Services\NotificationService-&gt;createNotification(Object(App\Models\User), 'Booking created', 'Your booking #1...', 'booking')
+#4 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(46): App\Http\Controllers\BookingController-&gt;store(Object(App\Http\Requests\StoreBookingRequest))
+#5 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Route.php(269): Illuminate\Routing\ControllerDispatcher-&gt;dispatch(Object(Illuminate\Routing\Route), Object(App\Http\Controllers\BookingController), 'store')
+#6 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Route.php(215): Illuminate\Routing\Route-&gt;runController()
+#7 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(822): Illuminate\Routing\Route-&gt;run()
+#8 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Routing\Router-&gt;Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php(52): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#11 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Auth\Middleware\Authenticate.php(63): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Auth\Middleware\Authenticate-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#13 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestForgery.php(104): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestForgery-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\View\Middleware\ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#17 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(120): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(63): Illuminate\Session\Middleware\StartSession-&gt;handleStatefulRequest(Object(Illuminate\Http\Request), Object(Illuminate\Session\Store), Object(Closure))
+#19 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Session\Middleware\StartSession-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#20 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#21 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#22 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\EncryptCookies.php(74): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#23 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#24 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#25 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(821): Illuminate\Pipeline\Pipeline-&gt;then(Object(Closure))
+#26 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(800): Illuminate\Routing\Router-&gt;runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#27 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(764): Illuminate\Routing\Router-&gt;runRoute(Object(Illuminate\Http\Request), Object(Illuminate\Routing\Route))
+#28 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(753): Illuminate\Routing\Router-&gt;dispatchToRoute(Object(Illuminate\Http\Request))
+#29 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(200): Illuminate\Routing\Router-&gt;dispatch(Object(Illuminate\Http\Request))
+#30 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Foundation\Http\Kernel-&gt;Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#31 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#32 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#33 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#34 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#35 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#37 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#41 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php(61): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#42 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\HandleCors-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php(58): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#44 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#45 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#46 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#47 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePathEncoding.php(28): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#48 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#49 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#50 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(175): Illuminate\Pipeline\Pipeline-&gt;then(Object(Closure))
+#51 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(144): Illuminate\Foundation\Http\Kernel-&gt;sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#52 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel-&gt;handle(Object(Illuminate\Http\Request))
+#53 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(397): Illuminate\Foundation\Testing\TestCase-&gt;call('POST', 'http://localhos...', Array, Array, Array, Array)
+#54 C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php(65): Illuminate\Foundation\Testing\TestCase-&gt;post('http://localhos...', Array)
+#55 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(1314): Tests\Feature\PaymentFlowTest-&gt;test_bookings_can_be_created_with_qris_and_upload_proof_status_waiting_verification()
+#56 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(1351): PHPUnit\Framework\TestCase-&gt;invokeTestMethod('test_bookings_c...', Array)
+#57 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(521): PHPUnit\Framework\TestCase-&gt;runTest()
+#58 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestRunner\TestRunner.php(99): PHPUnit\Framework\TestCase-&gt;runBare()
+#59 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(361): PHPUnit\Framework\TestRunner-&gt;run(Object(Tests\Feature\PaymentFlowTest))
+#60 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestCase-&gt;run()
+#61 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestSuite-&gt;run()
+#62 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestSuite-&gt;run()
+#63 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(64): PHPUnit\Framework\TestSuite-&gt;run()
+#64 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\TextUI\Application.php(229): PHPUnit\TextUI\TestRunner-&gt;run(Object(PHPUnit\TextUI\Configuration\Configuration), Object(PHPUnit\Runner\ResultCache\DefaultResultCache), Object(PHPUnit\Framework\TestSuite))
+#65 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\phpunit(104): PHPUnit\TextUI\Application-&gt;run(Array)
+#66 C:\xampp\htdocs\sie\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#67 {main}
+
+----------------------------------------------------------------------------------
+
+Interface "Illuminate\Broadcasting\ShouldBroadcast" not found
+&#13;
+C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Testing\TestResponseAssert.php:45
+C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:201
+C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php:76</failure>
+        </testcase>
+        <testcase name="test_admin_can_approve_and_reject_qris_payments_only_as_admin" file="C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php" line="95" class="Tests\Feature\PaymentFlowTest" classname="Tests.Feature.PaymentFlowTest" assertions="3" time="0.371618">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\PaymentFlowTest::test_admin_can_approve_and_reject_qris_payments_only_as_admin&#13;
+Expected response status code [201, 301, 302, 303, 307, 308] but received 500.
+Failed asserting that false is true.&#13;
+&#13;
+The following exception occurred during the last request:
+
+Error: Interface "Illuminate\Broadcasting\ShouldBroadcast" not found in C:\xampp\htdocs\sie\app\Events\BookingNotificationCreated.php:14
+Stack trace:
+#0 C:\xampp\htdocs\sie\vendor\composer\ClassLoader.php(576): include()
+#1 C:\xampp\htdocs\sie\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sie\app\Services\NotificationService.php(26): Composer\Autoload\ClassLoader-&gt;loadClass('App\\Events\\Book...')
+#3 C:\xampp\htdocs\sie\app\Http\Controllers\Admin\PaymentController.php(60): App\Services\NotificationService-&gt;createNotification(Object(App\Models\User), 'Payment approve...', 'Your payment fo...', 'payment')
+#4 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(46): App\Http\Controllers\Admin\PaymentController-&gt;approve(Object(Illuminate\Http\Request), Object(App\Models\Payment))
+#5 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Route.php(269): Illuminate\Routing\ControllerDispatcher-&gt;dispatch(Object(Illuminate\Routing\Route), Object(App\Http\Controllers\Admin\PaymentController), 'approve')
+#6 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Route.php(215): Illuminate\Routing\Route-&gt;runController()
+#7 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(822): Illuminate\Routing\Route-&gt;run()
+#8 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Routing\Router-&gt;Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\sie\app\Http\Middleware\EnsureRole.php(26): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): App\Http\Middleware\EnsureRole-&gt;handle(Object(Illuminate\Http\Request), Object(Closure), 'admin')
+#11 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php(52): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#13 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Auth\Middleware\Authenticate.php(63): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Auth\Middleware\Authenticate-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestForgery.php(104): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestForgery-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#17 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\View\Middleware\ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#19 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(120): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#20 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(63): Illuminate\Session\Middleware\StartSession-&gt;handleStatefulRequest(Object(Illuminate\Http\Request), Object(Illuminate\Session\Store), Object(Closure))
+#21 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Session\Middleware\StartSession-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#22 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#23 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#24 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\EncryptCookies.php(74): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#25 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#26 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#27 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(821): Illuminate\Pipeline\Pipeline-&gt;then(Object(Closure))
+#28 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(800): Illuminate\Routing\Router-&gt;runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#29 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(764): Illuminate\Routing\Router-&gt;runRoute(Object(Illuminate\Http\Request), Object(Illuminate\Routing\Route))
+#30 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(753): Illuminate\Routing\Router-&gt;dispatchToRoute(Object(Illuminate\Http\Request))
+#31 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(200): Illuminate\Routing\Router-&gt;dispatch(Object(Illuminate\Http\Request))
+#32 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Foundation\Http\Kernel-&gt;Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#33 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#34 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#35 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#37 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#38 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#41 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#42 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php(61): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#44 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\HandleCors-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#45 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php(58): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#46 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#47 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#48 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#49 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePathEncoding.php(28): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#50 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#51 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#52 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(175): Illuminate\Pipeline\Pipeline-&gt;then(Object(Closure))
+#53 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(144): Illuminate\Foundation\Http\Kernel-&gt;sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#54 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel-&gt;handle(Object(Illuminate\Http\Request))
+#55 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(397): Illuminate\Foundation\Testing\TestCase-&gt;call('POST', 'http://localhos...', Array, Array, Array, Array)
+#56 C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php(129): Illuminate\Foundation\Testing\TestCase-&gt;post('http://localhos...')
+#57 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(1314): Tests\Feature\PaymentFlowTest-&gt;test_admin_can_approve_and_reject_qris_payments_only_as_admin()
+#58 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(1351): PHPUnit\Framework\TestCase-&gt;invokeTestMethod('test_admin_can_...', Array)
+#59 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(521): PHPUnit\Framework\TestCase-&gt;runTest()
+#60 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestRunner\TestRunner.php(99): PHPUnit\Framework\TestCase-&gt;runBare()
+#61 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(361): PHPUnit\Framework\TestRunner-&gt;run(Object(Tests\Feature\PaymentFlowTest))
+#62 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestCase-&gt;run()
+#63 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestSuite-&gt;run()
+#64 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestSuite-&gt;run()
+#65 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(64): PHPUnit\Framework\TestSuite-&gt;run()
+#66 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\TextUI\Application.php(229): PHPUnit\TextUI\TestRunner-&gt;run(Object(PHPUnit\TextUI\Configuration\Configuration), Object(PHPUnit\Runner\ResultCache\DefaultResultCache), Object(PHPUnit\Framework\TestSuite))
+#67 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\phpunit(104): PHPUnit\TextUI\Application-&gt;run(Array)
+#68 C:\xampp\htdocs\sie\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#69 {main}
+
+----------------------------------------------------------------------------------
+
+Interface "Illuminate\Broadcasting\ShouldBroadcast" not found
+&#13;
+C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Testing\TestResponseAssert.php:45
+C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:201
+C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php:129</failure>
+        </testcase>
+        <testcase name="test_bookings_can_be_created_with_cod_and_admin_can_mark_paid" file="C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php" line="142" class="Tests\Feature\PaymentFlowTest" classname="Tests.Feature.PaymentFlowTest" assertions="1" time="0.360654">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\PaymentFlowTest::test_bookings_can_be_created_with_cod_and_admin_can_mark_paid&#13;
+Expected response status code [201, 301, 302, 303, 307, 308] but received 500.
+Failed asserting that false is true.&#13;
+&#13;
+The following exception occurred during the last request:
+
+Error: Interface "Illuminate\Broadcasting\ShouldBroadcast" not found in C:\xampp\htdocs\sie\app\Events\BookingNotificationCreated.php:14
+Stack trace:
+#0 C:\xampp\htdocs\sie\vendor\composer\ClassLoader.php(576): include()
+#1 C:\xampp\htdocs\sie\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sie\app\Services\NotificationService.php(26): Composer\Autoload\ClassLoader-&gt;loadClass('App\\Events\\Book...')
+#3 C:\xampp\htdocs\sie\app\Http\Controllers\BookingController.php(52): App\Services\NotificationService-&gt;createNotification(Object(App\Models\User), 'Booking created', 'Your booking #1...', 'booking')
+#4 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(46): App\Http\Controllers\BookingController-&gt;store(Object(App\Http\Requests\StoreBookingRequest))
+#5 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Route.php(269): Illuminate\Routing\ControllerDispatcher-&gt;dispatch(Object(Illuminate\Routing\Route), Object(App\Http\Controllers\BookingController), 'store')
+#6 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Route.php(215): Illuminate\Routing\Route-&gt;runController()
+#7 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(822): Illuminate\Routing\Route-&gt;run()
+#8 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Routing\Router-&gt;Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php(52): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#11 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Auth\Middleware\Authenticate.php(63): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Auth\Middleware\Authenticate-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#13 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestForgery.php(104): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestForgery-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\View\Middleware\ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#17 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(120): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(63): Illuminate\Session\Middleware\StartSession-&gt;handleStatefulRequest(Object(Illuminate\Http\Request), Object(Illuminate\Session\Store), Object(Closure))
+#19 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Session\Middleware\StartSession-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#20 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#21 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#22 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\EncryptCookies.php(74): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#23 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#24 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#25 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(821): Illuminate\Pipeline\Pipeline-&gt;then(Object(Closure))
+#26 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(800): Illuminate\Routing\Router-&gt;runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#27 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(764): Illuminate\Routing\Router-&gt;runRoute(Object(Illuminate\Http\Request), Object(Illuminate\Routing\Route))
+#28 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(753): Illuminate\Routing\Router-&gt;dispatchToRoute(Object(Illuminate\Http\Request))
+#29 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(200): Illuminate\Routing\Router-&gt;dispatch(Object(Illuminate\Http\Request))
+#30 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Foundation\Http\Kernel-&gt;Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#31 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#32 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#33 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#34 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#35 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#37 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#41 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php(61): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#42 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\HandleCors-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php(58): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#44 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#45 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#46 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#47 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePathEncoding.php(28): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#48 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#49 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#50 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(175): Illuminate\Pipeline\Pipeline-&gt;then(Object(Closure))
+#51 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(144): Illuminate\Foundation\Http\Kernel-&gt;sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#52 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel-&gt;handle(Object(Illuminate\Http\Request))
+#53 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(397): Illuminate\Foundation\Testing\TestCase-&gt;call('POST', 'http://localhos...', Array, Array, Array, Array)
+#54 C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php(144): Illuminate\Foundation\Testing\TestCase-&gt;post('http://localhos...', Array)
+#55 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(1314): Tests\Feature\PaymentFlowTest-&gt;test_bookings_can_be_created_with_cod_and_admin_can_mark_paid()
+#56 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(1351): PHPUnit\Framework\TestCase-&gt;invokeTestMethod('test_bookings_c...', Array)
+#57 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(521): PHPUnit\Framework\TestCase-&gt;runTest()
+#58 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestRunner\TestRunner.php(99): PHPUnit\Framework\TestCase-&gt;runBare()
+#59 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(361): PHPUnit\Framework\TestRunner-&gt;run(Object(Tests\Feature\PaymentFlowTest))
+#60 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestCase-&gt;run()
+#61 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestSuite-&gt;run()
+#62 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestSuite-&gt;run()
+#63 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(64): PHPUnit\Framework\TestSuite-&gt;run()
+#64 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\TextUI\Application.php(229): PHPUnit\TextUI\TestRunner-&gt;run(Object(PHPUnit\TextUI\Configuration\Configuration), Object(PHPUnit\Runner\ResultCache\DefaultResultCache), Object(PHPUnit\Framework\TestSuite))
+#65 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\phpunit(104): PHPUnit\TextUI\Application-&gt;run(Array)
+#66 C:\xampp\htdocs\sie\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#67 {main}
+
+----------------------------------------------------------------------------------
+
+Interface "Illuminate\Broadcasting\ShouldBroadcast" not found
+&#13;
+C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Testing\TestResponseAssert.php:45
+C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:201
+C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php:155</failure>
+        </testcase>
+        <testcase name="test_valid_promo_and_voucher_apply_discounts_and_billing_calculation_endpoint" file="C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php" line="164" class="Tests\Feature\PaymentFlowTest" classname="Tests.Feature.PaymentFlowTest" assertions="6" time="0.035148"/>
+        <testcase name="test_expired_promo_is_rejected_and_quota_exhausted_promo_fails" file="C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php" line="208" class="Tests\Feature\PaymentFlowTest" classname="Tests.Feature.PaymentFlowTest" assertions="4" time="0.031427"/>
+        <testcase name="test_valid_voucher_and_expired_voucher_usage_limit_and_billing_ok" file="C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php" line="265" class="Tests\Feature\PaymentFlowTest" classname="Tests.Feature.PaymentFlowTest" assertions="1" time="0.339538">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\PaymentFlowTest::test_valid_voucher_and_expired_voucher_usage_limit_and_billing_ok&#13;
+Expected response status code [201, 301, 302, 303, 307, 308] but received 500.
+Failed asserting that false is true.&#13;
+&#13;
+The following exception occurred during the last request:
+
+Error: Interface "Illuminate\Broadcasting\ShouldBroadcast" not found in C:\xampp\htdocs\sie\app\Events\BookingNotificationCreated.php:14
+Stack trace:
+#0 C:\xampp\htdocs\sie\vendor\composer\ClassLoader.php(576): include()
+#1 C:\xampp\htdocs\sie\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sie\app\Services\NotificationService.php(26): Composer\Autoload\ClassLoader-&gt;loadClass('App\\Events\\Book...')
+#3 C:\xampp\htdocs\sie\app\Http\Controllers\BookingController.php(52): App\Services\NotificationService-&gt;createNotification(Object(App\Models\User), 'Booking created', 'Your booking #1...', 'booking')
+#4 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(46): App\Http\Controllers\BookingController-&gt;store(Object(App\Http\Requests\StoreBookingRequest))
+#5 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Route.php(269): Illuminate\Routing\ControllerDispatcher-&gt;dispatch(Object(Illuminate\Routing\Route), Object(App\Http\Controllers\BookingController), 'store')
+#6 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Route.php(215): Illuminate\Routing\Route-&gt;runController()
+#7 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(822): Illuminate\Routing\Route-&gt;run()
+#8 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Routing\Router-&gt;Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php(52): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#11 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Auth\Middleware\Authenticate.php(63): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Auth\Middleware\Authenticate-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#13 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestForgery.php(104): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestForgery-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\View\Middleware\ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#17 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(120): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(63): Illuminate\Session\Middleware\StartSession-&gt;handleStatefulRequest(Object(Illuminate\Http\Request), Object(Illuminate\Session\Store), Object(Closure))
+#19 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Session\Middleware\StartSession-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#20 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#21 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#22 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\EncryptCookies.php(74): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#23 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#24 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#25 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(821): Illuminate\Pipeline\Pipeline-&gt;then(Object(Closure))
+#26 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(800): Illuminate\Routing\Router-&gt;runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#27 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(764): Illuminate\Routing\Router-&gt;runRoute(Object(Illuminate\Http\Request), Object(Illuminate\Routing\Route))
+#28 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(753): Illuminate\Routing\Router-&gt;dispatchToRoute(Object(Illuminate\Http\Request))
+#29 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(200): Illuminate\Routing\Router-&gt;dispatch(Object(Illuminate\Http\Request))
+#30 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Foundation\Http\Kernel-&gt;Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#31 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#32 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#33 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#34 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#35 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#37 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#41 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php(61): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#42 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\HandleCors-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php(58): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#44 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#45 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#46 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#47 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePathEncoding.php(28): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#48 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#49 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#50 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(175): Illuminate\Pipeline\Pipeline-&gt;then(Object(Closure))
+#51 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(144): Illuminate\Foundation\Http\Kernel-&gt;sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#52 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel-&gt;handle(Object(Illuminate\Http\Request))
+#53 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(397): Illuminate\Foundation\Testing\TestCase-&gt;call('POST', 'http://localhos...', Array, Array, Array, Array)
+#54 C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php(279): Illuminate\Foundation\Testing\TestCase-&gt;post('http://localhos...', Array)
+#55 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(1314): Tests\Feature\PaymentFlowTest-&gt;test_valid_voucher_and_expired_voucher_usage_limit_and_billing_ok()
+#56 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(1351): PHPUnit\Framework\TestCase-&gt;invokeTestMethod('test_valid_vouc...', Array)
+#57 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(521): PHPUnit\Framework\TestCase-&gt;runTest()
+#58 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestRunner\TestRunner.php(99): PHPUnit\Framework\TestCase-&gt;runBare()
+#59 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(361): PHPUnit\Framework\TestRunner-&gt;run(Object(Tests\Feature\PaymentFlowTest))
+#60 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestCase-&gt;run()
+#61 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestSuite-&gt;run()
+#62 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestSuite-&gt;run()
+#63 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(64): PHPUnit\Framework\TestSuite-&gt;run()
+#64 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\TextUI\Application.php(229): PHPUnit\TextUI\TestRunner-&gt;run(Object(PHPUnit\TextUI\Configuration\Configuration), Object(PHPUnit\Runner\ResultCache\DefaultResultCache), Object(PHPUnit\Framework\TestSuite))
+#65 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\phpunit(104): PHPUnit\TextUI\Application-&gt;run(Array)
+#66 C:\xampp\htdocs\sie\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#67 {main}
+
+----------------------------------------------------------------------------------
+
+Interface "Illuminate\Broadcasting\ShouldBroadcast" not found
+&#13;
+C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Testing\TestResponseAssert.php:45
+C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:201
+C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php:291</failure>
+        </testcase>
+        <testcase name="test_tip_can_only_be_added_after_booking_completed_and_total_updated" file="C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php" line="336" class="Tests\Feature\PaymentFlowTest" classname="Tests.Feature.PaymentFlowTest" assertions="1" time="0.369679">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\PaymentFlowTest::test_tip_can_only_be_added_after_booking_completed_and_total_updated&#13;
+Expected response status code [201, 301, 302, 303, 307, 308] but received 500.
+Failed asserting that false is true.&#13;
+&#13;
+The following exception occurred during the last request:
+
+Error: Interface "Illuminate\Broadcasting\ShouldBroadcast" not found in C:\xampp\htdocs\sie\app\Events\BookingNotificationCreated.php:14
+Stack trace:
+#0 C:\xampp\htdocs\sie\vendor\composer\ClassLoader.php(576): include()
+#1 C:\xampp\htdocs\sie\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sie\app\Services\NotificationService.php(26): Composer\Autoload\ClassLoader-&gt;loadClass('App\\Events\\Book...')
+#3 C:\xampp\htdocs\sie\app\Http\Controllers\TipController.php(29): App\Services\NotificationService-&gt;createNotification(Object(App\Models\User), 'Tip received', 'Your customer l...', 'tip')
+#4 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(46): App\Http\Controllers\TipController-&gt;store(Object(App\Http\Requests\StoreTipRequest), Object(App\Models\Booking))
+#5 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Route.php(269): Illuminate\Routing\ControllerDispatcher-&gt;dispatch(Object(Illuminate\Routing\Route), Object(App\Http\Controllers\TipController), 'store')
+#6 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Route.php(215): Illuminate\Routing\Route-&gt;runController()
+#7 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(822): Illuminate\Routing\Route-&gt;run()
+#8 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Routing\Router-&gt;Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php(52): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#11 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Auth\Middleware\Authenticate.php(63): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Auth\Middleware\Authenticate-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#13 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestForgery.php(104): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestForgery-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\View\Middleware\ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#17 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(120): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(63): Illuminate\Session\Middleware\StartSession-&gt;handleStatefulRequest(Object(Illuminate\Http\Request), Object(Illuminate\Session\Store), Object(Closure))
+#19 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Session\Middleware\StartSession-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#20 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#21 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#22 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\EncryptCookies.php(74): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#23 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#24 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#25 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(821): Illuminate\Pipeline\Pipeline-&gt;then(Object(Closure))
+#26 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(800): Illuminate\Routing\Router-&gt;runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#27 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(764): Illuminate\Routing\Router-&gt;runRoute(Object(Illuminate\Http\Request), Object(Illuminate\Routing\Route))
+#28 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(753): Illuminate\Routing\Router-&gt;dispatchToRoute(Object(Illuminate\Http\Request))
+#29 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(200): Illuminate\Routing\Router-&gt;dispatch(Object(Illuminate\Http\Request))
+#30 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Foundation\Http\Kernel-&gt;Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#31 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#32 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#33 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#34 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#35 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#37 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#38 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#41 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php(61): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#42 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\HandleCors-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php(58): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#44 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#45 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#46 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#47 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePathEncoding.php(28): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#48 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#49 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#50 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(175): Illuminate\Pipeline\Pipeline-&gt;then(Object(Closure))
+#51 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(144): Illuminate\Foundation\Http\Kernel-&gt;sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#52 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel-&gt;handle(Object(Illuminate\Http\Request))
+#53 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(397): Illuminate\Foundation\Testing\TestCase-&gt;call('POST', 'http://localhos...', Array, Array, Array, Array)
+#54 C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php(357): Illuminate\Foundation\Testing\TestCase-&gt;post('http://localhos...', Array)
+#55 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(1314): Tests\Feature\PaymentFlowTest-&gt;test_tip_can_only_be_added_after_booking_completed_and_total_updated()
+#56 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(1351): PHPUnit\Framework\TestCase-&gt;invokeTestMethod('test_tip_can_on...', Array)
+#57 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(521): PHPUnit\Framework\TestCase-&gt;runTest()
+#58 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestRunner\TestRunner.php(99): PHPUnit\Framework\TestCase-&gt;runBare()
+#59 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(361): PHPUnit\Framework\TestRunner-&gt;run(Object(Tests\Feature\PaymentFlowTest))
+#60 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestCase-&gt;run()
+#61 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestSuite-&gt;run()
+#62 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestSuite-&gt;run()
+#63 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(64): PHPUnit\Framework\TestSuite-&gt;run()
+#64 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\TextUI\Application.php(229): PHPUnit\TextUI\TestRunner-&gt;run(Object(PHPUnit\TextUI\Configuration\Configuration), Object(PHPUnit\Runner\ResultCache\DefaultResultCache), Object(PHPUnit\Framework\TestSuite))
+#65 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\phpunit(104): PHPUnit\TextUI\Application-&gt;run(Array)
+#66 C:\xampp\htdocs\sie\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#67 {main}
+
+----------------------------------------------------------------------------------
+
+Interface "Illuminate\Broadcasting\ShouldBroadcast" not found
+&#13;
+C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Testing\TestResponseAssert.php:45
+C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:201
+C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php:358</failure>
+        </testcase>
+        <testcase name="test_only_admin_can_approve_or_reject_payment_routes" file="C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php" line="386" class="Tests\Feature\PaymentFlowTest" classname="Tests.Feature.PaymentFlowTest" assertions="3" time="0.374033">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\PaymentFlowTest::test_only_admin_can_approve_or_reject_payment_routes&#13;
+Expected response status code [201, 301, 302, 303, 307, 308] but received 500.
+Failed asserting that false is true.&#13;
+&#13;
+The following exception occurred during the last request:
+
+Error: Interface "Illuminate\Broadcasting\ShouldBroadcast" not found in C:\xampp\htdocs\sie\app\Events\BookingNotificationCreated.php:14
+Stack trace:
+#0 C:\xampp\htdocs\sie\vendor\composer\ClassLoader.php(576): include()
+#1 C:\xampp\htdocs\sie\vendor\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sie\app\Services\NotificationService.php(26): Composer\Autoload\ClassLoader-&gt;loadClass('App\\Events\\Book...')
+#3 C:\xampp\htdocs\sie\app\Http\Controllers\Admin\PaymentController.php(60): App\Services\NotificationService-&gt;createNotification(Object(App\Models\User), 'Payment approve...', 'Your payment fo...', 'payment')
+#4 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(46): App\Http\Controllers\Admin\PaymentController-&gt;approve(Object(Illuminate\Http\Request), Object(App\Models\Payment))
+#5 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Route.php(269): Illuminate\Routing\ControllerDispatcher-&gt;dispatch(Object(Illuminate\Routing\Route), Object(App\Http\Controllers\Admin\PaymentController), 'approve')
+#6 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Route.php(215): Illuminate\Routing\Route-&gt;runController()
+#7 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(822): Illuminate\Routing\Route-&gt;run()
+#8 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Routing\Router-&gt;Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#9 C:\xampp\htdocs\sie\app\Http\Middleware\EnsureRole.php(26): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#10 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): App\Http\Middleware\EnsureRole-&gt;handle(Object(Illuminate\Http\Request), Object(Closure), 'admin')
+#11 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php(52): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#12 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#13 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Auth\Middleware\Authenticate.php(63): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#14 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Auth\Middleware\Authenticate-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestForgery.php(104): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#16 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestForgery-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#17 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\View\Middleware\ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#18 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#19 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(120): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#20 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(63): Illuminate\Session\Middleware\StartSession-&gt;handleStatefulRequest(Object(Illuminate\Http\Request), Object(Illuminate\Session\Store), Object(Closure))
+#21 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Session\Middleware\StartSession-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#22 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#23 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#24 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\EncryptCookies.php(74): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#25 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#26 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#27 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(821): Illuminate\Pipeline\Pipeline-&gt;then(Object(Closure))
+#28 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(800): Illuminate\Routing\Router-&gt;runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#29 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(764): Illuminate\Routing\Router-&gt;runRoute(Object(Illuminate\Http\Request), Object(Illuminate\Routing\Route))
+#30 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Routing\Router.php(753): Illuminate\Routing\Router-&gt;dispatchToRoute(Object(Illuminate\Http\Request))
+#31 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(200): Illuminate\Routing\Router-&gt;dispatch(Object(Illuminate\Http\Request))
+#32 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Foundation\Http\Kernel-&gt;Illuminate\Foundation\Http\{closure}(Object(Illuminate\Http\Request))
+#33 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#34 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#35 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#37 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#38 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#40 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#41 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php(109): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#42 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php(61): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#44 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\HandleCors-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#45 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php(58): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#46 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#47 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#48 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#49 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePathEncoding.php(28): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#50 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding-&gt;handle(Object(Illuminate\Http\Request), Object(Closure))
+#51 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline-&gt;Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#52 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(175): Illuminate\Pipeline\Pipeline-&gt;then(Object(Closure))
+#53 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(144): Illuminate\Foundation\Http\Kernel-&gt;sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#54 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(607): Illuminate\Foundation\Http\Kernel-&gt;handle(Object(Illuminate\Http\Request))
+#55 C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(397): Illuminate\Foundation\Testing\TestCase-&gt;call('POST', 'http://localhos...', Array, Array, Array, Array)
+#56 C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php(420): Illuminate\Foundation\Testing\TestCase-&gt;post('http://localhos...')
+#57 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(1314): Tests\Feature\PaymentFlowTest-&gt;test_only_admin_can_approve_or_reject_payment_routes()
+#58 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(1351): PHPUnit\Framework\TestCase-&gt;invokeTestMethod('test_only_admin...', Array)
+#59 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(521): PHPUnit\Framework\TestCase-&gt;runTest()
+#60 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestRunner\TestRunner.php(99): PHPUnit\Framework\TestCase-&gt;runBare()
+#61 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestCase.php(361): PHPUnit\Framework\TestRunner-&gt;run(Object(Tests\Feature\PaymentFlowTest))
+#62 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestCase-&gt;run()
+#63 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestSuite-&gt;run()
+#64 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\Framework\TestSuite.php(374): PHPUnit\Framework\TestSuite-&gt;run()
+#65 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(64): PHPUnit\Framework\TestSuite-&gt;run()
+#66 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\src\TextUI\Application.php(229): PHPUnit\TextUI\TestRunner-&gt;run(Object(PHPUnit\TextUI\Configuration\Configuration), Object(PHPUnit\Runner\ResultCache\DefaultResultCache), Object(PHPUnit\Framework\TestSuite))
+#67 C:\xampp\htdocs\sie\vendor\phpunit\phpunit\phpunit(104): PHPUnit\TextUI\Application-&gt;run(Array)
+#68 C:\xampp\htdocs\sie\vendor\bin\phpunit(122): include('C:\\xampp\\htdocs...')
+#69 {main}
+
+----------------------------------------------------------------------------------
+
+Interface "Illuminate\Broadcasting\ShouldBroadcast" not found
+&#13;
+C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Testing\TestResponseAssert.php:45
+C:\xampp\htdocs\sie\vendor\laravel\framework\src\Illuminate\Testing\TestResponse.php:201
+C:\xampp\htdocs\sie\tests\Feature\PaymentFlowTest.php:420</failure>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

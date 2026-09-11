@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.gradle.ApiControllerTest" 
+           tests="6" 
+           failures="1" 
+           errors="0" 
+           skipped="1" 
+           time="8.246" 
+           timestamp="2023-12-01T10:45:22" 
+           hostname="gradle-worker-01">
+  
+  <testcase classname="com.example.gradle.ApiControllerTest" 
+            name="testGetUser" 
+            time="1.234">
+  </testcase>
+  
+  <testcase classname="com.example.gradle.ApiControllerTest" 
+            name="testCreateUser" 
+            time="2.156">
+  </testcase>
+  
+  <testcase classname="com.example.gradle.ApiControllerTest" 
+            name="testUpdateUser" 
+            time="1.876">
+  </testcase>
+  
+  <testcase classname="com.example.gradle.ApiControllerTest" 
+            name="testDeleteUser" 
+            time="0.987">
+    <failure message="Expected status 204 but was 500" 
+             type="AssertionError">
+      <![CDATA[
+AssertionError: Expected status 204 but was 500
+Expected: 204
+Actual: 500
+
+Response body: {"error":"Internal Server Error","message":"Database constraint violation"}
+
+at com.example.gradle.ApiControllerTest.testDeleteUser(ApiControllerTest.java:95)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+      ]]>
+    </failure>
+  </testcase>
+  
+  <testcase classname="com.example.gradle.ApiControllerTest" 
+            name="testGetAllUsers" 
+            time="1.456">
+  </testcase>
+  
+  <testcase classname="com.example.gradle.ApiControllerTest" 
+            name="testGetUserNotFound" 
+            time="0.537">
+    <skipped message="Test requires external service that is not available in CI"/>
+  </testcase>
+  
+  <system-out><![CDATA[
+2023-12-01 10:45:22.123 INFO  --- [    Test worker] c.e.g.ApiControllerTest : Starting ApiControllerTest
+2023-12-01 10:45:22.134 INFO  --- [    Test worker] c.e.g.config.TestConfig : Initializing test configuration
+2023-12-01 10:45:22.145 INFO  --- [    Test worker] c.e.g.config.TestConfig : Test database URL: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+2023-12-01 10:45:22.167 INFO  --- [    Test worker] c.e.g.ApiController     : API Controller initialized
+2023-12-01 10:45:23.401 INFO  --- [    Test worker] c.e.g.ApiControllerTest : testGetUser - GET /api/users/1 - Status: 200
+2023-12-01 10:45:25.557 INFO  --- [    Test worker] c.e.g.ApiControllerTest : testCreateUser - POST /api/users - Status: 201
+2023-12-01 10:45:27.433 INFO  --- [    Test worker] c.e.g.ApiControllerTest : testUpdateUser - PUT /api/users/1 - Status: 200
+2023-12-01 10:45:28.420 ERROR --- [    Test worker] c.e.g.ApiController     : Error deleting user with ID: 1
+2023-12-01 10:45:28.420 ERROR --- [    Test worker] c.e.g.ApiController     : Database constraint violation: Cannot delete user with active orders
+2023-12-01 10:45:29.876 INFO  --- [    Test worker] c.e.g.ApiControllerTest : testGetAllUsers - GET /api/users - Status: 200, Count: 1
+2023-12-01 10:45:30.413 WARN  --- [    Test worker] c.e.g.ApiControllerTest : testGetUserNotFound skipped - External service unavailable
+  ]]></system-out>
+  
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

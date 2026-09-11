@@ -1,0 +1,176 @@
+<testsuites id="" name="" tests="3" failures="3" skipped="0" errors="0" time="18.429510999999998">
+<testsuite name="apitest\get_api.spec.ts" timestamp="2026-03-19T12:43:24.288Z" hostname="chromium" tests="1" failures="1" skipped="0" time="0.228" errors="0">
+<testcase name="Get booking details by Id- path param" classname="apitest\get_api.spec.ts" time="0.228">
+<failure message="get_api.spec.ts:3:5 Get booking details by Id- path param" type="FAILURE">
+<![CDATA[  [chromium] › apitest\get_api.spec.ts:3:5 › Get booking details by Id- path param ─────────────────
+
+    TypeError: apiRequestContext.get: Invalid URL
+
+       6 |
+       7 |   //sending get request
+    >  8 |   const response = await request.get(`/booking/${bookingId}`);
+         |                                  ^
+       9 |
+      10 |   //parse the response and print
+      11 |   const responseBody = await response.json();
+        at D:\Playwright\tests\apitest\get_api.spec.ts:8:34
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TypeError: apiRequestContext.get: Invalid URL
+
+       6 |
+       7 |   //sending get request
+    >  8 |   const response = await request.get(`/booking/${bookingId}`);
+         |                                  ^
+       9 |
+      10 |   //parse the response and print
+      11 |   const responseBody = await response.json();
+        at D:\Playwright\tests\apitest\get_api.spec.ts:8:34
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TypeError: apiRequestContext.get: Invalid URL
+
+       6 |
+       7 |   //sending get request
+    >  8 |   const response = await request.get(`/booking/${bookingId}`);
+         |                                  ^
+       9 |
+      10 |   //parse the response and print
+      11 |   const responseBody = await response.json();
+        at D:\Playwright\tests\apitest\get_api.spec.ts:8:34
+
+    Retry #3 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TypeError: apiRequestContext.get: Invalid URL
+
+       6 |
+       7 |   //sending get request
+    >  8 |   const response = await request.get(`/booking/${bookingId}`);
+         |                                  ^
+       9 |
+      10 |   //parse the response and print
+      11 |   const responseBody = await response.json();
+        at D:\Playwright\tests\apitest\get_api.spec.ts:8:34
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="apitest\get_api.spec.ts" timestamp="2026-03-19T12:43:24.288Z" hostname="firefox" tests="1" failures="1" skipped="0" time="0.298" errors="0">
+<testcase name="Get booking details by Id- path param" classname="apitest\get_api.spec.ts" time="0.298">
+<failure message="get_api.spec.ts:3:5 Get booking details by Id- path param" type="FAILURE">
+<![CDATA[  [firefox] › apitest\get_api.spec.ts:3:5 › Get booking details by Id- path param ──────────────────
+
+    TypeError: apiRequestContext.get: Invalid URL
+
+       6 |
+       7 |   //sending get request
+    >  8 |   const response = await request.get(`/booking/${bookingId}`);
+         |                                  ^
+       9 |
+      10 |   //parse the response and print
+      11 |   const responseBody = await response.json();
+        at D:\Playwright\tests\apitest\get_api.spec.ts:8:34
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TypeError: apiRequestContext.get: Invalid URL
+
+       6 |
+       7 |   //sending get request
+    >  8 |   const response = await request.get(`/booking/${bookingId}`);
+         |                                  ^
+       9 |
+      10 |   //parse the response and print
+      11 |   const responseBody = await response.json();
+        at D:\Playwright\tests\apitest\get_api.spec.ts:8:34
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TypeError: apiRequestContext.get: Invalid URL
+
+       6 |
+       7 |   //sending get request
+    >  8 |   const response = await request.get(`/booking/${bookingId}`);
+         |                                  ^
+       9 |
+      10 |   //parse the response and print
+      11 |   const responseBody = await response.json();
+        at D:\Playwright\tests\apitest\get_api.spec.ts:8:34
+
+    Retry #3 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TypeError: apiRequestContext.get: Invalid URL
+
+       6 |
+       7 |   //sending get request
+    >  8 |   const response = await request.get(`/booking/${bookingId}`);
+         |                                  ^
+       9 |
+      10 |   //parse the response and print
+      11 |   const responseBody = await response.json();
+        at D:\Playwright\tests\apitest\get_api.spec.ts:8:34
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="apitest\get_api.spec.ts" timestamp="2026-03-19T12:43:24.288Z" hostname="webkit" tests="1" failures="1" skipped="0" time="0.187" errors="0">
+<testcase name="Get booking details by Id- path param" classname="apitest\get_api.spec.ts" time="0.187">
+<failure message="get_api.spec.ts:3:5 Get booking details by Id- path param" type="FAILURE">
+<![CDATA[  [webkit] › apitest\get_api.spec.ts:3:5 › Get booking details by Id- path param ───────────────────
+
+    TypeError: apiRequestContext.get: Invalid URL
+
+       6 |
+       7 |   //sending get request
+    >  8 |   const response = await request.get(`/booking/${bookingId}`);
+         |                                  ^
+       9 |
+      10 |   //parse the response and print
+      11 |   const responseBody = await response.json();
+        at D:\Playwright\tests\apitest\get_api.spec.ts:8:34
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TypeError: apiRequestContext.get: Invalid URL
+
+       6 |
+       7 |   //sending get request
+    >  8 |   const response = await request.get(`/booking/${bookingId}`);
+         |                                  ^
+       9 |
+      10 |   //parse the response and print
+      11 |   const responseBody = await response.json();
+        at D:\Playwright\tests\apitest\get_api.spec.ts:8:34
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TypeError: apiRequestContext.get: Invalid URL
+
+       6 |
+       7 |   //sending get request
+    >  8 |   const response = await request.get(`/booking/${bookingId}`);
+         |                                  ^
+       9 |
+      10 |   //parse the response and print
+      11 |   const responseBody = await response.json();
+        at D:\Playwright\tests\apitest\get_api.spec.ts:8:34
+
+    Retry #3 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TypeError: apiRequestContext.get: Invalid URL
+
+       6 |
+       7 |   //sending get request
+    >  8 |   const response = await request.get(`/booking/${bookingId}`);
+         |                                  ^
+       9 |
+      10 |   //parse the response and print
+      11 |   const responseBody = await response.json();
+        at D:\Playwright\tests\apitest\get_api.spec.ts:8:34
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

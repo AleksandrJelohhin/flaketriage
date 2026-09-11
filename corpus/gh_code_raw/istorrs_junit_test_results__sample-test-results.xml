@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Sample Test Suite" tests="15" failures="3" errors="1" skipped="2" time="12.456" timestamp="2025-11-08T10:30:00">
+    <testsuite name="com.example.tests.AuthenticationTests" tests="6" failures="2" errors="0" skipped="1" time="4.234" timestamp="2025-11-08T10:30:00">
+        <properties>
+            <property name="test.category" value="security"/>
+            <property name="test.priority" value="high"/>
+        </properties>
+        
+        <testcase name="testValidLogin" classname="com.example.tests.AuthenticationTests" time="0.856" assertions="3">
+            <system-out>Login attempt with valid credentials</system-out>
+        </testcase>
+        
+        <testcase name="testInvalidPassword" classname="com.example.tests.AuthenticationTests" time="0.234" assertions="2">
+            <failure message="Expected authentication to fail but it succeeded" type="AssertionError">
+                org.junit.ComparisonFailure: Expected authentication to fail but it succeeded
+                at com.example.tests.AuthenticationTests.testInvalidPassword(AuthenticationTests.java:45)
+                at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+                at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+            </failure>
+            <system-out>Login attempt with invalid password</system-out>
+        </testcase>
+        
+        <testcase name="testEmptyCredentials" classname="com.example.tests.AuthenticationTests" time="0.123" assertions="1">
+            <failure message="Should reject empty credentials" type="AssertionFailedError">
+                org.opentest4j.AssertionFailedError: Should reject empty credentials
+                at com.example.tests.AuthenticationTests.testEmptyCredentials(AuthenticationTests.java:52)
+            </failure>
+        </testcase>
+        
+        <testcase name="testAccountLockout" classname="com.example.tests.AuthenticationTests" time="1.234" assertions="4">
+            <skipped message="Account lockout feature not yet implemented"/>
+        </testcase>
+        
+        <testcase name="testPasswordReset" classname="com.example.tests.AuthenticationTests" time="0.567" assertions="3">
+            <system-out>Password reset flow executed successfully</system-out>
+        </testcase>
+        
+        <testcase name="testSessionTimeout" classname="com.example.tests.AuthenticationTests" time="1.220" assertions="2">
+            <system-out>Session timeout test completed</system-out>
+        </testcase>
+    </testsuite>
+    
+    <testsuite name="com.example.tests.UserManagementTests" tests="5" failures="1" errors="1" skipped="0" time="3.456" timestamp="2025-11-08T10:30:04">
+        <properties>
+            <property name="test.category" value="user-management"/>
+            <property name="test.priority" value="medium"/>
+        </properties>
+        
+        <testcase name="testCreateUser" classname="com.example.tests.UserManagementTests" time="0.456" assertions="5">
+            <system-out>User created successfully with ID: 12345</system-out>
+        </testcase>
+        
+        <testcase name="testUpdateUserProfile" classname="com.example.tests.UserManagementTests" time="0.345" assertions="3">
+            <system-out>User profile updated successfully</system-out>
+        </testcase>
+        
+        <testcase name="testDeleteUser" classname="com.example.tests.UserManagementTests" time="0.234" assertions="2">
+            <system-out>User deleted successfully</system-out>
+        </testcase>
+        
+        <testcase name="testUserPermissions" classname="com.example.tests.UserManagementTests" time="0.123" assertions="4">
+            <error message="Database connection timeout" type="java.sql.SQLException">
+                java.sql.SQLException: Database connection timeout
+                at com.example.database.ConnectionPool.getConnection(ConnectionPool.java:78)
+                at com.example.tests.UserManagementTests.testUserPermissions(UserManagementTests.java:89)
+            </error>
+        </testcase>
+        
+        <testcase name="testUserSearch" classname="com.example.tests.UserManagementTests" time="2.298" assertions="6">
+            <failure message="User search returned incorrect results" type="AssertionError">
+                org.junit.ComparisonFailure: User search returned incorrect results
+                at com.example.tests.UserManagementTests.testUserSearch(UserManagementTests.java:95)
+            </failure>
+        </testcase>
+    </testsuite>
+    
+    <testsuite name="com.example.tests.PerformanceTests" tests="4" failures="0" errors="0" skipped="1" time="4.766" timestamp="2025-11-08T10:30:08">
+        <properties>
+            <property name="test.category" value="performance"/>
+            <property name="test.priority" value="high"/>
+        </properties>
+        
+        <testcase name="testPageLoadTime" classname="com.example.tests.PerformanceTests" time="1.234" assertions="2">
+            <system-out>Page load time: 1.234s</system-out>
+        </testcase>
+        
+        <testcase name="testApiResponseTime" classname="com.example.tests.PerformanceTests" time="0.567" assertions="3">
+            <system-out>API response time: 0.567s</system-out>
+        </testcase>
+        
+        <testcase name="testDatabaseQueryPerformance" classname="com.example.tests.PerformanceTests" time="2.345" assertions="4">
+            <system-out>Database query executed in 2.345s</system-out>
+        </testcase>
+        
+        <testcase name="testMemoryUsage" classname="com.example.tests.PerformanceTests" time="0.620" assertions="1">
+            <skipped message="Memory monitoring not configured in test environment"/>
+        </testcase>
+    </testsuite>
+    
+    <system-out>Test execution completed</system-out>
+    <system-err>No errors during test execution</system-err>
+</testsuites>

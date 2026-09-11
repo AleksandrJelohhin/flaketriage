@@ -1,0 +1,152 @@
+<testsuites id="" name="" tests="9" failures="9" skipped="0" errors="0" time="3.3892510000000002">
+<testsuite name="login.spec.ts" timestamp="2025-08-28T09:13:57.452Z" hostname="chromium" tests="3" failures="3" skipped="0" time="0.056" errors="0">
+<testcase name="Tests de la page Login avec locators privés › Test complet de login - succès" classname="login.spec.ts" time="0.015">
+<failure message="login.spec.ts:5:7 Test complet de login - succès" type="FAILURE">
+<![CDATA[  [chromium] › login.spec.ts:5:7 › Tests de la page Login avec locators privés › Test complet de login - succès @Smoke @TC001 
+
+    Error: browserType.launch: Executable doesn't exist at /home/zero/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Tests de la page Login avec locators privés › Test de login avec erreur" classname="login.spec.ts" time="0.022">
+<failure message="login.spec.ts:29:7 Test de login avec erreur" type="FAILURE">
+<![CDATA[  [chromium] › login.spec.ts:29:7 › Tests de la page Login avec locators privés › Test de login avec erreur @Smoke @TC001 
+
+    Error: browserType.launch: Executable doesn't exist at /home/zero/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Tests de la page Login avec locators privés › Test avec utilisateur bloqué" classname="login.spec.ts" time="0.019">
+<failure message="login.spec.ts:51:7 Test avec utilisateur bloqué" type="FAILURE">
+<![CDATA[  [chromium] › login.spec.ts:51:7 › Tests de la page Login avec locators privés › Test avec utilisateur bloqué @Smoke @TC001 
+
+    Error: browserType.launch: Executable doesn't exist at /home/zero/.cache/ms-playwright/chromium_headless_shell-1187/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="login.spec.ts" timestamp="2025-08-28T09:13:57.452Z" hostname="firefox" tests="3" failures="3" skipped="0" time="0.056" errors="0">
+<testcase name="Tests de la page Login avec locators privés › Test complet de login - succès" classname="login.spec.ts" time="0.022">
+<failure message="login.spec.ts:5:7 Test complet de login - succès" type="FAILURE">
+<![CDATA[  [firefox] › login.spec.ts:5:7 › Tests de la page Login avec locators privés › Test complet de login - succès @Smoke @TC001 
+
+    Error: browserType.launch: Executable doesn't exist at /home/zero/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Tests de la page Login avec locators privés › Test de login avec erreur" classname="login.spec.ts" time="0.016">
+<failure message="login.spec.ts:29:7 Test de login avec erreur" type="FAILURE">
+<![CDATA[  [firefox] › login.spec.ts:29:7 › Tests de la page Login avec locators privés › Test de login avec erreur @Smoke @TC001 
+
+    Error: browserType.launch: Executable doesn't exist at /home/zero/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Tests de la page Login avec locators privés › Test avec utilisateur bloqué" classname="login.spec.ts" time="0.018">
+<failure message="login.spec.ts:51:7 Test avec utilisateur bloqué" type="FAILURE">
+<![CDATA[  [firefox] › login.spec.ts:51:7 › Tests de la page Login avec locators privés › Test avec utilisateur bloqué @Smoke @TC001 
+
+    Error: browserType.launch: Executable doesn't exist at /home/zero/.cache/ms-playwright/firefox-1490/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="login.spec.ts" timestamp="2025-08-28T09:13:57.452Z" hostname="webkit" tests="3" failures="3" skipped="0" time="0.033" errors="0">
+<testcase name="Tests de la page Login avec locators privés › Test complet de login - succès" classname="login.spec.ts" time="0.011">
+<failure message="login.spec.ts:5:7 Test complet de login - succès" type="FAILURE">
+<![CDATA[  [webkit] › login.spec.ts:5:7 › Tests de la page Login avec locators privés › Test complet de login - succès @Smoke @TC001 
+
+    Error: browserType.launch: Executable doesn't exist at /home/zero/.cache/ms-playwright/webkit-2203/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Tests de la page Login avec locators privés › Test de login avec erreur" classname="login.spec.ts" time="0.009">
+<failure message="login.spec.ts:29:7 Test de login avec erreur" type="FAILURE">
+<![CDATA[  [webkit] › login.spec.ts:29:7 › Tests de la page Login avec locators privés › Test de login avec erreur @Smoke @TC001 
+
+    Error: browserType.launch: Executable doesn't exist at /home/zero/.cache/ms-playwright/webkit-2203/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Tests de la page Login avec locators privés › Test avec utilisateur bloqué" classname="login.spec.ts" time="0.013">
+<failure message="login.spec.ts:51:7 Test avec utilisateur bloqué" type="FAILURE">
+<![CDATA[  [webkit] › login.spec.ts:51:7 › Tests de la page Login avec locators privés › Test avec utilisateur bloqué @Smoke @TC001 
+
+    Error: browserType.launch: Executable doesn't exist at /home/zero/.cache/ms-playwright/webkit-2203/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

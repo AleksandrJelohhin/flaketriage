@@ -1,0 +1,176 @@
+<testsuites id="" name="" tests="6" failures="2" skipped="0" errors="2" time="83.55292600000001">
+<testsuite name="reporters.spec.ts" timestamp="2026-07-19T07:31:06.246Z" hostname="chromium" tests="3" failures="1" skipped="0" time="39.643" errors="0">
+<testcase name="logotest" classname="reporters.spec.ts" time="12.262">
+</testcase>
+<testcase name="title test" classname="reporters.spec.ts" time="14.984">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\reporters-title-test-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\reporters-title-test-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\reporters-title-test-chromium\error-context.md]]
+]]>
+</system-out>
+<failure message="expect(received).toContain(expected) // indexOf" type="expect.toContain">
+<![CDATA[  [chromium] › reporters.spec.ts:13:5 › title test ─────────────────────────────────────────────────
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Demo Web Shop1"
+    Received string:    "Demo Web Shop"
+
+      12 |
+      13 | test('title test', async ({ page }) => {
+    > 14 |     expect(await page.title()).toContain("Demo Web Shop1");
+         |                                ^
+      15 | });
+      16 |
+      17 | test('search test', async ({ page }) => {
+        at F:\Automation_Workspace\PWDEMOS\tests\reporters.spec.ts:14:32
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\reporters-title-test-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\reporters-title-test-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\reporters-title-test-chromium\error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="search test" classname="reporters.spec.ts" time="12.397">
+</testcase>
+</testsuite>
+<testsuite name="reporters.spec.ts" timestamp="2026-07-19T07:31:06.246Z" hostname="firefox" tests="3" failures="1" skipped="0" time="102.023" errors="2">
+<testcase name="logotest" classname="reporters.spec.ts" time="40.602">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\reporters-logotest-firefox\video.webm]]
+
+[[ATTACHMENT|test-results\reporters-logotest-firefox\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [firefox] › reporters.spec.ts:9:5 › logotest ─────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      1 | import {test,expect} from '@playwright/test';
+      2 |
+    > 3 | test.beforeEach('launching app',async({page})=>{
+        |      ^
+      4 |
+      5 | await page.goto("https://demowebshop.tricentis.com/")
+      6 |
+        at F:\Automation_Workspace\PWDEMOS\tests\reporters.spec.ts:3:6
+
+    Error: page.goto: Test timeout of 30000ms exceeded.
+    Call log:
+      - navigating to "https://demowebshop.tricentis.com/", waiting until "load"
+
+
+      3 | test.beforeEach('launching app',async({page})=>{
+      4 |
+    > 5 | await page.goto("https://demowebshop.tricentis.com/")
+        |            ^
+      6 |
+      7 | })
+      8 |
+        at F:\Automation_Workspace\PWDEMOS\tests\reporters.spec.ts:5:12
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\reporters-logotest-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\reporters-logotest-firefox\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="title test" classname="reporters.spec.ts" time="20.861">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\reporters-title-test-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\reporters-title-test-firefox\video.webm]]
+
+[[ATTACHMENT|test-results\reporters-title-test-firefox\error-context.md]]
+]]>
+</system-out>
+<failure message="expect(received).toContain(expected) // indexOf" type="expect.toContain">
+<![CDATA[  [firefox] › reporters.spec.ts:13:5 › title test ──────────────────────────────────────────────────
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Demo Web Shop1"
+    Received string:    "Demo Web Shop"
+
+      12 |
+      13 | test('title test', async ({ page }) => {
+    > 14 |     expect(await page.title()).toContain("Demo Web Shop1");
+         |                                ^
+      15 | });
+      16 |
+      17 | test('search test', async ({ page }) => {
+        at F:\Automation_Workspace\PWDEMOS\tests\reporters.spec.ts:14:32
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\reporters-title-test-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\reporters-title-test-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\reporters-title-test-firefox\error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="search test" classname="reporters.spec.ts" time="40.56">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\reporters-search-test-firefox\video.webm]]
+
+[[ATTACHMENT|test-results\reporters-search-test-firefox\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [firefox] › reporters.spec.ts:17:5 › search test ─────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      1 | import {test,expect} from '@playwright/test';
+      2 |
+    > 3 | test.beforeEach('launching app',async({page})=>{
+        |      ^
+      4 |
+      5 | await page.goto("https://demowebshop.tricentis.com/")
+      6 |
+        at F:\Automation_Workspace\PWDEMOS\tests\reporters.spec.ts:3:6
+
+    Error: page.goto: Test timeout of 30000ms exceeded.
+    Call log:
+      - navigating to "https://demowebshop.tricentis.com/", waiting until "load"
+
+
+      3 | test.beforeEach('launching app',async({page})=>{
+      4 |
+    > 5 | await page.goto("https://demowebshop.tricentis.com/")
+        |            ^
+      6 |
+      7 | })
+      8 |
+        at F:\Automation_Workspace\PWDEMOS\tests\reporters.spec.ts:5:12
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\reporters-search-test-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\reporters-search-test-firefox\error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+</testsuites>

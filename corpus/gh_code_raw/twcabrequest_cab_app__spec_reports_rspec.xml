@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite tests="94" failures="2" errors="0" time="50.512662" timestamp="2014-01-12T15:06:09+05:30">
+  <properties/>
+  <testcase classname="spec.controllers.application_controller_spec" name="ApplicationController should return false if the logged in user is not an admin" time="0.232892"/>
+  <testcase classname="spec.controllers.application_controller_spec" name="ApplicationController should redirect to new request page if user is logged in" time="0.010831"/>
+  <testcase classname="spec.controllers.application_controller_spec" name="ApplicationController should return true if the logged in user is admin" time="0.142032"/>
+  <testcase classname="spec.controllers.application_controller_spec" name="ApplicationController should redirect to CAS login page if user is not logged in" time="0.009723"/>
+  <testcase classname="spec.views.vendor_response.index" name="vendor_response/_index.html.haml add some examples to (or delete) /home/tw/Documents/CabApp/cab_app/spec/views/vendor_response/index.html.haml_spec.rb" time="0.000031">
+    <skipped/>
+  </testcase>
+  <testcase classname="spec.controllers.vendors_controller_spec" name="VendorsController destroy should redirect to index page when deleted " time="0.018557"/>
+  <testcase classname="spec.controllers.vendors_controller_spec" name="VendorsController new should create a new Vendor" time="0.024312"/>
+  <testcase classname="spec.controllers.vendors_controller_spec" name="VendorsController new should render the new view " time="0.008902"/>
+  <testcase classname="spec.controllers.vendors_controller_spec" name="VendorsController create should redirect to the index page when saved" time="0.011260"/>
+  <testcase classname="spec.controllers.vendors_controller_spec" name="VendorsController create should render new when not saved" time="0.045338"/>
+  <testcase classname="spec.controllers.vendors_controller_spec" name="VendorsController Edit should find a particular Vendor" time="0.009127"/>
+  <testcase classname="spec.controllers.vendors_controller_spec" name="VendorsController Edit should render the edit view " time="0.008950"/>
+  <testcase classname="spec.controllers.vendors_controller_spec" name="VendorsController update should redirect to index page when updated " time="0.013694"/>
+  <testcase classname="spec.controllers.vendors_controller_spec" name="VendorsController update should render edit when not updated" time="0.012481"/>
+  <testcase classname="spec.controllers.vendors_controller_spec" name="VendorsController Index should populate array of vendor" time="0.063153"/>
+  <testcase classname="spec.controllers.vendors_controller_spec" name="VendorsController Index should renders the index view" time="0.009205"/>
+  <testcase classname="spec.models.admin_spec" name="Admin User Status  should not contain other than a boolean value " time="0.004859"/>
+  <testcase classname="spec.models.admin_spec" name="Admin all mandatory fields should contain a value" time="0.003382"/>
+  <testcase classname="spec.models.admin_spec" name="Admin User contact number  should not contain non-numeric data" time="0.003940"/>
+  <testcase classname="spec.models.admin_spec" name="Admin User contact number  should not be blank" time="0.004380"/>
+  <testcase classname="spec.models.admin_spec" name="Admin User contact number  should not contain more or less than ten digits" time="0.003565"/>
+  <testcase classname="spec.models.admin_spec" name="Admin admin name should be unique" time="0.005642"/>
+  <testcase classname="spec.models.admin_spec" name="Admin admin name should not be blank" time="0.003169"/>
+  <testcase classname="spec.models.admin_spec" name="Admin admin name should not contain digits" time="0.002981"/>
+  <testcase classname="spec.models.admin_spec" name="Admin Email should not be blank" time="0.002943"/>
+  <testcase classname="spec.models.admin_spec" name="Admin Class structure validations should have all required fields" time="0.000994"/>
+  <testcase classname="spec.views.vendor_response.edit" name="vendor_response/edit.html.haml add some examples to (or delete) /home/tw/Documents/CabApp/cab_app/spec/views/vendor_response/edit.html.haml_spec.rb" time="0.000030">
+    <skipped/>
+  </testcase>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest pick_up_date_time should not be blank" time="0.021574"/>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest pick_up_date_time should be in future only" time="0.002144"/>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest all mandatory fields should contain a value" time="0.003921"/>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest pick_up_date should not be blank" time="0.002712"/>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest Vehicle Type should not be blank" time="0.002491"/>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest Source Should not be same as Destination" time="0.001864"/>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest Source should not be blank" time="0.002588"/>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest Source should not be more than 100 characters" time="0.002792"/>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest Project should not contain more than 500 characters" time="0.002767"/>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest Destination should not be blank" time="0.002600"/>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest Destination should not be more than 100 characters" time="0.002518"/>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest traveler name should not be blank" time="0.002534"/>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest traveler name should not be more than 35 characters" time="0.002517"/>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest Class structure validations should have all required fields  " time="0.001267"/>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest Contact number  should not be blank" time="0.003231"/>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest Contact number  should not be less than 10 characters" time="0.002509"/>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest requester should not be blank" time="0.002505"/>
+  <testcase classname="spec.models.cab_request_spec" name="CabRequest Comments should not contain more than 500 characters" time="0.002739"/>
+  <testcase classname="spec.helpers.application_helper_spec" name="ApplicationHelper should convert time to IST correctly." time="0.003582"/>
+  <testcase classname="spec.helpers.application_helper_spec" name="ApplicationHelper current user should return the session user if the session has a user" time="0.002753"/>
+  <testcase classname="spec.helpers.application_helper_spec" name="ApplicationHelper current user should return nil if the session doesn't have a user" time="0.001025"/>
+  <testcase classname="spec.helpers.vendor_response_helper_spec" name="VendorResponseHelper add some examples to (or delete) /home/tw/Documents/CabApp/cab_app/spec/helpers/vendor_response_helper_spec.rb" time="0.000025">
+    <skipped/>
+  </testcase>
+  <testcase classname="spec.controllers.requesters_controller_spec" name="RequestersController logout should log out successfully" time="0.004961"/>
+  <testcase classname="spec.controllers.support_centers_controller_spec" name="SupportCentersController show should render html page" time="0.074205"/>
+  <testcase classname="spec.controllers.support_centers_controller_spec" name="SupportCentersController show should assign CabRequest data to @cab_requests " time="0.014992"/>
+  <testcase classname="spec.controllers.support_centers_controller_spec" name="SupportCentersController show should render xls page" time="0.015311"/>
+  <testcase classname="spec.controllers.support_centers_controller_spec" name="SupportCentersController update should update status of required admin" time="0.020319"/>
+  <testcase classname="spec.controllers.support_centers_controller_spec" name="SupportCentersController update should redirect to index path" time="0.015803"/>
+  <testcase classname="spec.controllers.support_centers_controller_spec" name="SupportCentersController update should update status of required vendor" time="0.017991"/>
+  <testcase classname="spec.controllers.support_centers_controller_spec" name="SupportCentersController edit should assign requested User data to @admins" time="0.026177"/>
+  <testcase classname="spec.controllers.support_centers_controller_spec" name="SupportCentersController edit should assign requested Vendor data to @vendors" time="0.011542"/>
+  <testcase classname="spec.controllers.support_centers_controller_spec" name="SupportCentersController index should assign requested Admin data to @admin" time="0.012160"/>
+  <testcase classname="spec.controllers.support_centers_controller_spec" name="SupportCentersController index should assign requested Vendor data to @vendor" time="0.012360">
+    <failure message="expected: #&lt;Vendor id: 9, name: &quot;tina&quot;, contact_no: &quot;9876543210&quot;, status: true, email: &quot;pulkitko@gmail.com&quot;&gt;&#10;     got: #&lt;Vendor id: 1, name: &quot;vaibhavk&quot;, contact_no: &quot;1234567890&quot;, status: true, email: &quot;vaibhavkhunger@gmail.com&quot;&gt; (using ==)&#10;Diff:&#10;�[34m@@ -1,2 +1,2 @@&#10;�[0m�[31m-#&lt;Vendor id: 9, name: &quot;tina&quot;, contact_no: &quot;9876543210&quot;, status: true, email: &quot;pulkitko@gmail.com&quot;&gt;&#10;�[0m�[32m+#&lt;Vendor id: 1, name: &quot;vaibhavk&quot;, contact_no: &quot;1234567890&quot;, status: true, email: &quot;vaibhavkhunger@gmail.com&quot;&gt;&#10;�[0m" type="RSpec::Expectations::ExpectationNotMetError">
+      <![CDATA[expected: #<Vendor id: 9, name: "tina", contact_no: "9876543210", status: true, email: "pulkitko@gmail.com">
+     got: #<Vendor id: 1, name: "vaibhavk", contact_no: "1234567890", status: true, email: "vaibhavkhunger@gmail.com"> (using ==)
+Diff:
+[34m@@ -1,2 +1,2 @@
+[0m[31m-#<Vendor id: 9, name: "tina", contact_no: "9876543210", status: true, email: "pulkitko@gmail.com">
+[0m[32m+#<Vendor id: 1, name: "vaibhavk", contact_no: "1234567890", status: true, email: "vaibhavkhunger@gmail.com">
+[0m
+./spec/controllers/support_centers_controller_spec.rb:24:in `block (3 levels) in <top (required)>']]>
+    </failure>
+  </testcase>
+  <testcase classname="spec.controllers.cab_requests_controller_spec" name="CabRequestsController show should render html page" time="0.014504"/>
+  <testcase classname="spec.controllers.cab_requests_controller_spec" name="CabRequestsController show should assign CabRequest data to @cab_requests" time="0.009782"/>
+  <testcase classname="spec.controllers.cab_requests_controller_spec" name="CabRequestsController show should download xls file" time="0.010482"/>
+  <testcase classname="spec.controllers.cab_requests_controller_spec" name="CabRequestsController new should create a valid cab request" time="0.007525"/>
+  <testcase classname="spec.controllers.cab_requests_controller_spec" name="CabRequestsController new should fetch user info from JSON string" time="0.003152">
+    <failure message="No route matches {:controller=&gt;&quot;cab_requests&quot;, :action=&gt;&quot;newsend_email&quot;}" type="ActionController::RoutingError">
+      <![CDATA[No route matches {:controller=>"cab_requests", :action=>"newsend_email"}
+./spec/controllers/cab_requests_controller_spec.rb:37:in `block (3 levels) in <top (required)>']]>
+    </failure>
+  </testcase>
+  <testcase classname="spec.controllers.cab_requests_controller_spec" name="CabRequestsController create should pick other_destination when destination == others" time="7.072671"/>
+  <testcase classname="spec.controllers.cab_requests_controller_spec" name="CabRequestsController create should render new cab request template if not saved" time="0.013112"/>
+  <testcase classname="spec.controllers.cab_requests_controller_spec" name="CabRequestsController create should pick flight_number when source == Airport" time="6.499768"/>
+  <testcase classname="spec.controllers.cab_requests_controller_spec" name="CabRequestsController create should pick other_source when source == others" time="7.491511"/>
+  <testcase classname="spec.controllers.cab_requests_controller_spec" name="CabRequestsController create should redirect to show path if saved" time="6.800446"/>
+  <testcase classname="spec.controllers.cab_requests_controller_spec" name="CabRequestsController create should pick guest_house_source when source == Guest House" time="7.055455"/>
+  <testcase classname="spec.controllers.cab_requests_controller_spec" name="CabRequestsController create should pick flight_number when destination == Airport" time="6.661107"/>
+  <testcase classname="spec.controllers.cab_requests_controller_spec" name="CabRequestsController create should pick guest_house_destination when destination == Guest House" time="6.922922"/>
+  <testcase classname="spec.controllers.cab_requests_controller_spec" name="CabRequestsController index should redirect to new cab request page" time="0.005047"/>
+  <testcase classname="spec.controllers.admins_controller_spec" name="AdminsController destroy should delete given admin" time="0.014248"/>
+  <testcase classname="spec.controllers.admins_controller_spec" name="AdminsController destroy should redirect to admins_path on successful delete." time="0.011231"/>
+  <testcase classname="spec.controllers.admins_controller_spec" name="AdminsController new should create empty Admin object" time="0.029857"/>
+  <testcase classname="spec.controllers.admins_controller_spec" name="AdminsController create should redirect to admins_path on successful save" time="0.014864"/>
+  <testcase classname="spec.controllers.admins_controller_spec" name="AdminsController create should render new on failed save" time="0.070651"/>
+  <testcase classname="spec.controllers.admins_controller_spec" name="AdminsController edit should get the correct admin" time="0.011613"/>
+  <testcase classname="spec.controllers.admins_controller_spec" name="AdminsController update should redirect to admins_path on successful update" time="0.015328"/>
+  <testcase classname="spec.controllers.admins_controller_spec" name="AdminsController update should successfully update admin" time="0.014140"/>
+  <testcase classname="spec.controllers.admins_controller_spec" name="AdminsController update should render edit update failure" time="0.013889"/>
+  <testcase classname="spec.controllers.admins_controller_spec" name="AdminsController index should get list of admins" time="0.010835"/>
+  <testcase classname="spec.models.vendor_spec" name="Vendor  Vendor Status   should not contain other than a boolean value " time="0.003773"/>
+  <testcase classname="spec.models.vendor_spec" name="Vendor all mandatory fields should contain a value" time="0.003657"/>
+  <testcase classname="spec.models.vendor_spec" name="Vendor vendor contact number   should not contain non-numeric data " time="0.004064"/>
+  <testcase classname="spec.models.vendor_spec" name="Vendor vendor contact number  should not be blank" time="0.004517"/>
+  <testcase classname="spec.models.vendor_spec" name="Vendor vendor contact number   should not contain more or less than ten digits " time="0.003307"/>
+  <testcase classname="spec.models.vendor_spec" name="Vendor vendor name should not be blank" time="0.003104"/>
+  <testcase classname="spec.models.vendor_spec" name="Vendor vendor name should be unique" time="0.005161"/>
+  <testcase classname="spec.models.vendor_spec" name="Vendor vendor name should not contain digits" time="0.003085"/>
+  <testcase classname="spec.models.vendor_spec" name="Vendor Email should not be blank" time="0.003110"/>
+  <testcase classname="spec.models.vendor_spec" name="Vendor Class structure validations should have all required fields  " time="0.000998"/>
+</testsuite>

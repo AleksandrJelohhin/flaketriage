@@ -1,0 +1,88 @@
+<testsuites id="" name="" tests="2" failures="2" skipped="0" errors="0" time="36.398205000000004">
+<testsuite name="e2e/media/gallery/uploadImage.spec.ts" timestamp="2026-04-01T06:04:46.855Z" hostname="e2e" tests="2" failures="2" skipped="0" time="0.002" errors="0">
+<testcase name="E2E media gallery upload › upload image to gallery shows success toast" classname="e2e/media/gallery/uploadImage.spec.ts" time="0.001">
+<failure message="uploadImage.spec.ts:15:7 upload image to gallery shows success toast" type="FAILURE">
+<![CDATA[  [e2e] › e2e/media/gallery/uploadImage.spec.ts:15:7 › E2E media gallery upload › upload image to gallery shows success toast 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('[data-testid="new-login-page-login-card-form-email-input"]').first()
+    Expected: visible
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="new-login-page-login-card-form-email-input"]').first()
+
+
+       at e2e/pages/loginPage.ts:47
+
+      45 |     await this.goto(baseUrl);
+      46 |     await this.page.waitForLoadState('networkidle');
+    > 47 |     await expect(this.usernameInput).toBeVisible({ timeout: 15_000 });
+         |                                      ^
+      48 |     await expect(this.passwordInput).toBeVisible({ timeout: 15_000 });
+      49 |   }
+      50 |
+        at LoginPage.open (/Users/alex/myrepos/node-merged-kal/tests/e2e/pages/loginPage.ts:47:38)
+        at Object.exports.test._test.test.extend.adminUserPage.scope (/Users/alex/myrepos/node-merged-kal/tests/e2e/fixtures.ts:73:5)
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/e2e-media-gallery-uploadIm-3a68b-gallery-shows-success-toast-e2e/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/e2e-media-gallery-uploadIm-3a68b-gallery-shows-success-toast-e2e/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/e2e-media-gallery-uploadIm-3a68b-gallery-shows-success-toast-e2e/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="E2E media gallery upload › upload progress indicator closes automatically after upload @bug" classname="e2e/media/gallery/uploadImage.spec.ts" time="0.001">
+<failure message="uploadImage.spec.ts:33:7 upload progress indicator closes automatically after upload @bug" type="FAILURE">
+<![CDATA[  [e2e] › e2e/media/gallery/uploadImage.spec.ts:33:7 › E2E media gallery upload › upload progress indicator closes automatically after upload @bug 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('[data-testid="new-login-page-login-card-form-email-input"]').first()
+    Expected: visible
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 15000ms
+      - waiting for locator('[data-testid="new-login-page-login-card-form-email-input"]').first()
+
+
+       at e2e/pages/loginPage.ts:47
+
+      45 |     await this.goto(baseUrl);
+      46 |     await this.page.waitForLoadState('networkidle');
+    > 47 |     await expect(this.usernameInput).toBeVisible({ timeout: 15_000 });
+         |                                      ^
+      48 |     await expect(this.passwordInput).toBeVisible({ timeout: 15_000 });
+      49 |   }
+      50 |
+        at LoginPage.open (/Users/alex/myrepos/node-merged-kal/tests/e2e/pages/loginPage.ts:47:38)
+        at Object.exports.test._test.test.extend.adminUserPage.scope (/Users/alex/myrepos/node-merged-kal/tests/e2e/fixtures.ts:73:5)
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/e2e-media-gallery-uploadIm-1dcd0-omatically-after-upload-bug-e2e/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/e2e-media-gallery-uploadIm-1dcd0-omatically-after-upload-bug-e2e/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/e2e-media-gallery-uploadIm-1dcd0-omatically-after-upload-bug-e2e/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

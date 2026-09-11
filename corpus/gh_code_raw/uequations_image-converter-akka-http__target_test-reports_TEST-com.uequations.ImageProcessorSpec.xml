@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite hostname="C02G59RJMD6M" name="com.uequations.ImageProcessorSpec" tests="3" errors="0" failures="1" skipped="0" time="1.654" timestamp="2025-04-06T01:04:23">
+          <properties>
+      <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/><property name="java.specification.version" value="11"/><property name="sun.cpu.isalist" value=""/><property name="sun.jnu.encoding" value="UTF-8"/><property name="sun.arch.data.model" value="64"/><property name="java.vendor.url" value="https://adoptium.net/"/><property name="sun.boot.library.path" value="/Users/alkebme/Library/Java/JavaVirtualMachines/temurin-11.0.15/Contents/Home/lib"/><property name="sun.java.command" value="/usr/local/Cellar/sbt@0.13/0.13.18_1/libexec/bin/sbt-launch.jar test"/><property name="jdk.debug" value="release"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="java.version.date" value="2022-04-19"/><property name="java.home" value="/Users/alkebme/Library/Java/JavaVirtualMachines/temurin-11.0.15/Contents/Home"/><property name="file.separator" value="/"/><property name="java.vm.compressedOopsMode" value="Zero based"/><property name="line.separator" value="
+"/><property name="java.specification.name" value="Java Platform API Specification"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="java.runtime.version" value="11.0.15+10"/><property name="user.name" value="alkebme"/><property name="log4j.ignoreTCL" value="true"/><property name="file.encoding" value="UTF-8"/><property name="jnidispatch.path" value="/Users/alkebme/Library/Caches/JNA/temp/jna2239222026949244886.tmp"/><property name="java.vendor.version" value="Temurin-11.0.15+10"/><property name="jna.loaded" value="true"/><property name="java.io.tmpdir" value="/var/folders/q9/5z5rwxhd0mzcpdb83yr5lzvh0000gp/T/"/><property name="java.version" value="11.0.15"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/><property name="sun.os.patch.level" value="unknown"/><property name="java.library.path" value="/Users/alkebme/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/><property name="java.vendor" value="Eclipse Adoptium"/><property name="scala.ext.dirs" value="/Users/alkebme/.sbt/0.13/java9-rt-ext-eclipse_adoptium_11_0_15"/><property name="sun.io.unicode.encoding" value="UnicodeBig"/><property name="gopherProxySet" value="false"/><property name="java.class.path" value="/usr/local/Cellar/sbt@0.13/0.13.18_1/libexec/bin/sbt-launch.jar"/><property name="java.vm.vendor" value="Eclipse Adoptium"/><property name="jline.shutdownhook" value="false"/><property name="user.timezone" value="America/New_York"/><property name="os.name" value="Mac OS X"/><property name="java.vm.specification.version" value="11"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="user.country" value="US"/><property name="sun.cpu.endian" value="little"/><property name="user.home" value="/Users/alkebme"/><property name="user.language" value="en"/><property name="sbt.ipcsocket.tmpdir" value="/var/folders/q9/5z5rwxhd0mzcpdb83yr5lzvh0000gp/T/.sbtd7f7e342/ipcsocket"/><property name="swoval.tmpdir" value="/var/folders/q9/5z5rwxhd0mzcpdb83yr5lzvh0000gp/T/.sbtd7f7e342/swoval"/><property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/><property name="jline.esc.timeout" value="0"/><property name="path.separator" value=":"/><property name="os.version" value="14.6.1"/><property name="jna.nosys" value="true"/><property name="java.runtime.name" value="OpenJDK Runtime Environment"/><property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/><property name="jna.platform.library.path" value="/usr/lib:/usr/lib"/><property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/><property name="user.dir" value="/Users/alkebme/IdeaProjects/uequations/image-style-akka-http"/><property name="os.arch" value="x86_64"/><property name="java.vm.info" value="mixed mode"/><property name="java.vm.version" value="11.0.15+10"/><property name="java.class.version" value="55.0"/>
+    </properties>
+          <testcase classname="com.uequations.ImageProcessorSpec" name="poc should imageio" time="0.016">
+                      <failure message="java.lang.IllegalArgumentException: more argument images than placeholders!" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: java.lang.IllegalArgumentException: more argument images than placeholders!
+	at org.im4java.core.ImageCommand.resolveImages(ImageCommand.java:289)
+	at org.im4java.core.ImageCommand.prepareArguments(ImageCommand.java:193)
+	at org.im4java.core.ImageCommand.run(ImageCommand.java:212)
+	at com.uequations.ImageProcessorSpec.testFun$proxy1$1(ImageProcessorSpec.scala:44)
+	at com.uequations.ImageProcessorSpec.$init$$$anonfun$1(ImageProcessorSpec.scala:19)
+	at org.scalatest.Transformer.apply$$anonfun$1(Transformer.scala:22)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:31)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:21)
+	at org.scalatest.flatspec.AnyFlatSpecLike$$anon$5.apply(AnyFlatSpecLike.scala:1717)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:138)
+	at org.scalatest.flatspec.AnyFlatSpec.withFixture(AnyFlatSpec.scala:1685)
+	at org.scalatest.flatspec.AnyFlatSpecLike.invokeWithFixture$1(AnyFlatSpecLike.scala:1723)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTest$$anonfun$1(AnyFlatSpecLike.scala:1727)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTest(AnyFlatSpecLike.scala:1727)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTest$(AnyFlatSpecLike.scala:51)
+	at org.scalatest.flatspec.AnyFlatSpec.runTest(AnyFlatSpec.scala:1685)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTests$$anonfun$1(AnyFlatSpecLike.scala:1785)
+	at org.scalatest.SuperEngine.traverseSubNodes$1$$anonfun$1(Engine.scala:413)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:429)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:390)
+	at org.scalatest.SuperEngine.traverseSubNodes$1$$anonfun$1(Engine.scala:427)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:429)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTests(AnyFlatSpecLike.scala:1785)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTests$(AnyFlatSpecLike.scala:51)
+	at org.scalatest.flatspec.AnyFlatSpec.runTests(AnyFlatSpec.scala:1685)
+	at org.scalatest.Suite.run(Suite.scala:1114)
+	at org.scalatest.Suite.run$(Suite.scala:564)
+	at org.scalatest.flatspec.AnyFlatSpec.org$scalatest$flatspec$AnyFlatSpecLike$$super$run(AnyFlatSpec.scala:1685)
+	at org.scalatest.flatspec.AnyFlatSpecLike.run$$anonfun$1(AnyFlatSpecLike.scala:1830)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
+	at org.scalatest.flatspec.AnyFlatSpecLike.run(AnyFlatSpecLike.scala:1830)
+	at org.scalatest.flatspec.AnyFlatSpecLike.run$(AnyFlatSpecLike.scala:51)
+	at org.scalatest.flatspec.AnyFlatSpec.run(AnyFlatSpec.scala:1685)
+	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:321)
+	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:517)
+	at sbt.ForkMain$Run.lambda$runTest$1(ForkMain.java:414)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</failure>
+                    </testcase><testcase classname="com.uequations.ImageProcessorSpec" name="createStyledImage should create a styled image with the specified dimensions" time="1.6">
+                      
+                    </testcase><testcase classname="com.uequations.ImageProcessorSpec" name="createStyledImage should throw an IllegalArgumentException for invalid image data" time="0.038">
+                      
+                    </testcase>
+          <system-out><![CDATA[]]></system-out>
+          <system-err><![CDATA[]]></system-err>
+        </testsuite>

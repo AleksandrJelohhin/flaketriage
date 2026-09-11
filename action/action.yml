@@ -1,0 +1,126 @@
+name: FlakeTriage
+description: >-
+  Decide whether a failing CI test is a flake or a real regression, and post a
+  short verdict on the pull request.
+author: FlakeTriage
+branding:
+  icon: filter
+  color: purple
+
+inputs:
+  reports:
+    description: JUnit XML glob(s), comma- or newline-separated.
+    default: "**/junit*.xml,**/TEST-*.xml"
+  working-directory:
+    description: Path to the checked-out repository.
+    default: "."
+  db-path:
+    description: SQLite history DB path (within working-directory).
+    default: ".flaketriage/history.db"
+  fail-on:
+    description: "Which verdicts fail the job: regression | any | never."
+    default: "regression"
+  attempt:
+    description: CI attempt / retry number (defaults to github.run_attempt).
+    default: ""
+  provider:
+    description: >-
+      LLM provider for ambiguous verdicts:
+      auto | anthropic | bedrock | vertex | foundry | custom |
+      gemini | openai | local | openai-compatible | none.
+      bedrock/vertex/foundry read their region/project/resource from the usual
+      AWS_REGION / ANTHROPIC_VERTEX_PROJECT_ID / ANTHROPIC_FOUNDRY_RESOURCE +
+      ANTHROPIC_FOUNDRY_API_KEY environment variables. custom needs
+      `llm-base-url` (a self-hosted, Anthropic-API-compatible endpoint).
+      Falls back to `.flaketriage.yml`'s `llm.provider`, then "auto", when unset.
+    default: ""
+  llm-model:
+    description: Override the provider's default model.
+    default: ""
+  llm-base-url:
+    description: Base URL for a local / custom OpenAI-compatible server.
+    default: ""
+  anthropic-api-key:
+    description: >-
+      Anthropic API key. When set, ambiguous verdicts are escalated to
+      claude-opus-5 (unless `provider` says otherwise).
+    default: ""
+  no-llm:
+    description: Never call the LLM — ambiguous verdicts stay ambiguous, zero network.
+    default: "false"
+  comment:
+    description: Post / update a single sticky comment on the pull request.
+    default: "true"
+  github-token:
+    description: Token used to post the PR comment.
+    default: ${{ github.token }}
+
+outputs:
+  regressions:
+    description: Number of failures classified as a real regression.
+    value: ${{ steps.flaketriage.outputs.regressions }}
+  needs-attention:
+    description: Regressions + always-failing + still-ambiguous.
+    value: ${{ steps.flaketriage.outputs.needs-attention }}
+  failed:
+    description: Total failing / errored tests.
+    value: ${{ steps.flaketriage.outputs.failed }}
+  cost-usd:
+    description: Estimated LLM spend for this run, USD.
+    value: ${{ steps.flaketriage.outputs.cost-usd }}
+  report-markdown:
+    description: The compact Markdown report used for the sticky PR comment.
+    value: ${{ steps.flaketriage.outputs.report-markdown }}
+  report-summary:
+    description: >-
+      The fuller drill-down report written to the job summary (evidence,
+      blame tables, model reasoning, raw failures per test).
+    value: ${{ steps.flaketriage.outputs.report-summary }}
+  report-json:
+    description: The machine-readable triage report (JSON string).
+    value: ${{ steps.flaketriage.outputs.report-json }}
+
+runs:
+  using: composite
+  steps:
+    # ── history persistence — known limitations, see action/README.md ──
+    - name: Restore FlakeTriage history
+      uses: actions/cache/restore@v4
+      with:
+        path: ${{ inputs.working-directory }}/.flaketriage
+        key: flaketriage-${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt }}
+        restore-keys: |
+          flaketriage-${{ github.repository }}-
+
+    # The action ships a bundled entrypoint but its runtime deps (incl. the
+    # native better-sqlite3) are installed here, at the action checkout root
+    # (action.yml lives in the action/ subdirectory).
+    - name: Install FlakeTriage runtime
+      shell: bash
+      run: npm ci --omit=dev --no-audit --fund=false
+      working-directory: ${{ github.action_path }}/..
+
+    - name: FlakeTriage
+      id: flaketriage
+      shell: bash
+      run: node "$GITHUB_ACTION_PATH/dist/index.js"
+      env:
+        INPUT_REPORTS: ${{ inputs.reports }}
+        INPUT_WORKING-DIRECTORY: ${{ inputs.working-directory }}
+        INPUT_DB-PATH: ${{ inputs.db-path }}
+        INPUT_FAIL-ON: ${{ inputs.fail-on }}
+        INPUT_ATTEMPT: ${{ inputs.attempt }}
+        INPUT_PROVIDER: ${{ inputs.provider }}
+        INPUT_LLM-MODEL: ${{ inputs.llm-model }}
+        INPUT_LLM-BASE-URL: ${{ inputs.llm-base-url }}
+        INPUT_ANTHROPIC-API-KEY: ${{ inputs.anthropic-api-key }}
+        INPUT_NO-LLM: ${{ inputs.no-llm }}
+        INPUT_COMMENT: ${{ inputs.comment }}
+        INPUT_GITHUB-TOKEN: ${{ inputs.github-token }}
+
+    - name: Save FlakeTriage history
+      if: always()
+      uses: actions/cache/save@v4
+      with:
+        path: ${{ inputs.working-directory }}/.flaketriage
+        key: flaketriage-${{ github.repository }}-${{ github.run_id }}-${{ github.run_attempt }}

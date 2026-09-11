@@ -1,0 +1,60 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="13.386603000000001">
+<testsuite name="23_locationTest.spec.js" timestamp="2025-09-29T11:52:49.749Z" hostname="chromium" tests="1" failures="1" skipped="0" time="0.782" errors="0">
+<testcase name="Location › Location › verify uploadLocation" classname="23_locationTest.spec.js" time="0.782">
+<failure message="23_locationTest.spec.js:36:14 verify uploadLocation" type="FAILURE">
+<![CDATA[  [chromium] › 23_locationTest.spec.js:36:14 › Location › Location › verify uploadLocation ─────────
+
+    Error: locator.click: Error: strict mode violation: locator('text=Upload') resolved to 3 elements:
+        1) <div class="_attachment_box_hryun_1">Upload Media</div> aka getByText('Upload Media')
+        2) <div class="_attachment_box_hryun_1">Link Upload</div> aka getByText('Link Upload')
+        3) <span>Upload</span> aka getByRole('button', { name: 'Upload' })
+
+    Call log:
+      - waiting for locator('text=Upload')
+
+
+       at ../pages/location.js:58
+
+      56 |         await this.attchment.click();
+      57 |         await this.uploadMediaButton.setInputFiles(mediapaths.image);
+    > 58 |         await this.send.click();
+         |                         ^
+      59 |     }
+      60 |
+      61 |     async uploadLocation(location, scene, episode){
+        at Location.uploadMedia (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js:58:25)
+        at Location.uploadLocation (/Users/babuyadav/Documents/zillit-playwright-automation/src/pages/location.js:62:9)
+        at /Users/babuyadav/Documents/zillit-playwright-automation/src/tests/23_locationTest.spec.js:37:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/23_locationTest-Location-Location-verify-uploadLocation-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../test-results/23_locationTest-Location-Location-verify-uploadLocation-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/23_locationTest-Location-Location-verify-uploadLocation-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/23_locationTest-Location-Location-verify-uploadLocation-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[[INFO] 2025-09-29T11:52:50.942Z - browser is launching
+[INFO] 2025-09-29T11:52:56.955Z - open the project
+Current hostname is: qa.zillit.com
+[INFO] 2025-09-29T11:52:56.955Z - QA environment is started...
+[INFO] 2025-09-29T11:53:02.505Z - close browser
+
+[[ATTACHMENT|../test-results/23_locationTest-Location-Location-verify-uploadLocation-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/23_locationTest-Location-Location-verify-uploadLocation-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/23_locationTest-Location-Location-verify-uploadLocation-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

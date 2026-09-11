@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="74" failures="15" errors="0" time="9.132">
+    <testsuite name="tests/e2e/booking-flow.spec.ts" timestamp="2025-10-05T06:53:10.970Z" hostname="DESKTOP-O2F1N1G" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="tests/e2e/booking-flow.spec.ts" name="tests/e2e/booking-flow.spec.ts" time="0">
+            <failure message="Playwright Test did not expect test.describe() to be called here.
+Most common reasons include:
+- You are calling test.describe() in a configuration file.
+- You are calling test.describe() in a file that is imported by the configuration file.
+- You have two different versions of @playwright/test. This usually happens
+  when one of the dependencies in your package.json depends on @playwright/test." type="Error">
+Error: Playwright Test did not expect test.describe() to be called here.
+Most common reasons include:
+- You are calling test.describe() in a configuration file.
+- You are calling test.describe() in a file that is imported by the configuration file.
+- You have two different versions of @playwright/test. This usually happens
+  when one of the dependencies in your package.json depends on @playwright/test.
+ ❯ TestTypeImpl._currentSuite node_modules/.pnpm/playwright@1.55.1/node_modules/playwright/lib/common/testType.js:74:13
+ ❯ TestTypeImpl._describe node_modules/.pnpm/playwright@1.55.1/node_modules/playwright/lib/common/testType.js:114:24
+ ❯ Function.describe node_modules/.pnpm/playwright@1.55.1/node_modules/playwright/lib/transform/transform.js:275:12
+ ❯ tests/e2e/booking-flow.spec.ts:3:6
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/e2e/payment-flows.spec.ts" timestamp="2025-10-05T06:53:10.980Z" hostname="DESKTOP-O2F1N1G" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="tests/e2e/payment-flows.spec.ts" name="tests/e2e/payment-flows.spec.ts" time="0">
+            <failure message="Playwright Test did not expect test.describe() to be called here.
+Most common reasons include:
+- You are calling test.describe() in a configuration file.
+- You are calling test.describe() in a file that is imported by the configuration file.
+- You have two different versions of @playwright/test. This usually happens
+  when one of the dependencies in your package.json depends on @playwright/test." type="Error">
+Error: Playwright Test did not expect test.describe() to be called here.
+Most common reasons include:
+- You are calling test.describe() in a configuration file.
+- You are calling test.describe() in a file that is imported by the configuration file.
+- You have two different versions of @playwright/test. This usually happens
+  when one of the dependencies in your package.json depends on @playwright/test.
+ ❯ TestTypeImpl._currentSuite node_modules/.pnpm/playwright@1.55.1/node_modules/playwright/lib/common/testType.js:74:13
+ ❯ TestTypeImpl._describe node_modules/.pnpm/playwright@1.55.1/node_modules/playwright/lib/common/testType.js:114:24
+ ❯ Function.describe node_modules/.pnpm/playwright@1.55.1/node_modules/playwright/lib/transform/transform.js:275:12
+ ❯ tests/e2e/payment-flows.spec.ts:3:6
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/integration/edge-functions.test.ts" timestamp="2025-10-05T06:53:10.985Z" hostname="DESKTOP-O2F1N1G" tests="14" failures="1" errors="0" skipped="0" time="0.022">
+        <testcase classname="tests/integration/edge-functions.test.ts" name="Edge Functions Integration Tests &gt; book-appointment function &gt; should create a new appointment successfully" time="0">
+        </testcase>
+        <testcase classname="tests/integration/edge-functions.test.ts" name="Edge Functions Integration Tests &gt; book-appointment function &gt; should reject appointment for invalid time slot" time="0">
+        </testcase>
+        <testcase classname="tests/integration/edge-functions.test.ts" name="Edge Functions Integration Tests &gt; book-appointment function &gt; should reject appointment for conflicting time slot" time="0">
+        </testcase>
+        <testcase classname="tests/integration/edge-functions.test.ts" name="Edge Functions Integration Tests &gt; book-appointment function &gt; should validate required fields" time="0">
+        </testcase>
+        <testcase classname="tests/integration/edge-functions.test.ts" name="Edge Functions Integration Tests &gt; book-appointment function &gt; should validate Swiss phone number format" time="0">
+        </testcase>
+        <testcase classname="tests/integration/edge-functions.test.ts" name="Edge Functions Integration Tests &gt; booking-availability function &gt; should return available time slots" time="0">
+        </testcase>
+        <testcase classname="tests/integration/edge-functions.test.ts" name="Edge Functions Integration Tests &gt; booking-availability function &gt; should filter out booked time slots" time="0">
+        </testcase>
+        <testcase classname="tests/integration/edge-functions.test.ts" name="Edge Functions Integration Tests &gt; booking-availability function &gt; should return empty array for closed days" time="0">
+        </testcase>
+        <testcase classname="tests/integration/edge-functions.test.ts" name="Edge Functions Integration Tests &gt; booking-cancel function &gt; should cancel appointment successfully" time="0">
+        </testcase>
+        <testcase classname="tests/integration/edge-functions.test.ts" name="Edge Functions Integration Tests &gt; booking-cancel function &gt; should reject cancellation with invalid confirmation code" time="0">
+        </testcase>
+        <testcase classname="tests/integration/edge-functions.test.ts" name="Edge Functions Integration Tests &gt; booking-cancel function &gt; should respect cancellation deadline" time="0">
+        </testcase>
+        <testcase classname="tests/integration/edge-functions.test.ts" name="Edge Functions Integration Tests &gt; booking-validation function &gt; should validate appointment data correctly" time="0">
+        </testcase>
+        <testcase classname="tests/integration/edge-functions.test.ts" name="Edge Functions Integration Tests &gt; booking-validation function &gt; should return validation errors for invalid data" time="0">
+        </testcase>
+        <testcase classname="tests/integration/edge-functions.test.ts" name="Edge Functions Integration Tests" time="0.019">
+            <failure message="supabaseAdmin.from(...).upsert is not a function" type="TypeError">
+TypeError: supabaseAdmin.from(...).upsert is not a function
+ ❯ setupTestData tests/integration/edge-functions.test.ts:343:40
+ ❯ tests/integration/edge-functions.test.ts:14:11
+            </failure>
+            <failure message="supabaseAdmin.from(...).delete(...).ilike is not a function" type="TypeError">
+TypeError: supabaseAdmin.from(...).delete(...).ilike is not a function
+ ❯ cleanupTestData tests/integration/edge-functions.test.ts:379:53
+ ❯ tests/integration/edge-functions.test.ts:19:11
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/unit/booking-logic.test.ts" timestamp="2025-10-05T06:53:10.999Z" hostname="DESKTOP-O2F1N1G" tests="23" failures="3" errors="0" skipped="0" time="0.088">
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; calculateTotalPrice &gt; should calculate price with VAT correctly" time="0.003">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; calculateTotalPrice &gt; should return net price when VAT excluded" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; calculateVATAmount &gt; should calculate Swiss VAT correctly" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; calculateVATAmount &gt; should round VAT to nearest cent" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; isValidBookingDate &gt; should reject past dates" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; isValidBookingDate &gt; should reject dates too far in future" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; isValidBookingDate &gt; should accept valid weekdays" time="0.023">
+            <failure message="expected false to be true // Object.is equality" type="AssertionError">
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ tests/unit/booking-logic.test.ts:168:59
+            </failure>
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; isValidBookingDate &gt; should reject Sundays" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; isValidBookingTime &gt; should accept time within business hours" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; isValidBookingTime &gt; should reject time outside business hours" time="0">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; isValidBookingTime &gt; should reject time on closed days" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; isValidBookingTime &gt; should handle Saturday shorter hours" time="0">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; generateTimeSlots &gt; should generate correct slots for a weekday" time="0.003">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; generateTimeSlots &gt; should generate correct slots for Saturday" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; generateTimeSlots &gt; should return empty array for Sunday" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; generateTimeSlots &gt; should account for service duration" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; validateAppointmentConflict &gt; should detect overlapping appointments" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; validateAppointmentConflict &gt; should allow non-overlapping appointments" time="0">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; validateAppointmentConflict &gt; should handle adjacent appointments correctly" time="0">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; formatSwissPrice &gt; should format prices correctly in Swiss Francs" time="0.037">
+            <failure message="expected &apos;CHF 100.00&apos; to be &apos;CHF 100.00&apos; // Object.is equality" type="AssertionError">
+AssertionError: expected &apos;CHF 100.00&apos; to be &apos;CHF 100.00&apos; // Object.is equality
+
+- Expected
++ Received
+
+- CHF 100.00
++ CHF 100.00
+
+ ❯ tests/unit/booking-logic.test.ts:296:52
+            </failure>
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; isValidSwissPhone &gt; should validate Swiss phone numbers" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; isValidSwissPhone &gt; should reject invalid phone numbers" time="0.002">
+            <failure message="expected true to be false // Object.is equality" type="AssertionError">
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ tests/unit/booking-logic.test.ts:310:62
+            </failure>
+        </testcase>
+        <testcase classname="tests/unit/booking-logic.test.ts" name="BookingLogic &gt; isValidSwissPhone &gt; should handle phone numbers with spaces" time="0.001">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/unit/swiss-validations.test.ts" timestamp="2025-10-05T06:53:11.008Z" hostname="DESKTOP-O2F1N1G" tests="16" failures="1" errors="0" skipped="0" time="0.047">
+        <testcase classname="tests/unit/swiss-validations.test.ts" name="Swiss Phone Number Validation &gt; should validate Swiss mobile numbers" time="0.004">
+        </testcase>
+        <testcase classname="tests/unit/swiss-validations.test.ts" name="Swiss Phone Number Validation &gt; should validate Swiss landline numbers" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/swiss-validations.test.ts" name="Swiss Phone Number Validation &gt; should reject invalid Swiss phone numbers" time="0">
+        </testcase>
+        <testcase classname="tests/unit/swiss-validations.test.ts" name="Swiss Postal Code Validation &gt; should validate correct Swiss postal codes" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/swiss-validations.test.ts" name="Swiss Postal Code Validation &gt; should reject invalid postal codes" time="0">
+        </testcase>
+        <testcase classname="tests/unit/swiss-validations.test.ts" name="Swiss VAT Calculation &gt; should calculate correct VAT amounts" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/swiss-validations.test.ts" name="Swiss VAT Calculation &gt; should handle edge cases" time="0">
+        </testcase>
+        <testcase classname="tests/unit/swiss-validations.test.ts" name="Swiss Business Hours &gt; should recognize weekday business hours" time="0">
+        </testcase>
+        <testcase classname="tests/unit/swiss-validations.test.ts" name="Swiss Business Hours &gt; should handle Saturday hours" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/swiss-validations.test.ts" name="Swiss Business Hours &gt; should reject Sunday" time="0">
+        </testcase>
+        <testcase classname="tests/unit/swiss-validations.test.ts" name="Swiss Public Holidays &gt; should recognize major Swiss holidays" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/swiss-validations.test.ts" name="Swiss Public Holidays &gt; should reject non-holidays" time="0">
+        </testcase>
+        <testcase classname="tests/unit/swiss-validations.test.ts" name="Swiss IBAN Validation &gt; should validate Swiss IBAN format" time="0.029">
+            <failure message="expected false to be true // Object.is equality" type="AssertionError">
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ tests/unit/swiss-validations.test.ts:204:78
+            </failure>
+        </testcase>
+        <testcase classname="tests/unit/swiss-validations.test.ts" name="Swiss IBAN Validation &gt; should reject invalid IBAN formats" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/swiss-validations.test.ts" name="Swiss VAT Number Validation &gt; should validate Swiss VAT number format" time="0.001">
+        </testcase>
+        <testcase classname="tests/unit/swiss-validations.test.ts" name="Swiss VAT Number Validation &gt; should reject invalid VAT numbers" time="0.001">
+        </testcase>
+    </testsuite>
+    <testsuite name="tests/unit/timezone-handling.test.ts" timestamp="2025-10-05T06:53:11.012Z" hostname="DESKTOP-O2F1N1G" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="tests/unit/timezone-handling.test.ts" name="tests/unit/timezone-handling.test.ts" time="0">
+            <failure message="Failed to resolve import &quot;date-fns-tz&quot; from &quot;tests/unit/timezone-handling.test.ts&quot;. Does the file exist?" type="Error">
+Error: Failed to resolve import &quot;date-fns-tz&quot; from &quot;tests/unit/timezone-handling.test.ts&quot;. Does the file exist?
+ ❯ TransformPluginContext._formatError node_modules/.pnpm/vite@5.4.20_@types+node@20.19.19/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41
+ ❯ TransformPluginContext.error node_modules/.pnpm/vite@5.4.20_@types+node@20.19.19/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16
+ ❯ normalizeUrl node_modules/.pnpm/vite@5.4.20_@types+node@20.19.19/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64306:23
+ ❯ async file:/C:/Users/rober/Desktop/Fullstack/node_modules/.pnpm/vite@5.4.20_@types+node@20.19.19/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64438:39
+ ❯ TransformPluginContext.transform node_modules/.pnpm/vite@5.4.20_@types+node@20.19.19/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64365:7
+ ❯ PluginContainer.transform node_modules/.pnpm/vite@5.4.20_@types+node@20.19.19/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18
+ ❯ loadAndTransform node_modules/.pnpm/vite@5.4.20_@types+node@20.19.19/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="supabase/edge/__tests__/booking-validation.test.ts" timestamp="2025-10-05T06:53:11.014Z" hostname="DESKTOP-O2F1N1G" tests="16" failures="5" errors="0" skipped="0" time="0.115">
+        <testcase classname="supabase/edge/__tests__/booking-validation.test.ts" name="Booking Validation Edge Function &gt; validateBookingData &gt; should validate correct booking data" time="0.059">
+            <failure message="expected false to be true // Object.is equality" type="AssertionError">
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ supabase/edge/__tests__/booking-validation.test.ts:41:30
+            </failure>
+        </testcase>
+        <testcase classname="supabase/edge/__tests__/booking-validation.test.ts" name="Booking Validation Edge Function &gt; validateBookingData &gt; should reject invalid email format" time="0.006">
+        </testcase>
+        <testcase classname="supabase/edge/__tests__/booking-validation.test.ts" name="Booking Validation Edge Function &gt; validateBookingData &gt; should reject invalid phone format" time="0.003">
+        </testcase>
+        <testcase classname="supabase/edge/__tests__/booking-validation.test.ts" name="Booking Validation Edge Function &gt; validateBookingData &gt; should reject past appointment dates" time="0.004">
+        </testcase>
+        <testcase classname="supabase/edge/__tests__/booking-validation.test.ts" name="Booking Validation Edge Function &gt; validateBookingData &gt; should reject appointments too far in future" time="0.004">
+        </testcase>
+        <testcase classname="supabase/edge/__tests__/booking-validation.test.ts" name="Booking Validation Edge Function &gt; validateBookingData &gt; should reject invalid time format" time="0.002">
+        </testcase>
+        <testcase classname="supabase/edge/__tests__/booking-validation.test.ts" name="Booking Validation Edge Function &gt; validateBookingData &gt; should reject when end time is before start time" time="0.003">
+        </testcase>
+        <testcase classname="supabase/edge/__tests__/booking-validation.test.ts" name="Booking Validation Edge Function &gt; validateBookingData &gt; should reject appointments shorter than 15 minutes" time="0.002">
+        </testcase>
+        <testcase classname="supabase/edge/__tests__/booking-validation.test.ts" name="Booking Validation Edge Function &gt; validateBookingData &gt; should reject appointments longer than 4 hours" time="0.002">
+        </testcase>
+        <testcase classname="supabase/edge/__tests__/booking-validation.test.ts" name="Booking Validation Edge Function &gt; validateBookingData &gt; should validate Swiss phone numbers" time="0.005">
+            <failure message="expected false to be true // Object.is equality" type="AssertionError">
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ supabase/edge/__tests__/booking-validation.test.ts:143:32
+ ❯ supabase/edge/__tests__/booking-validation.test.ts:140:20
+            </failure>
+        </testcase>
+        <testcase classname="supabase/edge/__tests__/booking-validation.test.ts" name="Booking Validation Edge Function &gt; validateBookingData &gt; should reject invalid UUID formats" time="0.003">
+        </testcase>
+        <testcase classname="supabase/edge/__tests__/booking-validation.test.ts" name="Booking Validation Edge Function &gt; validateBookingData &gt; should handle missing required fields" time="0.004">
+        </testcase>
+        <testcase classname="supabase/edge/__tests__/booking-validation.test.ts" name="Booking Validation Edge Function &gt; validateBookingData &gt; should sanitize customer notes" time="0.002">
+            <failure message="expected false to be true // Object.is equality" type="AssertionError">
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ supabase/edge/__tests__/booking-validation.test.ts:175:30
+            </failure>
+        </testcase>
+        <testcase classname="supabase/edge/__tests__/booking-validation.test.ts" name="Booking Validation Edge Function &gt; validateBookingData &gt; should trim whitespace from string fields" time="0.003">
+            <failure message="expected false to be true // Object.is equality" type="AssertionError">
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ supabase/edge/__tests__/booking-validation.test.ts:187:30
+            </failure>
+        </testcase>
+        <testcase classname="supabase/edge/__tests__/booking-validation.test.ts" name="Booking Validation Edge Function &gt; validateBookingData &gt; should validate business hours (8:00 - 20:00)" time="0.002">
+        </testcase>
+        <testcase classname="supabase/edge/__tests__/booking-validation.test.ts" name="Booking Validation Edge Function &gt; validateBookingData &gt; should handle concurrent booking validation" time="0.003">
+            <failure message="expected false to be true // Object.is equality" type="AssertionError">
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ supabase/edge/__tests__/booking-validation.test.ts:218:32
+ ❯ supabase/edge/__tests__/booking-validation.test.ts:217:15
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="supabase/edge/__tests__/payment-utils.test.ts" timestamp="2025-10-05T06:53:11.023Z" hostname="DESKTOP-O2F1N1G" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="supabase/edge/__tests__/payment-utils.test.ts" name="supabase/edge/__tests__/payment-utils.test.ts" time="0">
+            <failure message="Only URLs with a scheme in: file and data are supported by the default ESM loader. Received protocol &apos;https:&apos;" type="Error">
+Error: Only URLs with a scheme in: file and data are supported by the default ESM loader. Received protocol &apos;https:&apos;
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;ERR_UNSUPPORTED_ESM_URL_SCHEME&apos; }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="supabase/edge/__tests__/stripe-webhook.test.ts" timestamp="2025-10-05T06:53:11.026Z" hostname="DESKTOP-O2F1N1G" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="supabase/edge/__tests__/stripe-webhook.test.ts" name="supabase/edge/__tests__/stripe-webhook.test.ts" time="0">
+            <failure message="Only URLs with a scheme in: file and data are supported by the default ESM loader. Received protocol &apos;https:&apos;" type="Error">
+Error: Only URLs with a scheme in: file and data are supported by the default ESM loader. Received protocol &apos;https:&apos;
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;ERR_UNSUPPORTED_ESM_URL_SCHEME&apos; }
+            </failure>
+        </testcase>
+    </testsuite>
+</testsuites>

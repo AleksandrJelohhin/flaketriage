@@ -1,0 +1,28 @@
+<testsuites id="" name="" tests="2" failures="2" skipped="0" errors="0" time="9.919">
+<testsuite name="test_1.spec.js" timestamp="1741022257831" hostname="" tests="1" failures="1" skipped="0" time="4.312" errors="0">
+<testcase name="PlayWright Vanilla JS - 1 Scenario 1: Test Demo for a simple form" classname="[chrome:latest@lambdatest] › test_1.spec.js:5:1 › PlayWright Vanilla JS - 1 › Scenario 1: Test Demo for a simple form" time="4.312">
+<failure message="test_1.spec.js:5:1 Scenario 1: Test Demo for a simple form" type="FAILURE">
+  [chrome:latest@lambdatest] › test_1.spec.js:5:1 › PlayWright Vanilla JS - 1 › Scenario 1: Test Demo for a simple form 
+
+    browserType.connect: Unsupported platfrom 
+
+        at Object.page [as fn] (C:\Users\pulus\Desktop\ply\016440_ArajaNaik_Playwright102 (1)\lambdatest-setup.js:40:38)
+        at C:\Users\pulus\Desktop\ply\016440_ArajaNaik_Playwright102 (1)\node_modules\@playwright\test\lib\fixtures.js:96:81
+
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="test_1.spec.js" timestamp="1741022257831" hostname="" tests="1" failures="1" skipped="0" time="4.279" errors="0">
+<testcase name="PlayWright Vanilla JS - 1 Scenario 1: Test Demo for a simple form" classname="[MicrosoftEdge:latest@lambdatest] › test_1.spec.js:5:1 › PlayWright Vanilla JS - 1 › Scenario 1: Test Demo for a simple form" time="4.279">
+<failure message="test_1.spec.js:5:1 Scenario 1: Test Demo for a simple form" type="FAILURE">
+  [MicrosoftEdge:latest@lambdatest] › test_1.spec.js:5:1 › PlayWright Vanilla JS - 1 › Scenario 1: Test Demo for a simple form 
+
+    browserType.connect: Unsupported platfrom 
+
+        at Object.page [as fn] (C:\Users\pulus\Desktop\ply\016440_ArajaNaik_Playwright102 (1)\lambdatest-setup.js:40:38)
+        at C:\Users\pulus\Desktop\ply\016440_ArajaNaik_Playwright102 (1)\node_modules\@playwright\test\lib\fixtures.js:96:81
+
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="29" skipped="0" failures="13" errors="0" time="0.411981" timestamp="2025-12-06T21:25:45-06:00" hostname="RuitaoZhou">
+<properties>
+<property name="seed" value="52537"/>
+</properties>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp validations is expected to validate that :name cannot be empty/falsy" file="./spec/models/team_comp_spec.rb" time="0.280959"></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp validations is expected to validate that :champions cannot be empty/falsy" file="./spec/models/team_comp_spec.rb" time="0.005093"></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp validations is expected to validate that the length of :name is at most 50" file="./spec/models/team_comp_spec.rb" time="0.002962"></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp validations is expected to validate that the length of :description is at most 200" file="./spec/models/team_comp_spec.rb" time="0.003600"></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp validations is expected to validate that the length of :notes is at most 100" file="./spec/models/team_comp_spec.rb" time="0.003502"></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp validations sets default set_identifier to TFT15" file="./spec/models/team_comp_spec.rb" time="0.003123"></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp associations is expected to belong to user optional: true" file="./spec/models/team_comp_spec.rb" time="0.001614"></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp associations is expected to have many likes dependent =&gt; destroy" file="./spec/models/team_comp_spec.rb" time="0.003491"></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp associations is expected to have many favorites dependent =&gt; destroy" file="./spec/models/team_comp_spec.rb" time="0.004187"></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp associations is expected to have many comments dependent =&gt; destroy" file="./spec/models/team_comp_spec.rb" time="0.004207"></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp scopes .system_teams returns only system teams" file="./spec/models/team_comp_spec.rb" time="0.009759"><failure message="Validation failed: Terms accepted must be accepted" type="ActiveRecord::RecordInvalid">Failure/Error: let(:system_team) { create(:team_comp, team_type: &apos;system&apos;) }
+
+ActiveRecord::RecordInvalid:
+  Validation failed: Terms accepted must be accepted
+./spec/models/team_comp_spec.rb:29:in `block (3 levels) in &lt;top (required)&gt;&apos;
+./spec/models/team_comp_spec.rb:34:in `block (4 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp scopes .user_teams returns only user teams" file="./spec/models/team_comp_spec.rb" time="0.005394"><failure message="Validation failed: Terms accepted must be accepted" type="ActiveRecord::RecordInvalid">Failure/Error: let(:user) { create(:user) }
+
+ActiveRecord::RecordInvalid:
+  Validation failed: Terms accepted must be accepted
+./spec/models/team_comp_spec.rb:28:in `block (3 levels) in &lt;top (required)&gt;&apos;
+./spec/models/team_comp_spec.rb:30:in `block (3 levels) in &lt;top (required)&gt;&apos;
+./spec/models/team_comp_spec.rb:41:in `block (4 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp scopes .for_set filters teams by set identifier" file="./spec/models/team_comp_spec.rb" time="0.004682"><failure message="Validation failed: Terms accepted must be accepted" type="ActiveRecord::RecordInvalid">Failure/Error: let(:tft15_team) { create(:team_comp, set_identifier: &apos;TFT15&apos;) }
+
+ActiveRecord::RecordInvalid:
+  Validation failed: Terms accepted must be accepted
+./spec/models/team_comp_spec.rb:47:in `block (4 levels) in &lt;top (required)&gt;&apos;
+./spec/models/team_comp_spec.rb:51:in `block (4 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp scopes .for_set returns all teams when set is blank" file="./spec/models/team_comp_spec.rb" time="0.004134"><failure message="Validation failed: Terms accepted must be accepted" type="ActiveRecord::RecordInvalid">Failure/Error: let(:tft15_team) { create(:team_comp, set_identifier: &apos;TFT15&apos;) }
+
+ActiveRecord::RecordInvalid:
+  Validation failed: Terms accepted must be accepted
+./spec/models/team_comp_spec.rb:47:in `block (4 levels) in &lt;top (required)&gt;&apos;
+./spec/models/team_comp_spec.rb:56:in `block (4 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp#champion_names parses comma-separated champion names" file="./spec/models/team_comp_spec.rb" time="0.003703"><failure message="Validation failed: Terms accepted must be accepted" type="ActiveRecord::RecordInvalid">Failure/Error: team = create(:team_comp, champions: &apos;Aatrox, Braum, Caitlyn&apos;)
+
+ActiveRecord::RecordInvalid:
+  Validation failed: Terms accepted must be accepted
+./spec/models/team_comp_spec.rb:63:in `block (3 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp#champion_names strips whitespace from champion names" file="./spec/models/team_comp_spec.rb" time="0.004683"><failure message="Validation failed: Terms accepted must be accepted" type="ActiveRecord::RecordInvalid">Failure/Error: team = create(:team_comp, champions: &apos; Aatrox ,  Braum  , Caitlyn &apos;)
+
+ActiveRecord::RecordInvalid:
+  Validation failed: Terms accepted must be accepted
+./spec/models/team_comp_spec.rb:69:in `block (3 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp#champion_names rejects blank names" file="./spec/models/team_comp_spec.rb" time="0.003859"><failure message="Validation failed: Terms accepted must be accepted" type="ActiveRecord::RecordInvalid">Failure/Error: team = create(:team_comp, champions: &apos; Aatrox ,  ,  Caitlyn &apos;)
+
+ActiveRecord::RecordInvalid:
+  Validation failed: Terms accepted must be accepted
+./spec/models/team_comp_spec.rb:75:in `block (3 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp#champion_records returns champion records from database" file="./spec/models/team_comp_spec.rb" time="0.016640"><failure message="Validation failed: Terms accepted must be accepted" type="ActiveRecord::RecordInvalid">Failure/Error: team = create(:team_comp, champions: &apos;Aatrox, Braum&apos;)
+
+ActiveRecord::RecordInvalid:
+  Validation failed: Terms accepted must be accepted
+./spec/models/team_comp_spec.rb:85:in `block (3 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp#champion_records returns empty array when no matching champions" file="./spec/models/team_comp_spec.rb" time="0.004617"><failure message="Validation failed: Terms accepted must be accepted" type="ActiveRecord::RecordInvalid">Failure/Error: team = create(:team_comp, champions: &apos;Nonexistent1, Nonexistent2&apos;)
+
+ActiveRecord::RecordInvalid:
+  Validation failed: Terms accepted must be accepted
+./spec/models/team_comp_spec.rb:92:in `block (3 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+<testcase classname="spec.models.team_comp_spec" name="TeamComp callbacks before_validation sets default set identifier to TFT15" file="./spec/models/team_comp_spec.rb" time="0.002700"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to validate that :email cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.005861"></testcase>
+<testcase classname="spec.models.user_spec" name="User validations is expected to validate that :email is case-insensitively unique" file="./spec/models/user_spec.rb" time="0.008173"></testcase>
+<testcase classname="spec.models.user_spec" name="User associations is expected to have many comments" file="./spec/models/user_spec.rb" time="0.001333"></testcase>
+<testcase classname="spec.models.user_spec" name="User associations is expected to have many likes" file="./spec/models/user_spec.rb" time="0.001183"></testcase>
+<testcase classname="spec.models.user_spec" name="User associations is expected to have many favorites" file="./spec/models/user_spec.rb" time="0.001053"></testcase>
+<testcase classname="spec.models.user_spec" name="User#authenticate returns user when password is correct" file="./spec/models/user_spec.rb" time="0.004260"><failure message="Validation failed: Terms accepted must be accepted" type="ActiveRecord::RecordInvalid">Failure/Error: let(:user) { create(:user, password: &apos;Test123!@#&apos;) }
+
+ActiveRecord::RecordInvalid:
+  Validation failed: Terms accepted must be accepted
+./spec/models/user_spec.rb:18:in `block (3 levels) in &lt;main&gt;&apos;
+./spec/models/user_spec.rb:21:in `block (3 levels) in &lt;main&gt;&apos;</failure></testcase>
+<testcase classname="spec.models.user_spec" name="User#authenticate returns false when password is incorrect" file="./spec/models/user_spec.rb" time="0.004405"><failure message="Validation failed: Terms accepted must be accepted" type="ActiveRecord::RecordInvalid">Failure/Error: let(:user) { create(:user, password: &apos;Test123!@#&apos;) }
+
+ActiveRecord::RecordInvalid:
+  Validation failed: Terms accepted must be accepted
+./spec/models/user_spec.rb:18:in `block (3 levels) in &lt;main&gt;&apos;
+./spec/models/user_spec.rb:26:in `block (3 levels) in &lt;main&gt;&apos;</failure></testcase>
+<testcase classname="spec.models.user_spec" name="User#admin? returns true for admin user" file="./spec/models/user_spec.rb" time="0.003828"><failure message="Validation failed: Terms accepted must be accepted" type="ActiveRecord::RecordInvalid">Failure/Error: user = create(:user, role: &apos;admin&apos;)
+
+ActiveRecord::RecordInvalid:
+  Validation failed: Terms accepted must be accepted
+./spec/models/user_spec.rb:33:in `block (3 levels) in &lt;main&gt;&apos;</failure></testcase>
+<testcase classname="spec.models.user_spec" name="User#admin? returns false for regular user" file="./spec/models/user_spec.rb" time="0.003716"><failure message="Validation failed: Terms accepted must be accepted" type="ActiveRecord::RecordInvalid">Failure/Error: user = create(:user, role: &apos;user&apos;)
+
+ActiveRecord::RecordInvalid:
+  Validation failed: Terms accepted must be accepted
+./spec/models/user_spec.rb:38:in `block (3 levels) in &lt;main&gt;&apos;</failure></testcase>
+</testsuite>

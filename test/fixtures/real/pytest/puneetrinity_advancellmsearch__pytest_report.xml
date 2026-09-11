@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="10" skipped="0" tests="35" time="366.249" timestamp="2025-06-22T11:57:21.314979+05:30" hostname="EWS"><testcase classname="tests.integration.test_api_integration" name="test_health" time="0.030" /><testcase classname="tests.integration.test_api_integration" name="test_root" time="0.013" /><testcase classname="tests.integration.test_api_integration" name="test_search_basic" time="0.055" /><testcase classname="tests.integration.test_api_integration" name="test_chat_complete" time="0.028" /><testcase classname="tests.integration.test_api_integration" name="test_metrics_endpoint" time="0.026" /><testcase classname="tests.integration.test_api_integration" name="test_search_test" time="0.015" /><testcase classname="tests.integration.test_api_integration_FINAL" name="test_debug_app_state" time="0.010" /><testcase classname="tests.integration.test_api_integration_FINAL" name="test_metrics_basic_fixed" time="0.008" /><testcase classname="tests.integration.test_api_integration_FINAL" name="test_metrics_endpoint_async_fixed" time="0.009" /><testcase classname="tests.integration.test_api_integration_FINAL" name="test_health_endpoint" time="0.007" /><testcase classname="tests.integration.test_api_integration_FINAL" name="test_root_endpoint" time="0.007" /><testcase classname="tests.integration.test_api_integration_FINAL" name="test_search_basic_quick" time="0.007" /><testcase classname="tests.integration.test_api_integration_fixed" name="test_health" time="0.011" /><testcase classname="tests.integration.test_api_integration_fixed" name="test_root_endpoint" time="0.009" /><testcase classname="tests.integration.test_api_integration_fixed" name="test_search_health" time="0.011" /><testcase classname="tests.integration.test_api_integration_fixed" name="test_search_basic_corrected" time="0.012" /><testcase classname="tests.integration.test_api_integration_fixed" name="test_chat_corrected" time="0.012" /><testcase classname="tests.integration.test_api_integration_fixed" name="test_search_test_endpoint" time="0.011" /><testcase classname="tests.integration.test_api_integration_fixed" name="test_metrics_endpoint" time="0.009" /><testcase classname="tests.integration.test_api_integration_fixed" name="test_readiness_probe" time="0.010" /><testcase classname="tests.integration.test_api_integration_fixed" name="test_chat_streaming" time="0.025" /><testcase classname="tests.integration.test_api_integration_fixed" name="test_error_handling" time="0.010" /><testcase classname="tests.integration.test_complete_integration.TestChatAPIIntegration" name="test_chat_streaming" time="4.454"><failure message="assert 'data: [DONE]' in 'data: {&quot;id&quot;: &quot;chatcmpl-error-1750573646&quot;, &quot;object&quot;: &quot;chat.completion.chunk&quot;, &quot;created&quot;: 1750573646, &quot;model&quot;: &quot;error&quot;, &quot;choices&quot;: [{&quot;index&quot;: 0, &quot;delta&quot;: {&quot;content&quot;: &quot;Error: Internal error: \'ChatMessage\' object is not subscriptable&quot;}, &quot;finish_reason&quot;: &quot;stop&quot;}]}\n\n'">self = &lt;test_complete_integration.TestChatAPIIntegration object at 0x000001C96747E410&gt;
+integration_client = &lt;httpx.AsyncClient object at 0x000001C96764F490&gt;
+
+    @pytest.mark.asyncio
+    async def test_chat_streaming(self, integration_client):
+        """Test streaming chat functionality."""
+        response = await integration_client.post("/api/v1/chat/stream", json={
+            "messages": [
+                {"role": "user", "content": "What is artificial intelligence?"}
+            ],
+            "session_id": "test_stream_001",
+            "model": "auto",
+            "max_tokens": 300,
+            "temperature": 0.7,
+            "stream": True
+        })
+        assert response.status_code in (200, 422)
+        if response.status_code == 200:
+            assert response.headers["content-type"] == "text/event-stream; charset=utf-8"
+            content = response.content.decode()
+            chunks = [line for line in content.split('\n') if line.startswith('data: ')]
+            assert len(chunks) &gt; 0
+            if chunks[0] != "data: [DONE]":
+                first_chunk_data = json.loads(chunks[0][6:])
+                assert "id" in first_chunk_data
+                assert "object" in first_chunk_data
+                assert first_chunk_data["object"] == "chat.completion.chunk"
+                assert "choices" in first_chunk_data
+                assert len(first_chunk_data["choices"]) &gt; 0
+&gt;           assert "data: [DONE]" in content
+E           assert 'data: [DONE]' in 'data: {"id": "chatcmpl-error-1750573646", "object": "chat.completion.chunk", "created": 1750573646, "model": "error", "choices": [{"index": 0, "delta": {"content": "Error: Internal error: \'ChatMessage\' object is not subscriptable"}, "finish_reason": "stop"}]}\n\n'
+
+tests\integration\test_complete_integration.py:162: AssertionError</failure></testcase><testcase classname="tests.integration.test_complete_integration.TestChatAPIIntegration" name="test_conversation_history_management" time="34.418" /><testcase classname="tests.integration.test_complete_integration.TestChatAPIIntegration" name="test_multi_turn_conversation" time="34.406"><failure message="assert 500 in (200, 422)&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code">self = &lt;test_complete_integration.TestChatAPIIntegration object at 0x000001C96747E950&gt;
+integration_client = &lt;httpx.AsyncClient object at 0x000001C9678F5450&gt;
+
+    @pytest.mark.asyncio
+    async def test_multi_turn_conversation(self, integration_client):
+        """Test multi-turn conversation with context."""
+        session_id = "test_multi_turn"
+        response1 = await integration_client.post("/api/v1/chat/complete", json={
+            "message": "Hello, I'm working on a Python project",
+            "session_id": session_id,
+            "context": {},
+            "constraints": {}
+        })
+&gt;       assert response1.status_code in (200, 422)
+E       assert 500 in (200, 422)
+E        +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+
+tests\integration\test_complete_integration.py:196: AssertionError</failure></testcase><testcase classname="tests.integration.test_complete_integration.TestChatAPIIntegration" name="test_different_query_types" time="34.405"><failure message="assert 500 in (200, 422)&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code">self = &lt;test_complete_integration.TestChatAPIIntegration object at 0x000001C96747EBF0&gt;
+integration_client = &lt;httpx.AsyncClient object at 0x000001C9679B4D90&gt;
+
+    @pytest.mark.asyncio
+    async def test_different_query_types(self, integration_client):
+        """Test handling of different query types."""
+        test_cases = [
+            {"message": "Hello there!", "expected_intent": "conversation"},
+            {"message": "What is machine learning?", "expected_intent": "question"},
+            {"message": "Write a Python function to sort a list", "expected_intent": "code"},
+            {"message": "Compare React and Vue frameworks", "expected_intent": "analysis"}
+        ]
+        for i, test_case in enumerate(test_cases):
+            response = await integration_client.post("/api/v1/chat/complete", json={
+                "message": test_case["message"],
+                "session_id": f"test_types_{i}",
+                "context": {},
+                "constraints": {},
+            })
+&gt;           assert response.status_code in (200, 422)
+E           assert 500 in (200, 422)
+E            +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+
+tests\integration\test_complete_integration.py:224: AssertionError</failure></testcase><testcase classname="tests.integration.test_complete_integration.TestChatAPIIntegration" name="test_error_handling" time="34.376"><failure message="assert 500 == 422&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code">self = &lt;test_complete_integration.TestChatAPIIntegration object at 0x000001C96747EE90&gt;
+integration_client = &lt;httpx.AsyncClient object at 0x000001C9679E2770&gt;
+
+    @pytest.mark.asyncio
+    async def test_error_handling(self, integration_client):
+        """Test API error handling."""
+        response = await integration_client.post("/api/v1/chat/complete", json={
+            "message": "",
+            "session_id": "test_error",
+            "context": {},
+            "constraints": {}
+        })
+        assert response.status_code == 422
+        long_message = "x" * 10000
+        response = await integration_client.post("/api/v1/chat/complete", json={
+            "message": long_message,
+            "session_id": "test_error",
+            "context": {},
+            "constraints": {}
+        })
+        assert response.status_code == 422
+        response = await integration_client.post("/api/v1/chat/complete", json={
+            "message": "Test message",
+            "constraints": {"quality_requirement": "invalid"},
+            "context": {}
+        })
+&gt;       assert response.status_code == 422
+E       assert 500 == 422
+E        +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+
+tests\integration\test_complete_integration.py:255: AssertionError</failure></testcase><testcase classname="tests.integration.test_complete_integration.TestChatAPIIntegration" name="test_cost_and_budget_tracking" time="34.423"><failure message="assert 500 in (200, 422)&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code">self = &lt;test_complete_integration.TestChatAPIIntegration object at 0x000001C96747F130&gt;
+integration_client = &lt;httpx.AsyncClient object at 0x000001C9679E2B00&gt;
+
+    @pytest.mark.asyncio
+    async def test_cost_and_budget_tracking(self, integration_client):
+        """Test cost tracking and budget constraints."""
+        response = await integration_client.post("/api/v1/chat/complete", json={
+            "message": "Complex analysis query that might cost more",
+            "constraints": {"max_cost": 0.01, "quality_requirement": "premium"},
+            "context": {}
+        })
+&gt;       assert response.status_code in (200, 422)
+E       assert 500 in (200, 422)
+E        +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+
+tests\integration\test_complete_integration.py:265: AssertionError</failure></testcase><testcase classname="tests.integration.test_complete_integration.TestChatAPIIntegration" name="test_authentication_and_rate_limiting" time="34.381"><failure message="assert 500 in (200, 422)&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code">self = &lt;test_complete_integration.TestChatAPIIntegration object at 0x000001C96747F400&gt;
+integration_client = &lt;httpx.AsyncClient object at 0x000001C9679C8B80&gt;
+
+    @pytest.mark.asyncio
+    async def test_authentication_and_rate_limiting(self, integration_client):
+        """Test authentication and rate limiting."""
+        response = await integration_client.post("/api/v1/chat/complete", json={
+            "message": "Test without auth",
+            "context": {},
+            "constraints": {}
+        })
+&gt;       assert response.status_code in (200, 422)
+E       assert 500 in (200, 422)
+E        +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+
+tests\integration\test_complete_integration.py:281: AssertionError</failure></testcase><testcase classname="tests.integration.test_complete_integration.TestSystemIntegration" name="test_health_endpoints" time="12.480" /><testcase classname="tests.integration.test_complete_integration.TestSystemIntegration" name="test_search_api_integration" time="4.371" /><testcase classname="tests.integration.test_complete_integration.TestSystemIntegration" name="test_concurrent_requests" time="34.409"><failure message="assert 0 &gt;= 4&#10; +  where 0 = len([])">self = &lt;test_complete_integration.TestSystemIntegration object at 0x000001C96747F970&gt;
+integration_client = &lt;httpx.AsyncClient object at 0x000001C967ADB1C0&gt;
+
+    @pytest.mark.asyncio
+    async def test_concurrent_requests(self, integration_client):
+        """Test handling of concurrent requests."""
+        # Create multiple concurrent chat requests
+        tasks = []
+        for i in range(5):
+            task = integration_client.post("/api/v1/chat/complete", json={
+                "message": f"Concurrent test message {i}",
+                "session_id": f"concurrent_{i}",
+                "context": {},
+                "constraints": {}
+            })
+            tasks.append(task)
+    
+        # Execute all requests concurrently
+        responses = await asyncio.gather(*tasks, return_exceptions=True)
+    
+        # All should succeed
+        successful_responses = [r for r in responses if hasattr(r, 'status_code') and r.status_code in (200, 422)]
+&gt;       assert len(successful_responses) &gt;= 4  # Allow for some potential failures
+E       assert 0 &gt;= 4
+E        +  where 0 = len([])
+
+tests\integration\test_complete_integration.py:341: AssertionError</failure></testcase><testcase classname="tests.integration.test_complete_integration.TestSystemIntegration" name="test_performance_under_load" time="34.377"><failure message="assert 500 in (200, 422)&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code">self = &lt;test_complete_integration.TestSystemIntegration object at 0x000001C96747F1F0&gt;
+integration_client = &lt;httpx.AsyncClient object at 0x000001C96783A1D0&gt;
+
+    @pytest.mark.asyncio
+    async def test_performance_under_load(self, integration_client):
+        """Test system performance under moderate load."""
+        import time
+    
+        start_time = time.time()
+    
+        # Send 10 requests sequentially
+        response_times = []
+        for i in range(10):
+            request_start = time.time()
+    
+            response = await integration_client.post("/api/v1/chat/complete", json={
+                "message": f"Performance test query {i}",
+                "session_id": f"perf_test_{i}",
+                "context": {},
+                "constraints": {}
+            })
+    
+            request_time = time.time() - request_start
+            response_times.append(request_time)
+    
+&gt;           assert response.status_code in (200, 422)
+E           assert 500 in (200, 422)
+E            +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+
+tests\integration\test_complete_integration.py:365: AssertionError</failure></testcase><testcase classname="tests.integration.test_complete_integration.TestRealWorldScenarios" name="test_customer_support_scenario" time="34.411"><failure message="assert 500 in (200, 422)&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code">self = &lt;test_complete_integration.TestRealWorldScenarios object at 0x000001C96747EA10&gt;
+integration_client = &lt;httpx.AsyncClient object at 0x000001C9679D10F0&gt;
+
+    @pytest.mark.asyncio
+    async def test_customer_support_scenario(self, integration_client):
+        """Test a customer support conversation scenario."""
+        session_id = "customer_support_test"
+    
+        response1 = await integration_client.post("/api/v1/chat/complete", json={
+            "message": "Hi, I need help with my account",
+            "session_id": session_id,
+            "context": {},
+            "constraints": {}
+        })
+&gt;       assert response1.status_code in (200, 422)
+E       assert 500 in (200, 422)
+E        +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+
+tests\integration\test_complete_integration.py:395: AssertionError</failure></testcase><testcase classname="tests.integration.test_complete_integration.TestRealWorldScenarios" name="test_technical_documentation_scenario" time="34.434"><failure message="assert 500 in (200, 422)&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code">self = &lt;test_complete_integration.TestRealWorldScenarios object at 0x000001C96747E350&gt;
+integration_client = &lt;httpx.AsyncClient object at 0x000001C9679B5DE0&gt;
+
+    @pytest.mark.asyncio
+    async def test_technical_documentation_scenario(self, integration_client):
+        """Test technical documentation assistance scenario."""
+        session_id = "tech_docs_test"
+    
+        response1 = await integration_client.post("/api/v1/chat/complete", json={
+            "message": "How do I implement authentication in FastAPI?",
+            "session_id": session_id,
+            "context": {},
+            "constraints": {"quality_requirement": "high"}
+        })
+&gt;       assert response1.status_code in (200, 422)
+E       assert 500 in (200, 422)
+E        +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code
+
+tests\integration\test_complete_integration.py:421: AssertionError</failure></testcase></testsuite></testsuites>

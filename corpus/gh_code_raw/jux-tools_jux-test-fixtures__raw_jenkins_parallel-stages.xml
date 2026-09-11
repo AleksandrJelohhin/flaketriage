@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ParallelPipeline" tests="9" failures="0" errors="1" skipped="0" time="30.123">
+  <testsuite name="Build Stage" tests="3" failures="0" errors="0" skipped="0" time="10.234" timestamp="2026-01-20T10:30:00" hostname="build-agent">
+    <properties>
+      <property name="project" value="distributed-system"/>
+      <property name="BUILD_NUMBER" value="1234"/>
+      <property name="STAGE_NAME" value="Build"/>
+    </properties>
+    <testcase name="compile_backend" classname="build.backend" time="4.567"/>
+    <testcase name="compile_frontend" classname="build.frontend" time="3.456"/>
+    <testcase name="build_docker_image" classname="build.docker" time="2.211"/>
+  </testsuite>
+  <testsuite name="Test Stage Linux" tests="3" failures="0" errors="0" skipped="0" time="8.901" timestamp="2026-01-20T10:30:10" hostname="linux-agent">
+    <properties>
+      <property name="project" value="distributed-system"/>
+      <property name="BUILD_NUMBER" value="1234"/>
+      <property name="STAGE_NAME" value="Test-Linux"/>
+      <property name="OS" value="Linux"/>
+    </properties>
+    <testcase name="unit_tests" classname="test.linux" time="3.456"/>
+    <testcase name="integration_tests" classname="test.linux" time="4.567"/>
+    <testcase name="smoke_tests" classname="test.linux" time="0.878"/>
+  </testsuite>
+  <testsuite name="Test Stage Windows" tests="3" failures="0" errors="1" skipped="0" time="10.988" timestamp="2026-01-20T10:30:10" hostname="windows-agent">
+    <properties>
+      <property name="project" value="distributed-system"/>
+      <property name="BUILD_NUMBER" value="1234"/>
+      <property name="STAGE_NAME" value="Test-Windows"/>
+      <property name="OS" value="Windows"/>
+    </properties>
+    <testcase name="unit_tests" classname="test.windows" time="4.567"/>
+    <testcase name="integration_tests" classname="test.windows" time="5.678">
+      <error message="ECONNREFUSED: Connection refused">
+Error: connect ECONNREFUSED 127.0.0.1:5432
+    at TCPConnectWrap.afterConnect
+      </error>
+    </testcase>
+    <testcase name="smoke_tests" classname="test.windows" time="0.743"/>
+  </testsuite>
+</testsuites>

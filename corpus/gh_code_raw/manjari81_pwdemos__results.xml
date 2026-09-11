@@ -1,0 +1,67 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="12.777619999999999">
+<testsuite name="reporters.spec.ts" timestamp="2025-05-26T05:08:06.504Z" hostname="chromium" tests="3" failures="1" skipped="0" time="29.366" errors="0">
+<testcase name="logotest" classname="reporters.spec.ts" time="10.001">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\reporters-logotest-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="title test" classname="reporters.spec.ts" time="9.635">
+<failure message="reporters.spec.ts:15:5 title test" type="FAILURE">
+<![CDATA[  [chromium] › reporters.spec.ts:15:5 › title test ─────────────────────────────────────────────────
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Demo Web Shop1"
+    Received string:    "Demo Web Shop"
+
+      15 | test('title test', async ({ page }) => {
+      16 |     //expect(await page.title()).toContain("Demo Web Shop");
+    > 17 |     expect(await page.title()).toContain("Demo Web Shop1");  // to fail one test 
+         |                                ^
+      18 | });
+      19 |
+      20 | test('search test', async ({ page }) => {
+        at C:\PWDEMOS\tests\reporters.spec.ts:17:32
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\reporters-title-test-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\reporters-title-test-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\reporters-title-test-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\reporters-title-test-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\reporters-title-test-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\reporters-title-test-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\reporters-title-test-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\reporters-title-test-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\reporters-title-test-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="search test" classname="reporters.spec.ts" time="9.73">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\reporters-search-test-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

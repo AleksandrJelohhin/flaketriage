@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="5" failures="1" errors="1" time="1.23">
+    <testsuite name="src/auth/login.test.ts" tests="3" failures="1" errors="0" skipped="1" time="0.83" file="src/auth/login.test.ts">
+        <testcase classname="auth/login" name="validateSession > accepts fresh token" time="0.12"/>
+        <testcase classname="auth/login" name="validateSession > rejects expired token" time="0.15">
+            <failure message="expected &apos;expired&apos; got undefined" type="AssertionError"><![CDATA[
+AssertionError: expected 'expired' got undefined
+    at src/auth/login.test.ts:42:10
+    at Object.<anonymous>
+            ]]></failure>
+        </testcase>
+        <testcase classname="auth/login" name="validateSession > TODO handle rotation" time="0">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/lib/math.test.ts" tests="2" failures="0" errors="1" skipped="0" time="0.4" file="src/lib/math.test.ts">
+        <testcase classname="math" name="divide > handles zero" time="0.2">
+            <error message="ReferenceError: x is not defined" type="ReferenceError"><![CDATA[
+ReferenceError: x is not defined
+    at src/lib/math.test.ts:10
+            ]]></error>
+        </testcase>
+        <testcase classname="math" name="divide > handles positives" time="0.2"/>
+    </testsuite>
+</testsuites>

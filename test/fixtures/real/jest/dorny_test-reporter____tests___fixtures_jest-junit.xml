@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="6" failures="4" errors="0" time="0.191">
+  <testsuite name="__tests__/main.test.js" errors="0" failures="3" skipped="0" timestamp="2026-07-11T12:47:20" time="0.114" tests="4">
+    <testcase classname="Test 1" name="Passing test" time="0.001">
+    </testcase>
+    <testcase classname="Test 1 › Test 1.1" name="Failing test" time="0.001">
+      <failure>Error: expect(received).toBeTruthy()
+
+Received: false
+    at Object.toBeTruthy (/Users/izso/Developer/test-reporter/reports/jest/__tests__/main.test.js:10:21)
+    at Promise.finally.completed (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:1561:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:1501:10)
+    at _callCircusTest (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:1011:40)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at _runTest (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:951:3)
+    at /Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:853:7
+    at _runTestsForDescribeBlock (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:866:11)
+    at _runTestsForDescribeBlock (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:861:11)
+    at _runTestsForDescribeBlock (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:861:11)
+    at run (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:765:3)
+    at runAndTransformResultsToJestFormat (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:1993:21)
+    at jestAdapter (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/runner.js:111:19)
+    at runTestInternal (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-runner/build/index.js:276:16)
+    at runTest (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-runner/build/index.js:344:7)</failure>
+    </testcase>
+    <testcase classname="Test 1 › Test 1.1" name="Exception in target unit" time="0">
+      <failure>Error: Some error
+    at Object.throwError (/Users/izso/Developer/test-reporter/reports/jest/lib/main.js:2:9)
+    at Object.throwError (/Users/izso/Developer/test-reporter/reports/jest/__tests__/main.test.js:14:11)
+    at Promise.finally.completed (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:1561:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:1501:10)
+    at _callCircusTest (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:1011:40)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at _runTest (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:951:3)
+    at /Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:853:7
+    at _runTestsForDescribeBlock (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:866:11)
+    at _runTestsForDescribeBlock (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:861:11)
+    at _runTestsForDescribeBlock (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:861:11)
+    at run (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:765:3)
+    at runAndTransformResultsToJestFormat (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:1993:21)
+    at jestAdapter (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/runner.js:111:19)
+    at runTestInternal (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-runner/build/index.js:276:16)
+    at runTest (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-runner/build/index.js:344:7)</failure>
+    </testcase>
+    <testcase classname="Test 2" name="Exception in test" time="0">
+      <failure>Error: Some error
+    at Object.&lt;anonymous&gt; (/Users/izso/Developer/test-reporter/reports/jest/__tests__/main.test.js:21:11)
+    at Promise.finally.completed (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:1561:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:1501:10)
+    at _callCircusTest (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:1011:40)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at _runTest (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:951:3)
+    at /Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:853:7
+    at _runTestsForDescribeBlock (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:866:11)
+    at _runTestsForDescribeBlock (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:861:11)
+    at run (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:765:3)
+    at runAndTransformResultsToJestFormat (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/jestAdapterInit.js:1993:21)
+    at jestAdapter (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/runner.js:111:19)
+    at runTestInternal (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-runner/build/index.js:276:16)
+    at runTest (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-runner/build/index.js:344:7)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="__tests__/second.test.js" errors="0" failures="1" skipped="1" timestamp="2026-07-11T12:47:20" time="0.041" tests="2">
+    <testcase classname="" name="Timeout test" time="0.023">
+      <failure>Error: thrown: &quot;Exceeded timeout of 1 ms for a test.
+Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout.&quot;
+    at Object.test (/Users/izso/Developer/test-reporter/reports/jest/__tests__/second.test.js:1:1)
+    at ModuleExecutor.exec (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-runtime/build/index.js:2078:26)
+    at CjsLoader.loadModule (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-runtime/build/index.js:323:36)
+    at CjsLoader.requireModule (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-runtime/build/index.js:289:12)
+    at Runtime.requireModule (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-runtime/build/index.js:3657:27)
+    at jestAdapter (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-circus/build/runner.js:96:13)
+    at runTestInternal (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-runner/build/index.js:276:16)
+    at runTest (/Users/izso/Developer/test-reporter/reports/jest/node_modules/jest-runner/build/index.js:344:7)</failure>
+    </testcase>
+    <testcase classname="" name="Skipped test" time="0">
+      <skipped/>
+    </testcase>
+  </testsuite>
+</testsuites>

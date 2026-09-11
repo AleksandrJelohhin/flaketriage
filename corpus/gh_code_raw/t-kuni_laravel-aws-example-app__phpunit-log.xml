@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="3" assertions="3" errors="0" warnings="0" failures="1" skipped="0" time="0.837910">
+    <testsuite name="Unit" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.704219">
+      <testsuite name="Tests\Unit\ExampleTest" file="/var/www/app/tests/Unit/ExampleTest.php" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.704219">
+        <testcase name="testBasicTest" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" file="/var/www/app/tests/Unit/ExampleTest.php" line="20" assertions="1" time="0.411160"/>
+        <testcase name="canAccessDatabase" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" file="/var/www/app/tests/Unit/ExampleTest.php" line="28" assertions="1" time="0.293059"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="1" assertions="1" errors="0" warnings="0" failures="1" skipped="0" time="0.133691">
+      <testsuite name="Tests\Feature\ExampleTest" file="/var/www/app/tests/Feature/ExampleTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="1" skipped="0" time="0.133691">
+        <testcase name="testBasicTest" class="Tests\Feature\ExampleTest" classname="Tests.Feature.ExampleTest" file="/var/www/app/tests/Feature/ExampleTest.php" line="15" assertions="1" time="0.133691">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">Tests\Feature\ExampleTest::testBasicTest
+Failed asserting that false is true.
+
+/var/www/app/tests/Feature/ExampleTest.php:22
+</failure>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,422 @@
+<testsuites id="" name="" tests="10" failures="10" skipped="0" errors="0" time="66.563968">
+<testsuite name="github-search.spec.ts" timestamp="2025-09-03T22:30:37.408Z" hostname="chromium" tests="2" failures="2" skipped="0" time="61.858" errors="0">
+<testcase name="GitHub User Search - Playwright Native › should search for a user and view repositories" classname="github-search.spec.ts" time="31.082">
+<failure message="github-search.spec.ts:4:7 should search for a user and view repositories" type="FAILURE">
+<![CDATA[  [chromium] › github-search.spec.ts:4:7 › GitHub User Search - Playwright Native › should search for a user and view repositories 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('input[placeholder="Search GitHub"]')
+
+
+       7 |     
+       8 |     // Search for a user
+    >  9 |     await page.fill('input[placeholder="Search GitHub"]', 'torvalds');
+         |                ^
+      10 |     await page.press('input[placeholder="Search GitHub"]', 'Enter');
+      11 |     
+      12 |     // Click on the user profile
+        at /Volumes/Documents/Projects/Playwright_Automation/src/tests/playwright/github-search.spec.ts:9:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="GitHub User Search - Playwright Native › should search for multiple users" classname="github-search.spec.ts" time="30.776">
+<failure message="github-search.spec.ts:33:7 should search for multiple users" type="FAILURE">
+<![CDATA[  [chromium] › github-search.spec.ts:33:7 › GitHub User Search - Playwright Native › should search for multiple users 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('input[placeholder="Search GitHub"]')
+
+
+      38 |       
+      39 |       // Search for user
+    > 40 |       await page.fill('input[placeholder="Search GitHub"]', user);
+         |                  ^
+      41 |       await page.press('input[placeholder="Search GitHub"]', 'Enter');
+      42 |       
+      43 |       // Click on user profile
+        at /Volumes/Documents/Projects/Playwright_Automation/src/tests/playwright/github-search.spec.ts:40:18
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="github-search.spec.ts" timestamp="2025-09-03T22:30:37.408Z" hostname="firefox" tests="2" failures="2" skipped="0" time="61.135" errors="0">
+<testcase name="GitHub User Search - Playwright Native › should search for a user and view repositories" classname="github-search.spec.ts" time="30.826">
+<failure message="github-search.spec.ts:4:7 should search for a user and view repositories" type="FAILURE">
+<![CDATA[  [firefox] › github-search.spec.ts:4:7 › GitHub User Search - Playwright Native › should search for a user and view repositories 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('input[placeholder="Search GitHub"]')
+
+
+       7 |     
+       8 |     // Search for a user
+    >  9 |     await page.fill('input[placeholder="Search GitHub"]', 'torvalds');
+         |                ^
+      10 |     await page.press('input[placeholder="Search GitHub"]', 'Enter');
+      11 |     
+      12 |     // Click on the user profile
+        at /Volumes/Documents/Projects/Playwright_Automation/src/tests/playwright/github-search.spec.ts:9:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="GitHub User Search - Playwright Native › should search for multiple users" classname="github-search.spec.ts" time="30.309">
+<failure message="github-search.spec.ts:33:7 should search for multiple users" type="FAILURE">
+<![CDATA[  [firefox] › github-search.spec.ts:33:7 › GitHub User Search - Playwright Native › should search for multiple users 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('input[placeholder="Search GitHub"]')
+
+
+      38 |       
+      39 |       // Search for user
+    > 40 |       await page.fill('input[placeholder="Search GitHub"]', user);
+         |                  ^
+      41 |       await page.press('input[placeholder="Search GitHub"]', 'Enter');
+      42 |       
+      43 |       // Click on user profile
+        at /Volumes/Documents/Projects/Playwright_Automation/src/tests/playwright/github-search.spec.ts:40:18
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="github-search.spec.ts" timestamp="2025-09-03T22:30:37.408Z" hostname="webkit" tests="2" failures="2" skipped="0" time="61.251" errors="0">
+<testcase name="GitHub User Search - Playwright Native › should search for a user and view repositories" classname="github-search.spec.ts" time="30.551">
+<failure message="github-search.spec.ts:4:7 should search for a user and view repositories" type="FAILURE">
+<![CDATA[  [webkit] › github-search.spec.ts:4:7 › GitHub User Search - Playwright Native › should search for a user and view repositories 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('input[placeholder="Search GitHub"]')
+
+
+       7 |     
+       8 |     // Search for a user
+    >  9 |     await page.fill('input[placeholder="Search GitHub"]', 'torvalds');
+         |                ^
+      10 |     await page.press('input[placeholder="Search GitHub"]', 'Enter');
+      11 |     
+      12 |     // Click on the user profile
+        at /Volumes/Documents/Projects/Playwright_Automation/src/tests/playwright/github-search.spec.ts:9:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="GitHub User Search - Playwright Native › should search for multiple users" classname="github-search.spec.ts" time="30.7">
+<failure message="github-search.spec.ts:33:7 should search for multiple users" type="FAILURE">
+<![CDATA[  [webkit] › github-search.spec.ts:33:7 › GitHub User Search - Playwright Native › should search for multiple users 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('input[placeholder="Search GitHub"]')
+
+
+      38 |       
+      39 |       // Search for user
+    > 40 |       await page.fill('input[placeholder="Search GitHub"]', user);
+         |                  ^
+      41 |       await page.press('input[placeholder="Search GitHub"]', 'Enter');
+      42 |       
+      43 |       // Click on user profile
+        at /Volumes/Documents/Projects/Playwright_Automation/src/tests/playwright/github-search.spec.ts:40:18
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="github-search.spec.ts" timestamp="2025-09-03T22:30:37.408Z" hostname="mobile-chrome" tests="2" failures="2" skipped="0" time="61.754" errors="0">
+<testcase name="GitHub User Search - Playwright Native › should search for a user and view repositories" classname="github-search.spec.ts" time="31.02">
+<failure message="github-search.spec.ts:4:7 should search for a user and view repositories" type="FAILURE">
+<![CDATA[  [mobile-chrome] › github-search.spec.ts:4:7 › GitHub User Search - Playwright Native › should search for a user and view repositories 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('input[placeholder="Search GitHub"]')
+
+
+       7 |     
+       8 |     // Search for a user
+    >  9 |     await page.fill('input[placeholder="Search GitHub"]', 'torvalds');
+         |                ^
+      10 |     await page.press('input[placeholder="Search GitHub"]', 'Enter');
+      11 |     
+      12 |     // Click on the user profile
+        at /Volumes/Documents/Projects/Playwright_Automation/src/tests/playwright/github-search.spec.ts:9:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-mobile-chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-mobile-chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-mobile-chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-mobile-chrome/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-mobile-chrome/video.webm]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-mobile-chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="GitHub User Search - Playwright Native › should search for multiple users" classname="github-search.spec.ts" time="30.734">
+<failure message="github-search.spec.ts:33:7 should search for multiple users" type="FAILURE">
+<![CDATA[  [mobile-chrome] › github-search.spec.ts:33:7 › GitHub User Search - Playwright Native › should search for multiple users 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('input[placeholder="Search GitHub"]')
+
+
+      38 |       
+      39 |       // Search for user
+    > 40 |       await page.fill('input[placeholder="Search GitHub"]', user);
+         |                  ^
+      41 |       await page.press('input[placeholder="Search GitHub"]', 'Enter');
+      42 |       
+      43 |       // Click on user profile
+        at /Volumes/Documents/Projects/Playwright_Automation/src/tests/playwright/github-search.spec.ts:40:18
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-mobile-chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-mobile-chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-mobile-chrome/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-mobile-chrome/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-mobile-chrome/video.webm]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-mobile-chrome/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="github-search.spec.ts" timestamp="2025-09-03T22:30:37.408Z" hostname="mobile-safari" tests="2" failures="2" skipped="0" time="60.922" errors="0">
+<testcase name="GitHub User Search - Playwright Native › should search for a user and view repositories" classname="github-search.spec.ts" time="30.422">
+<failure message="github-search.spec.ts:4:7 should search for a user and view repositories" type="FAILURE">
+<![CDATA[  [mobile-safari] › github-search.spec.ts:4:7 › GitHub User Search - Playwright Native › should search for a user and view repositories 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('input[placeholder="Search GitHub"]')
+
+
+       7 |     
+       8 |     // Search for a user
+    >  9 |     await page.fill('input[placeholder="Search GitHub"]', 'torvalds');
+         |                ^
+      10 |     await page.press('input[placeholder="Search GitHub"]', 'Enter');
+      11 |     
+      12 |     // Click on the user profile
+        at /Volumes/Documents/Projects/Playwright_Automation/src/tests/playwright/github-search.spec.ts:9:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-mobile-safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-mobile-safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-mobile-safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-mobile-safari/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-mobile-safari/video.webm]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--c52a6--user-and-view-repositories-mobile-safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="GitHub User Search - Playwright Native › should search for multiple users" classname="github-search.spec.ts" time="30.5">
+<failure message="github-search.spec.ts:33:7 should search for multiple users" type="FAILURE">
+<![CDATA[  [mobile-safari] › github-search.spec.ts:33:7 › GitHub User Search - Playwright Native › should search for multiple users 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('input[placeholder="Search GitHub"]')
+
+
+      38 |       
+      39 |       // Search for user
+    > 40 |       await page.fill('input[placeholder="Search GitHub"]', user);
+         |                  ^
+      41 |       await page.press('input[placeholder="Search GitHub"]', 'Enter');
+      42 |       
+      43 |       // Click on user profile
+        at /Volumes/Documents/Projects/Playwright_Automation/src/tests/playwright/github-search.spec.ts:40:18
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-mobile-safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-mobile-safari/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-mobile-safari/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-mobile-safari/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-mobile-safari/video.webm]]
+
+[[ATTACHMENT|../test-results/github-search-GitHub-User--bcc13-d-search-for-multiple-users-mobile-safari/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

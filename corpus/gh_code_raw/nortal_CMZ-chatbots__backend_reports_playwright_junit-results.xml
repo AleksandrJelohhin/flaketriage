@@ -1,0 +1,50 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="14.023074000000001">
+<testsuite name="validate-charlie-routing-fix.spec.js" timestamp="2025-10-26T12:00:52.162Z" hostname="chromium" tests="1" failures="1" skipped="0" time="12.327" errors="0">
+<testcase name="🐘 CRITICAL: Charlie Routing Fix Validation › should extract animalId from URL and Charlie responds as elephant" classname="validate-charlie-routing-fix.spec.js" time="12.327">
+<failure message="validate-charlie-routing-fix.spec.js:77:3 should extract animalId from URL and Charlie responds as elephant" type="FAILURE">
+<![CDATA[  [chromium] › validate-charlie-routing-fix.spec.js:77:3 › 🐘 CRITICAL: Charlie Routing Fix Validation › should extract animalId from URL and Charlie responds as elephant 
+
+    TimeoutError: page.waitForURL: Timeout 10000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation until "load"
+    ============================================================
+
+      89 |
+      90 |     // Wait for successful login (dashboard or animals page)
+    > 91 |     await page.waitForURL(/\/(dashboard|animals)/, { timeout: 10000 });
+         |                ^
+      92 |     console.log('✅ Login successful');
+      93 |
+      94 |     // Step 2: Navigate to Charlie's chat with animalId parameter
+        at /Users/keithstegbauer/repositories/CMZ-chatbots/backend/api/src/main/python/tests/playwright/specs/validate-charlie-routing-fix.spec.js:91:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../../../../../../../reports/playwright/test-results/validate-charlie-routing-f-575b4-harlie-responds-as-elephant-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../../../../../../../reports/playwright/test-results/validate-charlie-routing-f-575b4-harlie-responds-as-elephant-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../../../../../../../reports/playwright/test-results/validate-charlie-routing-f-575b4-harlie-responds-as-elephant-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+🔧 Setting up test environment...
+
+🎯 TEST: Validate Charlie Routing Fix
+📍 Testing URL: http://localhost:3001/chat?animalId=charlie_003
+
+📝 Step 1: Login to application
+
+[[ATTACHMENT|test-results/validate-charlie-routing-f-575b4-harlie-responds-as-elephant-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/validate-charlie-routing-f-575b4-harlie-responds-as-elephant-chromium/video.webm]]
+
+[[ATTACHMENT|test-results/validate-charlie-routing-f-575b4-harlie-responds-as-elephant-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

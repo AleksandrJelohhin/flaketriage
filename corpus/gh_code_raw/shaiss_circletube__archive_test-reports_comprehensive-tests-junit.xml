@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="108" failures="33" errors="0" time="199.077">
+  <testsuite name="Auth Helper" errors="0" failures="0" skipped="0" timestamp="2025-04-15T00:22:16" time="9.042" tests="18">
+    <testcase classname="Auth Helper is a helper module, not a test suite" name="Auth Helper is a helper module, not a test suite" time="0.002">
+    </testcase>
+    <testcase classname="Lab API Tests Lab Creation Can create a new lab" name="Lab API Tests Lab Creation Can create a new lab" time="0.173">
+    </testcase>
+    <testcase classname="Lab API Tests Lab Creation Cannot create a lab without required fields" name="Lab API Tests Lab Creation Cannot create a lab without required fields" time="0.124">
+    </testcase>
+    <testcase classname="Lab API Tests Lab Retrieval Can get all labs" name="Lab API Tests Lab Retrieval Can get all labs" time="0.645">
+    </testcase>
+    <testcase classname="Lab API Tests Lab Retrieval Can get a specific lab by ID" name="Lab API Tests Lab Retrieval Can get a specific lab by ID" time="0.389">
+    </testcase>
+    <testcase classname="Lab API Tests Lab Retrieval Returns 404 for non-existent lab" name="Lab API Tests Lab Retrieval Returns 404 for non-existent lab" time="0.195">
+    </testcase>
+    <testcase classname="Lab API Tests Lab Updates Can update a lab" name="Lab API Tests Lab Updates Can update a lab" time="0.431">
+    </testcase>
+    <testcase classname="Lab API Tests Lab Updates Can update lab status" name="Lab API Tests Lab Updates Can update lab status" time="0.429">
+    </testcase>
+    <testcase classname="Lab API Tests Lab Updates Validates lab status updates" name="Lab API Tests Lab Updates Validates lab status updates" time="0.163">
+    </testcase>
+    <testcase classname="Lab API Tests Lab Circles Can add a circle to a lab" name="Lab API Tests Lab Circles Can add a circle to a lab" time="0.621">
+    </testcase>
+    <testcase classname="Lab API Tests Lab Circles Can get circles for a lab" name="Lab API Tests Lab Circles Can get circles for a lab" time="0.321">
+    </testcase>
+    <testcase classname="Lab API Tests Lab Circles Can get circle stats for a lab" name="Lab API Tests Lab Circles Can get circle stats for a lab" time="0.534">
+    </testcase>
+    <testcase classname="Lab API Tests Lab Circles Can update a circle role in a lab" name="Lab API Tests Lab Circles Can update a circle role in a lab" time="0.382">
+    </testcase>
+    <testcase classname="Lab API Tests Lab Duplication Can duplicate a lab" name="Lab API Tests Lab Duplication Can duplicate a lab" time="0.383">
+    </testcase>
+    <testcase classname="Lab API Tests Lab Posts Can get posts for a lab" name="Lab API Tests Lab Posts Can get posts for a lab" time="0.245">
+    </testcase>
+    <testcase classname="Lab API Tests Lab Deletion Can remove a circle from a lab" name="Lab API Tests Lab Deletion Can remove a circle from a lab" time="0.321">
+    </testcase>
+    <testcase classname="Lab API Tests Lab Deletion Can delete a lab" name="Lab API Tests Lab Deletion Can delete a lab" time="0.323">
+    </testcase>
+    <testcase classname="Lab API Tests Lab Deletion Cannot access a deleted lab" name="Lab API Tests Lab Deletion Cannot access a deleted lab" time="0.195">
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Helper" errors="0" failures="0" skipped="0" timestamp="2025-04-15T00:22:25" time="13.183" tests="16">
+    <testcase classname="Auth Helper is a helper module, not a test suite" name="Auth Helper is a helper module, not a test suite" time="0.001">
+    </testcase>
+    <testcase classname="Lab Creation Wizard Flow Tests Step 1: Basic Information Can create a new lab with basic information" name="Lab Creation Wizard Flow Tests Step 1: Basic Information Can create a new lab with basic information" time="0.173">
+    </testcase>
+    <testcase classname="Lab Creation Wizard Flow Tests Step 2: Goals &amp; Description Can update lab with goals and description" name="Lab Creation Wizard Flow Tests Step 2: Goals &amp; Description Can update lab with goals and description" time="0.239">
+    </testcase>
+    <testcase classname="Lab Creation Wizard Flow Tests Step 3: Success Metrics Can update lab with success metrics" name="Lab Creation Wizard Flow Tests Step 3: Success Metrics Can update lab with success metrics" time="0.242">
+    </testcase>
+    <testcase classname="Lab Creation Wizard Flow Tests Step 4: Circle Selection Can add control circle to lab" name="Lab Creation Wizard Flow Tests Step 4: Circle Selection Can add control circle to lab" time="0.603">
+    </testcase>
+    <testcase classname="Lab Creation Wizard Flow Tests Step 4: Circle Selection Can add treatment circle to lab" name="Lab Creation Wizard Flow Tests Step 4: Circle Selection Can add treatment circle to lab" time="0.602">
+    </testcase>
+    <testcase classname="Lab Creation Wizard Flow Tests Step 4: Circle Selection Can verify both circles were added to lab" name="Lab Creation Wizard Flow Tests Step 4: Circle Selection Can verify both circles were added to lab" time="0.557">
+    </testcase>
+    <testcase classname="Lab Creation Wizard Flow Tests Step 5: Content Creation Can create test content post in control circle" name="Lab Creation Wizard Flow Tests Step 5: Content Creation Can create test content post in control circle" time="0.253">
+    </testcase>
+    <testcase classname="Lab Creation Wizard Flow Tests Step 5: Content Creation Can create test content post in treatment circle" name="Lab Creation Wizard Flow Tests Step 5: Content Creation Can create test content post in treatment circle" time="0.239">
+    </testcase>
+    <testcase classname="Lab Creation Wizard Flow Tests Step 5: Content Creation Can verify posts are retrievable from lab circles" name="Lab Creation Wizard Flow Tests Step 5: Content Creation Can verify posts are retrievable from lab circles" time="0.996">
+    </testcase>
+    <testcase classname="Lab Creation Wizard Flow Tests Step 6: Lab Activation Can activate the lab" name="Lab Creation Wizard Flow Tests Step 6: Lab Activation Can activate the lab" time="0.247">
+    </testcase>
+    <testcase classname="Lab Creation Wizard Flow Tests Step 6: Lab Activation Can verify lab activation was successful" name="Lab Creation Wizard Flow Tests Step 6: Lab Activation Can verify lab activation was successful" time="0.174">
+    </testcase>
+    <testcase classname="Lab Creation Wizard Flow Tests Step 7: Lab Validation Can create test pending responses for control circle post" name="Lab Creation Wizard Flow Tests Step 7: Lab Validation Can create test pending responses for control circle post" time="5.211">
+    </testcase>
+    <testcase classname="Lab Creation Wizard Flow Tests Step 7: Lab Validation Can verify pending responses are retrievable via get post API" name="Lab Creation Wizard Flow Tests Step 7: Lab Validation Can verify pending responses are retrievable via get post API" time="1.267">
+    </testcase>
+    <testcase classname="Lab Creation Wizard Flow Tests Step 7: Lab Validation Can verify lab posts are properly processed by ThreadManager" name="Lab Creation Wizard Flow Tests Step 7: Lab Validation Can verify lab posts are properly processed by ThreadManager" time="1.026">
+    </testcase>
+    <testcase classname="Lab Creation Wizard Flow Tests Cleanup Can complete the lab after testing" name="Lab Creation Wizard Flow Tests Cleanup Can complete the lab after testing" time="0.414">
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Helper" errors="0" failures="0" skipped="0" timestamp="2025-04-15T00:22:38" time="13.932" tests="5">
+    <testcase classname="Auth Helper is a helper module, not a test suite" name="Auth Helper is a helper module, not a test suite" time="0.001">
+    </testcase>
+    <testcase classname="CircleTube Workflow Tests AI Follower Interaction Workflow Create follower -&gt; Create post -&gt; Verify follower response" name="CircleTube Workflow Tests AI Follower Interaction Workflow Create follower -&gt; Create post -&gt; Verify follower response" time="6.395">
+    </testcase>
+    <testcase classname="CircleTube Workflow Tests Circle Collaboration Workflow Create circle -&gt; Invite member -&gt; Member joins -&gt; Create post -&gt; View activity" name="CircleTube Workflow Tests Circle Collaboration Workflow Create circle -&gt; Invite member -&gt; Member joins -&gt; Create post -&gt; View activity" time="0.928">
+    </testcase>
+    <testcase classname="CircleTube Workflow Tests User Profile and Settings Workflow Update profile -&gt; Change settings -&gt; Verify changes persisted" name="CircleTube Workflow Tests User Profile and Settings Workflow Update profile -&gt; Change settings -&gt; Verify changes persisted" time="0.269">
+    </testcase>
+    <testcase classname="CircleTube Workflow Tests AI Follower Collective Workflow Create collective -&gt; Add follower -&gt; Verify follower is in collective" name="CircleTube Workflow Tests AI Follower Collective Workflow Create collective -&gt; Add follower -&gt; Verify follower is in collective" time="5.779">
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Helper" errors="0" failures="0" skipped="0" timestamp="2025-04-15T00:22:52" time="0.055" tests="1">
+    <testcase classname="Auth Helper is a helper module, not a test suite" name="Auth Helper is a helper module, not a test suite" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Helper" errors="0" failures="0" skipped="0" timestamp="2025-04-15T00:22:52" time="10.147" tests="12">
+    <testcase classname="Auth Helper is a helper module, not a test suite" name="Auth Helper is a helper module, not a test suite" time="0.001">
+    </testcase>
+    <testcase classname="Data Creation Tests User Profile Tests Can retrieve authenticated user profile" name="Data Creation Tests User Profile Tests Can retrieve authenticated user profile" time="0.087">
+    </testcase>
+    <testcase classname="Data Creation Tests User Profile Tests Can update user profile" name="Data Creation Tests User Profile Tests Can update user profile" time="0.089">
+    </testcase>
+    <testcase classname="Data Creation Tests Circle Tests Can create a new circle" name="Data Creation Tests Circle Tests Can create a new circle" time="0.161">
+    </testcase>
+    <testcase classname="Data Creation Tests Circle Tests Can retrieve created circle" name="Data Creation Tests Circle Tests Can retrieve created circle" time="0.23">
+    </testcase>
+    <testcase classname="Data Creation Tests Circle Tests Can update circle details" name="Data Creation Tests Circle Tests Can update circle details" time="0.237">
+    </testcase>
+    <testcase classname="Data Creation Tests Post Tests Can create a new post" name="Data Creation Tests Post Tests Can create a new post" time="0.392">
+    </testcase>
+    <testcase classname="Data Creation Tests Post Tests Can retrieve created post" name="Data Creation Tests Post Tests Can retrieve created post" time="0.622">
+    </testcase>
+    <testcase classname="Data Creation Tests AI Follower Tests Can create a new AI follower" name="Data Creation Tests AI Follower Tests Can create a new AI follower" time="6.351">
+    </testcase>
+    <testcase classname="Data Creation Tests AI Follower Tests Can retrieve created AI follower" name="Data Creation Tests AI Follower Tests Can retrieve created AI follower" time="0.245">
+    </testcase>
+    <testcase classname="Data Creation Tests AI Follower Tests Can update AI follower details" name="Data Creation Tests AI Follower Tests Can update AI follower details" time="0.243">
+    </testcase>
+    <testcase classname="Data Creation Tests Workflow Tests Complete workflow: Create circle -&gt; Create post in circle -&gt; Verify post in circle" name="Data Creation Tests Workflow Tests Complete workflow: Create circle -&gt; Create post in circle -&gt; Verify post in circle" time="0.926">
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Helper" errors="0" failures="0" skipped="0" timestamp="2025-04-15T00:23:02" time="8.182" tests="5">
+    <testcase classname="Auth Helper is a helper module, not a test suite" name="Auth Helper is a helper module, not a test suite" time="0.001">
+    </testcase>
+    <testcase classname="Lab Validation Tests Can create an AI follower for the test circle" name="Lab Validation Tests Can create an AI follower for the test circle" time="3.69">
+    </testcase>
+    <testcase classname="Lab Validation Tests Can create a pending response for the test post" name="Lab Validation Tests Can create a pending response for the test post" time="0.315">
+    </testcase>
+    <testcase classname="Lab Validation Tests Can verify pending responses are retrievable via get post API" name="Lab Validation Tests Can verify pending responses are retrievable via get post API" time="1.197">
+    </testcase>
+    <testcase classname="Lab Validation Tests Can verify lab posts are properly processed by ThreadManager" name="Lab Validation Tests Can verify lab posts are properly processed by ThreadManager" time="0.666">
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Helper" errors="0" failures="0" skipped="0" timestamp="2025-04-15T00:23:11" time="13.902" tests="6">
+    <testcase classname="Auth Helper is a helper module, not a test suite" name="Auth Helper is a helper module, not a test suite" time="0.003">
+    </testcase>
+    <testcase classname="AI Follower Collectives API Tests Can create a new AI follower collective" name="AI Follower Collectives API Tests Can create a new AI follower collective" time="0.109">
+    </testcase>
+    <testcase classname="AI Follower Collectives API Tests Can get a list of AI follower collectives" name="AI Follower Collectives API Tests Can get a list of AI follower collectives" time="0.195">
+    </testcase>
+    <testcase classname="AI Follower Collectives API Tests Can get details of a specific AI follower collective" name="AI Follower Collectives API Tests Can get details of a specific AI follower collective" time="0.17">
+    </testcase>
+    <testcase classname="AI Follower Collectives API Tests Can add a follower to a collective" name="AI Follower Collectives API Tests Can add a follower to a collective" time="0.102">
+    </testcase>
+    <testcase classname="AI Follower Collectives API Tests Can get members of a collective" name="AI Follower Collectives API Tests Can get members of a collective" time="0.456">
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Helper" errors="0" failures="3" skipped="0" timestamp="2025-04-15T00:23:24" time="126.744" tests="5">
+    <testcase classname="Auth Helper is a helper module, not a test suite" name="Auth Helper is a helper module, not a test suite" time="0.001">
+    </testcase>
+    <testcase classname="Direct Chat API Tests Can send a direct message to an AI follower" name="Direct Chat API Tests Can send a direct message to an AI follower" time="60.002">
+      <failure>Error: thrown: &quot;Exceeded timeout of 60000 ms for a test.
+Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout.&quot;
+    at /home/runner/workspace/tests/api/direct-chat-api.test.cjs:61:3
+    at _dispatchDescribe (/home/runner/workspace/node_modules/jest-circus/build/index.js:91:26)
+    at describe (/home/runner/workspace/node_modules/jest-circus/build/index.js:55:5)
+    at Object.&lt;anonymous&gt; (/home/runner/workspace/tests/api/direct-chat-api.test.cjs:60:1)
+    at Runtime._execModule (/home/runner/workspace/node_modules/jest-runtime/build/index.js:1439:24)
+    at Runtime._loadModule (/home/runner/workspace/node_modules/jest-runtime/build/index.js:1022:12)
+    at Runtime.requireModule (/home/runner/workspace/node_modules/jest-runtime/build/index.js:882:12)
+    at jestAdapter (/home/runner/workspace/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:77:13)
+    at runTestInternal (/home/runner/workspace/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/runner/workspace/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="Direct Chat API Tests Can get chat history with an AI follower" name="Direct Chat API Tests Can get chat history with an AI follower" time="1.339">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: true
+Received: false
+    at Object.&lt;anonymous&gt; (/home/runner/workspace/tests/api/direct-chat-api.test.cjs:93:44)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="Direct Chat API Tests Can get unread message count" name="Direct Chat API Tests Can get unread message count" time="0.172">
+    </testcase>
+    <testcase classname="Direct Chat API Tests Can mark messages as read" name="Direct Chat API Tests Can mark messages as read" time="60.002">
+      <failure>Error: thrown: &quot;Exceeded timeout of 60000 ms for a test.
+Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout.&quot;
+    at /home/runner/workspace/tests/api/direct-chat-api.test.cjs:127:3
+    at _dispatchDescribe (/home/runner/workspace/node_modules/jest-circus/build/index.js:91:26)
+    at describe (/home/runner/workspace/node_modules/jest-circus/build/index.js:55:5)
+    at Object.&lt;anonymous&gt; (/home/runner/workspace/tests/api/direct-chat-api.test.cjs:60:1)
+    at Runtime._execModule (/home/runner/workspace/node_modules/jest-runtime/build/index.js:1439:24)
+    at Runtime._loadModule (/home/runner/workspace/node_modules/jest-runtime/build/index.js:1022:12)
+    at Runtime.requireModule (/home/runner/workspace/node_modules/jest-runtime/build/index.js:882:12)
+    at jestAdapter (/home/runner/workspace/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:77:13)
+    at runTestInternal (/home/runner/workspace/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/home/runner/workspace/node_modules/jest-runner/build/runTest.js:444:34)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Helper" errors="0" failures="5" skipped="0" timestamp="2025-04-15T00:25:31" time="2.57" tests="5">
+    <testcase classname="Auth Helper is a helper module, not a test suite" name="Auth Helper is a helper module, not a test suite" time="0">
+      <failure>Error: socket hang up
+    at Socket.socketOnEnd (node:_http_client:528:25)
+    at Socket.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)</failure>
+    </testcase>
+    <testcase classname="Circle-Follower API Integration Tests Can add a follower to a circle" name="Circle-Follower API Integration Tests Can add a follower to a circle" time="0">
+      <failure>Error: socket hang up
+    at Socket.socketOnEnd (node:_http_client:528:25)
+    at Socket.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)</failure>
+    </testcase>
+    <testcase classname="Circle-Follower API Integration Tests Can get followers for a circle" name="Circle-Follower API Integration Tests Can get followers for a circle" time="0">
+      <failure>Error: socket hang up
+    at Socket.socketOnEnd (node:_http_client:528:25)
+    at Socket.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)</failure>
+    </testcase>
+    <testcase classname="Circle-Follower API Integration Tests Can toggle mute status for a follower in a circle" name="Circle-Follower API Integration Tests Can toggle mute status for a follower in a circle" time="0.001">
+      <failure>Error: socket hang up
+    at Socket.socketOnEnd (node:_http_client:528:25)
+    at Socket.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)</failure>
+    </testcase>
+    <testcase classname="Circle-Follower API Integration Tests Can remove a follower from a circle" name="Circle-Follower API Integration Tests Can remove a follower from a circle" time="0">
+      <failure>Error: socket hang up
+    at Socket.socketOnEnd (node:_http_client:528:25)
+    at Socket.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Helper" errors="0" failures="5" skipped="0" timestamp="2025-04-15T00:25:34" time="0.224" tests="5">
+    <testcase classname="Auth Helper is a helper module, not a test suite" name="Auth Helper is a helper module, not a test suite" time="0.001">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="Circles API Tests Can create a new circle" name="Circles API Tests Can create a new circle" time="0">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="Circles API Tests Can retrieve circles for user" name="Circles API Tests Can retrieve circles for user" time="0.001">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="Circles API Tests Can retrieve a specific circle" name="Circles API Tests Can retrieve a specific circle" time="0">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="Circles API Tests Can update circle details" name="Circles API Tests Can update circle details" time="0">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Helper" errors="0" failures="4" skipped="0" timestamp="2025-04-15T00:25:34" time="0.133" tests="4">
+    <testcase classname="Auth Helper is a helper module, not a test suite" name="Auth Helper is a helper module, not a test suite" time="0">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="Posts API Tests Can create a post in a circle" name="Posts API Tests Can create a post in a circle" time="0.001">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="Posts API Tests Can retrieve posts from a circle" name="Posts API Tests Can retrieve posts from a circle" time="0">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="Posts API Tests Can retrieve a specific post" name="Posts API Tests Can retrieve a specific post" time="0">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Helper" errors="0" failures="5" skipped="0" timestamp="2025-04-15T00:25:34" time="0.069" tests="5">
+    <testcase classname="Auth Helper is a helper module, not a test suite" name="Auth Helper is a helper module, not a test suite" time="0">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="Tools API Tests Can get a list of available tools" name="Tools API Tests Can get a list of available tools" time="0.001">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="Tools API Tests Can get details of a specific tool" name="Tools API Tests Can get details of a specific tool" time="0">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="Tools API Tests Can execute a calculator tool" name="Tools API Tests Can execute a calculator tool" time="0">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="Tools API Tests Can get tool execution history" name="Tools API Tests Can get tool execution history" time="0">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Helper" errors="0" failures="4" skipped="0" timestamp="2025-04-15T00:25:34" time="0.077" tests="4">
+    <testcase classname="Auth Helper is a helper module, not a test suite" name="Auth Helper is a helper module, not a test suite" time="0">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="Default Circle API Tests Can get default circle using /api/default-circle endpoint" name="Default Circle API Tests Can get default circle using /api/default-circle endpoint" time="0">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="Default Circle API Tests Can get default circle using alternative /api/circles/default endpoint" name="Default Circle API Tests Can get default circle using alternative /api/circles/default endpoint" time="0">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="Default Circle API Tests Both default circle endpoints return the same circle" name="Default Circle API Tests Both default circle endpoints return the same circle" time="0">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Helper" errors="0" failures="3" skipped="0" timestamp="2025-04-15T00:25:34" time="0.16" tests="3">
+    <testcase classname="Auth Helper is a helper module, not a test suite" name="Auth Helper is a helper module, not a test suite" time="0">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="AI Follower API Specific Tests Can create an AI follower with complete required data" name="AI Follower API Specific Tests Can create an AI follower with complete required data" time="0">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="AI Follower API Specific Tests Can query AI followers list" name="AI Follower API Specific Tests Can query AI followers list" time="0">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Helper" errors="0" failures="0" skipped="0" timestamp="2025-04-15T00:25:35" time="0.077" tests="3">
+    <testcase classname="Auth Helper is a helper module, not a test suite" name="Auth Helper is a helper module, not a test suite" time="0.002">
+    </testcase>
+    <testcase classname="Authentication Endpoints Registration endpoint exists and accepts requests" name="Authentication Endpoints Registration endpoint exists and accepts requests" time="0.008">
+    </testcase>
+    <testcase classname="Authentication Endpoints Login endpoint returns successful response" name="Authentication Endpoints Login endpoint returns successful response" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Helper" errors="0" failures="2" skipped="0" timestamp="2025-04-15T00:25:35" time="0.056" tests="3">
+    <testcase classname="Auth Helper is a helper module, not a test suite" name="Auth Helper is a helper module, not a test suite" time="0.001">
+    </testcase>
+    <testcase classname="Health API Tests GET /api/health returns basic health status" name="Health API Tests GET /api/health returns basic health status" time="0.002">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="Health API Tests GET /api/health/details returns detailed health information" name="Health API Tests GET /api/health/details returns detailed health information" time="0.002">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Zod Schema Validation" errors="0" failures="0" skipped="0" timestamp="2025-04-15T00:25:35" time="0.043" tests="3">
+    <testcase classname="Zod Schema Validation validates valid user data" name="Zod Schema Validation validates valid user data" time="0.004">
+    </testcase>
+    <testcase classname="Zod Schema Validation rejects invalid user data" name="Zod Schema Validation rejects invalid user data" time="0.002">
+    </testcase>
+    <testcase classname="Zod Schema Validation schema validates with optional fields missing" name="Zod Schema Validation schema validates with optional fields missing" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth Helper" errors="0" failures="2" skipped="0" timestamp="2025-04-15T00:25:35" time="0.074" tests="3">
+    <testcase classname="Auth Helper is a helper module, not a test suite" name="Auth Helper is a helper module, not a test suite" time="0.001">
+    </testcase>
+    <testcase classname="Server API GET /api/user returns 401 when not authenticated" name="Server API GET /api/user returns 401 when not authenticated" time="0.003">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+    <testcase classname="Server API GET /api endpoint exists" name="Server API GET /api endpoint exists" time="0.003">
+      <failure>Error: connect ECONNREFUSED 127.0.0.1:5000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-04-15T00:25:35" time="0.027" tests="2">
+    <testcase classname=" 1 + 1 equals 2" name=" 1 + 1 equals 2" time="0">
+    </testcase>
+    <testcase classname=" 2 * 3 equals 6" name=" 2 * 3 equals 6" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>

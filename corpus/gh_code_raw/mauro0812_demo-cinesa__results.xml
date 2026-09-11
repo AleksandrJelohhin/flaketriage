@@ -1,0 +1,68 @@
+<testsuites id="" name="" tests="4" failures="1" skipped="0" errors="0" time="39.05095899999999">
+<testsuite name="register.spec.ts" timestamp="2024-07-05T15:00:12.509Z" hostname="Chrome" tests="1" failures="1" skipped="0" time="35.006" errors="0">
+<testcase name="Register Test › Register user test" classname="register.spec.ts" time="35.006">
+<failure message="register.spec.ts:6:9 Register user test" type="FAILURE">
+<![CDATA[  [Chrome] › register.spec.ts:6:9 › Register Test › Register user test › The user go to the home page 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: The button 'Accept All Cookies' isn't visible
+
+       at ../lib/WebActions.ts:301
+
+      299 | 			.waitForSelector(locator, { state: 'visible', timeout: waitForElement })
+      300 | 			.catch(() => {
+    > 301 | 				throw new Error(`${errorMessage}`);
+          | 				      ^
+      302 | 			});
+      303 | 	}
+      304 |
+
+        at /Users/maurogarcia/Documents/playwright-demo/cinesa-demo/lib/WebActions.ts:301:11
+        at WebActions.verifyElementIsDisplayed (/Users/maurogarcia/Documents/playwright-demo/cinesa-demo/lib/WebActions.ts:298:3)
+        at WebActions.clickElement (/Users/maurogarcia/Documents/playwright-demo/cinesa-demo/lib/WebActions.ts:49:3)
+        at HomePage.goToTheHome (/Users/maurogarcia/Documents/playwright-demo/cinesa-demo/pages/pageRepository/HomePage.ts:25:9)
+        at /Users/maurogarcia/Documents/playwright-demo/cinesa-demo/tests/register.spec.ts:9:13
+        at /Users/maurogarcia/Documents/playwright-demo/cinesa-demo/tests/register.spec.ts:8:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/register-Register-Test-Register-user-test-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/register-Register-Test-Register-user-test-Chrome/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/register-Register-Test-Register-user-test-Chrome/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/register-Register-Test-Register-user-test-Chrome/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/register-Register-Test-Register-user-test-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/register-Register-Test-Register-user-test-Chrome/video.webm]]
+
+[[ATTACHMENT|test-results/register-Register-Test-Register-user-test-Chrome/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="register.spec.ts" timestamp="2024-07-05T15:00:12.509Z" hostname="Firefox" tests="1" failures="0" skipped="0" time="27.082" errors="0">
+<testcase name="Register Test › Register user test" classname="register.spec.ts" time="27.082">
+</testcase>
+</testsuite>
+<testsuite name="register.spec.ts" timestamp="2024-07-05T15:00:12.509Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="27.435" errors="0">
+<testcase name="Register Test › Register user test" classname="register.spec.ts" time="27.435">
+</testcase>
+</testsuite>
+<testsuite name="register.spec.ts" timestamp="2024-07-05T15:00:12.509Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="25.14" errors="0">
+<testcase name="Register Test › Register user test" classname="register.spec.ts" time="25.14">
+</testcase>
+</testsuite>
+</testsuites>

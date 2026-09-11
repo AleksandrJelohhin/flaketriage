@@ -1,0 +1,2133 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="29" failures="3" skipped="2" tests="58" time="43.770" timestamp="2025-05-25T10:46:23.637005" hostname="9e4a17dc57aa"><testcase classname="tests.test_auth.TestPasswordHashing" name="test_password_hashing" time="0.765" /><testcase classname="tests.test_auth.TestPasswordHashing" name="test_different_passwords_different_hashes" time="0.436" /><testcase classname="tests.test_auth.TestPasswordHashing" name="test_same_password_different_hashes" time="0.862" /><testcase classname="tests.test_auth.TestJWTTokens" name="test_create_access_token" time="0.001" /><testcase classname="tests.test_auth.TestJWTTokens" name="test_create_refresh_token" time="0.001" /><testcase classname="tests.test_auth.TestJWTTokens" name="test_decode_valid_token" time="0.004" /><testcase classname="tests.test_auth.TestJWTTokens" name="test_decode_invalid_token" time="0.001" /><testcase classname="tests.test_auth.TestJWTTokens" name="test_decode_expired_token" time="0.002" /><testcase classname="tests.test_auth.TestJWTTokens" name="test_sign_jwt_complete" time="0.001" /><testcase classname="tests.test_auth.TestRolePermissions" name="test_get_user_role_by_experience" time="0.001" /><testcase classname="tests.test_auth.TestRolePermissions" name="test_get_user_permissions" time="0.001" /><testcase classname="tests.test_auth.TestAuthEndpoints" name="test_register_new_user" time="0.146"><failure message="sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at &quot;localhost&quot; (::1), port 5433 failed: Connection refused&#10;&#09;Is the server running on that host and accepting TCP/IP connections?&#10;connection to server at &quot;localhost&quot; (127.0.0.1), port 5433 failed: Connection refused&#10;&#09;Is the server running on that host and accepting TCP/IP connections?&#10;&#10;(Background on this error at: https://sqlalche.me/e/20/e3q8)">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:145: in __init__
+    self._dbapi_connection = engine.raw_connection()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:3292: in raw_connection
+    return self.pool.connect()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:452: in connect
+    return _ConnectionFairy._checkout(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:1269: in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:716: in checkout
+    rec = pool._do_get()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py:169: in _do_get
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py:167: in _do_get
+    return self._create_connection()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:393: in _create_connection
+    return _ConnectionRecord(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:678: in __init__
+    self.__connect()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:902: in __connect
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:898: in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/create.py:637: in connect
+    return dialect.connect(*cargs, **cparams)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:616: in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+/usr/local/lib/python3.11/site-packages/psycopg2/__init__.py:122: in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+E   psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused
+E   	Is the server running on that host and accepting TCP/IP connections?
+E   connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+E   	Is the server running on that host and accepting TCP/IP connections?
+
+The above exception was the direct cause of the following exception:
+tests/test_auth.py:166: in test_register_new_user
+    response = test_client.post("/auth/register", json=user_data)
+/usr/local/lib/python3.11/site-packages/starlette/testclient.py:590: in post
+    return super().post(
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:1132: in post
+    return self.request(
+/usr/local/lib/python3.11/site-packages/starlette/testclient.py:465: in request
+    return super().request(
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:814: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:901: in send
+    response = self._send_handling_auth(
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:929: in _send_handling_auth
+    response = self._send_handling_redirects(
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:966: in _send_handling_redirects
+    response = self._send_single_request(request)
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:1002: in _send_single_request
+    response = transport.handle_request(request)
+/usr/local/lib/python3.11/site-packages/starlette/testclient.py:342: in handle_request
+    raise exc
+/usr/local/lib/python3.11/site-packages/starlette/testclient.py:339: in handle_request
+    portal.call(self.app, scope, receive, send)
+/usr/local/lib/python3.11/site-packages/anyio/from_thread.py:277: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+/usr/local/lib/python3.11/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+/usr/local/lib/python3.11/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+/usr/local/lib/python3.11/site-packages/anyio/from_thread.py:217: in _call_func
+    retval = await retval
+/usr/local/lib/python3.11/site-packages/fastapi/applications.py:1106: in __call__
+    await super().__call__(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/applications.py:122: in __call__
+    await self.middleware_stack(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py:184: in __call__
+    raise exc
+/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py:162: in __call__
+    await self.app(scope, receive, _send)
+/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py:83: in __call__
+    await self.app(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py:79: in __call__
+    raise exc
+/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py:68: in __call__
+    await self.app(scope, receive, sender)
+/usr/local/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py:20: in __call__
+    raise e
+/usr/local/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py:17: in __call__
+    await self.app(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/routing.py:718: in __call__
+    await route.handle(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/routing.py:276: in handle
+    await self.app(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/routing.py:66: in app
+    response = await func(request)
+/usr/local/lib/python3.11/site-packages/fastapi/routing.py:274: in app
+    raw_response = await run_endpoint_function(
+/usr/local/lib/python3.11/site-packages/fastapi/routing.py:191: in run_endpoint_function
+    return await dependant.call(**values)
+routers/auth.py:190: in register_user
+    existing_user = get_user_by_email(db, user_data.email)
+routers/auth.py:68: in get_user_by_email
+    return db.query(User).filter(User.email == email).first()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py:2748: in first
+    return self.limit(1)._iter().first()  # type: ignore
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py:2847: in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:2308: in execute
+    return self._execute_internal(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:2180: in _execute_internal
+    conn = self._connection_for_bind(bind)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:2047: in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+&lt;string&gt;:2: in _connection_for_bind
+    ???
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1143: in _connection_for_bind
+    conn = bind.connect()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:3268: in connect
+    return self._connection_cls(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:147: in __init__
+    Connection._handle_dbapi_exception_noconnection(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2430: in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:145: in __init__
+    self._dbapi_connection = engine.raw_connection()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:3292: in raw_connection
+    return self.pool.connect()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:452: in connect
+    return _ConnectionFairy._checkout(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:1269: in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:716: in checkout
+    rec = pool._do_get()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py:169: in _do_get
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py:167: in _do_get
+    return self._create_connection()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:393: in _create_connection
+    return _ConnectionRecord(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:678: in __init__
+    self.__connect()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:902: in __connect
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:898: in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/create.py:637: in connect
+    return dialect.connect(*cargs, **cparams)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:616: in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+/usr/local/lib/python3.11/site-packages/psycopg2/__init__.py:122: in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+E   sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused
+E   	Is the server running on that host and accepting TCP/IP connections?
+E   connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+E   	Is the server running on that host and accepting TCP/IP connections?
+E   
+E   (Background on this error at: https://sqlalche.me/e/20/e3q8)</failure></testcase><testcase classname="tests.test_auth.TestAuthEndpoints" name="test_register_duplicate_email" time="0.222"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$pjWEWmpxCCmsefErEeDj2ezYJVMo3w/d3tEK4N2Vim49JbTx2XzRm', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$pjWEWmpxCCmsefErEeDj2ezYJVMo3w/d3tEK4N2Vim49JbTx2XzRm', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_auth.TestAuthEndpoints" name="test_login_valid_credentials" time="0.222"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$q6eo2Em0zvXST6MjeJb4H.fpcV9wwOKg5cvOpnQKWUxGLypGKcu.q', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$q6eo2Em0zvXST6MjeJb4H.fpcV9wwOKg5cvOpnQKWUxGLypGKcu.q', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_auth.TestAuthEndpoints" name="test_login_invalid_credentials" time="0.222"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$OOxWIqcqRwCPy2e4iPCaMuA49bmSA3LymAwn2Cdoiqb4ICbzx4MMi', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$OOxWIqcqRwCPy2e4iPCaMuA49bmSA3LymAwn2Cdoiqb4ICbzx4MMi', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_auth.TestAuthEndpoints" name="test_login_nonexistent_user" time="0.013"><failure message="sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at &quot;localhost&quot; (::1), port 5433 failed: Connection refused&#10;&#09;Is the server running on that host and accepting TCP/IP connections?&#10;connection to server at &quot;localhost&quot; (127.0.0.1), port 5433 failed: Connection refused&#10;&#09;Is the server running on that host and accepting TCP/IP connections?&#10;&#10;(Background on this error at: https://sqlalche.me/e/20/e3q8)">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:145: in __init__
+    self._dbapi_connection = engine.raw_connection()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:3292: in raw_connection
+    return self.pool.connect()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:452: in connect
+    return _ConnectionFairy._checkout(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:1269: in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:716: in checkout
+    rec = pool._do_get()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py:169: in _do_get
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py:167: in _do_get
+    return self._create_connection()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:393: in _create_connection
+    return _ConnectionRecord(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:678: in __init__
+    self.__connect()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:902: in __connect
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:898: in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/create.py:637: in connect
+    return dialect.connect(*cargs, **cparams)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:616: in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+/usr/local/lib/python3.11/site-packages/psycopg2/__init__.py:122: in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+E   psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused
+E   	Is the server running on that host and accepting TCP/IP connections?
+E   connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+E   	Is the server running on that host and accepting TCP/IP connections?
+
+The above exception was the direct cause of the following exception:
+tests/test_auth.py:223: in test_login_nonexistent_user
+    response = test_client.post("/auth/login", data=login_data)
+/usr/local/lib/python3.11/site-packages/starlette/testclient.py:590: in post
+    return super().post(
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:1132: in post
+    return self.request(
+/usr/local/lib/python3.11/site-packages/starlette/testclient.py:465: in request
+    return super().request(
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:814: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:901: in send
+    response = self._send_handling_auth(
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:929: in _send_handling_auth
+    response = self._send_handling_redirects(
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:966: in _send_handling_redirects
+    response = self._send_single_request(request)
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:1002: in _send_single_request
+    response = transport.handle_request(request)
+/usr/local/lib/python3.11/site-packages/starlette/testclient.py:342: in handle_request
+    raise exc
+/usr/local/lib/python3.11/site-packages/starlette/testclient.py:339: in handle_request
+    portal.call(self.app, scope, receive, send)
+/usr/local/lib/python3.11/site-packages/anyio/from_thread.py:277: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+/usr/local/lib/python3.11/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+/usr/local/lib/python3.11/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+/usr/local/lib/python3.11/site-packages/anyio/from_thread.py:217: in _call_func
+    retval = await retval
+/usr/local/lib/python3.11/site-packages/fastapi/applications.py:1106: in __call__
+    await super().__call__(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/applications.py:122: in __call__
+    await self.middleware_stack(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py:184: in __call__
+    raise exc
+/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py:162: in __call__
+    await self.app(scope, receive, _send)
+/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py:83: in __call__
+    await self.app(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py:79: in __call__
+    raise exc
+/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py:68: in __call__
+    await self.app(scope, receive, sender)
+/usr/local/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py:20: in __call__
+    raise e
+/usr/local/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py:17: in __call__
+    await self.app(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/routing.py:718: in __call__
+    await route.handle(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/routing.py:276: in handle
+    await self.app(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/routing.py:66: in app
+    response = await func(request)
+/usr/local/lib/python3.11/site-packages/fastapi/routing.py:274: in app
+    raw_response = await run_endpoint_function(
+/usr/local/lib/python3.11/site-packages/fastapi/routing.py:191: in run_endpoint_function
+    return await dependant.call(**values)
+routers/auth.py:285: in login
+    user = authenticate_user(db, form_data.username, form_data.password)
+routers/auth.py:72: in authenticate_user
+    user = get_user_by_email(db, email)
+routers/auth.py:68: in get_user_by_email
+    return db.query(User).filter(User.email == email).first()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py:2748: in first
+    return self.limit(1)._iter().first()  # type: ignore
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py:2847: in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:2308: in execute
+    return self._execute_internal(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:2180: in _execute_internal
+    conn = self._connection_for_bind(bind)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:2047: in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+&lt;string&gt;:2: in _connection_for_bind
+    ???
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1143: in _connection_for_bind
+    conn = bind.connect()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:3268: in connect
+    return self._connection_cls(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:147: in __init__
+    Connection._handle_dbapi_exception_noconnection(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2430: in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:145: in __init__
+    self._dbapi_connection = engine.raw_connection()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:3292: in raw_connection
+    return self.pool.connect()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:452: in connect
+    return _ConnectionFairy._checkout(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:1269: in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:716: in checkout
+    rec = pool._do_get()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py:169: in _do_get
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py:167: in _do_get
+    return self._create_connection()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:393: in _create_connection
+    return _ConnectionRecord(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:678: in __init__
+    self.__connect()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:902: in __connect
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:898: in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/create.py:637: in connect
+    return dialect.connect(*cargs, **cparams)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:616: in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+/usr/local/lib/python3.11/site-packages/psycopg2/__init__.py:122: in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+E   sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused
+E   	Is the server running on that host and accepting TCP/IP connections?
+E   connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+E   	Is the server running on that host and accepting TCP/IP connections?
+E   
+E   (Background on this error at: https://sqlalche.me/e/20/e3q8)</failure></testcase><testcase classname="tests.test_auth.TestAuthEndpoints" name="test_get_current_user" time="0.225"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$TIIIpplKHSKZywM431iu0uglOch7.E2qZSsOS24DK9ua/W0fz7C1.', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$TIIIpplKHSKZywM431iu0uglOch7.E2qZSsOS24DK9ua/W0fz7C1.', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_auth.TestAuthEndpoints" name="test_get_current_user_invalid_token" time="0.006" /><testcase classname="tests.test_auth.TestAuthEndpoints" name="test_refresh_token" time="0.238"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$KxgqBELc5OWgMA/F5ntZNOGVbkL7gNtjwArqFcnCQluuy68I9fy1i', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$KxgqBELc5OWgMA/F5ntZNOGVbkL7gNtjwArqFcnCQluuy68I9fy1i', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_auth.TestAuthEndpoints" name="test_refresh_token_invalid" time="0.006" /><testcase classname="tests.test_auth.TestAuthEndpoints" name="test_change_password" time="0.230"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$4g1FIW0frpp7GEKB5JGyCuF2BlWc6d/qe1Ei7Feh8pDBbSEEZtEFm', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$4g1FIW0frpp7GEKB5JGyCuF2BlWc6d/qe1Ei7Feh8pDBbSEEZtEFm', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_auth.TestAuthEndpoints" name="test_change_password_wrong_current" time="0.223"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$pXLByEFNdlObTIOcKGB8ducy7ZUzuxXzNtw4UzYboZdCDBZB.a4WO', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$pXLByEFNdlObTIOcKGB8ducy7ZUzuxXzNtw4UzYboZdCDBZB.a4WO', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_auth.TestAuthEndpoints" name="test_verify_token" time="0.218"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$wNz8N8v7kjw9maAu5gTwtuwc16hWsHMzgKbJQJz8ssDxBF5tjKYnG', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$wNz8N8v7kjw9maAu5gTwtuwc16hWsHMzgKbJQJz8ssDxBF5tjKYnG', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_auth.TestAuthEndpoints" name="test_verify_invalid_token" time="0.004" /><testcase classname="tests.test_auth.TestSecurityFeatures" name="test_inactive_user_login" time="0.230"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$MF.jclr5sHODWqWfJiwZ4eqKd8LpIHUCoGPFnIWTNti49cFoNGiQG', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$MF.jclr5sHODWqWfJiwZ4eqKd8LpIHUCoGPFnIWTNti49cFoNGiQG', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_auth.TestSecurityFeatures" name="test_password_reset_request" time="0.219"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$j4JOjgNSiUiV7gMQhX.wp.0AaujtE50v6JPcunCr./Zj5OLIj5vlW', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$j4JOjgNSiUiV7gMQhX.wp.0AaujtE50v6JPcunCr./Zj5OLIj5vlW', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_auth.TestSecurityFeatures" name="test_password_reset_nonexistent_email" time="0.007"><failure message="sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at &quot;localhost&quot; (::1), port 5433 failed: Connection refused&#10;&#09;Is the server running on that host and accepting TCP/IP connections?&#10;connection to server at &quot;localhost&quot; (127.0.0.1), port 5433 failed: Connection refused&#10;&#09;Is the server running on that host and accepting TCP/IP connections?&#10;&#10;(Background on this error at: https://sqlalche.me/e/20/e3q8)">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:145: in __init__
+    self._dbapi_connection = engine.raw_connection()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:3292: in raw_connection
+    return self.pool.connect()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:452: in connect
+    return _ConnectionFairy._checkout(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:1269: in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:716: in checkout
+    rec = pool._do_get()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py:169: in _do_get
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py:167: in _do_get
+    return self._create_connection()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:393: in _create_connection
+    return _ConnectionRecord(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:678: in __init__
+    self.__connect()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:902: in __connect
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:898: in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/create.py:637: in connect
+    return dialect.connect(*cargs, **cparams)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:616: in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+/usr/local/lib/python3.11/site-packages/psycopg2/__init__.py:122: in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+E   psycopg2.OperationalError: connection to server at "localhost" (::1), port 5433 failed: Connection refused
+E   	Is the server running on that host and accepting TCP/IP connections?
+E   connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+E   	Is the server running on that host and accepting TCP/IP connections?
+
+The above exception was the direct cause of the following exception:
+tests/test_auth.py:358: in test_password_reset_nonexistent_email
+    response = test_client.post("/auth/reset-password-request", json=reset_data)
+/usr/local/lib/python3.11/site-packages/starlette/testclient.py:590: in post
+    return super().post(
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:1132: in post
+    return self.request(
+/usr/local/lib/python3.11/site-packages/starlette/testclient.py:465: in request
+    return super().request(
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:814: in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:901: in send
+    response = self._send_handling_auth(
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:929: in _send_handling_auth
+    response = self._send_handling_redirects(
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:966: in _send_handling_redirects
+    response = self._send_single_request(request)
+/usr/local/lib/python3.11/site-packages/httpx/_client.py:1002: in _send_single_request
+    response = transport.handle_request(request)
+/usr/local/lib/python3.11/site-packages/starlette/testclient.py:342: in handle_request
+    raise exc
+/usr/local/lib/python3.11/site-packages/starlette/testclient.py:339: in handle_request
+    portal.call(self.app, scope, receive, send)
+/usr/local/lib/python3.11/site-packages/anyio/from_thread.py:277: in call
+    return cast(T_Retval, self.start_task_soon(func, *args).result())
+/usr/local/lib/python3.11/concurrent/futures/_base.py:456: in result
+    return self.__get_result()
+/usr/local/lib/python3.11/concurrent/futures/_base.py:401: in __get_result
+    raise self._exception
+/usr/local/lib/python3.11/site-packages/anyio/from_thread.py:217: in _call_func
+    retval = await retval
+/usr/local/lib/python3.11/site-packages/fastapi/applications.py:1106: in __call__
+    await super().__call__(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/applications.py:122: in __call__
+    await self.middleware_stack(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py:184: in __call__
+    raise exc
+/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py:162: in __call__
+    await self.app(scope, receive, _send)
+/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py:83: in __call__
+    await self.app(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py:79: in __call__
+    raise exc
+/usr/local/lib/python3.11/site-packages/starlette/middleware/exceptions.py:68: in __call__
+    await self.app(scope, receive, sender)
+/usr/local/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py:20: in __call__
+    raise e
+/usr/local/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py:17: in __call__
+    await self.app(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/routing.py:718: in __call__
+    await route.handle(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/routing.py:276: in handle
+    await self.app(scope, receive, send)
+/usr/local/lib/python3.11/site-packages/starlette/routing.py:66: in app
+    response = await func(request)
+/usr/local/lib/python3.11/site-packages/fastapi/routing.py:274: in app
+    raw_response = await run_endpoint_function(
+/usr/local/lib/python3.11/site-packages/fastapi/routing.py:191: in run_endpoint_function
+    return await dependant.call(**values)
+routers/auth.py:372: in request_password_reset
+    user = get_user_by_email(db, reset_data.email)
+routers/auth.py:68: in get_user_by_email
+    return db.query(User).filter(User.email == email).first()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py:2748: in first
+    return self.limit(1)._iter().first()  # type: ignore
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/query.py:2847: in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:2308: in execute
+    return self._execute_internal(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:2180: in _execute_internal
+    conn = self._connection_for_bind(bind)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:2047: in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+&lt;string&gt;:2: in _connection_for_bind
+    ???
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1143: in _connection_for_bind
+    conn = bind.connect()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:3268: in connect
+    return self._connection_cls(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:147: in __init__
+    Connection._handle_dbapi_exception_noconnection(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2430: in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:145: in __init__
+    self._dbapi_connection = engine.raw_connection()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:3292: in raw_connection
+    return self.pool.connect()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:452: in connect
+    return _ConnectionFairy._checkout(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:1269: in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:716: in checkout
+    rec = pool._do_get()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py:169: in _do_get
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/impl.py:167: in _do_get
+    return self._create_connection()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:393: in _create_connection
+    return _ConnectionRecord(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:678: in __init__
+    self.__connect()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:902: in __connect
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/pool/base.py:898: in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/create.py:637: in connect
+    return dialect.connect(*cargs, **cparams)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:616: in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+/usr/local/lib/python3.11/site-packages/psycopg2/__init__.py:122: in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+E   sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: Connection refused
+E   	Is the server running on that host and accepting TCP/IP connections?
+E   connection to server at "localhost" (127.0.0.1), port 5433 failed: Connection refused
+E   	Is the server running on that host and accepting TCP/IP connections?
+E   
+E   (Background on this error at: https://sqlalche.me/e/20/e3q8)</failure></testcase><testcase classname="tests.test_auth.TestSecurityFeatures" name="test_token_expiration_handling" time="0.008" /><testcase classname="tests.test_auth.TestSecurityFeatures" name="test_malformed_token_handling" time="0.028" /><testcase classname="tests.test_auth.TestRoleBasedAccess" name="test_role_permissions_in_token" time="0.233"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$lu5iOcsfj8nN5sXwV/uUFOmEsrSaTmODwE84X8gqnvCIgFr95FXli', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$lu5iOcsfj8nN5sXwV/uUFOmEsrSaTmODwE84X8gqnvCIgFr95FXli', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_auth.TestRoleBasedAccess" name="test_admin_permissions" time="0.227"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(admin@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'admin@example.com', 'password_hash': '$2b$12$Zk6fsh1dRGxX5EzZLy2Fk.GLeXWmf7HT52lN0rC2xlFQl89idbXj2', 'first_name': 'Admin', 'last_name': 'User', 'role_id': 3, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(admin@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:204: in test_admin
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(admin@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'admin@example.com', 'password_hash': '$2b$12$Zk6fsh1dRGxX5EzZLy2Fk.GLeXWmf7HT52lN0rC2xlFQl89idbXj2', 'first_name': 'Admin', 'last_name': 'User', 'role_id': 3, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_auth.TestRoleBasedAccess" name="test_user_permissions" time="0.223"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$3I34Lj6gogv2lpe/MBBE2.hPwgGejqFXg3yz/FMO4DxgKgpcA3hba', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$3I34Lj6gogv2lpe/MBBE2.hPwgGejqFXg3yz/FMO4DxgKgpcA3hba', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_database" name="test_database_connection" time="0.002" /><testcase classname="tests.test_database" name="test_database_tables_exist" time="0.016" /><testcase classname="tests.test_database" name="test_database_basic_operations" time="0.005" /><testcase classname="tests.test_gamification.TestPointsService" name="test_award_points_basic" time="0.228"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$e.cBxh6kf2ybo63TsDyZE.fROXmO2uBNNHMqBmFub703s2..GQOZW', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$e.cBxh6kf2ybo63TsDyZE.fROXmO2uBNNHMqBmFub703s2..GQOZW', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_gamification.TestPointsService" name="test_award_custom_points" time="0.227"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$ayzQuxucc/uwRyZImalBi.0nax7Msh9g43HQUGJQ5sVc5Vwz9S/Yq', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$ayzQuxucc/uwRyZImalBi.0nax7Msh9g43HQUGJQ5sVc5Vwz9S/Yq', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_gamification.TestPointsService" name="test_level_progression" time="0.225"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$jljcHBGprBgeBOdIfYuREuyzcAly9Z5lXdMnIqHz/l8ji3qgfzAty', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$jljcHBGprBgeBOdIfYuREuyzcAly9Z5lXdMnIqHz/l8ji3qgfzAty', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_gamification.TestPointsService" name="test_invalid_action" time="0.238"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$tChCRu5Y1D.hPYxoigEbFOuoSR7JglI0O02opPUAh/MkfOia1U0MS', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$tChCRu5Y1D.hPYxoigEbFOuoSR7JglI0O02opPUAh/MkfOia1U0MS', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_gamification.TestPointsService" name="test_user_not_found" time="0.004" /><testcase classname="tests.test_gamification.TestUserStats" name="test_get_user_stats_basic" time="0.232"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$5WKwLptoKuc1p7zSOW6TwOP0kb.ttBjKBiYrm9lSDSko3RLd2jde2', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$5WKwLptoKuc1p7zSOW6TwOP0kb.ttBjKBiYrm9lSDSko3RLd2jde2', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_gamification.TestUserStats" name="test_get_user_stats_with_points" time="0.242"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$r0diY46/VXaOfD22n1cRK.1AGaEcaoCOh/1HVfQBrDRzzCKrvlGNi', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$r0diY46/VXaOfD22n1cRK.1AGaEcaoCOh/1HVfQBrDRzzCKrvlGNi', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_gamification.TestUserStats" name="test_user_stats_not_found" time="0.003" /><testcase classname="tests.test_gamification.TestAchievements" name="test_check_first_login_achievement" time="0.235"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$6nZXmHwcWElm1kzxBOjeZODFzptzORwe9My0JFzb.XHt8cqilRa0a', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$6nZXmHwcWElm1kzxBOjeZODFzptzORwe9My0JFzb.XHt8cqilRa0a', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_gamification.TestAchievements" name="test_content_explorer_achievement" time="0.227"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$DLYitvcXcVF39X0nRu.1EeBxGsYtHlqMUdycySAZhB15odXOu8P5C', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$DLYitvcXcVF39X0nRu.1EeBxGsYtHlqMUdycySAZhB15odXOu8P5C', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_gamification.TestAchievements" name="test_duplicate_achievement_prevention" time="0.231"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$jPZset8K1ES1HxoCIhKAzOdcVnB1eIc50Say/yKZktCEP8ovWsQnK', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$jPZset8K1ES1HxoCIhKAzOdcVnB1eIc50Say/yKZktCEP8ovWsQnK', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_gamification.TestLeaderboard" name="test_empty_leaderboard" time="0.014" /><testcase classname="tests.test_gamification.TestLeaderboard" name="test_leaderboard_with_users" time="0.233"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$WX6sLxNsga69FpEpa8kTfeAtj4.C6Y9NKYVEFxotWdjXUHVRl1Anm', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$WX6sLxNsga69FpEpa8kTfeAtj4.C6Y9NKYVEFxotWdjXUHVRl1Anm', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_gamification.TestGamificationAPI" name="test_award_points_endpoint" time="0.232"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$M4WEDk8k7ZluSOdBBq.Fy.kc4TBjUFJlP3NquuNsZ83WPmmvqdRRe', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$M4WEDk8k7ZluSOdBBq.Fy.kc4TBjUFJlP3NquuNsZ83WPmmvqdRRe', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_gamification.TestGamificationAPI" name="test_get_stats_endpoint" time="0.236"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$F.F8CeQaPm/D5EYmHnW7tu0kbBB6wITOx0r81W/TWjJyhkNarr9/K', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$F.F8CeQaPm/D5EYmHnW7tu0kbBB6wITOx0r81W/TWjJyhkNarr9/K', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_gamification.TestGamificationAPI" name="test_leaderboard_endpoint" time="0.011" /><testcase classname="tests.test_gamification.TestGamificationAPI" name="test_achievements_endpoint" time="0.242"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$bB1Z.26bqmWIs3tqb8iTVelYlZXQQnnK3dt8GOA/w5S82HFkeDxBe', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$bB1Z.26bqmWIs3tqb8iTVelYlZXQQnnK3dt8GOA/w5S82HFkeDxBe', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_gamification.TestGamificationAPI" name="test_unauthorized_access" time="0.012" /><testcase classname="tests.test_gamification.TestGamificationAPI" name="test_invalid_action_endpoint" time="0.225"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$ZQNKLju5KYkGAm.dylp6Z.K0K36Lmb0N7W4i3T0a2kiCwuHg/OX8m', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$ZQNKLju5KYkGAm.dylp6Z.K0K36Lmb0N7W4i3T0a2kiCwuHg/OX8m', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_gamification.TestPointsIntegration" name="test_points_trigger_achievements" time="0.228"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$3ttpBrIzZ.7s4VYYu7cQ3.EI/GxSxi9VxOHLTDu93HP6uREdlldUG', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$3ttpBrIzZ.7s4VYYu7cQ3.EI/GxSxi9VxOHLTDu93HP6uREdlldUG', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_gamification.TestPointsIntegration" name="test_level_up_with_achievements" time="0.235"><error message="failed on setup with &quot;sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint &quot;users_email_key&quot;&#10;DETAIL:  Key (email)=(testuser@example.com) already exists.&#10;&#10;[SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]&#10;[parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$ZQGQ10rMZvzpiPhOOx3Lk.rYnFgqBA7meJkGzsfvXaGTJH6JCT0F2', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]&#10;(Background on this error at: https://sqlalche.me/e/20/gkpj)&quot;">/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+
+The above exception was the direct cause of the following exception:
+conftest.py:150: in test_user
+    test_db.commit()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1969: in commit
+    trans.commit(_to_root=True)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1256: in commit
+    self._prepare_impl()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py:139: in _go
+    ret_value = fn(self, *arg, **kw)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:1231: in _prepare_impl
+    self.session.flush()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4312: in flush
+    self._flush(objects)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4447: in _flush
+    with util.safe_reraise():
+/usr/local/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py:146: in __exit__
+    raise exc_value.with_traceback(exc_tb)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/session.py:4408: in _flush
+    flush_context.execute()
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:466: in execute
+    rec.execute(self)
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py:642: in execute
+    util.preloaded.orm_persistence.save_obj(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:93: in save_obj
+    _emit_insert_statements(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py:1226: in _emit_insert_statements
+    result = connection.execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1416: in execute
+    return meth(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py:516: in _execute_on_connection
+    return connection._execute_clauseelement(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1639: in _execute_clauseelement
+    ret = self._execute_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1848: in _execute_context
+    return self._exec_single_context(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1988: in _exec_single_context
+    self._handle_dbapi_exception(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:2343: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/base.py:1969: in _exec_single_context
+    self.dialect.do_execute(
+/usr/local/lib/python3.11/site-packages/sqlalchemy/engine/default.py:922: in do_execute
+    cursor.execute(statement, parameters)
+E   sqlalchemy.exc.IntegrityError: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "users_email_key"
+E   DETAIL:  Key (email)=(testuser@example.com) already exists.
+E   
+E   [SQL: INSERT INTO users (email, password_hash, first_name, last_name, role_id, is_active, last_login) VALUES (%(email)s, %(password_hash)s, %(first_name)s, %(last_name)s, %(role_id)s, %(is_active)s, %(last_login)s) RETURNING users.id, users.created_at, users.updated_at]
+E   [parameters: {'email': 'testuser@example.com', 'password_hash': '$2b$12$ZQGQ10rMZvzpiPhOOx3Lk.rYnFgqBA7meJkGzsfvXaGTJH6JCT0F2', 'first_name': 'Test', 'last_name': 'User', 'role_id': 1, 'is_active': True, 'last_login': None}]
+E   (Background on this error at: https://sqlalche.me/e/20/gkpj)</error></testcase><testcase classname="tests.test_unit_xml_parser.TestElementParsing" name="test_parse_elements_puaams101" time="0.001"><skipped type="pytest.skip" message="Test XML file not found: /tgaWebServiceKit-2021-12-01/xml/Unit_PUAAMS101_R1.xml">/app/tests/test_unit_xml_parser.py:31: Test XML file not found: /tgaWebServiceKit-2021-12-01/xml/Unit_PUAAMS101_R1.xml</skipped></testcase><testcase classname="tests.test_unit_xml_parser.TestElementParsing" name="test_store_elements_mock" time="0.002"><skipped type="pytest.skip" message="Integration test requires database connection">/app/tests/test_unit_xml_parser.py:64: Integration test requires database connection</skipped></testcase></testsuite></testsuites>

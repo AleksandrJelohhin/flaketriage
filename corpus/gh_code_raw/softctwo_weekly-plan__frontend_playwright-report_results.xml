@@ -1,0 +1,1069 @@
+<testsuites id="" name="" tests="120" failures="15" skipped="104" errors="0" time="77.65358300000001">
+<testsuite name="auth.spec.js" timestamp="2025-11-20T02:40:59.051Z" hostname="chromium" tests="10" failures="9" skipped="0" time="248.734" errors="0">
+<testcase name="认证功能 › 页面应该正确显示登录表单" classname="auth.spec.js" time="5.846">
+<failure message="auth.spec.js:12:7 页面应该正确显示登录表单" type="FAILURE">
+<![CDATA[  [chromium] › auth.spec.js:12:7 › 认证功能 › 页面应该正确显示登录表单 ─────────────────────────────────────────────
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('.login-title')
+    Expected substring: "岗责驱动的周工作计划管理系统"
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toContainText" with timeout 5000ms
+      - waiting for locator('.login-title')
+
+
+      16 |     // 检查主要元素
+      17 |     await expect(page.locator('.login-container')).toBeVisible()
+    > 18 |     await expect(page.locator('.login-title')).toContainText('岗责驱动的周工作计划管理系统')
+         |                                                ^
+      19 |
+      20 |     // 检查表单元素
+      21 |     await expect(page.locator('input[type="text"]')).toBeVisible()
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/auth.spec.js:18:48
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-页面应该正确显示登录表单-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-页面应该正确显示登录表单-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../playwright-report/auth-认证功能-页面应该正确显示登录表单-chromium/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[
+Warning: attachment auth-认证功能-页面应该正确显示登录表单-chromium/test-failed-1.png is missing
+Warning: attachment auth-认证功能-页面应该正确显示登录表单-chromium/video.webm is missing
+Warning: attachment auth-认证功能-页面应该正确显示登录表单-chromium/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="认证功能 › 应该显示验证错误信息" classname="auth.spec.js" time="30.924">
+<failure message="auth.spec.js:26:7 应该显示验证错误信息" type="FAILURE">
+<![CDATA[  [chromium] › auth.spec.js:26:7 › 认证功能 › 应该显示验证错误信息 ───────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button[type="submit"]')
+
+
+      26 |   test('应该显示验证错误信息', async({ page }) => {
+      27 |     // 点击登录按钮但不填写表单
+    > 28 |     await page.click('button[type="submit"]')
+         |                ^
+      29 |
+      30 |     // 检查错误信息
+      31 |     await expect(page.locator('.error-message')).toBeVisible()
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/auth.spec.js:28:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-应该显示验证错误信息-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-应该显示验证错误信息-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../playwright-report/auth-认证功能-应该显示验证错误信息-chromium/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[
+Warning: attachment auth-认证功能-应该显示验证错误信息-chromium/test-failed-1.png is missing
+Warning: attachment auth-认证功能-应该显示验证错误信息-chromium/video.webm is missing
+Warning: attachment auth-认证功能-应该显示验证错误信息-chromium/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="认证功能 › 应该显示登录失败错误" classname="auth.spec.js" time="30.147">
+<failure message="auth.spec.js:35:7 应该显示登录失败错误" type="FAILURE">
+<![CDATA[  [chromium] › auth.spec.js:35:7 › 认证功能 › 应该显示登录失败错误 ───────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button[type="submit"]')
+
+
+      37 |     await page.fill('input[type="text"]', 'wronguser')
+      38 |     await page.fill('input[type="password"]', 'wrongpass')
+    > 39 |     await page.click('button[type="submit"]')
+         |                ^
+      40 |
+      41 |     // 检查错误信息
+      42 |     await expect(page.locator('.error-message')).toBeVisible()
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/auth.spec.js:39:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-应该显示登录失败错误-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-应该显示登录失败错误-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../playwright-report/auth-认证功能-应该显示登录失败错误-chromium/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[
+Warning: attachment auth-认证功能-应该显示登录失败错误-chromium/test-failed-1.png is missing
+Warning: attachment auth-认证功能-应该显示登录失败错误-chromium/video.webm is missing
+Warning: attachment auth-认证功能-应该显示登录失败错误-chromium/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="认证功能 › 应该能够成功登录" classname="auth.spec.js" time="30.144">
+<failure message="auth.spec.js:46:7 应该能够成功登录" type="FAILURE">
+<![CDATA[  [chromium] › auth.spec.js:46:7 › 认证功能 › 应该能够成功登录 ─────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button[type="submit"]')
+
+
+      48 |     await page.fill('input[type="text"]', 'admin')
+      49 |     await page.fill('input[type="password"]', 'admin123')
+    > 50 |     await page.click('button[type="submit"]')
+         |                ^
+      51 |
+      52 |     // 检查登录成功后跳转到仪表板
+      53 |     await expect(page).toHaveURL('/dashboard')
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/auth.spec.js:50:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-应该能够成功登录-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-应该能够成功登录-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../playwright-report/auth-认证功能-应该能够成功登录-chromium/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[
+Warning: attachment auth-认证功能-应该能够成功登录-chromium/test-failed-1.png is missing
+Warning: attachment auth-认证功能-应该能够成功登录-chromium/video.webm is missing
+Warning: attachment auth-认证功能-应该能够成功登录-chromium/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="认证功能 › 应该支持回车键登录" classname="auth.spec.js" time="0.994">
+</testcase>
+<testcase name="认证功能 › 应该显示加载状态" classname="auth.spec.js" time="30.148">
+<failure message="auth.spec.js:73:7 应该显示加载状态" type="FAILURE">
+<![CDATA[  [chromium] › auth.spec.js:73:7 › 认证功能 › 应该显示加载状态 ─────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button[type="submit"]')
+
+
+      78 |     // 点击登录并检查加载状态
+      79 |     const loginButton = page.locator('button[type="submit"]')
+    > 80 |     await loginButton.click()
+         |                       ^
+      81 |
+      82 |     // 检查按钮禁用状态
+      83 |     await expect(loginButton).toBeDisabled()
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/auth.spec.js:80:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-应该显示加载状态-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-应该显示加载状态-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../playwright-report/auth-认证功能-应该显示加载状态-chromium/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[
+Warning: attachment auth-认证功能-应该显示加载状态-chromium/test-failed-1.png is missing
+Warning: attachment auth-认证功能-应该显示加载状态-chromium/video.webm is missing
+Warning: attachment auth-认证功能-应该显示加载状态-chromium/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="认证功能 › 应该记住登录状态" classname="auth.spec.js" time="30.145">
+<failure message="auth.spec.js:86:7 应该记住登录状态" type="FAILURE">
+<![CDATA[  [chromium] › auth.spec.js:86:7 › 认证功能 › 应该记住登录状态 ─────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button[type="submit"]')
+
+
+      88 |     await page.fill('input[type="text"]', 'admin')
+      89 |     await page.fill('input[type="password"]', 'admin123')
+    > 90 |     await page.click('button[type="submit"]')
+         |                ^
+      91 |
+      92 |     // 等待登录完成
+      93 |     await expect(page).toHaveURL('/dashboard')
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/auth.spec.js:90:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-应该记住登录状态-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-应该记住登录状态-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../playwright-report/auth-认证功能-应该记住登录状态-chromium/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[
+Warning: attachment auth-认证功能-应该记住登录状态-chromium/test-failed-1.png is missing
+Warning: attachment auth-认证功能-应该记住登录状态-chromium/video.webm is missing
+Warning: attachment auth-认证功能-应该记住登录状态-chromium/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="认证功能 › 应该能够退出登录" classname="auth.spec.js" time="30.123">
+<failure message="auth.spec.js:108:7 应该能够退出登录" type="FAILURE">
+<![CDATA[  [chromium] › auth.spec.js:108:7 › 认证功能 › 应该能够退出登录 ────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button[type="submit"]')
+
+
+      110 |     await page.fill('input[type="text"]', 'admin')
+      111 |     await page.fill('input[type="password"]', 'admin123')
+    > 112 |     await page.click('button[type="submit"]')
+          |                ^
+      113 |     await expect(page).toHaveURL('/dashboard')
+      114 |
+      115 |     // 退出登录
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/auth.spec.js:112:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-应该能够退出登录-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-应该能够退出登录-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../playwright-report/auth-认证功能-应该能够退出登录-chromium/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[
+Warning: attachment auth-认证功能-应该能够退出登录-chromium/test-failed-1.png is missing
+Warning: attachment auth-认证功能-应该能够退出登录-chromium/video.webm is missing
+Warning: attachment auth-认证功能-应该能够退出登录-chromium/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="认证功能 › 应该处理网络错误" classname="auth.spec.js" time="30.125">
+<failure message="auth.spec.js:127:7 应该处理网络错误" type="FAILURE">
+<![CDATA[  [chromium] › auth.spec.js:127:7 › 认证功能 › 应该处理网络错误 ────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button[type="submit"]')
+
+
+      132 |     await page.fill('input[type="text"]', 'admin')
+      133 |     await page.fill('input[type="password"]', 'admin123')
+    > 134 |     await page.click('button[type="submit"]')
+          |                ^
+      135 |
+      136 |     // 检查错误信息
+      137 |     await expect(page.locator('.error-message')).toBeVisible()
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/auth.spec.js:134:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-应该处理网络错误-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-应该处理网络错误-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../playwright-report/auth-认证功能-应该处理网络错误-chromium/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[
+Warning: attachment auth-认证功能-应该处理网络错误-chromium/test-failed-1.png is missing
+Warning: attachment auth-认证功能-应该处理网络错误-chromium/video.webm is missing
+Warning: attachment auth-认证功能-应该处理网络错误-chromium/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="认证功能 › 应该支持密码显示/隐藏" classname="auth.spec.js" time="30.138">
+<failure message="auth.spec.js:141:7 应该支持密码显示/隐藏" type="FAILURE">
+<![CDATA[  [chromium] › auth.spec.js:141:7 › 认证功能 › 应该支持密码显示/隐藏 ─────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('.password-toggle')
+
+
+      147 |
+      148 |     // 点击显示密码
+    > 149 |     await toggleButton.click()
+          |                        ^
+      150 |     await expect(passwordInput).toHaveAttribute('type', 'text')
+      151 |
+      152 |     // 点击隐藏密码
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/auth.spec.js:149:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-应该支持密码显示-隐藏-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../playwright-report/auth-认证功能-应该支持密码显示-隐藏-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../playwright-report/auth-认证功能-应该支持密码显示-隐藏-chromium/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[
+Warning: attachment auth-认证功能-应该支持密码显示-隐藏-chromium/test-failed-1.png is missing
+Warning: attachment auth-认证功能-应该支持密码显示-隐藏-chromium/video.webm is missing
+Warning: attachment auth-认证功能-应该支持密码显示-隐藏-chromium/error-context.md is missing]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="dashboard.spec.js" timestamp="2025-11-20T02:40:59.051Z" hostname="chromium" tests="14" failures="6" skipped="8" time="277.831" errors="0">
+<testcase name="仪表板功能 › 应该正确显示仪表板页面" classname="dashboard.spec.js" time="30.137">
+<failure message="dashboard.spec.js:16:7 应该正确显示仪表板页面" type="FAILURE">
+<![CDATA[  [chromium] › dashboard.spec.js:16:7 › 仪表板功能 › 应该正确显示仪表板页面 ────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+       5 |
+       6 | test.describe('仪表板功能', () => {
+    >  7 |   test.beforeEach(async({ page }) => {
+         |        ^
+       8 |     // 登录
+       9 |     await page.goto('/login')
+      10 |     await page.fill('input[type="text"]', 'admin')
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/dashboard.spec.js:7:8
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button[type="submit"]')
+
+
+      10 |     await page.fill('input[type="text"]', 'admin')
+      11 |     await page.fill('input[type="password"]', 'admin123')
+    > 12 |     await page.click('button[type="submit"]')
+         |                ^
+      13 |     await expect(page).toHaveURL('/dashboard')
+      14 |   })
+      15 |
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/dashboard.spec.js:12:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../playwright-report/dashboard-仪表板功能-应该正确显示仪表板页面-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../playwright-report/dashboard-仪表板功能-应该正确显示仪表板页面-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../playwright-report/dashboard-仪表板功能-应该正确显示仪表板页面-chromium/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[
+Warning: attachment dashboard-仪表板功能-应该正确显示仪表板页面-chromium/test-failed-1.png is missing
+Warning: attachment dashboard-仪表板功能-应该正确显示仪表板页面-chromium/video.webm is missing
+Warning: attachment dashboard-仪表板功能-应该正确显示仪表板页面-chromium/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="仪表板功能 › 应该显示统计卡片" classname="dashboard.spec.js" time="30.134">
+<failure message="dashboard.spec.js:25:7 应该显示统计卡片" type="FAILURE">
+<![CDATA[  [chromium] › dashboard.spec.js:25:7 › 仪表板功能 › 应该显示统计卡片 ───────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+       5 |
+       6 | test.describe('仪表板功能', () => {
+    >  7 |   test.beforeEach(async({ page }) => {
+         |        ^
+       8 |     // 登录
+       9 |     await page.goto('/login')
+      10 |     await page.fill('input[type="text"]', 'admin')
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/dashboard.spec.js:7:8
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button[type="submit"]')
+
+
+      10 |     await page.fill('input[type="text"]', 'admin')
+      11 |     await page.fill('input[type="password"]', 'admin123')
+    > 12 |     await page.click('button[type="submit"]')
+         |                ^
+      13 |     await expect(page).toHaveURL('/dashboard')
+      14 |   })
+      15 |
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/dashboard.spec.js:12:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../playwright-report/dashboard-仪表板功能-应该显示统计卡片-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../playwright-report/dashboard-仪表板功能-应该显示统计卡片-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../playwright-report/dashboard-仪表板功能-应该显示统计卡片-chromium/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[
+Warning: attachment dashboard-仪表板功能-应该显示统计卡片-chromium/test-failed-1.png is missing
+Warning: attachment dashboard-仪表板功能-应该显示统计卡片-chromium/video.webm is missing
+Warning: attachment dashboard-仪表板功能-应该显示统计卡片-chromium/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="仪表板功能 › 应该显示完成率进度条" classname="dashboard.spec.js" time="30.136">
+<failure message="dashboard.spec.js:37:7 应该显示完成率进度条" type="FAILURE">
+<![CDATA[  [chromium] › dashboard.spec.js:37:7 › 仪表板功能 › 应该显示完成率进度条 ─────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+       5 |
+       6 | test.describe('仪表板功能', () => {
+    >  7 |   test.beforeEach(async({ page }) => {
+         |        ^
+       8 |     // 登录
+       9 |     await page.goto('/login')
+      10 |     await page.fill('input[type="text"]', 'admin')
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/dashboard.spec.js:7:8
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button[type="submit"]')
+
+
+      10 |     await page.fill('input[type="text"]', 'admin')
+      11 |     await page.fill('input[type="password"]', 'admin123')
+    > 12 |     await page.click('button[type="submit"]')
+         |                ^
+      13 |     await expect(page).toHaveURL('/dashboard')
+      14 |   })
+      15 |
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/dashboard.spec.js:12:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../playwright-report/dashboard-仪表板功能-应该显示完成率进度条-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../playwright-report/dashboard-仪表板功能-应该显示完成率进度条-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../playwright-report/dashboard-仪表板功能-应该显示完成率进度条-chromium/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[
+Warning: attachment dashboard-仪表板功能-应该显示完成率进度条-chromium/test-failed-1.png is missing
+Warning: attachment dashboard-仪表板功能-应该显示完成率进度条-chromium/video.webm is missing
+Warning: attachment dashboard-仪表板功能-应该显示完成率进度条-chromium/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="仪表板功能 › 应该显示本周任务列表" classname="dashboard.spec.js" time="30.131">
+<failure message="dashboard.spec.js:49:7 应该显示本周任务列表" type="FAILURE">
+<![CDATA[  [chromium] › dashboard.spec.js:49:7 › 仪表板功能 › 应该显示本周任务列表 ─────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+       5 |
+       6 | test.describe('仪表板功能', () => {
+    >  7 |   test.beforeEach(async({ page }) => {
+         |        ^
+       8 |     // 登录
+       9 |     await page.goto('/login')
+      10 |     await page.fill('input[type="text"]', 'admin')
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/dashboard.spec.js:7:8
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button[type="submit"]')
+
+
+      10 |     await page.fill('input[type="text"]', 'admin')
+      11 |     await page.fill('input[type="password"]', 'admin123')
+    > 12 |     await page.click('button[type="submit"]')
+         |                ^
+      13 |     await expect(page).toHaveURL('/dashboard')
+      14 |   })
+      15 |
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/dashboard.spec.js:12:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../playwright-report/dashboard-仪表板功能-应该显示本周任务列表-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../playwright-report/dashboard-仪表板功能-应该显示本周任务列表-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../playwright-report/dashboard-仪表板功能-应该显示本周任务列表-chromium/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[
+Warning: attachment dashboard-仪表板功能-应该显示本周任务列表-chromium/test-failed-1.png is missing
+Warning: attachment dashboard-仪表板功能-应该显示本周任务列表-chromium/video.webm is missing
+Warning: attachment dashboard-仪表板功能-应该显示本周任务列表-chromium/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="仪表板功能 › 应该能够刷新数据" classname="dashboard.spec.js" time="30.126">
+<failure message="dashboard.spec.js:63:7 应该能够刷新数据" type="FAILURE">
+<![CDATA[  [chromium] › dashboard.spec.js:63:7 › 仪表板功能 › 应该能够刷新数据 ───────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+       5 |
+       6 | test.describe('仪表板功能', () => {
+    >  7 |   test.beforeEach(async({ page }) => {
+         |        ^
+       8 |     // 登录
+       9 |     await page.goto('/login')
+      10 |     await page.fill('input[type="text"]', 'admin')
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/dashboard.spec.js:7:8
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button[type="submit"]')
+
+
+      10 |     await page.fill('input[type="text"]', 'admin')
+      11 |     await page.fill('input[type="password"]', 'admin123')
+    > 12 |     await page.click('button[type="submit"]')
+         |                ^
+      13 |     await expect(page).toHaveURL('/dashboard')
+      14 |   })
+      15 |
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/dashboard.spec.js:12:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../playwright-report/dashboard-仪表板功能-应该能够刷新数据-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../playwright-report/dashboard-仪表板功能-应该能够刷新数据-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../playwright-report/dashboard-仪表板功能-应该能够刷新数据-chromium/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[
+Warning: attachment dashboard-仪表板功能-应该能够刷新数据-chromium/test-failed-1.png is missing
+Warning: attachment dashboard-仪表板功能-应该能够刷新数据-chromium/video.webm is missing
+Warning: attachment dashboard-仪表板功能-应该能够刷新数据-chromium/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="仪表板功能 › 应该能够快速创建任务" classname="dashboard.spec.js" time="30.124">
+<failure message="dashboard.spec.js:77:7 应该能够快速创建任务" type="FAILURE">
+<![CDATA[  [chromium] › dashboard.spec.js:77:7 › 仪表板功能 › 应该能够快速创建任务 ─────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+       5 |
+       6 | test.describe('仪表板功能', () => {
+    >  7 |   test.beforeEach(async({ page }) => {
+         |        ^
+       8 |     // 登录
+       9 |     await page.goto('/login')
+      10 |     await page.fill('input[type="text"]', 'admin')
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/dashboard.spec.js:7:8
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('button[type="submit"]')
+
+
+      10 |     await page.fill('input[type="text"]', 'admin')
+      11 |     await page.fill('input[type="password"]', 'admin123')
+    > 12 |     await page.click('button[type="submit"]')
+         |                ^
+      13 |     await expect(page).toHaveURL('/dashboard')
+      14 |   })
+      15 |
+        at /Users/zhangyanlong/workspaces/weekly-plan/frontend/e2e/dashboard.spec.js:12:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../playwright-report/dashboard-仪表板功能-应该能够快速创建任务-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../playwright-report/dashboard-仪表板功能-应该能够快速创建任务-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../playwright-report/dashboard-仪表板功能-应该能够快速创建任务-chromium/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[
+Warning: attachment dashboard-仪表板功能-应该能够快速创建任务-chromium/test-failed-1.png is missing
+Warning: attachment dashboard-仪表板功能-应该能够快速创建任务-chromium/video.webm is missing
+Warning: attachment dashboard-仪表板功能-应该能够快速创建任务-chromium/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="仪表板功能 › 应该能够筛选任务" classname="dashboard.spec.js" time="14.943">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示图表数据" classname="dashboard.spec.js" time="14.955">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够导航到任务详情" classname="dashboard.spec.js" time="14.941">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该响应式适配移动端" classname="dashboard.spec.js" time="14.949">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示通知中心" classname="dashboard.spec.js" time="14.276">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够标记重点任务" classname="dashboard.spec.js" time="14.068">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够更新任务状态" classname="dashboard.spec.js" time="8.911">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够导出数据" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="auth.spec.js" timestamp="2025-11-20T02:40:59.051Z" hostname="firefox" tests="10" failures="0" skipped="10" time="0" errors="0">
+<testcase name="认证功能 › 页面应该正确显示登录表单" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该显示验证错误信息" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该显示登录失败错误" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该能够成功登录" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该支持回车键登录" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该显示加载状态" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该记住登录状态" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该能够退出登录" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该处理网络错误" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该支持密码显示/隐藏" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="dashboard.spec.js" timestamp="2025-11-20T02:40:59.051Z" hostname="firefox" tests="14" failures="0" skipped="14" time="0" errors="0">
+<testcase name="仪表板功能 › 应该正确显示仪表板页面" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示统计卡片" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示完成率进度条" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示本周任务列表" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够刷新数据" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够快速创建任务" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够筛选任务" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示图表数据" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够导航到任务详情" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该响应式适配移动端" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示通知中心" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够标记重点任务" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够更新任务状态" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够导出数据" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="auth.spec.js" timestamp="2025-11-20T02:40:59.051Z" hostname="webkit" tests="10" failures="0" skipped="10" time="0" errors="0">
+<testcase name="认证功能 › 页面应该正确显示登录表单" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该显示验证错误信息" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该显示登录失败错误" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该能够成功登录" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该支持回车键登录" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该显示加载状态" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该记住登录状态" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该能够退出登录" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该处理网络错误" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该支持密码显示/隐藏" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="dashboard.spec.js" timestamp="2025-11-20T02:40:59.051Z" hostname="webkit" tests="14" failures="0" skipped="14" time="0" errors="0">
+<testcase name="仪表板功能 › 应该正确显示仪表板页面" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示统计卡片" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示完成率进度条" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示本周任务列表" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够刷新数据" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够快速创建任务" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够筛选任务" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示图表数据" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够导航到任务详情" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该响应式适配移动端" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示通知中心" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够标记重点任务" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够更新任务状态" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够导出数据" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="auth.spec.js" timestamp="2025-11-20T02:40:59.051Z" hostname="Mobile Chrome" tests="10" failures="0" skipped="10" time="0" errors="0">
+<testcase name="认证功能 › 页面应该正确显示登录表单" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该显示验证错误信息" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该显示登录失败错误" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该能够成功登录" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该支持回车键登录" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该显示加载状态" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该记住登录状态" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该能够退出登录" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该处理网络错误" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该支持密码显示/隐藏" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="dashboard.spec.js" timestamp="2025-11-20T02:40:59.051Z" hostname="Mobile Chrome" tests="14" failures="0" skipped="14" time="0" errors="0">
+<testcase name="仪表板功能 › 应该正确显示仪表板页面" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示统计卡片" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示完成率进度条" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示本周任务列表" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够刷新数据" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够快速创建任务" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够筛选任务" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示图表数据" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够导航到任务详情" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该响应式适配移动端" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示通知中心" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够标记重点任务" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够更新任务状态" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够导出数据" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="auth.spec.js" timestamp="2025-11-20T02:40:59.051Z" hostname="Mobile Safari" tests="10" failures="0" skipped="10" time="0" errors="0">
+<testcase name="认证功能 › 页面应该正确显示登录表单" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该显示验证错误信息" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该显示登录失败错误" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该能够成功登录" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该支持回车键登录" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该显示加载状态" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该记住登录状态" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该能够退出登录" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该处理网络错误" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="认证功能 › 应该支持密码显示/隐藏" classname="auth.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="dashboard.spec.js" timestamp="2025-11-20T02:40:59.051Z" hostname="Mobile Safari" tests="14" failures="0" skipped="14" time="0" errors="0">
+<testcase name="仪表板功能 › 应该正确显示仪表板页面" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示统计卡片" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示完成率进度条" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示本周任务列表" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够刷新数据" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够快速创建任务" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够筛选任务" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示图表数据" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够导航到任务详情" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该响应式适配移动端" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该显示通知中心" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够标记重点任务" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够更新任务状态" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="仪表板功能 › 应该能够导出数据" classname="dashboard.spec.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>

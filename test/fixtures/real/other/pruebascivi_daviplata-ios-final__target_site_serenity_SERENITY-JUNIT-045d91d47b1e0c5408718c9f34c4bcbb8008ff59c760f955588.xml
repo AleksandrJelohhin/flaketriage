@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="16" failures="11" name="Agrupación casos de PasarPlata" skipped="0" tests="30" time="4818.7" timestamp="2024-07-17 09:26:44"><testcase name="CP02289M_SYS_Validar proceso de pasar plata del bolsillo al monedero por valor mayor al que tiene el bolsillo"><failure message="No se puedo dar click al btn sacar plata debido a: Expected condition failed: waiting for element to be clickable: By.name: Sacar plata bolsillo (tried for 5 second(s) with 500 milliseconds interval)" type="java.lang.AssertionError">No se puedo dar click al btn sacar plata debido a: Expected condition failed: waiting for element to be clickable: By.name: Sacar plata bolsillo (tried for 5 second(s) with 500 milliseconds interval)</failure><system-err>No se puedo dar click al btn sacar plata debido a: Expected condition failed: waiting for element to be clickable: By.name: Sacar plata bolsillo (tried for 5 second(s) with 500 milliseconds interval)
+daviplata.nacional.iOS.pageObjects.BolsilloPageObjects.pulsarSacarPlata(BolsilloPageObjects.java:864)
+daviplata.nacional.iOS.pageObjects.BolsilloPageObjects.pulsarSacarPlata(BolsilloPageObjects.java:862)
+daviplata.nacional.iOS.pageObjects.BolsilloPageObjects.pulsarSacarPlata(BolsilloPageObjects.java:862)
+daviplata.nacional.iOS.pageObjects.BolsilloPageObjects.pulsarSacarPlata(BolsilloPageObjects.java:862)
+daviplata.nacional.iOS.pageObjects.BolsilloPageObjects.pulsarSacarPlata(BolsilloPageObjects.java:862)
+daviplata.nacional.iOS.steps.PasarPlataSteps.sacarPlataBolsilloMayorSaldoBolsillo(PasarPlataSteps.java:1358)
+daviplata.nacional.iOS.definitions.BolsilloDefinitions.flujoSacarPlataBolsillosMayorSaldoBolsillo(BolsilloDefinitions.java:114)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+daviplata.nacional.iOS.runners.RunnerPersonalizado.run(RunnerPersonalizado.java:63)
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+</system-err></testcase><testcase name="CP02341M_SYS_Validar proceso de pasar plata a otro daviplata por valor cero desde el Home de daviplata el sistema no deje"/><testcase name="CP0961M_SYS_Validar los topes débito con una transaccion"><failure message="No se encontró el elemento: //XCUIElementTypeStaticText[contains(@name,'Conozca todo lo que')], debido a: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeStaticText[contains(@name,'Conozca todo lo que')] (tried for 5 second(s) with 500 milliseconds interval)" type="java.lang.AssertionError">No se encontró el elemento: //XCUIElementTypeStaticText[contains(@name,'Conozca todo lo que')], debido a: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeStaticText[contains(@name,'Conozca todo lo que')] (tried for 5 second(s) with 500 milliseconds interval)</failure><system-err>No se encontró el elemento: //XCUIElementTypeStaticText[contains(@name,'Conozca todo lo que')], debido a: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeStaticText[contains(@name,'Conozca todo lo que')] (tried for 5 second(s) with 500 milliseconds interval)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:401)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:399)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:399)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:399)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:399)
+daviplata.nacional.iOS.steps.LoginSteps.ingresarAApp(LoginSteps.java:133)
+daviplata.nacional.iOS.definitions.LoginDefinitions.ingresoUsuarioYContrasena(LoginDefinitions.java:45)
+✽.ingreso usuario y contrasena "CC" "10050102" "2589"(src/test/resources/features/pasar_plata.feature:37)
+</system-err></testcase><testcase name="CP02301M_SYS_Validar proceso de pasar plata a otro daviplata con cliente CC GMF mostrando descuento"><failure message="No se pudo interactuar con el elemento: //XCUIElementTypeButton[@name='Menu de conocimiento']" type="java.lang.AssertionError">No se pudo interactuar con el elemento: //XCUIElementTypeButton[@name='Menu de conocimiento']</failure><system-err>No se pudo interactuar con el elemento: //XCUIElementTypeButton[@name='Menu de conocimiento']
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.validateElementVisibility(UtilidadesTCS.java:301)
+daviplata.nacional.iOS.steps.LoginSteps.ingresarAApp(LoginSteps.java:64)
+daviplata.nacional.iOS.definitions.LoginDefinitions.ingresoUsuarioYContrasena(LoginDefinitions.java:45)
+✽.ingreso usuario y contrasena "CC" "10050040" "2580"(src/test/resources/features/pasar_plata.feature:56)
+</system-err></testcase><testcase name="CP02302M_SYS_Validar proceso de pasar plata a otro daviplata  con cliente CC GMF generando Fondos insuficientes"><error message="An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: io.appium.java_client.AppiumDriver&#10;Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 17.5, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008101-000E35003688801E, webStorageEnabled: false}&#10;Session ID: 2120a77a-c3d6-44ac-8174-631e05553f0a&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: AppiumDriver" type="org.openqa.selenium.WebDriverException">An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 17.5, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008101-000E35003688801E, webStorageEnabled: false}
+Session ID: 2120a77a-c3d6-44ac-8174-631e05553f0a
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: AppiumDriver</error><system-err>An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 17.5, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008101-000E35003688801E, webStorageEnabled: false}
+Session ID: 2120a77a-c3d6-44ac-8174-631e05553f0a
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: AppiumDriver
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+daviplata.nacional.iOS.definitions.Hooks.FinalizarTests(Hooks.java:90)
+cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+daviplata.nacional.iOS.runners.RunnerPersonalizado.run(RunnerPersonalizado.java:63)
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+</system-err></testcase><testcase name="CP02303M_SYS_Validar proceso de pasar plata a otro daviplata  con cliente CC sin GMF generando Excede cupo"><failure message="&#10;Expected: &lt;663417&gt;&#10;     but: was &lt;660763&gt;" type="java.lang.AssertionError">
+Expected: &lt;663417&gt;
+     but: was &lt;660763&gt;</failure><system-err>
+Expected: &lt;663417&gt;
+     but: was &lt;660763&gt;
+daviplata.nacional.iOS.pageObjects.PasarPlataPageObjects.validarIgualdadSaldosIniciales(PasarPlataPageObjects.java:2967)
+daviplata.nacional.iOS.steps.PasarPlataSteps.verificarSaldoInicialDaviplata(PasarPlataSteps.java:1896)
+daviplata.nacional.iOS.definitions.PasarPlataDefinitions.validarSaldosIniciales(PasarPlataDefinitions.java:824)
+✽.Validé saldos iniciales del daviplata(src/test/resources/features/pasar_plata.feature:94)
+</system-err></testcase><testcase name="CP002350M_SYS_Validar proceso de pasar plata a otro daviplata desde el Home de daviplata"><failure message="No se encontró opción 'A otro Daviplata' en pasar plata, debido a: Expected condition failed: waiting for visibility of element located by By.xpath: (//XCUIElementTypeImage[@name='flecha_derecha'])[1] (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: io.appium.java_client.AppiumDriver&#10;Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 17.5, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008101-000E35003688801E, webStorageEnabled: false}&#10;Session ID: 60917047-0bcb-4171-b0c4-42abe34dc155" type="java.lang.AssertionError">No se encontró opción 'A otro Daviplata' en pasar plata, debido a: Expected condition failed: waiting for visibility of element located by By.xpath: (//XCUIElementTypeImage[@name='flecha_derecha'])[1] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 17.5, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008101-000E35003688801E, webStorageEnabled: false}
+Session ID: 60917047-0bcb-4171-b0c4-42abe34dc155</failure><system-err>No se encontró opción 'A otro Daviplata' en pasar plata, debido a: Expected condition failed: waiting for visibility of element located by By.xpath: (//XCUIElementTypeImage[@name='flecha_derecha'])[1] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 17.5, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008101-000E35003688801E, webStorageEnabled: false}
+Session ID: 60917047-0bcb-4171-b0c4-42abe34dc155
+daviplata.nacional.iOS.pageObjects.PasarPlataPageObjects.pasarPlataAOtroDaviplata(PasarPlataPageObjects.java:435)
+daviplata.nacional.iOS.pageObjects.PasarPlataPageObjects.pasarPlataAOtroDaviplata(PasarPlataPageObjects.java:433)
+daviplata.nacional.iOS.pageObjects.PasarPlataPageObjects.pasarPlataAOtroDaviplata(PasarPlataPageObjects.java:433)
+daviplata.nacional.iOS.pageObjects.PasarPlataPageObjects.pasarPlataAOtroDaviplata(PasarPlataPageObjects.java:433)
+daviplata.nacional.iOS.pageObjects.PasarPlataPageObjects.pasarPlataAOtroDaviplata(PasarPlataPageObjects.java:433)
+daviplata.nacional.iOS.steps.PasarPlataSteps.pasarPlataAOtroDaviplata(PasarPlataSteps.java:116)
+daviplata.nacional.iOS.definitions.PasarPlataDefinitions.pasarPlataAOtroDaviplata(PasarPlataDefinitions.java:54)
+✽.pasar plata a otro Daviplata "3227680733"(src/test/resources/features/pasar_plata.feature:113)
+</system-err></testcase><testcase name="CP02380M_SYS_Realizar un pasar plata a otro Daviplata exitoso añadiendo cuenta a favoritos"><failure message="No se pudo interactuar con el elemento: //XCUIElementTypeButton[@name='Menu de conocimiento']" type="java.lang.AssertionError">No se pudo interactuar con el elemento: //XCUIElementTypeButton[@name='Menu de conocimiento']</failure><system-err>No se pudo interactuar con el elemento: //XCUIElementTypeButton[@name='Menu de conocimiento']
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.validateElementVisibility(UtilidadesTCS.java:301)
+daviplata.nacional.iOS.steps.LoginSteps.ingresarAApp(LoginSteps.java:64)
+daviplata.nacional.iOS.definitions.LoginDefinitions.ingresoUsuarioYContrasena(LoginDefinitions.java:45)
+✽.ingreso usuario y contrasena "CC" "10050099" "2589"(src/test/resources/features/pasar_plata.feature:130)
+</system-err></testcase><testcase name="CP0291M_SYS_Realizar un pasar plata a cuentas Davivienda exitoso"><failure message="No se pudo capturar autorizador de transacción en pasar plata, debido a: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@name='Número de aprobación']//following-sibling::XCUIElementTypeStaticText (tried for 10 second(s) with 500 milliseconds interval)" type="java.lang.AssertionError">No se pudo capturar autorizador de transacción en pasar plata, debido a: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@name='Número de aprobación']//following-sibling::XCUIElementTypeStaticText (tried for 10 second(s) with 500 milliseconds interval)</failure><system-err>No se pudo capturar autorizador de transacción en pasar plata, debido a: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@name='Número de aprobación']//following-sibling::XCUIElementTypeStaticText (tried for 10 second(s) with 500 milliseconds interval)
+daviplata.nacional.iOS.pageObjects.PasarPlataPageObjects.txtAutorizadorPasarPlataCuenta(PasarPlataPageObjects.java:1708)
+daviplata.nacional.iOS.pageObjects.PasarPlataPageObjects.txtAutorizadorPasarPlataCuenta(PasarPlataPageObjects.java:1706)
+daviplata.nacional.iOS.pageObjects.PasarPlataPageObjects.txtAutorizadorPasarPlataCuenta(PasarPlataPageObjects.java:1706)
+daviplata.nacional.iOS.pageObjects.PasarPlataPageObjects.txtAutorizadorPasarPlataCuenta(PasarPlataPageObjects.java:1706)
+daviplata.nacional.iOS.pageObjects.PasarPlataPageObjects.txtAutorizadorPasarPlataCuenta(PasarPlataPageObjects.java:1706)
+daviplata.nacional.iOS.steps.PasarPlataSteps.verificarTransaccionExitosaPasarPlataCuenta(PasarPlataSteps.java:303)
+daviplata.nacional.iOS.definitions.PasarPlataDefinitions.validarTransaccionExitosaPasarPlataCuenta(PasarPlataDefinitions.java:91)
+✽.Validar transaccion exitosa pasar plata cuenta(src/test/resources/features/pasar_plata.feature:154)
+</system-err></testcase><testcase name="CP002352M_SYS_Validar proceso de pasar plata a un numero que empicese diferente de 3 desde el Home de daviplata"/><testcase name="CP02361M_SYS_Validar proceso de pasar plata a otro daviplata por valor 1 desde el Home de daviplata el sistema deje"><error message="An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: io.appium.java_client.AppiumDriver&#10;Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 17.5, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008101-000E35003688801E, webStorageEnabled: false}&#10;Session ID: ac8b5493-3c55-4497-a869-98fde91c5e0b&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: AppiumDriver" type="org.openqa.selenium.WebDriverException">An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 17.5, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008101-000E35003688801E, webStorageEnabled: false}
+Session ID: ac8b5493-3c55-4497-a869-98fde91c5e0b
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: AppiumDriver</error><system-err>An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 17.5, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008101-000E35003688801E, webStorageEnabled: false}
+Session ID: ac8b5493-3c55-4497-a869-98fde91c5e0b
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: AppiumDriver
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+daviplata.nacional.iOS.definitions.Hooks.FinalizarTests(Hooks.java:90)
+cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+daviplata.nacional.iOS.runners.RunnerPersonalizado.run(RunnerPersonalizado.java:63)
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+</system-err></testcase><testcase name="CP02362M_SYS_Validar proceso de pasar plata a otro daviplata desde el Home de daviplata cuando el destino tiene tope de creditos"><error type="java.lang.NullPointerException"/><system-err>null
+daviplata.nacional.iOS.definitions.PasarPlataDefinitions.consultarSaldoTarjetaEnRedebanBolsillos(PasarPlataDefinitions.java:685)
+✽.Consulté saldo disponible en redeban(src/test/resources/features/pasar_plata.feature:201)
+</system-err></testcase><testcase name="CP02363M_SYS_Validar proceso de pasar plata a otro daviplata desde el Home de daviplata cuando el origen tiene tope de debitos"><error message="An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: io.appium.java_client.AppiumDriver&#10;Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 17.5, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008101-000E35003688801E, webStorageEnabled: false}&#10;Session ID: 6d095fab-25ca-45c3-9193-71d94411470a&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: AppiumDriver" type="org.openqa.selenium.WebDriverException">An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 17.5, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008101-000E35003688801E, webStorageEnabled: false}
+Session ID: 6d095fab-25ca-45c3-9193-71d94411470a
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: AppiumDriver</error><system-err>An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 17.5, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008101-000E35003688801E, webStorageEnabled: false}
+Session ID: 6d095fab-25ca-45c3-9193-71d94411470a
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: AppiumDriver
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+daviplata.nacional.iOS.definitions.Hooks.FinalizarTests(Hooks.java:90)
+cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+daviplata.nacional.iOS.runners.RunnerPersonalizado.run(RunnerPersonalizado.java:63)
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+</system-err></testcase><testcase name="CP02360M_SYS_Validar proceso de pasar plata a otro daviplata desde el Home de daviplata cuando el destino tiene tope de debitos"><error type="java.lang.NullPointerException"/><system-err>null
+daviplata.nacional.iOS.definitions.PasarPlataDefinitions.consultarSaldoTarjetaEnRedebanBolsillos(PasarPlataDefinitions.java:685)
+✽.Consulté saldo disponible en redeban(src/test/resources/features/pasar_plata.feature:243)
+</system-err></testcase><testcase name="CP02365M_SYS_Validar proceso de pasar plata a otro daviplata desde el Home de daviplata cuando el origen tiene tope de creditos"><error type="java.lang.NullPointerException"/><system-err>null
+daviplata.nacional.iOS.steps.PasarPlataSteps.verificarTransaccionExitosaPasarPlata(PasarPlataSteps.java:1911)
+daviplata.nacional.iOS.definitions.PasarPlataDefinitions.validarTransaccionExitosaPasarPlata(PasarPlataDefinitions.java:839)
+✽.validar transaccion exitosa Pasar Plata(src/test/resources/features/pasar_plata.feature:270)
+</system-err></testcase><testcase name="CP02366M_SYS_Validar topes de pasar plata de monedero a monedero por subtipo BMO con origen en tope de debitos desde Home de daviplata"><failure type="java.lang.AssertionError"/><system-err>null
+daviplata.nacional.iOS.pageObjects.PasarPlataPageObjects.validarTransaccionNegada(PasarPlataPageObjects.java:1984)
+daviplata.nacional.iOS.steps.PasarPlataSteps.validarTransaccionNegada(PasarPlataSteps.java:1107)
+daviplata.nacional.iOS.definitions.PasarPlataDefinitions.validarTransaccionNegada(PasarPlataDefinitions.java:346)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+daviplata.nacional.iOS.runners.RunnerPersonalizado.run(RunnerPersonalizado.java:63)
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+</system-err></testcase><testcase name="CP02367M_SYS_Validar topes de pasar plata de monedero a monedero por subtipo RA3 con origen en tope de debitos desde Home de daviplata"><failure type="java.lang.AssertionError"/><system-err>null
+daviplata.nacional.iOS.pageObjects.PasarPlataPageObjects.validarTransaccionNegada(PasarPlataPageObjects.java:1984)
+daviplata.nacional.iOS.steps.PasarPlataSteps.validarTransaccionNegada(PasarPlataSteps.java:1107)
+daviplata.nacional.iOS.definitions.PasarPlataDefinitions.validarTransaccionNegada(PasarPlataDefinitions.java:346)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+daviplata.nacional.iOS.runners.RunnerPersonalizado.run(RunnerPersonalizado.java:63)
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+</system-err></testcase><testcase name="CP02368M_SYS_Validar topes de pasar plata de monedero a monedero por subtipo D11 con origen en tope de debitos desde Home de daviplata"><failure type="java.lang.AssertionError"/><system-err>null
+daviplata.nacional.iOS.pageObjects.PasarPlataPageObjects.validarTransaccionNegada(PasarPlataPageObjects.java:1984)
+daviplata.nacional.iOS.steps.PasarPlataSteps.validarTransaccionNegada(PasarPlataSteps.java:1107)
+daviplata.nacional.iOS.definitions.PasarPlataDefinitions.validarTransaccionNegada(PasarPlataDefinitions.java:346)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+daviplata.nacional.iOS.runners.RunnerPersonalizado.run(RunnerPersonalizado.java:63)
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+</system-err></testcase><testcase name="CP02369M_SYS_Validar topes de pasar plata de monedero a monedero por subtipo M35 con origen en tope de debitos desde Home de daviplata"><failure type="java.lang.AssertionError"/><system-err>null
+daviplata.nacional.iOS.pageObjects.PasarPlataPageObjects.validarTransaccionNegada(PasarPlataPageObjects.java:1984)
+daviplata.nacional.iOS.steps.PasarPlataSteps.validarTransaccionNegada(PasarPlataSteps.java:1107)
+daviplata.nacional.iOS.definitions.PasarPlataDefinitions.validarTransaccionNegada(PasarPlataDefinitions.java:346)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+daviplata.nacional.iOS.runners.RunnerPersonalizado.run(RunnerPersonalizado.java:63)
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+</system-err></testcase><testcase name="CP02370M_SYS_Validar topes de pasar plata de monedero a monedero por subtipo MET con origen en tope de debitos desde Home de daviplata"><error message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: RemoteWebDriver&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchSessionException">Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown</error><system-err>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown
+daviplata.nacional.iOS.pageObjects.WebRedebanPageObjects.clicBtnDebitoPrepago(WebRedebanPageObjects.java:521)
+daviplata.nacional.iOS.steps.WebRedebanSteps.consultaNumeroCelular(WebRedebanSteps.java:340)
+daviplata.nacional.iOS.definitions.AumentoDeTopesDefinitions.obtenerNumeroCelularActualEnRedebanAumentoDeTopes(AumentoDeTopesDefinitions.java:41)
+✽.obtener numero celular actual en redeban aumento de topes "10050100"(src/test/resources/features/pasar_plata.feature:367)
+</system-err></testcase><testcase name="CP02371M_SYS_Validar topes de pasar plata de monedero a monedero por subtipo RA1 con origen en tope de debitos desde Home de daviplata"><error message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: RemoteWebDriver&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchSessionException">Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown</error><system-err>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown
+daviplata.nacional.iOS.pageObjects.WebRedebanPageObjects.clicBtnDebitoPrepago(WebRedebanPageObjects.java:521)
+daviplata.nacional.iOS.steps.WebRedebanSteps.consultaNumeroCelular(WebRedebanSteps.java:340)
+daviplata.nacional.iOS.definitions.AumentoDeTopesDefinitions.obtenerNumeroCelularActualEnRedebanAumentoDeTopes(AumentoDeTopesDefinitions.java:41)
+✽.obtener numero celular actual en redeban aumento de topes "10050102"(src/test/resources/features/pasar_plata.feature:388)
+</system-err></testcase><testcase name="CP02372M_SYS_Validar topes de pasar plata de monedero a monedero por subtipo RAP con origenten en tope de debitos desde Home de daviplata"><error message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: RemoteWebDriver&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchSessionException">Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown</error><system-err>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown
+daviplata.nacional.iOS.pageObjects.WebRedebanPageObjects.clicBtnDebitoPrepago(WebRedebanPageObjects.java:521)
+daviplata.nacional.iOS.steps.WebRedebanSteps.consultaNumeroCelular(WebRedebanSteps.java:340)
+daviplata.nacional.iOS.definitions.AumentoDeTopesDefinitions.obtenerNumeroCelularActualEnRedebanAumentoDeTopes(AumentoDeTopesDefinitions.java:41)
+✽.obtener numero celular actual en redeban aumento de topes "10050104"(src/test/resources/features/pasar_plata.feature:409)
+</system-err></testcase><testcase name="CP02373M_SYS_Validar topes de pasar plata de monedero a monedero por subtipo BMO con destino en tope de creditos desde Home de daviplata"><error message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: RemoteWebDriver&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchSessionException">Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown</error><system-err>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown
+daviplata.nacional.iOS.pageObjects.WebRedebanPageObjects.clicBtnDebitoPrepago(WebRedebanPageObjects.java:521)
+daviplata.nacional.iOS.steps.WebRedebanSteps.consultaNumeroCelular(WebRedebanSteps.java:340)
+daviplata.nacional.iOS.definitions.AumentoDeTopesDefinitions.obtenerNumeroCelularActualEnRedebanAumentoDeTopes(AumentoDeTopesDefinitions.java:41)
+✽.obtener numero celular actual en redeban aumento de topes "1020770010"(src/test/resources/features/pasar_plata.feature:430)
+</system-err></testcase><testcase name="CP02374M_SYS_Validar topes de pasar plata de monedero a monedero por subtipo RA3 con destino en tope de creditos desde Home de daviplata"><error message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: RemoteWebDriver&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchSessionException">Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown</error><system-err>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown
+daviplata.nacional.iOS.pageObjects.WebRedebanPageObjects.clicBtnDebitoPrepago(WebRedebanPageObjects.java:521)
+daviplata.nacional.iOS.steps.WebRedebanSteps.consultaNumeroCelular(WebRedebanSteps.java:340)
+daviplata.nacional.iOS.definitions.AumentoDeTopesDefinitions.obtenerNumeroCelularActualEnRedebanAumentoDeTopes(AumentoDeTopesDefinitions.java:41)
+✽.obtener numero celular actual en redeban aumento de topes "10050094"(src/test/resources/features/pasar_plata.feature:453)
+</system-err></testcase><testcase name="CP02375M_SYS_Validar topes de pasar plata de monedero a monedero por subtipo D11 con destino en tope de creditos desde Home de daviplata"><error message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: RemoteWebDriver&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchSessionException">Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown</error><system-err>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown
+daviplata.nacional.iOS.pageObjects.WebRedebanPageObjects.clicBtnDebitoPrepago(WebRedebanPageObjects.java:521)
+daviplata.nacional.iOS.steps.WebRedebanSteps.consultaNumeroCelular(WebRedebanSteps.java:340)
+daviplata.nacional.iOS.definitions.AumentoDeTopesDefinitions.obtenerNumeroCelularActualEnRedebanAumentoDeTopes(AumentoDeTopesDefinitions.java:41)
+✽.obtener numero celular actual en redeban aumento de topes "10050097"(src/test/resources/features/pasar_plata.feature:476)
+</system-err></testcase><testcase name="CP02376M_SYS_Validar topes de pasar plata de monedero a monedero por subtipo M35 con destino en tope de creditos desde Home de daviplata"><error message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: RemoteWebDriver&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchSessionException">Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown</error><system-err>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown
+daviplata.nacional.iOS.pageObjects.WebRedebanPageObjects.clicBtnDebitoPrepago(WebRedebanPageObjects.java:521)
+daviplata.nacional.iOS.steps.WebRedebanSteps.consultaNumeroCelular(WebRedebanSteps.java:340)
+daviplata.nacional.iOS.definitions.AumentoDeTopesDefinitions.obtenerNumeroCelularActualEnRedebanAumentoDeTopes(AumentoDeTopesDefinitions.java:41)
+✽.obtener numero celular actual en redeban aumento de topes "10050098"(src/test/resources/features/pasar_plata.feature:499)
+</system-err></testcase><testcase name="CP02377M_SYS_Validar topes de pasar plata de monedero a monedero por subtipo MET con destino en tope de creditos desde Home de daviplata"><error message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: RemoteWebDriver&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchSessionException">Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown</error><system-err>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown
+daviplata.nacional.iOS.pageObjects.WebRedebanPageObjects.clicBtnDebitoPrepago(WebRedebanPageObjects.java:521)
+daviplata.nacional.iOS.steps.WebRedebanSteps.consultaNumeroCelular(WebRedebanSteps.java:340)
+daviplata.nacional.iOS.definitions.AumentoDeTopesDefinitions.obtenerNumeroCelularActualEnRedebanAumentoDeTopes(AumentoDeTopesDefinitions.java:41)
+✽.obtener numero celular actual en redeban aumento de topes "10050101"(src/test/resources/features/pasar_plata.feature:522)
+</system-err></testcase><testcase name="CP02378M_SYS_Validar topes de pasar plata de monedero a monedero por subtipo RA1 con destino en tope de creditos desde Home de daviplata"><error message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: RemoteWebDriver&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchSessionException">Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown</error><system-err>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown
+daviplata.nacional.iOS.pageObjects.WebRedebanPageObjects.clicBtnDebitoPrepago(WebRedebanPageObjects.java:521)
+daviplata.nacional.iOS.steps.WebRedebanSteps.consultaNumeroCelular(WebRedebanSteps.java:340)
+daviplata.nacional.iOS.definitions.AumentoDeTopesDefinitions.obtenerNumeroCelularActualEnRedebanAumentoDeTopes(AumentoDeTopesDefinitions.java:41)
+✽.obtener numero celular actual en redeban aumento de topes "10050103"(src/test/resources/features/pasar_plata.feature:545)
+</system-err></testcase><testcase name="CP02379M_SYS_Validar topes de pasar plata de monedero a monedero por subtipo RAP con destino en tope de creditos desde Home de daviplata"><error message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: RemoteWebDriver&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchSessionException">Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown</error><system-err>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: RemoteWebDriver
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1881:8fe9:dda3:b69e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: unknown
+daviplata.nacional.iOS.pageObjects.WebRedebanPageObjects.clicBtnDebitoPrepago(WebRedebanPageObjects.java:521)
+daviplata.nacional.iOS.steps.WebRedebanSteps.consultaNumeroCelular(WebRedebanSteps.java:340)
+daviplata.nacional.iOS.definitions.AumentoDeTopesDefinitions.obtenerNumeroCelularActualEnRedebanAumentoDeTopes(AumentoDeTopesDefinitions.java:41)
+✽.obtener numero celular actual en redeban aumento de topes "10050105"(src/test/resources/features/pasar_plata.feature:568)
+</system-err></testcase><testcase name="CP50000M_SYS_Validar el boton volver en el flujo pasar plata a otro Daviplata."/></testsuite>

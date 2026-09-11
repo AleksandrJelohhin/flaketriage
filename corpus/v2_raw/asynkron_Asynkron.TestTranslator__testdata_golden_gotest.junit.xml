@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="go test" tests="60" failures="12" errors="1" skipped="5" time="0.060">
+  <testsuite name="gotest.tools/gotestsum/testjson/internal/badmain" tests="1" failures="0" errors="1" skipped="0" time="0.000">
+    <testcase name="build" classname="gotest.tools/gotestsum/testjson/internal/badmain" time="0.000">
+      <error message="sometimes main can exit 2" type="build">sometimes main can exit 2&#xA;FAIL&#x9;gotest.tools/gotestsum/testjson/internal/badmain&#x9;0.001s</error>
+      <system-err>sometimes main can exit 2&#xA;FAIL&#x9;gotest.tools/gotestsum/testjson/internal/badmain&#x9;0.001s</system-err>
+    </testcase>
+  </testsuite>
+  <testsuite name="gotest.tools/gotestsum/testjson/internal/empty" tests="0" failures="0" errors="0" skipped="0" time="0.000"></testsuite>
+  <testsuite name="gotest.tools/gotestsum/testjson/internal/good" tests="18" failures="0" errors="0" skipped="2" time="0.020">
+    <testcase name="TestNestedSuccess" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess&#xA;--- PASS: TestNestedSuccess (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedSuccess/a" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess/a&#xA;    --- PASS: TestNestedSuccess/a (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedSuccess/a/sub" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess/a/sub&#xA;        --- PASS: TestNestedSuccess/a/sub (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedSuccess/b" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess/b&#xA;    --- PASS: TestNestedSuccess/b (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedSuccess/b/sub" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess/b/sub&#xA;        --- PASS: TestNestedSuccess/b/sub (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedSuccess/c" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess/c&#xA;    --- PASS: TestNestedSuccess/c (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedSuccess/c/sub" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess/c/sub&#xA;        --- PASS: TestNestedSuccess/c/sub (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedSuccess/d" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess/d&#xA;    --- PASS: TestNestedSuccess/d (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedSuccess/d/sub" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess/d/sub&#xA;        --- PASS: TestNestedSuccess/d/sub (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestParallelTheFirst" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.010">
+      <system-out>=== RUN   TestParallelTheFirst&#xA;=== PAUSE TestParallelTheFirst&#xA;=== CONT  TestParallelTheFirst&#xA;--- PASS: TestParallelTheFirst (0.01s)</system-out>
+    </testcase>
+    <testcase name="TestParallelTheSecond" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.010">
+      <system-out>=== RUN   TestParallelTheSecond&#xA;=== PAUSE TestParallelTheSecond&#xA;=== CONT  TestParallelTheSecond&#xA;--- PASS: TestParallelTheSecond (0.01s)</system-out>
+    </testcase>
+    <testcase name="TestParallelTheThird" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.000">
+      <system-out>=== RUN   TestParallelTheThird&#xA;=== PAUSE TestParallelTheThird&#xA;=== CONT  TestParallelTheThird&#xA;--- PASS: TestParallelTheThird (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestPassed" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.000">
+      <system-out>=== RUN   TestPassed&#xA;--- PASS: TestPassed (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestPassedWithLog" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.000">
+      <system-out>=== RUN   TestPassedWithLog&#xA;    good_test.go:15: this is a log&#xA;--- PASS: TestPassedWithLog (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestPassedWithStdout" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.000">
+      <system-out>=== RUN   TestPassedWithStdout&#xA;this is a Print&#xA;--- PASS: TestPassedWithStdout (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestSkipped" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.000">
+      <skipped message="good_test.go:23:"></skipped>
+      <system-out>=== RUN   TestSkipped&#xA;    good_test.go:23: &#xA;--- SKIP: TestSkipped (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestSkippedWitLog" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.000">
+      <skipped message="good_test.go:27: the skip message"></skipped>
+      <system-out>=== RUN   TestSkippedWitLog&#xA;    good_test.go:27: the skip message&#xA;--- SKIP: TestSkippedWitLog (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestWithStderr" classname="gotest.tools/gotestsum/testjson/internal/good" time="0.000">
+      <system-out>=== RUN   TestWithStderr&#xA;this is stderr&#xA;--- PASS: TestWithStderr (0.00s)</system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="gotest.tools/gotestsum/testjson/internal/parallelfails" tests="12" failures="8" errors="0" skipped="0" time="0.020">
+    <testcase name="TestNestedParallelFailures" classname="gotest.tools/gotestsum/testjson/internal/parallelfails" time="0.000">
+      <failure message="=== RUN   TestNestedParallelFailures" type="failure">=== RUN   TestNestedParallelFailures&#xA;--- FAIL: TestNestedParallelFailures (0.00s)</failure>
+      <system-out>=== RUN   TestNestedParallelFailures&#xA;--- FAIL: TestNestedParallelFailures (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedParallelFailures/a" classname="gotest.tools/gotestsum/testjson/internal/parallelfails" time="0.000">
+      <failure message="fails_test.go:50: failed sub a" type="failure">=== RUN   TestNestedParallelFailures/a&#xA;=== PAUSE TestNestedParallelFailures/a&#xA;=== CONT  TestNestedParallelFailures/a&#xA;    fails_test.go:50: failed sub a&#xA;    --- FAIL: TestNestedParallelFailures/a (0.00s)</failure>
+      <system-out>=== RUN   TestNestedParallelFailures/a&#xA;=== PAUSE TestNestedParallelFailures/a&#xA;=== CONT  TestNestedParallelFailures/a&#xA;    fails_test.go:50: failed sub a&#xA;    --- FAIL: TestNestedParallelFailures/a (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedParallelFailures/b" classname="gotest.tools/gotestsum/testjson/internal/parallelfails" time="0.000">
+      <failure message="fails_test.go:50: failed sub b" type="failure">=== RUN   TestNestedParallelFailures/b&#xA;=== PAUSE TestNestedParallelFailures/b&#xA;=== CONT  TestNestedParallelFailures/b&#xA;    fails_test.go:50: failed sub b&#xA;    --- FAIL: TestNestedParallelFailures/b (0.00s)</failure>
+      <system-out>=== RUN   TestNestedParallelFailures/b&#xA;=== PAUSE TestNestedParallelFailures/b&#xA;=== CONT  TestNestedParallelFailures/b&#xA;    fails_test.go:50: failed sub b&#xA;    --- FAIL: TestNestedParallelFailures/b (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedParallelFailures/c" classname="gotest.tools/gotestsum/testjson/internal/parallelfails" time="0.000">
+      <failure message="fails_test.go:50: failed sub c" type="failure">=== RUN   TestNestedParallelFailures/c&#xA;=== PAUSE TestNestedParallelFailures/c&#xA;=== CONT  TestNestedParallelFailures/c&#xA;    fails_test.go:50: failed sub c&#xA;    --- FAIL: TestNestedParallelFailures/c (0.00s)</failure>
+      <system-out>=== RUN   TestNestedParallelFailures/c&#xA;=== PAUSE TestNestedParallelFailures/c&#xA;=== CONT  TestNestedParallelFailures/c&#xA;    fails_test.go:50: failed sub c&#xA;    --- FAIL: TestNestedParallelFailures/c (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedParallelFailures/d" classname="gotest.tools/gotestsum/testjson/internal/parallelfails" time="0.000">
+      <failure message="fails_test.go:50: failed sub d" type="failure">=== RUN   TestNestedParallelFailures/d&#xA;=== PAUSE TestNestedParallelFailures/d&#xA;=== CONT  TestNestedParallelFailures/d&#xA;    fails_test.go:50: failed sub d&#xA;    --- FAIL: TestNestedParallelFailures/d (0.00s)</failure>
+      <system-out>=== RUN   TestNestedParallelFailures/d&#xA;=== PAUSE TestNestedParallelFailures/d&#xA;=== CONT  TestNestedParallelFailures/d&#xA;    fails_test.go:50: failed sub d&#xA;    --- FAIL: TestNestedParallelFailures/d (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestParallelTheFirst" classname="gotest.tools/gotestsum/testjson/internal/parallelfails" time="0.010">
+      <failure message="fails_test.go:29: failed the first" type="failure">=== RUN   TestParallelTheFirst&#xA;=== PAUSE TestParallelTheFirst&#xA;=== CONT  TestParallelTheFirst&#xA;    fails_test.go:29: failed the first&#xA;--- FAIL: TestParallelTheFirst (0.01s)</failure>
+      <system-out>=== RUN   TestParallelTheFirst&#xA;=== PAUSE TestParallelTheFirst&#xA;=== CONT  TestParallelTheFirst&#xA;    fails_test.go:29: failed the first&#xA;--- FAIL: TestParallelTheFirst (0.01s)</system-out>
+    </testcase>
+    <testcase name="TestParallelTheSecond" classname="gotest.tools/gotestsum/testjson/internal/parallelfails" time="0.010">
+      <failure message="fails_test.go:35: failed the second" type="failure">=== RUN   TestParallelTheSecond&#xA;=== PAUSE TestParallelTheSecond&#xA;=== CONT  TestParallelTheSecond&#xA;    fails_test.go:35: failed the second&#xA;--- FAIL: TestParallelTheSecond (0.01s)</failure>
+      <system-out>=== RUN   TestParallelTheSecond&#xA;=== PAUSE TestParallelTheSecond&#xA;=== CONT  TestParallelTheSecond&#xA;    fails_test.go:35: failed the second&#xA;--- FAIL: TestParallelTheSecond (0.01s)</system-out>
+    </testcase>
+    <testcase name="TestParallelTheThird" classname="gotest.tools/gotestsum/testjson/internal/parallelfails" time="0.000">
+      <failure message="fails_test.go:41: failed the third" type="failure">=== RUN   TestParallelTheThird&#xA;=== PAUSE TestParallelTheThird&#xA;=== CONT  TestParallelTheThird&#xA;    fails_test.go:41: failed the third&#xA;--- FAIL: TestParallelTheThird (0.00s)</failure>
+      <system-out>=== RUN   TestParallelTheThird&#xA;=== PAUSE TestParallelTheThird&#xA;=== CONT  TestParallelTheThird&#xA;    fails_test.go:41: failed the third&#xA;--- FAIL: TestParallelTheThird (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestPassed" classname="gotest.tools/gotestsum/testjson/internal/parallelfails" time="0.000">
+      <system-out>=== RUN   TestPassed&#xA;--- PASS: TestPassed (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestPassedWithLog" classname="gotest.tools/gotestsum/testjson/internal/parallelfails" time="0.000">
+      <system-out>=== RUN   TestPassedWithLog&#xA;    fails_test.go:15: this is a log&#xA;--- PASS: TestPassedWithLog (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestPassedWithStdout" classname="gotest.tools/gotestsum/testjson/internal/parallelfails" time="0.000">
+      <system-out>=== RUN   TestPassedWithStdout&#xA;this is a Print&#xA;--- PASS: TestPassedWithStdout (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestWithStderr" classname="gotest.tools/gotestsum/testjson/internal/parallelfails" time="0.000">
+      <system-out>=== RUN   TestWithStderr&#xA;this is stderr&#xA;--- PASS: TestWithStderr (0.00s)</system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="gotest.tools/gotestsum/testjson/internal/withfails" tests="29" failures="4" errors="0" skipped="3" time="0.020">
+    <testcase name="TestFailed" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <failure message="fails_test.go:34: this failed" type="failure">=== RUN   TestFailed&#xA;    fails_test.go:34: this failed&#xA;--- FAIL: TestFailed (0.00s)</failure>
+      <system-out>=== RUN   TestFailed&#xA;    fails_test.go:34: this failed&#xA;--- FAIL: TestFailed (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestFailedWithStderr" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <failure message="fails_test.go:43: also failed" type="failure">=== RUN   TestFailedWithStderr&#xA;this is stderr&#xA;    fails_test.go:43: also failed&#xA;--- FAIL: TestFailedWithStderr (0.00s)</failure>
+      <system-out>=== RUN   TestFailedWithStderr&#xA;this is stderr&#xA;    fails_test.go:43: also failed&#xA;--- FAIL: TestFailedWithStderr (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedSuccess" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess&#xA;--- PASS: TestNestedSuccess (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedSuccess/a" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess/a&#xA;    --- PASS: TestNestedSuccess/a (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedSuccess/a/sub" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess/a/sub&#xA;        --- PASS: TestNestedSuccess/a/sub (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedSuccess/b" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess/b&#xA;    --- PASS: TestNestedSuccess/b (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedSuccess/b/sub" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess/b/sub&#xA;        --- PASS: TestNestedSuccess/b/sub (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedSuccess/c" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess/c&#xA;    --- PASS: TestNestedSuccess/c (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedSuccess/c/sub" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess/c/sub&#xA;        --- PASS: TestNestedSuccess/c/sub (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedSuccess/d" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess/d&#xA;    --- PASS: TestNestedSuccess/d (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedSuccess/d/sub" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestNestedSuccess/d/sub&#xA;        --- PASS: TestNestedSuccess/d/sub (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedWithFailure" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <failure message="=== RUN   TestNestedWithFailure" type="failure">=== RUN   TestNestedWithFailure&#xA;--- FAIL: TestNestedWithFailure (0.00s)</failure>
+      <system-out>=== RUN   TestNestedWithFailure&#xA;--- FAIL: TestNestedWithFailure (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedWithFailure/a" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestNestedWithFailure/a&#xA;    --- PASS: TestNestedWithFailure/a (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedWithFailure/a/sub" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestNestedWithFailure/a/sub&#xA;        --- PASS: TestNestedWithFailure/a/sub (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedWithFailure/b" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestNestedWithFailure/b&#xA;    --- PASS: TestNestedWithFailure/b (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedWithFailure/b/sub" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestNestedWithFailure/b/sub&#xA;        --- PASS: TestNestedWithFailure/b/sub (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedWithFailure/c" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <failure message="fails_test.go:65: failed" type="failure">=== RUN   TestNestedWithFailure/c&#xA;    fails_test.go:65: failed&#xA;    --- FAIL: TestNestedWithFailure/c (0.00s)</failure>
+      <system-out>=== RUN   TestNestedWithFailure/c&#xA;    fails_test.go:65: failed&#xA;    --- FAIL: TestNestedWithFailure/c (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedWithFailure/d" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestNestedWithFailure/d&#xA;    --- PASS: TestNestedWithFailure/d (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestNestedWithFailure/d/sub" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestNestedWithFailure/d/sub&#xA;        --- PASS: TestNestedWithFailure/d/sub (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestParallelTheFirst" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.010">
+      <system-out>=== RUN   TestParallelTheFirst&#xA;=== PAUSE TestParallelTheFirst&#xA;=== CONT  TestParallelTheFirst&#xA;--- PASS: TestParallelTheFirst (0.01s)</system-out>
+    </testcase>
+    <testcase name="TestParallelTheSecond" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.010">
+      <system-out>=== RUN   TestParallelTheSecond&#xA;=== PAUSE TestParallelTheSecond&#xA;=== CONT  TestParallelTheSecond&#xA;--- PASS: TestParallelTheSecond (0.01s)</system-out>
+    </testcase>
+    <testcase name="TestParallelTheThird" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestParallelTheThird&#xA;=== PAUSE TestParallelTheThird&#xA;=== CONT  TestParallelTheThird&#xA;--- PASS: TestParallelTheThird (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestPassed" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestPassed&#xA;--- PASS: TestPassed (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestPassedWithLog" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestPassedWithLog&#xA;    fails_test.go:18: this is a log&#xA;--- PASS: TestPassedWithLog (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestPassedWithStdout" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestPassedWithStdout&#xA;this is a Print&#xA;--- PASS: TestPassedWithStdout (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestSkipped" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <skipped message="fails_test.go:26:"></skipped>
+      <system-out>=== RUN   TestSkipped&#xA;    fails_test.go:26: &#xA;--- SKIP: TestSkipped (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestSkippedWitLog" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <skipped message="fails_test.go:30: the skip message"></skipped>
+      <system-out>=== RUN   TestSkippedWitLog&#xA;    fails_test.go:30: the skip message&#xA;--- SKIP: TestSkippedWitLog (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestTimeout" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <skipped message="timeout_test.go:13: skipping slow test"></skipped>
+      <system-out>=== RUN   TestTimeout&#xA;    timeout_test.go:13: skipping slow test&#xA;--- SKIP: TestTimeout (0.00s)</system-out>
+    </testcase>
+    <testcase name="TestWithStderr" classname="gotest.tools/gotestsum/testjson/internal/withfails" time="0.000">
+      <system-out>=== RUN   TestWithStderr&#xA;this is stderr&#xA;--- PASS: TestWithStderr (0.00s)</system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

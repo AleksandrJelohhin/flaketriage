@@ -1,0 +1,1142 @@
+<testsuites id="" name="" tests="70" failures="70" skipped="0" errors="0" time="16.746433">
+<testsuite name="basic-navigation.spec.ts" timestamp="2025-08-13T08:17:07.103Z" hostname="chromium" tests="10" failures="10" skipped="0" time="0.014" errors="0">
+<testcase name="Basic Navigation › should load the homepage successfully" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:4:3 should load the homepage successfully" type="FAILURE">
+<![CDATA[  [chromium] › basic-navigation.spec.ts:4:3 › Basic Navigation › should load the homepage successfully 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should have working search functionality" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:14:3 should have working search functionality" type="FAILURE">
+<![CDATA[  [chromium] › basic-navigation.spec.ts:14:3 › Basic Navigation › should have working search functionality 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should have responsive design for mobile" classname="basic-navigation.spec.ts" time="0.002">
+<failure message="basic-navigation.spec.ts:32:3 should have responsive design for mobile" type="FAILURE">
+<![CDATA[  [chromium] › basic-navigation.spec.ts:32:3 › Basic Navigation › should have responsive design for mobile 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should load measurement tools" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:45:3 should load measurement tools" type="FAILURE">
+<![CDATA[  [chromium] › basic-navigation.spec.ts:45:3 › Basic Navigation › should load measurement tools ────
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should handle GPS location request" classname="basic-navigation.spec.ts" time="0.002">
+<failure message="basic-navigation.spec.ts:59:3 should handle GPS location request" type="FAILURE">
+<![CDATA[  [chromium] › basic-navigation.spec.ts:59:3 › Basic Navigation › should handle GPS location request 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should display property information panel" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:84:3 should display property information panel" type="FAILURE">
+<![CDATA[  [chromium] › basic-navigation.spec.ts:84:3 › Basic Navigation › should display property information panel 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should handle map service selection" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:104:3 should handle map service selection" type="FAILURE">
+<![CDATA[  [chromium] › basic-navigation.spec.ts:104:3 › Basic Navigation › should handle map service selection 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should be accessible" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:131:3 should be accessible" type="FAILURE">
+<![CDATA[  [chromium] › basic-navigation.spec.ts:131:3 › Basic Navigation › should be accessible ────────────
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Performance › should load within reasonable time" classname="basic-navigation.spec.ts" time="0.002">
+<failure message="basic-navigation.spec.ts:157:3 should load within reasonable time" type="FAILURE">
+<![CDATA[  [chromium] › basic-navigation.spec.ts:157:3 › Performance › should load within reasonable time ───
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Performance › should not have console errors" classname="basic-navigation.spec.ts" time="0.002">
+<failure message="basic-navigation.spec.ts:169:3 should not have console errors" type="FAILURE">
+<![CDATA[  [chromium] › basic-navigation.spec.ts:169:3 › Performance › should not have console errors ───────
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="enhancements.spec.ts" timestamp="2025-08-13T08:17:07.103Z" hostname="chromium" tests="4" failures="4" skipped="0" time="0.006" errors="0">
+<testcase name="Enhancements › battery saver toggle affects UI and persists" classname="enhancements.spec.ts" time="0.002">
+<failure message="enhancements.spec.ts:4:3 battery saver toggle affects UI and persists" type="FAILURE">
+<![CDATA[  [chromium] › enhancements.spec.ts:4:3 › Enhancements › battery saver toggle affects UI and persists 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Enhancements › map service selection persists across reloads" classname="enhancements.spec.ts" time="0.001">
+<failure message="enhancements.spec.ts:14:3 map service selection persists across reloads" type="FAILURE">
+<![CDATA[  [chromium] › enhancements.spec.ts:14:3 › Enhancements › map service selection persists across reloads 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Enhancements › property boundaries are debounced on move and can load" classname="enhancements.spec.ts" time="0.002">
+<failure message="enhancements.spec.ts:29:3 property boundaries are debounced on move and can load" type="FAILURE">
+<![CDATA[  [chromium] › enhancements.spec.ts:29:3 › Enhancements › property boundaries are debounced on move and can load 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Enhancements › long press copies coordinates to clipboard" classname="enhancements.spec.ts" time="0.001">
+<failure message="enhancements.spec.ts:57:3 long press copies coordinates to clipboard" type="FAILURE">
+<![CDATA[  [chromium] › enhancements.spec.ts:57:3 › Enhancements › long press copies coordinates to clipboard 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="basic-navigation.spec.ts" timestamp="2025-08-13T08:17:07.103Z" hostname="firefox" tests="10" failures="10" skipped="0" time="0.013" errors="0">
+<testcase name="Basic Navigation › should load the homepage successfully" classname="basic-navigation.spec.ts" time="0.002">
+<failure message="basic-navigation.spec.ts:4:3 should load the homepage successfully" type="FAILURE">
+<![CDATA[  [firefox] › basic-navigation.spec.ts:4:3 › Basic Navigation › should load the homepage successfully 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/firefox-1489/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should have working search functionality" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:14:3 should have working search functionality" type="FAILURE">
+<![CDATA[  [firefox] › basic-navigation.spec.ts:14:3 › Basic Navigation › should have working search functionality 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/firefox-1489/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should have responsive design for mobile" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:32:3 should have responsive design for mobile" type="FAILURE">
+<![CDATA[  [firefox] › basic-navigation.spec.ts:32:3 › Basic Navigation › should have responsive design for mobile 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/firefox-1489/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should load measurement tools" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:45:3 should load measurement tools" type="FAILURE">
+<![CDATA[  [firefox] › basic-navigation.spec.ts:45:3 › Basic Navigation › should load measurement tools ─────
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/firefox-1489/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should handle GPS location request" classname="basic-navigation.spec.ts" time="0.002">
+<failure message="basic-navigation.spec.ts:59:3 should handle GPS location request" type="FAILURE">
+<![CDATA[  [firefox] › basic-navigation.spec.ts:59:3 › Basic Navigation › should handle GPS location request 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/firefox-1489/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should display property information panel" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:84:3 should display property information panel" type="FAILURE">
+<![CDATA[  [firefox] › basic-navigation.spec.ts:84:3 › Basic Navigation › should display property information panel 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/firefox-1489/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should handle map service selection" classname="basic-navigation.spec.ts" time="0.002">
+<failure message="basic-navigation.spec.ts:104:3 should handle map service selection" type="FAILURE">
+<![CDATA[  [firefox] › basic-navigation.spec.ts:104:3 › Basic Navigation › should handle map service selection 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/firefox-1489/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should be accessible" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:131:3 should be accessible" type="FAILURE">
+<![CDATA[  [firefox] › basic-navigation.spec.ts:131:3 › Basic Navigation › should be accessible ─────────────
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/firefox-1489/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Performance › should load within reasonable time" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:157:3 should load within reasonable time" type="FAILURE">
+<![CDATA[  [firefox] › basic-navigation.spec.ts:157:3 › Performance › should load within reasonable time ────
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/firefox-1489/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Performance › should not have console errors" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:169:3 should not have console errors" type="FAILURE">
+<![CDATA[  [firefox] › basic-navigation.spec.ts:169:3 › Performance › should not have console errors ────────
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/firefox-1489/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="enhancements.spec.ts" timestamp="2025-08-13T08:17:07.103Z" hostname="firefox" tests="4" failures="4" skipped="0" time="0.005" errors="0">
+<testcase name="Enhancements › battery saver toggle affects UI and persists" classname="enhancements.spec.ts" time="0.001">
+<failure message="enhancements.spec.ts:4:3 battery saver toggle affects UI and persists" type="FAILURE">
+<![CDATA[  [firefox] › enhancements.spec.ts:4:3 › Enhancements › battery saver toggle affects UI and persists 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/firefox-1489/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Enhancements › map service selection persists across reloads" classname="enhancements.spec.ts" time="0.002">
+<failure message="enhancements.spec.ts:14:3 map service selection persists across reloads" type="FAILURE">
+<![CDATA[  [firefox] › enhancements.spec.ts:14:3 › Enhancements › map service selection persists across reloads 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/firefox-1489/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Enhancements › property boundaries are debounced on move and can load" classname="enhancements.spec.ts" time="0.001">
+<failure message="enhancements.spec.ts:29:3 property boundaries are debounced on move and can load" type="FAILURE">
+<![CDATA[  [firefox] › enhancements.spec.ts:29:3 › Enhancements › property boundaries are debounced on move and can load 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/firefox-1489/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Enhancements › long press copies coordinates to clipboard" classname="enhancements.spec.ts" time="0.001">
+<failure message="enhancements.spec.ts:57:3 long press copies coordinates to clipboard" type="FAILURE">
+<![CDATA[  [firefox] › enhancements.spec.ts:57:3 › Enhancements › long press copies coordinates to clipboard 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/firefox-1489/firefox/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="basic-navigation.spec.ts" timestamp="2025-08-13T08:17:07.103Z" hostname="webkit" tests="10" failures="10" skipped="0" time="0.017" errors="0">
+<testcase name="Basic Navigation › should load the homepage successfully" classname="basic-navigation.spec.ts" time="0.002">
+<failure message="basic-navigation.spec.ts:4:3 should load the homepage successfully" type="FAILURE">
+<![CDATA[  [webkit] › basic-navigation.spec.ts:4:3 › Basic Navigation › should load the homepage successfully 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should have working search functionality" classname="basic-navigation.spec.ts" time="0.002">
+<failure message="basic-navigation.spec.ts:14:3 should have working search functionality" type="FAILURE">
+<![CDATA[  [webkit] › basic-navigation.spec.ts:14:3 › Basic Navigation › should have working search functionality 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should have responsive design for mobile" classname="basic-navigation.spec.ts" time="0.002">
+<failure message="basic-navigation.spec.ts:32:3 should have responsive design for mobile" type="FAILURE">
+<![CDATA[  [webkit] › basic-navigation.spec.ts:32:3 › Basic Navigation › should have responsive design for mobile 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should load measurement tools" classname="basic-navigation.spec.ts" time="0.002">
+<failure message="basic-navigation.spec.ts:45:3 should load measurement tools" type="FAILURE">
+<![CDATA[  [webkit] › basic-navigation.spec.ts:45:3 › Basic Navigation › should load measurement tools ──────
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should handle GPS location request" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:59:3 should handle GPS location request" type="FAILURE">
+<![CDATA[  [webkit] › basic-navigation.spec.ts:59:3 › Basic Navigation › should handle GPS location request ─
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should display property information panel" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:84:3 should display property information panel" type="FAILURE">
+<![CDATA[  [webkit] › basic-navigation.spec.ts:84:3 › Basic Navigation › should display property information panel 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should handle map service selection" classname="basic-navigation.spec.ts" time="0.002">
+<failure message="basic-navigation.spec.ts:104:3 should handle map service selection" type="FAILURE">
+<![CDATA[  [webkit] › basic-navigation.spec.ts:104:3 › Basic Navigation › should handle map service selection 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should be accessible" classname="basic-navigation.spec.ts" time="0.002">
+<failure message="basic-navigation.spec.ts:131:3 should be accessible" type="FAILURE">
+<![CDATA[  [webkit] › basic-navigation.spec.ts:131:3 › Basic Navigation › should be accessible ──────────────
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Performance › should load within reasonable time" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:157:3 should load within reasonable time" type="FAILURE">
+<![CDATA[  [webkit] › basic-navigation.spec.ts:157:3 › Performance › should load within reasonable time ─────
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Performance › should not have console errors" classname="basic-navigation.spec.ts" time="0.002">
+<failure message="basic-navigation.spec.ts:169:3 should not have console errors" type="FAILURE">
+<![CDATA[  [webkit] › basic-navigation.spec.ts:169:3 › Performance › should not have console errors ─────────
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="enhancements.spec.ts" timestamp="2025-08-13T08:17:07.103Z" hostname="webkit" tests="4" failures="4" skipped="0" time="0.005" errors="0">
+<testcase name="Enhancements › battery saver toggle affects UI and persists" classname="enhancements.spec.ts" time="0.002">
+<failure message="enhancements.spec.ts:4:3 battery saver toggle affects UI and persists" type="FAILURE">
+<![CDATA[  [webkit] › enhancements.spec.ts:4:3 › Enhancements › battery saver toggle affects UI and persists 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Enhancements › map service selection persists across reloads" classname="enhancements.spec.ts" time="0.001">
+<failure message="enhancements.spec.ts:14:3 map service selection persists across reloads" type="FAILURE">
+<![CDATA[  [webkit] › enhancements.spec.ts:14:3 › Enhancements › map service selection persists across reloads 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Enhancements › property boundaries are debounced on move and can load" classname="enhancements.spec.ts" time="0.001">
+<failure message="enhancements.spec.ts:29:3 property boundaries are debounced on move and can load" type="FAILURE">
+<![CDATA[  [webkit] › enhancements.spec.ts:29:3 › Enhancements › property boundaries are debounced on move and can load 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Enhancements › long press copies coordinates to clipboard" classname="enhancements.spec.ts" time="0.001">
+<failure message="enhancements.spec.ts:57:3 long press copies coordinates to clipboard" type="FAILURE">
+<![CDATA[  [webkit] › enhancements.spec.ts:57:3 › Enhancements › long press copies coordinates to clipboard ─
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="basic-navigation.spec.ts" timestamp="2025-08-13T08:17:07.103Z" hostname="Mobile Chrome" tests="10" failures="10" skipped="0" time="0.012" errors="0">
+<testcase name="Basic Navigation › should load the homepage successfully" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:4:3 should load the homepage successfully" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › basic-navigation.spec.ts:4:3 › Basic Navigation › should load the homepage successfully 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should have working search functionality" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:14:3 should have working search functionality" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › basic-navigation.spec.ts:14:3 › Basic Navigation › should have working search functionality 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should have responsive design for mobile" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:32:3 should have responsive design for mobile" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › basic-navigation.spec.ts:32:3 › Basic Navigation › should have responsive design for mobile 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should load measurement tools" classname="basic-navigation.spec.ts" time="0.002">
+<failure message="basic-navigation.spec.ts:45:3 should load measurement tools" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › basic-navigation.spec.ts:45:3 › Basic Navigation › should load measurement tools 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should handle GPS location request" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:59:3 should handle GPS location request" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › basic-navigation.spec.ts:59:3 › Basic Navigation › should handle GPS location request 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should display property information panel" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:84:3 should display property information panel" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › basic-navigation.spec.ts:84:3 › Basic Navigation › should display property information panel 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should handle map service selection" classname="basic-navigation.spec.ts" time="0.002">
+<failure message="basic-navigation.spec.ts:104:3 should handle map service selection" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › basic-navigation.spec.ts:104:3 › Basic Navigation › should handle map service selection 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should be accessible" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:131:3 should be accessible" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › basic-navigation.spec.ts:131:3 › Basic Navigation › should be accessible ───────
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Performance › should load within reasonable time" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:157:3 should load within reasonable time" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › basic-navigation.spec.ts:157:3 › Performance › should load within reasonable time 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Performance › should not have console errors" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:169:3 should not have console errors" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › basic-navigation.spec.ts:169:3 › Performance › should not have console errors ──
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="enhancements.spec.ts" timestamp="2025-08-13T08:17:07.103Z" hostname="Mobile Chrome" tests="4" failures="4" skipped="0" time="0.004" errors="0">
+<testcase name="Enhancements › battery saver toggle affects UI and persists" classname="enhancements.spec.ts" time="0.001">
+<failure message="enhancements.spec.ts:4:3 battery saver toggle affects UI and persists" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › enhancements.spec.ts:4:3 › Enhancements › battery saver toggle affects UI and persists 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Enhancements › map service selection persists across reloads" classname="enhancements.spec.ts" time="0.001">
+<failure message="enhancements.spec.ts:14:3 map service selection persists across reloads" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › enhancements.spec.ts:14:3 › Enhancements › map service selection persists across reloads 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Enhancements › property boundaries are debounced on move and can load" classname="enhancements.spec.ts" time="0.001">
+<failure message="enhancements.spec.ts:29:3 property boundaries are debounced on move and can load" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › enhancements.spec.ts:29:3 › Enhancements › property boundaries are debounced on move and can load 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Enhancements › long press copies coordinates to clipboard" classname="enhancements.spec.ts" time="0.001">
+<failure message="enhancements.spec.ts:57:3 long press copies coordinates to clipboard" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › enhancements.spec.ts:57:3 › Enhancements › long press copies coordinates to clipboard 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1181/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="basic-navigation.spec.ts" timestamp="2025-08-13T08:17:07.103Z" hostname="Mobile Safari" tests="10" failures="10" skipped="0" time="0.01" errors="0">
+<testcase name="Basic Navigation › should load the homepage successfully" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:4:3 should load the homepage successfully" type="FAILURE">
+<![CDATA[  [Mobile Safari] › basic-navigation.spec.ts:4:3 › Basic Navigation › should load the homepage successfully 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should have working search functionality" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:14:3 should have working search functionality" type="FAILURE">
+<![CDATA[  [Mobile Safari] › basic-navigation.spec.ts:14:3 › Basic Navigation › should have working search functionality 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should have responsive design for mobile" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:32:3 should have responsive design for mobile" type="FAILURE">
+<![CDATA[  [Mobile Safari] › basic-navigation.spec.ts:32:3 › Basic Navigation › should have responsive design for mobile 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should load measurement tools" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:45:3 should load measurement tools" type="FAILURE">
+<![CDATA[  [Mobile Safari] › basic-navigation.spec.ts:45:3 › Basic Navigation › should load measurement tools 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should handle GPS location request" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:59:3 should handle GPS location request" type="FAILURE">
+<![CDATA[  [Mobile Safari] › basic-navigation.spec.ts:59:3 › Basic Navigation › should handle GPS location request 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should display property information panel" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:84:3 should display property information panel" type="FAILURE">
+<![CDATA[  [Mobile Safari] › basic-navigation.spec.ts:84:3 › Basic Navigation › should display property information panel 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should handle map service selection" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:104:3 should handle map service selection" type="FAILURE">
+<![CDATA[  [Mobile Safari] › basic-navigation.spec.ts:104:3 › Basic Navigation › should handle map service selection 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Basic Navigation › should be accessible" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:131:3 should be accessible" type="FAILURE">
+<![CDATA[  [Mobile Safari] › basic-navigation.spec.ts:131:3 › Basic Navigation › should be accessible ───────
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Performance › should load within reasonable time" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:157:3 should load within reasonable time" type="FAILURE">
+<![CDATA[  [Mobile Safari] › basic-navigation.spec.ts:157:3 › Performance › should load within reasonable time 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Performance › should not have console errors" classname="basic-navigation.spec.ts" time="0.001">
+<failure message="basic-navigation.spec.ts:169:3 should not have console errors" type="FAILURE">
+<![CDATA[  [Mobile Safari] › basic-navigation.spec.ts:169:3 › Performance › should not have console errors ──
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="enhancements.spec.ts" timestamp="2025-08-13T08:17:07.103Z" hostname="Mobile Safari" tests="4" failures="4" skipped="0" time="0.004" errors="0">
+<testcase name="Enhancements › battery saver toggle affects UI and persists" classname="enhancements.spec.ts" time="0.001">
+<failure message="enhancements.spec.ts:4:3 battery saver toggle affects UI and persists" type="FAILURE">
+<![CDATA[  [Mobile Safari] › enhancements.spec.ts:4:3 › Enhancements › battery saver toggle affects UI and persists 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Enhancements › map service selection persists across reloads" classname="enhancements.spec.ts" time="0.001">
+<failure message="enhancements.spec.ts:14:3 map service selection persists across reloads" type="FAILURE">
+<![CDATA[  [Mobile Safari] › enhancements.spec.ts:14:3 › Enhancements › map service selection persists across reloads 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Enhancements › property boundaries are debounced on move and can load" classname="enhancements.spec.ts" time="0.001">
+<failure message="enhancements.spec.ts:29:3 property boundaries are debounced on move and can load" type="FAILURE">
+<![CDATA[  [Mobile Safari] › enhancements.spec.ts:29:3 › Enhancements › property boundaries are debounced on move and can load 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Enhancements › long press copies coordinates to clipboard" classname="enhancements.spec.ts" time="0.001">
+<failure message="enhancements.spec.ts:57:3 long press copies coordinates to clipboard" type="FAILURE">
+<![CDATA[  [Mobile Safari] › enhancements.spec.ts:57:3 › Enhancements › long press copies coordinates to clipboard 
+
+    Error: browserType.launch: Executable doesn't exist at /home/ubuntu/.cache/ms-playwright/webkit-2191/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

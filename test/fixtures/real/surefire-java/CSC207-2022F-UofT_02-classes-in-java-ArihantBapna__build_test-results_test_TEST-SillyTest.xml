@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SillyTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-09-11T14:20:41" hostname="Aris-MacBook-Pro.local" time="0.083">
+  <properties/>
+  <testcase name="testTask1" classname="SillyTest" time="0.083">
+    <failure message="org.junit.runners.model.TestTimedOutException: test timed out after 50 milliseconds" type="org.junit.runners.model.TestTimedOutException">org.junit.runners.model.TestTimedOutException: test timed out after 50 milliseconds
+	at java.base@11.0.11/jdk.internal.org.objectweb.asm.MethodWriter.visitVarInsn(MethodWriter.java:856)
+	at java.base@11.0.11/java.lang.invoke.ClassSpecializer$Factory$1Var.emitVarInstruction(ClassSpecializer.java:709)
+	at java.base@11.0.11/java.lang.invoke.ClassSpecializer$Factory.generateConcreteSpeciesCodeFile(ClassSpecializer.java:774)
+	at java.base@11.0.11/java.lang.invoke.ClassSpecializer$Factory.generateConcreteSpeciesCode(ClassSpecializer.java:575)
+	at java.base@11.0.11/java.lang.invoke.ClassSpecializer$Factory.loadSpecies(ClassSpecializer.java:490)
+	at java.base@11.0.11/java.lang.invoke.ClassSpecializer.findSpecies(ClassSpecializer.java:194)
+	at java.base@11.0.11/java.lang.invoke.BoundMethodHandle$SpeciesData.extendWith(BoundMethodHandle.java:352)
+	at java.base@11.0.11/java.lang.invoke.LambdaFormEditor.newSpeciesData(LambdaFormEditor.java:388)
+	at java.base@11.0.11/java.lang.invoke.LambdaFormEditor.makeArgumentCombinationForm(LambdaFormEditor.java:658)
+	at java.base@11.0.11/java.lang.invoke.LambdaFormEditor.filterArgumentForm(LambdaFormEditor.java:639)
+	at java.base@11.0.11/java.lang.invoke.MethodHandles.filterArgument(MethodHandles.java:3877)
+	at java.base@11.0.11/java.lang.invoke.MethodHandles.filterArguments(MethodHandles.java:3865)
+	at java.base@11.0.11/java.lang.invoke.StringConcatFactory$MethodHandleInlineCopyStrategy.generate(StringConcatFactory.java:1625)
+	at java.base@11.0.11/java.lang.invoke.StringConcatFactory.generate(StringConcatFactory.java:756)
+	at java.base@11.0.11/java.lang.invoke.StringConcatFactory.doStringConcat(StringConcatFactory.java:665)
+	at java.base@11.0.11/java.lang.invoke.StringConcatFactory.makeConcatWithConstants(StringConcatFactory.java:581)
+	at java.base@11.0.11/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	at java.base@11.0.11/java.lang.invoke.DelegatingMethodHandle$Holder.delegate(DelegatingMethodHandle$Holder)
+	at java.base@11.0.11/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+	at java.base@11.0.11/java.lang.invoke.BootstrapMethodInvoker.invoke(BootstrapMethodInvoker.java:99)
+	at java.base@11.0.11/java.lang.invoke.CallSite.makeSite(CallSite.java:307)
+	at java.base@11.0.11/java.lang.invoke.MethodHandleNatives.linkCallSiteImpl(MethodHandleNatives.java:258)
+	at java.base@11.0.11/java.lang.invoke.MethodHandleNatives.linkCallSite(MethodHandleNatives.java:248)
+	at app//Silly.&lt;init&gt;(Silly.java:90)
+	at app//SillyTest.testTask1(SillyTest.java:39)
+	at java.base@11.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.11/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.11/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.11/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at app//org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at app//org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at app//org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at app//org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:288)
+	at app//org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:282)
+	at java.base@11.0.11/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base@11.0.11/java.lang.Thread.run(Thread.java:829)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

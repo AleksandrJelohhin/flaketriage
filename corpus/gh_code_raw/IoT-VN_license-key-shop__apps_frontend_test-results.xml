@@ -1,0 +1,2572 @@
+<testsuites id="" name="" tests="80" failures="70" skipped="10" errors="0" time="59.944203">
+<testsuite name="flows\authentication-flow.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="chromium" tests="4" failures="3" skipped="1" time="19.082" errors="0">
+<testcase name="Authentication Flow › sign in page loads" classname="flows\authentication-flow.spec.ts" time="6.316">
+<failure message="authentication-flow.spec.ts:4:7 sign in page loads" type="FAILURE">
+<![CDATA[  [chromium] › flows\authentication-flow.spec.ts:4:7 › Authentication Flow › sign in page loads ────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Sign In/
+    Received string:  ""
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        9 × unexpected value ""
+
+
+       5 |     await page.goto('/sign-in');
+       6 |
+    >  7 |     await expect(page).toHaveTitle(/Sign In/);
+         |                        ^
+       8 |   });
+       9 |
+      10 |   test('sign up page loads', async ({ page }) => {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\authentication-flow.spec.ts:7:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication Flow › sign up page loads" classname="flows\authentication-flow.spec.ts" time="6.219">
+<failure message="authentication-flow.spec.ts:10:7 sign up page loads" type="FAILURE">
+<![CDATA[  [chromium] › flows\authentication-flow.spec.ts:10:7 › Authentication Flow › sign up page loads ───
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Sign Up/
+    Received string:  ""
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        9 × unexpected value ""
+
+
+      11 |     await page.goto('/sign-up');
+      12 |
+    > 13 |     await expect(page).toHaveTitle(/Sign Up/);
+         |                        ^
+      14 |   });
+      15 |
+      16 |   test('redirect to dashboard after sign in', async ({ page }) => {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\authentication-flow.spec.ts:13:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication Flow › redirect to dashboard after sign in" classname="flows\authentication-flow.spec.ts" time="0.27">
+<properties>
+<property name="skip" value="Clerk test key not configured">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › protected routes redirect to sign in" classname="flows\authentication-flow.spec.ts" time="6.277">
+<failure message="authentication-flow.spec.ts:27:7 protected routes redirect to sign in" type="FAILURE">
+<![CDATA[  [chromium] › flows\authentication-flow.spec.ts:27:7 › Authentication Flow › protected routes redirect to sign in 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/sign-in/
+    Received string:  "http://localhost:3000/dashboard"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        9 × unexpected value "http://localhost:3000/dashboard"
+
+
+      30 |     for (const route of protectedRoutes) {
+      31 |       await page.goto(route);
+    > 32 |       await expect(page).toHaveURL(/\/sign-in/);
+         |                          ^
+      33 |     }
+      34 |   });
+      35 | });
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\authentication-flow.spec.ts:32:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="flows\license-validation-flow.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="chromium" tests="5" failures="5" skipped="0" time="1.663" errors="0">
+<testcase name="License Validation API › validate license key with valid format" classname="flows\license-validation-flow.spec.ts" time="0.319">
+<failure message="license-validation-flow.spec.ts:13:7 validate license key with valid format" type="FAILURE">
+<![CDATA[  [chromium] › flows\license-validation-flow.spec.ts:13:7 › License Validation API › validate license key with valid format 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.6 Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - Content-Type: application/json
+        - content-length: 40
+
+
+      12 |
+      13 |   test('validate license key with valid format', async ({ request }) => {
+    > 14 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      15 |       data: {
+      16 |         licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      17 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:14:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › reject invalid key format" classname="flows\license-validation-flow.spec.ts" time="0.335">
+<failure message="license-validation-flow.spec.ts:30:7 reject invalid key format" type="FAILURE">
+<![CDATA[  [chromium] › flows\license-validation-flow.spec.ts:30:7 › License Validation API › reject invalid key format 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.6 Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 31
+
+
+      29 |
+      30 |   test('reject invalid key format', async ({ request }) => {
+    > 31 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      32 |       data: {
+      33 |         licenseKey: 'INVALID-FORMAT',
+      34 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:31:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › require API key for validation" classname="flows\license-validation-flow.spec.ts" time="0.337">
+<failure message="license-validation-flow.spec.ts:46:7 require API key for validation" type="FAILURE">
+<![CDATA[  [chromium] › flows\license-validation-flow.spec.ts:46:7 › License Validation API › require API key for validation 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.6 Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - content-type: application/json
+        - content-length: 40
+
+
+      45 |
+      46 |   test('require API key for validation', async ({ request }) => {
+    > 47 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      48 |       data: {
+      49 |         licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      50 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:47:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › include metadata in validation request" classname="flows\license-validation-flow.spec.ts" time="0.324">
+<failure message="license-validation-flow.spec.ts:56:7 include metadata in validation request" type="FAILURE">
+<![CDATA[  [chromium] › flows\license-validation-flow.spec.ts:56:7 › License Validation API › include metadata in validation request 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.6 Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 136
+
+
+      55 |
+      56 |   test('include metadata in validation request', async ({ request }) => {
+    > 57 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      58 |       data: {
+      59 |         licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      60 |         metadata: {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:57:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › handle rate limiting" classname="flows\license-validation-flow.spec.ts" time="0.348">
+<failure message="license-validation-flow.spec.ts:74:7 handle rate limiting" type="FAILURE">
+<![CDATA[  [chromium] › flows\license-validation-flow.spec.ts:74:7 › License Validation API › handle rate limiting 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.6 Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 40
+
+
+      75 |     // Make multiple requests to test rate limiting
+      76 |     const requests = Array.from({ length: 15 }, () =>
+    > 77 |       request.post(`${API_URL}/api/v1/validate`, {
+         |               ^
+      78 |         data: {
+      79 |           licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      80 |         },
+        at from (D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:77:15)
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:76:28
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="flows\purchase-flow.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="chromium" tests="3" failures="2" skipped="1" time="38.55" errors="0">
+<testcase name="Purchase Flow › view product and initiate purchase" classname="flows\purchase-flow.spec.ts" time="30.811">
+<failure message="purchase-flow.spec.ts:9:7 view product and initiate purchase" type="FAILURE">
+<![CDATA[  [chromium] › flows\purchase-flow.spec.ts:9:7 › Purchase Flow › view product and initiate purchase 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('text=Buy Now')
+
+
+       9 |   test('view product and initiate purchase', async ({ page }) => {
+      10 |     // Click on a product
+    > 11 |     await page.click('text=Buy Now');
+         |                ^
+      12 |
+      13 |     // Should redirect to checkout or show checkout modal
+      14 |     await expect(page).toHaveURL(/\/checkout/);
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\purchase-flow.spec.ts:11:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Purchase Flow › complete purchase flow (test mode)" classname="flows\purchase-flow.spec.ts" time="1.08">
+<properties>
+<property name="skip" value="Stripe test key not configured">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Purchase Flow › view purchase confirmation" classname="flows\purchase-flow.spec.ts" time="6.659">
+<failure message="purchase-flow.spec.ts:32:7 view purchase confirmation" type="FAILURE">
+<![CDATA[  [chromium] › flows\purchase-flow.spec.ts:32:7 › Purchase Flow › view purchase confirmation ───────
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/sign-in/
+    Received string:  "http://localhost:3000/dashboard/purchases"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        9 × unexpected value "http://localhost:3000/dashboard/purchases"
+
+
+      36 |
+      37 |     // Should redirect to sign in
+    > 38 |     await expect(page).toHaveURL(/\/sign-in/);
+         |                        ^
+      39 |   });
+      40 | });
+      41 |
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\purchase-flow.spec.ts:38:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="smoke\health.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="chromium" tests="4" failures="4" skipped="0" time="12.239" errors="0">
+<testcase name="Smoke Tests › homepage loads successfully" classname="smoke\health.spec.ts" time="6">
+<failure message="health.spec.ts:4:7 homepage loads successfully" type="FAILURE">
+<![CDATA[  [chromium] › smoke\health.spec.ts:4:7 › Smoke Tests › homepage loads successfully ────────────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /License Key Shop/
+    Received string:  ""
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        9 × unexpected value ""
+
+
+       5 |     await page.goto('/');
+       6 |
+    >  7 |     await expect(page).toHaveTitle(/License Key Shop/);
+         |                        ^
+       8 |     await expect(page.locator('h1')).toBeVisible();
+       9 |   });
+      10 |
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:7:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › dashboard page accessible" classname="smoke\health.spec.ts" time="5.576">
+<failure message="health.spec.ts:11:7 dashboard page accessible" type="FAILURE">
+<![CDATA[  [chromium] › smoke\health.spec.ts:11:7 › Smoke Tests › dashboard page accessible ─────────────────
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/sign-in/
+    Received string:  "http://localhost:3000/dashboard"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        9 × unexpected value "http://localhost:3000/dashboard"
+
+
+      13 |
+      14 |     // Should redirect to sign in if not authenticated
+    > 15 |     await expect(page).toHaveURL(/\/sign-in/);
+         |                        ^
+      16 |   });
+      17 |
+      18 |   test('API health check', async ({ request }) => {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:15:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › API health check" classname="smoke\health.spec.ts" time="0.334">
+<failure message="health.spec.ts:18:7 API health check" type="FAILURE">
+<![CDATA[  [chromium] › smoke\health.spec.ts:18:7 › Smoke Tests › API health check ──────────────────────────
+
+    Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → GET http://localhost:3001/health
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.6 Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+
+
+      18 |   test('API health check', async ({ request }) => {
+      19 |     const apiUrl = process.env.API_URL || 'http://localhost:3001';
+    > 20 |     const response = await request.get(`${apiUrl}/health`);
+         |                                    ^
+      21 |
+      22 |     expect(response.status()).toBe(200);
+      23 |     const body = await response.json();
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:20:36
+]]>
+</failure>
+</testcase>
+<testcase name="Smoke Tests › license key validation endpoint accessible" classname="smoke\health.spec.ts" time="0.329">
+<failure message="health.spec.ts:27:7 license key validation endpoint accessible" type="FAILURE">
+<![CDATA[  [chromium] › smoke\health.spec.ts:27:7 › Smoke Tests › license key validation endpoint accessible 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.6 Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 30
+
+
+      27 |   test('license key validation endpoint accessible', async ({ request }) => {
+      28 |     const apiUrl = process.env.API_URL || 'http://localhost:3001';
+    > 29 |     const response = await request.post(`${apiUrl}/api/v1/validate`, {
+         |                                    ^
+      30 |       data: {
+      31 |         licenseKey: 'TEST-KEY-1234',
+      32 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:29:36
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="flows\authentication-flow.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="firefox" tests="4" failures="3" skipped="1" time="19.697" errors="0">
+<testcase name="Authentication Flow › sign in page loads" classname="flows\authentication-flow.spec.ts" time="6.204">
+<failure message="authentication-flow.spec.ts:4:7 sign in page loads" type="FAILURE">
+<![CDATA[  [firefox] › flows\authentication-flow.spec.ts:4:7 › Authentication Flow › sign in page loads ─────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Sign In/
+    Received string:  ""
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        9 × unexpected value ""
+
+
+       5 |     await page.goto('/sign-in');
+       6 |
+    >  7 |     await expect(page).toHaveTitle(/Sign In/);
+         |                        ^
+       8 |   });
+       9 |
+      10 |   test('sign up page loads', async ({ page }) => {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\authentication-flow.spec.ts:7:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-firefox\video.webm]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication Flow › sign up page loads" classname="flows\authentication-flow.spec.ts" time="6.281">
+<failure message="authentication-flow.spec.ts:10:7 sign up page loads" type="FAILURE">
+<![CDATA[  [firefox] › flows\authentication-flow.spec.ts:10:7 › Authentication Flow › sign up page loads ────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Sign Up/
+    Received string:  ""
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        9 × unexpected value ""
+
+
+      11 |     await page.goto('/sign-up');
+      12 |
+    > 13 |     await expect(page).toHaveTitle(/Sign Up/);
+         |                        ^
+      14 |   });
+      15 |
+      16 |   test('redirect to dashboard after sign in', async ({ page }) => {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\authentication-flow.spec.ts:13:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-firefox\video.webm]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication Flow › redirect to dashboard after sign in" classname="flows\authentication-flow.spec.ts" time="0.926">
+<properties>
+<property name="skip" value="Clerk test key not configured">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › protected routes redirect to sign in" classname="flows\authentication-flow.spec.ts" time="6.286">
+<failure message="authentication-flow.spec.ts:27:7 protected routes redirect to sign in" type="FAILURE">
+<![CDATA[  [firefox] › flows\authentication-flow.spec.ts:27:7 › Authentication Flow › protected routes redirect to sign in 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/sign-in/
+    Received string:  "http://localhost:3000/dashboard"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        9 × unexpected value "http://localhost:3000/dashboard"
+
+
+      30 |     for (const route of protectedRoutes) {
+      31 |       await page.goto(route);
+    > 32 |       await expect(page).toHaveURL(/\/sign-in/);
+         |                          ^
+      33 |     }
+      34 |   });
+      35 | });
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\authentication-flow.spec.ts:32:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-firefox\video.webm]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="flows\license-validation-flow.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="firefox" tests="5" failures="5" skipped="0" time="1.644" errors="0">
+<testcase name="License Validation API › validate license key with valid format" classname="flows\license-validation-flow.spec.ts" time="0.321">
+<failure message="license-validation-flow.spec.ts:13:7 validate license key with valid format" type="FAILURE">
+<![CDATA[  [firefox] › flows\license-validation-flow.spec.ts:13:7 › License Validation API › validate license key with valid format 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0.1) Gecko/20100101 Firefox/146.0.1
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - Content-Type: application/json
+        - content-length: 40
+
+
+      12 |
+      13 |   test('validate license key with valid format', async ({ request }) => {
+    > 14 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      15 |       data: {
+      16 |         licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      17 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:14:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › reject invalid key format" classname="flows\license-validation-flow.spec.ts" time="0.316">
+<failure message="license-validation-flow.spec.ts:30:7 reject invalid key format" type="FAILURE">
+<![CDATA[  [firefox] › flows\license-validation-flow.spec.ts:30:7 › License Validation API › reject invalid key format 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0.1) Gecko/20100101 Firefox/146.0.1
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 31
+
+
+      29 |
+      30 |   test('reject invalid key format', async ({ request }) => {
+    > 31 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      32 |       data: {
+      33 |         licenseKey: 'INVALID-FORMAT',
+      34 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:31:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › require API key for validation" classname="flows\license-validation-flow.spec.ts" time="0.336">
+<failure message="license-validation-flow.spec.ts:46:7 require API key for validation" type="FAILURE">
+<![CDATA[  [firefox] › flows\license-validation-flow.spec.ts:46:7 › License Validation API › require API key for validation 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0.1) Gecko/20100101 Firefox/146.0.1
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - content-type: application/json
+        - content-length: 40
+
+
+      45 |
+      46 |   test('require API key for validation', async ({ request }) => {
+    > 47 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      48 |       data: {
+      49 |         licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      50 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:47:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › include metadata in validation request" classname="flows\license-validation-flow.spec.ts" time="0.326">
+<failure message="license-validation-flow.spec.ts:56:7 include metadata in validation request" type="FAILURE">
+<![CDATA[  [firefox] › flows\license-validation-flow.spec.ts:56:7 › License Validation API › include metadata in validation request 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0.1) Gecko/20100101 Firefox/146.0.1
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 136
+
+
+      55 |
+      56 |   test('include metadata in validation request', async ({ request }) => {
+    > 57 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      58 |       data: {
+      59 |         licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      60 |         metadata: {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:57:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › handle rate limiting" classname="flows\license-validation-flow.spec.ts" time="0.345">
+<failure message="license-validation-flow.spec.ts:74:7 handle rate limiting" type="FAILURE">
+<![CDATA[  [firefox] › flows\license-validation-flow.spec.ts:74:7 › License Validation API › handle rate limiting 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0.1) Gecko/20100101 Firefox/146.0.1
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 40
+
+
+      75 |     // Make multiple requests to test rate limiting
+      76 |     const requests = Array.from({ length: 15 }, () =>
+    > 77 |       request.post(`${API_URL}/api/v1/validate`, {
+         |               ^
+      78 |         data: {
+      79 |           licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      80 |         },
+        at from (D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:77:15)
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:76:28
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="flows\purchase-flow.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="firefox" tests="3" failures="2" skipped="1" time="38.757" errors="0">
+<testcase name="Purchase Flow › view product and initiate purchase" classname="flows\purchase-flow.spec.ts" time="30.116">
+<failure message="purchase-flow.spec.ts:9:7 view product and initiate purchase" type="FAILURE">
+<![CDATA[  [firefox] › flows\purchase-flow.spec.ts:9:7 › Purchase Flow › view product and initiate purchase ─
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('text=Buy Now')
+
+
+       9 |   test('view product and initiate purchase', async ({ page }) => {
+      10 |     // Click on a product
+    > 11 |     await page.click('text=Buy Now');
+         |                ^
+      12 |
+      13 |     // Should redirect to checkout or show checkout modal
+      14 |     await expect(page).toHaveURL(/\/checkout/);
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\purchase-flow.spec.ts:11:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-firefox\video.webm]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Purchase Flow › complete purchase flow (test mode)" classname="flows\purchase-flow.spec.ts" time="1.597">
+<properties>
+<property name="skip" value="Stripe test key not configured">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Purchase Flow › view purchase confirmation" classname="flows\purchase-flow.spec.ts" time="7.044">
+<failure message="purchase-flow.spec.ts:32:7 view purchase confirmation" type="FAILURE">
+<![CDATA[  [firefox] › flows\purchase-flow.spec.ts:32:7 › Purchase Flow › view purchase confirmation ────────
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/sign-in/
+    Received string:  "http://localhost:3000/dashboard/purchases"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        8 × unexpected value "http://localhost:3000/dashboard/purchases"
+
+
+      36 |
+      37 |     // Should redirect to sign in
+    > 38 |     await expect(page).toHaveURL(/\/sign-in/);
+         |                        ^
+      39 |   });
+      40 | });
+      41 |
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\purchase-flow.spec.ts:38:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-firefox\video.webm]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="smoke\health.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="firefox" tests="4" failures="4" skipped="0" time="14.085" errors="0">
+<testcase name="Smoke Tests › homepage loads successfully" classname="smoke\health.spec.ts" time="6.566">
+<failure message="health.spec.ts:4:7 homepage loads successfully" type="FAILURE">
+<![CDATA[  [firefox] › smoke\health.spec.ts:4:7 › Smoke Tests › homepage loads successfully ─────────────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /License Key Shop/
+    Received string:  ""
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        8 × unexpected value ""
+
+
+       5 |     await page.goto('/');
+       6 |
+    >  7 |     await expect(page).toHaveTitle(/License Key Shop/);
+         |                        ^
+       8 |     await expect(page.locator('h1')).toBeVisible();
+       9 |   });
+      10 |
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:7:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-firefox\video.webm]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › dashboard page accessible" classname="smoke\health.spec.ts" time="6.837">
+<failure message="health.spec.ts:11:7 dashboard page accessible" type="FAILURE">
+<![CDATA[  [firefox] › smoke\health.spec.ts:11:7 › Smoke Tests › dashboard page accessible ──────────────────
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/sign-in/
+    Received string:  "http://localhost:3000/dashboard"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        8 × unexpected value "http://localhost:3000/dashboard"
+
+
+      13 |
+      14 |     // Should redirect to sign in if not authenticated
+    > 15 |     await expect(page).toHaveURL(/\/sign-in/);
+         |                        ^
+      16 |   });
+      17 |
+      18 |   test('API health check', async ({ request }) => {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:15:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-firefox\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-firefox\video.webm]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-firefox\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › API health check" classname="smoke\health.spec.ts" time="0.339">
+<failure message="health.spec.ts:18:7 API health check" type="FAILURE">
+<![CDATA[  [firefox] › smoke\health.spec.ts:18:7 › Smoke Tests › API health check ───────────────────────────
+
+    Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → GET http://localhost:3001/health
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0.1) Gecko/20100101 Firefox/146.0.1
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+
+
+      18 |   test('API health check', async ({ request }) => {
+      19 |     const apiUrl = process.env.API_URL || 'http://localhost:3001';
+    > 20 |     const response = await request.get(`${apiUrl}/health`);
+         |                                    ^
+      21 |
+      22 |     expect(response.status()).toBe(200);
+      23 |     const body = await response.json();
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:20:36
+]]>
+</failure>
+</testcase>
+<testcase name="Smoke Tests › license key validation endpoint accessible" classname="smoke\health.spec.ts" time="0.343">
+<failure message="health.spec.ts:27:7 license key validation endpoint accessible" type="FAILURE">
+<![CDATA[  [firefox] › smoke\health.spec.ts:27:7 › Smoke Tests › license key validation endpoint accessible ─
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0.1) Gecko/20100101 Firefox/146.0.1
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 30
+
+
+      27 |   test('license key validation endpoint accessible', async ({ request }) => {
+      28 |     const apiUrl = process.env.API_URL || 'http://localhost:3001';
+    > 29 |     const response = await request.post(`${apiUrl}/api/v1/validate`, {
+         |                                    ^
+      30 |       data: {
+      31 |         licenseKey: 'TEST-KEY-1234',
+      32 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:29:36
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="flows\authentication-flow.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="webkit" tests="4" failures="3" skipped="1" time="18.491" errors="0">
+<testcase name="Authentication Flow › sign in page loads" classname="flows\authentication-flow.spec.ts" time="6.066">
+<failure message="authentication-flow.spec.ts:4:7 sign in page loads" type="FAILURE">
+<![CDATA[  [webkit] › flows\authentication-flow.spec.ts:4:7 › Authentication Flow › sign in page loads ──────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Sign In/
+    Received string:  ""
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        8 × unexpected value ""
+
+
+       5 |     await page.goto('/sign-in');
+       6 |
+    >  7 |     await expect(page).toHaveTitle(/Sign In/);
+         |                        ^
+       8 |   });
+       9 |
+      10 |   test('sign up page loads', async ({ page }) => {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\authentication-flow.spec.ts:7:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-webkit\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-webkit\video.webm]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-webkit\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication Flow › sign up page loads" classname="flows\authentication-flow.spec.ts" time="5.999">
+<failure message="authentication-flow.spec.ts:10:7 sign up page loads" type="FAILURE">
+<![CDATA[  [webkit] › flows\authentication-flow.spec.ts:10:7 › Authentication Flow › sign up page loads ─────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Sign Up/
+    Received string:  ""
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        8 × unexpected value ""
+
+
+      11 |     await page.goto('/sign-up');
+      12 |
+    > 13 |     await expect(page).toHaveTitle(/Sign Up/);
+         |                        ^
+      14 |   });
+      15 |
+      16 |   test('redirect to dashboard after sign in', async ({ page }) => {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\authentication-flow.spec.ts:13:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-webkit\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-webkit\video.webm]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-webkit\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication Flow › redirect to dashboard after sign in" classname="flows\authentication-flow.spec.ts" time="0.48">
+<properties>
+<property name="skip" value="Clerk test key not configured">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › protected routes redirect to sign in" classname="flows\authentication-flow.spec.ts" time="5.946">
+<failure message="authentication-flow.spec.ts:27:7 protected routes redirect to sign in" type="FAILURE">
+<![CDATA[  [webkit] › flows\authentication-flow.spec.ts:27:7 › Authentication Flow › protected routes redirect to sign in 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/sign-in/
+    Received string:  "http://localhost:3000/dashboard"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        9 × unexpected value "http://localhost:3000/dashboard"
+
+
+      30 |     for (const route of protectedRoutes) {
+      31 |       await page.goto(route);
+    > 32 |       await expect(page).toHaveURL(/\/sign-in/);
+         |                          ^
+      33 |     }
+      34 |   });
+      35 | });
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\authentication-flow.spec.ts:32:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-webkit\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-webkit\video.webm]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-webkit\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="flows\license-validation-flow.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="webkit" tests="5" failures="5" skipped="0" time="1.663" errors="0">
+<testcase name="License Validation API › validate license key with valid format" classname="flows\license-validation-flow.spec.ts" time="0.337">
+<failure message="license-validation-flow.spec.ts:13:7 validate license key with valid format" type="FAILURE">
+<![CDATA[  [webkit] › flows\license-validation-flow.spec.ts:13:7 › License Validation API › validate license key with valid format 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - Content-Type: application/json
+        - content-length: 40
+
+
+      12 |
+      13 |   test('validate license key with valid format', async ({ request }) => {
+    > 14 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      15 |       data: {
+      16 |         licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      17 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:14:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › reject invalid key format" classname="flows\license-validation-flow.spec.ts" time="0.321">
+<failure message="license-validation-flow.spec.ts:30:7 reject invalid key format" type="FAILURE">
+<![CDATA[  [webkit] › flows\license-validation-flow.spec.ts:30:7 › License Validation API › reject invalid key format 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 31
+
+
+      29 |
+      30 |   test('reject invalid key format', async ({ request }) => {
+    > 31 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      32 |       data: {
+      33 |         licenseKey: 'INVALID-FORMAT',
+      34 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:31:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › require API key for validation" classname="flows\license-validation-flow.spec.ts" time="0.336">
+<failure message="license-validation-flow.spec.ts:46:7 require API key for validation" type="FAILURE">
+<![CDATA[  [webkit] › flows\license-validation-flow.spec.ts:46:7 › License Validation API › require API key for validation 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - content-type: application/json
+        - content-length: 40
+
+
+      45 |
+      46 |   test('require API key for validation', async ({ request }) => {
+    > 47 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      48 |       data: {
+      49 |         licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      50 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:47:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › include metadata in validation request" classname="flows\license-validation-flow.spec.ts" time="0.329">
+<failure message="license-validation-flow.spec.ts:56:7 include metadata in validation request" type="FAILURE">
+<![CDATA[  [webkit] › flows\license-validation-flow.spec.ts:56:7 › License Validation API › include metadata in validation request 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 136
+
+
+      55 |
+      56 |   test('include metadata in validation request', async ({ request }) => {
+    > 57 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      58 |       data: {
+      59 |         licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      60 |         metadata: {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:57:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › handle rate limiting" classname="flows\license-validation-flow.spec.ts" time="0.34">
+<failure message="license-validation-flow.spec.ts:74:7 handle rate limiting" type="FAILURE">
+<![CDATA[  [webkit] › flows\license-validation-flow.spec.ts:74:7 › License Validation API › handle rate limiting 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 40
+
+
+      75 |     // Make multiple requests to test rate limiting
+      76 |     const requests = Array.from({ length: 15 }, () =>
+    > 77 |       request.post(`${API_URL}/api/v1/validate`, {
+         |               ^
+      78 |         data: {
+      79 |           licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      80 |         },
+        at from (D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:77:15)
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:76:28
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="flows\purchase-flow.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="webkit" tests="3" failures="2" skipped="1" time="37.661" errors="0">
+<testcase name="Purchase Flow › view product and initiate purchase" classname="flows\purchase-flow.spec.ts" time="30.967">
+<failure message="purchase-flow.spec.ts:9:7 view product and initiate purchase" type="FAILURE">
+<![CDATA[  [webkit] › flows\purchase-flow.spec.ts:9:7 › Purchase Flow › view product and initiate purchase ──
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('text=Buy Now')
+
+
+       9 |   test('view product and initiate purchase', async ({ page }) => {
+      10 |     // Click on a product
+    > 11 |     await page.click('text=Buy Now');
+         |                ^
+      12 |
+      13 |     // Should redirect to checkout or show checkout modal
+      14 |     await expect(page).toHaveURL(/\/checkout/);
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\purchase-flow.spec.ts:11:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-webkit\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-webkit\video.webm]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-webkit\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Purchase Flow › complete purchase flow (test mode)" classname="flows\purchase-flow.spec.ts" time="0.585">
+<properties>
+<property name="skip" value="Stripe test key not configured">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Purchase Flow › view purchase confirmation" classname="flows\purchase-flow.spec.ts" time="6.109">
+<failure message="purchase-flow.spec.ts:32:7 view purchase confirmation" type="FAILURE">
+<![CDATA[  [webkit] › flows\purchase-flow.spec.ts:32:7 › Purchase Flow › view purchase confirmation ─────────
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/sign-in/
+    Received string:  "http://localhost:3000/dashboard/purchases"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        9 × unexpected value "http://localhost:3000/dashboard/purchases"
+
+
+      36 |
+      37 |     // Should redirect to sign in
+    > 38 |     await expect(page).toHaveURL(/\/sign-in/);
+         |                        ^
+      39 |   });
+      40 | });
+      41 |
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\purchase-flow.spec.ts:38:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-webkit\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-webkit\video.webm]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-webkit\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="smoke\health.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="webkit" tests="4" failures="4" skipped="0" time="12.469" errors="0">
+<testcase name="Smoke Tests › homepage loads successfully" classname="smoke\health.spec.ts" time="5.958">
+<failure message="health.spec.ts:4:7 homepage loads successfully" type="FAILURE">
+<![CDATA[  [webkit] › smoke\health.spec.ts:4:7 › Smoke Tests › homepage loads successfully ──────────────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /License Key Shop/
+    Received string:  ""
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        8 × unexpected value ""
+
+
+       5 |     await page.goto('/');
+       6 |
+    >  7 |     await expect(page).toHaveTitle(/License Key Shop/);
+         |                        ^
+       8 |     await expect(page.locator('h1')).toBeVisible();
+       9 |   });
+      10 |
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:7:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-webkit\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-webkit\video.webm]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-webkit\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › dashboard page accessible" classname="smoke\health.spec.ts" time="5.831">
+<failure message="health.spec.ts:11:7 dashboard page accessible" type="FAILURE">
+<![CDATA[  [webkit] › smoke\health.spec.ts:11:7 › Smoke Tests › dashboard page accessible ───────────────────
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/sign-in/
+    Received string:  "http://localhost:3000/dashboard"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        9 × unexpected value "http://localhost:3000/dashboard"
+
+
+      13 |
+      14 |     // Should redirect to sign in if not authenticated
+    > 15 |     await expect(page).toHaveURL(/\/sign-in/);
+         |                        ^
+      16 |   });
+      17 |
+      18 |   test('API health check', async ({ request }) => {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:15:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-webkit\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-webkit\video.webm]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-webkit\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › API health check" classname="smoke\health.spec.ts" time="0.336">
+<failure message="health.spec.ts:18:7 API health check" type="FAILURE">
+<![CDATA[  [webkit] › smoke\health.spec.ts:18:7 › Smoke Tests › API health check ────────────────────────────
+
+    Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → GET http://localhost:3001/health
+        - user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+
+
+      18 |   test('API health check', async ({ request }) => {
+      19 |     const apiUrl = process.env.API_URL || 'http://localhost:3001';
+    > 20 |     const response = await request.get(`${apiUrl}/health`);
+         |                                    ^
+      21 |
+      22 |     expect(response.status()).toBe(200);
+      23 |     const body = await response.json();
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:20:36
+]]>
+</failure>
+</testcase>
+<testcase name="Smoke Tests › license key validation endpoint accessible" classname="smoke\health.spec.ts" time="0.344">
+<failure message="health.spec.ts:27:7 license key validation endpoint accessible" type="FAILURE">
+<![CDATA[  [webkit] › smoke\health.spec.ts:27:7 › Smoke Tests › license key validation endpoint accessible ──
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 30
+
+
+      27 |   test('license key validation endpoint accessible', async ({ request }) => {
+      28 |     const apiUrl = process.env.API_URL || 'http://localhost:3001';
+    > 29 |     const response = await request.post(`${apiUrl}/api/v1/validate`, {
+         |                                    ^
+      30 |       data: {
+      31 |         licenseKey: 'TEST-KEY-1234',
+      32 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:29:36
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="flows\authentication-flow.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="Mobile Chrome" tests="4" failures="3" skipped="1" time="17.256" errors="0">
+<testcase name="Authentication Flow › sign in page loads" classname="flows\authentication-flow.spec.ts" time="5.601">
+<failure message="authentication-flow.spec.ts:4:7 sign in page loads" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › flows\authentication-flow.spec.ts:4:7 › Authentication Flow › sign in page loads 
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Sign In/
+    Received string:  ""
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        9 × unexpected value ""
+
+
+       5 |     await page.goto('/sign-in');
+       6 |
+    >  7 |     await expect(page).toHaveTitle(/Sign In/);
+         |                        ^
+       8 |   });
+       9 |
+      10 |   test('sign up page loads', async ({ page }) => {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\authentication-flow.spec.ts:7:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-Mobile-Chrome\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-Mobile-Chrome\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication Flow › sign up page loads" classname="flows\authentication-flow.spec.ts" time="5.755">
+<failure message="authentication-flow.spec.ts:10:7 sign up page loads" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › flows\authentication-flow.spec.ts:10:7 › Authentication Flow › sign up page loads 
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Sign Up/
+    Received string:  ""
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        9 × unexpected value ""
+
+
+      11 |     await page.goto('/sign-up');
+      12 |
+    > 13 |     await expect(page).toHaveTitle(/Sign Up/);
+         |                        ^
+      14 |   });
+      15 |
+      16 |   test('redirect to dashboard after sign in', async ({ page }) => {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\authentication-flow.spec.ts:13:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-Mobile-Chrome\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-Mobile-Chrome\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication Flow › redirect to dashboard after sign in" classname="flows\authentication-flow.spec.ts" time="0.266">
+<properties>
+<property name="skip" value="Clerk test key not configured">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › protected routes redirect to sign in" classname="flows\authentication-flow.spec.ts" time="5.634">
+<failure message="authentication-flow.spec.ts:27:7 protected routes redirect to sign in" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › flows\authentication-flow.spec.ts:27:7 › Authentication Flow › protected routes redirect to sign in 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/sign-in/
+    Received string:  "http://localhost:3000/dashboard"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        9 × unexpected value "http://localhost:3000/dashboard"
+
+
+      30 |     for (const route of protectedRoutes) {
+      31 |       await page.goto(route);
+    > 32 |       await expect(page).toHaveURL(/\/sign-in/);
+         |                          ^
+      33 |     }
+      34 |   });
+      35 | });
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\authentication-flow.spec.ts:32:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-Mobile-Chrome\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-Mobile-Chrome\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="flows\license-validation-flow.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="Mobile Chrome" tests="5" failures="5" skipped="0" time="1.651" errors="0">
+<testcase name="License Validation API › validate license key with valid format" classname="flows\license-validation-flow.spec.ts" time="0.322">
+<failure message="license-validation-flow.spec.ts:13:7 validate license key with valid format" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › flows\license-validation-flow.spec.ts:13:7 › License Validation API › validate license key with valid format 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.6 Mobile Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - Content-Type: application/json
+        - content-length: 40
+
+
+      12 |
+      13 |   test('validate license key with valid format', async ({ request }) => {
+    > 14 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      15 |       data: {
+      16 |         licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      17 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:14:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › reject invalid key format" classname="flows\license-validation-flow.spec.ts" time="0.34">
+<failure message="license-validation-flow.spec.ts:30:7 reject invalid key format" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › flows\license-validation-flow.spec.ts:30:7 › License Validation API › reject invalid key format 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.6 Mobile Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 31
+
+
+      29 |
+      30 |   test('reject invalid key format', async ({ request }) => {
+    > 31 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      32 |       data: {
+      33 |         licenseKey: 'INVALID-FORMAT',
+      34 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:31:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › require API key for validation" classname="flows\license-validation-flow.spec.ts" time="0.316">
+<failure message="license-validation-flow.spec.ts:46:7 require API key for validation" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › flows\license-validation-flow.spec.ts:46:7 › License Validation API › require API key for validation 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.6 Mobile Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - content-type: application/json
+        - content-length: 40
+
+
+      45 |
+      46 |   test('require API key for validation', async ({ request }) => {
+    > 47 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      48 |       data: {
+      49 |         licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      50 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:47:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › include metadata in validation request" classname="flows\license-validation-flow.spec.ts" time="0.32">
+<failure message="license-validation-flow.spec.ts:56:7 include metadata in validation request" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › flows\license-validation-flow.spec.ts:56:7 › License Validation API › include metadata in validation request 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.6 Mobile Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 136
+
+
+      55 |
+      56 |   test('include metadata in validation request', async ({ request }) => {
+    > 57 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      58 |       data: {
+      59 |         licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      60 |         metadata: {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:57:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › handle rate limiting" classname="flows\license-validation-flow.spec.ts" time="0.353">
+<failure message="license-validation-flow.spec.ts:74:7 handle rate limiting" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › flows\license-validation-flow.spec.ts:74:7 › License Validation API › handle rate limiting 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.6 Mobile Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 40
+
+
+      75 |     // Make multiple requests to test rate limiting
+      76 |     const requests = Array.from({ length: 15 }, () =>
+    > 77 |       request.post(`${API_URL}/api/v1/validate`, {
+         |               ^
+      78 |         data: {
+      79 |           licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      80 |         },
+        at from (D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:77:15)
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:76:28
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="flows\purchase-flow.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="Mobile Chrome" tests="3" failures="2" skipped="1" time="37.507" errors="0">
+<testcase name="Purchase Flow › view product and initiate purchase" classname="flows\purchase-flow.spec.ts" time="30.824">
+<failure message="purchase-flow.spec.ts:9:7 view product and initiate purchase" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › flows\purchase-flow.spec.ts:9:7 › Purchase Flow › view product and initiate purchase 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('text=Buy Now')
+
+
+       9 |   test('view product and initiate purchase', async ({ page }) => {
+      10 |     // Click on a product
+    > 11 |     await page.click('text=Buy Now');
+         |                ^
+      12 |
+      13 |     // Should redirect to checkout or show checkout modal
+      14 |     await expect(page).toHaveURL(/\/checkout/);
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\purchase-flow.spec.ts:11:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-Mobile-Chrome\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-Mobile-Chrome\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Purchase Flow › complete purchase flow (test mode)" classname="flows\purchase-flow.spec.ts" time="0.841">
+<properties>
+<property name="skip" value="Stripe test key not configured">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Purchase Flow › view purchase confirmation" classname="flows\purchase-flow.spec.ts" time="5.842">
+<failure message="purchase-flow.spec.ts:32:7 view purchase confirmation" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › flows\purchase-flow.spec.ts:32:7 › Purchase Flow › view purchase confirmation ──
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/sign-in/
+    Received string:  "http://localhost:3000/dashboard/purchases"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        9 × unexpected value "http://localhost:3000/dashboard/purchases"
+
+
+      36 |
+      37 |     // Should redirect to sign in
+    > 38 |     await expect(page).toHaveURL(/\/sign-in/);
+         |                        ^
+      39 |   });
+      40 | });
+      41 |
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\purchase-flow.spec.ts:38:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-Mobile-Chrome\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-Mobile-Chrome\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="smoke\health.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="Mobile Chrome" tests="4" failures="4" skipped="0" time="12.152" errors="0">
+<testcase name="Smoke Tests › homepage loads successfully" classname="smoke\health.spec.ts" time="5.792">
+<failure message="health.spec.ts:4:7 homepage loads successfully" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › smoke\health.spec.ts:4:7 › Smoke Tests › homepage loads successfully ───────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /License Key Shop/
+    Received string:  ""
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        9 × unexpected value ""
+
+
+       5 |     await page.goto('/');
+       6 |
+    >  7 |     await expect(page).toHaveTitle(/License Key Shop/);
+         |                        ^
+       8 |     await expect(page.locator('h1')).toBeVisible();
+       9 |   });
+      10 |
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:7:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-Mobile-Chrome\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-Mobile-Chrome\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › dashboard page accessible" classname="smoke\health.spec.ts" time="5.712">
+<failure message="health.spec.ts:11:7 dashboard page accessible" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › smoke\health.spec.ts:11:7 › Smoke Tests › dashboard page accessible ────────────
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/sign-in/
+    Received string:  "http://localhost:3000/dashboard"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        9 × unexpected value "http://localhost:3000/dashboard"
+
+
+      13 |
+      14 |     // Should redirect to sign in if not authenticated
+    > 15 |     await expect(page).toHaveURL(/\/sign-in/);
+         |                        ^
+      16 |   });
+      17 |
+      18 |   test('API health check', async ({ request }) => {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:15:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-Mobile-Chrome\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-Mobile-Chrome\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › API health check" classname="smoke\health.spec.ts" time="0.328">
+<failure message="health.spec.ts:18:7 API health check" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › smoke\health.spec.ts:18:7 › Smoke Tests › API health check ─────────────────────
+
+    Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → GET http://localhost:3001/health
+        - user-agent: Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.6 Mobile Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+
+
+      18 |   test('API health check', async ({ request }) => {
+      19 |     const apiUrl = process.env.API_URL || 'http://localhost:3001';
+    > 20 |     const response = await request.get(`${apiUrl}/health`);
+         |                                    ^
+      21 |
+      22 |     expect(response.status()).toBe(200);
+      23 |     const body = await response.json();
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:20:36
+]]>
+</failure>
+</testcase>
+<testcase name="Smoke Tests › license key validation endpoint accessible" classname="smoke\health.spec.ts" time="0.32">
+<failure message="health.spec.ts:27:7 license key validation endpoint accessible" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › smoke\health.spec.ts:27:7 › Smoke Tests › license key validation endpoint accessible 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.6 Mobile Safari/537.36
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 30
+
+
+      27 |   test('license key validation endpoint accessible', async ({ request }) => {
+      28 |     const apiUrl = process.env.API_URL || 'http://localhost:3001';
+    > 29 |     const response = await request.post(`${apiUrl}/api/v1/validate`, {
+         |                                    ^
+      30 |       data: {
+      31 |         licenseKey: 'TEST-KEY-1234',
+      32 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:29:36
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="flows\authentication-flow.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="Mobile Safari" tests="4" failures="3" skipped="1" time="17.373" errors="0">
+<testcase name="Authentication Flow › sign in page loads" classname="flows\authentication-flow.spec.ts" time="5.657">
+<failure message="authentication-flow.spec.ts:4:7 sign in page loads" type="FAILURE">
+<![CDATA[  [Mobile Safari] › flows\authentication-flow.spec.ts:4:7 › Authentication Flow › sign in page loads 
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Sign In/
+    Received string:  ""
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        9 × unexpected value ""
+
+
+       5 |     await page.goto('/sign-in');
+       6 |
+    >  7 |     await expect(page).toHaveTitle(/Sign In/);
+         |                        ^
+       8 |   });
+       9 |
+      10 |   test('sign up page loads', async ({ page }) => {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\authentication-flow.spec.ts:7:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-Mobile-Safari\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-Mobile-Safari\video.webm]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--8d549-ion-Flow-sign-in-page-loads-Mobile-Safari\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication Flow › sign up page loads" classname="flows\authentication-flow.spec.ts" time="5.846">
+<failure message="authentication-flow.spec.ts:10:7 sign up page loads" type="FAILURE">
+<![CDATA[  [Mobile Safari] › flows\authentication-flow.spec.ts:10:7 › Authentication Flow › sign up page loads 
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /Sign Up/
+    Received string:  ""
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        9 × unexpected value ""
+
+
+      11 |     await page.goto('/sign-up');
+      12 |
+    > 13 |     await expect(page).toHaveTitle(/Sign Up/);
+         |                        ^
+      14 |   });
+      15 |
+      16 |   test('redirect to dashboard after sign in', async ({ page }) => {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\authentication-flow.spec.ts:13:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-Mobile-Safari\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-Mobile-Safari\video.webm]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--ae1ab-ion-Flow-sign-up-page-loads-Mobile-Safari\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication Flow › redirect to dashboard after sign in" classname="flows\authentication-flow.spec.ts" time="0.227">
+<properties>
+<property name="skip" value="Clerk test key not configured">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › protected routes redirect to sign in" classname="flows\authentication-flow.spec.ts" time="5.643">
+<failure message="authentication-flow.spec.ts:27:7 protected routes redirect to sign in" type="FAILURE">
+<![CDATA[  [Mobile Safari] › flows\authentication-flow.spec.ts:27:7 › Authentication Flow › protected routes redirect to sign in 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/sign-in/
+    Received string:  "http://localhost:3000/dashboard"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        9 × unexpected value "http://localhost:3000/dashboard"
+
+
+      30 |     for (const route of protectedRoutes) {
+      31 |       await page.goto(route);
+    > 32 |       await expect(page).toHaveURL(/\/sign-in/);
+         |                          ^
+      33 |     }
+      34 |   });
+      35 | });
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\authentication-flow.spec.ts:32:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-Mobile-Safari\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-Mobile-Safari\video.webm]]
+
+[[ATTACHMENT|test-results\flows-authentication-flow--e9588--routes-redirect-to-sign-in-Mobile-Safari\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="flows\license-validation-flow.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="Mobile Safari" tests="5" failures="5" skipped="0" time="1.642" errors="0">
+<testcase name="License Validation API › validate license key with valid format" classname="flows\license-validation-flow.spec.ts" time="0.331">
+<failure message="license-validation-flow.spec.ts:13:7 validate license key with valid format" type="FAILURE">
+<![CDATA[  [Mobile Safari] › flows\license-validation-flow.spec.ts:13:7 › License Validation API › validate license key with valid format 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - Content-Type: application/json
+        - content-length: 40
+
+
+      12 |
+      13 |   test('validate license key with valid format', async ({ request }) => {
+    > 14 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      15 |       data: {
+      16 |         licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      17 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:14:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › reject invalid key format" classname="flows\license-validation-flow.spec.ts" time="0.33">
+<failure message="license-validation-flow.spec.ts:30:7 reject invalid key format" type="FAILURE">
+<![CDATA[  [Mobile Safari] › flows\license-validation-flow.spec.ts:30:7 › License Validation API › reject invalid key format 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 31
+
+
+      29 |
+      30 |   test('reject invalid key format', async ({ request }) => {
+    > 31 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      32 |       data: {
+      33 |         licenseKey: 'INVALID-FORMAT',
+      34 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:31:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › require API key for validation" classname="flows\license-validation-flow.spec.ts" time="0.323">
+<failure message="license-validation-flow.spec.ts:46:7 require API key for validation" type="FAILURE">
+<![CDATA[  [Mobile Safari] › flows\license-validation-flow.spec.ts:46:7 › License Validation API › require API key for validation 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - content-type: application/json
+        - content-length: 40
+
+
+      45 |
+      46 |   test('require API key for validation', async ({ request }) => {
+    > 47 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      48 |       data: {
+      49 |         licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      50 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:47:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › include metadata in validation request" classname="flows\license-validation-flow.spec.ts" time="0.315">
+<failure message="license-validation-flow.spec.ts:56:7 include metadata in validation request" type="FAILURE">
+<![CDATA[  [Mobile Safari] › flows\license-validation-flow.spec.ts:56:7 › License Validation API › include metadata in validation request 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 136
+
+
+      55 |
+      56 |   test('include metadata in validation request', async ({ request }) => {
+    > 57 |     const response = await request.post(`${API_URL}/api/v1/validate`, {
+         |                                    ^
+      58 |       data: {
+      59 |         licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      60 |         metadata: {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:57:36
+]]>
+</failure>
+</testcase>
+<testcase name="License Validation API › handle rate limiting" classname="flows\license-validation-flow.spec.ts" time="0.343">
+<failure message="license-validation-flow.spec.ts:74:7 handle rate limiting" type="FAILURE">
+<![CDATA[  [Mobile Safari] › flows\license-validation-flow.spec.ts:74:7 › License Validation API › handle rate limiting 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 40
+
+
+      75 |     // Make multiple requests to test rate limiting
+      76 |     const requests = Array.from({ length: 15 }, () =>
+    > 77 |       request.post(`${API_URL}/api/v1/validate`, {
+         |               ^
+      78 |         data: {
+      79 |           licenseKey: 'TEST-KEY-1234-ABCD-EFGH',
+      80 |         },
+        at from (D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:77:15)
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\license-validation-flow.spec.ts:76:28
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="flows\purchase-flow.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="Mobile Safari" tests="3" failures="2" skipped="1" time="37.757" errors="0">
+<testcase name="Purchase Flow › view product and initiate purchase" classname="flows\purchase-flow.spec.ts" time="30.766">
+<failure message="purchase-flow.spec.ts:9:7 view product and initiate purchase" type="FAILURE">
+<![CDATA[  [Mobile Safari] › flows\purchase-flow.spec.ts:9:7 › Purchase Flow › view product and initiate purchase 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('text=Buy Now')
+
+
+       9 |   test('view product and initiate purchase', async ({ page }) => {
+      10 |     // Click on a product
+    > 11 |     await page.click('text=Buy Now');
+         |                ^
+      12 |
+      13 |     // Should redirect to checkout or show checkout modal
+      14 |     await expect(page).toHaveURL(/\/checkout/);
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\purchase-flow.spec.ts:11:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-Mobile-Safari\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-Mobile-Safari\video.webm]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purcha-3fccd-oduct-and-initiate-purchase-Mobile-Safari\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Purchase Flow › complete purchase flow (test mode)" classname="flows\purchase-flow.spec.ts" time="0.768">
+<properties>
+<property name="skip" value="Stripe test key not configured">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Purchase Flow › view purchase confirmation" classname="flows\purchase-flow.spec.ts" time="6.223">
+<failure message="purchase-flow.spec.ts:32:7 view purchase confirmation" type="FAILURE">
+<![CDATA[  [Mobile Safari] › flows\purchase-flow.spec.ts:32:7 › Purchase Flow › view purchase confirmation ──
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/sign-in/
+    Received string:  "http://localhost:3000/dashboard/purchases"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        9 × unexpected value "http://localhost:3000/dashboard/purchases"
+
+
+      36 |
+      37 |     // Should redirect to sign in
+    > 38 |     await expect(page).toHaveURL(/\/sign-in/);
+         |                        ^
+      39 |   });
+      40 | });
+      41 |
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\flows\purchase-flow.spec.ts:38:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-Mobile-Safari\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-Mobile-Safari\video.webm]]
+
+[[ATTACHMENT|test-results\flows-purchase-flow-Purchase-Flow-view-purchase-confirmation-Mobile-Safari\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="smoke\health.spec.ts" timestamp="2026-02-08T17:29:47.034Z" hostname="Mobile Safari" tests="4" failures="4" skipped="0" time="12.555" errors="0">
+<testcase name="Smoke Tests › homepage loads successfully" classname="smoke\health.spec.ts" time="6.022">
+<failure message="health.spec.ts:4:7 homepage loads successfully" type="FAILURE">
+<![CDATA[  [Mobile Safari] › smoke\health.spec.ts:4:7 › Smoke Tests › homepage loads successfully ───────────
+
+    Error: expect(page).toHaveTitle(expected) failed
+
+    Expected pattern: /License Key Shop/
+    Received string:  ""
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+        9 × unexpected value ""
+
+
+       5 |     await page.goto('/');
+       6 |
+    >  7 |     await expect(page).toHaveTitle(/License Key Shop/);
+         |                        ^
+       8 |     await expect(page.locator('h1')).toBeVisible();
+       9 |   });
+      10 |
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:7:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-Mobile-Safari\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-Mobile-Safari\video.webm]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-homepage-loads-successfully-Mobile-Safari\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › dashboard page accessible" classname="smoke\health.spec.ts" time="5.875">
+<failure message="health.spec.ts:11:7 dashboard page accessible" type="FAILURE">
+<![CDATA[  [Mobile Safari] › smoke\health.spec.ts:11:7 › Smoke Tests › dashboard page accessible ────────────
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/sign-in/
+    Received string:  "http://localhost:3000/dashboard"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        9 × unexpected value "http://localhost:3000/dashboard"
+
+
+      13 |
+      14 |     // Should redirect to sign in if not authenticated
+    > 15 |     await expect(page).toHaveURL(/\/sign-in/);
+         |                        ^
+      16 |   });
+      17 |
+      18 |   test('API health check', async ({ request }) => {
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:15:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-Mobile-Safari\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-Mobile-Safari\video.webm]]
+
+[[ATTACHMENT|test-results\smoke-health-Smoke-Tests-dashboard-page-accessible-Mobile-Safari\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › API health check" classname="smoke\health.spec.ts" time="0.331">
+<failure message="health.spec.ts:18:7 API health check" type="FAILURE">
+<![CDATA[  [Mobile Safari] › smoke\health.spec.ts:18:7 › Smoke Tests › API health check ─────────────────────
+
+    Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → GET http://localhost:3001/health
+        - user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+
+
+      18 |   test('API health check', async ({ request }) => {
+      19 |     const apiUrl = process.env.API_URL || 'http://localhost:3001';
+    > 20 |     const response = await request.get(`${apiUrl}/health`);
+         |                                    ^
+      21 |
+      22 |     expect(response.status()).toBe(200);
+      23 |     const body = await response.json();
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:20:36
+]]>
+</failure>
+</testcase>
+<testcase name="Smoke Tests › license key validation endpoint accessible" classname="smoke\health.spec.ts" time="0.327">
+<failure message="health.spec.ts:27:7 license key validation endpoint accessible" type="FAILURE">
+<![CDATA[  [Mobile Safari] › smoke\health.spec.ts:27:7 › Smoke Tests › license key validation endpoint accessible 
+
+    Error: apiRequestContext.post: connect ECONNREFUSED 127.0.0.1:3001
+    Call log:
+      - → POST http://localhost:3001/api/v1/validate
+        - user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+        - X-API-Key: test-api-key
+        - content-type: application/json
+        - content-length: 30
+
+
+      27 |   test('license key validation endpoint accessible', async ({ request }) => {
+      28 |     const apiUrl = process.env.API_URL || 'http://localhost:3001';
+    > 29 |     const response = await request.post(`${apiUrl}/api/v1/validate`, {
+         |                                    ^
+      30 |       data: {
+      31 |         licenseKey: 'TEST-KEY-1234',
+      32 |       },
+        at D:\CLAUDE\licsence-key-shop\apps\frontend\e2e\smoke\health.spec.ts:29:36
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="43" failures="0" skipped="0" tests="43" time="6.246" timestamp="2025-06-19T16:10:06.227044+07:00" hostname="tbtri"><testcase classname="tests.test_dashboard_ui" name="test_main_title_and_info" time="1.134"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_welcome_message_content" time="0.001"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_last_logon_format" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_legal_notice_present" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_main_title_tag_is_span" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_main_title_font_size" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_main_title_font_weight" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_description_not_empty" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_legal_notice_link_present" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_main_title_alignment" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_welcome_message_case" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_all_menu_items_visible" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_logoff_button_clickable" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_navigation" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_text_not_empty" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_tabindex_unique" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_icon_present_if_any" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_is_focusable" time="0.001"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_is_not_disabled" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_aria_label_if_any" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_keyboard_navigation_order" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_items_have_tabindex" time="0.001"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_main_title_has_contrast" time="0.001"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_items_accessible_by_keyboard" time="0.001"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_no_elements_with_title_empty" time="0.001"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_all_images_have_alt" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_main_title_has_aria_label" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_legal_notice_links_accessible" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_items_have_role_button" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_no_duplicate_ids" time="0.001"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_no_tabindex_minus_one" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_no_hidden_elements" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_buttons_hover_response" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_buttons_focus_response" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_buttons_text_and_icon" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_buttons_enabled_state" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_buttons_visible_and_clickable" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_buttons_cursor_pointer" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_buttons_have_min_width" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_buttons_have_padding" time="0.001"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_buttons_text_align" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_buttons_no_text_overflow" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase><testcase classname="tests.test_dashboard_ui" name="test_menu_buttons_no_outline_on_mouse" time="0.000"><error message="failed on setup with &quot;playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222&#10;Call log:&#10;  - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222&quot;">tests\test_dashboard_ui.py:9: in dashboard_page
+    browser = p.chromium.connect_over_cdp("http://localhost:9222")  # Cần mở browser với --remote-debugging-port=9222
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\sync_api\_generated.py:14887: in connect_over_cdp
+    self._sync(
+.venv\Lib\site-packages\playwright\_impl\_browser_type.py:188: in connect_over_cdp
+    response = await self._channel.send_return_as_dict("connectOverCDP", params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\playwright\_impl\_connection.py:67: in send_return_as_dict
+    return await self._connection.wrap_api_call(
+.venv\Lib\site-packages\playwright\_impl\_connection.py:528: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.Error: BrowserType.connect_over_cdp: connect ECONNREFUSED ::1:9222
+E   Call log:
+E     - &lt;ws preparing&gt; retrieving websocket url from http://localhost:9222</error></testcase></testsuite></testsuites>

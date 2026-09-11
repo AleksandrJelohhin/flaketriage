@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="77" failures="2" errors="0" time="0.817">
+  <testsuite name="check Add-functionality" errors="0" failures="2" skipped="3" timestamp="2022-07-11T18:26:16" time="0.687" tests="77">
+    <testcase classname="check Add-functionality check addition of positive numbers: 1 + 2 = 3" name="check Add-functionality check addition of positive numbers: 1 + 2 = 3" time="0.002">
+    </testcase>
+    <testcase classname="check Add-functionality check addition of positive numbers: 30 + 8 = 38" name="check Add-functionality check addition of positive numbers: 30 + 8 = 38" time="0">
+    </testcase>
+    <testcase classname="check Add-functionality check addition of positive numbers: 40 + 10 = 50" name="check Add-functionality check addition of positive numbers: 40 + 10 = 50" time="0.001">
+    </testcase>
+    <testcase classname="check Add-functionality check addition of negative numbers: -1 + 2 = 1" name="check Add-functionality check addition of negative numbers: -1 + 2 = 1" time="0">
+    </testcase>
+    <testcase classname="check Add-functionality check addition of negative numbers: 3 + -3 = 0" name="check Add-functionality check addition of negative numbers: 3 + -3 = 0" time="0">
+    </testcase>
+    <testcase classname="check Add-functionality check addition of negative numbers: -40 + -10 = -50" name="check Add-functionality check addition of negative numbers: -40 + -10 = -50" time="0">
+    </testcase>
+    <testcase classname="check Add-functionality check addition of  &quot;zero&quot;: 0 + 2 = 2" name="check Add-functionality check addition of  &quot;zero&quot;: 0 + 2 = 2" time="0">
+    </testcase>
+    <testcase classname="check Add-functionality check addition of  &quot;zero&quot;: 3 + 0 = 3" name="check Add-functionality check addition of  &quot;zero&quot;: 3 + 0 = 3" time="0.001">
+    </testcase>
+    <testcase classname="check Add-functionality check addition of  &quot;zero&quot;: 0 + 0 = 0" name="check Add-functionality check addition of  &quot;zero&quot;: 0 + 0 = 0" time="0">
+    </testcase>
+    <testcase classname="check Add-functionality check addition of numbers (number is written as string)" name="check Add-functionality check addition of numbers (number is written as string)" time="0.005">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;number&quot;
+Received: &quot;string&quot;
+    at Object.toEqual (D:\AQA_ITacademy_EPAM\AQA_JS_IT-Academy_Md-Aj1-03-22-16\hw15_Jest\Jest\test.test.js:26:31)
+    at Promise.then.completed (D:\AQA_ITacademy_EPAM\AQA_JS_IT-Academy_Md-Aj1-03-22-16\hw15_Jest\Jest\node_modules\jest-circus\build\utils.js:333:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\AQA_ITacademy_EPAM\AQA_JS_IT-Academy_Md-Aj1-03-22-16\hw15_Jest\Jest\node_modules\jest-circus\build\utils.js:259:10)
+    at _callCircusTest (D:\AQA_ITacademy_EPAM\AQA_JS_IT-Academy_Md-Aj1-03-22-16\hw15_Jest\Jest\node_modules\jest-circus\build\run.js:277:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (D:\AQA_ITacademy_EPAM\AQA_JS_IT-Academy_Md-Aj1-03-22-16\hw15_Jest\Jest\node_modules\jest-circus\build\run.js:209:3)
+    at _runTestsForDescribeBlock (D:\AQA_ITacademy_EPAM\AQA_JS_IT-Academy_Md-Aj1-03-22-16\hw15_Jest\Jest\node_modules\jest-circus\build\run.js:97:9)
+    at _runTestsForDescribeBlock (D:\AQA_ITacademy_EPAM\AQA_JS_IT-Academy_Md-Aj1-03-22-16\hw15_Jest\Jest\node_modules\jest-circus\build\run.js:91:9)
+    at run (D:\AQA_ITacademy_EPAM\AQA_JS_IT-Academy_Md-Aj1-03-22-16\hw15_Jest\Jest\node_modules\jest-circus\build\run.js:31:3)</failure>
+    </testcase>
+    <testcase classname="check Add-functionality check addition of fractional numbers " name="check Add-functionality check addition of fractional numbers " time="0.001">
+    </testcase>
+    <testcase classname="check Add-functionality check addition of &quot;null&quot; " name="check Add-functionality check addition of &quot;null&quot; " time="0.001">
+    </testcase>
+    <testcase classname="check Add-functionality check result is defined " name="check Add-functionality check result is defined " time="0.001">
+    </testcase>
+    <testcase classname="check Add-functionality check result is not &quot;Null&quot;" name="check Add-functionality check result is not &quot;Null&quot;" time="0">
+    </testcase>
+    <testcase classname="check Add-functionality check result is &quot;0&quot;" name="check Add-functionality check result is &quot;0&quot;" time="0">
+    </testcase>
+    <testcase classname="check Add-functionality check result is &quot;truthy&quot;" name="check Add-functionality check result is &quot;truthy&quot;" time="0.001">
+    </testcase>
+    <testcase classname="check Subtraction-functionality check Subtraction of positive numbers: 10 - 2 = 8" name="check Subtraction-functionality check Subtraction of positive numbers: 10 - 2 = 8" time="0">
+    </testcase>
+    <testcase classname="check Subtraction-functionality check Subtraction of positive numbers: 30 - 10 = 20" name="check Subtraction-functionality check Subtraction of positive numbers: 30 - 10 = 20" time="0">
+    </testcase>
+    <testcase classname="check Subtraction-functionality check Subtraction of positive numbers: 40 - 10 = 30" name="check Subtraction-functionality check Subtraction of positive numbers: 40 - 10 = 30" time="0">
+    </testcase>
+    <testcase classname="check Subtraction-functionality check Subtraction of negative numbers: -1 - 2 = -3" name="check Subtraction-functionality check Subtraction of negative numbers: -1 - 2 = -3" time="0">
+    </testcase>
+    <testcase classname="check Subtraction-functionality check Subtraction of negative numbers: 3 - -3 = 6" name="check Subtraction-functionality check Subtraction of negative numbers: 3 - -3 = 6" time="0">
+    </testcase>
+    <testcase classname="check Subtraction-functionality check Subtraction of negative numbers: -40 - -10 = -30" name="check Subtraction-functionality check Subtraction of negative numbers: -40 - -10 = -30" time="0">
+    </testcase>
+    <testcase classname="check Subtraction-functionality check Subtraction of  &quot;zero&quot;: 0 - -2 = 2" name="check Subtraction-functionality check Subtraction of  &quot;zero&quot;: 0 - -2 = 2" time="0">
+    </testcase>
+    <testcase classname="check Subtraction-functionality check Subtraction of  &quot;zero&quot;: 3 - 0 = 3" name="check Subtraction-functionality check Subtraction of  &quot;zero&quot;: 3 - 0 = 3" time="0.001">
+    </testcase>
+    <testcase classname="check Subtraction-functionality check Subtraction of  &quot;zero&quot;: 0 - 0 = 0" name="check Subtraction-functionality check Subtraction of  &quot;zero&quot;: 0 - 0 = 0" time="0">
+    </testcase>
+    <testcase classname="check Subtraction-functionality check subtraction of  more than 2 numbers " name="check Subtraction-functionality check subtraction of  more than 2 numbers " time="0.001">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: -14
+Received: -4
+    at Object.toEqual (D:\AQA_ITacademy_EPAM\AQA_JS_IT-Academy_Md-Aj1-03-22-16\hw15_Jest\Jest\test.test.js:81:24)
+    at Promise.then.completed (D:\AQA_ITacademy_EPAM\AQA_JS_IT-Academy_Md-Aj1-03-22-16\hw15_Jest\Jest\node_modules\jest-circus\build\utils.js:333:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\AQA_ITacademy_EPAM\AQA_JS_IT-Academy_Md-Aj1-03-22-16\hw15_Jest\Jest\node_modules\jest-circus\build\utils.js:259:10)
+    at _callCircusTest (D:\AQA_ITacademy_EPAM\AQA_JS_IT-Academy_Md-Aj1-03-22-16\hw15_Jest\Jest\node_modules\jest-circus\build\run.js:277:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (D:\AQA_ITacademy_EPAM\AQA_JS_IT-Academy_Md-Aj1-03-22-16\hw15_Jest\Jest\node_modules\jest-circus\build\run.js:209:3)
+    at _runTestsForDescribeBlock (D:\AQA_ITacademy_EPAM\AQA_JS_IT-Academy_Md-Aj1-03-22-16\hw15_Jest\Jest\node_modules\jest-circus\build\run.js:97:9)
+    at _runTestsForDescribeBlock (D:\AQA_ITacademy_EPAM\AQA_JS_IT-Academy_Md-Aj1-03-22-16\hw15_Jest\Jest\node_modules\jest-circus\build\run.js:91:9)
+    at run (D:\AQA_ITacademy_EPAM\AQA_JS_IT-Academy_Md-Aj1-03-22-16\hw15_Jest\Jest\node_modules\jest-circus\build\run.js:31:3)</failure>
+    </testcase>
+    <testcase classname="check Subtraction-functionality check result is &quot;truthy&quot; in case of more than 2 number" name="check Subtraction-functionality check result is &quot;truthy&quot; in case of more than 2 number" time="0.001">
+    </testcase>
+    <testcase classname="check Subtraction-functionality check subtraction of only numbers " name="check Subtraction-functionality check subtraction of only numbers " time="0.001">
+    </testcase>
+    <testcase classname="check Subtraction-functionality check subtraction of numbers (number is written as string)" name="check Subtraction-functionality check subtraction of numbers (number is written as string)" time="0">
+    </testcase>
+    <testcase classname="check Subtraction-functionality check subtraction of fractional numbers " name="check Subtraction-functionality check subtraction of fractional numbers " time="0">
+    </testcase>
+    <testcase classname="check Subtraction-functionality check subtraction of null" name="check Subtraction-functionality check subtraction of null" time="0.001">
+    </testcase>
+    <testcase classname="check Subtraction-functionality check result of substraction is defined " name="check Subtraction-functionality check result of substraction is defined " time="0.001">
+    </testcase>
+    <testcase classname="check Subtraction-functionality check result is not &quot;Null&quot;" name="check Subtraction-functionality check result is not &quot;Null&quot;" time="0.001">
+    </testcase>
+    <testcase classname="check Multiply-functionality check multiply of positive numbers: 1 * 2 = 2" name="check Multiply-functionality check multiply of positive numbers: 1 * 2 = 2" time="0.001">
+    </testcase>
+    <testcase classname="check Multiply-functionality check multiply of positive numbers: 30 * 10 = 300" name="check Multiply-functionality check multiply of positive numbers: 30 * 10 = 300" time="0.001">
+    </testcase>
+    <testcase classname="check Multiply-functionality check multiply of positive numbers: 200 * 200 = 40000" name="check Multiply-functionality check multiply of positive numbers: 200 * 200 = 40000" time="0">
+    </testcase>
+    <testcase classname="check Multiply-functionality check multiply of negative numbers: -1 * 2 = -2" name="check Multiply-functionality check multiply of negative numbers: -1 * 2 = -2" time="0">
+    </testcase>
+    <testcase classname="check Multiply-functionality check multiply of negative numbers: 3 * -3 = -9" name="check Multiply-functionality check multiply of negative numbers: 3 * -3 = -9" time="0.001">
+    </testcase>
+    <testcase classname="check Multiply-functionality check multiply of negative numbers: -40 * -10 = 400" name="check Multiply-functionality check multiply of negative numbers: -40 * -10 = 400" time="0">
+    </testcase>
+    <testcase classname="check Multiply-functionality check multiply of  &quot;zero&quot;: 0 * 2 = 0" name="check Multiply-functionality check multiply of  &quot;zero&quot;: 0 * 2 = 0" time="0.001">
+    </testcase>
+    <testcase classname="check Multiply-functionality check multiply of  &quot;zero&quot;: 3 * 0 = 0" name="check Multiply-functionality check multiply of  &quot;zero&quot;: 3 * 0 = 0" time="0">
+    </testcase>
+    <testcase classname="check Multiply-functionality check multiply of  &quot;zero&quot;: 0 * 0 = 0" name="check Multiply-functionality check multiply of  &quot;zero&quot;: 0 * 0 = 0" time="0">
+    </testcase>
+    <testcase classname="check Multiply-functionality check multiply of numbers (number is written as string) " name="check Multiply-functionality check multiply of numbers (number is written as string) " time="0">
+    </testcase>
+    <testcase classname="check Multiply-functionality check multiply only of numbers " name="check Multiply-functionality check multiply only of numbers " time="0">
+    </testcase>
+    <testcase classname="check Multiply-functionality check multiply of fractional numbers " name="check Multiply-functionality check multiply of fractional numbers " time="0">
+    </testcase>
+    <testcase classname="check Multiply-functionality check result is not &quot;Null&quot; during multiply to 0" name="check Multiply-functionality check result is not &quot;Null&quot; during multiply to 0" time="0">
+    </testcase>
+    <testcase classname="check Multiply-functionality check multiply of &quot;null&quot; " name="check Multiply-functionality check multiply of &quot;null&quot; " time="0.001">
+    </testcase>
+    <testcase classname="check Multiply-functionality check result is defined " name="check Multiply-functionality check result is defined " time="0">
+    </testcase>
+    <testcase classname="check Multiply-functionality check result of multiply array to number" name="check Multiply-functionality check result of multiply array to number" time="0">
+    </testcase>
+    <testcase classname="check Divide-functionality check divide of positive numbers: 4 / 2 = 2" name="check Divide-functionality check divide of positive numbers: 4 / 2 = 2" time="0">
+    </testcase>
+    <testcase classname="check Divide-functionality check divide of positive numbers: 10 / 100 = 0.1" name="check Divide-functionality check divide of positive numbers: 10 / 100 = 0.1" time="0">
+    </testcase>
+    <testcase classname="check Divide-functionality check divide of positive numbers: 200 / 200 = 1" name="check Divide-functionality check divide of positive numbers: 200 / 200 = 1" time="0">
+    </testcase>
+    <testcase classname="check Divide-functionality check result of division of more than 2 numbers" name="check Divide-functionality check result of division of more than 2 numbers" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="check Divide-functionality check divide of negative numbers: -4 / 2 = -2" name="check Divide-functionality check divide of negative numbers: -4 / 2 = -2" time="0.001">
+    </testcase>
+    <testcase classname="check Divide-functionality check divide of negative numbers: 3 / -3 = -1" name="check Divide-functionality check divide of negative numbers: 3 / -3 = -1" time="0">
+    </testcase>
+    <testcase classname="check Divide-functionality check divide of negative numbers: -40 / -10 = 4" name="check Divide-functionality check divide of negative numbers: -40 / -10 = 4" time="0">
+    </testcase>
+    <testcase classname="check Divide-functionality check divide of  &quot;zero&quot; to number: 0 / 2 = 0" name="check Divide-functionality check divide of  &quot;zero&quot; to number: 0 / 2 = 0" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="check Divide-functionality check divide of  &quot;zero&quot; to number: 0 / -2 = 0" name="check Divide-functionality check divide of  &quot;zero&quot; to number: 0 / -2 = 0" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname="check Divide-functionality check divide of only numbers (number is written as string) " name="check Divide-functionality check divide of only numbers (number is written as string) " time="0">
+    </testcase>
+    <testcase classname="check Divide-functionality check divide of only numbers (there are string) " name="check Divide-functionality check divide of only numbers (there are string) " time="0.001">
+    </testcase>
+    <testcase classname="check Divide-functionality check divide of fractional numbers " name="check Divide-functionality check divide of fractional numbers " time="0.004">
+    </testcase>
+    <testcase classname="check Divide-functionality check division null to number  " name="check Divide-functionality check division null to number  " time="0">
+    </testcase>
+    <testcase classname="check Divide-functionality check result is defined " name="check Divide-functionality check result is defined " time="0">
+    </testcase>
+    <testcase classname="check Divide-functionality check division to 0" name="check Divide-functionality check division to 0" time="0.001">
+    </testcase>
+    <testcase classname="check Divide-functionality check result of divide array to number" name="check Divide-functionality check result of divide array to number" time="0">
+    </testcase>
+    <testcase classname="check Exponentiation-functionality check exponentiation of positive numbers: 0 ^2 = 0" name="check Exponentiation-functionality check exponentiation of positive numbers: 0 ^2 = 0" time="0">
+    </testcase>
+    <testcase classname="check Exponentiation-functionality check exponentiation of positive numbers: 3 ^2 = 9" name="check Exponentiation-functionality check exponentiation of positive numbers: 3 ^2 = 9" time="0">
+    </testcase>
+    <testcase classname="check Exponentiation-functionality check exponentiation of positive numbers: 10 ^2 = 100" name="check Exponentiation-functionality check exponentiation of positive numbers: 10 ^2 = 100" time="0">
+    </testcase>
+    <testcase classname="check Exponentiation-functionality check exponentiation of negative numbers: -1 ^2 = 1" name="check Exponentiation-functionality check exponentiation of negative numbers: -1 ^2 = 1" time="0">
+    </testcase>
+    <testcase classname="check Exponentiation-functionality check exponentiation of negative numbers: -3 ^2 = 9" name="check Exponentiation-functionality check exponentiation of negative numbers: -3 ^2 = 9" time="0.001">
+    </testcase>
+    <testcase classname="check Exponentiation-functionality check exponentiation of negative numbers: -40 ^2 = 1600" name="check Exponentiation-functionality check exponentiation of negative numbers: -40 ^2 = 1600" time="0">
+    </testcase>
+    <testcase classname="check Exponentiation-functionality check exponentiation of numbers (when number is written as &quot;string&quot;) " name="check Exponentiation-functionality check exponentiation of numbers (when number is written as &quot;string&quot;) " time="0.001">
+    </testcase>
+    <testcase classname="check Exponentiation-functionality check exponentiation of numbers (when there is a &quot;string&quot;) " name="check Exponentiation-functionality check exponentiation of numbers (when there is a &quot;string&quot;) " time="0">
+    </testcase>
+    <testcase classname="check Exponentiation-functionality check exponentiation of fractional numbers " name="check Exponentiation-functionality check exponentiation of fractional numbers " time="0.001">
+    </testcase>
+    <testcase classname="check Exponentiation-functionality check exponentiation of null " name="check Exponentiation-functionality check exponentiation of null " time="0">
+    </testcase>
+    <testcase classname="check Exponentiation-functionality check result is defined " name="check Exponentiation-functionality check result is defined " time="0.001">
+    </testcase>
+    <testcase classname="check Exponentiation-functionality check result of exponentiation array " name="check Exponentiation-functionality check result of exponentiation array " time="0">
+    </testcase>
+  </testsuite>
+</testsuites>

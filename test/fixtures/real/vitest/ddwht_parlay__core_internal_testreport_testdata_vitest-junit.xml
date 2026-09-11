@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="5" failures="2" errors="0" time="0.008411249">
+    <testsuite name="src/a.test.ts" timestamp="2026-09-08T19:54:45.341Z" hostname="Sashas-MacBook-Pro.local" tests="2" failures="0" errors="0" skipped="1" time="0.00190925">
+        <testcase classname="src/a.test.ts" file="src/a.test.ts" name="adding &gt; passes" time="0.001099083">
+        </testcase>
+        <testcase classname="src/a.test.ts" file="src/a.test.ts" name="adding &gt; is skipped" time="0">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/b.test.ts" timestamp="2026-09-08T19:54:45.341Z" hostname="Sashas-MacBook-Pro.local" tests="1" failures="0" errors="0" skipped="0" time="0.002170708">
+        <testcase classname="src/b.test.ts" file="src/b.test.ts" name="also passes" time="0.001447375">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/c.test.ts" timestamp="2026-09-08T19:54:45.342Z" hostname="Sashas-MacBook-Pro.local" tests="1" failures="1" errors="0" skipped="0" time="0.004331291">
+        <testcase classname="src/c.test.ts" file="src/c.test.ts" name="fails" time="0.003628709">
+            <failure message="expected 1 to be 2 // Object.is equality" type="AssertionError">
+AssertionError: expected 1 to be 2 // Object.is equality
+
+- Expected
++ Received
+
+- 2
++ 1
+
+ ❯ src/c.test.ts:2:33
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/d.test.ts" timestamp="2026-09-08T19:54:45.342Z" hostname="Sashas-MacBook-Pro.local" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/d.test.ts" file="src/d.test.ts" name="src/d.test.ts" time="0">
+            <failure message="Cannot find module &apos;./does-not-exist&apos; imported from /PROJECT/src/d.test.ts" type="Error">
+Error: Cannot find module &apos;./does-not-exist&apos; imported from /PROJECT/src/d.test.ts
+ ❯ src/d.test.ts:1:1
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;ERR_MODULE_NOT_FOUND&apos; }
+            </failure>
+        </testcase>
+    </testsuite>
+</testsuites>

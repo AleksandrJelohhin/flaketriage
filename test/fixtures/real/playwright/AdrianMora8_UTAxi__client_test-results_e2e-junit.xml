@@ -1,0 +1,2569 @@
+<testsuites id="" name="" tests="387" failures="2" skipped="358" errors="16" time="246.238303">
+<testsuite name="active-trip.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="chromium" tests="12" failures="0" skipped="9" time="114.912" errors="0">
+<testcase name="Active Trip - E2E › should redirect to login when not authenticated" classname="active-trip.spec.ts" time="12.084">
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › shows &quot;Viaje no encontrado.&quot; for invalid trip ID" classname="active-trip.spec.ts" time="19.203">
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › &quot;← Volver a viajes&quot; navigates to /trips" classname="active-trip.spec.ts" time="10.377">
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › shows Detalle back link when trip is valid" classname="active-trip.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › shows connection status pill (Conectando... or tracking active)" classname="active-trip.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › shows map loading area or map content" classname="active-trip.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › bottom panel shows Viaje en Curso badge" classname="active-trip.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › bottom panel shows ETA ~15 MIN" classname="active-trip.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › bottom panel shows Chat button" classname="active-trip.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › bottom panel shows Seguridad U-Ride button" classname="active-trip.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › driver view shows Conductor badge in bottom panel" classname="active-trip.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › Detalle back link navigates to trip detail page" classname="active-trip.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="admin-reports.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="chromium" tests="18" failures="0" skipped="0" time="655.024" errors="16">
+<testcase name="Admin — Gestión de Reportes - E2E › redirige a login si no está autenticado" classname="admin-reports.spec.ts" time="1.118">
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › bloquea acceso a un usuario no-admin" classname="admin-reports.spec.ts" time="5.604">
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra el Dashboard Admin con sidebar" classname="admin-reports.spec.ts" time="34.435">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|admin-reports-Admin-—-Gest-d8a0f-Dashboard-Admin-con-sidebar-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-d8a0f-Dashboard-Admin-con-sidebar-chromium\video.webm]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-d8a0f-Dashboard-Admin-con-sidebar-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [chromium] › admin-reports.spec.ts:37:5 › Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra el Dashboard Admin con sidebar 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      31 |
+      32 |   test.describe('panel admin autenticado', () => {
+    > 33 |     test.beforeEach(async ({ page }) => {
+         |          ^
+      34 |       await loginAsAdmin(page);
+      35 |     });
+      36 |
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:33:10
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /.*\/admin/
+    Received string:  "http://localhost:4278/trips"
+
+    Call log:
+      - Expect "toHaveURL" with timeout 50000ms
+        5 × unexpected value "http://localhost:4278/login"
+        28 × unexpected value "http://localhost:4278/trips"
+
+
+       6 |   await page.fill('input[placeholder="••••••••"]', '123456');
+       7 |   await page.click('button:has-text("Iniciar Sesión")');
+    >  8 |   await expect(page).toHaveURL(/.*\/admin/, { timeout: 50000 });
+         |                      ^
+       9 | }
+      10 |
+      11 | async function loginAsStudent(page: Page) {
+        at loginAsAdmin (C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:8:22)
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:34:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-d8a0f-Dashboard-Admin-con-sidebar-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-d8a0f-Dashboard-Admin-con-sidebar-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\admin-reports-Admin-—-Gest-d8a0f-Dashboard-Admin-con-sidebar-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra los 4 tabs de navegación en el sidebar" classname="admin-reports.spec.ts" time="34.502">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|admin-reports-Admin-—-Gest-cbae6-de-navegación-en-el-sidebar-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-cbae6-de-navegación-en-el-sidebar-chromium\video.webm]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-cbae6-de-navegación-en-el-sidebar-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [chromium] › admin-reports.spec.ts:42:5 › Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra los 4 tabs de navegación en el sidebar 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      31 |
+      32 |   test.describe('panel admin autenticado', () => {
+    > 33 |     test.beforeEach(async ({ page }) => {
+         |          ^
+      34 |       await loginAsAdmin(page);
+      35 |     });
+      36 |
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:33:10
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /.*\/admin/
+    Received string:  "http://localhost:4278/trips"
+
+    Call log:
+      - Expect "toHaveURL" with timeout 50000ms
+        5 × unexpected value "http://localhost:4278/login"
+        28 × unexpected value "http://localhost:4278/trips"
+
+
+       6 |   await page.fill('input[placeholder="••••••••"]', '123456');
+       7 |   await page.click('button:has-text("Iniciar Sesión")');
+    >  8 |   await expect(page).toHaveURL(/.*\/admin/, { timeout: 50000 });
+         |                      ^
+       9 | }
+      10 |
+      11 | async function loginAsStudent(page: Page) {
+        at loginAsAdmin (C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:8:22)
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:34:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-cbae6-de-navegación-en-el-sidebar-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-cbae6-de-navegación-en-el-sidebar-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\admin-reports-Admin-—-Gest-cbae6-de-navegación-en-el-sidebar-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra las 4 stat cards" classname="admin-reports.spec.ts" time="32.077">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|admin-reports-Admin-—-Gest-be702-do-muestra-las-4-stat-cards-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-be702-do-muestra-las-4-stat-cards-chromium\video.webm]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-be702-do-muestra-las-4-stat-cards-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [chromium] › admin-reports.spec.ts:49:5 › Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra las 4 stat cards 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      31 |
+      32 |   test.describe('panel admin autenticado', () => {
+    > 33 |     test.beforeEach(async ({ page }) => {
+         |          ^
+      34 |       await loginAsAdmin(page);
+      35 |     });
+      36 |
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:33:10
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /.*\/admin/
+    Received string:  "http://localhost:4278/trips"
+
+    Call log:
+      - Expect "toHaveURL" with timeout 50000ms
+        5 × unexpected value "http://localhost:4278/login"
+        26 × unexpected value "http://localhost:4278/trips"
+
+
+       6 |   await page.fill('input[placeholder="••••••••"]', '123456');
+       7 |   await page.click('button:has-text("Iniciar Sesión")');
+    >  8 |   await expect(page).toHaveURL(/.*\/admin/, { timeout: 50000 });
+         |                      ^
+       9 | }
+      10 |
+      11 | async function loginAsStudent(page: Page) {
+        at loginAsAdmin (C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:8:22)
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:34:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-be702-do-muestra-las-4-stat-cards-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-be702-do-muestra-las-4-stat-cards-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\admin-reports-Admin-—-Gest-be702-do-muestra-las-4-stat-cards-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › tab Reportes está activo por defecto y muestra &quot;Gestión de Reportes&quot;" classname="admin-reports.spec.ts" time="32.482">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|admin-reports-Admin-—-Gest-2617d-uestra-Gestión-de-Reportes--chromium\test-failed-1.png]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-2617d-uestra-Gestión-de-Reportes--chromium\video.webm]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-2617d-uestra-Gestión-de-Reportes--chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [chromium] › admin-reports.spec.ts:58:5 › Admin — Gestión de Reportes - E2E › panel admin autenticado › tab Reportes está activo por defecto y muestra "Gestión de Reportes" 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      31 |
+      32 |   test.describe('panel admin autenticado', () => {
+    > 33 |     test.beforeEach(async ({ page }) => {
+         |          ^
+      34 |       await loginAsAdmin(page);
+      35 |     });
+      36 |
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:33:10
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /.*\/admin/
+    Received string:  "http://localhost:4278/trips"
+
+    Call log:
+      - Expect "toHaveURL" with timeout 50000ms
+        5 × unexpected value "http://localhost:4278/login"
+        26 × unexpected value "http://localhost:4278/trips"
+
+
+       6 |   await page.fill('input[placeholder="••••••••"]', '123456');
+       7 |   await page.click('button:has-text("Iniciar Sesión")');
+    >  8 |   await expect(page).toHaveURL(/.*\/admin/, { timeout: 50000 });
+         |                      ^
+       9 | }
+      10 |
+      11 | async function loginAsStudent(page: Page) {
+        at loginAsAdmin (C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:8:22)
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:34:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-2617d-uestra-Gestión-de-Reportes--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-2617d-uestra-Gestión-de-Reportes--chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\admin-reports-Admin-—-Gest-2617d-uestra-Gestión-de-Reportes--chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra el dropdown de filtro de estado en el header" classname="admin-reports.spec.ts" time="32.41">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|admin-reports-Admin-—-Gest-706dc-ltro-de-estado-en-el-header-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-706dc-ltro-de-estado-en-el-header-chromium\video.webm]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-706dc-ltro-de-estado-en-el-header-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [chromium] › admin-reports.spec.ts:62:5 › Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra el dropdown de filtro de estado en el header 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      31 |
+      32 |   test.describe('panel admin autenticado', () => {
+    > 33 |     test.beforeEach(async ({ page }) => {
+         |          ^
+      34 |       await loginAsAdmin(page);
+      35 |     });
+      36 |
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:33:10
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /.*\/admin/
+    Received string:  "http://localhost:4278/trips"
+
+    Call log:
+      - Expect "toHaveURL" with timeout 50000ms
+        6 × unexpected value "http://localhost:4278/login"
+        25 × unexpected value "http://localhost:4278/trips"
+
+
+       6 |   await page.fill('input[placeholder="••••••••"]', '123456');
+       7 |   await page.click('button:has-text("Iniciar Sesión")');
+    >  8 |   await expect(page).toHaveURL(/.*\/admin/, { timeout: 50000 });
+         |                      ^
+       9 | }
+      10 |
+      11 | async function loginAsStudent(page: Page) {
+        at loginAsAdmin (C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:8:22)
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:34:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-706dc-ltro-de-estado-en-el-header-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-706dc-ltro-de-estado-en-el-header-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\admin-reports-Admin-—-Gest-706dc-ltro-de-estado-en-el-header-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra la lista de reportes o estado vacío" classname="admin-reports.spec.ts" time="31.927">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|admin-reports-Admin-—-Gest-230ec--de-reportes-o-estado-vacío-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-230ec--de-reportes-o-estado-vacío-chromium\video.webm]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-230ec--de-reportes-o-estado-vacío-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [chromium] › admin-reports.spec.ts:73:5 › Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra la lista de reportes o estado vacío 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      31 |
+      32 |   test.describe('panel admin autenticado', () => {
+    > 33 |     test.beforeEach(async ({ page }) => {
+         |          ^
+      34 |       await loginAsAdmin(page);
+      35 |     });
+      36 |
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:33:10
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /.*\/admin/
+    Received string:  "http://localhost:4278/trips"
+
+    Call log:
+      - Expect "toHaveURL" with timeout 50000ms
+        5 × unexpected value "http://localhost:4278/login"
+        25 × unexpected value "http://localhost:4278/trips"
+
+
+       6 |   await page.fill('input[placeholder="••••••••"]', '123456');
+       7 |   await page.click('button:has-text("Iniciar Sesión")');
+    >  8 |   await expect(page).toHaveURL(/.*\/admin/, { timeout: 50000 });
+         |                      ^
+       9 | }
+      10 |
+      11 | async function loginAsStudent(page: Page) {
+        at loginAsAdmin (C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:8:22)
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:34:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-230ec--de-reportes-o-estado-vacío-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-230ec--de-reportes-o-estado-vacío-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\admin-reports-Admin-—-Gest-230ec--de-reportes-o-estado-vacío-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › filtrar por Abiertos recarga la lista de reportes" classname="admin-reports.spec.ts" time="30.213">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|admin-reports-Admin-—-Gest-b2817-ecarga-la-lista-de-reportes-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-b2817-ecarga-la-lista-de-reportes-chromium\video.webm]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-b2817-ecarga-la-lista-de-reportes-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [chromium] › admin-reports.spec.ts:80:5 › Admin — Gestión de Reportes - E2E › panel admin autenticado › filtrar por Abiertos recarga la lista de reportes 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      31 |
+      32 |   test.describe('panel admin autenticado', () => {
+    > 33 |     test.beforeEach(async ({ page }) => {
+         |          ^
+      34 |       await loginAsAdmin(page);
+      35 |     });
+      36 |
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:33:10
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /.*\/admin/
+    Received string:  "http://localhost:4278/trips"
+
+    Call log:
+      - Expect "toHaveURL" with timeout 50000ms
+        5 × unexpected value "http://localhost:4278/login"
+        24 × unexpected value "http://localhost:4278/trips"
+
+
+       6 |   await page.fill('input[placeholder="••••••••"]', '123456');
+       7 |   await page.click('button:has-text("Iniciar Sesión")');
+    >  8 |   await expect(page).toHaveURL(/.*\/admin/, { timeout: 50000 });
+         |                      ^
+       9 | }
+      10 |
+      11 | async function loginAsStudent(page: Page) {
+        at loginAsAdmin (C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:8:22)
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:34:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-b2817-ecarga-la-lista-de-reportes-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-b2817-ecarga-la-lista-de-reportes-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\admin-reports-Admin-—-Gest-b2817-ecarga-la-lista-de-reportes-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › filtrar por Resueltos recarga la lista" classname="admin-reports.spec.ts" time="30.159">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|admin-reports-Admin-—-Gest-f8f49--Resueltos-recarga-la-lista-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-f8f49--Resueltos-recarga-la-lista-chromium\video.webm]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-f8f49--Resueltos-recarga-la-lista-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [chromium] › admin-reports.spec.ts:88:5 › Admin — Gestión de Reportes - E2E › panel admin autenticado › filtrar por Resueltos recarga la lista 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      31 |
+      32 |   test.describe('panel admin autenticado', () => {
+    > 33 |     test.beforeEach(async ({ page }) => {
+         |          ^
+      34 |       await loginAsAdmin(page);
+      35 |     });
+      36 |
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:33:10
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /.*\/admin/
+    Received string:  "http://localhost:4278/trips"
+
+    Call log:
+      - Expect "toHaveURL" with timeout 50000ms
+        5 × unexpected value "http://localhost:4278/login"
+        24 × unexpected value "http://localhost:4278/trips"
+
+
+       6 |   await page.fill('input[placeholder="••••••••"]', '123456');
+       7 |   await page.click('button:has-text("Iniciar Sesión")');
+    >  8 |   await expect(page).toHaveURL(/.*\/admin/, { timeout: 50000 });
+         |                      ^
+       9 | }
+      10 |
+      11 | async function loginAsStudent(page: Page) {
+        at loginAsAdmin (C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:8:22)
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:34:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-f8f49--Resueltos-recarga-la-lista-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-f8f49--Resueltos-recarga-la-lista-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\admin-reports-Admin-—-Gest-f8f49--Resueltos-recarga-la-lista-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra el modal de revisión al hacer clic en Review" classname="admin-reports.spec.ts" time="73.454">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|admin-reports-Admin-—-Gest-e6dc7-ión-al-hacer-clic-en-Review-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [chromium] › admin-reports.spec.ts:94:5 › Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra el modal de revisión al hacer clic en Review 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      31 |
+      32 |   test.describe('panel admin autenticado', () => {
+    > 33 |     test.beforeEach(async ({ page }) => {
+         |          ^
+      34 |       await loginAsAdmin(page);
+      35 |     });
+      36 |
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:33:10
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /.*\/admin/
+    Received string:  "http://localhost:4278/trips"
+    Timeout: 50000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 50000ms
+        3 × unexpected value "http://localhost:4278/login"
+        18 × unexpected value "http://localhost:4278/trips"
+
+
+       6 |   await page.fill('input[placeholder="••••••••"]', '123456');
+       7 |   await page.click('button:has-text("Iniciar Sesión")');
+    >  8 |   await expect(page).toHaveURL(/.*\/admin/, { timeout: 50000 });
+         |                      ^
+       9 | }
+      10 |
+      11 | async function loginAsStudent(page: Page) {
+        at loginAsAdmin (C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:8:22)
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:34:7
+
+    Tearing down "context" exceeded the test timeout of 30000ms.
+
+    Error: browserContext.close: Test timeout of 30000ms exceeded.
+    Browser logs:
+
+    <launching> C:\Users\HOME\AppData\Local\ms-playwright\chromium_headless_shell-1217\chrome-headless-shell-win64\chrome-headless-shell.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\Users\HOME\AppData\Local\Temp\playwright_chromiumdev_profile-mrsWpG --remote-debugging-pipe --no-startup-window
+    <launched> pid=15256
+    [pid=15256][err] [0611/151253.174:INFO:CONSOLE:789] "[vite] connecting...", source: http://localhost:4278/@vite/client (789)
+    [pid=15256][err] [0611/151253.195:INFO:CONSOLE:21609] "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold", source: http://localhost:4278/node_modules/.vite/deps/chunk-PNGJSGSD.js?v=b172b1a8 (21609)
+    [pid=15256][err] [0611/151253.228:INFO:CONSOLE:4436] "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.", source: http://localhost:4278/node_modules/.vite/deps/react-router-dom.js?v=b172b1a8 (4436)
+    [pid=15256][err] [0611/151253.230:INFO:CONSOLE:912] "[vite] connected.", source: http://localhost:4278/@vite/client (912)
+    [pid=15256] <gracefully close start>
+
+    Error Context: ..\..\test-results\admin-reports-Admin-—-Gest-e6dc7-ión-al-hacer-clic-en-Review-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › ReviewModal muestra las 3 acciones disponibles" classname="admin-reports.spec.ts" time="73.206">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|admin-reports-Admin-—-Gest-7df95--las-3-acciones-disponibles-chromium\video.webm]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-7df95--las-3-acciones-disponibles-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [chromium] › admin-reports.spec.ts:107:5 › Admin — Gestión de Reportes - E2E › panel admin autenticado › ReviewModal muestra las 3 acciones disponibles 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      31 |
+      32 |   test.describe('panel admin autenticado', () => {
+    > 33 |     test.beforeEach(async ({ page }) => {
+         |          ^
+      34 |       await loginAsAdmin(page);
+      35 |     });
+      36 |
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:33:10
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /.*\/admin/
+    Received string:  "http://localhost:4278/trips"
+    Timeout: 50000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 50000ms
+        3 × unexpected value "http://localhost:4278/login"
+        14 × unexpected value "http://localhost:4278/trips"
+
+
+       6 |   await page.fill('input[placeholder="••••••••"]', '123456');
+       7 |   await page.click('button:has-text("Iniciar Sesión")');
+    >  8 |   await expect(page).toHaveURL(/.*\/admin/, { timeout: 50000 });
+         |                      ^
+       9 | }
+      10 |
+      11 | async function loginAsStudent(page: Page) {
+        at loginAsAdmin (C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:8:22)
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:34:7
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-7df95--las-3-acciones-disponibles-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\admin-reports-Admin-—-Gest-7df95--las-3-acciones-disponibles-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › ReviewModal se cierra al hacer clic en el backdrop" classname="admin-reports.spec.ts" time="62.674">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|admin-reports-Admin-—-Gest-a09e7-l-hacer-clic-en-el-backdrop-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [chromium] › admin-reports.spec.ts:123:5 › Admin — Gestión de Reportes - E2E › panel admin autenticado › ReviewModal se cierra al hacer clic en el backdrop 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      31 |
+      32 |   test.describe('panel admin autenticado', () => {
+    > 33 |     test.beforeEach(async ({ page }) => {
+         |          ^
+      34 |       await loginAsAdmin(page);
+      35 |     });
+      36 |
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:33:10
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /.*\/admin/
+    Received string:  "http://localhost:4278/trips"
+    Timeout: 50000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 50000ms
+        3 × unexpected value "http://localhost:4278/login"
+        12 × unexpected value "http://localhost:4278/trips"
+
+
+       6 |   await page.fill('input[placeholder="••••••••"]', '123456');
+       7 |   await page.click('button:has-text("Iniciar Sesión")');
+    >  8 |   await expect(page).toHaveURL(/.*\/admin/, { timeout: 50000 });
+         |                      ^
+       9 | }
+      10 |
+      11 | async function loginAsStudent(page: Page) {
+        at loginAsAdmin (C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:8:22)
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:34:7
+
+    Tearing down "context" exceeded the test timeout of 30000ms.
+
+    Error: browserContext.close: Test timeout of 30000ms exceeded.
+    Browser logs:
+
+    <launching> C:\Users\HOME\AppData\Local\ms-playwright\chromium_headless_shell-1217\chrome-headless-shell-win64\chrome-headless-shell.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\Users\HOME\AppData\Local\Temp\playwright_chromiumdev_profile-UUt5lg --remote-debugging-pipe --no-startup-window
+    <launched> pid=37252
+    [pid=37252][err] [0611/151259.681:INFO:CONSOLE:789] "[vite] connecting...", source: http://localhost:4278/@vite/client (789)
+    [pid=37252][err] [0611/151259.713:INFO:CONSOLE:21609] "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold", source: http://localhost:4278/node_modules/.vite/deps/chunk-PNGJSGSD.js?v=b172b1a8 (21609)
+    [pid=37252][err] [0611/151259.759:INFO:CONSOLE:4436] "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.", source: http://localhost:4278/node_modules/.vite/deps/react-router-dom.js?v=b172b1a8 (4436)
+    [pid=37252][err] [0611/151259.762:INFO:CONSOLE:912] "[vite] connected.", source: http://localhost:4278/@vite/client (912)
+    [pid=37252] <gracefully close start>
+
+    Error Context: ..\..\test-results\admin-reports-Admin-—-Gest-a09e7-l-hacer-clic-en-el-backdrop-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › flujo completo: revisar un reporte con acción DISMISSED" classname="admin-reports.spec.ts" time="60.034">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|admin-reports-Admin-—-Gest-32427-eporte-con-acción-DISMISSED-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [chromium] › admin-reports.spec.ts:140:5 › Admin — Gestión de Reportes - E2E › panel admin autenticado › flujo completo: revisar un reporte con acción DISMISSED 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      31 |
+      32 |   test.describe('panel admin autenticado', () => {
+    > 33 |     test.beforeEach(async ({ page }) => {
+         |          ^
+      34 |       await loginAsAdmin(page);
+      35 |     });
+      36 |
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:33:10
+
+    Tearing down "context" exceeded the test timeout of 30000ms.
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /.*\/admin/
+    Received string:  "http://localhost:4278/trips"
+
+    Call log:
+      - Expect "toHaveURL" with timeout 50000ms
+        4 × unexpected value "http://localhost:4278/login"
+        2 × unexpected value "http://localhost:4278/trips"
+
+
+       6 |   await page.fill('input[placeholder="••••••••"]', '123456');
+       7 |   await page.click('button:has-text("Iniciar Sesión")');
+    >  8 |   await expect(page).toHaveURL(/.*\/admin/, { timeout: 50000 });
+         |                      ^
+       9 | }
+      10 |
+      11 | async function loginAsStudent(page: Page) {
+        at loginAsAdmin (C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:8:22)
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:34:7
+
+    Error: browserContext.close: Test timeout of 30000ms exceeded.
+    Browser logs:
+
+    <launching> C:\Users\HOME\AppData\Local\ms-playwright\chromium_headless_shell-1217\chrome-headless-shell-win64\chrome-headless-shell.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\Users\HOME\AppData\Local\Temp\playwright_chromiumdev_profile-5XrC6b --remote-debugging-pipe --no-startup-window
+    <launched> pid=38288
+    [pid=38288][err] [0611/151307.078:INFO:CONSOLE:789] "[vite] connecting...", source: http://localhost:4278/@vite/client (789)
+    [pid=38288][err] [0611/151307.111:INFO:CONSOLE:21609] "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold", source: http://localhost:4278/node_modules/.vite/deps/chunk-PNGJSGSD.js?v=b172b1a8 (21609)
+    [pid=38288][err] [0611/151307.143:INFO:CONSOLE:4436] "⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.", source: http://localhost:4278/node_modules/.vite/deps/react-router-dom.js?v=b172b1a8 (4436)
+    [pid=38288][err] [0611/151307.148:INFO:CONSOLE:912] "[vite] connected.", source: http://localhost:4278/@vite/client (912)
+    [pid=38288] <gracefully close start>
+
+    Error Context: ..\..\test-results\admin-reports-Admin-—-Gest-32427-eporte-con-acción-DISMISSED-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › tab Usuarios carga la lista de usuarios" classname="admin-reports.spec.ts" time="30.134">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|admin-reports-Admin-—-Gest-1c21b--carga-la-lista-de-usuarios-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-1c21b--carga-la-lista-de-usuarios-chromium\video.webm]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-1c21b--carga-la-lista-de-usuarios-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [chromium] › admin-reports.spec.ts:161:5 › Admin — Gestión de Reportes - E2E › panel admin autenticado › tab Usuarios carga la lista de usuarios 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      31 |
+      32 |   test.describe('panel admin autenticado', () => {
+    > 33 |     test.beforeEach(async ({ page }) => {
+         |          ^
+      34 |       await loginAsAdmin(page);
+      35 |     });
+      36 |
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:33:10
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /.*\/admin/
+    Received string:  "http://localhost:4278/trips"
+
+    Call log:
+      - Expect "toHaveURL" with timeout 50000ms
+        4 × unexpected value "http://localhost:4278/login"
+        6 × unexpected value "http://localhost:4278/trips"
+
+
+       6 |   await page.fill('input[placeholder="••••••••"]', '123456');
+       7 |   await page.click('button:has-text("Iniciar Sesión")');
+    >  8 |   await expect(page).toHaveURL(/.*\/admin/, { timeout: 50000 });
+         |                      ^
+       9 | }
+      10 |
+      11 | async function loginAsStudent(page: Page) {
+        at loginAsAdmin (C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:8:22)
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:34:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-1c21b--carga-la-lista-de-usuarios-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-1c21b--carga-la-lista-de-usuarios-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\admin-reports-Admin-—-Gest-1c21b--carga-la-lista-de-usuarios-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › búsqueda de usuario filtra la lista" classname="admin-reports.spec.ts" time="30.19">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|admin-reports-Admin-—-Gest-065bb--de-usuario-filtra-la-lista-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-065bb--de-usuario-filtra-la-lista-chromium\video.webm]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-065bb--de-usuario-filtra-la-lista-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [chromium] › admin-reports.spec.ts:166:5 › Admin — Gestión de Reportes - E2E › panel admin autenticado › búsqueda de usuario filtra la lista 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      31 |
+      32 |   test.describe('panel admin autenticado', () => {
+    > 33 |     test.beforeEach(async ({ page }) => {
+         |          ^
+      34 |       await loginAsAdmin(page);
+      35 |     });
+      36 |
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:33:10
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /.*\/admin/
+    Received string:  "http://localhost:4278/trips"
+
+    Call log:
+      - Expect "toHaveURL" with timeout 50000ms
+        3 × unexpected value "http://localhost:4278/login"
+        23 × unexpected value "http://localhost:4278/trips"
+
+
+       6 |   await page.fill('input[placeholder="••••••••"]', '123456');
+       7 |   await page.click('button:has-text("Iniciar Sesión")');
+    >  8 |   await expect(page).toHaveURL(/.*\/admin/, { timeout: 50000 });
+         |                      ^
+       9 | }
+      10 |
+      11 | async function loginAsStudent(page: Page) {
+        at loginAsAdmin (C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:8:22)
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:34:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-065bb--de-usuario-filtra-la-lista-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-065bb--de-usuario-filtra-la-lista-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\admin-reports-Admin-—-Gest-065bb--de-usuario-filtra-la-lista-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › tab Trazabilidad muestra eventos del sistema" classname="admin-reports.spec.ts" time="30.19">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|admin-reports-Admin-—-Gest-c8a4c-muestra-eventos-del-sistema-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-c8a4c-muestra-eventos-del-sistema-chromium\video.webm]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-c8a4c-muestra-eventos-del-sistema-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [chromium] › admin-reports.spec.ts:179:5 › Admin — Gestión de Reportes - E2E › panel admin autenticado › tab Trazabilidad muestra eventos del sistema 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      31 |
+      32 |   test.describe('panel admin autenticado', () => {
+    > 33 |     test.beforeEach(async ({ page }) => {
+         |          ^
+      34 |       await loginAsAdmin(page);
+      35 |     });
+      36 |
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:33:10
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /.*\/admin/
+    Received string:  "http://localhost:4278/trips"
+
+    Call log:
+      - Expect "toHaveURL" with timeout 50000ms
+        3 × unexpected value "http://localhost:4278/login"
+        25 × unexpected value "http://localhost:4278/trips"
+
+
+       6 |   await page.fill('input[placeholder="••••••••"]', '123456');
+       7 |   await page.click('button:has-text("Iniciar Sesión")');
+    >  8 |   await expect(page).toHaveURL(/.*\/admin/, { timeout: 50000 });
+         |                      ^
+       9 | }
+      10 |
+      11 | async function loginAsStudent(page: Page) {
+        at loginAsAdmin (C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:8:22)
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:34:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-c8a4c-muestra-eventos-del-sistema-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-c8a4c-muestra-eventos-del-sistema-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\admin-reports-Admin-—-Gest-c8a4c-muestra-eventos-del-sistema-chromium\error-context.md
+]]>
+</error>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › Cerrar Sesión redirige al login" classname="admin-reports.spec.ts" time="30.215">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|admin-reports-Admin-—-Gest-affdd-ar-Sesión-redirige-al-login-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-affdd-ar-Sesión-redirige-al-login-chromium\video.webm]]
+
+[[ATTACHMENT|admin-reports-Admin-—-Gest-affdd-ar-Sesión-redirige-al-login-chromium\error-context.md]]
+]]>
+</system-out>
+<error message="Test timeout of 30000ms exceeded while running &quot;beforeEach&quot; hook." type="Error">
+<![CDATA[  [chromium] › admin-reports.spec.ts:189:5 › Admin — Gestión de Reportes - E2E › panel admin autenticado › Cerrar Sesión redirige al login 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      31 |
+      32 |   test.describe('panel admin autenticado', () => {
+    > 33 |     test.beforeEach(async ({ page }) => {
+         |          ^
+      34 |       await loginAsAdmin(page);
+      35 |     });
+      36 |
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:33:10
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /.*\/admin/
+    Received string:  "http://localhost:4278/trips"
+
+    Call log:
+      - Expect "toHaveURL" with timeout 50000ms
+        3 × unexpected value "http://localhost:4278/login"
+        27 × unexpected value "http://localhost:4278/trips"
+
+
+       6 |   await page.fill('input[placeholder="••••••••"]', '123456');
+       7 |   await page.click('button:has-text("Iniciar Sesión")');
+    >  8 |   await expect(page).toHaveURL(/.*\/admin/, { timeout: 50000 });
+         |                      ^
+       9 | }
+      10 |
+      11 | async function loginAsStudent(page: Page) {
+        at loginAsAdmin (C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:8:22)
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\admin-reports.spec.ts:34:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-affdd-ar-Sesión-redirige-al-login-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\admin-reports-Admin-—-Gest-affdd-ar-Sesión-redirige-al-login-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\admin-reports-Admin-—-Gest-affdd-ar-Sesión-redirige-al-login-chromium\error-context.md
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="auth.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="chromium" tests="12" failures="2" skipped="4" time="36.154" errors="0">
+<testcase name="Forgot Password / Reset Password Flow - E2E › should show forgot-password form with email input" classname="auth.spec.ts" time="3.718">
+</testcase>
+<testcase name="Forgot Password / Reset Password Flow - E2E › should navigate to forgot-password via login page link" classname="auth.spec.ts" time="3.314">
+</testcase>
+<testcase name="Forgot Password / Reset Password Flow - E2E › should show reset-password form with email, code and password fields" classname="auth.spec.ts" time="1.126">
+</testcase>
+<testcase name="Forgot Password / Reset Password Flow - E2E › should show error when reset code is invalid" classname="auth.spec.ts" time="2.988">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|auth-Forgot-Password-Reset-0ef59--when-reset-code-is-invalid-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|auth-Forgot-Password-Reset-0ef59--when-reset-code-is-invalid-chromium\video.webm]]
+
+[[ATTACHMENT|auth-Forgot-Password-Reset-0ef59--when-reset-code-is-invalid-chromium\error-context.md]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [chromium] › auth.spec.ts:30:3 › Forgot Password / Reset Password Flow - E2E › should show error when reset code is invalid 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('text=/código|inválido|expirado|error/i')
+    Expected: visible
+    Error: strict mode violation: locator('text=/código|inválido|expirado|error/i') resolved to 3 elements:
+        1) <p class="text-on-surface-variant mb-8">Ingresa el código que recibiste y tu nueva contra…</p> aka getByText('Ingresa el código que')
+        2) <label class="block text-xs font-label uppercase tracking-widest text-on-surface-variant mb-2">Código de recuperación</label> aka getByText('Código de recuperación')
+        3) <p class="text-on-surface-variant text-sm mb-4">…</p> aka getByText('¿No tienes el código?')
+
+    Call log:
+      - Expect "toBeVisible" with timeout 8000ms
+      - waiting for locator('text=/código|inválido|expirado|error/i')
+
+
+      38 |     await expect(
+      39 |       page.locator('text=/código|inválido|expirado|error/i')
+    > 40 |     ).toBeVisible({ timeout: 8000 });
+         |       ^
+      41 |   });
+      42 | });
+      43 |
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\auth.spec.ts:40:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\auth-Forgot-Password-Reset-0ef59--when-reset-code-is-invalid-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\auth-Forgot-Password-Reset-0ef59--when-reset-code-is-invalid-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\auth-Forgot-Password-Reset-0ef59--when-reset-code-is-invalid-chromium\error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Authentication Flow - E2E › should register a new user and redirect to verify-email" classname="auth.spec.ts" time="11.002">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|auth-Authentication-Flow---ff90c-nd-redirect-to-verify-email-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|auth-Authentication-Flow---ff90c-nd-redirect-to-verify-email-chromium\video.webm]]
+
+[[ATTACHMENT|auth-Authentication-Flow---ff90c-nd-redirect-to-verify-email-chromium\error-context.md]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [chromium] › auth.spec.ts:45:3 › Authentication Flow - E2E › should register a new user and redirect to verify-email 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /.*verify-email/
+    Received string:  "http://localhost:4278/register"
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 10000ms
+        14 × unexpected value "http://localhost:4278/register"
+
+
+      53 |     await page.click('button:has-text("Crear Cuenta Institucional")');
+      54 |
+    > 55 |     await expect(page).toHaveURL(/.*verify-email/, { timeout: 10000 });
+         |                        ^
+      56 |   });
+      57 |
+      58 |   test('should show verify-email form with code input', async ({ page }) => {
+        at C:\Users\HOME\Desktop\UTAxi\client\tests\e2e\auth.spec.ts:55:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\auth-Authentication-Flow---ff90c-nd-redirect-to-verify-email-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\auth-Authentication-Flow---ff90c-nd-redirect-to-verify-email-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\auth-Authentication-Flow---ff90c-nd-redirect-to-verify-email-chromium\error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="Authentication Flow - E2E › should show verify-email form with code input" classname="auth.spec.ts" time="8.188">
+</testcase>
+<testcase name="Authentication Flow - E2E › should show error on invalid OTP code" classname="auth.spec.ts" time="1.892">
+</testcase>
+<testcase name="Authentication Flow - E2E › should login with valid credentials" classname="auth.spec.ts" time="1.783">
+</testcase>
+<testcase name="Authentication Flow - E2E › should reject login with incorrect password" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should show inline validation error for invalid email" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should navigate to register page from login link" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should redirect unauthenticated user from protected route" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="create-trip.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="chromium" tests="10" failures="0" skipped="10" time="0" errors="0">
+<testcase name="Create Trip - E2E › should redirect to login when not authenticated" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show the create trip form heading" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show campus picker with UTA campus options" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show destination field with search input" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show date, time, seats and price fields" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show campus validation error when submitting without campus" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show destination validation error when campus selected but no destination" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show date validation error when date is empty" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › Cancelar button navigates back to /trips" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › selecting a campus highlights it visually" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="home.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="chromium" tests="3" failures="0" skipped="3" time="0" errors="0">
+<testcase name="Home / - E2E › unauthenticated: / redirects to /login" classname="home.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Home / - E2E › authenticated: / redirects to /trips" classname="home.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Home / - E2E › unknown route redirects to /login when unauthenticated" classname="home.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="manage-requests.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="chromium" tests="18" failures="0" skipped="18" time="0" errors="0">
+<testcase name="Manage Requests - E2E › should redirect to login when not authenticated" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › should show Solicitudes Pendientes heading" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › should show Pasajeros Confirmados section" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows empty state when no pending requests" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › pending request shows Aceptar and Declinar buttons" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows Empezar Viaje button when trip is SCHEDULED" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows Ir al Mapa GPS and Completar Viaje when trip is IN_PROGRESS" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows Viaje Completado when trip is COMPLETED" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › confirmed passenger shows Marcar llegada button" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › confirmed passenger shows Calificar button when not yet rated" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › Mis viajes back link navigates to /trips" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows Reglas de Seguridad section" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows Monitoreo U-Ride security banner" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › confirmed passenger shows flag (report) button" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › clicking flag button opens report modal" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › report modal validates minimum description length" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › report modal submits successfully with valid data" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › report modal closes on Cancelar click" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="my-trips.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="chromium" tests="8" failures="0" skipped="8" time="0" errors="0">
+<testcase name="My Trips - E2E › should redirect to login when not authenticated" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › should show Mis Viajes heading and Panel del Conductor" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › should show Activos and Completados tab buttons" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › should show Publicar Viaje link in header" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › Activos tab: shows trips or empty state &quot;Sin viajes activos&quot;" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › Completados tab: shows &quot;Sin viajes completados&quot; or completed trips" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › empty state Activos shows Publicar Viaje link" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › clicking Gestionar in a trip row navigates to requests page" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="payment.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="chromium" tests="8" failures="0" skipped="8" time="0" errors="0">
+<testcase name="Payment - E2E › should redirect to login when not authenticated" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › shows &quot;Solicitud no encontrada&quot; for invalid request ID" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › &quot;Volver a mis solicitudes&quot; link navigates to /requests" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › payment page shows Confirmar Pago heading and card form" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › payment page shows Confirmar Pago button and Cancelar Transacción link" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › payment page shows demo disclaimer" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › Cancelar Transacción navigates back to /requests" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › confirming payment shows ¡Pago Confirmado! and redirects" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="profile.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="chromium" tests="9" failures="0" skipped="9" time="0" errors="0">
+<testcase name="Profile - E2E › should redirect to login when not authenticated" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show user name as page heading" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show Información Personal section" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show profile form fields" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show Guardar Cambios button" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show vehicle section" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should save profile changes and show success state" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show edit button for profile info" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should navigate to /profile from navbar" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="report-driver.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="chromium" tests="13" failures="0" skipped="13" time="0" errors="0">
+<testcase name="Reportar Conductor - E2E › redirige a login si no está autenticado" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › muestra el título &quot;Reportar Usuario&quot;" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › muestra el nombre del conductor desde el query param" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › muestra las secciones del formulario" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › el botón Enviar Reporte está deshabilitado sin motivo ni descripción" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › el botón Enviar Reporte sigue deshabilitado con solo motivo seleccionado" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › el botón Enviar Reporte sigue deshabilitado con descripción menor a 10 chars" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › el botón Enviar Reporte se habilita con motivo y descripción válida" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › el link Cancelar navega de vuelta a /trips" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › muestra opciones correctas en el selector de motivo" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › botón Reportar conductor desde Mis Solicitudes › muestra Reportar conductor en historial si hay viajes completados" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › botón Reportar conductor desde Mis Solicitudes › Reportar conductor navega a /reports con userId y name en query" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › botón Reportar conductor desde Mis Solicitudes › flujo completo: reportar conductor desde historial hasta confirmación" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="requests.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="chromium" tests="10" failures="0" skipped="10" time="0" errors="0">
+<testcase name="My Requests - E2E › should redirect to login when not authenticated" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › should show Mis Solicitudes heading and Panel de Pasajero" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › should show Activas and Historial tab buttons" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › should show U-Wallet sidebar with Recargar link" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › Activas tab: shows requests or empty state with Buscar Viaje link" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › empty Activas state shows Buscar Viaje link to /trips" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › Historial tab: shows completed requests or empty state" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › pending request shows Cancelar Solicitud button" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › accepted unpaid request shows payment buttons" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › completed request shows Calificar button" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="trips.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="chromium" tests="8" failures="0" skipped="8" time="0" errors="0">
+<testcase name="Trips Flow - E2E › should show trips list with heading" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should show sort buttons on trips list" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should navigate to trip detail on card click" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should show Solicitar Unirse button on a trip not owned by user" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should filter trips by origin zone" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should filter trips by destination zone" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should show empty state when no trips match filter" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should clear filters and show all trips again" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="active-trip.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="firefox" tests="12" failures="0" skipped="12" time="0" errors="0">
+<testcase name="Active Trip - E2E › should redirect to login when not authenticated" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › shows &quot;Viaje no encontrado.&quot; for invalid trip ID" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › &quot;← Volver a viajes&quot; navigates to /trips" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › shows Detalle back link when trip is valid" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › shows connection status pill (Conectando... or tracking active)" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › shows map loading area or map content" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › bottom panel shows Viaje en Curso badge" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › bottom panel shows ETA ~15 MIN" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › bottom panel shows Chat button" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › bottom panel shows Seguridad U-Ride button" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › driver view shows Conductor badge in bottom panel" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › Detalle back link navigates to trip detail page" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="admin-reports.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="firefox" tests="18" failures="0" skipped="18" time="0" errors="0">
+<testcase name="Admin — Gestión de Reportes - E2E › redirige a login si no está autenticado" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › bloquea acceso a un usuario no-admin" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra el Dashboard Admin con sidebar" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra los 4 tabs de navegación en el sidebar" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra las 4 stat cards" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › tab Reportes está activo por defecto y muestra &quot;Gestión de Reportes&quot;" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra el dropdown de filtro de estado en el header" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra la lista de reportes o estado vacío" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › filtrar por Abiertos recarga la lista de reportes" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › filtrar por Resueltos recarga la lista" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra el modal de revisión al hacer clic en Review" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › ReviewModal muestra las 3 acciones disponibles" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › ReviewModal se cierra al hacer clic en el backdrop" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › flujo completo: revisar un reporte con acción DISMISSED" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › tab Usuarios carga la lista de usuarios" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › búsqueda de usuario filtra la lista" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › tab Trazabilidad muestra eventos del sistema" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › Cerrar Sesión redirige al login" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="auth.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="firefox" tests="12" failures="0" skipped="12" time="0" errors="0">
+<testcase name="Forgot Password / Reset Password Flow - E2E › should show forgot-password form with email input" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Forgot Password / Reset Password Flow - E2E › should navigate to forgot-password via login page link" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Forgot Password / Reset Password Flow - E2E › should show reset-password form with email, code and password fields" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Forgot Password / Reset Password Flow - E2E › should show error when reset code is invalid" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should register a new user and redirect to verify-email" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should show verify-email form with code input" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should show error on invalid OTP code" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should login with valid credentials" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should reject login with incorrect password" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should show inline validation error for invalid email" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should navigate to register page from login link" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should redirect unauthenticated user from protected route" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="create-trip.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="firefox" tests="10" failures="0" skipped="10" time="0" errors="0">
+<testcase name="Create Trip - E2E › should redirect to login when not authenticated" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show the create trip form heading" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show campus picker with UTA campus options" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show destination field with search input" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show date, time, seats and price fields" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show campus validation error when submitting without campus" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show destination validation error when campus selected but no destination" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show date validation error when date is empty" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › Cancelar button navigates back to /trips" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › selecting a campus highlights it visually" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="home.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="firefox" tests="3" failures="0" skipped="3" time="0" errors="0">
+<testcase name="Home / - E2E › unauthenticated: / redirects to /login" classname="home.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Home / - E2E › authenticated: / redirects to /trips" classname="home.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Home / - E2E › unknown route redirects to /login when unauthenticated" classname="home.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="manage-requests.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="firefox" tests="18" failures="0" skipped="18" time="0" errors="0">
+<testcase name="Manage Requests - E2E › should redirect to login when not authenticated" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › should show Solicitudes Pendientes heading" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › should show Pasajeros Confirmados section" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows empty state when no pending requests" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › pending request shows Aceptar and Declinar buttons" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows Empezar Viaje button when trip is SCHEDULED" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows Ir al Mapa GPS and Completar Viaje when trip is IN_PROGRESS" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows Viaje Completado when trip is COMPLETED" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › confirmed passenger shows Marcar llegada button" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › confirmed passenger shows Calificar button when not yet rated" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › Mis viajes back link navigates to /trips" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows Reglas de Seguridad section" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows Monitoreo U-Ride security banner" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › confirmed passenger shows flag (report) button" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › clicking flag button opens report modal" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › report modal validates minimum description length" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › report modal submits successfully with valid data" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › report modal closes on Cancelar click" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="my-trips.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="firefox" tests="8" failures="0" skipped="8" time="0" errors="0">
+<testcase name="My Trips - E2E › should redirect to login when not authenticated" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › should show Mis Viajes heading and Panel del Conductor" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › should show Activos and Completados tab buttons" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › should show Publicar Viaje link in header" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › Activos tab: shows trips or empty state &quot;Sin viajes activos&quot;" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › Completados tab: shows &quot;Sin viajes completados&quot; or completed trips" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › empty state Activos shows Publicar Viaje link" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › clicking Gestionar in a trip row navigates to requests page" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="payment.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="firefox" tests="8" failures="0" skipped="8" time="0" errors="0">
+<testcase name="Payment - E2E › should redirect to login when not authenticated" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › shows &quot;Solicitud no encontrada&quot; for invalid request ID" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › &quot;Volver a mis solicitudes&quot; link navigates to /requests" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › payment page shows Confirmar Pago heading and card form" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › payment page shows Confirmar Pago button and Cancelar Transacción link" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › payment page shows demo disclaimer" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › Cancelar Transacción navigates back to /requests" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › confirming payment shows ¡Pago Confirmado! and redirects" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="profile.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="firefox" tests="9" failures="0" skipped="9" time="0" errors="0">
+<testcase name="Profile - E2E › should redirect to login when not authenticated" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show user name as page heading" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show Información Personal section" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show profile form fields" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show Guardar Cambios button" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show vehicle section" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should save profile changes and show success state" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show edit button for profile info" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should navigate to /profile from navbar" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="report-driver.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="firefox" tests="13" failures="0" skipped="13" time="0" errors="0">
+<testcase name="Reportar Conductor - E2E › redirige a login si no está autenticado" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › muestra el título &quot;Reportar Usuario&quot;" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › muestra el nombre del conductor desde el query param" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › muestra las secciones del formulario" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › el botón Enviar Reporte está deshabilitado sin motivo ni descripción" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › el botón Enviar Reporte sigue deshabilitado con solo motivo seleccionado" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › el botón Enviar Reporte sigue deshabilitado con descripción menor a 10 chars" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › el botón Enviar Reporte se habilita con motivo y descripción válida" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › el link Cancelar navega de vuelta a /trips" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › muestra opciones correctas en el selector de motivo" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › botón Reportar conductor desde Mis Solicitudes › muestra Reportar conductor en historial si hay viajes completados" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › botón Reportar conductor desde Mis Solicitudes › Reportar conductor navega a /reports con userId y name en query" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › botón Reportar conductor desde Mis Solicitudes › flujo completo: reportar conductor desde historial hasta confirmación" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="requests.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="firefox" tests="10" failures="0" skipped="10" time="0" errors="0">
+<testcase name="My Requests - E2E › should redirect to login when not authenticated" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › should show Mis Solicitudes heading and Panel de Pasajero" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › should show Activas and Historial tab buttons" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › should show U-Wallet sidebar with Recargar link" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › Activas tab: shows requests or empty state with Buscar Viaje link" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › empty Activas state shows Buscar Viaje link to /trips" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › Historial tab: shows completed requests or empty state" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › pending request shows Cancelar Solicitud button" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › accepted unpaid request shows payment buttons" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › completed request shows Calificar button" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="trips.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="firefox" tests="8" failures="0" skipped="8" time="0" errors="0">
+<testcase name="Trips Flow - E2E › should show trips list with heading" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should show sort buttons on trips list" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should navigate to trip detail on card click" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should show Solicitar Unirse button on a trip not owned by user" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should filter trips by origin zone" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should filter trips by destination zone" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should show empty state when no trips match filter" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should clear filters and show all trips again" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="active-trip.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="webkit" tests="12" failures="0" skipped="12" time="0" errors="0">
+<testcase name="Active Trip - E2E › should redirect to login when not authenticated" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › shows &quot;Viaje no encontrado.&quot; for invalid trip ID" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › &quot;← Volver a viajes&quot; navigates to /trips" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › shows Detalle back link when trip is valid" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › shows connection status pill (Conectando... or tracking active)" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › shows map loading area or map content" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › bottom panel shows Viaje en Curso badge" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › bottom panel shows ETA ~15 MIN" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › bottom panel shows Chat button" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › bottom panel shows Seguridad U-Ride button" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › driver view shows Conductor badge in bottom panel" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Active Trip - E2E › authenticated › Detalle back link navigates to trip detail page" classname="active-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="admin-reports.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="webkit" tests="18" failures="0" skipped="18" time="0" errors="0">
+<testcase name="Admin — Gestión de Reportes - E2E › redirige a login si no está autenticado" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › bloquea acceso a un usuario no-admin" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra el Dashboard Admin con sidebar" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra los 4 tabs de navegación en el sidebar" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra las 4 stat cards" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › tab Reportes está activo por defecto y muestra &quot;Gestión de Reportes&quot;" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra el dropdown de filtro de estado en el header" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra la lista de reportes o estado vacío" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › filtrar por Abiertos recarga la lista de reportes" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › filtrar por Resueltos recarga la lista" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › muestra el modal de revisión al hacer clic en Review" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › ReviewModal muestra las 3 acciones disponibles" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › ReviewModal se cierra al hacer clic en el backdrop" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › flujo completo: revisar un reporte con acción DISMISSED" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › tab Usuarios carga la lista de usuarios" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › búsqueda de usuario filtra la lista" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › tab Trazabilidad muestra eventos del sistema" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Admin — Gestión de Reportes - E2E › panel admin autenticado › Cerrar Sesión redirige al login" classname="admin-reports.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="auth.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="webkit" tests="12" failures="0" skipped="12" time="0" errors="0">
+<testcase name="Forgot Password / Reset Password Flow - E2E › should show forgot-password form with email input" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Forgot Password / Reset Password Flow - E2E › should navigate to forgot-password via login page link" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Forgot Password / Reset Password Flow - E2E › should show reset-password form with email, code and password fields" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Forgot Password / Reset Password Flow - E2E › should show error when reset code is invalid" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should register a new user and redirect to verify-email" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should show verify-email form with code input" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should show error on invalid OTP code" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should login with valid credentials" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should reject login with incorrect password" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should show inline validation error for invalid email" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should navigate to register page from login link" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow - E2E › should redirect unauthenticated user from protected route" classname="auth.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="create-trip.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="webkit" tests="10" failures="0" skipped="10" time="0" errors="0">
+<testcase name="Create Trip - E2E › should redirect to login when not authenticated" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show the create trip form heading" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show campus picker with UTA campus options" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show destination field with search input" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show date, time, seats and price fields" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show campus validation error when submitting without campus" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show destination validation error when campus selected but no destination" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › should show date validation error when date is empty" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › Cancelar button navigates back to /trips" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Create Trip - E2E › authenticated › selecting a campus highlights it visually" classname="create-trip.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="home.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="webkit" tests="3" failures="0" skipped="3" time="0" errors="0">
+<testcase name="Home / - E2E › unauthenticated: / redirects to /login" classname="home.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Home / - E2E › authenticated: / redirects to /trips" classname="home.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Home / - E2E › unknown route redirects to /login when unauthenticated" classname="home.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="manage-requests.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="webkit" tests="18" failures="0" skipped="18" time="0" errors="0">
+<testcase name="Manage Requests - E2E › should redirect to login when not authenticated" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › should show Solicitudes Pendientes heading" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › should show Pasajeros Confirmados section" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows empty state when no pending requests" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › pending request shows Aceptar and Declinar buttons" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows Empezar Viaje button when trip is SCHEDULED" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows Ir al Mapa GPS and Completar Viaje when trip is IN_PROGRESS" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows Viaje Completado when trip is COMPLETED" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › confirmed passenger shows Marcar llegada button" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › confirmed passenger shows Calificar button when not yet rated" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › Mis viajes back link navigates to /trips" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows Reglas de Seguridad section" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › shows Monitoreo U-Ride security banner" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › confirmed passenger shows flag (report) button" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › clicking flag button opens report modal" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › report modal validates minimum description length" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › report modal submits successfully with valid data" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Manage Requests - E2E › authenticated › report modal closes on Cancelar click" classname="manage-requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="my-trips.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="webkit" tests="8" failures="0" skipped="8" time="0" errors="0">
+<testcase name="My Trips - E2E › should redirect to login when not authenticated" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › should show Mis Viajes heading and Panel del Conductor" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › should show Activos and Completados tab buttons" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › should show Publicar Viaje link in header" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › Activos tab: shows trips or empty state &quot;Sin viajes activos&quot;" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › Completados tab: shows &quot;Sin viajes completados&quot; or completed trips" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › empty state Activos shows Publicar Viaje link" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Trips - E2E › authenticated › clicking Gestionar in a trip row navigates to requests page" classname="my-trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="payment.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="webkit" tests="8" failures="0" skipped="8" time="0" errors="0">
+<testcase name="Payment - E2E › should redirect to login when not authenticated" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › shows &quot;Solicitud no encontrada&quot; for invalid request ID" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › &quot;Volver a mis solicitudes&quot; link navigates to /requests" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › payment page shows Confirmar Pago heading and card form" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › payment page shows Confirmar Pago button and Cancelar Transacción link" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › payment page shows demo disclaimer" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › Cancelar Transacción navigates back to /requests" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Payment - E2E › authenticated › confirming payment shows ¡Pago Confirmado! and redirects" classname="payment.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="profile.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="webkit" tests="9" failures="0" skipped="9" time="0" errors="0">
+<testcase name="Profile - E2E › should redirect to login when not authenticated" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show user name as page heading" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show Información Personal section" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show profile form fields" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show Guardar Cambios button" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show vehicle section" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should save profile changes and show success state" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should show edit button for profile info" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Profile - E2E › authenticated › should navigate to /profile from navbar" classname="profile.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="report-driver.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="webkit" tests="13" failures="0" skipped="13" time="0" errors="0">
+<testcase name="Reportar Conductor - E2E › redirige a login si no está autenticado" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › muestra el título &quot;Reportar Usuario&quot;" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › muestra el nombre del conductor desde el query param" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › muestra las secciones del formulario" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › el botón Enviar Reporte está deshabilitado sin motivo ni descripción" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › el botón Enviar Reporte sigue deshabilitado con solo motivo seleccionado" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › el botón Enviar Reporte sigue deshabilitado con descripción menor a 10 chars" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › el botón Enviar Reporte se habilita con motivo y descripción válida" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › el link Cancelar navega de vuelta a /trips" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › página /reports › muestra opciones correctas en el selector de motivo" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › botón Reportar conductor desde Mis Solicitudes › muestra Reportar conductor en historial si hay viajes completados" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › botón Reportar conductor desde Mis Solicitudes › Reportar conductor navega a /reports con userId y name en query" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Reportar Conductor - E2E › botón Reportar conductor desde Mis Solicitudes › flujo completo: reportar conductor desde historial hasta confirmación" classname="report-driver.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="requests.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="webkit" tests="10" failures="0" skipped="10" time="0" errors="0">
+<testcase name="My Requests - E2E › should redirect to login when not authenticated" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › should show Mis Solicitudes heading and Panel de Pasajero" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › should show Activas and Historial tab buttons" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › should show U-Wallet sidebar with Recargar link" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › Activas tab: shows requests or empty state with Buscar Viaje link" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › empty Activas state shows Buscar Viaje link to /trips" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › Historial tab: shows completed requests or empty state" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › pending request shows Cancelar Solicitud button" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › accepted unpaid request shows payment buttons" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="My Requests - E2E › authenticated › completed request shows Calificar button" classname="requests.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="trips.spec.ts" timestamp="2026-06-11T20:11:25.067Z" hostname="webkit" tests="8" failures="0" skipped="8" time="0" errors="0">
+<testcase name="Trips Flow - E2E › should show trips list with heading" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should show sort buttons on trips list" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should navigate to trip detail on card click" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should show Solicitar Unirse button on a trip not owned by user" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should filter trips by origin zone" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should filter trips by destination zone" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should show empty state when no trips match filter" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Trips Flow - E2E › should clear filters and show all trips again" classname="trips.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>

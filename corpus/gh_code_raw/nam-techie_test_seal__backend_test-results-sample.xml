@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.TestSuite" tests="5" failures="2" errors="0" skipped="1" time="3.5">
+    <testcase name="testLoginSuccess" classname="com.example.AuthTest" time="1.2">
+    </testcase>
+    <testcase name="testLoginFailure" classname="com.example.AuthTest" time="0.8">
+        <failure message="Expected true, got false" type="AssertionError">
+            at com.example.AuthTest.testLoginFailure(AuthTest.java:42)
+            at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:123)
+        </failure>
+    </testcase>
+    <testcase name="testRegistration" classname="com.example.UserTest" time="0.5">
+    </testcase>
+    <testcase name="testPasswordValidation" classname="com.example.UserTest" time="0.9">
+        <failure message="Password too short" type="ValidationException">
+            at com.example.UserTest.testPasswordValidation(UserTest.java:67)
+        </failure>
+    </testcase>
+    <testcase name="testEmailFormat" classname="com.example.UserTest" time="0.1">
+        <skipped/>
+    </testcase>
+</testsuite>
+

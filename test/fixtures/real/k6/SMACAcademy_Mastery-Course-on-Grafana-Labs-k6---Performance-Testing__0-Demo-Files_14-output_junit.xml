@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<testsuites tests="1" failures="1">
+<testsuite name="k6 thresholds" tests="1" failures="1"><testcase name="http_req_duration - p(95)&lt;200"><failure message="failed" /></testcase>
+</testsuite >
+</testsuites >

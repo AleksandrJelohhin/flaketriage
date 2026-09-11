@@ -1,0 +1,91 @@
+<testsuites id="" name="" tests="18" failures="1" skipped="0" errors="0" time="44.519390000000016">
+<testsuite name="integration/00-playwright101.spec.ts" timestamp="2024-11-23T18:07:11.853Z" hostname="chromium" tests="5" failures="0" skipped="0" time="2.306" errors="0">
+<testcase name="Playwright 101 › Playwright 101" classname="integration/00-playwright101.spec.ts" time="0.003">
+<system-out>
+<![CDATA[TechGlobal
+]]>
+</system-out>
+</testcase>
+<testcase name="Playwright 101 › Playwright 101 - Test Case 3" classname="integration/00-playwright101.spec.ts" time="0.794">
+</testcase>
+<testcase name="Playwright 101 › Playwright 101 - Cucumber Syntax" classname="integration/00-playwright101.spec.ts" time="0.646">
+</testcase>
+<testcase name="Playwright 101 › Playwright 101 - Browser Fixture" classname="integration/00-playwright101.spec.ts" time="0.482">
+</testcase>
+<testcase name="Playwright 101 › Playwright 101 - Context Fixture" classname="integration/00-playwright101.spec.ts" time="0.381">
+</testcase>
+</testsuite>
+<testsuite name="integration/01-firstTest.spec.ts" timestamp="2024-11-23T18:07:11.853Z" hostname="chromium" tests="4" failures="1" skipped="0" time="31.385" errors="0">
+<testcase name="First Test Suite › Refresh, Navigate back and forward" classname="integration/01-firstTest.spec.ts" time="0.858">
+</testcase>
+<testcase name="First Test Suite › Valida page title" classname="integration/01-firstTest.spec.ts" time="0.257">
+</testcase>
+<testcase name="First Test Suite › Valida page url" classname="integration/01-firstTest.spec.ts" time="0.26">
+</testcase>
+<testcase name="First Test Suite › My First test" classname="integration/01-firstTest.spec.ts" time="30.01">
+<failure message="01-firstTest.spec.ts:45:7 My First test" type="FAILURE">
+<![CDATA[  [chromium] › integration/01-firstTest.spec.ts:45:7 › First Test Suite › My First test ────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('#lskdnflksankldnas')
+
+
+      50 |
+      51 |     // await page.click('#asdasdsad')
+    > 52 |     await myLogo.click()
+         |                  ^
+      53 |
+      54 |     await expect(myLogo).toBeVisible()
+      55 |   })
+        at /Users/jonathanaguilar/Desktop/playwright-e2e-b10/tests/integration/01-firstTest.spec.ts:52:18
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="integration/02-locators.spec.ts" timestamp="2024-11-23T18:07:11.853Z" hostname="chromium" tests="6" failures="0" skipped="0" time="3.05" errors="0">
+<testcase name="Playwright Locators › Playwright locator() API" classname="integration/02-locators.spec.ts" time="0.511">
+</testcase>
+<testcase name="Playwright Locators › Playwright - Custom Pseudo Classes" classname="integration/02-locators.spec.ts" time="0.38">
+<system-out>
+<![CDATA[3 is the amount of div elements in radio group
+1 is the real amount we need
+2 is the real amount we need
+]]>
+</system-out>
+</testcase>
+<testcase name="Playwright Locators › Chaining the Locators" classname="integration/02-locators.spec.ts" time="0.757">
+</testcase>
+<testcase name="Playwright Locators › Handling multiple elements" classname="integration/02-locators.spec.ts" time="0.626">
+</testcase>
+<testcase name="Playwright Locators › Playwright built-in locators" classname="integration/02-locators.spec.ts" time="0.41">
+</testcase>
+<testcase name="Playwright Locators › filter() locator API" classname="integration/02-locators.spec.ts" time="0.366">
+<system-out>
+<![CDATA[Amount of elements with label tag is: 9
+Amount of elements with label tag but Java is: 7
+Located wrappers are: 6
+Located wrappers are: 1
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="integration/03-annotations.spec.ts" timestamp="2024-11-23T18:07:11.853Z" hostname="chromium" tests="3" failures="0" skipped="0" time="6.449" errors="0">
+<testcase name="Annotations › Annotations - fail" classname="integration/03-annotations.spec.ts" time="5.389">
+<properties>
+<property name="fail" value="">
+</property>
+</properties>
+</testcase>
+<testcase name="Annotations › Annotations - slow" classname="integration/03-annotations.spec.ts" time="0.369">
+<properties>
+<property name="slow" value="">
+</property>
+</properties>
+</testcase>
+<testcase name="Annotations › Annotations - step" classname="integration/03-annotations.spec.ts" time="0.691">
+</testcase>
+</testsuite>
+</testsuites>

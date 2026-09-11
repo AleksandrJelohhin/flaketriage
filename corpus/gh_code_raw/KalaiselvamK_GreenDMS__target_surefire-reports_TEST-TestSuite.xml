@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1,619.773" tests="11" errors="0" skipped="0" failures="10">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\ELCOT\eclipse-workspace\GreenDMS\target\test-classes;C:\Users\ELCOT\eclipse-workspace\GreenDMS\target\classes;C:\Users\ELCOT\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\ELCOT\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\ELCOT\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\ELCOT\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\ELCOT\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ELCOT\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\ELCOT\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\ELCOT\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\ELCOT\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\ELCOT\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\ELCOT\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\ELCOT\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\ELCOT\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\ELCOT\.m2\repository\io\cucumber\cucumber-jvm-deps\1.0.6\cucumber-jvm-deps-1.0.6.jar;C:\Users\ELCOT\.m2\repository\info\cukes\cucumber-testng\1.2.5\cucumber-testng-1.2.5.jar;C:\Users\ELCOT\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\ELCOT\.m2\repository\info\cukes\cucumber-html\0.2.3\cucumber-html-0.2.3.jar;C:\Users\ELCOT\.m2\repository\info\cukes\cucumber-jvm-deps\1.0.5\cucumber-jvm-deps-1.0.5.jar;C:\Users\ELCOT\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\ELCOT\.m2\repository\com\github\mkolisnyk\cucumber-runner\1.3.5\cucumber-runner-1.3.5.jar;C:\Users\ELCOT\.m2\repository\com\github\mkolisnyk\cucumber-report-generator\1.3.5\cucumber-report-generator-1.3.5.jar;C:\Users\ELCOT\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\ELCOT\.m2\repository\batik\batik-transcoder\1.6-1\batik-transcoder-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-bridge\1.6-1\batik-bridge-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-gvt\1.6-1\batik-gvt-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-awt-util\1.6-1\batik-awt-util-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-util\1.6-1\batik-util-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-gui-util\1.6-1\batik-gui-util-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-ext\1.6-1\batik-ext-1.6-1.jar;C:\Users\ELCOT\.m2\repository\xml-apis\xmlParserAPIs\2.0.2\xmlParserAPIs-2.0.2.jar;C:\Users\ELCOT\.m2\repository\batik\batik-script\1.6-1\batik-script-1.6-1.jar;C:\Users\ELCOT\.m2\repository\rhino\js\1.5R4.1\js-1.5R4.1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-svg-dom\1.6-1\batik-svg-dom-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-dom\1.6-1\batik-dom-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-css\1.6-1\batik-css-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-xml\1.6-1\batik-xml-1.6-1.jar;C:\Users\ELCOT\.m2\repository\xerces\xercesImpl\2.5.0\xercesImpl-2.5.0.jar;C:\Users\ELCOT\.m2\repository\batik\batik-parser\1.6-1\batik-parser-1.6-1.jar;C:\Users\ELCOT\.m2\repository\com\itextpdf\itextpdf\5.5.11\itextpdf-5.5.11.jar;C:\Users\ELCOT\.m2\repository\com\cedarsoftware\json-io\4.9.12\json-io-4.9.12.jar;C:\Users\ELCOT\.m2\repository\info\cukes\cucumber-junit\1.2.5\cucumber-junit-1.2.5.jar;C:\Users\ELCOT\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\ELCOT\.m2\repository\org\xhtmlrenderer\flying-saucer-pdf\9.1.7\flying-saucer-pdf-9.1.7.jar;C:\Users\ELCOT\.m2\repository\com\lowagie\itext\2.1.7\itext-2.1.7.jar;C:\Users\ELCOT\.m2\repository\org\bouncycastle\bctsp-jdk14\1.38\bctsp-jdk14-1.38.jar;C:\Users\ELCOT\.m2\repository\org\xhtmlrenderer\flying-saucer-core\9.1.7\flying-saucer-core-9.1.7.jar;C:\Users\ELCOT\.m2\repository\org\apache\commons\commons-lang3\3.6\commons-lang3-3.6.jar;C:\Users\ELCOT\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\ELCOT\.m2\repository\org\javassist\javassist\3.22.0-CR2\javassist-3.22.0-CR2.jar;C:\Users\ELCOT\.m2\repository\joda-time\joda-time\2.9.9\joda-time-2.9.9.jar;C:\Users\ELCOT\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.1\plexus-utils-3.0.1.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\maven-plugin-api\2.0\maven-plugin-api-2.0.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\reporting\maven-reporting-api\2.0.8\maven-reporting-api-2.0.8.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0-alpha-9\doxia-sink-api-1.0-alpha-9.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\2.0.4.3\maven-reporting-impl-2.0.4.3.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\maven-project\2.0.4\maven-project-2.0.4.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\maven-settings\2.0.4\maven-settings-2.0.4.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\maven-profile\2.0.4\maven-profile-2.0.4.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\maven-model\2.0.4\maven-model-2.0.4.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\maven-artifact-manager\2.0.4\maven-artifact-manager-2.0.4.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\maven-repository-metadata\2.0.4\maven-repository-metadata-2.0.4.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-alpha-6\wagon-provider-api-1.0-alpha-6.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\maven-artifact\2.0.4\maven-artifact-2.0.4.jar;C:\Users\ELCOT\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9\plexus-container-default-1.0-alpha-9.jar;C:\Users\ELCOT\.m2\repository\classworlds\classworlds\1.1-alpha-2\classworlds-1.1-alpha-2.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\doxia\doxia-core\1.0\doxia-core-1.0.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\1.0\doxia-site-renderer-1.0.jar;C:\Users\ELCOT\.m2\repository\org\codehaus\plexus\plexus-i18n\1.0-beta-7\plexus-i18n-1.0-beta-7.jar;C:\Users\ELCOT\.m2\repository\org\codehaus\plexus\plexus-velocity\1.1.7\plexus-velocity-1.1.7.jar;C:\Users\ELCOT\.m2\repository\org\apache\velocity\velocity\1.5\velocity-1.5.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\doxia\doxia-decoration-model\1.0\doxia-decoration-model-1.0.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\doxia\doxia-module-apt\1.0\doxia-module-apt-1.0.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\doxia\doxia-module-fml\1.0\doxia-module-fml-1.0.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\doxia\doxia-module-xdoc\1.0\doxia-module-xdoc-1.0.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml\1.0\doxia-module-xhtml-1.0.jar;C:\Users\ELCOT\.m2\repository\commons-validator\commons-validator\1.2.0\commons-validator-1.2.0.jar;C:\Users\ELCOT\.m2\repository\commons-beanutils\commons-beanutils\1.7.0\commons-beanutils-1.7.0.jar;C:\Users\ELCOT\.m2\repository\commons-digester\commons-digester\1.6\commons-digester-1.6.jar;C:\Users\ELCOT\.m2\repository\oro\oro\2.0.8\oro-2.0.8.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\shared\maven-doxia-tools\1.0.2\maven-doxia-tools-1.0.2.jar;C:\Users\ELCOT\.m2\repository\info\cukes\gherkin\2.12.2\gherkin-2.12.2.jar;C:\Users\ELCOT\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ELCOT\.m2\repository\net\masterthought\cucumber-reporting\5.5.2\cucumber-reporting-5.5.2.jar;C:\Users\ELCOT\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.1\jackson-databind-2.12.1.jar;C:\Users\ELCOT\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.1\jackson-annotations-2.12.1.jar;C:\Users\ELCOT\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.1\jackson-core-2.12.1.jar;C:\Users\ELCOT\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.12.1\jackson-datatype-jsr310-2.12.1.jar;C:\Users\ELCOT\.m2\repository\org\apache\velocity\velocity-engine-core\2.2\velocity-engine-core-2.2.jar;C:\Users\ELCOT\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\ELCOT\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\ELCOT\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\ELCOT\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\ELCOT\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20200713.1\owasp-java-html-sanitizer-20200713.1.jar;C:\Users\ELCOT\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\ELCOT\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\ELCOT\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\ELCOT\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\ELCOT\.m2\repository\com\aventstack\extentreports\3.0.7\extentreports-3.0.7.jar;C:\Users\ELCOT\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\ELCOT\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\ELCOT\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\ELCOT\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\ELCOT\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\ELCOT\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\ELCOT\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\ELCOT\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\Users\ELCOT\.m2\repository\com\vimalselvam\cucumber-extentsreport\3.1.1\cucumber-extentsreport-3.1.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\ELCOT\AppData\Local\Temp\surefire1465323484469866919\surefirebooter7281876030292205251.jar C:\Users\ELCOT\AppData\Local\Temp\surefire1465323484469866919 2021-06-28T18-59-58_960-jvmRun1 surefire8096485233649960418tmp surefire_07587093221197621425tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\ELCOT\eclipse-workspace\GreenDMS\target\test-classes;C:\Users\ELCOT\eclipse-workspace\GreenDMS\target\classes;C:\Users\ELCOT\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\ELCOT\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\ELCOT\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\ELCOT\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\ELCOT\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\ELCOT\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ELCOT\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\ELCOT\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\ELCOT\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\ELCOT\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\ELCOT\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\ELCOT\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\ELCOT\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\ELCOT\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\ELCOT\.m2\repository\io\cucumber\cucumber-jvm-deps\1.0.6\cucumber-jvm-deps-1.0.6.jar;C:\Users\ELCOT\.m2\repository\info\cukes\cucumber-testng\1.2.5\cucumber-testng-1.2.5.jar;C:\Users\ELCOT\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\ELCOT\.m2\repository\info\cukes\cucumber-html\0.2.3\cucumber-html-0.2.3.jar;C:\Users\ELCOT\.m2\repository\info\cukes\cucumber-jvm-deps\1.0.5\cucumber-jvm-deps-1.0.5.jar;C:\Users\ELCOT\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\ELCOT\.m2\repository\com\github\mkolisnyk\cucumber-runner\1.3.5\cucumber-runner-1.3.5.jar;C:\Users\ELCOT\.m2\repository\com\github\mkolisnyk\cucumber-report-generator\1.3.5\cucumber-report-generator-1.3.5.jar;C:\Users\ELCOT\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\ELCOT\.m2\repository\batik\batik-transcoder\1.6-1\batik-transcoder-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-bridge\1.6-1\batik-bridge-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-gvt\1.6-1\batik-gvt-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-awt-util\1.6-1\batik-awt-util-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-util\1.6-1\batik-util-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-gui-util\1.6-1\batik-gui-util-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-ext\1.6-1\batik-ext-1.6-1.jar;C:\Users\ELCOT\.m2\repository\xml-apis\xmlParserAPIs\2.0.2\xmlParserAPIs-2.0.2.jar;C:\Users\ELCOT\.m2\repository\batik\batik-script\1.6-1\batik-script-1.6-1.jar;C:\Users\ELCOT\.m2\repository\rhino\js\1.5R4.1\js-1.5R4.1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-svg-dom\1.6-1\batik-svg-dom-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-dom\1.6-1\batik-dom-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-css\1.6-1\batik-css-1.6-1.jar;C:\Users\ELCOT\.m2\repository\batik\batik-xml\1.6-1\batik-xml-1.6-1.jar;C:\Users\ELCOT\.m2\repository\xerces\xercesImpl\2.5.0\xercesImpl-2.5.0.jar;C:\Users\ELCOT\.m2\repository\batik\batik-parser\1.6-1\batik-parser-1.6-1.jar;C:\Users\ELCOT\.m2\repository\com\itextpdf\itextpdf\5.5.11\itextpdf-5.5.11.jar;C:\Users\ELCOT\.m2\repository\com\cedarsoftware\json-io\4.9.12\json-io-4.9.12.jar;C:\Users\ELCOT\.m2\repository\info\cukes\cucumber-junit\1.2.5\cucumber-junit-1.2.5.jar;C:\Users\ELCOT\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\ELCOT\.m2\repository\org\xhtmlrenderer\flying-saucer-pdf\9.1.7\flying-saucer-pdf-9.1.7.jar;C:\Users\ELCOT\.m2\repository\com\lowagie\itext\2.1.7\itext-2.1.7.jar;C:\Users\ELCOT\.m2\repository\org\bouncycastle\bctsp-jdk14\1.38\bctsp-jdk14-1.38.jar;C:\Users\ELCOT\.m2\repository\org\xhtmlrenderer\flying-saucer-core\9.1.7\flying-saucer-core-9.1.7.jar;C:\Users\ELCOT\.m2\repository\org\apache\commons\commons-lang3\3.6\commons-lang3-3.6.jar;C:\Users\ELCOT\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\ELCOT\.m2\repository\org\javassist\javassist\3.22.0-CR2\javassist-3.22.0-CR2.jar;C:\Users\ELCOT\.m2\repository\joda-time\joda-time\2.9.9\joda-time-2.9.9.jar;C:\Users\ELCOT\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.1\plexus-utils-3.0.1.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\maven-plugin-api\2.0\maven-plugin-api-2.0.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\reporting\maven-reporting-api\2.0.8\maven-reporting-api-2.0.8.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0-alpha-9\doxia-sink-api-1.0-alpha-9.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\2.0.4.3\maven-reporting-impl-2.0.4.3.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\maven-project\2.0.4\maven-project-2.0.4.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\maven-settings\2.0.4\maven-settings-2.0.4.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\maven-profile\2.0.4\maven-profile-2.0.4.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\maven-model\2.0.4\maven-model-2.0.4.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\maven-artifact-manager\2.0.4\maven-artifact-manager-2.0.4.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\maven-repository-metadata\2.0.4\maven-repository-metadata-2.0.4.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-alpha-6\wagon-provider-api-1.0-alpha-6.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\maven-artifact\2.0.4\maven-artifact-2.0.4.jar;C:\Users\ELCOT\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9\plexus-container-default-1.0-alpha-9.jar;C:\Users\ELCOT\.m2\repository\classworlds\classworlds\1.1-alpha-2\classworlds-1.1-alpha-2.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\doxia\doxia-core\1.0\doxia-core-1.0.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\1.0\doxia-site-renderer-1.0.jar;C:\Users\ELCOT\.m2\repository\org\codehaus\plexus\plexus-i18n\1.0-beta-7\plexus-i18n-1.0-beta-7.jar;C:\Users\ELCOT\.m2\repository\org\codehaus\plexus\plexus-velocity\1.1.7\plexus-velocity-1.1.7.jar;C:\Users\ELCOT\.m2\repository\org\apache\velocity\velocity\1.5\velocity-1.5.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\doxia\doxia-decoration-model\1.0\doxia-decoration-model-1.0.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\doxia\doxia-module-apt\1.0\doxia-module-apt-1.0.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\doxia\doxia-module-fml\1.0\doxia-module-fml-1.0.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\doxia\doxia-module-xdoc\1.0\doxia-module-xdoc-1.0.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml\1.0\doxia-module-xhtml-1.0.jar;C:\Users\ELCOT\.m2\repository\commons-validator\commons-validator\1.2.0\commons-validator-1.2.0.jar;C:\Users\ELCOT\.m2\repository\commons-beanutils\commons-beanutils\1.7.0\commons-beanutils-1.7.0.jar;C:\Users\ELCOT\.m2\repository\commons-digester\commons-digester\1.6\commons-digester-1.6.jar;C:\Users\ELCOT\.m2\repository\oro\oro\2.0.8\oro-2.0.8.jar;C:\Users\ELCOT\.m2\repository\org\apache\maven\shared\maven-doxia-tools\1.0.2\maven-doxia-tools-1.0.2.jar;C:\Users\ELCOT\.m2\repository\info\cukes\gherkin\2.12.2\gherkin-2.12.2.jar;C:\Users\ELCOT\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ELCOT\.m2\repository\net\masterthought\cucumber-reporting\5.5.2\cucumber-reporting-5.5.2.jar;C:\Users\ELCOT\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.1\jackson-databind-2.12.1.jar;C:\Users\ELCOT\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.1\jackson-annotations-2.12.1.jar;C:\Users\ELCOT\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.1\jackson-core-2.12.1.jar;C:\Users\ELCOT\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.12.1\jackson-datatype-jsr310-2.12.1.jar;C:\Users\ELCOT\.m2\repository\org\apache\velocity\velocity-engine-core\2.2\velocity-engine-core-2.2.jar;C:\Users\ELCOT\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\ELCOT\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\ELCOT\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\ELCOT\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\ELCOT\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20200713.1\owasp-java-html-sanitizer-20200713.1.jar;C:\Users\ELCOT\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\ELCOT\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\ELCOT\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\ELCOT\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\ELCOT\.m2\repository\com\aventstack\extentreports\3.0.7\extentreports-3.0.7.jar;C:\Users\ELCOT\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\ELCOT\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\ELCOT\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\ELCOT\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\ELCOT\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\ELCOT\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\ELCOT\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\ELCOT\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\Users\ELCOT\.m2\repository\com\vimalselvam\cucumber-extentsreport\3.1.1\cucumber-extentsreport-3.1.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\ELCOT"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_281\jre"/>
+    <property name="basedir" value="C:\Users\ELCOT\eclipse-workspace\GreenDMS"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\ELCOT\AppData\Local\Temp\surefire1465323484469866919\surefirebooter7281876030292205251.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_281\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_281-b09"/>
+    <property name="user.name" value="ELCOT"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\ELCOT\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\ELCOT\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_281"/>
+    <property name="user.dir" value="C:\Users\ELCOT\eclipse-workspace\GreenDMS"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\Java\jdk1.8.0_281\bin;C:\Program Files\apache-maven-3.8.1\bin;C:\Users\ELCOT\AppData\Local\Microsoft\WindowsApps;C:\Users\ELCOT\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.281-b09"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="feature" classname="com.dms.runner.TestRunner" time="366.92">
+    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -&gt; xpath: //a[text()=&apos;Logout&apos;]] (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHARP&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2537d762975b6f0b75080baafad7fe3" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at com.dms.runner.TestRunner.feature(TestRunner.java:70)
+Caused by: org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+</failure>
+    <system-out><![CDATA[@AddDocuments
+Feature: Testing Add Documents Feature
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (AddDocumentsStepDef.java:20)- ***Moving to Add Documents page***
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:115)- Generic method called to navigate page:  com.dms.pages.AddDocumentsPage
+ INFO [main] (AddDocumentsStepDef.java:27)- ***Adding single document to Unassigned Folder***
+ INFO [main] (AddDocumentsStepDef.java:29)- Single -- selected
+ INFO [main] (AddDocumentsPage.java:57)- Uploaded file name is SampleTest1.xlsx
+ INFO [main] (AddDocumentsStepDef.java:32)- Unassigned Folder -- selected
+ INFO [main] (AddDocumentsStepDef.java:34)- Notes field filled
+ INFO [main] (AddDocumentsStepDef.java:36)- Saved
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:160)- Waiting for loadmodal disappear...
+ INFO [main] (TestBase.java:162)- Waited for loadmodal disappear...
+ INFO [main] (TestBase.java:196)- loadmodal
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  Scenario: Adding Single Document to Unassigned Folder # AddDocuments.feature:5
+    Given Open Browser                                  # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application                     # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application                       # LoginStepDef.loginToTheApplication()
+    Then Moving to Add Documents page                   # AddDocumentsStepDef.movingToAddDocumentsPage()
+    Then Add single document to Unassigned Folder       # AddDocumentsStepDef.addSingleDocumentToUnassignedFolder()
+    And Logout the application                          # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(AddDocuments.feature:11)
+
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (AddDocumentsStepDef.java:20)- ***Moving to Add Documents page***
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:115)- Generic method called to navigate page:  com.dms.pages.AddDocumentsPage
+ INFO [main] (AddDocumentsStepDef.java:42)- ***Adding single document to My Documents Folder***
+ INFO [main] (AddDocumentsStepDef.java:44)- Single -- selected
+ INFO [main] (AddDocumentsPage.java:57)- Uploaded file name is SampleTest1.xlsx
+ INFO [main] (AddDocumentsStepDef.java:47)- My Documents -- selected
+ INFO [main] (AddDocumentsStepDef.java:50)- Notes field filled
+ INFO [main] (AddDocumentsStepDef.java:52)- Saved
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:160)- Waiting for loadmodal disappear...
+ INFO [main] (TestBase.java:162)- Waited for loadmodal disappear...
+ INFO [main] (TestBase.java:196)- loadmodal
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  Scenario: Adding Single Document to MyDocuments Folder # AddDocuments.feature:14
+    Given Open Browser                                   # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application                      # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application                        # LoginStepDef.loginToTheApplication()
+    Then Moving to Add Documents page                    # AddDocumentsStepDef.movingToAddDocumentsPage()
+    And Add single document to My Documents Folder       # AddDocumentsStepDef.addSingleDocumentToMyDocumentsFolder()
+    And Logout the application                           # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(AddDocuments.feature:20)
+
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (AddDocumentsStepDef.java:20)- ***Moving to Add Documents page***
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:115)- Generic method called to navigate page:  com.dms.pages.AddDocumentsPage
+ INFO [main] (AddDocumentsStepDef.java:58)- ***Adding single document to DMS Folder***
+ INFO [main] (AddDocumentsStepDef.java:60)- Single -- selected
+ INFO [main] (AddDocumentsPage.java:57)- Uploaded file name is SampleTest1.xlsx
+ INFO [main] (AddDocumentsStepDef.java:63)- DMS folder -- selected
+ INFO [main] (AddDocumentsStepDef.java:65)- Document folder -- selected
+ INFO [main] (AddDocumentsStepDef.java:67)- BarCode entered
+ INFO [main] (AddDocumentsStepDef.java:71)- Notes field filled
+ INFO [main] (AddDocumentsStepDef.java:73)- Saved
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:160)- Waiting for loadmodal disappear...
+ INFO [main] (TestBase.java:162)- Waited for loadmodal disappear...
+ INFO [main] (TestBase.java:196)- loadmodal
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  @selectedScenario
+  Scenario: Adding Single Document to DMS Folder # AddDocuments.feature:23
+    Given Open Browser                           # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application              # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application                # LoginStepDef.loginToTheApplication()
+    Then Moving to Add Documents page            # AddDocumentsStepDef.movingToAddDocumentsPage()
+    And Add single document to DMS Folder        # AddDocumentsStepDef.addSingleDocumentToDMSFolder()
+    And Logout the application                   # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(AddDocuments.feature:29)
+
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (AddDocumentsStepDef.java:20)- ***Moving to Add Documents page***
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:115)- Generic method called to navigate page:  com.dms.pages.AddDocumentsPage
+ INFO [main] (AddDocumentsStepDef.java:80)- ***Adding Multiple documents to Unassigned Folder***
+ INFO [main] (AddDocumentsStepDef.java:82)- Multiple -- selected
+ INFO [main] (AddDocumentsPage.java:68)- First file name is SampleTest1.xlsx
+ INFO [main] (AddDocumentsPage.java:69)- Second file name is SampleTest2.xlsx
+ INFO [main] (AddDocumentsPage.java:70)- First file path is C:\Users\ELCOT\eclipse-workspace\GreenDMS\.\TestData\SampleTest1.xlsx
+ INFO [main] (AddDocumentsPage.java:71)- Second file path is C:\Users\ELCOT\eclipse-workspace\GreenDMS\.\TestData\SampleTest2.xlsx
+ INFO [main] (AddDocumentsStepDef.java:86)- Notes field filled
+ INFO [main] (AddDocumentsStepDef.java:88)- Saved
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:160)- Waiting for loadmodal disappear...
+ INFO [main] (TestBase.java:162)- Waited for loadmodal disappear...
+ INFO [main] (TestBase.java:196)- loadmodal
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  Scenario: Adding Multiple Document to Unassigned folder # AddDocuments.feature:32
+    Given Open Browser                                    # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application                       # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application                         # LoginStepDef.loginToTheApplication()
+    Then Moving to Add Documents page                     # AddDocumentsStepDef.movingToAddDocumentsPage()
+    And Add multiple documents to Unassigned Folder       # AddDocumentsStepDef.addMultipleDocumentToUnassignedFolder()
+    And Logout the application                            # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(AddDocuments.feature:38)
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}) on port 34847
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 28, 2021 7:00:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="feature" classname="com.dms.runner.TestRunner" time="22.275"/>
+  <testcase name="feature" classname="com.dms.runner.TestRunner" time="239.331">
+    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -&gt; xpath: //a[text()=&apos;Logout&apos;]] (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHARP&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2537d762975b6f0b75080baafad7fe3" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at com.dms.runner.TestRunner.feature(TestRunner.java:70)
+Caused by: org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+</failure>
+    <system-out><![CDATA[@Folder
+Feature: Testing Folders Feature
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:133)- Generic method called to navigate page:  com.dms.pages.FolderPage
+ INFO [main] (FolderStepDef.java:21)- ***Entered into Folder Page***
+ INFO [main] (FolderPage.java:42)- Entered to select Document radio button
+ INFO [main] (FolderPage.java:50)- Folder Name: DOCUMENT94
+ INFO [main] (FolderPage.java:56)- Folder Description: DOCUMENT94  Description
+ INFO [main] (FolderPage.java:61)- Folder Unique ID: TESTID94
+ INFO [main] (FolderPage.java:66)- Folder name should be created: Repository
+ INFO [main] (FolderPage.java:71)- Current Visible text Repository
+ INFO [main] (FolderPage.java:75)- Selected Parent Folder: Repository
+ INFO [main] (FolderPage.java:86)- First index selected
+ INFO [main] (FolderStepDef.java:38)- Created new folder is: DOCUMENT94
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:176)- Waiting for stop-scrolling disappear...
+ INFO [main] (TestBase.java:178)- Waited for stop-scrolling disappear...
+ INFO [main] (TestBase.java:196)- stop-scrolling
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:168)- Waiting for sweet-overlay disappear...
+ INFO [main] (TestBase.java:170)- Waited for sweet-overlay disappear...
+ INFO [main] (TestBase.java:196)- sweet-overlay
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  Scenario: Creating Document folder inside Repository # Folder.feature:5
+    Given Open Browser                                 # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application                    # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application                      # LoginStepDef.loginToTheApplication()
+    Then Moving to Folder page                         # FolderStepDef.movingToFolderPage()
+    Then Create Document Folder inside "Repository"    # FolderStepDef.createDocumentFolderInside(String)
+    And Logout the application                         # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(Folder.feature:11)
+
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:133)- Generic method called to navigate page:  com.dms.pages.FolderPage
+ INFO [main] (FolderStepDef.java:21)- ***Entered into Folder Page***
+ INFO [main] (FolderPage.java:50)- Folder Name: PARENT16
+ INFO [main] (FolderPage.java:56)- Folder Description: PARENT16  Description
+ INFO [main] (FolderPage.java:66)- Folder name should be created: Repository
+ INFO [main] (FolderPage.java:71)- Current Visible text Repository
+ INFO [main] (FolderPage.java:75)- Selected Parent Folder: Repository
+ INFO [main] (FolderPage.java:86)- First index selected
+ INFO [main] (FolderStepDef.java:49)- Created new folder is: PARENT16
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:176)- Waiting for stop-scrolling disappear...
+ INFO [main] (TestBase.java:178)- Waited for stop-scrolling disappear...
+ INFO [main] (TestBase.java:185)- Waiting for preloader disappear...
+ INFO [main] (TestBase.java:187)- Waited for preloader disappear...
+ INFO [main] (TestBase.java:196)- preloader
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:168)- Waiting for sweet-overlay disappear...
+ INFO [main] (TestBase.java:170)- Waited for sweet-overlay disappear...
+ INFO [main] (TestBase.java:196)- sweet-overlay
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  Scenario: Creating Parent Folder  # Folder.feature:13
+    Given Open Browser              # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application   # LoginStepDef.loginToTheApplication()
+    Then Moving to Folder page      # FolderStepDef.movingToFolderPage()
+    Then Create Parent Folder       # FolderStepDef.createParentFolder()
+    And Logout the application      # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(Folder.feature:19)
+
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:133)- Generic method called to navigate page:  com.dms.pages.FolderPage
+ INFO [main] (FolderStepDef.java:21)- ***Entered into Folder Page***
+ INFO [main] (FolderPage.java:42)- Entered to select Document radio button
+ INFO [main] (FolderPage.java:50)- Folder Name: DOCUMENT53
+ INFO [main] (FolderPage.java:56)- Folder Description: DOCUMENT53  Description
+ INFO [main] (FolderPage.java:61)- Folder Unique ID: TESTID53
+ INFO [main] (FolderPage.java:66)- Folder name should be created: PARENT16
+ INFO [main] (FolderPage.java:71)- Current Visible text Repository
+ INFO [main] (FolderPage.java:86)- First index selected
+ INFO [main] (FolderStepDef.java:38)- Created new folder is: DOCUMENT53
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:176)- Waiting for stop-scrolling disappear...
+ INFO [main] (TestBase.java:178)- Waited for stop-scrolling disappear...
+ INFO [main] (TestBase.java:196)- stop-scrolling
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:168)- Waiting for sweet-overlay disappear...
+ INFO [main] (TestBase.java:170)- Waited for sweet-overlay disappear...
+ INFO [main] (TestBase.java:196)- sweet-overlay
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  @FolderSpecific
+  Scenario: Creating Document Folder inside Parent Folder # Folder.feature:22
+    Given Open Browser                                    # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application                       # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application                         # LoginStepDef.loginToTheApplication()
+    Then Moving to Folder page                            # FolderStepDef.movingToFolderPage()
+    Then Create Document Folder inside "Parent Folder"    # FolderStepDef.createDocumentFolderInside(String)
+    And Logout the application                            # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(Folder.feature:28)
+
+]]></system-out>
+  </testcase>
+  <testcase name="feature" classname="com.dms.runner.TestRunner" time="239.952">
+    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -&gt; xpath: //a[text()=&apos;Logout&apos;]] (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHARP&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2537d762975b6f0b75080baafad7fe3" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at com.dms.runner.TestRunner.feature(TestRunner.java:70)
+Caused by: org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+</failure>
+    <system-out><![CDATA[@IndexGroup
+Feature: Index Group Feature
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (IndexGroupStepDef.java:21)- ***Entering to Index Groups Page***
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:115)- Generic method called to navigate page:  com.dms.pages.IndexGroupPage
+ INFO [main] (IndexGroupStepDef.java:27)- New button clicked
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (IndexGroupPage.java:52)- Index Group Name: TESTINDEX16
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:176)- Waiting for stop-scrolling disappear...
+ INFO [main] (TestBase.java:178)- Waited for stop-scrolling disappear...
+ INFO [main] (TestBase.java:185)- Waiting for preloader disappear...
+ INFO [main] (TestBase.java:187)- Waited for preloader disappear...
+ INFO [main] (TestBase.java:196)- preloader
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:168)- Waiting for sweet-overlay disappear...
+ INFO [main] (TestBase.java:170)- Waited for sweet-overlay disappear...
+ INFO [main] (TestBase.java:196)- sweet-overlay
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (IndexGroupPage.java:62)- Index Display Name: TESTINDEX16
+ INFO [main] (IndexGroupStepDef.java:41)- Index Field Type Selected
+ INFO [main] (IndexGroupStepDef.java:43)- Index Data Type Selected
+ INFO [main] (IndexGroupStepDef.java:45)- Max Length Filled
+ INFO [main] (IndexGroupStepDef.java:47)- Default value filled
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:219)- Record to be checked: TESTINDEX16
+ INFO [main] (TestBase.java:222)- current iteration record: TESTINDEX16
+ INFO [main] (TestBase.java:225)- Record Found
+ INFO [main] (IndexGroupStepDef.java:54)- Created Index Name verified successfully
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  Scenario: Creating Index Group                    # IndexGroup.feature:4
+    Given Open Browser                              # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application                 # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application                   # LoginStepDef.loginToTheApplication()
+    Then Moving to Index Group page                 # IndexGroupStepDef.movingToIndexGroupPage()
+    Then Click New button to create new index group # IndexGroupStepDef.clickNewButtonToCreateNewIndexGroup()
+    And Type Index Name                             # IndexGroupStepDef.typeIndexName()
+    And Save and provide necessary details          # IndexGroupStepDef.saveAndProvideNecessaryDetails()
+    And Save and verify created Index Group         # IndexGroupStepDef.saveAndVerifyCreatedIndexGroup()
+    And Logout the application                      # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(IndexGroup.feature:13)
+
+]]></system-out>
+  </testcase>
+  <testcase name="feature" classname="com.dms.runner.TestRunner" time="67.127">
+    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -&gt; xpath: //a[text()=&apos;Logout&apos;]] (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHARP&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2537d762975b6f0b75080baafad7fe3" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at com.dms.runner.TestRunner.feature(TestRunner.java:70)
+Caused by: org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+</failure>
+    <system-out><![CDATA[@LoginFeature
+Feature: Login Feature
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:98)- Checking title
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  Scenario: Check Login Functionality                        # Login.feature:4
+    Given Open Browser                                       # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application                          # LoginStepDef.goToGreeDMSApplication()
+    When Checking loging page title is "GREENDMS - 4.0.0.19" # LoginStepDef.checkingLogingPageTitleIs(String)
+    And Login to the application                             # LoginStepDef.loginToTheApplication()
+    And Logout the application                               # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(Login.feature:9)
+
+]]></system-out>
+  </testcase>
+  <testcase name="feature" classname="com.dms.runner.TestRunner" time="142.303">
+    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -&gt; xpath: //a[text()=&apos;Logout&apos;]] (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHARP&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2537d762975b6f0b75080baafad7fe3" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at com.dms.runner.TestRunner.feature(TestRunner.java:70)
+Caused by: org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+</failure>
+    <system-out><![CDATA[@MyQueue
+Feature: MyQueue Feature
+
+  Scenario Outline: Decline And Complete Documents    # MyQueue.feature:4
+    Given Open Browser
+    Then Go to GreenDMS application
+    Then Login to the application
+    Then Enter into MyQueue page
+    When Select "<Initial>" from the dropdown
+    Then Enter inside any one from the displayed list
+    Then Scroll down to the Status dropdown
+    And Select "<Final>" from the dropdown
+    Then Save to come to MyQueue page
+    And Select "<Final>" from the dropdown
+    And Verify the status of the changed document
+    And Logout the application
+
+    Examples: 
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (MyQueueStepDef.java:28)- ***Moving to MyQueue page***
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:115)- Generic method called to navigate page:  com.dms.pages.MyQueuePage
+ INFO [main] (MyQueueStepDef.java:35)- Status: In Progress
+ INFO [main] (MyQueueStepDef.java:40)- Selected Status: In Progess
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (MyQueueStepDef.java:58)- Entered into first document: 29 [1]
+ INFO [main] (TestBase.java:241)- Scrolled to the element
+ INFO [main] (MyQueueStepDef.java:35)- Status: Declined
+ INFO [main] (MyQueueStepDef.java:50)- Selected Status: Declined
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (MyQueueStepDef.java:74)- Saved
+ INFO [main] (MyQueueStepDef.java:35)- Status: Declined
+ INFO [main] (MyQueueStepDef.java:50)- Selected Status: Declined
+ INFO [main] (MyQueueStepDef.java:81)- Entered into Verification step
+ INFO [main] (MyQueuePage.java:78)- Record to be checked: 29 [1]
+ INFO [main] (TestBase.java:219)- Record to be checked: 29 [1]
+ INFO [main] (TestBase.java:222)- current iteration record: 29 [1]
+ INFO [main] (TestBase.java:225)- Record Found
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  @MyQueue
+  Scenario Outline: Decline And Complete Documents    # MyQueue.feature:21
+    Given Open Browser                                # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application                   # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application                     # LoginStepDef.loginToTheApplication()
+    Then Enter into MyQueue page                      # MyQueueStepDef.enterIntoMyQueuePage()
+    When Select "In Progress" from the dropdown       # MyQueueStepDef.selectFromTheDropdown(String)
+    Then Enter inside any one from the displayed list # MyQueueStepDef.enterInsideAnyOneFromTheDisplayedList()
+    Then Scroll down to the Status dropdown           # MyQueueStepDef.scrollDownToTheStatusDropdown()
+    And Select "Declined" from the dropdown           # MyQueueStepDef.selectFromTheDropdown(String)
+    Then Save to come to MyQueue page                 # MyQueueStepDef.saveToComeToMyQueuePage()
+    And Select "Declined" from the dropdown           # MyQueueStepDef.selectFromTheDropdown(String)
+    And Verify the status of the changed document     # MyQueueStepDef.verifyTheStatusOfTheChangedDocument()
+    And Logout the application                        # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(MyQueue.feature:16)
+
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (MyQueueStepDef.java:28)- ***Moving to MyQueue page***
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:115)- Generic method called to navigate page:  com.dms.pages.MyQueuePage
+ INFO [main] (MyQueueStepDef.java:35)- Status: In Progress
+ INFO [main] (MyQueueStepDef.java:40)- Selected Status: In Progess
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (MyQueueStepDef.java:58)- Entered into first document: 28 [1]
+ INFO [main] (TestBase.java:241)- Scrolled to the element
+ INFO [main] (MyQueueStepDef.java:35)- Status: Completed
+ INFO [main] (MyQueueStepDef.java:45)- Selected Status: Completed
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (MyQueueStepDef.java:74)- Saved
+ INFO [main] (MyQueueStepDef.java:35)- Status: Completed
+ INFO [main] (MyQueueStepDef.java:45)- Selected Status: Completed
+ INFO [main] (MyQueueStepDef.java:81)- Entered into Verification step
+ INFO [main] (MyQueuePage.java:78)- Record to be checked: 28 [1]
+ INFO [main] (TestBase.java:219)- Record to be checked: 28 [1]
+ INFO [main] (TestBase.java:222)- current iteration record: 28 [1]
+ INFO [main] (TestBase.java:225)- Record Found
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  @MyQueue
+  Scenario Outline: Decline And Complete Documents    # MyQueue.feature:22
+    Given Open Browser                                # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application                   # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application                     # LoginStepDef.loginToTheApplication()
+    Then Enter into MyQueue page                      # MyQueueStepDef.enterIntoMyQueuePage()
+    When Select "In Progress" from the dropdown       # MyQueueStepDef.selectFromTheDropdown(String)
+    Then Enter inside any one from the displayed list # MyQueueStepDef.enterInsideAnyOneFromTheDisplayedList()
+    Then Scroll down to the Status dropdown           # MyQueueStepDef.scrollDownToTheStatusDropdown()
+    And Select "Completed" from the dropdown          # MyQueueStepDef.selectFromTheDropdown(String)
+    Then Save to come to MyQueue page                 # MyQueueStepDef.saveToComeToMyQueuePage()
+    And Select "Completed" from the dropdown          # MyQueueStepDef.selectFromTheDropdown(String)
+    And Verify the status of the changed document     # MyQueueStepDef.verifyTheStatusOfTheChangedDocument()
+    And Logout the application                        # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(MyQueue.feature:16)
+
+]]></system-out>
+  </testcase>
+  <testcase name="feature" classname="com.dms.runner.TestRunner" time="214.67">
+    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -&gt; xpath: //a[text()=&apos;Logout&apos;]] (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHARP&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2537d762975b6f0b75080baafad7fe3" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at com.dms.runner.TestRunner.feature(TestRunner.java:70)
+Caused by: org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+</failure>
+    <system-out><![CDATA[@reports
+Feature: Testing Reports Feature
+
+  Scenario Outline: Generate all Reports One By One   # Reports.feature:4
+    Given Open Browser
+    Then Go to GreenDMS application
+    Then Login to the application
+    Then Moving to Reports page
+    Then Select "<Type of report>" from dropdown
+    Then Generate report by filling necessary details
+    And Verify report loaded in grid
+    And Logout the application
+
+    Examples: 
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (ReportsStepDef.java:21)- ***Entering to Reports Page***
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:115)- Generic method called to navigate page:  com.dms.pages.ReportsPage
+ INFO [main] (ReportsStepDef.java:28)- Report: Access History selected
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (ReportsStepDef.java:36)- User selected
+ INFO [main] (ReportsPage.java:50)- From Date is : 18-06-2021
+ INFO [main] (ReportsStepDef.java:38)- From date entered
+ INFO [main] (ReportsPage.java:58)- To Date is : 28-06-2021
+ INFO [main] (ReportsStepDef.java:40)- To date entered
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (ReportsStepDef.java:48)- Reports displayed in grid
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  @reports
+  Scenario Outline: Generate all Reports One By One   # Reports.feature:15
+    Given Open Browser                                # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application                   # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application                     # LoginStepDef.loginToTheApplication()
+    Then Moving to Reports page                       # ReportsStepDef.movingToReportsPage()
+    Then Select "Access History" from dropdown        # ReportsStepDef.selectFromDropdown(String)
+    Then Generate report by filling necessary details # ReportsStepDef.generateReportByFillingNecessaryDetails()
+    And Verify report loaded in grid                  # ReportsStepDef.verifyReportLoadedInGrid()
+    And Logout the application                        # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(Reports.feature:12)
+
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (ReportsStepDef.java:21)- ***Entering to Reports Page***
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:115)- Generic method called to navigate page:  com.dms.pages.ReportsPage
+ INFO [main] (ReportsStepDef.java:28)- Report: Document Folder Access History selected
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (ReportsStepDef.java:36)- User selected
+ INFO [main] (ReportsPage.java:50)- From Date is : 18-06-2021
+ INFO [main] (ReportsStepDef.java:38)- From date entered
+ INFO [main] (ReportsPage.java:58)- To Date is : 28-06-2021
+ INFO [main] (ReportsStepDef.java:40)- To date entered
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+
+  @reports
+  Scenario Outline: Generate all Reports One By One            # Reports.feature:16
+    Given Open Browser                                         # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application                            # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application                              # LoginStepDef.loginToTheApplication()
+    Then Moving to Reports page                                # ReportsStepDef.movingToReportsPage()
+    Then Select "Document Folder Access History" from dropdown # ReportsStepDef.selectFromDropdown(String)
+    Then Generate report by filling necessary details          # ReportsStepDef.generateReportByFillingNecessaryDetails()
+    And Verify report loaded in grid                           # ReportsStepDef.verifyReportLoadedInGrid()
+      java.lang.AssertionError
+      	at org.junit.Assert.fail(Assert.java:86)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertTrue(Assert.java:52)
+      	at com.dms.stepDefinitions.ReportsStepDef.verifyReportLoadedInGrid(ReportsStepDef.java:47)
+      	at ?.And Verify report loaded in grid(Reports.feature:11)
+
+    And Logout the application                                 # LoginStepDef.logoutTheApplication()
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (ReportsStepDef.java:21)- ***Entering to Reports Page***
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:115)- Generic method called to navigate page:  com.dms.pages.ReportsPage
+ INFO [main] (ReportsStepDef.java:57)- Report: Bulk Jobs selected
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (ReportsStepDef.java:48)- Reports displayed in grid
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  Scenario: Generate all Reports One By One # Reports.feature:20
+    Given Open Browser                      # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application         # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application           # LoginStepDef.loginToTheApplication()
+    Then Moving to Reports page             # ReportsStepDef.movingToReportsPage()
+    Then Select Bulk Job from dropdown      # ReportsStepDef.SelectBulkJobFromDropdown()
+    And Verify report loaded in grid        # ReportsStepDef.verifyReportLoadedInGrid()
+    And Logout the application              # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(Reports.feature:27)
+
+]]></system-out>
+  </testcase>
+  <testcase name="feature" classname="com.dms.runner.TestRunner" time="62.418">
+    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -&gt; xpath: //a[text()=&apos;Logout&apos;]] (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHARP&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2537d762975b6f0b75080baafad7fe3" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at com.dms.runner.TestRunner.feature(TestRunner.java:70)
+Caused by: org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+</failure>
+    <system-out><![CDATA[@Settings
+Feature: Settings Feature
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (SettingsStepDef.java:18)- ***Moving to General Settings Page***
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:133)- Generic method called to navigate page:  com.dms.pages.SettingsPage
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:176)- Waiting for stop-scrolling disappear...
+ INFO [main] (TestBase.java:178)- Waited for stop-scrolling disappear...
+ INFO [main] (TestBase.java:196)- stop-scrolling
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:168)- Waiting for sweet-overlay disappear...
+ INFO [main] (TestBase.java:170)- Waited for sweet-overlay disappear...
+ INFO [main] (TestBase.java:196)- sweet-overlay
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (SettingsStepDef.java:25)- All deails in General Settings page are filled
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  Scenario: Adding User                          # Settings.feature:4
+    Given Open Browser                           # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application              # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application                # LoginStepDef.loginToTheApplication()
+    Then Moving to General Setting page          # SettingsStepDef.movingToGeneralSettingPage()
+    Then Fill all the Setting details and Update # SettingsStepDef.fillAllTheSettingDetailsAndUpdate()
+    And Logout the application                   # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(Settings.feature:10)
+
+]]></system-out>
+  </testcase>
+  <testcase name="feature" classname="com.dms.runner.TestRunner" time="63.372">
+    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -&gt; xpath: //a[text()=&apos;Logout&apos;]] (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHARP&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2537d762975b6f0b75080baafad7fe3" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at com.dms.runner.TestRunner.feature(TestRunner.java:70)
+Caused by: org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+</failure>
+    <system-out><![CDATA[@Teams
+Feature: Teams Feature
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TeamsStepDef.java:18)- ***Moving to Add Users Page***
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:133)- Generic method called to navigate page:  com.dms.pages.TeamsPage
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:176)- Waiting for stop-scrolling disappear...
+ INFO [main] (TestBase.java:178)- Waited for stop-scrolling disappear...
+ INFO [main] (TestBase.java:185)- Waiting for preloader disappear...
+ INFO [main] (TestBase.java:187)- Waited for preloader disappear...
+ INFO [main] (TestBase.java:196)- preloader
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:168)- Waiting for sweet-overlay disappear...
+ INFO [main] (TestBase.java:170)- Waited for sweet-overlay disappear...
+ INFO [main] (TestBase.java:196)- sweet-overlay
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TeamsStepDef.java:25)- All Details Entered, Teams Created
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  Scenario: Adding User               # Teams.feature:4
+    Given Open Browser                # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application   # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application     # LoginStepDef.loginToTheApplication()
+    Then Moving to Add Teams page     # TeamsStepDef.movingToAddTeamsPage()
+    Then Fill Team details and Submit # TeamsStepDef.fillTeamDetailsAndSubmit()
+    And Logout the application        # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(Teams.feature:10)
+
+]]></system-out>
+  </testcase>
+  <testcase name="feature" classname="com.dms.runner.TestRunner" time="128.406">
+    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -&gt; xpath: //a[text()=&apos;Logout&apos;]] (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHARP&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2537d762975b6f0b75080baafad7fe3" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at com.dms.runner.TestRunner.feature(TestRunner.java:70)
+Caused by: org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+</failure>
+    <system-out><![CDATA[@Users
+Feature: Users Feature
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (UsersStepDef.java:19)- ***Moving to Add Users Page***
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:133)- Generic method called to navigate page:  com.dms.pages.UsersPage
+ INFO [main] (UsersPage.java:59)- User Name Filled: TESTUSERNAME85
+ INFO [main] (UsersPage.java:65)- Real Name Filled: TESTREALNAME85
+ INFO [main] (UsersPage.java:71)- Emp ID Filled: TESTEMPID85
+ INFO [main] (UsersStepDef.java:29)- Department selected
+ INFO [main] (UsersStepDef.java:31)- User Selected
+ INFO [main] (UsersStepDef.java:33)- Password Filled
+ INFO [main] (UsersStepDef.java:35)- Confirm Password Filled
+ INFO [main] (UsersStepDef.java:37)- Email ID Filled
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:176)- Waiting for stop-scrolling disappear...
+ INFO [main] (TestBase.java:178)- Waited for stop-scrolling disappear...
+ INFO [main] (TestBase.java:196)- stop-scrolling
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:168)- Waiting for sweet-overlay disappear...
+ INFO [main] (TestBase.java:170)- Waited for sweet-overlay disappear...
+ INFO [main] (TestBase.java:196)- sweet-overlay
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (UsersStepDef.java:39)- Submit button clicked
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  Scenario: Adding User                  # Users.feature:4
+    Given Open Browser                   # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application      # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application        # LoginStepDef.loginToTheApplication()
+    Then Moving to Add Users page        # UsersStepDef.movingToAddUsersPage()
+    Then Fill all the details and Submit # UsersStepDef.fillAllTheDetailsAndSubmit()
+    And Logout the application           # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(Users.feature:10)
+
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (UsersStepDef.java:46)- ***Moving to Departments Users Page***
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:133)- Generic method called to navigate page:  com.dms.pages.UsersPage
+ INFO [main] (UsersStepDef.java:53)- Created Department Name: TESTDEPARTMENT63
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (UsersPage.java:108)- Created Department: TESTDEPARTMENT63 Deleted Successfully
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:168)- Waiting for sweet-overlay disappear...
+ INFO [main] (TestBase.java:170)- Waited for sweet-overlay disappear...
+ INFO [main] (TestBase.java:196)- sweet-overlay
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:185)- Waiting for preloader disappear...
+ INFO [main] (TestBase.java:187)- Waited for preloader disappear...
+ INFO [main] (TestBase.java:196)- preloader
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  @UsersSelected
+  Scenario: Testing Department Page      # Users.feature:13
+    Given Open Browser                   # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application      # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application        # LoginStepDef.loginToTheApplication()
+    Then Moving to Department User page  # UsersStepDef.movingToDepartmentUserPage()
+    Then Fill Department Name and Submit # UsersStepDef.fillDepartmentNameAndSubmit()
+    And Delete the created Department    # UsersStepDef.deleteTheCreatedDepartment()
+    And Logout the application           # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(Users.feature:20)
+
+]]></system-out>
+  </testcase>
+  <testcase name="feature" classname="com.dms.runner.TestRunner" time="64.602">
+    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -&gt; xpath: //a[text()=&apos;Logout&apos;]] (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SHARP&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c2537d762975b6f0b75080baafad7fe3" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+	at com.dms.runner.TestRunner.feature(TestRunner.java:70)
+Caused by: org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c2537d762975b6f0b75080baafad7fe3
+</failure>
+    <system-out><![CDATA[@Workflow
+Feature: Testng Workflow Feature
+ INFO [main] (TestBase.java:47)- Browser set-up completed
+ INFO [main] (TestBase.java:68)- Logging in...
+ INFO [main] (TestBase.java:76)- Already logged in, so logging out and retrying...
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (WorkFlowStepDef.java:22)- **Navigating to Workflow Page**
+ INFO [main] (TestBase.java:145)- Waiting for preloader...
+ INFO [main] (TestBase.java:115)- Generic method called to navigate page:  com.dms.pages.WorkFlowPage
+ INFO [main] (WorkFlowStepDef.java:29)- Plus icon clicked
+ INFO [main] (WorkFlowStepDef.java:36)- Workflow created: TESTWORKFLOW44
+ INFO [main] (WorkFlowPage.java:59)- Step name entered: TESTSTEP44
+ INFO [main] (WorkFlowPage.java:61)- Lead time entered as 1
+ INFO [main] (WorkFlowStepDef.java:42)- Step details filled
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:176)- Waiting for stop-scrolling disappear...
+ INFO [main] (TestBase.java:178)- Waited for stop-scrolling disappear...
+ INFO [main] (TestBase.java:185)- Waiting for preloader disappear...
+ INFO [main] (TestBase.java:187)- Waited for preloader disappear...
+ INFO [main] (TestBase.java:196)- preloader
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:168)- Waiting for sweet-overlay disappear...
+ INFO [main] (TestBase.java:170)- Waited for sweet-overlay disappear...
+ INFO [main] (TestBase.java:196)- sweet-overlay
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (WorkFlowPage.java:69)- Save button clicked
+ INFO [main] (TestBase.java:219)- Record to be checked: TESTWORKFLOW44
+ INFO [main] (TestBase.java:222)- current iteration record: Select
+ INFO [main] (TestBase.java:222)- current iteration record: TESTWORKFLOW
+ INFO [main] (TestBase.java:222)- current iteration record: dummy
+ INFO [main] (TestBase.java:222)- current iteration record: TESTWORKFLOW93
+ INFO [main] (TestBase.java:222)- current iteration record: TESTWORKFLOW36
+ INFO [main] (TestBase.java:222)- current iteration record: TESTWORKFLOW14
+ INFO [main] (TestBase.java:222)- current iteration record: TESTWORKFLOW74
+ INFO [main] (TestBase.java:222)- current iteration record: TESTWORKFLOW91
+ INFO [main] (TestBase.java:222)- current iteration record: df
+ INFO [main] (TestBase.java:222)- current iteration record: TESTWORKFLOW58
+ INFO [main] (TestBase.java:222)- current iteration record: TESTWORKFLOW1
+ INFO [main] (TestBase.java:222)- current iteration record: TESTWORKFLOW42
+ INFO [main] (TestBase.java:222)- current iteration record: TESTWORKFLOW92
+ INFO [main] (TestBase.java:222)- current iteration record: TESTWORKFLOW79
+ INFO [main] (TestBase.java:222)- current iteration record: TESTWORKFLOW44
+ INFO [main] (TestBase.java:225)- Record Found
+ INFO [main] (WorkFlowStepDef.java:49)- Workflow creation completed successfully...
+ INFO [main] (TestBase.java:155)- Entered into while block...
+ INFO [main] (TestBase.java:193)- All waits are over
+ INFO [main] (TestBase.java:90)- Logging out...
+
+  Scenario: Creating Workflow                   # Workflow.feature:4
+    Given Open Browser                          # LoginStepDef.openGreeDMSApplication()
+    Then Go to GreenDMS application             # LoginStepDef.goToGreeDMSApplication()
+    Then Login to the application               # LoginStepDef.loginToTheApplication()
+    Then Enter into Workflow master page        # WorkFlowStepDef.enterIntoWorkflowMasterPage()
+    When Enter plus icon to create new Workflow # WorkFlowStepDef.enterPlusIconToCreateNewWorkflow()
+    Then Enter workflow name                    # WorkFlowStepDef.enterWorkflowName()
+    Then Fill step details                      # WorkFlowStepDef.fillStepDetails()
+    And Save workflow and verify                # WorkFlowStepDef.saveWorkflowAndVerify()
+    And Logout the application                  # LoginStepDef.logoutTheApplication()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (c2537d762975b6f0b75080baafad7fe3)] -> xpath: //a[text()='Logout']] (tried for 30 second(s) with 500 milliseconds interval)
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'SHARP', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56738}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: c2537d762975b6f0b75080baafad7fe3
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+      	at com.dms.base.TestBase.logout(TestBase.java:92)
+      	at com.dms.stepDefinitions.LoginStepDef.logoutTheApplication(LoginStepDef.java:43)
+      	at ?.And Logout the application(Workflow.feature:13)
+
+]]></system-out>
+  </testcase>
+</testsuite>

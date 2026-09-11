@@ -1,0 +1,2916 @@
+<testsuites id="" name="" tests="92" failures="63" skipped="0" errors="0" time="1184.703547">
+<testsuite name="accessibility.spec.js" timestamp="2026-01-31T20:34:09.363Z" hostname="chromium" tests="15" failures="8" skipped="0" time="242.719" errors="0">
+<testcase name="Accessibility Testing › login page should have no accessibility violations" classname="accessibility.spec.js" time="60.042">
+<failure message="accessibility.spec.js:10:7 login page should have no accessibility violations" type="FAILURE">
+<![CDATA[  [chromium] › accessibility.spec.js:10:7 › Accessibility Testing › login page should have no accessibility violations 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      3 |
+      4 | test.describe('Accessibility Testing', () => {
+    > 5 |   test.beforeEach(async ({ page }) => {
+        |        ^
+      6 |     await page.goto('/');
+      7 |     await injectAxe(page);
+      8 |   });
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\accessibility.spec.js:5:8
+
+    Error: page.goto: Test timeout of 30000ms exceeded.
+    Call log:
+      - navigating to "http://localhost:5173/", waiting until "load"
+
+
+      4 | test.describe('Accessibility Testing', () => {
+      5 |   test.beforeEach(async ({ page }) => {
+    > 6 |     await page.goto('/');
+        |                ^
+      7 |     await injectAxe(page);
+      8 |   });
+      9 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\accessibility.spec.js:6:16
+
+    Tearing down "context" exceeded the test timeout of 30000ms.
+]]>
+</failure>
+</testcase>
+<testcase name="Accessibility Testing › registration page should have no accessibility violations" classname="accessibility.spec.js" time="60.047">
+<failure message="accessibility.spec.js:19:7 registration page should have no accessibility violations" type="FAILURE">
+<![CDATA[  [chromium] › accessibility.spec.js:19:7 › Accessibility Testing › registration page should have no accessibility violations 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      3 |
+      4 | test.describe('Accessibility Testing', () => {
+    > 5 |   test.beforeEach(async ({ page }) => {
+        |        ^
+      6 |     await page.goto('/');
+      7 |     await injectAxe(page);
+      8 |   });
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\accessibility.spec.js:5:8
+
+    Error: page.goto: Test timeout of 30000ms exceeded.
+    Call log:
+      - navigating to "http://localhost:5173/", waiting until "load"
+
+
+      4 | test.describe('Accessibility Testing', () => {
+      5 |   test.beforeEach(async ({ page }) => {
+    > 6 |     await page.goto('/');
+        |                ^
+      7 |     await injectAxe(page);
+      8 |   });
+      9 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\accessibility.spec.js:6:16
+
+    Tearing down "context" exceeded the test timeout of 30000ms.
+]]>
+</failure>
+</testcase>
+<testcase name="Accessibility Testing › dashboard should have no accessibility violations" classname="accessibility.spec.js" time="19.842">
+<failure message="accessibility.spec.js:28:7 dashboard should have no accessibility violations" type="FAILURE">
+<![CDATA[  [chromium] › accessibility.spec.js:28:7 › Accessibility Testing › dashboard should have no accessibility violations 
+
+    AssertionError: 2 accessibility violations were detected
+
+    2 !== 0
+
+        at testResultDependsOnViolations (C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\node_modules\axe-playwright\dist\utils.js:16:26)
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\node_modules\axe-playwright\dist\index.js:143:51
+        at fulfilled (C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\node_modules\axe-playwright\dist\index.js:28:58)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\accessibility-Accessibilit-65b5b-no-accessibility-violations-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\accessibility-Accessibilit-65b5b-no-accessibility-violations-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\accessibility-Accessibilit-65b5b-no-accessibility-violations-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[┌─────────┬──────────────────────┬───────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────┐
+│ (index) │ id                   │ impact    │ description                                                                                                      │ nodes │
+├─────────┼──────────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────┤
+│ 0       │ [32m'color-contrast'[39m     │ [32m'serious'[39m │ [32m'Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds'[39m │ [33m2[39m     │
+│ 1       │ [32m'link-in-text-block'[39m │ [32m'serious'[39m │ [32m'Ensure links are distinguished from surrounding text in a way that does not rely on color'[39m                      │ [33m1[39m     │
+└─────────┴──────────────────────┴───────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────┘
+┌─────────┬─────────────┬────────────┐
+│ (index) │ target      │ violations │
+├─────────┼─────────────┼────────────┤
+│ 0       │ [32m'["p"]'[39m     │ [32m'[0]'[39m      │
+│ 1       │ [32m'[".mt-6"]'[39m │ [32m'[0]'[39m      │
+│ 2       │ [32m'["a"]'[39m     │ [32m'[1]'[39m      │
+└─────────┴─────────────┴────────────┘
+
+[[ATTACHMENT|test-results\accessibility-Accessibilit-65b5b-no-accessibility-violations-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\accessibility-Accessibilit-65b5b-no-accessibility-violations-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\accessibility-Accessibilit-65b5b-no-accessibility-violations-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accessibility Testing › form inputs should have proper labels" classname="accessibility.spec.js" time="12.384">
+</testcase>
+<testcase name="Accessibility Testing › buttons should have accessible names" classname="accessibility.spec.js" time="1.074">
+</testcase>
+<testcase name="Accessibility Testing › keyboard navigation should work on login form" classname="accessibility.spec.js" time="1.742">
+</testcase>
+<testcase name="Accessibility Testing › error messages should be announced to screen readers" classname="accessibility.spec.js" time="7.253">
+</testcase>
+<testcase name="Accessibility Testing › images should have alt text" classname="accessibility.spec.js" time="2.402">
+</testcase>
+<testcase name="Accessibility Testing › color contrast should meet WCAG AA standards" classname="accessibility.spec.js" time="8.273">
+<failure message="accessibility.spec.js:121:7 color contrast should meet WCAG AA standards" type="FAILURE">
+<![CDATA[  [chromium] › accessibility.spec.js:121:7 › Accessibility Testing › color contrast should meet WCAG AA standards 
+
+    AssertionError: 2 accessibility violations were detected
+
+    2 !== 0
+
+        at testResultDependsOnViolations (C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\node_modules\axe-playwright\dist\utils.js:16:26)
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\node_modules\axe-playwright\dist\index.js:143:51
+        at fulfilled (C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\node_modules\axe-playwright\dist\index.js:28:58)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\accessibility-Accessibilit-7b9d3-ould-meet-WCAG-AA-standards-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\accessibility-Accessibilit-7b9d3-ould-meet-WCAG-AA-standards-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\accessibility-Accessibilit-7b9d3-ould-meet-WCAG-AA-standards-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[┌─────────┬──────────────────────┬───────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────┐
+│ (index) │ id                   │ impact    │ description                                                                                                      │ nodes │
+├─────────┼──────────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────┤
+│ 0       │ [32m'color-contrast'[39m     │ [32m'serious'[39m │ [32m'Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds'[39m │ [33m2[39m     │
+│ 1       │ [32m'link-in-text-block'[39m │ [32m'serious'[39m │ [32m'Ensure links are distinguished from surrounding text in a way that does not rely on color'[39m                      │ [33m1[39m     │
+└─────────┴──────────────────────┴───────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────┘
+
+[[ATTACHMENT|test-results\accessibility-Accessibilit-7b9d3-ould-meet-WCAG-AA-standards-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\accessibility-Accessibilit-7b9d3-ould-meet-WCAG-AA-standards-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\accessibility-Accessibilit-7b9d3-ould-meet-WCAG-AA-standards-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accessibility Testing › page should have proper heading hierarchy" classname="accessibility.spec.js" time="3.971">
+<failure message="accessibility.spec.js:129:7 page should have proper heading hierarchy" type="FAILURE">
+<![CDATA[  [chromium] › accessibility.spec.js:129:7 › Accessibility Testing › page should have proper heading hierarchy 
+
+    AssertionError: 2 accessibility violations were detected
+
+    2 !== 0
+
+        at testResultDependsOnViolations (C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\node_modules\axe-playwright\dist\utils.js:16:26)
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\node_modules\axe-playwright\dist\index.js:143:51
+        at fulfilled (C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\node_modules\axe-playwright\dist\index.js:28:58)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\accessibility-Accessibilit-29f05-ve-proper-heading-hierarchy-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\accessibility-Accessibilit-29f05-ve-proper-heading-hierarchy-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\accessibility-Accessibilit-29f05-ve-proper-heading-hierarchy-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[┌─────────┬──────────────────────┬───────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────┐
+│ (index) │ id                   │ impact    │ description                                                                                                      │ nodes │
+├─────────┼──────────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────┤
+│ 0       │ [32m'color-contrast'[39m     │ [32m'serious'[39m │ [32m'Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds'[39m │ [33m2[39m     │
+│ 1       │ [32m'link-in-text-block'[39m │ [32m'serious'[39m │ [32m'Ensure links are distinguished from surrounding text in a way that does not rely on color'[39m                      │ [33m1[39m     │
+└─────────┴──────────────────────┴───────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────┘
+
+[[ATTACHMENT|test-results\accessibility-Accessibilit-29f05-ve-proper-heading-hierarchy-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\accessibility-Accessibilit-29f05-ve-proper-heading-hierarchy-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\accessibility-Accessibilit-29f05-ve-proper-heading-hierarchy-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accessibility Testing › interactive elements should be keyboard accessible" classname="accessibility.spec.js" time="7.064">
+</testcase>
+<testcase name="Accessibility Testing › modal dialogs should trap focus" classname="accessibility.spec.js" time="36.118">
+<failure message="accessibility.spec.js:170:7 modal dialogs should trap focus" type="FAILURE">
+<![CDATA[  [chromium] › accessibility.spec.js:170:7 › Accessibility Testing › modal dialogs should trap focus 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /create project/i })
+
+
+      182 |     
+      183 |     // Open create project modal
+    > 184 |     await page.getByRole('button', { name: /create project/i }).click();
+          |                                                                 ^
+      185 |     
+      186 |     const modal = page.getByRole('dialog');
+      187 |     await expect(modal).toBeVisible();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\accessibility.spec.js:184:65
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\accessibility-Accessibilit-7cd9a-l-dialogs-should-trap-focus-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\accessibility-Accessibilit-7cd9a-l-dialogs-should-trap-focus-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\accessibility-Accessibilit-7cd9a-l-dialogs-should-trap-focus-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\accessibility-Accessibilit-7cd9a-l-dialogs-should-trap-focus-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\accessibility-Accessibilit-7cd9a-l-dialogs-should-trap-focus-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\accessibility-Accessibilit-7cd9a-l-dialogs-should-trap-focus-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Accessibility Testing › skip to main content link should be present" classname="accessibility.spec.js" time="10.864">
+</testcase>
+<testcase name="Screen Reader Compatibility › landmarks should be properly defined" classname="accessibility.spec.js" time="10.055">
+<failure message="accessibility.spec.js:214:7 landmarks should be properly defined" type="FAILURE">
+<![CDATA[  [chromium] › accessibility.spec.js:214:7 › Screen Reader Compatibility › landmarks should be properly defined 
+
+    AssertionError: 2 accessibility violations were detected
+
+    2 !== 0
+
+        at testResultDependsOnViolations (C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\node_modules\axe-playwright\dist\utils.js:16:26)
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\node_modules\axe-playwright\dist\index.js:143:51
+        at fulfilled (C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\node_modules\axe-playwright\dist\index.js:28:58)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\accessibility-Screen-Reade-b1423--should-be-properly-defined-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\accessibility-Screen-Reade-b1423--should-be-properly-defined-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\accessibility-Screen-Reade-b1423--should-be-properly-defined-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[┌─────────┬──────────────────────┬───────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────┐
+│ (index) │ id                   │ impact    │ description                                                                                                      │ nodes │
+├─────────┼──────────────────────┼───────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────┤
+│ 0       │ [32m'color-contrast'[39m     │ [32m'serious'[39m │ [32m'Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds'[39m │ [33m2[39m     │
+│ 1       │ [32m'link-in-text-block'[39m │ [32m'serious'[39m │ [32m'Ensure links are distinguished from surrounding text in a way that does not rely on color'[39m                      │ [33m1[39m     │
+└─────────┴──────────────────────┴───────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────┘
+
+[[ATTACHMENT|test-results\accessibility-Screen-Reade-b1423--should-be-properly-defined-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\accessibility-Screen-Reade-b1423--should-be-properly-defined-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\accessibility-Screen-Reade-b1423--should-be-properly-defined-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Screen Reader Compatibility › dynamic content updates should be announced" classname="accessibility.spec.js" time="1.588">
+<failure message="accessibility.spec.js:226:7 dynamic content updates should be announced" type="FAILURE">
+<![CDATA[  [chromium] › accessibility.spec.js:226:7 › Screen Reader Compatibility › dynamic content updates should be announced 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      234 |     const count = await liveRegions.count();
+      235 |     
+    > 236 |     expect(count).toBeGreaterThan(0);
+          |                   ^
+      237 |   });
+      238 | });
+      239 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\accessibility.spec.js:236:19
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\accessibility-Screen-Reade-8fb2f-updates-should-be-announced-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\accessibility-Screen-Reade-8fb2f-updates-should-be-announced-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\accessibility-Screen-Reade-8fb2f-updates-should-be-announced-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\accessibility-Screen-Reade-8fb2f-updates-should-be-announced-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\accessibility-Screen-Reade-8fb2f-updates-should-be-announced-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\accessibility-Screen-Reade-8fb2f-updates-should-be-announced-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="auth.spec.js" timestamp="2026-01-31T20:34:09.363Z" hostname="chromium" tests="10" failures="3" skipped="0" time="85.328" errors="0">
+<testcase name="Authentication Flow › should display login page by default" classname="auth.spec.js" time="1.877">
+</testcase>
+<testcase name="Authentication Flow › should show validation errors for empty form" classname="auth.spec.js" time="1.995">
+</testcase>
+<testcase name="Authentication Flow › should show error for invalid email format" classname="auth.spec.js" time="3.395">
+</testcase>
+<testcase name="Authentication Flow › should navigate to register page" classname="auth.spec.js" time="1.927">
+</testcase>
+<testcase name="Authentication Flow › should show password visibility toggle" classname="auth.spec.js" time="34.437">
+<failure message="auth.spec.js:37:7 should show password visibility toggle" type="FAILURE">
+<![CDATA[  [chromium] › auth.spec.js:37:7 › Authentication Flow › should show password visibility toggle ────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /show password/i })
+
+
+      47 |     
+      48 |     // Click again to hide
+    > 49 |     await toggleButton.click();
+         |                        ^
+      50 |     await expect(passwordInput).toHaveAttribute('type', 'password');
+      51 |   });
+      52 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\auth.spec.js:49:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\auth-Authentication-Flow-s-b7df5--password-visibility-toggle-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\auth-Authentication-Flow-s-b7df5--password-visibility-toggle-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\auth-Authentication-Flow-s-b7df5--password-visibility-toggle-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\auth-Authentication-Flow-s-b7df5--password-visibility-toggle-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\auth-Authentication-Flow-s-b7df5--password-visibility-toggle-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\auth-Authentication-Flow-s-b7df5--password-visibility-toggle-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication Flow › should remember email when checkbox is checked" classname="auth.spec.js" time="2.353">
+<failure message="auth.spec.js:53:7 should remember email when checkbox is checked" type="FAILURE">
+<![CDATA[  [chromium] › auth.spec.js:53:7 › Authentication Flow › should remember email when checkbox is checked 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "test@example.com"
+    Received: null
+
+      62 |     // Email should be remembered (via localStorage)
+      63 |     const savedEmail = await page.evaluate(() => localStorage.getItem('rememberedEmail'));
+    > 64 |     expect(savedEmail).toBe(email);
+         |                        ^
+      65 |   });
+      66 | });
+      67 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\auth.spec.js:64:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\auth-Authentication-Flow-s-ec305-il-when-checkbox-is-checked-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\auth-Authentication-Flow-s-ec305-il-when-checkbox-is-checked-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\auth-Authentication-Flow-s-ec305-il-when-checkbox-is-checked-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\auth-Authentication-Flow-s-ec305-il-when-checkbox-is-checked-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\auth-Authentication-Flow-s-ec305-il-when-checkbox-is-checked-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\auth-Authentication-Flow-s-ec305-il-when-checkbox-is-checked-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Registration Flow › should display all registration form fields" classname="auth.spec.js" time="1.55">
+</testcase>
+<testcase name="Registration Flow › should validate password strength" classname="auth.spec.js" time="1.7">
+</testcase>
+<testcase name="Registration Flow › should validate password confirmation match" classname="auth.spec.js" time="1.864">
+</testcase>
+<testcase name="Registration Flow › should toggle both password fields visibility" classname="auth.spec.js" time="34.23">
+<failure message="auth.spec.js:101:7 should toggle both password fields visibility" type="FAILURE">
+<![CDATA[  [chromium] › auth.spec.js:101:7 › Registration Flow › should toggle both password fields visibility 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /show password/i }).last()
+
+
+      108 |     
+      109 |     // Toggle confirm password
+    > 110 |     await page.getByRole('button', { name: /show password/i }).last().click();
+          |                                                                       ^
+      111 |     await expect(confirmInput).toHaveAttribute('type', 'text');
+      112 |   });
+      113 | });
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\auth.spec.js:110:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\auth-Registration-Flow-sho-8cd23--password-fields-visibility-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\auth-Registration-Flow-sho-8cd23--password-fields-visibility-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\auth-Registration-Flow-sho-8cd23--password-fields-visibility-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\auth-Registration-Flow-sho-8cd23--password-fields-visibility-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\auth-Registration-Flow-sho-8cd23--password-fields-visibility-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\auth-Registration-Flow-sho-8cd23--password-fields-visibility-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="navigation.spec.js" timestamp="2026-01-31T20:34:09.363Z" hostname="chromium" tests="15" failures="14" skipped="0" time="307.68" errors="0">
+<testcase name="Navigation › should navigate to all main pages from landing" classname="navigation.spec.js" time="7.269">
+<failure message="navigation.spec.js:4:7 should navigate to all main pages from landing" type="FAILURE">
+<![CDATA[  [chromium] › navigation.spec.js:4:7 › Navigation › should navigate to all main pages from landing 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('link', { name: /about/i })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('link', { name: /about/i })
+
+
+       6 |     
+       7 |     // Check for main navigation links
+    >  8 |     await expect(page.getByRole('link', { name: /about/i })).toBeVisible();
+         |                                                              ^
+       9 |     
+      10 |     // Click About link
+      11 |     await page.getByRole('link', { name: /about/i }).click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\navigation.spec.js:8:62
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\navigation-Navigation-shou-ac4ab-all-main-pages-from-landing-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\navigation-Navigation-shou-ac4ab-all-main-pages-from-landing-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\navigation-Navigation-shou-ac4ab-all-main-pages-from-landing-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\navigation-Navigation-shou-ac4ab-all-main-pages-from-landing-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\navigation-Navigation-shou-ac4ab-all-main-pages-from-landing-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\navigation-Navigation-shou-ac4ab-all-main-pages-from-landing-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Navigation › should show sidebar navigation when authenticated" classname="navigation.spec.js" time="7.747">
+<failure message="navigation.spec.js:15:7 should show sidebar navigation when authenticated" type="FAILURE">
+<![CDATA[  [chromium] › navigation.spec.js:15:7 › Navigation › should show sidebar navigation when authenticated 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('[data-testid="sidebar"]')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="sidebar"]')
+
+
+      28 |     
+      29 |     // Check for sidebar navigation
+    > 30 |     await expect(page.locator('[data-testid="sidebar"]')).toBeVisible();
+         |                                                           ^
+      31 |     await expect(page.getByRole('link', { name: /dashboard/i })).toBeVisible();
+      32 |     await expect(page.getByRole('link', { name: /projects/i })).toBeVisible();
+      33 |     await expect(page.getByRole('link', { name: /tasks/i })).toBeVisible();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\navigation.spec.js:30:59
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\navigation-Navigation-shou-2949b-vigation-when-authenticated-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\navigation-Navigation-shou-2949b-vigation-when-authenticated-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\navigation-Navigation-shou-2949b-vigation-when-authenticated-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\navigation-Navigation-shou-2949b-vigation-when-authenticated-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\navigation-Navigation-shou-2949b-vigation-when-authenticated-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\navigation-Navigation-shou-2949b-vigation-when-authenticated-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Navigation › should navigate between authenticated pages" classname="navigation.spec.js" time="33.85">
+<failure message="navigation.spec.js:36:7 should navigate between authenticated pages" type="FAILURE">
+<![CDATA[  [chromium] › navigation.spec.js:36:7 › Navigation › should navigate between authenticated pages ──
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('link', { name: /profile/i })
+
+
+      48 |     
+      49 |     // Navigate to Profile
+    > 50 |     await page.getByRole('link', { name: /profile/i }).click();
+         |                                                        ^
+      51 |     await expect(page).toHaveURL(/\/profile/);
+      52 |     
+      53 |     // Navigate to Settings
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\navigation.spec.js:50:56
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\navigation-Navigation-shou-a7b24-between-authenticated-pages-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\navigation-Navigation-shou-a7b24-between-authenticated-pages-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\navigation-Navigation-shou-a7b24-between-authenticated-pages-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\navigation-Navigation-shou-a7b24-between-authenticated-pages-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\navigation-Navigation-shou-a7b24-between-authenticated-pages-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\navigation-Navigation-shou-a7b24-between-authenticated-pages-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Navigation › should handle browser back/forward navigation" classname="navigation.spec.js" time="36.115">
+<failure message="navigation.spec.js:62:7 should handle browser back/forward navigation" type="FAILURE">
+<![CDATA[  [chromium] › navigation.spec.js:62:7 › Navigation › should handle browser back/forward navigation 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('link', { name: /about/i })
+
+
+      64 |     
+      65 |     // Navigate to About
+    > 66 |     await page.getByRole('link', { name: /about/i }).click();
+         |                                                      ^
+      67 |     await expect(page).toHaveURL(/\/about/);
+      68 |     
+      69 |     // Go back
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\navigation.spec.js:66:54
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\navigation-Navigation-shou-6069a-ser-back-forward-navigation-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\navigation-Navigation-shou-6069a-ser-back-forward-navigation-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\navigation-Navigation-shou-6069a-ser-back-forward-navigation-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\navigation-Navigation-shou-6069a-ser-back-forward-navigation-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\navigation-Navigation-shou-6069a-ser-back-forward-navigation-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\navigation-Navigation-shou-6069a-ser-back-forward-navigation-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Protected Routes › should redirect to login when accessing protected route unauthenticated" classname="navigation.spec.js" time="1.855">
+</testcase>
+<testcase name="Protected Routes › should allow access to protected routes when authenticated" classname="navigation.spec.js" time="7.418">
+<failure message="navigation.spec.js:87:7 should allow access to protected routes when authenticated" type="FAILURE">
+<![CDATA[  [chromium] › navigation.spec.js:87:7 › Protected Routes › should allow access to protected routes when authenticated 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/dashboard/
+    Received string:  "http://localhost:5173/login"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        8 × unexpected value "http://localhost:5173/login"
+
+
+       97 |     
+       98 |     await page.goto('/dashboard');
+    >  99 |     await expect(page).toHaveURL(/\/dashboard/);
+          |                        ^
+      100 |     await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
+      101 |   });
+      102 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\navigation.spec.js:99:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\navigation-Protected-Route-bbed6-d-routes-when-authenticated-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\navigation-Protected-Route-bbed6-d-routes-when-authenticated-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\navigation-Protected-Route-bbed6-d-routes-when-authenticated-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\navigation-Protected-Route-bbed6-d-routes-when-authenticated-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\navigation-Protected-Route-bbed6-d-routes-when-authenticated-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\navigation-Protected-Route-bbed6-d-routes-when-authenticated-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Protected Routes › should redirect to dashboard when accessing login while authenticated" classname="navigation.spec.js" time="33.834">
+<failure message="navigation.spec.js:103:7 should redirect to dashboard when accessing login while authenticated" type="FAILURE">
+<![CDATA[  [chromium] › navigation.spec.js:103:7 › Protected Routes › should redirect to dashboard when accessing login while authenticated 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForURL: Test timeout of 30000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation until "load"
+    ============================================================
+
+      115 |     
+      116 |     // Should redirect to dashboard
+    > 117 |     await page.waitForURL(/\/dashboard/);
+          |                ^
+      118 |     await expect(page).toHaveURL(/\/dashboard/);
+      119 |   });
+      120 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\navigation.spec.js:117:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\navigation-Protected-Route-8809e-g-login-while-authenticated-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\navigation-Protected-Route-8809e-g-login-while-authenticated-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\navigation-Protected-Route-8809e-g-login-while-authenticated-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\navigation-Protected-Route-8809e-g-login-while-authenticated-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\navigation-Protected-Route-8809e-g-login-while-authenticated-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\navigation-Protected-Route-8809e-g-login-while-authenticated-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Protected Routes › should restrict admin routes to admin users" classname="navigation.spec.js" time="1.886">
+<failure message="navigation.spec.js:121:7 should restrict admin routes to admin users" type="FAILURE">
+<![CDATA[  [chromium] › navigation.spec.js:121:7 › Protected Routes › should restrict admin routes to admin users 
+
+    Error: expect(received).not.toContain(expected) // indexOf
+
+    Expected substring: not "/admin"
+    Received string:        "http://localhost:5173/admin"
+
+      136 |     // Should redirect or show unauthorized
+      137 |     const url = page.url();
+    > 138 |     expect(url).not.toContain('/admin');
+          |                     ^
+      139 |   });
+      140 | });
+      141 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\navigation.spec.js:138:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\navigation-Protected-Route-6ac27-admin-routes-to-admin-users-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\navigation-Protected-Route-6ac27-admin-routes-to-admin-users-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\navigation-Protected-Route-6ac27-admin-routes-to-admin-users-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\navigation-Protected-Route-6ac27-admin-routes-to-admin-users-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\navigation-Protected-Route-6ac27-admin-routes-to-admin-users-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\navigation-Protected-Route-6ac27-admin-routes-to-admin-users-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Mobile Navigation › should show mobile menu toggle" classname="navigation.spec.js" time="6.673">
+<failure message="navigation.spec.js:145:7 should show mobile menu toggle" type="FAILURE">
+<![CDATA[  [chromium] › navigation.spec.js:145:7 › Mobile Navigation › should show mobile menu toggle ───────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('button', { name: /menu/i })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('button', { name: /menu/i })
+
+
+      158 |     // Look for mobile menu button
+      159 |     const menuButton = page.getByRole('button', { name: /menu/i });
+    > 160 |     await expect(menuButton).toBeVisible();
+          |                              ^
+      161 |   });
+      162 |
+      163 |   test('should open mobile menu', async ({ page }) => {
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\navigation.spec.js:160:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\navigation-Mobile-Navigation-should-show-mobile-menu-toggle-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\navigation-Mobile-Navigation-should-show-mobile-menu-toggle-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\navigation-Mobile-Navigation-should-show-mobile-menu-toggle-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\navigation-Mobile-Navigation-should-show-mobile-menu-toggle-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\navigation-Mobile-Navigation-should-show-mobile-menu-toggle-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\navigation-Mobile-Navigation-should-show-mobile-menu-toggle-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Mobile Navigation › should open mobile menu" classname="navigation.spec.js" time="32.753">
+<failure message="navigation.spec.js:163:7 should open mobile menu" type="FAILURE">
+<![CDATA[  [chromium] › navigation.spec.js:163:7 › Mobile Navigation › should open mobile menu ──────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /menu/i })
+
+
+      175 |     
+      176 |     const menuButton = page.getByRole('button', { name: /menu/i });
+    > 177 |     await menuButton.click();
+          |                      ^
+      178 |     
+      179 |     // Menu should be visible
+      180 |     const mobileNav = page.locator('[data-testid="mobile-nav"]');
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\navigation.spec.js:177:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\navigation-Mobile-Navigation-should-open-mobile-menu-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\navigation-Mobile-Navigation-should-open-mobile-menu-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\navigation-Mobile-Navigation-should-open-mobile-menu-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\navigation-Mobile-Navigation-should-open-mobile-menu-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\navigation-Mobile-Navigation-should-open-mobile-menu-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\navigation-Mobile-Navigation-should-open-mobile-menu-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Mobile Navigation › should close mobile menu after navigation" classname="navigation.spec.js" time="32.454">
+<failure message="navigation.spec.js:184:7 should close mobile menu after navigation" type="FAILURE">
+<![CDATA[  [chromium] › navigation.spec.js:184:7 › Mobile Navigation › should close mobile menu after navigation 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /menu/i })
+
+
+      197 |     // Open menu
+      198 |     const menuButton = page.getByRole('button', { name: /menu/i });
+    > 199 |     await menuButton.click();
+          |                      ^
+      200 |     
+      201 |     // Click a navigation link
+      202 |     await page.getByRole('link', { name: /profile/i }).click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\navigation.spec.js:199:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\navigation-Mobile-Navigati-a7913-obile-menu-after-navigation-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\navigation-Mobile-Navigati-a7913-obile-menu-after-navigation-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\navigation-Mobile-Navigati-a7913-obile-menu-after-navigation-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\navigation-Mobile-Navigati-a7913-obile-menu-after-navigation-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\navigation-Mobile-Navigati-a7913-obile-menu-after-navigation-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\navigation-Mobile-Navigati-a7913-obile-menu-after-navigation-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Breadcrumb Navigation › should display breadcrumbs on nested pages" classname="navigation.spec.js" time="32.321">
+<failure message="navigation.spec.js:211:7 should display breadcrumbs on nested pages" type="FAILURE">
+<![CDATA[  [chromium] › navigation.spec.js:211:7 › Breadcrumb Navigation › should display breadcrumbs on nested pages 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      221 |     
+      222 |     await page.goto('/dashboard');
+    > 223 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      224 |     
+      225 |     // Check for breadcrumbs
+      226 |     const breadcrumbs = page.locator('[data-testid="breadcrumbs"]');
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\navigation.spec.js:223:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\navigation-Breadcrumb-Navi-e5463-breadcrumbs-on-nested-pages-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\navigation-Breadcrumb-Navi-e5463-breadcrumbs-on-nested-pages-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\navigation-Breadcrumb-Navi-e5463-breadcrumbs-on-nested-pages-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\navigation-Breadcrumb-Navi-e5463-breadcrumbs-on-nested-pages-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\navigation-Breadcrumb-Navi-e5463-breadcrumbs-on-nested-pages-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\navigation-Breadcrumb-Navi-e5463-breadcrumbs-on-nested-pages-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Breadcrumb Navigation › should navigate using breadcrumb links" classname="navigation.spec.js" time="34.278">
+<failure message="navigation.spec.js:234:7 should navigate using breadcrumb links" type="FAILURE">
+<![CDATA[  [chromium] › navigation.spec.js:234:7 › Breadcrumb Navigation › should navigate using breadcrumb links 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      244 |     
+      245 |     await page.goto('/dashboard');
+    > 246 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      247 |     
+      248 |     const dashboardLink = page.locator('[data-testid="breadcrumbs"] a', { hasText: /dashboard/i });
+      249 |     
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\navigation.spec.js:246:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\navigation-Breadcrumb-Navi-48ad2-gate-using-breadcrumb-links-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\navigation-Breadcrumb-Navi-48ad2-gate-using-breadcrumb-links-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\navigation-Breadcrumb-Navi-48ad2-gate-using-breadcrumb-links-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\navigation-Breadcrumb-Navi-48ad2-gate-using-breadcrumb-links-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\navigation-Breadcrumb-Navi-48ad2-gate-using-breadcrumb-links-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\navigation-Breadcrumb-Navi-48ad2-gate-using-breadcrumb-links-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Logout Navigation › should logout and redirect to login" classname="navigation.spec.js" time="37.389">
+<failure message="navigation.spec.js:258:7 should logout and redirect to login" type="FAILURE">
+<![CDATA[  [chromium] › navigation.spec.js:258:7 › Logout Navigation › should logout and redirect to login ──
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /logout/i })
+
+
+      270 |     
+      271 |     // Click logout
+    > 272 |     await page.getByRole('button', { name: /logout/i }).click();
+          |                                                         ^
+      273 |     
+      274 |     // Should redirect to login
+      275 |     await expect(page).toHaveURL(/\/(login)?$/);
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\navigation.spec.js:272:57
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\navigation-Logout-Navigati-f2588-ogout-and-redirect-to-login-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\navigation-Logout-Navigati-f2588-ogout-and-redirect-to-login-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\navigation-Logout-Navigati-f2588-ogout-and-redirect-to-login-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\navigation-Logout-Navigati-f2588-ogout-and-redirect-to-login-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\navigation-Logout-Navigati-f2588-ogout-and-redirect-to-login-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\navigation-Logout-Navigati-f2588-ogout-and-redirect-to-login-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Deep Linking › should handle direct navigation to specific project" classname="navigation.spec.js" time="1.838">
+<failure message="navigation.spec.js:284:7 should handle direct navigation to specific project" type="FAILURE">
+<![CDATA[  [chromium] › navigation.spec.js:284:7 › Deep Linking › should handle direct navigation to specific project 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      300 |     const hasNotFound = await page.getByText(/not found|404/i).count() > 0;
+      301 |     
+    > 302 |     expect(hasProjectPage || hasNotFound).toBeTruthy();
+          |                                           ^
+      303 |   });
+      304 | });
+      305 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\navigation.spec.js:302:43
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\navigation-Deep-Linking-sh-20c05-igation-to-specific-project-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\navigation-Deep-Linking-sh-20c05-igation-to-specific-project-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\navigation-Deep-Linking-sh-20c05-igation-to-specific-project-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\navigation-Deep-Linking-sh-20c05-igation-to-specific-project-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\navigation-Deep-Linking-sh-20c05-igation-to-specific-project-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\navigation-Deep-Linking-sh-20c05-igation-to-specific-project-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="performance.spec.js" timestamp="2026-01-31T20:34:09.363Z" hostname="chromium" tests="17" failures="3" skipped="0" time="77.068" errors="0">
+<testcase name="Performance Testing › should load homepage within acceptable time" classname="performance.spec.js" time="1.718">
+</testcase>
+<testcase name="Performance Testing › should load dashboard within acceptable time" classname="performance.spec.js" time="1.972">
+</testcase>
+<testcase name="Performance Testing › should measure Core Web Vitals - LCP" classname="performance.spec.js" time="1.755">
+</testcase>
+<testcase name="Performance Testing › should measure Core Web Vitals - FID" classname="performance.spec.js" time="1.993">
+</testcase>
+<testcase name="Performance Testing › should measure Core Web Vitals - CLS" classname="performance.spec.js" time="5.732">
+</testcase>
+<testcase name="Performance Testing › should load images efficiently" classname="performance.spec.js" time="2.176">
+</testcase>
+<testcase name="Performance Testing › should use proper caching headers" classname="performance.spec.js" time="2.487">
+</testcase>
+<testcase name="Performance Testing › should minimize bundle size" classname="performance.spec.js" time="3.596">
+</testcase>
+<testcase name="Performance Testing › should load fonts efficiently" classname="performance.spec.js" time="3.943">
+</testcase>
+<testcase name="Performance Testing › should have acceptable time to interactive" classname="performance.spec.js" time="19.335">
+<failure message="performance.spec.js:170:7 should have acceptable time to interactive" type="FAILURE">
+<![CDATA[  [chromium] › performance.spec.js:170:7 › Performance Testing › should have acceptable time to interactive 
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Expected: < 5000
+    Received:   14993
+
+      185 |     
+      186 |     // Time to Interactive should be under 5 seconds
+    > 187 |     expect(tti).toBeLessThan(5000);
+          |                 ^
+      188 |   });
+      189 |
+      190 |   test('should handle multiple concurrent requests efficiently', async ({ page }) => {
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\performance.spec.js:187:17
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\performance-Performance-Te-eb13e-eptable-time-to-interactive-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\performance-Performance-Te-eb13e-eptable-time-to-interactive-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\performance-Performance-Te-eb13e-eptable-time-to-interactive-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\performance-Performance-Te-eb13e-eptable-time-to-interactive-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\performance-Performance-Te-eb13e-eptable-time-to-interactive-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\performance-Performance-Te-eb13e-eptable-time-to-interactive-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Performance Testing › should handle multiple concurrent requests efficiently" classname="performance.spec.js" time="19.39">
+</testcase>
+<testcase name="Network Performance › should compress resources" classname="performance.spec.js" time="1.312">
+</testcase>
+<testcase name="Network Performance › should minimize HTTP requests" classname="performance.spec.js" time="2.502">
+</testcase>
+<testcase name="Network Performance › should load critical CSS inline" classname="performance.spec.js" time="1.178">
+<failure message="performance.spec.js:248:7 should load critical CSS inline" type="FAILURE">
+<![CDATA[  [chromium] › performance.spec.js:248:7 › Network Performance › should load critical CSS inline ───
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "<style"
+    Received string:    "<!doctype html>
+    <html lang=\"en\">
+      <head>
+        <script type=\"module\">import { injectIntoGlobalHook } from \"/@react-refresh\";
+    injectIntoGlobalHook(window);
+    window.$RefreshReg$ = () => {};
+    window.$RefreshSig$ = () => (type) => type;</script>·
+        <script type=\"module\" src=\"/@vite/client\"></script>·
+        <meta charset=\"UTF-8\" />
+        <link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon-circle.svg\" />
+        <link rel=\"apple-touch-icon\" href=\"/favicon-circle.svg\" />
+        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />
+        <title>SkillSync - The Portfolio Revolution Platform</title>
+      </head>
+      <body>
+        <div id=\"root\"></div>
+        <script type=\"module\" src=\"/src/main.jsx\"></script>
+      </body>
+    </html>
+    "
+
+      251 |     
+      252 |     // Check for inline critical CSS
+    > 253 |     expect(html).toContain('<style');
+          |                  ^
+      254 |   });
+      255 | });
+      256 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\performance.spec.js:253:18
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\performance-Network-Perfor-08200-ld-load-critical-CSS-inline-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\performance-Network-Perfor-08200-ld-load-critical-CSS-inline-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\performance-Network-Perfor-08200-ld-load-critical-CSS-inline-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\performance-Network-Perfor-08200-ld-load-critical-CSS-inline-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\performance-Network-Perfor-08200-ld-load-critical-CSS-inline-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\performance-Network-Perfor-08200-ld-load-critical-CSS-inline-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Memory Performance › should not have memory leaks on navigation" classname="performance.spec.js" time="4.201">
+</testcase>
+<testcase name="Rendering Performance › should avoid excessive re-renders" classname="performance.spec.js" time="2.304">
+<failure message="performance.spec.js:296:7 should avoid excessive re-renders" type="FAILURE">
+<![CDATA[  [chromium] › performance.spec.js:296:7 › Rendering Performance › should avoid excessive re-renders 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      316 |     });
+      317 |     
+    > 318 |     expect(paintMetrics.length).toBeGreaterThan(0);
+          |                                 ^
+      319 |   });
+      320 |
+      321 |   test('should use requestAnimationFrame for animations', async ({ page }) => {
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\performance.spec.js:318:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\performance-Rendering-Perf-a16ec--avoid-excessive-re-renders-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\performance-Rendering-Perf-a16ec--avoid-excessive-re-renders-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\performance-Rendering-Perf-a16ec--avoid-excessive-re-renders-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\performance-Rendering-Perf-a16ec--avoid-excessive-re-renders-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\performance-Rendering-Perf-a16ec--avoid-excessive-re-renders-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\performance-Rendering-Perf-a16ec--avoid-excessive-re-renders-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Rendering Performance › should use requestAnimationFrame for animations" classname="performance.spec.js" time="1.474">
+</testcase>
+</testsuite>
+<testsuite name="projects.spec.js" timestamp="2026-01-31T20:34:09.363Z" hostname="chromium" tests="14" failures="14" skipped="0" time="457.847" errors="0">
+<testcase name="Project Management › should display projects dashboard" classname="projects.spec.js" time="6.773">
+<failure message="projects.spec.js:25:7 should display projects dashboard" type="FAILURE">
+<![CDATA[  [chromium] › projects.spec.js:25:7 › Project Management › should display projects dashboard ──────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: /projects/i })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('heading', { name: /projects/i })
+
+
+      24 |
+      25 |   test('should display projects dashboard', async ({ page }) => {
+    > 26 |     await expect(page.getByRole('heading', { name: /projects/i })).toBeVisible();
+         |                                                                    ^
+      27 |     await expect(page.getByRole('button', { name: /create project/i })).toBeVisible();
+      28 |   });
+      29 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:26:68
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Managemen-83046--display-projects-dashboard-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Managemen-83046--display-projects-dashboard-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\projects-Project-Managemen-83046--display-projects-dashboard-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\projects-Project-Managemen-83046--display-projects-dashboard-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\projects-Project-Managemen-83046--display-projects-dashboard-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\projects-Project-Managemen-83046--display-projects-dashboard-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Project Management › should open create project modal" classname="projects.spec.js" time="33.158">
+<failure message="projects.spec.js:30:7 should open create project modal" type="FAILURE">
+<![CDATA[  [chromium] › projects.spec.js:30:7 › Project Management › should open create project modal ───────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /create project/i })
+
+
+      29 |
+      30 |   test('should open create project modal', async ({ page }) => {
+    > 31 |     await page.getByRole('button', { name: /create project/i }).click();
+         |                                                                 ^
+      32 |     
+      33 |     await expect(page.getByRole('dialog')).toBeVisible();
+      34 |     await expect(page.getByRole('heading', { name: /new project/i })).toBeVisible();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:31:65
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Management-should-open-create-project-modal-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Management-should-open-create-project-modal-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\projects-Project-Management-should-open-create-project-modal-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\projects-Project-Management-should-open-create-project-modal-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\projects-Project-Management-should-open-create-project-modal-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\projects-Project-Management-should-open-create-project-modal-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Project Management › should validate project creation form" classname="projects.spec.js" time="34.437">
+<failure message="projects.spec.js:39:7 should validate project creation form" type="FAILURE">
+<![CDATA[  [chromium] › projects.spec.js:39:7 › Project Management › should validate project creation form ──
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /create project/i })
+
+
+      38 |
+      39 |   test('should validate project creation form', async ({ page }) => {
+    > 40 |     await page.getByRole('button', { name: /create project/i }).click();
+         |                                                                 ^
+      41 |     
+      42 |     // Try to submit empty form
+      43 |     await page.getByRole('button', { name: /create$/i }).click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:40:65
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Managemen-d6d85-idate-project-creation-form-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Managemen-d6d85-idate-project-creation-form-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\projects-Project-Managemen-d6d85-idate-project-creation-form-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\projects-Project-Managemen-d6d85-idate-project-creation-form-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\projects-Project-Managemen-d6d85-idate-project-creation-form-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\projects-Project-Managemen-d6d85-idate-project-creation-form-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Project Management › should filter projects by status" classname="projects.spec.js" time="6.582">
+<failure message="projects.spec.js:48:7 should filter projects by status" type="FAILURE">
+<![CDATA[  [chromium] › projects.spec.js:48:7 › Project Management › should filter projects by status ───────
+
+    TimeoutError: page.waitForSelector: Timeout 5000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]')
+
+
+      48 |   test('should filter projects by status', async ({ page }) => {
+      49 |     // Wait for projects to load
+    > 50 |     await page.waitForSelector('[data-testid="project-card"]', { state: 'attached', timeout: 5000 });
+         |                ^
+      51 |     
+      52 |     // Click status filter
+      53 |     await page.getByRole('button', { name: /filter/i }).click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:50:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Management-should-filter-projects-by-status-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Management-should-filter-projects-by-status-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\projects-Project-Management-should-filter-projects-by-status-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\projects-Project-Management-should-filter-projects-by-status-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\projects-Project-Management-should-filter-projects-by-status-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\projects-Project-Management-should-filter-projects-by-status-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Project Management › should search projects by name" classname="projects.spec.js" time="37.892">
+<failure message="projects.spec.js:66:7 should search projects by name" type="FAILURE">
+<![CDATA[  [chromium] › projects.spec.js:66:7 › Project Management › should search projects by name ─────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('searchbox', { name: /search projects/i })
+
+
+      66 |   test('should search projects by name', async ({ page }) => {
+      67 |     const searchInput = page.getByRole('searchbox', { name: /search projects/i });
+    > 68 |     await searchInput.fill('Test Project');
+         |                       ^
+      69 |     
+      70 |     // Wait for search results
+      71 |     await page.waitForTimeout(500);
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:68:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Management-should-search-projects-by-name-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Management-should-search-projects-by-name-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\projects-Project-Management-should-search-projects-by-name-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\projects-Project-Management-should-search-projects-by-name-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\projects-Project-Management-should-search-projects-by-name-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\projects-Project-Management-should-search-projects-by-name-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Project Management › should navigate to project details" classname="projects.spec.js" time="38.558">
+<failure message="projects.spec.js:80:7 should navigate to project details" type="FAILURE">
+<![CDATA[  [chromium] › projects.spec.js:80:7 › Project Management › should navigate to project details ─────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      80 |   test('should navigate to project details', async ({ page }) => {
+      81 |     // Click on first project card
+    > 82 |     await page.locator('[data-testid="project-card"]').first().click();
+         |                                                                ^
+      83 |     
+      84 |     await expect(page).toHaveURL(/\/project\//);
+      85 |     await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:82:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Managemen-1feb9-navigate-to-project-details-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Managemen-1feb9-navigate-to-project-details-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\projects-Project-Managemen-1feb9-navigate-to-project-details-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\projects-Project-Managemen-1feb9-navigate-to-project-details-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\projects-Project-Managemen-1feb9-navigate-to-project-details-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\projects-Project-Managemen-1feb9-navigate-to-project-details-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Project Management › should open project settings" classname="projects.spec.js" time="33.782">
+<failure message="projects.spec.js:88:7 should open project settings" type="FAILURE">
+<![CDATA[  [chromium] › projects.spec.js:88:7 › Project Management › should open project settings ───────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      87 |
+      88 |   test('should open project settings', async ({ page }) => {
+    > 89 |     await page.locator('[data-testid="project-card"]').first().click();
+         |                                                                ^
+      90 |     
+      91 |     await page.getByRole('button', { name: /settings/i }).click();
+      92 |     await expect(page.getByRole('dialog', { name: /project settings/i })).toBeVisible();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:89:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Management-should-open-project-settings-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Management-should-open-project-settings-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\projects-Project-Management-should-open-project-settings-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\projects-Project-Management-should-open-project-settings-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\projects-Project-Management-should-open-project-settings-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\projects-Project-Management-should-open-project-settings-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Project Details › should display project tabs" classname="projects.spec.js" time="33.637">
+<failure message="projects.spec.js:104:7 should display project tabs" type="FAILURE">
+<![CDATA[  [chromium] › projects.spec.js:104:7 › Project Details › should display project tabs ──────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+       95 |
+       96 | test.describe('Project Details', () => {
+    >  97 |   test.beforeEach(async ({ page }) => {
+          |        ^
+       98 |     await login(page);
+       99 |     // Navigate to a specific project
+      100 |     await page.goto('/dashboard');
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:97:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+       99 |     // Navigate to a specific project
+      100 |     await page.goto('/dashboard');
+    > 101 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      102 |   });
+      103 |
+      104 |   test('should display project tabs', async ({ page }) => {
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:101:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Details-should-display-project-tabs-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Details-should-display-project-tabs-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\projects-Project-Details-should-display-project-tabs-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\projects-Project-Details-should-display-project-tabs-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\projects-Project-Details-should-display-project-tabs-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\projects-Project-Details-should-display-project-tabs-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Project Details › should switch between tabs" classname="projects.spec.js" time="38.277">
+<failure message="projects.spec.js:110:7 should switch between tabs" type="FAILURE">
+<![CDATA[  [chromium] › projects.spec.js:110:7 › Project Details › should switch between tabs ───────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+       95 |
+       96 | test.describe('Project Details', () => {
+    >  97 |   test.beforeEach(async ({ page }) => {
+          |        ^
+       98 |     await login(page);
+       99 |     // Navigate to a specific project
+      100 |     await page.goto('/dashboard');
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:97:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+       99 |     // Navigate to a specific project
+      100 |     await page.goto('/dashboard');
+    > 101 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      102 |   });
+      103 |
+      104 |   test('should display project tabs', async ({ page }) => {
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:101:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Details-should-switch-between-tabs-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Details-should-switch-between-tabs-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\projects-Project-Details-should-switch-between-tabs-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\projects-Project-Details-should-switch-between-tabs-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\projects-Project-Details-should-switch-between-tabs-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\projects-Project-Details-should-switch-between-tabs-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Project Details › should display project progress bar" classname="projects.spec.js" time="36.849">
+<failure message="projects.spec.js:124:7 should display project progress bar" type="FAILURE">
+<![CDATA[  [chromium] › projects.spec.js:124:7 › Project Details › should display project progress bar ──────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+       95 |
+       96 | test.describe('Project Details', () => {
+    >  97 |   test.beforeEach(async ({ page }) => {
+          |        ^
+       98 |     await login(page);
+       99 |     // Navigate to a specific project
+      100 |     await page.goto('/dashboard');
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:97:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+       99 |     // Navigate to a specific project
+      100 |     await page.goto('/dashboard');
+    > 101 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      102 |   });
+      103 |
+      104 |   test('should display project tabs', async ({ page }) => {
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:101:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Details-should-display-project-progress-bar-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Details-should-display-project-progress-bar-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\projects-Project-Details-should-display-project-progress-bar-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\projects-Project-Details-should-display-project-progress-bar-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\projects-Project-Details-should-display-project-progress-bar-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\projects-Project-Details-should-display-project-progress-bar-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Project Details › should show project milestones" classname="projects.spec.js" time="39.703">
+<failure message="projects.spec.js:132:7 should show project milestones" type="FAILURE">
+<![CDATA[  [chromium] › projects.spec.js:132:7 › Project Details › should show project milestones ───────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+       95 |
+       96 | test.describe('Project Details', () => {
+    >  97 |   test.beforeEach(async ({ page }) => {
+          |        ^
+       98 |     await login(page);
+       99 |     // Navigate to a specific project
+      100 |     await page.goto('/dashboard');
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:97:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+       99 |     // Navigate to a specific project
+      100 |     await page.goto('/dashboard');
+    > 101 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      102 |   });
+      103 |
+      104 |   test('should display project tabs', async ({ page }) => {
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:101:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Details-should-show-project-milestones-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Details-should-show-project-milestones-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\projects-Project-Details-should-show-project-milestones-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\projects-Project-Details-should-show-project-milestones-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\projects-Project-Details-should-show-project-milestones-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\projects-Project-Details-should-show-project-milestones-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Project Collaboration › should invite team members" classname="projects.spec.js" time="41.984">
+<failure message="projects.spec.js:148:7 should invite team members" type="FAILURE">
+<![CDATA[  [chromium] › projects.spec.js:148:7 › Project Collaboration › should invite team members ─────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      140 |
+      141 | test.describe('Project Collaboration', () => {
+    > 142 |   test.beforeEach(async ({ page }) => {
+          |        ^
+      143 |     await login(page);
+      144 |     await page.goto('/dashboard');
+      145 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:142:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      143 |     await login(page);
+      144 |     await page.goto('/dashboard');
+    > 145 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      146 |   });
+      147 |
+      148 |   test('should invite team members', async ({ page }) => {
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:145:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Collaboration-should-invite-team-members-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Collaboration-should-invite-team-members-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\projects-Project-Collaboration-should-invite-team-members-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\projects-Project-Collaboration-should-invite-team-members-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\projects-Project-Collaboration-should-invite-team-members-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\projects-Project-Collaboration-should-invite-team-members-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Project Collaboration › should display team member list" classname="projects.spec.js" time="40.21">
+<failure message="projects.spec.js:156:7 should display team member list" type="FAILURE">
+<![CDATA[  [chromium] › projects.spec.js:156:7 › Project Collaboration › should display team member list ────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      140 |
+      141 | test.describe('Project Collaboration', () => {
+    > 142 |   test.beforeEach(async ({ page }) => {
+          |        ^
+      143 |     await login(page);
+      144 |     await page.goto('/dashboard');
+      145 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:142:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      143 |     await login(page);
+      144 |     await page.goto('/dashboard');
+    > 145 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      146 |   });
+      147 |
+      148 |   test('should invite team members', async ({ page }) => {
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:145:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Collabora-11868-ld-display-team-member-list-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Collabora-11868-ld-display-team-member-list-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\projects-Project-Collabora-11868-ld-display-team-member-list-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\projects-Project-Collabora-11868-ld-display-team-member-list-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\projects-Project-Collabora-11868-ld-display-team-member-list-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\projects-Project-Collabora-11868-ld-display-team-member-list-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Project Collaboration › should show member roles" classname="projects.spec.js" time="36.005">
+<failure message="projects.spec.js:163:7 should show member roles" type="FAILURE">
+<![CDATA[  [chromium] › projects.spec.js:163:7 › Project Collaboration › should show member roles ───────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      140 |
+      141 | test.describe('Project Collaboration', () => {
+    > 142 |   test.beforeEach(async ({ page }) => {
+          |        ^
+      143 |     await login(page);
+      144 |     await page.goto('/dashboard');
+      145 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:142:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      143 |     await login(page);
+      144 |     await page.goto('/dashboard');
+    > 145 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      146 |   });
+      147 |
+      148 |   test('should invite team members', async ({ page }) => {
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\projects.spec.js:145:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Collaboration-should-show-member-roles-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\projects-Project-Collaboration-should-show-member-roles-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\projects-Project-Collaboration-should-show-member-roles-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\projects-Project-Collaboration-should-show-member-roles-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\projects-Project-Collaboration-should-show-member-roles-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\projects-Project-Collaboration-should-show-member-roles-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="tasks.spec.js" timestamp="2026-01-31T20:34:09.363Z" hostname="chromium" tests="21" failures="21" skipped="0" time="776.757" errors="0">
+<testcase name="Task Management › should display task board" classname="tasks.spec.js" time="39.485">
+<failure message="tasks.spec.js:25:7 should display task board" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:25:7 › Task Management › should display task board ────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      16 |
+      17 | test.describe('Task Management', () => {
+    > 18 |   test.beforeEach(async ({ page }) => {
+         |        ^
+      19 |     await login(page);
+      20 |     await page.goto('/dashboard');
+      21 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:18:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      19 |     await login(page);
+      20 |     await page.goto('/dashboard');
+    > 21 |     await page.locator('[data-testid="project-card"]').first().click();
+         |                                                                ^
+      22 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      23 |   });
+      24 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:21:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Management-should-display-task-board-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Management-should-display-task-board-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Task-Management-should-display-task-board-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Task-Management-should-display-task-board-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Task-Management-should-display-task-board-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Task-Management-should-display-task-board-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Task Management › should open create task modal" classname="tasks.spec.js" time="39.026">
+<failure message="tasks.spec.js:32:7 should open create task modal" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:32:7 › Task Management › should open create task modal ────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      16 |
+      17 | test.describe('Task Management', () => {
+    > 18 |   test.beforeEach(async ({ page }) => {
+         |        ^
+      19 |     await login(page);
+      20 |     await page.goto('/dashboard');
+      21 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:18:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      19 |     await login(page);
+      20 |     await page.goto('/dashboard');
+    > 21 |     await page.locator('[data-testid="project-card"]').first().click();
+         |                                                                ^
+      22 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      23 |   });
+      24 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:21:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Management-should-open-create-task-modal-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Management-should-open-create-task-modal-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Task-Management-should-open-create-task-modal-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Task-Management-should-open-create-task-modal-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Task-Management-should-open-create-task-modal-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Task-Management-should-open-create-task-modal-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Task Management › should validate task creation form" classname="tasks.spec.js" time="39.129">
+<failure message="tasks.spec.js:41:7 should validate task creation form" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:41:7 › Task Management › should validate task creation form ───────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      16 |
+      17 | test.describe('Task Management', () => {
+    > 18 |   test.beforeEach(async ({ page }) => {
+         |        ^
+      19 |     await login(page);
+      20 |     await page.goto('/dashboard');
+      21 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:18:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      19 |     await login(page);
+      20 |     await page.goto('/dashboard');
+    > 21 |     await page.locator('[data-testid="project-card"]').first().click();
+         |                                                                ^
+      22 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      23 |   });
+      24 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:21:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Management-should-validate-task-creation-form-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Management-should-validate-task-creation-form-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Task-Management-should-validate-task-creation-form-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Task-Management-should-validate-task-creation-form-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Task-Management-should-validate-task-creation-form-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Task-Management-should-validate-task-creation-form-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Task Management › should assign task to team member" classname="tasks.spec.js" time="37.735">
+<failure message="tasks.spec.js:50:7 should assign task to team member" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:50:7 › Task Management › should assign task to team member ────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      16 |
+      17 | test.describe('Task Management', () => {
+    > 18 |   test.beforeEach(async ({ page }) => {
+         |        ^
+      19 |     await login(page);
+      20 |     await page.goto('/dashboard');
+      21 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:18:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      19 |     await login(page);
+      20 |     await page.goto('/dashboard');
+    > 21 |     await page.locator('[data-testid="project-card"]').first().click();
+         |                                                                ^
+      22 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      23 |   });
+      24 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:21:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Management-should-assign-task-to-team-member-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Management-should-assign-task-to-team-member-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Task-Management-should-assign-task-to-team-member-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Task-Management-should-assign-task-to-team-member-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Task-Management-should-assign-task-to-team-member-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Task-Management-should-assign-task-to-team-member-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Task Management › should set task priority" classname="tasks.spec.js" time="36.775">
+<failure message="tasks.spec.js:64:7 should set task priority" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:64:7 › Task Management › should set task priority ─────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      16 |
+      17 | test.describe('Task Management', () => {
+    > 18 |   test.beforeEach(async ({ page }) => {
+         |        ^
+      19 |     await login(page);
+      20 |     await page.goto('/dashboard');
+      21 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:18:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      19 |     await login(page);
+      20 |     await page.goto('/dashboard');
+    > 21 |     await page.locator('[data-testid="project-card"]').first().click();
+         |                                                                ^
+      22 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      23 |   });
+      24 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:21:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Management-should-set-task-priority-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Management-should-set-task-priority-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Task-Management-should-set-task-priority-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Task-Management-should-set-task-priority-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Task-Management-should-set-task-priority-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Task-Management-should-set-task-priority-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Task Management › should set task due date" classname="tasks.spec.js" time="36.51">
+<failure message="tasks.spec.js:74:7 should set task due date" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:74:7 › Task Management › should set task due date ─────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      16 |
+      17 | test.describe('Task Management', () => {
+    > 18 |   test.beforeEach(async ({ page }) => {
+         |        ^
+      19 |     await login(page);
+      20 |     await page.goto('/dashboard');
+      21 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:18:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      19 |     await login(page);
+      20 |     await page.goto('/dashboard');
+    > 21 |     await page.locator('[data-testid="project-card"]').first().click();
+         |                                                                ^
+      22 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      23 |   });
+      24 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:21:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Management-should-set-task-due-date-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Management-should-set-task-due-date-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Task-Management-should-set-task-due-date-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Task-Management-should-set-task-due-date-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Task-Management-should-set-task-due-date-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Task-Management-should-set-task-due-date-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Task Management › should filter tasks by assignee" classname="tasks.spec.js" time="35.067">
+<failure message="tasks.spec.js:86:7 should filter tasks by assignee" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:86:7 › Task Management › should filter tasks by assignee ──────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      16 |
+      17 | test.describe('Task Management', () => {
+    > 18 |   test.beforeEach(async ({ page }) => {
+         |        ^
+      19 |     await login(page);
+      20 |     await page.goto('/dashboard');
+      21 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:18:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      19 |     await login(page);
+      20 |     await page.goto('/dashboard');
+    > 21 |     await page.locator('[data-testid="project-card"]').first().click();
+         |                                                                ^
+      22 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      23 |   });
+      24 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:21:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Management-should-filter-tasks-by-assignee-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Management-should-filter-tasks-by-assignee-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Task-Management-should-filter-tasks-by-assignee-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Task-Management-should-filter-tasks-by-assignee-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Task-Management-should-filter-tasks-by-assignee-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Task-Management-should-filter-tasks-by-assignee-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Task Management › should filter tasks by priority" classname="tasks.spec.js" time="35.209">
+<failure message="tasks.spec.js:99:7 should filter tasks by priority" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:99:7 › Task Management › should filter tasks by priority ──────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      16 |
+      17 | test.describe('Task Management', () => {
+    > 18 |   test.beforeEach(async ({ page }) => {
+         |        ^
+      19 |     await login(page);
+      20 |     await page.goto('/dashboard');
+      21 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:18:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      19 |     await login(page);
+      20 |     await page.goto('/dashboard');
+    > 21 |     await page.locator('[data-testid="project-card"]').first().click();
+         |                                                                ^
+      22 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      23 |   });
+      24 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:21:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Management-should-filter-tasks-by-priority-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Management-should-filter-tasks-by-priority-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Task-Management-should-filter-tasks-by-priority-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Task-Management-should-filter-tasks-by-priority-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Task-Management-should-filter-tasks-by-priority-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Task-Management-should-filter-tasks-by-priority-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Task Details › should open task detail modal" classname="tasks.spec.js" time="37.239">
+<failure message="tasks.spec.js:119:7 should open task detail modal" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:119:7 › Task Details › should open task detail modal ──────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      110 |
+      111 | test.describe('Task Details', () => {
+    > 112 |   test.beforeEach(async ({ page }) => {
+          |        ^
+      113 |     await login(page);
+      114 |     await page.goto('/dashboard');
+      115 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:112:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      113 |     await login(page);
+      114 |     await page.goto('/dashboard');
+    > 115 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      116 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      117 |   });
+      118 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:115:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Details-should-open-task-detail-modal-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Details-should-open-task-detail-modal-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Task-Details-should-open-task-detail-modal-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Task-Details-should-open-task-detail-modal-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Task-Details-should-open-task-detail-modal-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Task-Details-should-open-task-detail-modal-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Task Details › should edit task title inline" classname="tasks.spec.js" time="37.315">
+<failure message="tasks.spec.js:126:7 should edit task title inline" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:126:7 › Task Details › should edit task title inline ──────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      110 |
+      111 | test.describe('Task Details', () => {
+    > 112 |   test.beforeEach(async ({ page }) => {
+          |        ^
+      113 |     await login(page);
+      114 |     await page.goto('/dashboard');
+      115 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:112:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      113 |     await login(page);
+      114 |     await page.goto('/dashboard');
+    > 115 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      116 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      117 |   });
+      118 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:115:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Details-should-edit-task-title-inline-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Details-should-edit-task-title-inline-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Task-Details-should-edit-task-title-inline-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Task-Details-should-edit-task-title-inline-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Task-Details-should-edit-task-title-inline-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Task-Details-should-edit-task-title-inline-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Task Details › should add task comment" classname="tasks.spec.js" time="34.328">
+<failure message="tasks.spec.js:139:7 should add task comment" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:139:7 › Task Details › should add task comment ────────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      110 |
+      111 | test.describe('Task Details', () => {
+    > 112 |   test.beforeEach(async ({ page }) => {
+          |        ^
+      113 |     await login(page);
+      114 |     await page.goto('/dashboard');
+      115 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:112:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      113 |     await login(page);
+      114 |     await page.goto('/dashboard');
+    > 115 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      116 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      117 |   });
+      118 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:115:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Details-should-add-task-comment-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Details-should-add-task-comment-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Task-Details-should-add-task-comment-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Task-Details-should-add-task-comment-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Task-Details-should-add-task-comment-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Task-Details-should-add-task-comment-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Task Details › should update task status" classname="tasks.spec.js" time="35.372">
+<failure message="tasks.spec.js:150:7 should update task status" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:150:7 › Task Details › should update task status ──────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      110 |
+      111 | test.describe('Task Details', () => {
+    > 112 |   test.beforeEach(async ({ page }) => {
+          |        ^
+      113 |     await login(page);
+      114 |     await page.goto('/dashboard');
+      115 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:112:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      113 |     await login(page);
+      114 |     await page.goto('/dashboard');
+    > 115 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      116 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      117 |   });
+      118 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:115:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Details-should-update-task-status-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Details-should-update-task-status-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Task-Details-should-update-task-status-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Task-Details-should-update-task-status-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Task-Details-should-update-task-status-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Task-Details-should-update-task-status-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Task Details › should mark task as complete" classname="tasks.spec.js" time="36.904">
+<failure message="tasks.spec.js:160:7 should mark task as complete" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:160:7 › Task Details › should mark task as complete ───────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      110 |
+      111 | test.describe('Task Details', () => {
+    > 112 |   test.beforeEach(async ({ page }) => {
+          |        ^
+      113 |     await login(page);
+      114 |     await page.goto('/dashboard');
+      115 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:112:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      113 |     await login(page);
+      114 |     await page.goto('/dashboard');
+    > 115 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      116 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      117 |   });
+      118 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:115:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Details-should-mark-task-as-complete-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Details-should-mark-task-as-complete-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Task-Details-should-mark-task-as-complete-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Task-Details-should-mark-task-as-complete-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Task-Details-should-mark-task-as-complete-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Task-Details-should-mark-task-as-complete-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Task Details › should attach file to task" classname="tasks.spec.js" time="35.461">
+<failure message="tasks.spec.js:169:7 should attach file to task" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:169:7 › Task Details › should attach file to task ─────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      110 |
+      111 | test.describe('Task Details', () => {
+    > 112 |   test.beforeEach(async ({ page }) => {
+          |        ^
+      113 |     await login(page);
+      114 |     await page.goto('/dashboard');
+      115 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:112:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      113 |     await login(page);
+      114 |     await page.goto('/dashboard');
+    > 115 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      116 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      117 |   });
+      118 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:115:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Details-should-attach-file-to-task-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Details-should-attach-file-to-task-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Task-Details-should-attach-file-to-task-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Task-Details-should-attach-file-to-task-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Task-Details-should-attach-file-to-task-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Task-Details-should-attach-file-to-task-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Kanban Board Interactions › should display kanban columns" classname="tasks.spec.js" time="36.279">
+<failure message="tasks.spec.js:191:7 should display kanban columns" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:191:7 › Kanban Board Interactions › should display kanban columns ─────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      182 |
+      183 | test.describe('Kanban Board Interactions', () => {
+    > 184 |   test.beforeEach(async ({ page }) => {
+          |        ^
+      185 |     await login(page);
+      186 |     await page.goto('/dashboard');
+      187 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:184:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      185 |     await login(page);
+      186 |     await page.goto('/dashboard');
+    > 187 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      188 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      189 |   });
+      190 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:187:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Kanban-Board-Interac-4dfde-ould-display-kanban-columns-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Kanban-Board-Interac-4dfde-ould-display-kanban-columns-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Kanban-Board-Interac-4dfde-ould-display-kanban-columns-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Kanban-Board-Interac-4dfde-ould-display-kanban-columns-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Kanban-Board-Interac-4dfde-ould-display-kanban-columns-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Kanban-Board-Interac-4dfde-ould-display-kanban-columns-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Kanban Board Interactions › should show task count in column headers" classname="tasks.spec.js" time="39.431">
+<failure message="tasks.spec.js:201:7 should show task count in column headers" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:201:7 › Kanban Board Interactions › should show task count in column headers 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      182 |
+      183 | test.describe('Kanban Board Interactions', () => {
+    > 184 |   test.beforeEach(async ({ page }) => {
+          |        ^
+      185 |     await login(page);
+      186 |     await page.goto('/dashboard');
+      187 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:184:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      185 |     await login(page);
+      186 |     await page.goto('/dashboard');
+    > 187 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      188 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      189 |   });
+      190 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:187:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Kanban-Board-Interac-b843e-ask-count-in-column-headers-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Kanban-Board-Interac-b843e-ask-count-in-column-headers-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Kanban-Board-Interac-b843e-ask-count-in-column-headers-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Kanban-Board-Interac-b843e-ask-count-in-column-headers-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Kanban-Board-Interac-b843e-ask-count-in-column-headers-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Kanban-Board-Interac-b843e-ask-count-in-column-headers-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Kanban Board Interactions › should drag task to different column" classname="tasks.spec.js" time="36.927">
+<failure message="tasks.spec.js:208:7 should drag task to different column" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:208:7 › Kanban Board Interactions › should drag task to different column 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      182 |
+      183 | test.describe('Kanban Board Interactions', () => {
+    > 184 |   test.beforeEach(async ({ page }) => {
+          |        ^
+      185 |     await login(page);
+      186 |     await page.goto('/dashboard');
+      187 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:184:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      185 |     await login(page);
+      186 |     await page.goto('/dashboard');
+    > 187 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      188 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      189 |   });
+      190 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:187:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Kanban-Board-Interac-81de3-ag-task-to-different-column-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Kanban-Board-Interac-81de3-ag-task-to-different-column-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Kanban-Board-Interac-81de3-ag-task-to-different-column-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Kanban-Board-Interac-81de3-ag-task-to-different-column-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Kanban-Board-Interac-81de3-ag-task-to-different-column-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Kanban-Board-Interac-81de3-ag-task-to-different-column-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Kanban Board Interactions › should show add task button in each column" classname="tasks.spec.js" time="38.479">
+<failure message="tasks.spec.js:226:7 should show add task button in each column" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:226:7 › Kanban Board Interactions › should show add task button in each column 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      182 |
+      183 | test.describe('Kanban Board Interactions', () => {
+    > 184 |   test.beforeEach(async ({ page }) => {
+          |        ^
+      185 |     await login(page);
+      186 |     await page.goto('/dashboard');
+      187 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:184:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      185 |     await login(page);
+      186 |     await page.goto('/dashboard');
+    > 187 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      188 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      189 |   });
+      190 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:187:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Kanban-Board-Interac-af06c--task-button-in-each-column-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Kanban-Board-Interac-af06c--task-button-in-each-column-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Kanban-Board-Interac-af06c--task-button-in-each-column-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Kanban-Board-Interac-af06c--task-button-in-each-column-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Kanban-Board-Interac-af06c--task-button-in-each-column-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Kanban-Board-Interac-af06c--task-button-in-each-column-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Task Search and Sort › should search tasks" classname="tasks.spec.js" time="38.343">
+<failure message="tasks.spec.js:242:7 should search tasks" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:242:7 › Task Search and Sort › should search tasks ────────────────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      233 |
+      234 | test.describe('Task Search and Sort', () => {
+    > 235 |   test.beforeEach(async ({ page }) => {
+          |        ^
+      236 |     await login(page);
+      237 |     await page.goto('/dashboard');
+      238 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:235:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      236 |     await login(page);
+      237 |     await page.goto('/dashboard');
+    > 238 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      239 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      240 |   });
+      241 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:238:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Search-and-Sort-should-search-tasks-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Search-and-Sort-should-search-tasks-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Task-Search-and-Sort-should-search-tasks-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Task-Search-and-Sort-should-search-tasks-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Task-Search-and-Sort-should-search-tasks-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Task-Search-and-Sort-should-search-tasks-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Task Search and Sort › should sort tasks by due date" classname="tasks.spec.js" time="38.286">
+<failure message="tasks.spec.js:255:7 should sort tasks by due date" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:255:7 › Task Search and Sort › should sort tasks by due date ──────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      233 |
+      234 | test.describe('Task Search and Sort', () => {
+    > 235 |   test.beforeEach(async ({ page }) => {
+          |        ^
+      236 |     await login(page);
+      237 |     await page.goto('/dashboard');
+      238 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:235:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      236 |     await login(page);
+      237 |     await page.goto('/dashboard');
+    > 238 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      239 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      240 |   });
+      241 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:238:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Search-and-Sort-should-sort-tasks-by-due-date-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Search-and-Sort-should-sort-tasks-by-due-date-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Task-Search-and-Sort-should-sort-tasks-by-due-date-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Task-Search-and-Sort-should-sort-tasks-by-due-date-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Task-Search-and-Sort-should-sort-tasks-by-due-date-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Task-Search-and-Sort-should-sort-tasks-by-due-date-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Task Search and Sort › should sort tasks by priority" classname="tasks.spec.js" time="33.457">
+<failure message="tasks.spec.js:264:7 should sort tasks by priority" type="FAILURE">
+<![CDATA[  [chromium] › tasks.spec.js:264:7 › Task Search and Sort › should sort tasks by priority ──────────
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      233 |
+      234 | test.describe('Task Search and Sort', () => {
+    > 235 |   test.beforeEach(async ({ page }) => {
+          |        ^
+      236 |     await login(page);
+      237 |     await page.goto('/dashboard');
+      238 |     await page.locator('[data-testid="project-card"]').first().click();
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:235:8
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('[data-testid="project-card"]').first()
+
+
+      236 |     await login(page);
+      237 |     await page.goto('/dashboard');
+    > 238 |     await page.locator('[data-testid="project-card"]').first().click();
+          |                                                                ^
+      239 |     await page.getByRole('tab', { name: /tasks/i }).click();
+      240 |   });
+      241 |
+        at C:\Users\matan\OneDrive\Documents\GitHub\SkillSync\e2e\tasks.spec.js:238:64
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Search-and-Sort-should-sort-tasks-by-priority-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\tasks-Task-Search-and-Sort-should-sort-tasks-by-priority-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\tasks-Task-Search-and-Sort-should-sort-tasks-by-priority-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\tasks-Task-Search-and-Sort-should-sort-tasks-by-priority-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\tasks-Task-Search-and-Sort-should-sort-tasks-by-priority-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\tasks-Task-Search-and-Sort-should-sort-tasks-by-priority-chromium\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

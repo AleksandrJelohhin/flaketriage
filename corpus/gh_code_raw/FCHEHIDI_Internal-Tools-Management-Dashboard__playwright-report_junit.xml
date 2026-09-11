@@ -1,0 +1,77 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="10.016672000000021">
+<testsuite name="ab-test\happy-path.spec.ts" timestamp="2025-12-02T17:00:29.324Z" hostname="chromium-widget" tests="3" failures="1" skipped="0" time="17.402" errors="0">
+<testcase name="Widget Pattern - Happy Path › Complete journey: Welcome → Campaign → Form → Success" classname="ab-test\happy-path.spec.ts" time="4.545">
+<properties>
+<property name="variant" value="widget">
+</property>
+</properties>
+<failure message="happy-path.spec.ts:17:3 Complete journey: Welcome → Campaign → Form → Success" type="FAILURE">
+<![CDATA[  [chromium-widget] › ab-test\happy-path.spec.ts:17:3 › Widget Pattern - Happy Path › Complete journey: Welcome → Campaign → Form → Success @smoke @critical @ab-test @widget 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      42 |     // STEP 3: Campaign shown
+      43 |     const campaignValid = await dashboard.isCampaignStateValid();
+    > 44 |     expect(campaignValid).toBe(true);
+         |                           ^
+      45 |     
+      46 |     await dashboard.clickCampaignPrimaryCTA();
+      47 |     trackEvent('campaign_cta_click', { cta: 'primary' });
+        at C:\Users\Fares\Internal-Tools-Management-Dashboard\tests\ab-test\happy-path.spec.ts:44:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\ab-test-happy-path-Widget--f7359-→-Campaign-→-Form-→-Success-chromium-widget\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\ab-test-happy-path-Widget--f7359-→-Campaign-→-Form-→-Success-chromium-widget\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\ab-test-happy-path-Widget--f7359-→-Campaign-→-Form-→-Success-chromium-widget\error-context.md
+
+    attachment #6: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\ab-test-happy-path-Widget--f7359-→-Campaign-→-Form-→-Success-chromium-widget\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\ab-test-happy-path-Widget--f7359-→-Campaign-→-Form-→-Success-chromium-widget\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[[AB-TEST:widget] widget_impression { variant: [32m'widget'[39m }
+[AB-TEST:widget] cta_click { from: [32m'welcome'[39m, to: [32m'campaign'[39m }
+
+[[ATTACHMENT|..\test-results\ab-test-happy-path-Widget--f7359-→-Campaign-→-Form-→-Success-chromium-widget\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\ab-test-happy-path-Widget--f7359-→-Campaign-→-Form-→-Success-chromium-widget\video.webm]]
+
+[[ATTACHMENT|..\test-results\ab-test-happy-path-Widget--f7359-→-Campaign-→-Form-→-Success-chromium-widget\error-context.md]]
+
+[[ATTACHMENT|..\test-results\ab-test-happy-path-Widget--f7359-→-Campaign-→-Form-→-Success-chromium-widget\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Widget Pattern - Happy Path › Fast user journey - minimal interactions" classname="ab-test\happy-path.spec.ts" time="7.806">
+<properties>
+<property name="variant" value="widget">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\ab-test-happy-path-Widget--c7ad6-rney---minimal-interactions-chromium-widget\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Widget Pattern - Happy Path › Returning user - show different content" classname="ab-test\happy-path.spec.ts" time="5.051">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\ab-test-happy-path-Widget--2dd1e-er---show-different-content-chromium-widget\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

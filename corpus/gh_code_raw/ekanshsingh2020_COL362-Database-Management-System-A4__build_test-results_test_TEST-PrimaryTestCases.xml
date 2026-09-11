@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PrimaryTestCases" tests="20" skipped="0" failures="1" errors="0" timestamp="2024-04-17T13:27:45" hostname="ekansh-HP-Pavilion-x360-Convertible-14-dh1xxx" time="41.817">
+  <properties/>
+  <testcase name="testSFW" classname="PrimaryTestCases" time="2.11"/>
+  <testcase name="testBonus" classname="PrimaryTestCases" time="0.037"/>
+  <testcase name="testSort" classname="PrimaryTestCases" time="0.057"/>
+  <testcase name="query1" classname="PrimaryTestCases" time="0.033"/>
+  <testcase name="query3" classname="PrimaryTestCases" time="0.478"/>
+  <testcase name="query4" classname="PrimaryTestCases" time="13.484"/>
+  <testcase name="query5" classname="PrimaryTestCases" time="0.445"/>
+  <testcase name="query6" classname="PrimaryTestCases" time="0.319"/>
+  <testcase name="query7" classname="PrimaryTestCases" time="3.452"/>
+  <testcase name="query8" classname="PrimaryTestCases" time="0.027"/>
+  <testcase name="query9" classname="PrimaryTestCases" time="7.847"/>
+  <testcase name="testJoinAggregateSort_1" classname="PrimaryTestCases" time="3.69"/>
+  <testcase name="testJoinAggregate_1" classname="PrimaryTestCases" time="0.026">
+    <failure message="java.lang.AssertionError: Exception thrown" type="java.lang.AssertionError">java.lang.AssertionError: Exception thrown
+	at org.junit.Assert.fail(Assert.java:88)
+	at PrimaryTestCases.testJoinAggregate_1(PrimaryTestCases.java:223)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy3.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:750)
+</failure>
+  </testcase>
+  <testcase name="query10" classname="PrimaryTestCases" time="0.135"/>
+  <testcase name="query11" classname="PrimaryTestCases" time="0.104"/>
+  <testcase name="query12" classname="PrimaryTestCases" time="0.02"/>
+  <testcase name="query13" classname="PrimaryTestCases" time="0.111"/>
+  <testcase name="query15" classname="PrimaryTestCases" time="4.804"/>
+  <testcase name="query16" classname="PrimaryTestCases" time="2.36"/>
+  <testcase name="query17" classname="PrimaryTestCases" time="2.275"/>
+  <system-out><![CDATA[rel#4:LogicalProject.NONE(input=LogicalFilter#2,exprs=[$1])
+===================================
+PProject
+===================================
+PProject opened
+PFilter opened
+No more rows in PFilter
+No more rows in PProject
+Closing PProject
+PFilter closed
+49
+Test passed :)
+===================================
+
+
+
+Done with Filter and Project
+
+
+
+PSort opened
+PProject opened
+No more rows in PProject
+Sorting the list
+No more rows in PSort
+Closing PSort
+Closing PProject
+Test passed :)
+===================================
+PSort
+===================================
+PSort opened
+PProject opened
+PFilter opened
+PProject opened
+PFilter opened
+No more rows in PFilter
+No more rows in PProject
+No more rows in PFilter
+No more rows in PProject
+Sorting the list
+No more rows in PSort
+Closing PSort
+Closing PProject
+PFilter closed
+Closing PProject
+PFilter closed
+7
+Test passed :)
+===================================
+PProject
+===================================
+PProject opened
+PFilter opened
+No more rows in PFilter
+No more rows in PProject
+Closing PProject
+PFilter closed
+1000
+Test passed :)
+===================================
+PSort
+===================================
+PSort opened
+PAggregate opened
+{0}
+[AVG($1)]
+PProject
+GroupBySet [0]
+PProject opened
+No more rows in PProject
+599
+No more rows in PAggregate
+Sorting the list
+No more rows in PSort
+Closing PSort
+Closing PAggregate
+Closing PProject
+599
+Test passed :)
+===================================
+PProject
+===================================
+PProject opened
+PFilter opened
+PJoin opened
+No condition
+PJoin opened
+No condition
+No more rows in PJoin
+No more rows in PJoin
+No more rows in PFilter
+No more rows in PProject
+Closing PProject
+PFilter closed
+Closing PJoin
+Closing PJoin
+64
+Test passed :)
+===================================
+PProject
+===================================
+PProject opened
+PJoin opened
+Map size 599
+16044
+No more rows in PJoin
+No more rows in PProject
+Closing PProject
+Closing PJoin
+16044
+Test passed :)
+===================================
+PSort
+===================================
+PSort opened
+PAggregate opened
+{0}
+[SUM($1)]
+PProject
+GroupBySet [0]
+PProject opened
+No more rows in PProject
+599
+No more rows in PAggregate
+Sorting the list
+No more rows in PSort
+Closing PSort
+Closing PAggregate
+Closing PProject
+599
+Test passed :)
+===================================
+PSort
+===================================
+PSort opened
+PAggregate opened
+{0}
+[COUNT($0)]
+PProject
+GroupBySet [0]
+PProject opened
+PJoin opened
+Map size 4580
+No more rows in PJoin
+No more rows in PProject
+958
+No more rows in PAggregate
+Sorting the list
+No more rows in PSort
+Closing PSort
+Closing PAggregate
+Closing PProject
+Closing PJoin
+958
+Test passed :)
+===================================
+PAggregate
+===================================
+PAggregate opened
+{0}
+[COUNT($1)]
+PProject
+GroupBySet [0]
+PProject opened
+PJoin opened
+Map size 16
+1000
+No more rows in PJoin
+No more rows in PProject
+16
+No more rows in PAggregate
+Closing PAggregate
+Closing PProject
+Closing PJoin
+16
+Test passed :)
+===================================
+PAggregate
+===================================
+PAggregate opened
+{0}
+[COUNT($1)]
+PProject
+GroupBySet [0]
+PProject opened
+PFilter opened
+PJoin opened
+No condition
+PJoin opened
+No condition
+No more rows in PJoin
+No more rows in PJoin
+No more rows in PFilter
+No more rows in PProject
+16
+No more rows in PAggregate
+Closing PAggregate
+Closing PProject
+PFilter closed
+Closing PJoin
+Closing PJoin
+16
+Test passed :)
+===================================
+PSort
+===================================
+PSort opened
+PAggregate opened
+{0}
+[COUNT($0)]
+PProject
+GroupBySet [0]
+PProject opened
+PJoin opened
+Map size 4580
+No more rows in PJoin
+No more rows in PProject
+958
+No more rows in PAggregate
+Sorting the list
+No more rows in PSort
+Closing PSort
+Closing PAggregate
+Closing PProject
+Closing PJoin
+958
+Test passed :)
+===================================
+
+
+
+Done with Join and Aggregate and Sort
+
+
+
+java.lang.RuntimeException: org.apache.calcite.runtime.CalciteContextException: From line 1, column 118 to line 1, column 125: Column 'ACTOR_ID' not found in table 'rental'
+org.apache.calcite.runtime.CalciteContextException: From line 1, column 118 to line 1, column 125: Column 'ACTOR_ID' not found in table 'rental'
+===================================
+PAggregate
+===================================
+PAggregate opened
+{0}
+[AVG($1)]
+PProject
+GroupBySet [0]
+PProject opened
+PJoin opened
+PJoin opened
+Map size 16
+No more rows in PJoin
+Map size 1000
+No more rows in PJoin
+No more rows in PProject
+16
+No more rows in PAggregate
+Closing PAggregate
+Closing PProject
+Closing PJoin
+Closing PJoin
+16
+Test passed :)
+===================================
+PSort
+===================================
+PSort opened
+PAggregate opened
+{0, 1, 2}
+[COUNT()]
+PProject
+GroupBySet [0, 1, 2]
+PProject opened
+PJoin opened
+Map size 200
+No more rows in PJoin
+No more rows in PProject
+200
+No more rows in PAggregate
+Sorting the list
+No more rows in PSort
+Closing PSort
+Closing PAggregate
+Closing PProject
+Closing PJoin
+200
+Test passed :)
+===================================
+PFilter
+===================================
+PFilter opened
+PAggregate opened
+{0}
+[COUNT()]
+PProject
+GroupBySet [0]
+PProject opened
+No more rows in PProject
+128
+No more rows in PAggregate
+No more rows in PFilter
+PFilter closed
+Closing PAggregate
+Closing PProject
+52
+Test passed :)
+LogicalSort(sort0=[$0], sort1=[$1], dir0=[ASC], dir1=[DESC], fetch=[30])
+  LogicalAggregate(group=[{0, 1}])
+    LogicalProject(FIRST_NAME=[$1], LAST_NAME=[$6])
+      LogicalJoin(condition=[AND(=($1, $5), =($2, $6))], joinType=[inner])
+        PTableScan(table=[[FILM_DB, actor]])
+        PTableScan(table=[[FILM_DB, actor]])
+
+===================================
+PSort
+===================================
+PSort opened
+PAggregate opened
+{0, 1}
+[]
+PProject
+GroupBySet [0, 1]
+PProject opened
+PJoin opened
+AND condition
+Map size 199
+No more rows in PJoin
+No more rows in PProject
+199
+No more rows in PAggregate
+Sorting the list
+No more rows in PSort
+Closing PSort
+Closing PAggregate
+Closing PProject
+Closing PJoin
+30
+Test passed :)
+===================================
+PSort
+===================================
+PSort opened
+PAggregate opened
+{0}
+[]
+PProject
+GroupBySet [0]
+PProject opened
+PFilter opened
+PJoin opened
+PJoin opened
+Map size 1000
+4623
+No more rows in PJoin
+Map size 4582
+16087
+No more rows in PJoin
+No more rows in PFilter
+No more rows in PProject
+958
+No more rows in PAggregate
+Sorting the list
+No more rows in PSort
+Closing PSort
+Closing PAggregate
+Closing PProject
+PFilter closed
+Closing PJoin
+Closing PJoin
+10
+Test passed :)
+===================================
+PAggregate
+===================================
+PAggregate opened
+{0}
+[]
+PProject
+GroupBySet [0]
+PProject opened
+No more rows in PProject
+4580
+No more rows in PAggregate
+Closing PAggregate
+Closing PProject
+4580
+Test passed :)
+===================================
+PAggregate
+===================================
+PAggregate opened
+{0}
+[]
+PProject
+GroupBySet [0]
+PProject opened
+No more rows in PProject
+4580
+No more rows in PAggregate
+Closing PAggregate
+Closing PProject
+4580
+Test passed :)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

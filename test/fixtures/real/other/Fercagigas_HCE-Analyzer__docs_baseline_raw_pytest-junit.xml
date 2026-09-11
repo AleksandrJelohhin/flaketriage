@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="4" failures="13" skipped="0" tests="44" time="5.102" timestamp="2026-08-31T17:18:11.117790+02:00" hostname="FerPoratil"><properties><property name="hypothesis-statistics-tests/evaluation/test_dry_run.py::test_property_19_dry_run_never_calls_process_message" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X2RyeV9ydW4ucHk6OnRlc3RfcHJvcGVydHlfMTlfZHJ5X3J1bl9uZXZlcl9jYWxsc19wcm9jZXNzX21lc3NhZ2U6CgogIC0gZHVyaW5nIGdlbmVyYXRlIHBoYXNlICgwLjEzIHNlY29uZHMpOgogICAgLSBUeXBpY2FsIHJ1bnRpbWVzOiB+IDAtMSBtcywgb2Ygd2hpY2ggPCAxbXMgaW4gZGF0YSBnZW5lcmF0aW9uCiAgICAtIDEwMCBwYXNzaW5nIGV4YW1wbGVzLCAwIGZhaWxpbmcgZXhhbXBsZXMsIDE4IGludmFsaWQgZXhhbXBsZXMKCiAgLSBTdG9wcGVkIGJlY2F1c2Ugc2V0dGluZ3MubWF4X2V4YW1wbGVzPTEwMA==" /><property name="hypothesis-statistics-tests/evaluation/test_dry_run.py::test_property_19_dry_run_vs_live_call_count" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X2RyeV9ydW4ucHk6OnRlc3RfcHJvcGVydHlfMTlfZHJ5X3J1bl92c19saXZlX2NhbGxfY291bnQ6CgogIC0gZHVyaW5nIGdlbmVyYXRlIHBoYXNlICgwLjA3IHNlY29uZHMpOgogICAgLSBUeXBpY2FsIHJ1bnRpbWVzOiB+IDAtMSBtcywgb2Ygd2hpY2ggPCAxbXMgaW4gZGF0YSBnZW5lcmF0aW9uCiAgICAtIDUwIHBhc3NpbmcgZXhhbXBsZXMsIDAgZmFpbGluZyBleGFtcGxlcywgOCBpbnZhbGlkIGV4YW1wbGVzCgogIC0gU3RvcHBlZCBiZWNhdXNlIHNldHRpbmdzLm1heF9leGFtcGxlcz01MA==" /><property name="hypothesis-statistics-tests/evaluation/test_error_resilience.py::test_property_14_error_resilience" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X2Vycm9yX3Jlc2lsaWVuY2UucHk6OnRlc3RfcHJvcGVydHlfMTRfZXJyb3JfcmVzaWxpZW5jZToKCiAgLSBkdXJpbmcgZ2VuZXJhdGUgcGhhc2UgKDAuMTAgc2Vjb25kcyk6CiAgICAtIFR5cGljYWwgcnVudGltZXM6IDwgMW1zLCBvZiB3aGljaCA8IDFtcyBpbiBkYXRhIGdlbmVyYXRpb24KICAgIC0gMTAwIHBhc3NpbmcgZXhhbXBsZXMsIDAgZmFpbGluZyBleGFtcGxlcywgMjIgaW52YWxpZCBleGFtcGxlcwoKICAtIFN0b3BwZWQgYmVjYXVzZSBzZXR0aW5ncy5tYXhfZXhhbXBsZXM9MTAw" /><property name="hypothesis-statistics-tests/evaluation/test_golden_set.py::test_property_1_valid_question_passes_validation" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X2dvbGRlbl9zZXQucHk6OnRlc3RfcHJvcGVydHlfMV92YWxpZF9xdWVzdGlvbl9wYXNzZXNfdmFsaWRhdGlvbjoKCiAgLSBkdXJpbmcgZ2VuZXJhdGUgcGhhc2UgKDAuMTAgc2Vjb25kcyk6CiAgICAtIFR5cGljYWwgcnVudGltZXM6IDwgMW1zLCBvZiB3aGljaCA8IDFtcyBpbiBkYXRhIGdlbmVyYXRpb24KICAgIC0gMTAwIHBhc3NpbmcgZXhhbXBsZXMsIDAgZmFpbGluZyBleGFtcGxlcywgMTcgaW52YWxpZCBleGFtcGxlcwoKICAtIFN0b3BwZWQgYmVjYXVzZSBzZXR0aW5ncy5tYXhfZXhhbXBsZXM9MTAw" /><property name="hypothesis-statistics-tests/evaluation/test_golden_set.py::test_property_1b_missing_field_causes_error" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X2dvbGRlbl9zZXQucHk6OnRlc3RfcHJvcGVydHlfMWJfbWlzc2luZ19maWVsZF9jYXVzZXNfZXJyb3I6CgogIC0gZHVyaW5nIGdlbmVyYXRlIHBoYXNlICgwLjAwIHNlY29uZHMpOgogICAgLSBUeXBpY2FsIHJ1bnRpbWVzOiA8IDFtcywgb2Ygd2hpY2ggPCAxbXMgaW4gZGF0YSBnZW5lcmF0aW9uCiAgICAtIDYgcGFzc2luZyBleGFtcGxlcywgMCBmYWlsaW5nIGV4YW1wbGVzLCAwIGludmFsaWQgZXhhbXBsZXMKCiAgLSBTdG9wcGVkIGJlY2F1c2Ugbm90aGluZyBsZWZ0IHRvIGRv" /><property name="hypothesis-statistics-tests/evaluation/test_golden_set.py::test_property_1c_empty_field_causes_error" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X2dvbGRlbl9zZXQucHk6OnRlc3RfcHJvcGVydHlfMWNfZW1wdHlfZmllbGRfY2F1c2VzX2Vycm9yOgoKICAtIGR1cmluZyBnZW5lcmF0ZSBwaGFzZSAoMC4wMCBzZWNvbmRzKToKICAgIC0gVHlwaWNhbCBydW50aW1lczogPCAxbXMsIG9mIHdoaWNoIDwgMW1zIGluIGRhdGEgZ2VuZXJhdGlvbgogICAgLSA2IHBhc3NpbmcgZXhhbXBsZXMsIDAgZmFpbGluZyBleGFtcGxlcywgMCBpbnZhbGlkIGV4YW1wbGVzCgogIC0gU3RvcHBlZCBiZWNhdXNlIG5vdGhpbmcgbGVmdCB0byBkbw==" /><property name="hypothesis-statistics-tests/evaluation/test_golden_set.py::test_property_2_sql_references_only_allowed_tables" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X2dvbGRlbl9zZXQucHk6OnRlc3RfcHJvcGVydHlfMl9zcWxfcmVmZXJlbmNlc19vbmx5X2FsbG93ZWRfdGFibGVzOgoKICAtIGR1cmluZyBnZW5lcmF0ZSBwaGFzZSAoMC4wOCBzZWNvbmRzKToKICAgIC0gVHlwaWNhbCBydW50aW1lczogPCAxbXMsIG9mIHdoaWNoIDwgMW1zIGluIGRhdGEgZ2VuZXJhdGlvbgogICAgLSAxMDAgcGFzc2luZyBleGFtcGxlcywgMCBmYWlsaW5nIGV4YW1wbGVzLCAyNSBpbnZhbGlkIGV4YW1wbGVzCgogIC0gU3RvcHBlZCBiZWNhdXNlIHNldHRpbmdzLm1heF9leGFtcGxlcz0xMDA=" /><property name="hypothesis-statistics-tests/evaluation/test_golden_set.py::test_property_2b_sql_with_allowed_tables_passes_as_valid_question" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X2dvbGRlbl9zZXQucHk6OnRlc3RfcHJvcGVydHlfMmJfc3FsX3dpdGhfYWxsb3dlZF90YWJsZXNfcGFzc2VzX2FzX3ZhbGlkX3F1ZXN0aW9uOgoKICAtIGR1cmluZyBnZW5lcmF0ZSBwaGFzZSAoMC4xNCBzZWNvbmRzKToKICAgIC0gVHlwaWNhbCBydW50aW1lczogPCAxbXMsIG9mIHdoaWNoIDwgMW1zIGluIGRhdGEgZ2VuZXJhdGlvbgogICAgLSAxMDAgcGFzc2luZyBleGFtcGxlcywgMCBmYWlsaW5nIGV4YW1wbGVzLCAxNSBpbnZhbGlkIGV4YW1wbGVzCgogIC0gU3RvcHBlZCBiZWNhdXNlIHNldHRpbmdzLm1heF9leGFtcGxlcz0xMDA=" /><property name="hypothesis-statistics-tests/evaluation/test_retry.py::test_property_15_retry_on_rate_limit" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X3JldHJ5LnB5Ojp0ZXN0X3Byb3BlcnR5XzE1X3JldHJ5X29uX3JhdGVfbGltaXQ6CgogIC0gZHVyaW5nIGdlbmVyYXRlIHBoYXNlICgwLjAwIHNlY29uZHMpOgogICAgLSBUeXBpY2FsIHJ1bnRpbWVzOiA8IDFtcywgb2Ygd2hpY2ggPCAxbXMgaW4gZGF0YSBnZW5lcmF0aW9uCiAgICAtIDQgcGFzc2luZyBleGFtcGxlcywgMCBmYWlsaW5nIGV4YW1wbGVzLCAwIGludmFsaWQgZXhhbXBsZXMKCiAgLSBTdG9wcGVkIGJlY2F1c2Ugbm90aGluZyBsZWZ0IHRvIGRv" /><property name="hypothesis-statistics-tests/evaluation/test_retry.py::test_property_15_sleep_called_between_retries" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X3JldHJ5LnB5Ojp0ZXN0X3Byb3BlcnR5XzE1X3NsZWVwX2NhbGxlZF9iZXR3ZWVuX3JldHJpZXM6CgogIC0gZHVyaW5nIGdlbmVyYXRlIHBoYXNlICgwLjAwIHNlY29uZHMpOgogICAgLSBUeXBpY2FsIHJ1bnRpbWVzOiB+IDAtMSBtcywgb2Ygd2hpY2ggPCAxbXMgaW4gZGF0YSBnZW5lcmF0aW9uCiAgICAtIDQgcGFzc2luZyBleGFtcGxlcywgMCBmYWlsaW5nIGV4YW1wbGVzLCAwIGludmFsaWQgZXhhbXBsZXMKCiAgLSBTdG9wcGVkIGJlY2F1c2Ugbm90aGluZyBsZWZ0IHRvIGRv" /><property name="hypothesis-statistics-tests/evaluation/test_retry.py::test_property_16_exponential_backoff" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X3JldHJ5LnB5Ojp0ZXN0X3Byb3BlcnR5XzE2X2V4cG9uZW50aWFsX2JhY2tvZmY6CgogIC0gZHVyaW5nIGdlbmVyYXRlIHBoYXNlICgwLjAwIHNlY29uZHMpOgogICAgLSBUeXBpY2FsIHJ1bnRpbWVzOiA8IDFtcywgb2Ygd2hpY2ggPCAxbXMgaW4gZGF0YSBnZW5lcmF0aW9uCiAgICAtIDMgcGFzc2luZyBleGFtcGxlcywgMCBmYWlsaW5nIGV4YW1wbGVzLCAwIGludmFsaWQgZXhhbXBsZXMKCiAgLSBTdG9wcGVkIGJlY2F1c2Ugbm90aGluZyBsZWZ0IHRvIGRv" /><property name="hypothesis-statistics-tests/evaluation/test_scoring.py::test_property_13_weighted_scoring_computation" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X3Njb3JpbmcucHk6OnRlc3RfcHJvcGVydHlfMTNfd2VpZ2h0ZWRfc2NvcmluZ19jb21wdXRhdGlvbjoKCiAgLSBkdXJpbmcgZ2VuZXJhdGUgcGhhc2UgKDAuMTggc2Vjb25kcyk6CiAgICAtIFR5cGljYWwgcnVudGltZXM6IDwgMW1zLCBvZiB3aGljaCA8IDFtcyBpbiBkYXRhIGdlbmVyYXRpb24KICAgIC0gMTAwIHBhc3NpbmcgZXhhbXBsZXMsIDAgZmFpbGluZyBleGFtcGxlcywgNzkgaW52YWxpZCBleGFtcGxlcwogICAgLSBFdmVudHM6CiAgICAgICogMzYuODclLCBpbnZhbGlkIGJlY2F1c2U6IGZhaWxlZCB0byBzYXRpc2Z5IGFzc3VtZSgpIGluIHRlc3RfcHJvcGVydHlfMTNfd2VpZ2h0ZWRfc2NvcmluZ19jb21wdXRhdGlvbiAobGluZSA0MikKCiAgLSBTdG9wcGVkIGJlY2F1c2Ugc2V0dGluZ3MubWF4X2V4YW1wbGVzPTEwMA==" /><property name="hypothesis-statistics-tests/evaluation/test_scoring.py::test_property_13_pass_fail_threshold" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X3Njb3JpbmcucHk6OnRlc3RfcHJvcGVydHlfMTNfcGFzc19mYWlsX3RocmVzaG9sZDoKCiAgLSBkdXJpbmcgZ2VuZXJhdGUgcGhhc2UgKDAuMTggc2Vjb25kcyk6CiAgICAtIFR5cGljYWwgcnVudGltZXM6IH4gMC0xIG1zLCBvZiB3aGljaCA8IDFtcyBpbiBkYXRhIGdlbmVyYXRpb24KICAgIC0gMTAwIHBhc3NpbmcgZXhhbXBsZXMsIDAgZmFpbGluZyBleGFtcGxlcywgNjkgaW52YWxpZCBleGFtcGxlcwogICAgLSBFdmVudHM6CiAgICAgICogMjguOTklLCBpbnZhbGlkIGJlY2F1c2U6IGZhaWxlZCB0byBzYXRpc2Z5IGFzc3VtZSgpIGluIHRlc3RfcHJvcGVydHlfMTNfcGFzc19mYWlsX3RocmVzaG9sZCAobGluZSA2NikKCiAgLSBTdG9wcGVkIGJlY2F1c2Ugc2V0dGluZ3MubWF4X2V4YW1wbGVzPTEwMA==" /><property name="hypothesis-statistics-tests/evaluation/test_txt_output.py::test_property_17_txt_contains_required_metadata" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X3R4dF9vdXRwdXQucHk6OnRlc3RfcHJvcGVydHlfMTdfdHh0X2NvbnRhaW5zX3JlcXVpcmVkX21ldGFkYXRhOgoKICAtIGR1cmluZyBnZW5lcmF0ZSBwaGFzZSAoMC4wMCBzZWNvbmRzKToKICAgIC0gVHlwaWNhbCBydW50aW1lczogfiAwLTEgbXMsIG9mIHdoaWNoIDwgMW1zIGluIGRhdGEgZ2VuZXJhdGlvbgogICAgLSA0IHBhc3NpbmcgZXhhbXBsZXMsIDAgZmFpbGluZyBleGFtcGxlcywgMCBpbnZhbGlkIGV4YW1wbGVzCgogIC0gU3RvcHBlZCBiZWNhdXNlIG5vdGhpbmcgbGVmdCB0byBkbw==" /><property name="hypothesis-statistics-tests/evaluation/test_txt_output.py::test_property_18_result_filename_pattern" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X3R4dF9vdXRwdXQucHk6OnRlc3RfcHJvcGVydHlfMThfcmVzdWx0X2ZpbGVuYW1lX3BhdHRlcm46CgogIC0gZHVyaW5nIGdlbmVyYXRlIHBoYXNlICgwLjAwIHNlY29uZHMpOgogICAgLSBUeXBpY2FsIHJ1bnRpbWVzOiA8IDFtcywgb2Ygd2hpY2ggPCAxbXMgaW4gZGF0YSBnZW5lcmF0aW9uCiAgICAtIDQgcGFzc2luZyBleGFtcGxlcywgMCBmYWlsaW5nIGV4YW1wbGVzLCAwIGludmFsaWQgZXhhbXBsZXMKCiAgLSBTdG9wcGVkIGJlY2F1c2Ugbm90aGluZyBsZWZ0IHRvIGRv" /><property name="hypothesis-statistics-tests/evaluation/test_txt_output.py::test_property_18_filename_starts_with_module" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X3R4dF9vdXRwdXQucHk6OnRlc3RfcHJvcGVydHlfMThfZmlsZW5hbWVfc3RhcnRzX3dpdGhfbW9kdWxlOgoKICAtIGR1cmluZyBnZW5lcmF0ZSBwaGFzZSAoMC4wMCBzZWNvbmRzKToKICAgIC0gVHlwaWNhbCBydW50aW1lczogPCAxbXMsIG9mIHdoaWNoIDwgMW1zIGluIGRhdGEgZ2VuZXJhdGlvbgogICAgLSA0IHBhc3NpbmcgZXhhbXBsZXMsIDAgZmFpbGluZyBleGFtcGxlcywgMCBpbnZhbGlkIGV4YW1wbGVzCgogIC0gU3RvcHBlZCBiZWNhdXNlIG5vdGhpbmcgbGVmdCB0byBkbw==" /><property name="hypothesis-statistics-tests/evaluation/test_txt_output.py::test_property_18_filename_ends_with_txt" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X3R4dF9vdXRwdXQucHk6OnRlc3RfcHJvcGVydHlfMThfZmlsZW5hbWVfZW5kc193aXRoX3R4dDoKCiAgLSBkdXJpbmcgZ2VuZXJhdGUgcGhhc2UgKDAuMDAgc2Vjb25kcyk6CiAgICAtIFR5cGljYWwgcnVudGltZXM6IDwgMW1zLCBvZiB3aGljaCA8IDFtcyBpbiBkYXRhIGdlbmVyYXRpb24KICAgIC0gNCBwYXNzaW5nIGV4YW1wbGVzLCAwIGZhaWxpbmcgZXhhbXBsZXMsIDAgaW52YWxpZCBleGFtcGxlcwoKICAtIFN0b3BwZWQgYmVjYXVzZSBub3RoaW5nIGxlZnQgdG8gZG8=" /><property name="hypothesis-statistics-tests/evaluation/test_txt_output.py::test_property_18_filename_timestamp_is_valid_datetime" value="dGVzdHMvZXZhbHVhdGlvbi90ZXN0X3R4dF9vdXRwdXQucHk6OnRlc3RfcHJvcGVydHlfMThfZmlsZW5hbWVfdGltZXN0YW1wX2lzX3ZhbGlkX2RhdGV0aW1lOgoKICAtIGR1cmluZyBnZW5lcmF0ZSBwaGFzZSAoMC4wMCBzZWNvbmRzKToKICAgIC0gVHlwaWNhbCBydW50aW1lczogPCAxbXMsIG9mIHdoaWNoIDwgMW1zIGluIGRhdGEgZ2VuZXJhdGlvbgogICAgLSA0IHBhc3NpbmcgZXhhbXBsZXMsIDAgZmFpbGluZyBleGFtcGxlcywgMCBpbnZhbGlkIGV4YW1wbGVzCgogIC0gU3RvcHBlZCBiZWNhdXNlIG5vdGhpbmcgbGVmdCB0byBkbw==" /></properties><testcase classname="tests.evaluation.test_dry_run" name="test_property_19_dry_run_makes_no_api_calls" time="0.086" /><testcase classname="tests.evaluation.test_dry_run" name="test_property_19_non_dry_run_calls_process_message" time="0.001" /><testcase classname="tests.evaluation.test_dry_run" name="test_property_19_dry_run_never_calls_process_message" time="1.208" /><testcase classname="tests.evaluation.test_dry_run" name="test_property_19_dry_run_vs_live_call_count" time="0.077" /><testcase classname="tests.evaluation.test_error_resilience" name="test_property_14_error_resilience" time="0.106" /><testcase classname="tests.evaluation.test_golden_set" name="test_property_1_valid_question_passes_validation" time="0.103" /><testcase classname="tests.evaluation.test_golden_set" name="test_property_1b_missing_field_causes_error" time="0.005" /><testcase classname="tests.evaluation.test_golden_set" name="test_property_1c_empty_field_causes_error" time="0.005" /><testcase classname="tests.evaluation.test_golden_set" name="test_property_2_sql_references_only_allowed_tables" time="0.085" /><testcase classname="tests.evaluation.test_golden_set" name="test_property_2b_sql_with_allowed_tables_passes_as_valid_question" time="0.138" /><testcase classname="tests.evaluation.test_retry" name="test_property_15_retry_on_rate_limit" time="0.006" /><testcase classname="tests.evaluation.test_retry" name="test_property_15_retry_exhausted_raises" time="0.001" /><testcase classname="tests.evaluation.test_retry" name="test_property_15_sleep_called_between_retries" time="0.006" /><testcase classname="tests.evaluation.test_retry" name="test_property_16_exponential_backoff" time="0.004" /><testcase classname="tests.evaluation.test_retry" name="test_property_16_backoff_exhausted_raises" time="0.001" /><testcase classname="tests.evaluation.test_retry" name="test_property_16_non_connection_error_not_retried" time="0.001" /><testcase classname="tests.evaluation.test_scoring" name="test_property_13_weighted_scoring_computation" time="0.182" /><testcase classname="tests.evaluation.test_scoring" name="test_property_13_pass_fail_threshold" time="0.183" /><testcase classname="tests.evaluation.test_txt_output" name="test_property_17_txt_contains_required_metadata" time="0.006" /><testcase classname="tests.evaluation.test_txt_output" name="test_property_17_txt_contains_golden_set_md5" time="0.012" /><testcase classname="tests.evaluation.test_txt_output" name="test_property_18_result_filename_pattern" time="0.004" /><testcase classname="tests.evaluation.test_txt_output" name="test_property_18_filename_starts_with_module" time="0.004" /><testcase classname="tests.evaluation.test_txt_output" name="test_property_18_filename_ends_with_txt" time="0.004" /><testcase classname="tests.evaluation.test_txt_output" name="test_property_18_filename_timestamp_is_valid_datetime" time="0.004" /><testcase classname="tests.test_database.TestDatabaseService" name="test_database_connection" time="0.001" /><testcase classname="tests.test_database.TestDatabaseService" name="test_query_execution" time="0.001" /><testcase classname="tests.test_database.TestDatabaseService" name="test_query_validation" time="0.001" /><testcase classname="tests.test_rag_components.TestParentChildChunker" name="test_chunk_document_creates_hierarchy" time="0.112"><failure message="pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings&#10;supabase_url&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&#10;supabase_key&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing">tests\test_rag_components.py:15: in test_chunk_document_creates_hierarchy
+    from services.rag.parent_child_chunker import ParentChildChunker
+services\__init__.py:3: in &lt;module&gt;
+    from .cache_manager import cache_manager, CacheManager
+services\cache_manager.py:18: in &lt;module&gt;
+    from config.settings import settings
+config\__init__.py:3: in &lt;module&gt;
+    from .settings import settings
+config\settings.py:469: in &lt;module&gt;
+    class Settings(BaseSettings):
+config\settings.py:480: in Settings
+    database: DatabaseSettings = DatabaseSettings()
+                                 ^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings
+E   supabase_url
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing
+E   supabase_key
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing</failure></testcase><testcase classname="tests.test_rag_components.TestParentChildChunker" name="test_get_parent_for_child" time="0.017"><failure message="pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings&#10;supabase_url&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&#10;supabase_key&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing">tests\test_rag_components.py:34: in test_get_parent_for_child
+    from services.rag.parent_child_chunker import ParentChildChunker
+services\__init__.py:3: in &lt;module&gt;
+    from .cache_manager import cache_manager, CacheManager
+services\cache_manager.py:18: in &lt;module&gt;
+    from config.settings import settings
+config\__init__.py:3: in &lt;module&gt;
+    from .settings import settings
+config\settings.py:469: in &lt;module&gt;
+    class Settings(BaseSettings):
+config\settings.py:480: in Settings
+    database: DatabaseSettings = DatabaseSettings()
+                                 ^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings
+E   supabase_url
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing
+E   supabase_key
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing</failure></testcase><testcase classname="tests.test_rag_components.TestSupabaseVectorStore" name="test_hybrid_search_calls_rpc" time="0.017"><error message="failed on setup with &quot;pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings&#10;supabase_url&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&#10;supabase_key&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&quot;">tests\test_rag_components.py:58: in mock_store
+    with patch('services.rag.supabase_vector_store.create_client') as mock_create:
+C:\Users\ferna\anaconda3\envs\HCE\Lib\unittest\mock.py:1430: in __enter__
+    self.target = self.getter()
+                  ^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\pkgutil.py:700: in resolve_name
+    mod = importlib.import_module(modname)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\importlib\__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;frozen importlib._bootstrap&gt;:1204: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:940: in exec_module
+    ???
+&lt;frozen importlib._bootstrap&gt;:241: in _call_with_frames_removed
+    ???
+services\__init__.py:3: in &lt;module&gt;
+    from .cache_manager import cache_manager, CacheManager
+services\cache_manager.py:18: in &lt;module&gt;
+    from config.settings import settings
+config\__init__.py:3: in &lt;module&gt;
+    from .settings import settings
+config\settings.py:469: in &lt;module&gt;
+    class Settings(BaseSettings):
+config\settings.py:480: in Settings
+    database: DatabaseSettings = DatabaseSettings()
+                                 ^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings
+E   supabase_url
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing
+E   supabase_key
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing</error></testcase><testcase classname="tests.test_rag_components.TestSupabaseVectorStore" name="test_vector_search_calls_rpc" time="0.016"><error message="failed on setup with &quot;pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings&#10;supabase_url&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&#10;supabase_key&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&quot;">tests\test_rag_components.py:58: in mock_store
+    with patch('services.rag.supabase_vector_store.create_client') as mock_create:
+C:\Users\ferna\anaconda3\envs\HCE\Lib\unittest\mock.py:1430: in __enter__
+    self.target = self.getter()
+                  ^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\pkgutil.py:700: in resolve_name
+    mod = importlib.import_module(modname)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\importlib\__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;frozen importlib._bootstrap&gt;:1204: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:940: in exec_module
+    ???
+&lt;frozen importlib._bootstrap&gt;:241: in _call_with_frames_removed
+    ???
+services\__init__.py:3: in &lt;module&gt;
+    from .cache_manager import cache_manager, CacheManager
+services\cache_manager.py:18: in &lt;module&gt;
+    from config.settings import settings
+config\__init__.py:3: in &lt;module&gt;
+    from .settings import settings
+config\settings.py:469: in &lt;module&gt;
+    class Settings(BaseSettings):
+config\settings.py:480: in Settings
+    database: DatabaseSettings = DatabaseSettings()
+                                 ^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings
+E   supabase_url
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing
+E   supabase_key
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing</error></testcase><testcase classname="tests.test_rag_components.TestSupabaseVectorStore" name="test_get_collection_stats" time="0.015"><error message="failed on setup with &quot;pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings&#10;supabase_url&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&#10;supabase_key&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&quot;">tests\test_rag_components.py:58: in mock_store
+    with patch('services.rag.supabase_vector_store.create_client') as mock_create:
+C:\Users\ferna\anaconda3\envs\HCE\Lib\unittest\mock.py:1430: in __enter__
+    self.target = self.getter()
+                  ^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\pkgutil.py:700: in resolve_name
+    mod = importlib.import_module(modname)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\importlib\__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;frozen importlib._bootstrap&gt;:1204: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:940: in exec_module
+    ???
+&lt;frozen importlib._bootstrap&gt;:241: in _call_with_frames_removed
+    ???
+services\__init__.py:3: in &lt;module&gt;
+    from .cache_manager import cache_manager, CacheManager
+services\cache_manager.py:18: in &lt;module&gt;
+    from config.settings import settings
+config\__init__.py:3: in &lt;module&gt;
+    from .settings import settings
+config\settings.py:469: in &lt;module&gt;
+    class Settings(BaseSettings):
+config\settings.py:480: in Settings
+    database: DatabaseSettings = DatabaseSettings()
+                                 ^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings
+E   supabase_url
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing
+E   supabase_key
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing</error></testcase><testcase classname="tests.test_rag_components.TestSupabaseVectorStore" name="test_delete_by_filename" time="0.014"><error message="failed on setup with &quot;pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings&#10;supabase_url&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&#10;supabase_key&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&quot;">tests\test_rag_components.py:58: in mock_store
+    with patch('services.rag.supabase_vector_store.create_client') as mock_create:
+C:\Users\ferna\anaconda3\envs\HCE\Lib\unittest\mock.py:1430: in __enter__
+    self.target = self.getter()
+                  ^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\pkgutil.py:700: in resolve_name
+    mod = importlib.import_module(modname)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\importlib\__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;frozen importlib._bootstrap&gt;:1204: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1176: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1147: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:690: in _load_unlocked
+    ???
+&lt;frozen importlib._bootstrap_external&gt;:940: in exec_module
+    ???
+&lt;frozen importlib._bootstrap&gt;:241: in _call_with_frames_removed
+    ???
+services\__init__.py:3: in &lt;module&gt;
+    from .cache_manager import cache_manager, CacheManager
+services\cache_manager.py:18: in &lt;module&gt;
+    from config.settings import settings
+config\__init__.py:3: in &lt;module&gt;
+    from .settings import settings
+config\settings.py:469: in &lt;module&gt;
+    class Settings(BaseSettings):
+config\settings.py:480: in Settings
+    database: DatabaseSettings = DatabaseSettings()
+                                 ^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings
+E   supabase_url
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing
+E   supabase_key
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing</error></testcase><testcase classname="tests.test_rag_components.TestReranker" name="test_rerank_returns_original_when_unavailable" time="0.016"><failure message="pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings&#10;supabase_url&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&#10;supabase_key&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing">tests\test_rag_components.py:197: in test_rerank_returns_original_when_unavailable
+    from services.rag.reranker import Reranker
+services\__init__.py:3: in &lt;module&gt;
+    from .cache_manager import cache_manager, CacheManager
+services\cache_manager.py:18: in &lt;module&gt;
+    from config.settings import settings
+config\__init__.py:3: in &lt;module&gt;
+    from .settings import settings
+config\settings.py:469: in &lt;module&gt;
+    class Settings(BaseSettings):
+config\settings.py:480: in Settings
+    database: DatabaseSettings = DatabaseSettings()
+                                 ^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings
+E   supabase_url
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing
+E   supabase_key
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing</failure></testcase><testcase classname="tests.test_rag_components.TestReranker" name="test_rerank_respects_top_k" time="0.015"><failure message="pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings&#10;supabase_url&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&#10;supabase_key&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing">tests\test_rag_components.py:210: in test_rerank_respects_top_k
+    from services.rag.reranker import Reranker
+services\__init__.py:3: in &lt;module&gt;
+    from .cache_manager import cache_manager, CacheManager
+services\cache_manager.py:18: in &lt;module&gt;
+    from config.settings import settings
+config\__init__.py:3: in &lt;module&gt;
+    from .settings import settings
+config\settings.py:469: in &lt;module&gt;
+    class Settings(BaseSettings):
+config\settings.py:480: in Settings
+    database: DatabaseSettings = DatabaseSettings()
+                                 ^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings
+E   supabase_url
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing
+E   supabase_key
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing</failure></testcase><testcase classname="tests.test_system.TestImports" name="test_config_imports" time="0.014"><failure message="pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings&#10;supabase_url&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&#10;supabase_key&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing">tests\test_system.py:15: in test_config_imports
+    from config.settings import settings
+config\__init__.py:3: in &lt;module&gt;
+    from .settings import settings
+config\settings.py:469: in &lt;module&gt;
+    class Settings(BaseSettings):
+config\settings.py:480: in Settings
+    database: DatabaseSettings = DatabaseSettings()
+                                 ^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings
+E   supabase_url
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing
+E   supabase_key
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing</failure></testcase><testcase classname="tests.test_system.TestImports" name="test_rag_service_imports" time="0.016"><failure message="pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings&#10;supabase_url&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&#10;supabase_key&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing">tests\test_system.py:23: in test_rag_service_imports
+    from services.rag.parent_child_chunker import ParentChildChunker
+services\__init__.py:3: in &lt;module&gt;
+    from .cache_manager import cache_manager, CacheManager
+services\cache_manager.py:18: in &lt;module&gt;
+    from config.settings import settings
+config\__init__.py:3: in &lt;module&gt;
+    from .settings import settings
+config\settings.py:469: in &lt;module&gt;
+    class Settings(BaseSettings):
+config\settings.py:480: in Settings
+    database: DatabaseSettings = DatabaseSettings()
+                                 ^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings
+E   supabase_url
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing
+E   supabase_key
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing</failure></testcase><testcase classname="tests.test_system.TestImports" name="test_visualization_imports" time="0.015"><failure message="pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings&#10;supabase_url&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&#10;supabase_key&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing">tests\test_system.py:33: in test_visualization_imports
+    from services.medical_agent.visualization_agent import VisualizationAgent
+services\__init__.py:3: in &lt;module&gt;
+    from .cache_manager import cache_manager, CacheManager
+services\cache_manager.py:18: in &lt;module&gt;
+    from config.settings import settings
+config\__init__.py:3: in &lt;module&gt;
+    from .settings import settings
+config\settings.py:469: in &lt;module&gt;
+    class Settings(BaseSettings):
+config\settings.py:480: in Settings
+    database: DatabaseSettings = DatabaseSettings()
+                                 ^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings
+E   supabase_url
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing
+E   supabase_key
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing</failure></testcase><testcase classname="tests.test_system.TestVisualizationAgent" name="test_initialization" time="0.015"><failure message="pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings&#10;supabase_url&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&#10;supabase_key&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing">tests\test_system.py:45: in test_initialization
+    from services.medical_agent.visualization_agent import VisualizationAgent
+services\__init__.py:3: in &lt;module&gt;
+    from .cache_manager import cache_manager, CacheManager
+services\cache_manager.py:18: in &lt;module&gt;
+    from config.settings import settings
+config\__init__.py:3: in &lt;module&gt;
+    from .settings import settings
+config\settings.py:469: in &lt;module&gt;
+    class Settings(BaseSettings):
+config\settings.py:480: in Settings
+    database: DatabaseSettings = DatabaseSettings()
+                                 ^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings
+E   supabase_url
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing
+E   supabase_key
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing</failure></testcase><testcase classname="tests.test_system.TestVisualizationAgent" name="test_get_performance_stats" time="0.017"><failure message="pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings&#10;supabase_url&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&#10;supabase_key&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing">tests\test_system.py:53: in test_get_performance_stats
+    from services.medical_agent.visualization_agent import VisualizationAgent
+services\__init__.py:3: in &lt;module&gt;
+    from .cache_manager import cache_manager, CacheManager
+services\cache_manager.py:18: in &lt;module&gt;
+    from config.settings import settings
+config\__init__.py:3: in &lt;module&gt;
+    from .settings import settings
+config\settings.py:469: in &lt;module&gt;
+    class Settings(BaseSettings):
+config\settings.py:480: in Settings
+    database: DatabaseSettings = DatabaseSettings()
+                                 ^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings
+E   supabase_url
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing
+E   supabase_key
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing</failure></testcase><testcase classname="tests.test_system.TestVisualizationHandler" name="test_initialization" time="0.015"><failure message="pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings&#10;supabase_url&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&#10;supabase_key&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing">tests\test_system.py:67: in test_initialization
+    from services.medical_agent.visualization_handler import VisualizationHandler
+services\__init__.py:3: in &lt;module&gt;
+    from .cache_manager import cache_manager, CacheManager
+services\cache_manager.py:18: in &lt;module&gt;
+    from config.settings import settings
+config\__init__.py:3: in &lt;module&gt;
+    from .settings import settings
+config\settings.py:469: in &lt;module&gt;
+    class Settings(BaseSettings):
+config\settings.py:480: in Settings
+    database: DatabaseSettings = DatabaseSettings()
+                                 ^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings
+E   supabase_url
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing
+E   supabase_key
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing</failure></testcase><testcase classname="tests.test_system.TestVisualizationHandler" name="test_process_empty_response" time="0.015"><failure message="pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings&#10;supabase_url&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&#10;supabase_key&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing">tests\test_system.py:74: in test_process_empty_response
+    from services.medical_agent.visualization_handler import VisualizationHandler
+services\__init__.py:3: in &lt;module&gt;
+    from .cache_manager import cache_manager, CacheManager
+services\cache_manager.py:18: in &lt;module&gt;
+    from config.settings import settings
+config\__init__.py:3: in &lt;module&gt;
+    from .settings import settings
+config\settings.py:469: in &lt;module&gt;
+    class Settings(BaseSettings):
+config\settings.py:480: in Settings
+    database: DatabaseSettings = DatabaseSettings()
+                                 ^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings
+E   supabase_url
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing
+E   supabase_key
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing</failure></testcase><testcase classname="tests.test_system.TestDatabaseTool" name="test_tool_imports" time="0.016"><failure message="pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings&#10;supabase_url&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&#10;supabase_key&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing">tests\test_system.py:87: in test_tool_imports
+    from services.unified_chat.tools.database_tool import DatabaseTool
+services\__init__.py:3: in &lt;module&gt;
+    from .cache_manager import cache_manager, CacheManager
+services\cache_manager.py:18: in &lt;module&gt;
+    from config.settings import settings
+config\__init__.py:3: in &lt;module&gt;
+    from .settings import settings
+config\settings.py:469: in &lt;module&gt;
+    class Settings(BaseSettings):
+config\settings.py:480: in Settings
+    database: DatabaseSettings = DatabaseSettings()
+                                 ^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings
+E   supabase_url
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing
+E   supabase_key
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing</failure></testcase><testcase classname="tests.test_system.TestRAGTool" name="test_tool_imports" time="0.016"><failure message="pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings&#10;supabase_url&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing&#10;supabase_key&#10;  Field required [type=missing, input_value={}, input_type=dict]&#10;    For further information visit https://errors.pydantic.dev/2.12/v/missing">tests\test_system.py:96: in test_tool_imports
+    from services.unified_chat.tools.rag_tool import RAGTool
+services\__init__.py:3: in &lt;module&gt;
+    from .cache_manager import cache_manager, CacheManager
+services\cache_manager.py:18: in &lt;module&gt;
+    from config.settings import settings
+config\__init__.py:3: in &lt;module&gt;
+    from .settings import settings
+config\settings.py:469: in &lt;module&gt;
+    class Settings(BaseSettings):
+config\settings.py:480: in Settings
+    database: DatabaseSettings = DatabaseSettings()
+                                 ^^^^^^^^^^^^^^^^^^
+C:\Users\ferna\anaconda3\envs\HCE\Lib\site-packages\pydantic_settings\main.py:194: in __init__
+    super().__init__(
+E   pydantic_core._pydantic_core.ValidationError: 2 validation errors for DatabaseSettings
+E   supabase_url
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing
+E   supabase_key
+E     Field required [type=missing, input_value={}, input_type=dict]
+E       For further information visit https://errors.pydantic.dev/2.12/v/missing</failure></testcase></testsuite></testsuites>

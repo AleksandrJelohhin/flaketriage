@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites disabled="0" errors="0" name="checkov" failures="2" tests="6" time="23.34">
+    <testsuite disabled="0" errors="0" failures="2" name="terraform scan" skipped="1" tests="5" time="12.34">
+        <properties>
+            <property name="directory" value="example"/>
+            <property name="output" value="['junitxml']"/>
+        </properties>
+
+        <testcase name="[CRITICAL][CKV_AWS_20] S3 Bucket has an ACL defined which allows public READ access." classname="/main.tf.aws_s3_bucket.example" file="/main.tf"/>
+        <testcase name="[CRITICAL][CKV_AWS_20] S3 Bucket has an ACL defined which allows public READ access." classname="/main.tf.aws_s3_bucket.example_2" file="/main.tf"/>
+
+        <testcase name="[HIGH][CKV_AWS_21] Ensure all data stored in the S3 bucket have versioning enabled" classname="/main.tf.aws_s3_bucket.example" file="/main.tf">
+            <failure type="failure" message="Ensure all data stored in the S3 bucket have versioning enabled">
+                Resource: aws_s3_bucket.example
+                File: /main.tf: 6-9
+                Guideline: https://docs.bridgecrew.io/docs/s3_16-enable-versioning
+                
+                    6 | resource "aws_s3_bucket" "example" {
+                    7 |   # checkov:skip=CKV_AWS_18: logging not needed on a logging bucket
+                    8 |   bucket = "test-12345"
+                    9 | }
+            </failure>
+        </testcase>
+        <testcase name="[HIGH][CKV_AWS_21] Ensure all data stored in the S3 bucket have versioning enabled" classname="/main.tf.aws_s3_bucket.example_2" file="/main.tf">
+            <failure type="failure" message="Ensure all data stored in the S3 bucket have versioning enabled">
+                Resource: aws_s3_bucket.example_2
+                File: /main.tf: 12-15
+                Guideline: https://docs.bridgecrew.io/docs/s3_16-enable-versioning
+                
+                    12 | resource "aws_s3_bucket" "example_2" {
+                    13 |   # checkov:skip=CKV_AWS_18: logging not needed on a logging bucket
+                    14 |   bucket = "test-12345"
+                    15 | }
+            </failure>
+        </testcase>
+
+        <testcase name="[MEDIUM][CKV_AWS_18] Ensure the S3 bucket has access logging enabled" classname="/main.tf.aws_s3_bucket.example" file="/main.tf">
+            <skipped type="skipped" message="logging not needed on a logging bucket"/>
+        </testcase>
+    </testsuite>
+    <testsuite disabled="0" errors="0" failures="0" name="cloudformation scan" skipped="0" tests="1" time="1.00">
+        <testcase name="[LOW][CKV_AWS_20] S3 Bucket has an ACL defined which allows public READ access." classname="/cfn.yaml.AWS::S3::Bucket.Example" file="/cfn.yaml"/>
+    </testsuite>
+    <testsuite disabled="0" errors="0" failures="2" name="sca_package scan" skipped="1" tests="3" time="10.00">
+        <testcase name="[HIGH][CVE-2013-7370] connect: 2.6.0" classname="/package-lock.json.connect" file="/package-lock.json">
+            <failure type="failure" message="CVE-2013-7370 found in connect: 2.6.0">
+                Description: A nil pointer dereference in the golang.org/x/crypto/ssh component through v0.0.0-20201203163018-be400aefbc4c for Go allows remote attackers to cause a denial of service against SSH servers.
+                Link: https://nvd.nist.gov/vuln/detail/CVE-2020-29652
+                Published Date: 2020-12-17T21:31:00+02:00
+                Base Score: 7.5
+                Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+                Risk Factors: ["Has fix", "High severity", "Attack complexity: low", "Attack vector: network", "DoS"]
+                
+                Resource: package-lock.json.connect
+                File: /package-lock.json: 0-0
+                
+                    0 | connect: 2.6.0
+            </failure>
+        </testcase>
+
+        <testcase name="[HIGH][CVE-2013-7370] django: 1.2" classname="/requirements.txt.django" file="/requirements.txt">
+            <skipped type="skipped" message="CVE-2019-19844 skipped for django: 1.2"/>
+        </testcase>
+    </testsuite>
+</testsuites>

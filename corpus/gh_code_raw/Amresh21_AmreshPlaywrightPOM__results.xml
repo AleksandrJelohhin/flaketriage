@@ -1,0 +1,54 @@
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="3.9073030000000726">
+<testsuite name="TC_01_productPage.test.js" timestamp="2025-06-22T15:02:21.395Z" hostname="Chrome" tests="2" failures="1" skipped="0" time="4.957" errors="0">
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user" classname="TC_01_productPage.test.js" time="2.592">
+<failure message="TC_01_productPage.test.js:57:7 Login to App as a standard user" type="FAILURE">
+<![CDATA[  [Chrome] › TC_01_productPage.test.js:57:7 › @smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user › Verify the products page shopping cart icon and product sort container visible  
+
+    Error: Element Not Visible. Check Failed!
+
+       at ../pages/basePage.js:119
+
+      117 | 			expect(isVisible).toBeTruthy()
+      118 | 		} catch (error) {
+    > 119 | 			throw new Error(`${errorMessage}`)
+          | 			      ^
+      120 | 		}
+      121 | 	}
+      122 |
+
+        at ProductsPage.isElementVisible (/Users/vikasbhandari/Documents/PlaywrightClass/Playwright-JavaScript-SauceDemo-main/pages/basePage.js:119:10)
+        at ProductsPage.productSortContainerVisible (/Users/vikasbhandari/Documents/PlaywrightClass/Playwright-JavaScript-SauceDemo-main/pages/productsPage.js:173:10)
+        at /Users/vikasbhandari/Documents/PlaywrightClass/Playwright-JavaScript-SauceDemo-main/tests/TC_01_productPage.test.js:99:6
+        at /Users/vikasbhandari/Documents/PlaywrightClass/Playwright-JavaScript-SauceDemo-main/tests/TC_01_productPage.test.js:95:4
+
+    attachment #1: video (video/webm) 
+    test-results/TC_01_productPage--smoke-Login-as-a-standard-u-be920-the-application-Login-to-App-as-a-standard-user-Chrome/video.webm
+    ───────────────────────
+
+    attachment #2: screenshot (image/png) 
+    test-results/TC_01_productPage--smoke-Login-as-a-standard-u-be920-the-application-Login-to-App-as-a-standard-user-Chrome/test-failed-1.png
+    ───────────────────────
+
+    attachment #3: trace (application/zip) 
+    test-results/TC_01_productPage--smoke-Login-as-a-standard-u-be920-the-application-Login-to-App-as-a-standard-user-Chrome/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/TC_01_productPage--smoke-Login-as-a-standard-u-be920-the-application-Login-to-App-as-a-standard-user-Chrome/trace.zip
+
+    ───────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/TC_01_productPage--smoke-Login-as-a-standard-u-be920-the-application-Login-to-App-as-a-standard-user-Chrome/video.webm]]
+
+[[ATTACHMENT|../test-results/TC_01_productPage--smoke-Login-as-a-standard-u-be920-the-application-Login-to-App-as-a-standard-user-Chrome/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/TC_01_productPage--smoke-Login-as-a-standard-u-be920-the-application-Login-to-App-as-a-standard-user-Chrome/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" classname="TC_01_productPage.test.js" time="2.365">
+</testcase>
+</testsuite>
+</testsuites>

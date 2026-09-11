@@ -1,0 +1,3989 @@
+<testsuites id="" name="" tests="192" failures="45" skipped="54" errors="0" time="1761.525784">
+<testsuite name="critical/create-session.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="chromium" tests="6" failures="2" skipped="0" time="31.279" errors="0">
+<testcase name="CRITICAL: Create Session Flow › 1. Should navigate to create page from home" classname="critical/create-session.spec.ts" time="1.807">
+</testcase>
+<testcase name="CRITICAL: Create Session Flow › 2. Should create session with manual form" classname="critical/create-session.spec.ts" time="5.654">
+<failure message="create-session.spec.ts:45:3 2. Should create session with manual form" type="FAILURE">
+<![CDATA[  [chromium] › critical/create-session.spec.ts:45:3 › CRITICAL: Create Session Flow › 2. Should create session with manual form 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "created"
+    Received: "running"
+
+      86 |     const session = await apiHelpers.getSession(sessionId);
+      87 |     expect(session.title).toBe(testData.title);
+    > 88 |     expect(session.status).toBe('created');
+         |                            ^
+      89 |
+      90 |     // Screenshot of workspace
+      91 |     await page.screenshot({ path: `artifacts/workspace-after-creation-${sessionId}.png` });
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/create-session.spec.ts:88:28
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-create-session-CR-63fd0-te-session-with-manual-form-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-create-session-CR-63fd0-te-session-with-manual-form-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-create-session-CR-63fd0-te-session-with-manual-form-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[  ✓ Created session: 40205437-5ac2-4808-823f-6c69d9df23ae
+]]>
+</system-out>
+<system-err>
+<![CDATA[
+Warning: attachment test-results/critical-create-session-CR-63fd0-te-session-with-manual-form-chromium/test-failed-1.png is missing
+Warning: attachment test-results/critical-create-session-CR-63fd0-te-session-with-manual-form-chromium/video.webm is missing
+Warning: attachment test-results/critical-create-session-CR-63fd0-te-session-with-manual-form-chromium/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="CRITICAL: Create Session Flow › 3. Should create session with estimated chapter count" classname="critical/create-session.spec.ts" time="16.912">
+<failure message="create-session.spec.ts:94:3 3. Should create session with estimated chapter count" type="FAILURE">
+<![CDATA[  [chromium] › critical/create-session.spec.ts:94:3 › CRITICAL: Create Session Flow › 3. Should create session with estimated chapter count 
+
+    TimeoutError: locator.selectOption: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('select').first()
+        - locator resolved to <select id=":r3:" class="w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white border-gray-300 ">…</select>
+      - attempting select option action
+        2 × waiting for element to be visible and enabled
+          - did not find some options
+        - retrying select option action
+        - waiting 20ms
+        2 × waiting for element to be visible and enabled
+          - did not find some options
+        - retrying select option action
+          - waiting 100ms
+        30 × waiting for element to be visible and enabled
+           - did not find some options
+         - retrying select option action
+           - waiting 500ms
+
+
+       at pages/CreatePage.ts:103
+
+      101 |     }
+      102 |     if (data.wordCount) {
+    > 103 |       await this.wordCountSelect.selectOption(data.wordCount);
+          |                                  ^
+      104 |     }
+      105 |     if (data.approvalMode !== undefined) {
+      106 |       const isChecked = await this.approvalModeCheckbox.isChecked();
+        at CreatePage.fillForm (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/CreatePage.ts:103:34)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/create-session.spec.ts:106:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-chromium/video.webm]]
+
+[[ATTACHMENT|test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Create Session Flow › 4. Should validate required fields" classname="critical/create-session.spec.ts" time="1.969">
+</testcase>
+<testcase name="CRITICAL: Create Session Flow › 5. Should create session via API and navigate to workspace" classname="critical/create-session.spec.ts" time="1.718">
+<system-out>
+<![CDATA[  ✓ Created session via API: bdd2a24b-a989-42aa-89ec-9485bce2249a
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Create Session Flow › 6. Should create session with approval mode enabled" classname="critical/create-session.spec.ts" time="3.219">
+<system-out>
+<![CDATA[  ✓ Approval mode enabled for session: d7719ba2-cd78-4b20-9c6f-eb1313ab6e92
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="critical/session-control.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="chromium" tests="5" failures="3" skipped="0" time="29.803" errors="0">
+<testcase name="CRITICAL: Session Control Flow › 1. Should pause a running session via API" classname="critical/session-control.spec.ts" time="8.644">
+<failure message="session-control.spec.ts:44:3 1. Should pause a running session via API" type="FAILURE">
+<![CDATA[  [chromium] › critical/session-control.spec.ts:44:3 › CRITICAL: Session Control Flow › 1. Should pause a running session via API 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+       at helpers/api-helpers.ts:91
+
+      89 |   async pauseSession(sessionId: string) {
+      90 |     const response = await this.request.post(`${BASE_URL}/sessions/${sessionId}/pause`);
+    > 91 |     expect(response.ok()).toBeTruthy();
+         |                           ^
+      92 |     return await response.json();
+      93 |   }
+      94 |
+        at ApiHelpers.pauseSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:91:27)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/session-control.spec.ts:73:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-chromium/video.webm]]
+
+[[ATTACHMENT|test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-chromium/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[  Failed to cleanup session 46757dc0-79c7-48c3-a801-ee25537b1969: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+Received: [31mfalse[39m
+    at ApiHelpers.stopSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:103:27[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/critical/session-control.spec.ts:36:9 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [[32mSymbol(step)[39m]: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBeTruthy'[39m,
+    title: [32m'Expect "toBeTruthy"'[39m,
+    shortTitle: [32m'Expect "toBeTruthy"'[39m,
+    params: [90mundefined[39m,
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@99'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts'[39m,
+      line: [33m103[39m,
+      column: [33m27[39m,
+      function: [32m'ApiHelpers.stopSession'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@99'[39m,
+      _title: [32m'Expect "toBeTruthy"'[39m,
+      _parentStep: [36m[TestStepInfoImpl][39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769340236897[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at ApiHelpers.stopSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:103:27)\n'[39m +
+        [32m'    at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/session-control.spec.ts:36:9'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-err>
+</testcase>
+<testcase name="CRITICAL: Session Control Flow › 2. Should resume a paused session via API" classname="critical/session-control.spec.ts" time="4.652">
+<failure message="session-control.spec.ts:91:3 2. Should resume a paused session via API" type="FAILURE">
+<![CDATA[  [chromium] › critical/session-control.spec.ts:91:3 › CRITICAL: Session Control Flow › 2. Should resume a paused session via API 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+       at helpers/api-helpers.ts:91
+
+      89 |   async pauseSession(sessionId: string) {
+      90 |     const response = await this.request.post(`${BASE_URL}/sessions/${sessionId}/pause`);
+    > 91 |     expect(response.ok()).toBeTruthy();
+         |                           ^
+      92 |     return await response.json();
+      93 |   }
+      94 |
+        at ApiHelpers.pauseSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:91:27)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/session-control.spec.ts:112:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-chromium/video.webm]]
+
+[[ATTACHMENT|test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-chromium/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[  Failed to cleanup session 42b7251e-dec1-4eaa-8dce-39d16c87d050: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+Received: [31mfalse[39m
+    at ApiHelpers.stopSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:103:27[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/critical/session-control.spec.ts:36:9 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [[32mSymbol(step)[39m]: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBeTruthy'[39m,
+    title: [32m'Expect "toBeTruthy"'[39m,
+    shortTitle: [32m'Expect "toBeTruthy"'[39m,
+    params: [90mundefined[39m,
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@107'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts'[39m,
+      line: [33m103[39m,
+      column: [33m27[39m,
+      function: [32m'ApiHelpers.stopSession'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@107'[39m,
+      _title: [32m'Expect "toBeTruthy"'[39m,
+      _parentStep: [36m[TestStepInfoImpl][39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769340243767[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at ApiHelpers.stopSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:103:27)\n'[39m +
+        [32m'    at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/session-control.spec.ts:36:9'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-err>
+</testcase>
+<testcase name="CRITICAL: Session Control Flow › 3. Should stop a running session via API" classname="critical/session-control.spec.ts" time="5.093">
+<failure message="session-control.spec.ts:135:3 3. Should stop a running session via API" type="FAILURE">
+<![CDATA[  [chromium] › critical/session-control.spec.ts:135:3 › CRITICAL: Session Control Flow › 3. Should stop a running session via API 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+       at helpers/api-helpers.ts:103
+
+      101 |   async stopSession(sessionId: string) {
+      102 |     const response = await this.request.post(`${BASE_URL}/sessions/${sessionId}/stop`);
+    > 103 |     expect(response.ok()).toBeTruthy();
+          |                           ^
+      104 |     return await response.json();
+      105 |   }
+      106 |
+        at ApiHelpers.stopSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:103:27)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/session-control.spec.ts:159:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-chromium/video.webm]]
+
+[[ATTACHMENT|test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-chromium/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[  Failed to cleanup session 9c90c961-7fb6-447d-ad94-bf1448a5a901: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+Received: [31mfalse[39m
+    at ApiHelpers.stopSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:103:27[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/critical/session-control.spec.ts:36:9 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [[32mSymbol(step)[39m]: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBeTruthy'[39m,
+    title: [32m'Expect "toBeTruthy"'[39m,
+    shortTitle: [32m'Expect "toBeTruthy"'[39m,
+    params: [90mundefined[39m,
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@107'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts'[39m,
+      line: [33m103[39m,
+      column: [33m27[39m,
+      function: [32m'ApiHelpers.stopSession'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@107'[39m,
+      _title: [32m'Expect "toBeTruthy"'[39m,
+      _parentStep: [36m[TestStepInfoImpl][39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769340251465[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at ApiHelpers.stopSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:103:27)\n'[39m +
+        [32m'    at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/session-control.spec.ts:36:9'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-err>
+</testcase>
+<testcase name="CRITICAL: Session Control Flow › 4. Should handle pause/resume via WebSocket" classname="critical/session-control.spec.ts" time="8.286">
+<system-out>
+<![CDATA[  Session status after WS pause: running
+  ✓ WebSocket pause control tested
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Session Control Flow › 5. Should display correct controls based on session state" classname="critical/session-control.spec.ts" time="3.128">
+<system-out>
+<![CDATA[  Has resumable sessions: false
+  ✓ Session state displayed correctly
+]]>
+</system-out>
+<system-err>
+<![CDATA[  Failed to cleanup session e3140b5d-e95f-41cc-acfe-8a381dd714fe: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+Received: [31mfalse[39m
+    at ApiHelpers.stopSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:103:27[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/critical/session-control.spec.ts:36:9 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [[32mSymbol(step)[39m]: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBeTruthy'[39m,
+    title: [32m'Expect "toBeTruthy"'[39m,
+    shortTitle: [32m'Expect "toBeTruthy"'[39m,
+    params: [90mundefined[39m,
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@92'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts'[39m,
+      line: [33m103[39m,
+      column: [33m27[39m,
+      function: [32m'ApiHelpers.stopSession'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@92'[39m,
+      _title: [32m'Expect "toBeTruthy"'[39m,
+      _parentStep: [36m[TestStepInfoImpl][39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769340265489[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at ApiHelpers.stopSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:103:27)\n'[39m +
+        [32m'    at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/session-control.spec.ts:36:9'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="critical/sessions-list-resume.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="chromium" tests="7" failures="6" skipped="0" time="41.872" errors="0">
+<testcase name="CRITICAL: Sessions List and Resume Flow › 1. Should navigate to sessions list from home" classname="critical/sessions-list-resume.spec.ts" time="1.613">
+<failure message="sessions-list-resume.spec.ts:55:3 1. Should navigate to sessions list from home" type="FAILURE">
+<![CDATA[  [chromium] › critical/sessions-list-resume.spec.ts:55:3 › CRITICAL: Sessions List and Resume Flow › 1. Should navigate to sessions list from home 
+
+    Error: locator.click: Error: strict mode violation: getByRole('link', { name: /查看会话列表|查看全部/i }) resolved to 2 elements:
+        1) <a href="/sessions">…</a> aka getByRole('link', { name: '查看会话列表' })
+        2) <a href="/sessions" class="text-blue-600 hover:text-blue-700 text-sm">查看全部 →</a> aka getByRole('link', { name: '查看全部 →' })
+
+    Call log:
+      - waiting for getByRole('link', { name: /查看会话列表|查看全部/i })
+
+
+       at pages/HomePage.ts:45
+
+      43 |
+      44 |   async clickViewSessions() {
+    > 45 |     await this.viewSessionsButton.click();
+         |                                   ^
+      46 |   }
+      47 |
+      48 |   async clickViewAllSessions() {
+        at HomePage.clickViewSessions (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/HomePage.ts:45:35)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:61:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-chromium/video.webm]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-chromium/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[  Failed to delete session 1e7cbafa-4fac-47c8-8efb-4bf0c1cd1673: apiRequestContext.delete: Fixture { request } from beforeAll cannot be reused in a test.
+  - Recommended fix: use a separate { request } in the test.
+  - Alternatively, manually create APIRequestContext in beforeAll and dispose it in afterAll.
+See https://playwright.dev/docs/api-testing#sending-api-requests-from-ui-tests for more details.
+    at ApiHelpers.deleteSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:72:47[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/critical/sessions-list-resume.spec.ts:47:26
+]]>
+</system-err>
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 2. Should display sessions list" classname="critical/sessions-list-resume.spec.ts" time="1.586">
+<system-out>
+<![CDATA[  Found 0 sessions
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 3. Should filter sessions by status" classname="critical/sessions-list-resume.spec.ts" time="17.335">
+<failure message="sessions-list-resume.spec.ts:95:3 3. Should filter sessions by status" type="FAILURE">
+<![CDATA[  [chromium] › critical/sessions-list-resume.spec.ts:95:3 › CRITICAL: Sessions List and Resume Flow › 3. Should filter sessions by status 
+
+    TimeoutError: locator.selectOption: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for getByLabel(/全部状态/)
+
+
+       at pages/SessionsPage.ts:49
+
+      47 |
+      48 |   async filterByStatus(status: string) {
+    > 49 |     await this.statusFilter.selectOption(status);
+         |                             ^
+      50 |     await this.page.waitForLoadState('networkidle');
+      51 |   }
+      52 |
+        at SessionsPage.filterByStatus (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/SessionsPage.ts:49:29)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:106:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-chromium/video.webm]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-chromium/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[  Failed to delete session 2231501d-cd8d-44a0-8d96-31117a845a11: apiRequestContext.delete: Fixture { request } from beforeAll cannot be reused in a test.
+  - Recommended fix: use a separate { request } in the test.
+  - Alternatively, manually create APIRequestContext in beforeAll and dispose it in afterAll.
+See https://playwright.dev/docs/api-testing#sending-api-requests-from-ui-tests for more details.
+    at ApiHelpers.deleteSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:72:47[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/critical/sessions-list-resume.spec.ts:47:26
+]]>
+</system-err>
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 4. Should show empty state when no sessions" classname="critical/sessions-list-resume.spec.ts" time="0.641">
+<failure message="sessions-list-resume.spec.ts:122:3 4. Should show empty state when no sessions" type="FAILURE">
+<![CDATA[  [chromium] › critical/sessions-list-resume.spec.ts:122:3 › CRITICAL: Sessions List and Resume Flow › 4. Should show empty state when no sessions 
+
+    Error: apiRequestContext.get: Fixture { request } from beforeAll cannot be reused in a test.
+      - Recommended fix: use a separate { request } in the test.
+      - Alternatively, manually create APIRequestContext in beforeAll and dispose it in afterAll.
+    See https://playwright.dev/docs/api-testing#sending-api-requests-from-ui-tests for more details.
+
+       at helpers/api-helpers.ts:66
+
+      64 |       });
+      65 |     }
+    > 66 |     const response = await this.request.get(url.toString());
+         |                                         ^
+      67 |     expect(response.ok()).toBeTruthy();
+      68 |     return await response.json();
+      69 |   }
+        at ApiHelpers.getSessions (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:66:41)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:131:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-52ab5-mpty-state-when-no-sessions-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-52ab5-mpty-state-when-no-sessions-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-err>
+<![CDATA[  Failed to delete session bb2a4cfc-483b-4694-95f5-a9ec34548da9: apiRequestContext.delete: Fixture { request } from beforeAll cannot be reused in a test.
+  - Recommended fix: use a separate { request } in the test.
+  - Alternatively, manually create APIRequestContext in beforeAll and dispose it in afterAll.
+See https://playwright.dev/docs/api-testing#sending-api-requests-from-ui-tests for more details.
+    at ApiHelpers.deleteSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:72:47[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/critical/sessions-list-resume.spec.ts:47:26
+
+Warning: attachment test-results/critical-sessions-list-res-52ab5-mpty-state-when-no-sessions-chromium/test-failed-1.png is missing
+Warning: attachment test-results/critical-sessions-list-res-52ab5-mpty-state-when-no-sessions-chromium/video.webm is missing]]>
+</system-err>
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 5. Should navigate to create new project from sessions page" classname="critical/sessions-list-resume.spec.ts" time="2.022">
+<failure message="sessions-list-resume.spec.ts:156:3 5. Should navigate to create new project from sessions page" type="FAILURE">
+<![CDATA[  [chromium] › critical/sessions-list-resume.spec.ts:156:3 › CRITICAL: Sessions List and Resume Flow › 5. Should navigate to create new project from sessions page 
+
+    Error: locator.click: Error: strict mode violation: getByRole('link', { name: /创建新项目/ }) resolved to 2 elements:
+        1) <a href="/create">…</a> aka getByRole('link', { name: '创建新项目' }).first()
+        2) <a href="/create">…</a> aka getByRole('link', { name: '创建新项目' }).nth(1)
+
+    Call log:
+      - waiting for getByRole('link', { name: /创建新项目/ })
+
+
+       at pages/SessionsPage.ts:45
+
+      43 |
+      44 |   async clickCreateProject() {
+    > 45 |     await this.createProjectButton.click();
+         |                                    ^
+      46 |   }
+      47 |
+      48 |   async filterByStatus(status: string) {
+        at SessionsPage.clickCreateProject (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/SessionsPage.ts:45:36)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:162:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-chromium/video.webm]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-chromium/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[  Failed to delete session 2f3014f6-3e6a-4adc-902d-6995ba029352: apiRequestContext.delete: Fixture { request } from beforeAll cannot be reused in a test.
+  - Recommended fix: use a separate { request } in the test.
+  - Alternatively, manually create APIRequestContext in beforeAll and dispose it in afterAll.
+See https://playwright.dev/docs/api-testing#sending-api-requests-from-ui-tests for more details.
+    at ApiHelpers.deleteSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:72:47[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/critical/sessions-list-resume.spec.ts:47:26
+]]>
+</system-err>
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 6. Should navigate to session workspace" classname="critical/sessions-list-resume.spec.ts" time="17.85">
+<failure message="sessions-list-resume.spec.ts:172:3 6. Should navigate to session workspace" type="FAILURE">
+<![CDATA[  [chromium] › critical/sessions-list-resume.spec.ts:172:3 › CRITICAL: Sessions List and Resume Flow › 6. Should navigate to session workspace 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('[data-session-id="b2388ac6-c6eb-4299-a0be-d2203d848a37"]').getByRole('button', { name: /查看/i })
+
+
+       at pages/SessionsPage.ts:89
+
+      87 |       : this.page.getByRole('button', { name: /查看/i }).first();
+      88 |
+    > 89 |     await viewButton.click();
+         |                      ^
+      90 |   }
+      91 |
+      92 |   async getCurrentPage() {
+        at SessionsPage.clickViewSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/SessionsPage.ts:89:22)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:187:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-chromium/video.webm]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-chromium/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[  Failed to delete session b2388ac6-c6eb-4299-a0be-d2203d848a37: apiRequestContext.delete: Fixture { request } from beforeAll cannot be reused in a test.
+  - Recommended fix: use a separate { request } in the test.
+  - Alternatively, manually create APIRequestContext in beforeAll and dispose it in afterAll.
+See https://playwright.dev/docs/api-testing#sending-api-requests-from-ui-tests for more details.
+    at ApiHelpers.deleteSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:72:47[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/critical/sessions-list-resume.spec.ts:47:26
+]]>
+</system-err>
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 7. Should display pagination when multiple pages" classname="critical/sessions-list-resume.spec.ts" time="0.825">
+<failure message="sessions-list-resume.spec.ts:197:3 7. Should display pagination when multiple pages" type="FAILURE">
+<![CDATA[  [chromium] › critical/sessions-list-resume.spec.ts:197:3 › CRITICAL: Sessions List and Resume Flow › 7. Should display pagination when multiple pages 
+
+    Error: apiRequestContext.post: Fixture { request } from beforeAll cannot be reused in a test.
+      - Recommended fix: use a separate { request } in the test.
+      - Alternatively, manually create APIRequestContext in beforeAll and dispose it in afterAll.
+    See https://playwright.dev/docs/api-testing#sending-api-requests-from-ui-tests for more details.
+
+       at helpers/api-helpers.ts:44
+
+      42 |
+      43 |   async createSession(data: CreateSessionData): Promise<Session> {
+    > 44 |     const response = await this.request.post(`${BASE_URL}/sessions`, {
+         |                                         ^
+      45 |       data,
+      46 |     });
+      47 |     expect(response.ok()).toBeTruthy();
+        at ApiHelpers.createSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:44:41)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:204:40
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-f1d7a-ination-when-multiple-pages-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-f1d7a-ination-when-multiple-pages-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-err>
+<![CDATA[  Failed to delete session 775b3018-9700-48b5-bcf5-98ae429485df: apiRequestContext.delete: Fixture { request } from beforeAll cannot be reused in a test.
+  - Recommended fix: use a separate { request } in the test.
+  - Alternatively, manually create APIRequestContext in beforeAll and dispose it in afterAll.
+See https://playwright.dev/docs/api-testing#sending-api-requests-from-ui-tests for more details.
+    at ApiHelpers.deleteSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:72:47[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/critical/sessions-list-resume.spec.ts:47:26
+
+Warning: attachment test-results/critical-sessions-list-res-f1d7a-ination-when-multiple-pages-chromium/test-failed-1.png is missing
+Warning: attachment test-results/critical-sessions-list-res-f1d7a-ination-when-multiple-pages-chromium/video.webm is missing]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="critical/start-execution.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="chromium" tests="6" failures="2" skipped="3" time="59.098" errors="0">
+<testcase name="CRITICAL: Start Execution Flow › 1. Should load workspace page" classname="critical/start-execution.spec.ts" time="35.124">
+<failure message="start-execution.spec.ts:46:3 1. Should load workspace page" type="FAILURE">
+<![CDATA[  [chromium] › critical/start-execution.spec.ts:46:3 › CRITICAL: Start Execution Flow › 1. Should load workspace page 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('[class*="progress"]')
+    Expected: visible
+    Timeout: 30000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 30000ms
+      - waiting for locator('[class*="progress"]')
+
+
+      77 |     // Verify progress section is visible
+      78 |     await expect(workspacePage.progressLabel).toBeVisible();
+    > 79 |     await expect(workspacePage.progressBar).toBeVisible();
+         |                                             ^
+      80 |
+      81 |     // Screenshot
+      82 |     await workspacePage.takeScreenshot('artifacts/workspace-loaded.png');
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/start-execution.spec.ts:79:45
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-start-execution-C-14dbe--Should-load-workspace-page-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-start-execution-C-14dbe--Should-load-workspace-page-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/critical-start-execution-C-14dbe--Should-load-workspace-page-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-start-execution-C-14dbe--Should-load-workspace-page-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Start Execution Flow › 2. Should establish WebSocket connection" classname="critical/start-execution.spec.ts" time="1.008">
+<properties>
+<property name="skip" value="No session available from previous test">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Start Execution Flow › 3. Should start session execution automatically" classname="critical/start-execution.spec.ts" time="12.56">
+<system-out>
+<![CDATA[  Session status: running
+  ✓ Session auto-started: eedd798a-28bb-4e08-a923-c3e79f0839f2
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Start Execution Flow › 4. Should display progress updates" classname="critical/start-execution.spec.ts" time="9.091">
+<failure message="start-execution.spec.ts:187:3 4. Should display progress updates" type="FAILURE">
+<![CDATA[  [chromium] › critical/start-execution.spec.ts:187:3 › CRITICAL: Start Execution Flow › 4. Should display progress updates 
+
+    Error: locator.isVisible: Error: strict mode violation: getByText(/等待任务启动/) resolved to 2 elements:
+        1) <div class="px-4 py-2 text-sm text-gray-400">等待任务启动...</div> aka getByText('等待任务启动...')
+        2) <p class="text-lg mb-2">等待任务启动</p> aka getByText('等待任务启动', { exact: true })
+
+    Call log:
+        - checking visibility of getByText(/等待任务启动/)
+
+
+       at pages/WorkspacePage.ts:83
+
+      81 |
+      82 |   async isWaiting() {
+    > 83 |     return await this.waitingMessage.isVisible();
+         |                                      ^
+      84 |   }
+      85 |
+      86 |   async clickOverviewTab() {
+        at WorkspacePage.isWaiting (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/WorkspacePage.ts:83:38)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/start-execution.spec.ts:209:43
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-start-execution-C-48f25-ld-display-progress-updates-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-start-execution-C-48f25-ld-display-progress-updates-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-start-execution-C-48f25-ld-display-progress-updates-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[  Progress: 0/72
+
+[[ATTACHMENT|test-results/critical-start-execution-C-48f25-ld-display-progress-updates-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-start-execution-C-48f25-ld-display-progress-updates-chromium/video.webm]]
+
+[[ATTACHMENT|test-results/critical-start-execution-C-48f25-ld-display-progress-updates-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Start Execution Flow › 5. Should display current task and LLM provider" classname="critical/start-execution.spec.ts" time="0.741">
+<properties>
+<property name="skip" value="No session available from previous test">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Start Execution Flow › 6. Should switch between workspace tabs" classname="critical/start-execution.spec.ts" time="0.574">
+<properties>
+<property name="skip" value="No session available from previous test">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="critical/task-approval.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="chromium" tests="6" failures="0" skipped="6" time="126.309" errors="0">
+<testcase name="CRITICAL: Task Approval Flow › 1. Should wait for task completion and show approval dialog" classname="critical/task-approval.spec.ts" time="123.088">
+<properties>
+<property name="skip" value="Approval dialog timeout - may need manual verification">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Task Approval Flow › 2. Should display task result and evaluation" classname="critical/task-approval.spec.ts" time="0.682">
+<properties>
+<property name="skip" value="Requires approval dialog from previous test - run in sequence">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Task Approval Flow › 3. Should approve task and continue execution" classname="critical/task-approval.spec.ts" time="0.71">
+<properties>
+<property name="skip" value="Requires approval dialog from previous test - run in sequence">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Task Approval Flow › 4. Should reject task and skip" classname="critical/task-approval.spec.ts" time="0.636">
+<properties>
+<property name="skip" value="Skipping - requires task waiting for approval">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Task Approval Flow › 5. Should regenerate task with feedback" classname="critical/task-approval.spec.ts" time="0.554">
+<properties>
+<property name="skip" value="Skipping - requires task waiting for approval">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Task Approval Flow › 6. Should handle idea selection for brainstorm tasks" classname="critical/task-approval.spec.ts" time="0.639">
+<properties>
+<property name="skip" value="Skipping - requires brainstorm task waiting for approval">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="full-workflow.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="chromium" tests="12" failures="0" skipped="0" time="72.87" errors="0">
+<testcase name="Creative AutoGPT E2E Tests › 1. Home page loads correctly" classname="full-workflow.spec.ts" time="2.302">
+<system-out>
+<![CDATA[✅ Home page loaded successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 2. Navigate to create page" classname="full-workflow.spec.ts" time="4.593">
+<system-out>
+<![CDATA[✅ Create page navigation works
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 3. Create session with manual form" classname="full-workflow.spec.ts" time="11.229">
+<system-out>
+<![CDATA[✅ Session created successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 4. Workspace loads and connects WebSocket" classname="full-workflow.spec.ts" time="8.513">
+<system-out>
+<![CDATA[✅ Workspace loaded
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 5. Sessions list page works" classname="full-workflow.spec.ts" time="2.659">
+<system-out>
+<![CDATA[✅ Sessions list page works
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 6. API endpoints work correctly" classname="full-workflow.spec.ts" time="1.359">
+<system-out>
+<![CDATA[  ✓ /health endpoint OK
+  ✓ /sessions endpoint OK
+  ✓ /prompts/styles endpoint OK
+  ✓ /prompts/templates endpoint OK
+✅ All API endpoints working
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 7. Create session via API and check status" classname="full-workflow.spec.ts" time="2.478">
+<system-out>
+<![CDATA[  ✓ Session created: a6efd444-4f6b-4849-aede-c3fb084c76dc
+✅ API session creation works
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 8. WebSocket events flow" classname="full-workflow.spec.ts" time="10.464">
+<system-out>
+<![CDATA[  WebSocket opened: ws://localhost:4173/?token=nK3FrgVOX9Bi
+  WebSocket opened: ws://localhost:8000/ws/ws
+  → Sent: {"event":"connect"}
+  → Sent: {"event":"subscribe","session_id":"71764ccf-bf17-4b3c-884e-721b012d92ef"}
+  → Sent: {"event":"start","session_id":"71764ccf-bf17-4b3c-884e-721b012d92ef"}
+  → Sent: {"event":"ping"}
+  Received 4 WebSocket messages
+✅ WebSocket events monitored
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 9. Error handling - invalid session" classname="full-workflow.spec.ts" time="6.635">
+<system-out>
+<![CDATA[✅ Error handling works
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 10. Full creation flow with progress check" classname="full-workflow.spec.ts" time="8.308">
+<system-out>
+<![CDATA[  Session ID: ca6b2b0b-9058-4bb6-84f9-db0b4b6c1979
+  Session status: running
+  Progress: 0/0
+✅ Full creation flow completed
+]]>
+</system-out>
+</testcase>
+<testcase name="Smart Enhance Feature › Smart enhance endpoint works" classname="full-workflow.spec.ts" time="12.995">
+<system-out>
+<![CDATA[✅ Smart enhance works with LLM
+]]>
+</system-out>
+</testcase>
+<testcase name="Cleanup › Delete test sessions" classname="full-workflow.spec.ts" time="1.335">
+<system-out>
+<![CDATA[  Deleted: 86ef73a8-9e30-4393-8347-b578f8b112df
+  Deleted: ca6b2b0b-9058-4bb6-84f9-db0b4b6c1979
+  Deleted: ceea3285-bef1-48ec-8dc0-53df01b37d7e
+  Deleted: 71764ccf-bf17-4b3c-884e-721b012d92ef
+  Deleted: a6efd444-4f6b-4849-aede-c3fb084c76dc
+  Deleted: a0702ffe-1d04-4c5a-be8f-bc141f958c32
+  Deleted: a391895f-6aa3-4b50-91b1-bf1a6f30bc81
+  Deleted: fea62d75-2cf3-4d24-a98d-58d4a1c09fd3
+  Deleted: 5fbbe279-0b0c-4f90-a0e0-8d18e7a29fe5
+  Deleted: 21f34dc1-686e-4637-a127-1b13a900d53d
+  Deleted: 5cc85713-75a4-426b-a644-7286bde42acd
+  Deleted: bd31683a-9cef-439f-a721-6365a66b9419
+  Deleted: 78fe9ec0-c987-41ec-adf5-f7b948c359dc
+  Deleted: ec13cba7-17f2-46f7-9244-85a93b8396c9
+  Deleted: 17df0d44-01d8-4d2b-b383-e7c1e75ce2a3
+  Deleted: cdc1534c-3a92-4cc2-bd83-727a2afac76e
+  Deleted: c8bd887f-848e-4659-9445-d3f65775a1f1
+  Deleted: 33961b34-e08f-4184-858c-3f7e85380c73
+  Deleted: 86e3b45d-7786-477d-aeca-48e1f3443f66
+  Deleted: e5c91be3-991b-47f5-a267-dcbe4ed028ac
+✅ Cleaned up 20 test sessions
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="important/export-functionality.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="chromium" tests="4" failures="0" skipped="4" time="3.217" errors="0">
+<testcase name="IMPORTANT: Export Functionality › 1. Should open export dialog from sessions list" classname="important/export-functionality.spec.ts" time="1.709">
+<properties>
+<property name="skip" value="Export functionality not implemented">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Export Functionality › 2. Should select export format" classname="important/export-functionality.spec.ts" time="0.503">
+<properties>
+<property name="skip" value="Requires export dialog - implementation pending">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Export Functionality › 3. Should download exported file" classname="important/export-functionality.spec.ts" time="0.496">
+<properties>
+<property name="skip" value="Requires export functionality - implementation pending">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Export Functionality › 4. Should handle export for empty session" classname="important/export-functionality.spec.ts" time="0.509">
+<properties>
+<property name="skip" value="Requires export functionality - implementation pending">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="important/preview-content.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="chromium" tests="5" failures="2" skipped="2" time="42.41" errors="0">
+<testcase name="IMPORTANT: Preview Content Flow › 1. Should display preview panel on workspace" classname="important/preview-content.spec.ts" time="5.215">
+<system-out>
+<![CDATA[  ✓ Preview panel displayed
+]]>
+</system-out>
+</testcase>
+<testcase name="IMPORTANT: Preview Content Flow › 2. Should display overview tab content" classname="important/preview-content.spec.ts" time="18.055">
+<failure message="preview-content.spec.ts:70:3 2. Should display overview tab content" type="FAILURE">
+<![CDATA[  [chromium] › important/preview-content.spec.ts:70:3 › IMPORTANT: Preview Content Flow › 2. Should display overview tab content 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for getByRole('tab', { name: /概览/ })
+
+
+       at pages/WorkspacePage.ts:87
+
+      85 |
+      86 |   async clickOverviewTab() {
+    > 87 |     await this.overviewTab.click();
+         |                            ^
+      88 |   }
+      89 |
+      90 |   async clickTasksTab() {
+        at WorkspacePage.clickOverviewTab (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/WorkspacePage.ts:87:28)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/important/preview-content.spec.ts:75:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/important-preview-content--76ab8-isplay-overview-tab-content-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/important-preview-content--76ab8-isplay-overview-tab-content-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/important-preview-content--76ab8-isplay-overview-tab-content-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/important-preview-content--76ab8-isplay-overview-tab-content-chromium/video.webm]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[  Failed to cleanup 51414230-9e87-440b-8436-d85b6152d5d6: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+Received: [31mfalse[39m
+    at ApiHelpers.stopSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:103:27[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/important/preview-content.spec.ts:29:9 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [[32mSymbol(step)[39m]: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBeTruthy'[39m,
+    title: [32m'Expect "toBeTruthy"'[39m,
+    shortTitle: [32m'Expect "toBeTruthy"'[39m,
+    params: [90mundefined[39m,
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@84'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts'[39m,
+      line: [33m103[39m,
+      column: [33m27[39m,
+      function: [32m'ApiHelpers.stopSession'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@84'[39m,
+      _title: [32m'Expect "toBeTruthy"'[39m,
+      _parentStep: [36m[TestStepInfoImpl][39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769340635481[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at ApiHelpers.stopSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:103:27)\n'[39m +
+        [32m'    at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/important/preview-content.spec.ts:29:9'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-err>
+</testcase>
+<testcase name="IMPORTANT: Preview Content Flow › 3. Should switch to reader mode" classname="important/preview-content.spec.ts" time="17.897">
+<failure message="preview-content.spec.ts:89:3 3. Should switch to reader mode" type="FAILURE">
+<![CDATA[  [chromium] › important/preview-content.spec.ts:89:3 › IMPORTANT: Preview Content Flow › 3. Should switch to reader mode 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for getByRole('tab', { name: /阅读/ })
+
+
+       at pages/WorkspacePage.ts:95
+
+      93 |
+      94 |   async clickReaderTab() {
+    > 95 |     await this.readerTab.click();
+         |                          ^
+      96 |   }
+      97 |
+      98 |   async waitForTaskStart(timeout = 30000) {
+        at WorkspacePage.clickReaderTab (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/WorkspacePage.ts:95:26)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/important/preview-content.spec.ts:94:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/important-preview-content--7fcdc-hould-switch-to-reader-mode-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/important-preview-content--7fcdc-hould-switch-to-reader-mode-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/important-preview-content--7fcdc-hould-switch-to-reader-mode-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/important-preview-content--7fcdc-hould-switch-to-reader-mode-chromium/video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="IMPORTANT: Preview Content Flow › 4. Should display chapter content in reader" classname="important/preview-content.spec.ts" time="0.738">
+<properties>
+<property name="skip" value="Requires generated chapters - run after tasks complete">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Preview Content Flow › 5. Should navigate between chapters" classname="important/preview-content.spec.ts" time="0.505">
+<properties>
+<property name="skip" value="Requires multiple chapters - implementation pending">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="important/task-history.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="chromium" tests="4" failures="1" skipped="3" time="35.083" errors="0">
+<testcase name="IMPORTANT: Task History Flow › 1. Should navigate to tasks tab and display task list" classname="important/task-history.spec.ts" time="33.446">
+<failure message="task-history.spec.ts:37:3 1. Should navigate to tasks tab and display task list" type="FAILURE">
+<![CDATA[  [chromium] › important/task-history.spec.ts:37:3 › IMPORTANT: Task History Flow › 1. Should navigate to tasks tab and display task list 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for getByRole('tab', { name: /任务/ })
+
+
+       at pages/WorkspacePage.ts:91
+
+      89 |
+      90 |   async clickTasksTab() {
+    > 91 |     await this.tasksTab.click();
+         |                         ^
+      92 |   }
+      93 |
+      94 |   async clickReaderTab() {
+        at WorkspacePage.clickTasksTab (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/WorkspacePage.ts:91:25)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/important/task-history.spec.ts:59:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-chromium/video.webm]]
+
+[[ATTACHMENT|test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-chromium/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[  Failed to cleanup a2f67d5b-ff0d-4381-ad34-5658739791f3: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+Received: [31mfalse[39m
+    at ApiHelpers.stopSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:103:27[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/important/task-history.spec.ts:29:9 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [[32mSymbol(step)[39m]: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBeTruthy'[39m,
+    title: [32m'Expect "toBeTruthy"'[39m,
+    shortTitle: [32m'Expect "toBeTruthy"'[39m,
+    params: [90mundefined[39m,
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@91'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts'[39m,
+      line: [33m103[39m,
+      column: [33m27[39m,
+      function: [32m'ApiHelpers.stopSession'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@91'[39m,
+      _title: [32m'Expect "toBeTruthy"'[39m,
+      _parentStep: [36m[TestStepInfoImpl][39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769340702897[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at ApiHelpers.stopSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:103:27)\n'[39m +
+        [32m'    at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/important/task-history.spec.ts:29:9'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-err>
+</testcase>
+<testcase name="IMPORTANT: Task History Flow › 2. Should display task cards with status" classname="important/task-history.spec.ts" time="0.651">
+<properties>
+<property name="skip" value="Requires completed tasks - run after session finishes">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Task History Flow › 3. Should display task details when clicking a task" classname="important/task-history.spec.ts" time="0.503">
+<properties>
+<property name="skip" value="Requires completed tasks - run after session finishes">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Task History Flow › 4. Should filter tasks by status" classname="important/task-history.spec.ts" time="0.483">
+<properties>
+<property name="skip" value="Requires filter UI - implementation pending">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="smoke/smoke.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="chromium" tests="9" failures="1" skipped="0" time="18.899" errors="0">
+<testcase name="Smoke Tests › API health check" classname="smoke/smoke.spec.ts" time="2.311">
+<system-out>
+<![CDATA[  ✓ API is healthy
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Home page loads" classname="smoke/smoke.spec.ts" time="1.953">
+<failure message="smoke.spec.ts:33:3 Home page loads" type="FAILURE">
+<![CDATA[  [chromium] › smoke/smoke.spec.ts:33:3 › Smoke Tests › Home page loads ────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('link', { name: /创建新项目|创建/i })
+    Expected: visible
+    Error: strict mode violation: getByRole('link', { name: /创建新项目|创建/i }) resolved to 2 elements:
+        1) <a href="/create" class="relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800">创建项目</a> aka getByRole('link', { name: '创建项目' })
+        2) <a href="/create">…</a> aka getByRole('link', { name: '创建新项目' })
+
+    Call log:
+      - Expect "toBeVisible" with timeout 30000ms
+      - waiting for getByRole('link', { name: /创建新项目|创建/i })
+
+
+       at pages/HomePage.ts:36
+
+      34 |   async verifyPageLoaded() {
+      35 |     await expect(this.pageTitle).toBeVisible();
+    > 36 |     await expect(this.createProjectButton).toBeVisible();
+         |                                            ^
+      37 |     await expect(this.viewSessionsButton).toBeVisible();
+      38 |   }
+      39 |
+        at HomePage.verifyPageLoaded (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/HomePage.ts:36:44)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/smoke/smoke.spec.ts:36:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/smoke-smoke-Smoke-Tests-Home-page-loads-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/smoke-smoke-Smoke-Tests-Home-page-loads-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/smoke-smoke-Smoke-Tests-Home-page-loads-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/smoke-smoke-Smoke-Tests-Home-page-loads-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/smoke-smoke-Smoke-Tests-Home-page-loads-chromium/video.webm]]
+
+[[ATTACHMENT|test-results/smoke-smoke-Smoke-Tests-Home-page-loads-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Create page loads" classname="smoke/smoke.spec.ts" time="2.074">
+<system-out>
+<![CDATA[  ✓ Create page loads
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Sessions page loads" classname="smoke/smoke.spec.ts" time="2.27">
+<system-out>
+<![CDATA[  ✓ Sessions page loads
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Can create session via API" classname="smoke/smoke.spec.ts" time="0.487">
+<system-out>
+<![CDATA[  ✓ Can create session via API
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Can fetch sessions list" classname="smoke/smoke.spec.ts" time="0.113">
+<system-out>
+<![CDATA[  ✓ Can fetch sessions (found 10)
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Can fetch prompts" classname="smoke/smoke.spec.ts" time="0.504">
+<system-out>
+<![CDATA[  ✓ Can fetch prompts (6 styles, 5 templates)
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Navigation between main pages" classname="smoke/smoke.spec.ts" time="2.496">
+<system-out>
+<![CDATA[  ✓ Navigation works
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › WebSocket endpoint accessible" classname="smoke/smoke.spec.ts" time="6.691">
+<system-out>
+<![CDATA[  ✓ WebSocket endpoint accessible
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="critical/create-session.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="firefox" tests="6" failures="1" skipped="0" time="67.498" errors="0">
+<testcase name="CRITICAL: Create Session Flow › 1. Should navigate to create page from home" classname="critical/create-session.spec.ts" time="8.338">
+</testcase>
+<testcase name="CRITICAL: Create Session Flow › 2. Should create session with manual form" classname="critical/create-session.spec.ts" time="9.455">
+<system-out>
+<![CDATA[  ✓ Created session: 69e7a016-c504-40aa-a728-5db153ca42c0
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Create Session Flow › 3. Should create session with estimated chapter count" classname="critical/create-session.spec.ts" time="19.164">
+<failure message="create-session.spec.ts:94:3 3. Should create session with estimated chapter count" type="FAILURE">
+<![CDATA[  [firefox] › critical/create-session.spec.ts:94:3 › CRITICAL: Create Session Flow › 3. Should create session with estimated chapter count 
+
+    TimeoutError: locator.selectOption: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('select').first()
+        - locator resolved to <select id=":r3:" class="w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white border-gray-300 ">…</select>
+      - attempting select option action
+        2 × waiting for element to be visible and enabled
+          - did not find some options
+        - retrying select option action
+        - waiting 20ms
+        2 × waiting for element to be visible and enabled
+          - did not find some options
+        - retrying select option action
+          - waiting 100ms
+        28 × waiting for element to be visible and enabled
+           - did not find some options
+         - retrying select option action
+           - waiting 500ms
+
+
+       at pages/CreatePage.ts:103
+
+      101 |     }
+      102 |     if (data.wordCount) {
+    > 103 |       await this.wordCountSelect.selectOption(data.wordCount);
+          |                                  ^
+      104 |     }
+      105 |     if (data.approvalMode !== undefined) {
+      106 |       const isChecked = await this.approvalModeCheckbox.isChecked();
+        at CreatePage.fillForm (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/CreatePage.ts:103:34)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/create-session.spec.ts:106:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-firefox/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[
+Warning: attachment test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-firefox/test-failed-1.png is missing
+Warning: attachment test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-firefox/video.webm is missing
+Warning: attachment test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-firefox/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="CRITICAL: Create Session Flow › 4. Should validate required fields" classname="critical/create-session.spec.ts" time="16.316">
+</testcase>
+<testcase name="CRITICAL: Create Session Flow › 5. Should create session via API and navigate to workspace" classname="critical/create-session.spec.ts" time="10.786">
+<system-out>
+<![CDATA[  ✓ Created session via API: 07d96de1-d025-4a74-aa97-b559d9823cae
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Create Session Flow › 6. Should create session with approval mode enabled" classname="critical/create-session.spec.ts" time="3.439">
+<system-out>
+<![CDATA[  ✓ Approval mode enabled for session: bde6b91c-d856-4df6-9923-a880ad88cf3c
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="critical/session-control.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="firefox" tests="5" failures="3" skipped="0" time="82.51" errors="0">
+<testcase name="CRITICAL: Session Control Flow › 1. Should pause a running session via API" classname="critical/session-control.spec.ts" time="14.15">
+<failure message="session-control.spec.ts:44:3 1. Should pause a running session via API" type="FAILURE">
+<![CDATA[  [firefox] › critical/session-control.spec.ts:44:3 › CRITICAL: Session Control Flow › 1. Should pause a running session via API 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+       at helpers/api-helpers.ts:91
+
+      89 |   async pauseSession(sessionId: string) {
+      90 |     const response = await this.request.post(`${BASE_URL}/sessions/${sessionId}/pause`);
+    > 91 |     expect(response.ok()).toBeTruthy();
+         |                           ^
+      92 |     return await response.json();
+      93 |   }
+      94 |
+        at ApiHelpers.pauseSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:91:27)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/session-control.spec.ts:73:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-firefox/error-context.md
+]]>
+</failure>
+<system-err>
+<![CDATA[  Failed to cleanup session 40bd6d9e-da0b-48ec-b754-2de43f07e084: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+Received: [31mfalse[39m
+    at ApiHelpers.stopSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:103:27[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/critical/session-control.spec.ts:36:9 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [[32mSymbol(step)[39m]: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBeTruthy'[39m,
+    title: [32m'Expect "toBeTruthy"'[39m,
+    shortTitle: [32m'Expect "toBeTruthy"'[39m,
+    params: [90mundefined[39m,
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@99'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts'[39m,
+      line: [33m103[39m,
+      column: [33m27[39m,
+      function: [32m'ApiHelpers.stopSession'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@99'[39m,
+      _title: [32m'Expect "toBeTruthy"'[39m,
+      _parentStep: [36m[TestStepInfoImpl][39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769340841313[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at ApiHelpers.stopSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:103:27)\n'[39m +
+        [32m'    at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/session-control.spec.ts:36:9'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+
+Warning: attachment test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-firefox/test-failed-1.png is missing
+Warning: attachment test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-firefox/video.webm is missing
+Warning: attachment test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-firefox/error-context.md is missing]]>
+</system-err>
+</testcase>
+<testcase name="CRITICAL: Session Control Flow › 2. Should resume a paused session via API" classname="critical/session-control.spec.ts" time="23.616">
+<failure message="session-control.spec.ts:91:3 2. Should resume a paused session via API" type="FAILURE">
+<![CDATA[  [firefox] › critical/session-control.spec.ts:91:3 › CRITICAL: Session Control Flow › 2. Should resume a paused session via API 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+       at helpers/api-helpers.ts:91
+
+      89 |   async pauseSession(sessionId: string) {
+      90 |     const response = await this.request.post(`${BASE_URL}/sessions/${sessionId}/pause`);
+    > 91 |     expect(response.ok()).toBeTruthy();
+         |                           ^
+      92 |     return await response.json();
+      93 |   }
+      94 |
+        at ApiHelpers.pauseSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:91:27)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/session-control.spec.ts:94:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[  1 test sessions created (cleanup skipped)
+
+[[ATTACHMENT|test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-firefox/video.webm]]
+
+[[ATTACHMENT|test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Session Control Flow › 3. Should stop a running session via API" classname="critical/session-control.spec.ts" time="24.006">
+<failure message="session-control.spec.ts:135:3 3. Should stop a running session via API" type="FAILURE">
+<![CDATA[  [firefox] › critical/session-control.spec.ts:135:3 › CRITICAL: Session Control Flow › 3. Should stop a running session via API 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+       at helpers/api-helpers.ts:103
+
+      101 |   async stopSession(sessionId: string) {
+      102 |     const response = await this.request.post(`${BASE_URL}/sessions/${sessionId}/stop`);
+    > 103 |     expect(response.ok()).toBeTruthy();
+          |                           ^
+      104 |     return await response.json();
+      105 |   }
+      106 |
+        at ApiHelpers.stopSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:103:27)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/session-control.spec.ts:141:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[  1 test sessions created (cleanup skipped)
+
+[[ATTACHMENT|test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-firefox/video.webm]]
+
+[[ATTACHMENT|test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Session Control Flow › 4. Should handle pause/resume via WebSocket" classname="critical/session-control.spec.ts" time="16.476">
+<system-out>
+<![CDATA[  Session status after WS pause: running
+  ✓ WebSocket pause control tested
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Session Control Flow › 5. Should display correct controls based on session state" classname="critical/session-control.spec.ts" time="4.262">
+<system-out>
+<![CDATA[  Has resumable sessions: false
+  ✓ Session state displayed correctly
+  1 test sessions created (cleanup skipped)
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="critical/sessions-list-resume.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="firefox" tests="7" failures="4" skipped="0" time="85.617" errors="0">
+<testcase name="CRITICAL: Sessions List and Resume Flow › 1. Should navigate to sessions list from home" classname="critical/sessions-list-resume.spec.ts" time="2.472">
+<failure message="sessions-list-resume.spec.ts:55:3 1. Should navigate to sessions list from home" type="FAILURE">
+<![CDATA[  [firefox] › critical/sessions-list-resume.spec.ts:55:3 › CRITICAL: Sessions List and Resume Flow › 1. Should navigate to sessions list from home 
+
+    Error: locator.click: Error: strict mode violation: getByRole('link', { name: /查看会话列表|查看全部/i }) resolved to 2 elements:
+        1) <a href="/sessions">…</a> aka getByRole('link', { name: '查看会话列表' })
+        2) <a href="/sessions" class="text-blue-600 hover:text-blue-700 text-sm">查看全部 →</a> aka getByRole('link', { name: '查看全部 →' })
+
+    Call log:
+      - waiting for getByRole('link', { name: /查看会话列表|查看全部/i })
+
+
+       at pages/HomePage.ts:45
+
+      43 |
+      44 |   async clickViewSessions() {
+    > 45 |     await this.viewSessionsButton.click();
+         |                                   ^
+      46 |   }
+      47 |
+      48 |   async clickViewAllSessions() {
+        at HomePage.clickViewSessions (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/HomePage.ts:45:35)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:55:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[  Note: Session cleanup should be done per-test or via separate cleanup script
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-firefox/video.webm]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 2. Should display sessions list" classname="critical/sessions-list-resume.spec.ts" time="5.583">
+<system-out>
+<![CDATA[  Found 0 sessions
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 3. Should filter sessions by status" classname="critical/sessions-list-resume.spec.ts" time="23.299">
+<failure message="sessions-list-resume.spec.ts:95:3 3. Should filter sessions by status" type="FAILURE">
+<![CDATA[  [firefox] › critical/sessions-list-resume.spec.ts:95:3 › CRITICAL: Sessions List and Resume Flow › 3. Should filter sessions by status 
+
+    TimeoutError: locator.selectOption: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for getByLabel(/全部状态/)
+
+
+       at pages/SessionsPage.ts:49
+
+      47 |
+      48 |   async filterByStatus(status: string) {
+    > 49 |     await this.statusFilter.selectOption(status);
+         |                             ^
+      50 |     await this.page.waitForLoadState('networkidle');
+      51 |   }
+      52 |
+        at SessionsPage.filterByStatus (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/SessionsPage.ts:49:29)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:100:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[  Note: Session cleanup should be done per-test or via separate cleanup script
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-firefox/video.webm]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 4. Should show empty state when no sessions" classname="critical/sessions-list-resume.spec.ts" time="16.505">
+<system-err>
+<![CDATA[  Failed to delete session d10955e0-06a1-4ea4-b147-2fa78c4feff7: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+Received: [31mfalse[39m
+    at ApiHelpers.getSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:55:27[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/critical/sessions-list-resume.spec.ts:134:25 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [[32mSymbol(step)[39m]: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBeTruthy'[39m,
+    title: [32m'Expect "toBeTruthy"'[39m,
+    shortTitle: [32m'Expect "toBeTruthy"'[39m,
+    params: [90mundefined[39m,
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@41'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts'[39m,
+      line: [33m55[39m,
+      column: [33m27[39m,
+      function: [32m'ApiHelpers.getSession'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@41'[39m,
+      _title: [32m'Expect "toBeTruthy"'[39m,
+      _parentStep: [90mundefined[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769340997694[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at ApiHelpers.getSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:55:27)\n'[39m +
+        [32m'    at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:134:25'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+  Failed to delete session 1ea22f34-2d78-41d7-9747-488ed03213e0: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+Received: [31mfalse[39m
+    at ApiHelpers.getSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:55:27[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/critical/sessions-list-resume.spec.ts:134:25 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [[32mSymbol(step)[39m]: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBeTruthy'[39m,
+    title: [32m'Expect "toBeTruthy"'[39m,
+    shortTitle: [32m'Expect "toBeTruthy"'[39m,
+    params: [90mundefined[39m,
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@43'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts'[39m,
+      line: [33m55[39m,
+      column: [33m27[39m,
+      function: [32m'ApiHelpers.getSession'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@43'[39m,
+      _title: [32m'Expect "toBeTruthy"'[39m,
+      _parentStep: [90mundefined[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769340997731[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at ApiHelpers.getSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:55:27)\n'[39m +
+        [32m'    at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:134:25'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+  Failed to delete session f512584a-503c-4bae-8e1c-9d43e7b6a206: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+Received: [31mfalse[39m
+    at ApiHelpers.deleteSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:73:27[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/critical/sessions-list-resume.spec.ts:136:9 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [[32mSymbol(step)[39m]: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBeTruthy'[39m,
+    title: [32m'Expect "toBeTruthy"'[39m,
+    shortTitle: [32m'Expect "toBeTruthy"'[39m,
+    params: [90mundefined[39m,
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@47'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts'[39m,
+      line: [33m73[39m,
+      column: [33m27[39m,
+      function: [32m'ApiHelpers.deleteSession'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@47'[39m,
+      _title: [32m'Expect "toBeTruthy"'[39m,
+      _parentStep: [90mundefined[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769340997793[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at ApiHelpers.deleteSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:73:27)\n'[39m +
+        [32m'    at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:136:9'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+  Failed to delete session 631e1003-c450-43f1-8b6e-6734c3e8f5d3: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+Received: [31mfalse[39m
+    at ApiHelpers.deleteSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:73:27[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/critical/sessions-list-resume.spec.ts:136:9 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [[32mSymbol(step)[39m]: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBeTruthy'[39m,
+    title: [32m'Expect "toBeTruthy"'[39m,
+    shortTitle: [32m'Expect "toBeTruthy"'[39m,
+    params: [90mundefined[39m,
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@51'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts'[39m,
+      line: [33m73[39m,
+      column: [33m27[39m,
+      function: [32m'ApiHelpers.deleteSession'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@51'[39m,
+      _title: [32m'Expect "toBeTruthy"'[39m,
+      _parentStep: [90mundefined[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769340997851[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at ApiHelpers.deleteSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:73:27)\n'[39m +
+        [32m'    at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:136:9'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+  Failed to delete session 20a419b3-65f2-4115-80bd-e8dd728e650d: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+Received: [31mfalse[39m
+    at ApiHelpers.deleteSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:73:27[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/critical/sessions-list-resume.spec.ts:136:9 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [[32mSymbol(step)[39m]: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBeTruthy'[39m,
+    title: [32m'Expect "toBeTruthy"'[39m,
+    shortTitle: [32m'Expect "toBeTruthy"'[39m,
+    params: [90mundefined[39m,
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@59'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts'[39m,
+      line: [33m73[39m,
+      column: [33m27[39m,
+      function: [32m'ApiHelpers.deleteSession'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@59'[39m,
+      _title: [32m'Expect "toBeTruthy"'[39m,
+      _parentStep: [90mundefined[39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769340997983[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at ApiHelpers.deleteSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:73:27)\n'[39m +
+        [32m'    at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:136:9'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-err>
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 5. Should navigate to create new project from sessions page" classname="critical/sessions-list-resume.spec.ts" time="2.577">
+<failure message="sessions-list-resume.spec.ts:156:3 5. Should navigate to create new project from sessions page" type="FAILURE">
+<![CDATA[  [firefox] › critical/sessions-list-resume.spec.ts:156:3 › CRITICAL: Sessions List and Resume Flow › 5. Should navigate to create new project from sessions page 
+
+    Error: locator.click: Error: strict mode violation: getByRole('link', { name: /创建新项目/ }) resolved to 2 elements:
+        1) <a href="/create">…</a> aka getByRole('link', { name: '创建新项目' }).first()
+        2) <a href="/create">…</a> aka getByRole('link', { name: '创建新项目' }).nth(1)
+
+    Call log:
+      - waiting for getByRole('link', { name: /创建新项目/ })
+
+
+       at pages/SessionsPage.ts:45
+
+      43 |
+      44 |   async clickCreateProject() {
+    > 45 |     await this.createProjectButton.click();
+         |                                    ^
+      46 |   }
+      47 |
+      48 |   async filterByStatus(status: string) {
+        at SessionsPage.clickCreateProject (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/SessionsPage.ts:45:36)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:168:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[  Note: Session cleanup should be done per-test or via separate cleanup script
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-firefox/video.webm]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 6. Should navigate to session workspace" classname="critical/sessions-list-resume.spec.ts" time="28.73">
+<failure message="sessions-list-resume.spec.ts:172:3 6. Should navigate to session workspace" type="FAILURE">
+<![CDATA[  [firefox] › critical/sessions-list-resume.spec.ts:172:3 › CRITICAL: Sessions List and Resume Flow › 6. Should navigate to session workspace 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('[data-session-id="4d333129-368e-41e5-9303-917ed3c24eec"]').getByRole('button', { name: /查看/i })
+
+
+       at pages/SessionsPage.ts:89
+
+      87 |       : this.page.getByRole('button', { name: /查看/i }).first();
+      88 |
+    > 89 |     await viewButton.click();
+         |                      ^
+      90 |   }
+      91 |
+      92 |   async getCurrentPage() {
+        at SessionsPage.clickViewSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/SessionsPage.ts:89:22)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:192:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[  Note: Session cleanup should be done per-test or via separate cleanup script
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-firefox/video.webm]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 7. Should display pagination when multiple pages" classname="critical/sessions-list-resume.spec.ts" time="6.451">
+<system-out>
+<![CDATA[  Pagination not visible (not enough sessions)
+  Note: Session cleanup should be done per-test or via separate cleanup script
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="critical/start-execution.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="firefox" tests="6" failures="2" skipped="3" time="66.221" errors="0">
+<testcase name="CRITICAL: Start Execution Flow › 1. Should load workspace page" classname="critical/start-execution.spec.ts" time="34.682">
+<failure message="start-execution.spec.ts:46:3 1. Should load workspace page" type="FAILURE">
+<![CDATA[  [firefox] › critical/start-execution.spec.ts:46:3 › CRITICAL: Start Execution Flow › 1. Should load workspace page 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('[class*="progress"]')
+    Expected: visible
+    Timeout: 30000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 30000ms
+      - waiting for locator('[class*="progress"]')
+
+
+      72 |     // Verify progress section is visible
+      73 |     await expect(workspacePage.progressLabel).toBeVisible();
+    > 74 |     await expect(workspacePage.progressBar).toBeVisible();
+         |                                             ^
+      75 |
+      76 |     // Screenshot
+      77 |     await workspacePage.takeScreenshot('artifacts/workspace-loaded.png');
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/start-execution.spec.ts:74:45
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-start-execution-C-14dbe--Should-load-workspace-page-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-start-execution-C-14dbe--Should-load-workspace-page-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-start-execution-C-14dbe--Should-load-workspace-page-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/critical-start-execution-C-14dbe--Should-load-workspace-page-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-start-execution-C-14dbe--Should-load-workspace-page-firefox/video.webm]]
+
+[[ATTACHMENT|test-results/critical-start-execution-C-14dbe--Should-load-workspace-page-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Start Execution Flow › 2. Should establish WebSocket connection" classname="critical/start-execution.spec.ts" time="4.304">
+<properties>
+<property name="skip" value="No session available from previous test">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Start Execution Flow › 3. Should start session execution automatically" classname="critical/start-execution.spec.ts" time="12.291">
+<system-out>
+<![CDATA[  Session status: running
+  ✓ Session auto-started: 3f268a26-358b-495a-8e90-3dcbe7533ad7
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Start Execution Flow › 4. Should display progress updates" classname="critical/start-execution.spec.ts" time="8.634">
+<failure message="start-execution.spec.ts:187:3 4. Should display progress updates" type="FAILURE">
+<![CDATA[  [firefox] › critical/start-execution.spec.ts:187:3 › CRITICAL: Start Execution Flow › 4. Should display progress updates 
+
+    Error: locator.isVisible: Error: strict mode violation: getByText(/等待任务启动/) resolved to 2 elements:
+        1) <div class="px-4 py-2 text-sm text-gray-400">等待任务启动...</div> aka getByText('等待任务启动...')
+        2) <p class="text-lg mb-2">等待任务启动</p> aka getByText('等待任务启动', { exact: true })
+
+    Call log:
+        - checking visibility of getByText(/等待任务启动/)
+
+
+       at pages/WorkspacePage.ts:83
+
+      81 |
+      82 |   async isWaiting() {
+    > 83 |     return await this.waitingMessage.isVisible();
+         |                                      ^
+      84 |   }
+      85 |
+      86 |   async clickOverviewTab() {
+        at WorkspacePage.isWaiting (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/WorkspacePage.ts:83:38)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/start-execution.spec.ts:204:43
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-start-execution-C-48f25-ld-display-progress-updates-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-start-execution-C-48f25-ld-display-progress-updates-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-start-execution-C-48f25-ld-display-progress-updates-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[  Progress: 0/72
+
+[[ATTACHMENT|test-results/critical-start-execution-C-48f25-ld-display-progress-updates-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-start-execution-C-48f25-ld-display-progress-updates-firefox/video.webm]]
+
+[[ATTACHMENT|test-results/critical-start-execution-C-48f25-ld-display-progress-updates-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Start Execution Flow › 5. Should display current task and LLM provider" classname="critical/start-execution.spec.ts" time="4.675">
+<properties>
+<property name="skip" value="No session available from previous test">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Start Execution Flow › 6. Should switch between workspace tabs" classname="critical/start-execution.spec.ts" time="1.635">
+<properties>
+<property name="skip" value="No session available from previous test">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="critical/task-approval.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="firefox" tests="6" failures="0" skipped="6" time="130.044" errors="0">
+<testcase name="CRITICAL: Task Approval Flow › 1. Should wait for task completion and show approval dialog" classname="critical/task-approval.spec.ts" time="125.509">
+<properties>
+<property name="skip" value="Approval dialog timeout - may need manual verification">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Task Approval Flow › 2. Should display task result and evaluation" classname="critical/task-approval.spec.ts" time="0.872">
+<properties>
+<property name="skip" value="Requires approval dialog from previous test - run in sequence">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Task Approval Flow › 3. Should approve task and continue execution" classname="critical/task-approval.spec.ts" time="0.849">
+<properties>
+<property name="skip" value="Requires approval dialog from previous test - run in sequence">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Task Approval Flow › 4. Should reject task and skip" classname="critical/task-approval.spec.ts" time="1.054">
+<properties>
+<property name="skip" value="Skipping - requires task waiting for approval">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Task Approval Flow › 5. Should regenerate task with feedback" classname="critical/task-approval.spec.ts" time="0.899">
+<properties>
+<property name="skip" value="Skipping - requires task waiting for approval">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Task Approval Flow › 6. Should handle idea selection for brainstorm tasks" classname="critical/task-approval.spec.ts" time="0.861">
+<properties>
+<property name="skip" value="Skipping - requires brainstorm task waiting for approval">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="full-workflow.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="firefox" tests="12" failures="0" skipped="0" time="62.964" errors="0">
+<testcase name="Creative AutoGPT E2E Tests › 1. Home page loads correctly" classname="full-workflow.spec.ts" time="3.115">
+<system-out>
+<![CDATA[✅ Home page loaded successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 2. Navigate to create page" classname="full-workflow.spec.ts" time="4.653">
+<system-out>
+<![CDATA[✅ Create page navigation works
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 3. Create session with manual form" classname="full-workflow.spec.ts" time="6.672">
+<system-out>
+<![CDATA[✅ Session created successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 4. Workspace loads and connects WebSocket" classname="full-workflow.spec.ts" time="6.249">
+<system-out>
+<![CDATA[✅ Workspace loaded
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 5. Sessions list page works" classname="full-workflow.spec.ts" time="2.596">
+<system-out>
+<![CDATA[✅ Sessions list page works
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 6. API endpoints work correctly" classname="full-workflow.spec.ts" time="1.387">
+<system-out>
+<![CDATA[  ✓ /health endpoint OK
+  ✓ /sessions endpoint OK
+  ✓ /prompts/styles endpoint OK
+  ✓ /prompts/templates endpoint OK
+✅ All API endpoints working
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 7. Create session via API and check status" classname="full-workflow.spec.ts" time="1.85">
+<system-out>
+<![CDATA[  ✓ Session created: 0efb4199-d660-4a0c-b643-1c69a2e590e6
+✅ API session creation works
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 8. WebSocket events flow" classname="full-workflow.spec.ts" time="7.343">
+<system-out>
+<![CDATA[  WebSocket opened: ws://localhost:4173/?token=nK3FrgVOX9Bi
+  WebSocket opened: ws://localhost:8000/ws/ws
+  → Sent: {"event":"connect"}
+  → Sent: {"event":"subscribe","session_id":"5b92e599-c119-4764-bc27-db92ae5dc632"}
+  → Sent: {"event":"start","session_id":"5b92e599-c119-4764-bc27-db92ae5dc632"}
+  → Sent: {"event":"ping"}
+  Received 6 WebSocket messages
+✅ WebSocket events monitored
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 9. Error handling - invalid session" classname="full-workflow.spec.ts" time="4.039">
+<system-out>
+<![CDATA[✅ Error handling works
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 10. Full creation flow with progress check" classname="full-workflow.spec.ts" time="8.937">
+<system-out>
+<![CDATA[  Session ID: c8d6ebdc-eebe-485e-9228-ba78d6fe77d6
+  Session status: running
+  Progress: 0/0
+✅ Full creation flow completed
+]]>
+</system-out>
+</testcase>
+<testcase name="Smart Enhance Feature › Smart enhance endpoint works" classname="full-workflow.spec.ts" time="14.798">
+<system-out>
+<![CDATA[✅ Smart enhance works with LLM
+]]>
+</system-out>
+</testcase>
+<testcase name="Cleanup › Delete test sessions" classname="full-workflow.spec.ts" time="1.325">
+<system-out>
+<![CDATA[  Deleted: 6bd80a43-8203-4236-bf00-b143e167d8f6
+  Deleted: c8d6ebdc-eebe-485e-9228-ba78d6fe77d6
+  Deleted: 5b92e599-c119-4764-bc27-db92ae5dc632
+  Deleted: 0efb4199-d660-4a0c-b643-1c69a2e590e6
+  Deleted: 255206cb-506a-475c-a5a4-f66f91d5dec3
+  Deleted: b0973d35-03c1-4413-a0d8-d3b3b5a360f6
+  Deleted: f3e18e7a-1466-4813-8161-6c0e19fe2650
+  Deleted: 744d3020-786b-4b40-878a-c40a9d8d8f78
+  Deleted: e6489884-6ade-4f2e-9cfa-255951fea736
+  Deleted: 31f76f45-34bf-4a11-b46d-2eb4d00dc18b
+  Deleted: 93bf96c9-789d-424d-bac2-4af8f2d15cae
+  Deleted: c848c408-03bb-44db-9026-9e9ee2fb9bc3
+  Deleted: 14d4bcd9-34f6-4c04-a514-0824c690b932
+  Deleted: 26c56a9f-828e-49b5-a5cf-f4b0a76aa3f8
+  Deleted: 3927ccc4-633c-4ebb-868e-2e0b7ba4c5c0
+✅ Cleaned up 15 test sessions
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="important/export-functionality.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="firefox" tests="4" failures="0" skipped="4" time="11.04" errors="0">
+<testcase name="IMPORTANT: Export Functionality › 1. Should open export dialog from sessions list" classname="important/export-functionality.spec.ts" time="7.866">
+<properties>
+<property name="skip" value="Export functionality not implemented">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Export Functionality › 2. Should select export format" classname="important/export-functionality.spec.ts" time="1.158">
+<properties>
+<property name="skip" value="Requires export dialog - implementation pending">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Export Functionality › 3. Should download exported file" classname="important/export-functionality.spec.ts" time="0.996">
+<properties>
+<property name="skip" value="Requires export functionality - implementation pending">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Export Functionality › 4. Should handle export for empty session" classname="important/export-functionality.spec.ts" time="1.02">
+<properties>
+<property name="skip" value="Requires export functionality - implementation pending">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="important/preview-content.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="firefox" tests="5" failures="2" skipped="2" time="42.792" errors="0">
+<testcase name="IMPORTANT: Preview Content Flow › 1. Should display preview panel on workspace" classname="important/preview-content.spec.ts" time="5.705">
+<system-out>
+<![CDATA[  ✓ Preview panel displayed
+]]>
+</system-out>
+</testcase>
+<testcase name="IMPORTANT: Preview Content Flow › 2. Should display overview tab content" classname="important/preview-content.spec.ts" time="16.09">
+<failure message="preview-content.spec.ts:70:3 2. Should display overview tab content" type="FAILURE">
+<![CDATA[  [firefox] › important/preview-content.spec.ts:70:3 › IMPORTANT: Preview Content Flow › 2. Should display overview tab content 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for getByRole('tab', { name: /概览/ })
+
+
+       at pages/WorkspacePage.ts:87
+
+      85 |
+      86 |   async clickOverviewTab() {
+    > 87 |     await this.overviewTab.click();
+         |                            ^
+      88 |   }
+      89 |
+      90 |   async clickTasksTab() {
+        at WorkspacePage.clickOverviewTab (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/WorkspacePage.ts:87:28)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/important/preview-content.spec.ts:75:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/important-preview-content--76ab8-isplay-overview-tab-content-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/important-preview-content--76ab8-isplay-overview-tab-content-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/important-preview-content--76ab8-isplay-overview-tab-content-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/important-preview-content--76ab8-isplay-overview-tab-content-firefox/video.webm]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[  Failed to cleanup ef44cecd-e311-453c-be5f-c93e43eda31b: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+Received: [31mfalse[39m
+    at ApiHelpers.stopSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:103:27[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/important/preview-content.spec.ts:29:9 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [[32mSymbol(step)[39m]: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBeTruthy'[39m,
+    title: [32m'Expect "toBeTruthy"'[39m,
+    shortTitle: [32m'Expect "toBeTruthy"'[39m,
+    params: [90mundefined[39m,
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@84'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts'[39m,
+      line: [33m103[39m,
+      column: [33m27[39m,
+      function: [32m'ApiHelpers.stopSession'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@84'[39m,
+      _title: [32m'Expect "toBeTruthy"'[39m,
+      _parentStep: [36m[TestStepInfoImpl][39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769341377317[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at ApiHelpers.stopSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:103:27)\n'[39m +
+        [32m'    at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/important/preview-content.spec.ts:29:9'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-err>
+</testcase>
+<testcase name="IMPORTANT: Preview Content Flow › 3. Should switch to reader mode" classname="important/preview-content.spec.ts" time="17.586">
+<failure message="preview-content.spec.ts:89:3 3. Should switch to reader mode" type="FAILURE">
+<![CDATA[  [firefox] › important/preview-content.spec.ts:89:3 › IMPORTANT: Preview Content Flow › 3. Should switch to reader mode 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for getByRole('tab', { name: /阅读/ })
+
+
+       at pages/WorkspacePage.ts:95
+
+      93 |
+      94 |   async clickReaderTab() {
+    > 95 |     await this.readerTab.click();
+         |                          ^
+      96 |   }
+      97 |
+      98 |   async waitForTaskStart(timeout = 30000) {
+        at WorkspacePage.clickReaderTab (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/WorkspacePage.ts:95:26)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/important/preview-content.spec.ts:94:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/important-preview-content--7fcdc-hould-switch-to-reader-mode-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/important-preview-content--7fcdc-hould-switch-to-reader-mode-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/important-preview-content--7fcdc-hould-switch-to-reader-mode-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/important-preview-content--7fcdc-hould-switch-to-reader-mode-firefox/video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="IMPORTANT: Preview Content Flow › 4. Should display chapter content in reader" classname="important/preview-content.spec.ts" time="2.534">
+<properties>
+<property name="skip" value="Requires generated chapters - run after tasks complete">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Preview Content Flow › 5. Should navigate between chapters" classname="important/preview-content.spec.ts" time="0.877">
+<properties>
+<property name="skip" value="Requires multiple chapters - implementation pending">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="important/task-history.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="firefox" tests="4" failures="1" skipped="3" time="33.828" errors="0">
+<testcase name="IMPORTANT: Task History Flow › 1. Should navigate to tasks tab and display task list" classname="important/task-history.spec.ts" time="29.027">
+<failure message="task-history.spec.ts:37:3 1. Should navigate to tasks tab and display task list" type="FAILURE">
+<![CDATA[  [firefox] › important/task-history.spec.ts:37:3 › IMPORTANT: Task History Flow › 1. Should navigate to tasks tab and display task list 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for getByRole('tab', { name: /任务/ })
+
+
+       at pages/WorkspacePage.ts:91
+
+      89 |
+      90 |   async clickTasksTab() {
+    > 91 |     await this.tasksTab.click();
+         |                         ^
+      92 |   }
+      93 |
+      94 |   async clickReaderTab() {
+        at WorkspacePage.clickTasksTab (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/WorkspacePage.ts:91:25)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/important/task-history.spec.ts:59:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-firefox/video.webm]]
+
+[[ATTACHMENT|test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-firefox/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[  Failed to cleanup 6b64edc7-1707-4fcb-89b4-975c6a2d6fc1: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+Received: [31mfalse[39m
+    at ApiHelpers.stopSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:103:27[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/important/task-history.spec.ts:29:9 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [[32mSymbol(step)[39m]: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBeTruthy'[39m,
+    title: [32m'Expect "toBeTruthy"'[39m,
+    shortTitle: [32m'Expect "toBeTruthy"'[39m,
+    params: [90mundefined[39m,
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@91'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts'[39m,
+      line: [33m103[39m,
+      column: [33m27[39m,
+      function: [32m'ApiHelpers.stopSession'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@91'[39m,
+      _title: [32m'Expect "toBeTruthy"'[39m,
+      _parentStep: [36m[TestStepInfoImpl][39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769341438727[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at ApiHelpers.stopSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:103:27)\n'[39m +
+        [32m'    at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/important/task-history.spec.ts:29:9'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-err>
+</testcase>
+<testcase name="IMPORTANT: Task History Flow › 2. Should display task cards with status" classname="important/task-history.spec.ts" time="2.851">
+<properties>
+<property name="skip" value="Requires completed tasks - run after session finishes">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Task History Flow › 3. Should display task details when clicking a task" classname="important/task-history.spec.ts" time="1.02">
+<properties>
+<property name="skip" value="Requires completed tasks - run after session finishes">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Task History Flow › 4. Should filter tasks by status" classname="important/task-history.spec.ts" time="0.93">
+<properties>
+<property name="skip" value="Requires filter UI - implementation pending">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="smoke/smoke.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="firefox" tests="9" failures="1" skipped="0" time="18.683" errors="0">
+<testcase name="Smoke Tests › API health check" classname="smoke/smoke.spec.ts" time="0.595">
+<system-out>
+<![CDATA[  ✓ API is healthy
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Home page loads" classname="smoke/smoke.spec.ts" time="2.766">
+<failure message="smoke.spec.ts:33:3 Home page loads" type="FAILURE">
+<![CDATA[  [firefox] › smoke/smoke.spec.ts:33:3 › Smoke Tests › Home page loads ─────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('link', { name: /创建新项目|创建/i })
+    Expected: visible
+    Error: strict mode violation: getByRole('link', { name: /创建新项目|创建/i }) resolved to 3 elements:
+        1) <a href="/create" class="relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800">创建项目</a> aka getByRole('link', { name: '创建项目' })
+        2) <a href="/create">…</a> aka getByRole('link', { name: '创建新项目' }).first()
+        ...
+
+    Call log:
+      - Expect "toBeVisible" with timeout 30000ms
+      - waiting for getByRole('link', { name: /创建新项目|创建/i })
+
+
+       at pages/HomePage.ts:36
+
+      34 |   async verifyPageLoaded() {
+      35 |     await expect(this.pageTitle).toBeVisible();
+    > 36 |     await expect(this.createProjectButton).toBeVisible();
+         |                                            ^
+      37 |     await expect(this.viewSessionsButton).toBeVisible();
+      38 |   }
+      39 |
+        at HomePage.verifyPageLoaded (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/HomePage.ts:36:44)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/smoke/smoke.spec.ts:36:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/smoke-smoke-Smoke-Tests-Home-page-loads-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/smoke-smoke-Smoke-Tests-Home-page-loads-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/smoke-smoke-Smoke-Tests-Home-page-loads-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/smoke-smoke-Smoke-Tests-Home-page-loads-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/smoke-smoke-Smoke-Tests-Home-page-loads-firefox/video.webm]]
+
+[[ATTACHMENT|test-results/smoke-smoke-Smoke-Tests-Home-page-loads-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Create page loads" classname="smoke/smoke.spec.ts" time="3.937">
+<system-out>
+<![CDATA[  ✓ Create page loads
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Sessions page loads" classname="smoke/smoke.spec.ts" time="4.401">
+<system-out>
+<![CDATA[  ✓ Sessions page loads
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Can create session via API" classname="smoke/smoke.spec.ts" time="0.433">
+<system-out>
+<![CDATA[  ✓ Can create session via API
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Can fetch sessions list" classname="smoke/smoke.spec.ts" time="0.036">
+<system-out>
+<![CDATA[  ✓ Can fetch sessions (found 10)
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Can fetch prompts" classname="smoke/smoke.spec.ts" time="0.06">
+<system-out>
+<![CDATA[  ✓ Can fetch prompts (6 styles, 5 templates)
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Navigation between main pages" classname="smoke/smoke.spec.ts" time="1.903">
+<system-out>
+<![CDATA[  ✓ Navigation works
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › WebSocket endpoint accessible" classname="smoke/smoke.spec.ts" time="4.552">
+<system-out>
+<![CDATA[  ✓ WebSocket endpoint accessible
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="critical/create-session.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="webkit" tests="6" failures="1" skipped="0" time="35.925" errors="0">
+<testcase name="CRITICAL: Create Session Flow › 1. Should navigate to create page from home" classname="critical/create-session.spec.ts" time="3.649">
+</testcase>
+<testcase name="CRITICAL: Create Session Flow › 2. Should create session with manual form" classname="critical/create-session.spec.ts" time="3.811">
+<system-out>
+<![CDATA[  ✓ Created session: 4187529b-8b38-4157-95bd-6daf591eeb02
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Create Session Flow › 3. Should create session with estimated chapter count" classname="critical/create-session.spec.ts" time="16.785">
+<failure message="create-session.spec.ts:94:3 3. Should create session with estimated chapter count" type="FAILURE">
+<![CDATA[  [webkit] › critical/create-session.spec.ts:94:3 › CRITICAL: Create Session Flow › 3. Should create session with estimated chapter count 
+
+    TimeoutError: locator.selectOption: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('select').first()
+        - locator resolved to <select id=":r3:" class="w-full px-3 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white border-gray-300 ">…</select>
+      - attempting select option action
+        2 × waiting for element to be visible and enabled
+          - did not find some options
+        - retrying select option action
+        - waiting 20ms
+        2 × waiting for element to be visible and enabled
+          - did not find some options
+        - retrying select option action
+          - waiting 100ms
+        29 × waiting for element to be visible and enabled
+           - did not find some options
+         - retrying select option action
+           - waiting 500ms
+
+
+       at pages/CreatePage.ts:103
+
+      101 |     }
+      102 |     if (data.wordCount) {
+    > 103 |       await this.wordCountSelect.selectOption(data.wordCount);
+          |                                  ^
+      104 |     }
+      105 |     if (data.approvalMode !== undefined) {
+      106 |       const isChecked = await this.approvalModeCheckbox.isChecked();
+        at CreatePage.fillForm (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/CreatePage.ts:103:34)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/create-session.spec.ts:100:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-webkit/video.webm]]
+
+[[ATTACHMENT|test-results/critical-create-session-CR-12d6a-ith-estimated-chapter-count-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Create Session Flow › 4. Should validate required fields" classname="critical/create-session.spec.ts" time="2.951">
+</testcase>
+<testcase name="CRITICAL: Create Session Flow › 5. Should create session via API and navigate to workspace" classname="critical/create-session.spec.ts" time="4.822">
+<system-out>
+<![CDATA[  ✓ Created session via API: aef37877-dc1c-410e-a4e5-7e3cf954b74d
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Create Session Flow › 6. Should create session with approval mode enabled" classname="critical/create-session.spec.ts" time="3.907">
+<system-out>
+<![CDATA[  ✓ Approval mode enabled for session: eb5e3415-7711-4944-bf3c-f07238133cba
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="critical/session-control.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="webkit" tests="5" failures="3" skipped="0" time="33.148" errors="0">
+<testcase name="CRITICAL: Session Control Flow › 1. Should pause a running session via API" classname="critical/session-control.spec.ts" time="7.858">
+<failure message="session-control.spec.ts:44:3 1. Should pause a running session via API" type="FAILURE">
+<![CDATA[  [webkit] › critical/session-control.spec.ts:44:3 › CRITICAL: Session Control Flow › 1. Should pause a running session via API 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+       at helpers/api-helpers.ts:91
+
+      89 |   async pauseSession(sessionId: string) {
+      90 |     const response = await this.request.post(`${BASE_URL}/sessions/${sessionId}/pause`);
+    > 91 |     expect(response.ok()).toBeTruthy();
+         |                           ^
+      92 |     return await response.json();
+      93 |   }
+      94 |
+        at ApiHelpers.pauseSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:91:27)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/session-control.spec.ts:55:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[  1 test sessions created (cleanup skipped)
+
+[[ATTACHMENT|test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-webkit/video.webm]]
+
+[[ATTACHMENT|test-results/critical-session-control-C-0fa3f-e-a-running-session-via-API-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Session Control Flow › 2. Should resume a paused session via API" classname="critical/session-control.spec.ts" time="6.446">
+<failure message="session-control.spec.ts:91:3 2. Should resume a paused session via API" type="FAILURE">
+<![CDATA[  [webkit] › critical/session-control.spec.ts:91:3 › CRITICAL: Session Control Flow › 2. Should resume a paused session via API 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+       at helpers/api-helpers.ts:91
+
+      89 |   async pauseSession(sessionId: string) {
+      90 |     const response = await this.request.post(`${BASE_URL}/sessions/${sessionId}/pause`);
+    > 91 |     expect(response.ok()).toBeTruthy();
+         |                           ^
+      92 |     return await response.json();
+      93 |   }
+      94 |
+        at ApiHelpers.pauseSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:91:27)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/session-control.spec.ts:94:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[  1 test sessions created (cleanup skipped)
+
+[[ATTACHMENT|test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-webkit/video.webm]]
+
+[[ATTACHMENT|test-results/critical-session-control-C-92e59-me-a-paused-session-via-API-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Session Control Flow › 3. Should stop a running session via API" classname="critical/session-control.spec.ts" time="6.827">
+<failure message="session-control.spec.ts:135:3 3. Should stop a running session via API" type="FAILURE">
+<![CDATA[  [webkit] › critical/session-control.spec.ts:135:3 › CRITICAL: Session Control Flow › 3. Should stop a running session via API 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+       at helpers/api-helpers.ts:103
+
+      101 |   async stopSession(sessionId: string) {
+      102 |     const response = await this.request.post(`${BASE_URL}/sessions/${sessionId}/stop`);
+    > 103 |     expect(response.ok()).toBeTruthy();
+          |                           ^
+      104 |     return await response.json();
+      105 |   }
+      106 |
+        at ApiHelpers.stopSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:103:27)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/session-control.spec.ts:141:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[  1 test sessions created (cleanup skipped)
+
+[[ATTACHMENT|test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-webkit/video.webm]]
+
+[[ATTACHMENT|test-results/critical-session-control-C-1f4e5-p-a-running-session-via-API-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Session Control Flow › 4. Should handle pause/resume via WebSocket" classname="critical/session-control.spec.ts" time="8.816">
+<system-out>
+<![CDATA[  Session status after WS pause: running
+  ✓ WebSocket pause control tested
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Session Control Flow › 5. Should display correct controls based on session state" classname="critical/session-control.spec.ts" time="3.201">
+<system-out>
+<![CDATA[  Has resumable sessions: false
+  ✓ Session state displayed correctly
+  1 test sessions created (cleanup skipped)
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="critical/sessions-list-resume.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="webkit" tests="7" failures="4" skipped="0" time="57.877" errors="0">
+<testcase name="CRITICAL: Sessions List and Resume Flow › 1. Should navigate to sessions list from home" classname="critical/sessions-list-resume.spec.ts" time="1.87">
+<failure message="sessions-list-resume.spec.ts:55:3 1. Should navigate to sessions list from home" type="FAILURE">
+<![CDATA[  [webkit] › critical/sessions-list-resume.spec.ts:55:3 › CRITICAL: Sessions List and Resume Flow › 1. Should navigate to sessions list from home 
+
+    Error: locator.click: Error: strict mode violation: getByRole('link', { name: /查看会话列表|查看全部/i }) resolved to 2 elements:
+        1) <a href="/sessions">…</a> aka getByRole('link', { name: '查看会话列表' })
+        2) <a href="/sessions" class="text-blue-600 hover:text-blue-700 text-sm">查看全部 →</a> aka getByRole('link', { name: '查看全部 →' })
+
+    Call log:
+      - waiting for getByRole('link', { name: /查看会话列表|查看全部/i })
+
+
+       at pages/HomePage.ts:45
+
+      43 |
+      44 |   async clickViewSessions() {
+    > 45 |     await this.viewSessionsButton.click();
+         |                                   ^
+      46 |   }
+      47 |
+      48 |   async clickViewAllSessions() {
+        at HomePage.clickViewSessions (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/HomePage.ts:45:35)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:55:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[  Note: Session cleanup should be done per-test or via separate cleanup script
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-webkit/video.webm]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-12cae--to-sessions-list-from-home-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 2. Should display sessions list" classname="critical/sessions-list-resume.spec.ts" time="2.661">
+<system-out>
+<![CDATA[  Found 0 sessions
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 3. Should filter sessions by status" classname="critical/sessions-list-resume.spec.ts" time="17.993">
+<failure message="sessions-list-resume.spec.ts:95:3 3. Should filter sessions by status" type="FAILURE">
+<![CDATA[  [webkit] › critical/sessions-list-resume.spec.ts:95:3 › CRITICAL: Sessions List and Resume Flow › 3. Should filter sessions by status 
+
+    TimeoutError: locator.selectOption: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for getByLabel(/全部状态/)
+
+
+       at pages/SessionsPage.ts:49
+
+      47 |
+      48 |   async filterByStatus(status: string) {
+    > 49 |     await this.statusFilter.selectOption(status);
+         |                             ^
+      50 |     await this.page.waitForLoadState('networkidle');
+      51 |   }
+      52 |
+        at SessionsPage.filterByStatus (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/SessionsPage.ts:49:29)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:100:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[  Note: Session cleanup should be done per-test or via separate cleanup script
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-webkit/video.webm]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-2a195-d-filter-sessions-by-status-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 4. Should show empty state when no sessions" classname="critical/sessions-list-resume.spec.ts" time="9.425">
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 5. Should navigate to create new project from sessions page" classname="critical/sessions-list-resume.spec.ts" time="2.194">
+<failure message="sessions-list-resume.spec.ts:156:3 5. Should navigate to create new project from sessions page" type="FAILURE">
+<![CDATA[  [webkit] › critical/sessions-list-resume.spec.ts:156:3 › CRITICAL: Sessions List and Resume Flow › 5. Should navigate to create new project from sessions page 
+
+    Error: locator.click: Error: strict mode violation: getByRole('link', { name: /创建新项目/ }) resolved to 2 elements:
+        1) <a href="/create">…</a> aka getByRole('link', { name: '创建新项目' }).first()
+        2) <a href="/create">…</a> aka getByRole('link', { name: '创建新项目' }).nth(1)
+
+    Call log:
+      - waiting for getByRole('link', { name: /创建新项目/ })
+
+
+       at pages/SessionsPage.ts:45
+
+      43 |
+      44 |   async clickCreateProject() {
+    > 45 |     await this.createProjectButton.click();
+         |                                    ^
+      46 |   }
+      47 |
+      48 |   async filterByStatus(status: string) {
+        at SessionsPage.clickCreateProject (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/SessionsPage.ts:45:36)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:168:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[  Note: Session cleanup should be done per-test or via separate cleanup script
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-webkit/video.webm]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-a6e76--project-from-sessions-page-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 6. Should navigate to session workspace" classname="critical/sessions-list-resume.spec.ts" time="18.75">
+<failure message="sessions-list-resume.spec.ts:172:3 6. Should navigate to session workspace" type="FAILURE">
+<![CDATA[  [webkit] › critical/sessions-list-resume.spec.ts:172:3 › CRITICAL: Sessions List and Resume Flow › 6. Should navigate to session workspace 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('[data-session-id="bd99af5b-98a6-46b2-afde-44a86831d0dc"]').getByRole('button', { name: /查看/i })
+
+
+       at pages/SessionsPage.ts:89
+
+      87 |       : this.page.getByRole('button', { name: /查看/i }).first();
+      88 |
+    > 89 |     await viewButton.click();
+         |                      ^
+      90 |   }
+      91 |
+      92 |   async getCurrentPage() {
+        at SessionsPage.clickViewSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/SessionsPage.ts:89:22)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/sessions-list-resume.spec.ts:192:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[  Note: Session cleanup should be done per-test or via separate cleanup script
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-webkit/video.webm]]
+
+[[ATTACHMENT|test-results/critical-sessions-list-res-04bd2-vigate-to-session-workspace-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Sessions List and Resume Flow › 7. Should display pagination when multiple pages" classname="critical/sessions-list-resume.spec.ts" time="4.984">
+<system-out>
+<![CDATA[  Pagination not visible (not enough sessions)
+  Note: Session cleanup should be done per-test or via separate cleanup script
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="critical/start-execution.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="webkit" tests="6" failures="2" skipped="3" time="49.746" errors="0">
+<testcase name="CRITICAL: Start Execution Flow › 1. Should load workspace page" classname="critical/start-execution.spec.ts" time="32.453">
+<failure message="start-execution.spec.ts:46:3 1. Should load workspace page" type="FAILURE">
+<![CDATA[  [webkit] › critical/start-execution.spec.ts:46:3 › CRITICAL: Start Execution Flow › 1. Should load workspace page 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('[class*="progress"]')
+    Expected: visible
+    Timeout: 30000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 30000ms
+      - waiting for locator('[class*="progress"]')
+
+
+      72 |     // Verify progress section is visible
+      73 |     await expect(workspacePage.progressLabel).toBeVisible();
+    > 74 |     await expect(workspacePage.progressBar).toBeVisible();
+         |                                             ^
+      75 |
+      76 |     // Screenshot
+      77 |     await workspacePage.takeScreenshot('artifacts/workspace-loaded.png');
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/start-execution.spec.ts:74:45
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-start-execution-C-14dbe--Should-load-workspace-page-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-start-execution-C-14dbe--Should-load-workspace-page-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-start-execution-C-14dbe--Should-load-workspace-page-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/critical-start-execution-C-14dbe--Should-load-workspace-page-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-start-execution-C-14dbe--Should-load-workspace-page-webkit/video.webm]]
+
+[[ATTACHMENT|test-results/critical-start-execution-C-14dbe--Should-load-workspace-page-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Start Execution Flow › 2. Should establish WebSocket connection" classname="critical/start-execution.spec.ts" time="1.203">
+<properties>
+<property name="skip" value="No session available from previous test">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Start Execution Flow › 3. Should start session execution automatically" classname="critical/start-execution.spec.ts" time="7.315">
+<system-out>
+<![CDATA[  Session status: running
+  ✓ Session auto-started: 8c384bd2-7e75-4b5f-ac34-78583abef57a
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Start Execution Flow › 4. Should display progress updates" classname="critical/start-execution.spec.ts" time="7.11">
+<failure message="start-execution.spec.ts:187:3 4. Should display progress updates" type="FAILURE">
+<![CDATA[  [webkit] › critical/start-execution.spec.ts:187:3 › CRITICAL: Start Execution Flow › 4. Should display progress updates 
+
+    Error: locator.isVisible: Error: strict mode violation: getByText(/等待任务启动/) resolved to 2 elements:
+        1) <div class="px-4 py-2 text-sm text-gray-400">等待任务启动...</div> aka getByText('等待任务启动...')
+        2) <p class="text-lg mb-2">等待任务启动</p> aka getByText('等待任务启动', { exact: true })
+
+    Call log:
+        - checking visibility of getByText(/等待任务启动/)
+
+
+       at pages/WorkspacePage.ts:83
+
+      81 |
+      82 |   async isWaiting() {
+    > 83 |     return await this.waitingMessage.isVisible();
+         |                                      ^
+      84 |   }
+      85 |
+      86 |   async clickOverviewTab() {
+        at WorkspacePage.isWaiting (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/WorkspacePage.ts:83:38)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/critical/start-execution.spec.ts:204:43
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/critical-start-execution-C-48f25-ld-display-progress-updates-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/critical-start-execution-C-48f25-ld-display-progress-updates-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/critical-start-execution-C-48f25-ld-display-progress-updates-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[  Progress: 0/72
+
+[[ATTACHMENT|test-results/critical-start-execution-C-48f25-ld-display-progress-updates-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/critical-start-execution-C-48f25-ld-display-progress-updates-webkit/video.webm]]
+
+[[ATTACHMENT|test-results/critical-start-execution-C-48f25-ld-display-progress-updates-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CRITICAL: Start Execution Flow › 5. Should display current task and LLM provider" classname="critical/start-execution.spec.ts" time="1.094">
+<properties>
+<property name="skip" value="No session available from previous test">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Start Execution Flow › 6. Should switch between workspace tabs" classname="critical/start-execution.spec.ts" time="0.571">
+<properties>
+<property name="skip" value="No session available from previous test">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="critical/task-approval.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="webkit" tests="6" failures="0" skipped="6" time="125.691" errors="0">
+<testcase name="CRITICAL: Task Approval Flow › 1. Should wait for task completion and show approval dialog" classname="critical/task-approval.spec.ts" time="122.172">
+<properties>
+<property name="skip" value="Approval dialog timeout - may need manual verification">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Task Approval Flow › 2. Should display task result and evaluation" classname="critical/task-approval.spec.ts" time="0.935">
+<properties>
+<property name="skip" value="Requires approval dialog from previous test - run in sequence">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Task Approval Flow › 3. Should approve task and continue execution" classname="critical/task-approval.spec.ts" time="0.702">
+<properties>
+<property name="skip" value="Requires approval dialog from previous test - run in sequence">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Task Approval Flow › 4. Should reject task and skip" classname="critical/task-approval.spec.ts" time="0.752">
+<properties>
+<property name="skip" value="Skipping - requires task waiting for approval">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Task Approval Flow › 5. Should regenerate task with feedback" classname="critical/task-approval.spec.ts" time="0.582">
+<properties>
+<property name="skip" value="Skipping - requires task waiting for approval">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="CRITICAL: Task Approval Flow › 6. Should handle idea selection for brainstorm tasks" classname="critical/task-approval.spec.ts" time="0.548">
+<properties>
+<property name="skip" value="Skipping - requires brainstorm task waiting for approval">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="full-workflow.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="webkit" tests="12" failures="0" skipped="0" time="49.914" errors="0">
+<testcase name="Creative AutoGPT E2E Tests › 1. Home page loads correctly" classname="full-workflow.spec.ts" time="2.067">
+<system-out>
+<![CDATA[✅ Home page loaded successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 2. Navigate to create page" classname="full-workflow.spec.ts" time="3.69">
+<system-out>
+<![CDATA[✅ Create page navigation works
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 3. Create session with manual form" classname="full-workflow.spec.ts" time="1.804">
+<system-out>
+<![CDATA[✅ Session created successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 4. Workspace loads and connects WebSocket" classname="full-workflow.spec.ts" time="6.123">
+<system-out>
+<![CDATA[✅ Workspace loaded
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 5. Sessions list page works" classname="full-workflow.spec.ts" time="1.888">
+<system-out>
+<![CDATA[✅ Sessions list page works
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 6. API endpoints work correctly" classname="full-workflow.spec.ts" time="0.843">
+<system-out>
+<![CDATA[  ✓ /health endpoint OK
+  ✓ /sessions endpoint OK
+  ✓ /prompts/styles endpoint OK
+  ✓ /prompts/templates endpoint OK
+✅ All API endpoints working
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 7. Create session via API and check status" classname="full-workflow.spec.ts" time="1.441">
+<system-out>
+<![CDATA[  ✓ Session created: fcbf40b3-0d87-4567-9493-4c4b2e1af45c
+✅ API session creation works
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 8. WebSocket events flow" classname="full-workflow.spec.ts" time="7.477">
+<system-out>
+<![CDATA[  WebSocket opened: ws://localhost:4173/?token=nK3FrgVOX9Bi
+  WebSocket opened: ws://localhost:8000/ws/ws
+  → Sent: {"event":"connect"}
+  → Sent: {"event":"subscribe","session_id":"8b348714-cb9b-4e40-ad5a-3c1f40da778f"}
+  → Sent: {"event":"start","session_id":"8b348714-cb9b-4e40-ad5a-3c1f40da778f"}
+  Received 4 WebSocket messages
+✅ WebSocket events monitored
+  → Sent: {"event":"ping"}
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 9. Error handling - invalid session" classname="full-workflow.spec.ts" time="3.131">
+<system-out>
+<![CDATA[✅ Error handling works
+]]>
+</system-out>
+</testcase>
+<testcase name="Creative AutoGPT E2E Tests › 10. Full creation flow with progress check" classname="full-workflow.spec.ts" time="6.998">
+<system-out>
+<![CDATA[  Session ID: 59d81c26-dc25-46b7-a31b-4d8e6d1dd5bb
+  Session status: running
+  Progress: 0/0
+✅ Full creation flow completed
+]]>
+</system-out>
+</testcase>
+<testcase name="Smart Enhance Feature › Smart enhance endpoint works" classname="full-workflow.spec.ts" time="13.534">
+<system-out>
+<![CDATA[✅ Smart enhance works with LLM
+]]>
+</system-out>
+</testcase>
+<testcase name="Cleanup › Delete test sessions" classname="full-workflow.spec.ts" time="0.918">
+<system-out>
+<![CDATA[  Deleted: 59d81c26-dc25-46b7-a31b-4d8e6d1dd5bb
+  Deleted: 8b348714-cb9b-4e40-ad5a-3c1f40da778f
+  Deleted: fcbf40b3-0d87-4567-9493-4c4b2e1af45c
+  Deleted: db2e1485-3299-4ac1-9721-5d0e3e7cfcf4
+  Deleted: 11ac657d-064f-4b12-96b2-61a1c20f8b1f
+  Deleted: d43091cf-8c4f-404e-9fc5-df755cb64892
+  Deleted: 8c384bd2-7e75-4b5f-ac34-78583abef57a
+  Deleted: 3e7d7dc9-c1b3-4e07-aa22-7329f9dcc82a
+  Deleted: bd99af5b-98a6-46b2-afde-44a86831d0dc
+✅ Cleaned up 9 test sessions
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="important/export-functionality.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="webkit" tests="4" failures="0" skipped="4" time="3.226" errors="0">
+<testcase name="IMPORTANT: Export Functionality › 1. Should open export dialog from sessions list" classname="important/export-functionality.spec.ts" time="1.667">
+<properties>
+<property name="skip" value="Export functionality not implemented">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Export Functionality › 2. Should select export format" classname="important/export-functionality.spec.ts" time="0.577">
+<properties>
+<property name="skip" value="Requires export dialog - implementation pending">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Export Functionality › 3. Should download exported file" classname="important/export-functionality.spec.ts" time="0.497">
+<properties>
+<property name="skip" value="Requires export functionality - implementation pending">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Export Functionality › 4. Should handle export for empty session" classname="important/export-functionality.spec.ts" time="0.485">
+<properties>
+<property name="skip" value="Requires export functionality - implementation pending">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="important/preview-content.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="webkit" tests="5" failures="2" skipped="2" time="40.715" errors="0">
+<testcase name="IMPORTANT: Preview Content Flow › 1. Should display preview panel on workspace" classname="important/preview-content.spec.ts" time="4.926">
+<system-out>
+<![CDATA[  ✓ Preview panel displayed
+]]>
+</system-out>
+</testcase>
+<testcase name="IMPORTANT: Preview Content Flow › 2. Should display overview tab content" classname="important/preview-content.spec.ts" time="16.726">
+<failure message="preview-content.spec.ts:70:3 2. Should display overview tab content" type="FAILURE">
+<![CDATA[  [webkit] › important/preview-content.spec.ts:70:3 › IMPORTANT: Preview Content Flow › 2. Should display overview tab content 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for getByRole('tab', { name: /概览/ })
+
+
+       at pages/WorkspacePage.ts:87
+
+      85 |
+      86 |   async clickOverviewTab() {
+    > 87 |     await this.overviewTab.click();
+         |                            ^
+      88 |   }
+      89 |
+      90 |   async clickTasksTab() {
+        at WorkspacePage.clickOverviewTab (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/WorkspacePage.ts:87:28)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/important/preview-content.spec.ts:75:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/important-preview-content--76ab8-isplay-overview-tab-content-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/important-preview-content--76ab8-isplay-overview-tab-content-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/important-preview-content--76ab8-isplay-overview-tab-content-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/important-preview-content--76ab8-isplay-overview-tab-content-webkit/video.webm]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[  Failed to cleanup 835a205f-1b42-4069-823b-4c25e184857d: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+Received: [31mfalse[39m
+    at ApiHelpers.stopSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:103:27[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/important/preview-content.spec.ts:29:9 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [[32mSymbol(step)[39m]: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBeTruthy'[39m,
+    title: [32m'Expect "toBeTruthy"'[39m,
+    shortTitle: [32m'Expect "toBeTruthy"'[39m,
+    params: [90mundefined[39m,
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@84'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts'[39m,
+      line: [33m103[39m,
+      column: [33m27[39m,
+      function: [32m'ApiHelpers.stopSession'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@84'[39m,
+      _title: [32m'Expect "toBeTruthy"'[39m,
+      _parentStep: [36m[TestStepInfoImpl][39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769341876402[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at ApiHelpers.stopSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:103:27)\n'[39m +
+        [32m'    at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/important/preview-content.spec.ts:29:9'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-err>
+</testcase>
+<testcase name="IMPORTANT: Preview Content Flow › 3. Should switch to reader mode" classname="important/preview-content.spec.ts" time="17.351">
+<failure message="preview-content.spec.ts:89:3 3. Should switch to reader mode" type="FAILURE">
+<![CDATA[  [webkit] › important/preview-content.spec.ts:89:3 › IMPORTANT: Preview Content Flow › 3. Should switch to reader mode 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for getByRole('tab', { name: /阅读/ })
+
+
+       at pages/WorkspacePage.ts:95
+
+      93 |
+      94 |   async clickReaderTab() {
+    > 95 |     await this.readerTab.click();
+         |                          ^
+      96 |   }
+      97 |
+      98 |   async waitForTaskStart(timeout = 30000) {
+        at WorkspacePage.clickReaderTab (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/WorkspacePage.ts:95:26)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/important/preview-content.spec.ts:94:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/important-preview-content--7fcdc-hould-switch-to-reader-mode-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/important-preview-content--7fcdc-hould-switch-to-reader-mode-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/important-preview-content--7fcdc-hould-switch-to-reader-mode-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/important-preview-content--7fcdc-hould-switch-to-reader-mode-webkit/video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="IMPORTANT: Preview Content Flow › 4. Should display chapter content in reader" classname="important/preview-content.spec.ts" time="1.182">
+<properties>
+<property name="skip" value="Requires generated chapters - run after tasks complete">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Preview Content Flow › 5. Should navigate between chapters" classname="important/preview-content.spec.ts" time="0.53">
+<properties>
+<property name="skip" value="Requires multiple chapters - implementation pending">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="important/task-history.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="webkit" tests="4" failures="1" skipped="3" time="29.463" errors="0">
+<testcase name="IMPORTANT: Task History Flow › 1. Should navigate to tasks tab and display task list" classname="important/task-history.spec.ts" time="26.854">
+<failure message="task-history.spec.ts:37:3 1. Should navigate to tasks tab and display task list" type="FAILURE">
+<![CDATA[  [webkit] › important/task-history.spec.ts:37:3 › IMPORTANT: Task History Flow › 1. Should navigate to tasks tab and display task list 
+
+    TimeoutError: locator.click: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for getByRole('tab', { name: /任务/ })
+
+
+       at pages/WorkspacePage.ts:91
+
+      89 |
+      90 |   async clickTasksTab() {
+    > 91 |     await this.tasksTab.click();
+         |                         ^
+      92 |   }
+      93 |
+      94 |   async clickReaderTab() {
+        at WorkspacePage.clickTasksTab (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/WorkspacePage.ts:91:25)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/important/task-history.spec.ts:59:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-webkit/video.webm]]
+
+[[ATTACHMENT|test-results/important-task-history-IMP-8b882-s-tab-and-display-task-list-webkit/error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[  Failed to cleanup 86d8913a-1bfc-4679-be0b-a75b90447714: ExpectError: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+Received: [31mfalse[39m
+    at ApiHelpers.stopSession [90m(/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/helpers/api-helpers.ts:103:27[90m)[39m
+    at [90m/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/[39me2e/important/task-history.spec.ts:29:9 {
+  matcherResult: {
+    message: [32m'\x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+      [32m'\n'[39m +
+      [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+    pass: [33mfalse[39m
+  },
+  [[32mSymbol(step)[39m]: {
+    category: [32m'expect'[39m,
+    apiName: [32m'expect.toBeTruthy'[39m,
+    title: [32m'Expect "toBeTruthy"'[39m,
+    shortTitle: [32m'Expect "toBeTruthy"'[39m,
+    params: [90mundefined[39m,
+    infectParentStepsWithError: [90mundefined[39m,
+    stepId: [32m'expect@91'[39m,
+    group: [90mundefined[39m,
+    boxedStack: [90mundefined[39m,
+    location: {
+      file: [32m'/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts'[39m,
+      line: [33m103[39m,
+      column: [33m27[39m,
+      function: [32m'ApiHelpers.stopSession'[39m
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [36m[TestInfoImpl][39m,
+      _stepId: [32m'expect@91'[39m,
+      _title: [32m'Expect "toBeTruthy"'[39m,
+      _parentStep: [36m[TestStepInfoImpl][39m,
+      skip: [36m[Function (anonymous)][39m
+    },
+    complete: [36m[Function: complete][39m,
+    endWallTime: [33m1769341927297[39m,
+    error: {
+      message: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m'[39m,
+      stack: [32m'Error: \x1B[2mexpect(\x1B[22m\x1B[31mreceived\x1B[39m\x1B[2m).\x1B[22mtoBeTruthy\x1B[2m()\x1B[22m\n'[39m +
+        [32m'\n'[39m +
+        [32m'Received: \x1B[31mfalse\x1B[39m\n'[39m +
+        [32m'    at ApiHelpers.stopSession (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/helpers/api-helpers.ts:103:27)\n'[39m +
+        [32m'    at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/important/task-history.spec.ts:29:9'[39m,
+      cause: [90mundefined[39m
+    }
+  }
+}
+]]>
+</system-err>
+</testcase>
+<testcase name="IMPORTANT: Task History Flow › 2. Should display task cards with status" classname="important/task-history.spec.ts" time="1.458">
+<properties>
+<property name="skip" value="Requires completed tasks - run after session finishes">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Task History Flow › 3. Should display task details when clicking a task" classname="important/task-history.spec.ts" time="0.583">
+<properties>
+<property name="skip" value="Requires completed tasks - run after session finishes">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="IMPORTANT: Task History Flow › 4. Should filter tasks by status" classname="important/task-history.spec.ts" time="0.568">
+<properties>
+<property name="skip" value="Requires filter UI - implementation pending">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="smoke/smoke.spec.ts" timestamp="2026-01-25T11:23:09.063Z" hostname="webkit" tests="9" failures="1" skipped="0" time="15.352" errors="0">
+<testcase name="Smoke Tests › API health check" classname="smoke/smoke.spec.ts" time="0.471">
+<system-out>
+<![CDATA[  ✓ API is healthy
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Home page loads" classname="smoke/smoke.spec.ts" time="1.838">
+<failure message="smoke.spec.ts:33:3 Home page loads" type="FAILURE">
+<![CDATA[  [webkit] › smoke/smoke.spec.ts:33:3 › Smoke Tests › Home page loads ──────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('link', { name: /创建新项目|创建/i })
+    Expected: visible
+    Error: strict mode violation: getByRole('link', { name: /创建新项目|创建/i }) resolved to 3 elements:
+        1) <a href="/create" class="relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800">创建项目</a> aka getByRole('link', { name: '创建项目' })
+        2) <a href="/create">…</a> aka getByRole('link', { name: '创建新项目' }).first()
+        3) <a href="/create">…</a> aka getByRole('link', { name: '创建新项目' }).nth(1)
+
+    Call log:
+      - Expect "toBeVisible" with timeout 30000ms
+      - waiting for getByRole('link', { name: /创建新项目|创建/i })
+
+
+       at pages/HomePage.ts:36
+
+      34 |   async verifyPageLoaded() {
+      35 |     await expect(this.pageTitle).toBeVisible();
+    > 36 |     await expect(this.createProjectButton).toBeVisible();
+         |                                            ^
+      37 |     await expect(this.viewSessionsButton).toBeVisible();
+      38 |   }
+      39 |
+        at HomePage.verifyPageLoaded (/Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/pages/HomePage.ts:36:44)
+        at /Users/fanhailiang/Desktop/ai/division_autoGpt/frontend/e2e/smoke/smoke.spec.ts:36:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/smoke-smoke-Smoke-Tests-Home-page-loads-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/smoke-smoke-Smoke-Tests-Home-page-loads-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/smoke-smoke-Smoke-Tests-Home-page-loads-webkit/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/smoke-smoke-Smoke-Tests-Home-page-loads-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/smoke-smoke-Smoke-Tests-Home-page-loads-webkit/video.webm]]
+
+[[ATTACHMENT|test-results/smoke-smoke-Smoke-Tests-Home-page-loads-webkit/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Create page loads" classname="smoke/smoke.spec.ts" time="2.576">
+<system-out>
+<![CDATA[  ✓ Create page loads
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Sessions page loads" classname="smoke/smoke.spec.ts" time="2.046">
+<system-out>
+<![CDATA[  ✓ Sessions page loads
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Can create session via API" classname="smoke/smoke.spec.ts" time="0.378">
+<system-out>
+<![CDATA[  ✓ Can create session via API
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Can fetch sessions list" classname="smoke/smoke.spec.ts" time="0.019">
+<system-out>
+<![CDATA[  ✓ Can fetch sessions (found 10)
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Can fetch prompts" classname="smoke/smoke.spec.ts" time="0.021">
+<system-out>
+<![CDATA[  ✓ Can fetch prompts (6 styles, 5 templates)
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › Navigation between main pages" classname="smoke/smoke.spec.ts" time="1.66">
+<system-out>
+<![CDATA[  ✓ Navigation works
+]]>
+</system-out>
+</testcase>
+<testcase name="Smoke Tests › WebSocket endpoint accessible" classname="smoke/smoke.spec.ts" time="6.343">
+<system-out>
+<![CDATA[  ✓ WebSocket endpoint accessible
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

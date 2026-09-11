@@ -1,0 +1,162 @@
+<testsuites id="" name="" tests="5" failures="3" skipped="0" errors="0" time="20.859334">
+<testsuite name="mobile.spec.ts" timestamp="2025-09-22T02:43:07.110Z" hostname="chromium" tests="5" failures="3" skipped="0" time="17.253" errors="0">
+<testcase name="Mobile Responsiveness Tests › hamburger menu opens drawer navigation" classname="mobile.spec.ts" time="11.571">
+<failure message="mobile.spec.ts:9:3 hamburger menu opens drawer navigation" type="FAILURE">
+<![CDATA[  [chromium] › mobile.spec.ts:9:3 › Mobile Responsiveness Tests › hamburger menu opens drawer navigation 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="mobile-nav-drawer"], nav[role="navigation"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 10000ms
+      - waiting for locator('[data-testid="mobile-nav-drawer"], nav[role="navigation"]')
+
+
+      18 |     
+      19 |     // Drawer/sidebar should be visible
+    > 20 |     await expect(page.locator('[data-testid="mobile-nav-drawer"], nav[role="navigation"]')).toBeVisible();
+         |                                                                                             ^
+      21 |     
+      22 |     // Should contain navigation items
+      23 |     await expect(page.getByRole('link', { name: /dashboard/i })).toBeVisible();
+        at C:\IntelliLab_GC_ModV2\frontend\tests\mobile.spec.ts:20:93
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\mobile-Mobile-Responsivene-0fa29-enu-opens-drawer-navigation-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\mobile-Mobile-Responsivene-0fa29-enu-opens-drawer-navigation-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\mobile-Mobile-Responsivene-0fa29-enu-opens-drawer-navigation-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\mobile-Mobile-Responsivene-0fa29-enu-opens-drawer-navigation-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\mobile-Mobile-Responsivene-0fa29-enu-opens-drawer-navigation-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|mobile-Mobile-Responsivene-0fa29-enu-opens-drawer-navigation-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|mobile-Mobile-Responsivene-0fa29-enu-opens-drawer-navigation-chromium\video.webm]]
+
+[[ATTACHMENT|mobile-Mobile-Responsivene-0fa29-enu-opens-drawer-navigation-chromium\error-context.md]]
+
+[[ATTACHMENT|mobile-Mobile-Responsivene-0fa29-enu-opens-drawer-navigation-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Mobile Responsiveness Tests › pages stack vertically without horizontal scroll" classname="mobile.spec.ts" time="2.06">
+</testcase>
+<testcase name="Mobile Responsiveness Tests › forms and inputs are touch-friendly" classname="mobile.spec.ts" time="1.169">
+<failure message="mobile.spec.ts:50:3 forms and inputs are touch-friendly" type="FAILURE">
+<![CDATA[  [chromium] › mobile.spec.ts:50:3 › Mobile Responsiveness Tests › forms and inputs are touch-friendly 
+
+    Error: expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 44
+    Received:    24
+
+      56 |     
+      57 |     const inputBox = await splitRatioInput.boundingBox();
+    > 58 |     expect(inputBox?.height).toBeGreaterThanOrEqual(44); // iOS minimum touch target
+         |                              ^
+      59 |     
+      60 |     // Buttons should be touch-friendly
+      61 |     const calculateBtn = page.getByTestId('calculate-btn');
+        at C:\IntelliLab_GC_ModV2\frontend\tests\mobile.spec.ts:58:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\mobile-Mobile-Responsivene-eeaee-d-inputs-are-touch-friendly-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\mobile-Mobile-Responsivene-eeaee-d-inputs-are-touch-friendly-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\mobile-Mobile-Responsivene-eeaee-d-inputs-are-touch-friendly-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\mobile-Mobile-Responsivene-eeaee-d-inputs-are-touch-friendly-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\mobile-Mobile-Responsivene-eeaee-d-inputs-are-touch-friendly-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|mobile-Mobile-Responsivene-eeaee-d-inputs-are-touch-friendly-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|mobile-Mobile-Responsivene-eeaee-d-inputs-are-touch-friendly-chromium\video.webm]]
+
+[[ATTACHMENT|mobile-Mobile-Responsivene-eeaee-d-inputs-are-touch-friendly-chromium\error-context.md]]
+
+[[ATTACHMENT|mobile-Mobile-Responsivene-eeaee-d-inputs-are-touch-friendly-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Mobile Responsiveness Tests › content adapts to mobile layout" classname="mobile.spec.ts" time="1.23">
+</testcase>
+<testcase name="Mobile Responsiveness Tests › mobile troubleshooter interface works" classname="mobile.spec.ts" time="1.223">
+<failure message="mobile.spec.ts:82:3 mobile troubleshooter interface works" type="FAILURE">
+<![CDATA[  [chromium] › mobile.spec.ts:82:3 › Mobile Responsiveness Tests › mobile troubleshooter interface works 
+
+    Error: expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 44
+    Received:    42
+
+      92 |     
+      93 |     const sendBtnBox = await sendBtn.boundingBox();
+    > 94 |     expect(sendBtnBox?.height).toBeGreaterThanOrEqual(44);
+         |                                ^
+      95 |     
+      96 |     // Test interaction
+      97 |     await messageInput.fill('Mobile test message');
+        at C:\IntelliLab_GC_ModV2\frontend\tests\mobile.spec.ts:94:32
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\mobile-Mobile-Responsivene-3f8a1-ubleshooter-interface-works-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\mobile-Mobile-Responsivene-3f8a1-ubleshooter-interface-works-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\mobile-Mobile-Responsivene-3f8a1-ubleshooter-interface-works-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\mobile-Mobile-Responsivene-3f8a1-ubleshooter-interface-works-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\mobile-Mobile-Responsivene-3f8a1-ubleshooter-interface-works-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|mobile-Mobile-Responsivene-3f8a1-ubleshooter-interface-works-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|mobile-Mobile-Responsivene-3f8a1-ubleshooter-interface-works-chromium\video.webm]]
+
+[[ATTACHMENT|mobile-Mobile-Responsivene-3f8a1-ubleshooter-interface-works-chromium\error-context.md]]
+
+[[ATTACHMENT|mobile-Mobile-Responsivene-3f8a1-ubleshooter-interface-works-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

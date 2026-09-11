@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample JUnit XML to test FailChain against without a real test suite -->
+<testsuites name="Playwright Tests" tests="5" failures="3" errors="0" time="45.2">
+
+  <testsuite name="Authentication" tests="2" failures="1" time="12.3"
+             file="tests/auth/login.spec.ts">
+
+    <testcase classname="tests/auth/login.spec.ts"
+              name="should redirect to dashboard after login"
+              time="5.4">
+      <failure message="expect(received).toBe(expected)">
+        expect(received).toBe(expected)
+
+        Expected: "/dashboard"
+        Received: "/login?error=invalid_credentials"
+
+        at tests/auth/login.spec.ts:38
+        [[ATTACHMENT|/tmp/playwright-screenshots/auth-login-failed-1.png]]
+      </failure>
+    </testcase>
+
+    <testcase classname="tests/auth/login.spec.ts"
+              name="should show validation error on empty fields"
+              time="6.9"/>
+  </testsuite>
+
+  <testsuite name="Checkout" tests="3" failures="2" time="32.9"
+             file="tests/checkout/purchase.spec.ts">
+
+    <testcase classname="tests/checkout/purchase.spec.ts"
+              name="should add item to cart"
+              time="8.1">
+      <failure message="Locator not found: button[data-testid='add-to-cart']">
+        Error: locator('button[data-testid=&apos;add-to-cart&apos;]') not found.
+        Received page URL: https://shop.example.com/products/widget-pro
+
+        Call log:
+          - waiting for locator('button[data-testid=add-to-cart]')
+
+        at tests/checkout/purchase.spec.ts:22
+      </failure>
+    </testcase>
+
+    <testcase classname="tests/checkout/purchase.spec.ts"
+              name="should apply discount code"
+              time="14.2">
+      <failure message="Timeout 30000ms exceeded">
+        Error: Timeout 30000ms exceeded.
+        waiting for locator('#discount-code-input') to be visible
+
+        Call log:
+          - waiting for locator('#discount-code-input')
+
+        at tests/checkout/purchase.spec.ts:67
+      </failure>
+    </testcase>
+
+    <testcase classname="tests/checkout/purchase.spec.ts"
+              name="should show order confirmation"
+              time="10.6"/>
+  </testsuite>
+
+</testsuites>

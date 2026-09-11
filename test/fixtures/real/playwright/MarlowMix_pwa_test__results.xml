@@ -1,0 +1,206 @@
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="6" time="0.655964">
+<testsuite name="gebiet.spec.ts" timestamp="2026-07-15T14:14:49.382Z" hostname="chromium" tests="2" failures="0" skipped="0" time="0.002" errors="2">
+<testcase name="Gebiete &amp; Themen Management › Access Denied for Guests" classname="gebiet.spec.ts" time="0.001">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/gebiet-Gebiete-Themen-Management-Access-Denied-for-Guests-chromium/error-context.md]]
+
+[[ATTACHMENT|test-results/gebiet-Gebiete-Themen-Management-Access-Denied-for-Guests-chromium/trace.zip]]
+]]>
+</system-out>
+<error message="browserType.launch: Executable doesn&apos;t exist at /Users/marlow/Library/Caches/ms-playwright/chromium_headless_shell-1223/chrome-headless-shell-mac-arm64/chrome-headless-shell" type="Error">
+<![CDATA[  [chromium] › gebiet.spec.ts:10:9 › Gebiete & Themen Management › Access Denied for Guests ────────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/marlow/Library/Caches/ms-playwright/chromium_headless_shell-1223/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: ../test-results/gebiet-Gebiete-Themen-Management-Access-Denied-for-Guests-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/gebiet-Gebiete-Themen-Management-Access-Denied-for-Guests-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/gebiet-Gebiete-Themen-Management-Access-Denied-for-Guests-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+<testcase name="Gebiete &amp; Themen Management › CRUD Lifecycle for Gebiete and Themen" classname="gebiet.spec.ts" time="0.001">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/gebiet-Gebiete-Themen-Mana-c1658-ycle-for-Gebiete-and-Themen-chromium/error-context.md]]
+
+[[ATTACHMENT|test-results/gebiet-Gebiete-Themen-Mana-c1658-ycle-for-Gebiete-and-Themen-chromium/trace.zip]]
+]]>
+</system-out>
+<error message="browserType.launch: Executable doesn&apos;t exist at /Users/marlow/Library/Caches/ms-playwright/chromium_headless_shell-1223/chrome-headless-shell-mac-arm64/chrome-headless-shell" type="Error">
+<![CDATA[  [chromium] › gebiet.spec.ts:17:9 › Gebiete & Themen Management › CRUD Lifecycle for Gebiete and Themen 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/marlow/Library/Caches/ms-playwright/chromium_headless_shell-1223/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: ../test-results/gebiet-Gebiete-Themen-Mana-c1658-ycle-for-Gebiete-and-Themen-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/gebiet-Gebiete-Themen-Mana-c1658-ycle-for-Gebiete-and-Themen-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/gebiet-Gebiete-Themen-Mana-c1658-ycle-for-Gebiete-and-Themen-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="home.spec.ts" timestamp="2026-07-15T14:14:49.382Z" hostname="chromium" tests="3" failures="0" skipped="0" time="0.002" errors="3">
+<testcase name="Home Page &amp; Login Flow › Login Failed" classname="home.spec.ts" time="0">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/home-Home-Page-Login-Flow-Login-Failed-chromium/error-context.md]]
+
+[[ATTACHMENT|test-results/home-Home-Page-Login-Flow-Login-Failed-chromium/trace.zip]]
+]]>
+</system-out>
+<error message="browserType.launch: Executable doesn&apos;t exist at /Users/marlow/Library/Caches/ms-playwright/chromium_headless_shell-1223/chrome-headless-shell-mac-arm64/chrome-headless-shell" type="Error">
+<![CDATA[  [chromium] › home.spec.ts:10:9 › Home Page & Login Flow › Login Failed ───────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/marlow/Library/Caches/ms-playwright/chromium_headless_shell-1223/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: ../test-results/home-Home-Page-Login-Flow-Login-Failed-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/home-Home-Page-Login-Flow-Login-Failed-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/home-Home-Page-Login-Flow-Login-Failed-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+<testcase name="Home Page &amp; Login Flow › Login Successful" classname="home.spec.ts" time="0.001">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/home-Home-Page-Login-Flow-Login-Successful-chromium/error-context.md]]
+
+[[ATTACHMENT|test-results/home-Home-Page-Login-Flow-Login-Successful-chromium/trace.zip]]
+]]>
+</system-out>
+<error message="browserType.launch: Executable doesn&apos;t exist at /Users/marlow/Library/Caches/ms-playwright/chromium_headless_shell-1223/chrome-headless-shell-mac-arm64/chrome-headless-shell" type="Error">
+<![CDATA[  [chromium] › home.spec.ts:19:9 › Home Page & Login Flow › Login Successful ───────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/marlow/Library/Caches/ms-playwright/chromium_headless_shell-1223/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: ../test-results/home-Home-Page-Login-Flow-Login-Successful-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/home-Home-Page-Login-Flow-Login-Successful-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/home-Home-Page-Login-Flow-Login-Successful-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+<testcase name="Home Page &amp; Login Flow › Public vs Private Visibility" classname="home.spec.ts" time="0.001">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/home-Home-Page-Login-Flow-Public-vs-Private-Visibility-chromium/error-context.md]]
+
+[[ATTACHMENT|test-results/home-Home-Page-Login-Flow-Public-vs-Private-Visibility-chromium/trace.zip]]
+]]>
+</system-out>
+<error message="browserType.launch: Executable doesn&apos;t exist at /Users/marlow/Library/Caches/ms-playwright/chromium_headless_shell-1223/chrome-headless-shell-mac-arm64/chrome-headless-shell" type="Error">
+<![CDATA[  [chromium] › home.spec.ts:28:9 › Home Page & Login Flow › Public vs Private Visibility ───────────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/marlow/Library/Caches/ms-playwright/chromium_headless_shell-1223/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: ../test-results/home-Home-Page-Login-Flow-Public-vs-Private-Visibility-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/home-Home-Page-Login-Flow-Public-vs-Private-Visibility-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/home-Home-Page-Login-Flow-Public-vs-Private-Visibility-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="user-management.spec.ts" timestamp="2026-07-15T14:14:49.382Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0" errors="1">
+<testcase name="User-Management (Professoren) › Login, Anlage, Prüfung, Änderung und Löschung eines Users" classname="user-management.spec.ts" time="0">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/user-management-User-Manag-0e630-ng-und-Löschung-eines-Users-chromium/error-context.md]]
+
+[[ATTACHMENT|test-results/user-management-User-Manag-0e630-ng-und-Löschung-eines-Users-chromium/trace.zip]]
+]]>
+</system-out>
+<error message="browserType.launch: Executable doesn&apos;t exist at /Users/marlow/Library/Caches/ms-playwright/chromium_headless_shell-1223/chrome-headless-shell-mac-arm64/chrome-headless-shell" type="Error">
+<![CDATA[  [chromium] › user-management.spec.ts:18:9 › User-Management (Professoren) › Login, Anlage, Prüfung, Änderung und Löschung eines Users 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/marlow/Library/Caches/ms-playwright/chromium_headless_shell-1223/chrome-headless-shell-mac-arm64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: ../test-results/user-management-User-Manag-0e630-ng-und-Löschung-eines-Users-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/user-management-User-Manag-0e630-ng-und-Löschung-eines-Users-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/user-management-User-Manag-0e630-ng-und-Löschung-eines-Users-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+</testsuites>

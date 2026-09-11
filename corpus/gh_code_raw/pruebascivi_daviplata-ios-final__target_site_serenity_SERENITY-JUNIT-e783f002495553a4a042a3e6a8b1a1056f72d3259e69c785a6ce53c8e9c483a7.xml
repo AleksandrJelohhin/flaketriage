@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="8" failures="4" name="Set De Pruebas de Login" skipped="0" tests="20" time="3257.19" timestamp="2024-04-03 09:03:34"><testcase name="CP0009M_SYS_Validar lista desplegable de tipo documental"/><testcase name="CP0010M_SYS_Validar el Login con clave correcta"/><testcase name="CP02090M_SYS_Validar proceso de logueo por tipo documental CC"/><testcase name="CP0011M_SYS_Validar proceso de logueo  con  CC ingresando caracteres y números en número documental"><error message="An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: io.appium.java_client.AppiumDriver&#10;Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}&#10;Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b&#10;*** Element info: {Using=xpath, value=(//XCUIElementTypeStaticText[contains(@name,'solo')])}&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: driver.version: AppiumDriver" type="org.openqa.selenium.NoSuchElementException">An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}
+Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b
+*** Element info: {Using=xpath, value=(//XCUIElementTypeStaticText[contains(@name,'solo')])}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: AppiumDriver</error><system-err>An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}
+Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b
+*** Element info: {Using=xpath, value=(//XCUIElementTypeStaticText[contains(@name,'solo')])}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: AppiumDriver
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validarMensajeCaracteres(LoginPageObjects.java:1522)
+daviplata.nacional.iOS.steps.LoginSteps.validarMensajeDeCaracteres(LoginSteps.java:282)
+daviplata.nacional.iOS.definitions.LoginDefinitions.validarMensaje(LoginDefinitions.java:73)
+✽.validar Mensaje(src/test/resources/features/login.feature:30)
+</system-err></testcase><testcase name="CP0012M_SYS_Validar proceso de logueo con PEP mayor a 15 caracteres"><failure message="No se encontró input de escritura de usuario en logeo debido a: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeTextField[@name='Ingrese su número de documento'] (tried for 10 second(s) with 500 milliseconds interval)" type="java.lang.AssertionError">No se encontró input de escritura de usuario en logeo debido a: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeTextField[@name='Ingrese su número de documento'] (tried for 10 second(s) with 500 milliseconds interval)</failure><system-err>No se encontró input de escritura de usuario en logeo debido a: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeTextField[@name='Ingrese su número de documento'] (tried for 10 second(s) with 500 milliseconds interval)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validarLongitudCaracteres(LoginPageObjects.java:1546)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validarLongitudCaracteres(LoginPageObjects.java:1544)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validarLongitudCaracteres(LoginPageObjects.java:1544)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validarLongitudCaracteres(LoginPageObjects.java:1544)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validarLongitudCaracteres(LoginPageObjects.java:1544)
+daviplata.nacional.iOS.steps.LoginSteps.validarLongitudDeCaracteres(LoginSteps.java:288)
+daviplata.nacional.iOS.definitions.LoginDefinitions.validarLongitudDeCaracteres(LoginDefinitions.java:78)
+✽.validar longitud de caracteres "1001001001278933654"(src/test/resources/features/login.feature:39)
+</system-err></testcase><testcase name="CP0013M_SYS_Validar proceso de logueo con CC  que no deje ingresar caracteres especiales en el campo de clave"><error message="The following error occurred: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: io.appium.java_client.AppiumDriver&#10;Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}&#10;Session ID: c67a4f9a-3583-4b4e-b026-10c03984a943&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: driver.version: AppiumDriver" type="org.openqa.selenium.WebDriverException">The following error occurred: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}
+Session ID: c67a4f9a-3583-4b4e-b026-10c03984a943
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: AppiumDriver</error><system-err>The following error occurred: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}
+Session ID: c67a4f9a-3583-4b4e-b026-10c03984a943
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: AppiumDriver
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
+io.appium.java_client.TouchAction.perform(TouchAction.java:187)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.ingresarContrasena(LoginPageObjects.java:698)
+daviplata.nacional.iOS.steps.LoginSteps.ingresarUsuarioContraseña(LoginSteps.java:649)
+daviplata.nacional.iOS.definitions.LoginDefinitions.ingresoUsuarioYContrasenaCaracterEspecial(LoginDefinitions.java:57)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+daviplata.nacional.iOS.runners.RunnerPersonalizado.run(RunnerPersonalizado.java:63)
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+</system-err></testcase><testcase name="CP02091M_SYS_Validar proceso de logueo por tipo documental CE"/><testcase name="CP0014M_SYS_Validar proceso de logueo  con  CE ingresando de caracteres especiales en la clave"/><testcase name="CP0015M_SYS_Validar proceso de logueo con CE ingresando caracteres y números en número documental"><error message="An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: io.appium.java_client.AppiumDriver&#10;Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}&#10;Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b&#10;*** Element info: {Using=xpath, value=(//XCUIElementTypeStaticText[contains(@name,'solo')])}&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: driver.version: AppiumDriver" type="org.openqa.selenium.NoSuchElementException">An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}
+Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b
+*** Element info: {Using=xpath, value=(//XCUIElementTypeStaticText[contains(@name,'solo')])}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: AppiumDriver</error><system-err>An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}
+Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b
+*** Element info: {Using=xpath, value=(//XCUIElementTypeStaticText[contains(@name,'solo')])}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: AppiumDriver
+jdk.internal.reflect.GeneratedConstructorAccessor63.newInstance(Unknown Source)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validarMensajeCaracteres(LoginPageObjects.java:1522)
+daviplata.nacional.iOS.steps.LoginSteps.validarMensajeDeCaracteres(LoginSteps.java:282)
+daviplata.nacional.iOS.definitions.LoginDefinitions.validarMensaje(LoginDefinitions.java:73)
+✽.validar Mensaje(src/test/resources/features/login.feature:75)
+</system-err></testcase><testcase name="CP0016M_SYS_Validar proceso de logueo por tipo documental TI"><failure message="No se encontró el elemento: //XCUIElementTypeStaticText[@value='Mis bolsillos'], debido a: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeStaticText[@value='Mis bolsillos'] (tried for 5 second(s) with 500 milliseconds interval)" type="java.lang.AssertionError">No se encontró el elemento: //XCUIElementTypeStaticText[@value='Mis bolsillos'], debido a: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeStaticText[@value='Mis bolsillos'] (tried for 5 second(s) with 500 milliseconds interval)</failure><system-err>No se encontró el elemento: //XCUIElementTypeStaticText[@value='Mis bolsillos'], debido a: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeStaticText[@value='Mis bolsillos'] (tried for 5 second(s) with 500 milliseconds interval)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:292)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:290)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:290)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:290)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:290)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:290)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:290)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:290)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:290)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:290)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:290)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:290)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:290)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:290)
+daviplata.nacional.iOS.utilidades.UtilidadesTCS.esperarElementVisibility(UtilidadesTCS.java:290)
+daviplata.nacional.iOS.steps.LoginSteps.ingresarAApp(LoginSteps.java:168)
+daviplata.nacional.iOS.definitions.LoginDefinitions.ingresoUsuarioYContrasena(LoginDefinitions.java:47)
+✽.ingreso usuario y contrasena "TI" "1022983" "1234"(src/test/resources/features/login.feature:83)
+</system-err></testcase><testcase name="CP0017M_SYS_Validar proceso de logueo  con  TI ingresando caracteres y números en número documental"><error message="An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: io.appium.java_client.AppiumDriver&#10;Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}&#10;Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b&#10;*** Element info: {Using=xpath, value=(//XCUIElementTypeStaticText[contains(@name,'solo')])}&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: driver.version: AppiumDriver" type="org.openqa.selenium.NoSuchElementException">An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}
+Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b
+*** Element info: {Using=xpath, value=(//XCUIElementTypeStaticText[contains(@name,'solo')])}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: AppiumDriver</error><system-err>An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}
+Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b
+*** Element info: {Using=xpath, value=(//XCUIElementTypeStaticText[contains(@name,'solo')])}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: AppiumDriver
+jdk.internal.reflect.GeneratedConstructorAccessor63.newInstance(Unknown Source)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validarMensajeCaracteres(LoginPageObjects.java:1522)
+daviplata.nacional.iOS.steps.LoginSteps.validarMensajeDeCaracteres(LoginSteps.java:282)
+daviplata.nacional.iOS.definitions.LoginDefinitions.validarMensaje(LoginDefinitions.java:73)
+✽.validar Mensaje(src/test/resources/features/login.feature:93)
+</system-err></testcase><testcase name="CP0018M_SYS_Validar proceso de logueo  con  TI ingresando de caracteres especiales en la clave"/><testcase name="CP0019M_SYS_Validar proceso de logueo por tipo documental PEP con 14 caracteres"><failure message="No se encontró input de escritura de usuario en logeo debido a: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeTextField[@name='Ingrese su número de documento'] (tried for 10 second(s) with 500 milliseconds interval)" type="java.lang.AssertionError">No se encontró input de escritura de usuario en logeo debido a: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeTextField[@name='Ingrese su número de documento'] (tried for 10 second(s) with 500 milliseconds interval)</failure><system-err>No se encontró input de escritura de usuario en logeo debido a: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeTextField[@name='Ingrese su número de documento'] (tried for 10 second(s) with 500 milliseconds interval)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validarLongitudCaracteresPEP(LoginPageObjects.java:1622)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validarLongitudCaracteresPEP(LoginPageObjects.java:1620)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validarLongitudCaracteresPEP(LoginPageObjects.java:1620)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validarLongitudCaracteresPEP(LoginPageObjects.java:1620)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validarLongitudCaracteresPEP(LoginPageObjects.java:1620)
+daviplata.nacional.iOS.steps.LoginSteps.validarLongitudDeCaracteresPEP(LoginSteps.java:695)
+daviplata.nacional.iOS.definitions.LoginDefinitions.validarLongitudDeCaracteresPEP(LoginDefinitions.java:234)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+daviplata.nacional.iOS.runners.RunnerPersonalizado.run(RunnerPersonalizado.java:63)
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+</system-err></testcase><testcase name="CP0021M_SYS_Validar proceso de logueo con PEP ingresando letras y números en número documental"><error message="An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: io.appium.java_client.AppiumDriver&#10;Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}&#10;Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b&#10;*** Element info: {Using=xpath, value=(//XCUIElementTypeStaticText[contains(@name,'solo')])}&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: driver.version: AppiumDriver" type="org.openqa.selenium.NoSuchElementException">An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}
+Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b
+*** Element info: {Using=xpath, value=(//XCUIElementTypeStaticText[contains(@name,'solo')])}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: AppiumDriver</error><system-err>An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}
+Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b
+*** Element info: {Using=xpath, value=(//XCUIElementTypeStaticText[contains(@name,'solo')])}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: AppiumDriver
+jdk.internal.reflect.GeneratedConstructorAccessor63.newInstance(Unknown Source)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validarMensajeCaracteres(LoginPageObjects.java:1522)
+daviplata.nacional.iOS.steps.LoginSteps.validarMensajeDeCaracteres(LoginSteps.java:282)
+daviplata.nacional.iOS.definitions.LoginDefinitions.validarMensaje(LoginDefinitions.java:73)
+✽.validar Mensaje(src/test/resources/features/login.feature:120)
+</system-err></testcase><testcase name="CP0022M_SYS_Validar proceso de logueo  con  PEP ingresando caracteres especiales en la clave"><error message="An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: io.appium.java_client.AppiumDriver&#10;Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}&#10;Session ID: 77754827-ddaa-4cd0-8b33-cab410b417f8&#10;*** Element info: {Using=xpath, value=//XCUIElementTypeSecureTextField[1]}&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: driver.version: AppiumDriver" type="org.openqa.selenium.NoSuchElementException">An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}
+Session ID: 77754827-ddaa-4cd0-8b33-cab410b417f8
+*** Element info: {Using=xpath, value=//XCUIElementTypeSecureTextField[1]}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: AppiumDriver</error><system-err>An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}
+Session ID: 77754827-ddaa-4cd0-8b33-cab410b417f8
+*** Element info: {Using=xpath, value=//XCUIElementTypeSecureTextField[1]}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: AppiumDriver
+jdk.internal.reflect.GeneratedConstructorAccessor63.newInstance(Unknown Source)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.ingresarContrasena(LoginPageObjects.java:704)
+daviplata.nacional.iOS.steps.LoginSteps.ingresarUsuarioContraseña(LoginSteps.java:649)
+daviplata.nacional.iOS.definitions.LoginDefinitions.ingresoUsuarioYContrasenaCaracterEspecial(LoginDefinitions.java:57)
+✽.Ingreso usuario y contrasena caracter especial "CC" "100111519" "12$4"(src/test/resources/features/login.feature:128)
+</system-err></testcase><testcase name="CP0023M_SYS_Validar look and feel de la pantalla de loguin."><failure message="No se encontró label 'Ingrese a su DaviPlata' debido a: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeStaticText[@name='Ingrese a su Daviplata'] (tried for 10 second(s) with 500 milliseconds interval)" type="java.lang.AssertionError">No se encontró label 'Ingrese a su DaviPlata' debido a: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeStaticText[@name='Ingrese a su Daviplata'] (tried for 10 second(s) with 500 milliseconds interval)</failure><system-err>No se encontró label 'Ingrese a su DaviPlata' debido a: Expected condition failed: waiting for visibility of element located by By.xpath: //XCUIElementTypeStaticText[@name='Ingrese a su Daviplata'] (tried for 10 second(s) with 500 milliseconds interval)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1640)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validacionIngresoDaviPlataLookAndFeel(LoginPageObjects.java:1638)
+daviplata.nacional.iOS.steps.LoginSteps.validarIngresoDaviplata(LoginSteps.java:712)
+daviplata.nacional.iOS.definitions.LoginDefinitions.ingresoUsuarioContrasenaLookAndFeel(LoginDefinitions.java:244)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+daviplata.nacional.iOS.runners.RunnerPersonalizado.run(RunnerPersonalizado.java:63)
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+</system-err></testcase><testcase name="CP0520M_SYS_Validar la opción de atención en línea con cliente autenticado"/><testcase name="CP0730M_SYS_Validar que se puedan leer los mensajes del cliente"/><testcase name="CP0751M_SYS_Validar que se puedan leer las notificaciones del cliente"><error message="An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: io.appium.java_client.AppiumDriver&#10;Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}&#10;Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b&#10;*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name='Transacciones']}&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: driver.version: AppiumDriver" type="org.openqa.selenium.NoSuchElementException">An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}
+Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b
+*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name='Transacciones']}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: AppiumDriver</error><system-err>An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}
+Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b
+*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name='Transacciones']}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: AppiumDriver
+jdk.internal.reflect.GeneratedConstructorAccessor63.newInstance(Unknown Source)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validarQueAparezcanNotificaciones(LoginPageObjects.java:1197)
+daviplata.nacional.iOS.steps.LoginSteps.validarQueAparezcanLasNotificaciones(LoginSteps.java:563)
+daviplata.nacional.iOS.definitions.LoginDefinitions.validarQueAparezcanLasNotificaciones(LoginDefinitions.java:176)
+✽.validar que aparezcan las notificaciones(src/test/resources/features/login.feature:167)
+</system-err></testcase><testcase name="CP0761M_SYS_Validar que se puedan eliminar las notificaciones del cliente"><error message="An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: io.appium.java_client.AppiumDriver&#10;Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}&#10;Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b&#10;*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name='Transacciones']}&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'&#10;Driver info: driver.version: AppiumDriver" type="org.openqa.selenium.NoSuchElementException">An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}
+Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b
+*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name='Transacciones']}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: AppiumDriver</error><system-err>An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 13, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 16.4, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008110-00116CC8148A201E, webStorageEnabled: false}
+Session ID: d0045ca5-d1dc-4c76-81e4-40c21ab7450b
+*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name='Transacciones']}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'MacBook-Pro-de-MacBook.local', ip: 'fe80:0:0:0:1424:933c:6be8:fa1c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: AppiumDriver
+jdk.internal.reflect.GeneratedConstructorAccessor63.newInstance(Unknown Source)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+daviplata.nacional.iOS.pageObjects.LoginPageObjects.validarQueAparezcanNotificaciones(LoginPageObjects.java:1197)
+daviplata.nacional.iOS.steps.LoginSteps.validarQueAparezcanLasNotificaciones(LoginSteps.java:563)
+daviplata.nacional.iOS.definitions.LoginDefinitions.validarQueAparezcanLasNotificaciones(LoginDefinitions.java:176)
+✽.validar que aparezcan las notificaciones(src/test/resources/features/login.feature:177)
+</system-err></testcase></testsuite>

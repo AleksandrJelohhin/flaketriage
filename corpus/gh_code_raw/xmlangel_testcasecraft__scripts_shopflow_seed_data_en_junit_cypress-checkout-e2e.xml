@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Cypress E2E - Checkout &amp; Order Flow" tests="12" failures="1" errors="0" skipped="0" time="148.234">
+  <testsuite name="checkout_flow.cy.js" tests="6" failures="1" errors="0" skipped="0" time="78.512" timestamp="2026-05-28T22:14:03">
+    <properties>
+      <property name="browser" value="Chrome 124.0"/>
+      <property name="cypress.version" value="13.6.4"/>
+      <property name="env" value="staging"/>
+    </properties>
+    <testcase classname="checkout_flow" name="Navigate from cart to checkout page" time="6.421"/>
+    <testcase classname="checkout_flow" name="Auto-calc shipping fee when address selected" time="9.103"/>
+    <testcase classname="checkout_flow" name="Credit card - normal approval" time="14.882"/>
+    <testcase classname="checkout_flow" name="Kakao Pay easy checkout redirect" time="18.330"/>
+    <testcase classname="checkout_flow" name="Prevent duplicate clicks (idempotency)" time="12.444">
+      <failure type="AssertionError" message="Second click also reaches PG on duplicate submit">
+expected POST /api/payments to be called 1 time, but was called 2 times.
+  at Object.checkPaymentIdempotency (checkout_flow.cy.js:142:14)
+  at Context.&lt;anonymous&gt; (checkout_flow.cy.js:128:5)
+      </failure>
+    </testcase>
+    <testcase classname="checkout_flow" name="Rollback order + restore stock on payment failure" time="17.332"/>
+  </testsuite>
+  <testsuite name="order_management.cy.js" tests="6" failures="0" errors="0" skipped="0" time="69.722" timestamp="2026-05-28T22:16:14">
+    <testcase classname="order_management" name="Issue order number after creation" time="8.221"/>
+    <testcase classname="order_management" name="Verify PAID transition" time="6.143"/>
+    <testcase classname="order_management" name="Cancel order (PAID stage)" time="11.504"/>
+    <testcase classname="order_management" name="Partial cancel - some items only" time="14.882"/>
+    <testcase classname="order_management" name="Exchange request - photo upload required" time="13.992"/>
+    <testcase classname="order_management" name="Return request - shipping fee deduction" time="14.980"/>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,299 @@
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="3" time="13.576075999999999">
+<testsuite name="register.spec.ts" timestamp="2026-04-02T12:22:43.620Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.51" errors="1">
+<testcase name="Should successfully register a new Admin" classname="register.spec.ts" time="6.51">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-chromium\trace.zip]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+<error message="page.goto: net::ERR_SSL_UNRECOGNIZED_NAME_ALERT at https://admin.geoclean.com/register" type="Error">
+<![CDATA[  [chromium] › register.spec.ts:5:5 › Should successfully register a new Admin ─────────────────────
+
+    Error: page.goto: net::ERR_SSL_UNRECOGNIZED_NAME_ALERT at https://admin.geoclean.com/register
+    Call log:
+      - navigating to "https://admin.geoclean.com/register", waiting until "load"
+
+
+       at ..\pages\RegisterPage.ts:25
+
+      23 |
+      24 |     async registerAdmin(details: any) {
+    > 25 |         await this.page.goto('/register'); // Register URL එකට යන්න
+         |                         ^
+      26 |         await this.nameInput.fill(details.name);
+      27 |         await this.emailInput.fill(details.email);
+      28 |         await this.phoneInput.fill(details.phone);
+        at RegisterPage.registerAdmin (E:\IJSE\PROJECTS\geo-clean\playwright_automation\pages\RegisterPage.ts:25:25)
+        at E:\IJSE\PROJECTS\geo-clean\playwright_automation\tests\register.spec.ts:9:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\register-Should-successfully-register-a-new-Admin-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\register-Should-successfully-register-a-new-Admin-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: page.goto: net::ERR_SSL_UNRECOGNIZED_NAME_ALERT at https://admin.geoclean.com/register
+    Call log:
+      - navigating to "https://admin.geoclean.com/register", waiting until "load"
+
+
+       at ..\pages\RegisterPage.ts:25
+
+      23 |
+      24 |     async registerAdmin(details: any) {
+    > 25 |         await this.page.goto('/register'); // Register URL එකට යන්න
+         |                         ^
+      26 |         await this.nameInput.fill(details.name);
+      27 |         await this.emailInput.fill(details.email);
+      28 |         await this.phoneInput.fill(details.phone);
+        at RegisterPage.registerAdmin (E:\IJSE\PROJECTS\geo-clean\playwright_automation\pages\RegisterPage.ts:25:25)
+        at E:\IJSE\PROJECTS\geo-clean\playwright_automation\tests\register.spec.ts:9:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\register-Should-successfully-register-a-new-Admin-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\register-Should-successfully-register-a-new-Admin-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="register.spec.ts" timestamp="2026-04-02T12:22:43.620Z" hostname="Mobile Chrome" tests="1" failures="0" skipped="0" time="6.362" errors="1">
+<testcase name="Should successfully register a new Admin" classname="register.spec.ts" time="6.362">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome\error-context.md]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome\trace.zip]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome-retry1\trace.zip]]
+]]>
+</system-out>
+<error message="page.goto: net::ERR_SSL_UNRECOGNIZED_NAME_ALERT at https://admin.geoclean.com/register" type="Error">
+<![CDATA[  [Mobile Chrome] › register.spec.ts:5:5 › Should successfully register a new Admin ────────────────
+
+    Error: page.goto: net::ERR_SSL_UNRECOGNIZED_NAME_ALERT at https://admin.geoclean.com/register
+    Call log:
+      - navigating to "https://admin.geoclean.com/register", waiting until "load"
+
+
+       at ..\pages\RegisterPage.ts:25
+
+      23 |
+      24 |     async registerAdmin(details: any) {
+    > 25 |         await this.page.goto('/register'); // Register URL එකට යන්න
+         |                         ^
+      26 |         await this.nameInput.fill(details.name);
+      27 |         await this.emailInput.fill(details.email);
+      28 |         await this.phoneInput.fill(details.phone);
+        at RegisterPage.registerAdmin (E:\IJSE\PROJECTS\geo-clean\playwright_automation\pages\RegisterPage.ts:25:25)
+        at E:\IJSE\PROJECTS\geo-clean\playwright_automation\tests\register.spec.ts:9:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: page.goto: net::ERR_SSL_UNRECOGNIZED_NAME_ALERT at https://admin.geoclean.com/register
+    Call log:
+      - navigating to "https://admin.geoclean.com/register", waiting until "load"
+
+
+       at ..\pages\RegisterPage.ts:25
+
+      23 |
+      24 |     async registerAdmin(details: any) {
+    > 25 |         await this.page.goto('/register'); // Register URL එකට යන්න
+         |                         ^
+      26 |         await this.nameInput.fill(details.name);
+      27 |         await this.emailInput.fill(details.email);
+      28 |         await this.phoneInput.fill(details.phone);
+        at RegisterPage.registerAdmin (E:\IJSE\PROJECTS\geo-clean\playwright_automation\pages\RegisterPage.ts:25:25)
+        at E:\IJSE\PROJECTS\geo-clean\playwright_automation\tests\register.spec.ts:9:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Chrome-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="register.spec.ts" timestamp="2026-04-02T12:22:43.620Z" hostname="Mobile Safari" tests="1" failures="0" skipped="0" time="4.597" errors="1">
+<testcase name="Should successfully register a new Admin" classname="register.spec.ts" time="4.597">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari\video.webm]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari\error-context.md]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari\trace.zip]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari-retry1\trace.zip]]
+]]>
+</system-out>
+<error message="page.goto: SSL connect error" type="Error">
+<![CDATA[  [Mobile Safari] › register.spec.ts:5:5 › Should successfully register a new Admin ────────────────
+
+    Error: page.goto: SSL connect error
+    Call log:
+      - navigating to "https://admin.geoclean.com/register", waiting until "load"
+
+
+       at ..\pages\RegisterPage.ts:25
+
+      23 |
+      24 |     async registerAdmin(details: any) {
+    > 25 |         await this.page.goto('/register'); // Register URL එකට යන්න
+         |                         ^
+      26 |         await this.nameInput.fill(details.name);
+      27 |         await this.emailInput.fill(details.email);
+      28 |         await this.phoneInput.fill(details.phone);
+        at RegisterPage.registerAdmin (E:\IJSE\PROJECTS\geo-clean\playwright_automation\pages\RegisterPage.ts:25:25)
+        at E:\IJSE\PROJECTS\geo-clean\playwright_automation\tests\register.spec.ts:9:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: page.goto: SSL connect error
+    Call log:
+      - navigating to "https://admin.geoclean.com/register", waiting until "load"
+
+
+       at ..\pages\RegisterPage.ts:25
+
+      23 |
+      24 |     async registerAdmin(details: any) {
+    > 25 |         await this.page.goto('/register'); // Register URL එකට යන්න
+         |                         ^
+      26 |         await this.nameInput.fill(details.name);
+      27 |         await this.emailInput.fill(details.email);
+      28 |         await this.phoneInput.fill(details.phone);
+        at RegisterPage.registerAdmin (E:\IJSE\PROJECTS\geo-clean\playwright_automation\pages\RegisterPage.ts:25:25)
+        at E:\IJSE\PROJECTS\geo-clean\playwright_automation\tests\register.spec.ts:9:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\register-Should-successfully-register-a-new-Admin-Mobile-Safari-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,666 @@
+<testsuites id="" name="" tests="35" failures="35" skipped="0" errors="0" time="45.78475900000001">
+<testsuite name="homepage.spec.ts" timestamp="2025-06-13T06:21:46.408Z" hostname="chromium" tests="5" failures="5" skipped="0" time="0.05" errors="0">
+<testcase name="Homepage › has correct title" classname="homepage.spec.ts" time="0.008">
+<failure message="homepage.spec.ts:10:7 has correct title" type="FAILURE">
+<![CDATA[  [chromium] › homepage.spec.ts:10:7 › Homepage › has correct title ────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\chromium_headless_shell-1178\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › hero section displays correctly" classname="homepage.spec.ts" time="0.011">
+<failure message="homepage.spec.ts:14:7 hero section displays correctly" type="FAILURE">
+<![CDATA[  [chromium] › homepage.spec.ts:14:7 › Homepage › hero section displays correctly ──────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\chromium_headless_shell-1178\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › navigation is present" classname="homepage.spec.ts" time="0.011">
+<failure message="homepage.spec.ts:21:7 navigation is present" type="FAILURE">
+<![CDATA[  [chromium] › homepage.spec.ts:21:7 › Homepage › navigation is present ────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\chromium_headless_shell-1178\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › page loads without errors" classname="homepage.spec.ts" time="0.009">
+<failure message="homepage.spec.ts:31:7 page loads without errors" type="FAILURE">
+<![CDATA[  [chromium] › homepage.spec.ts:31:7 › Homepage › page loads without errors ────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\chromium_headless_shell-1178\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › basic responsive design" classname="homepage.spec.ts" time="0.011">
+<failure message="homepage.spec.ts:41:7 basic responsive design" type="FAILURE">
+<![CDATA[  [chromium] › homepage.spec.ts:41:7 › Homepage › basic responsive design ──────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\chromium_headless_shell-1178\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="homepage.spec.ts" timestamp="2025-06-13T06:21:46.408Z" hostname="firefox" tests="5" failures="5" skipped="0" time="0.056" errors="0">
+<testcase name="Homepage › has correct title" classname="homepage.spec.ts" time="0.015">
+<failure message="homepage.spec.ts:10:7 has correct title" type="FAILURE">
+<![CDATA[  [firefox] › homepage.spec.ts:10:7 › Homepage › has correct title ─────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\firefox-1487\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › hero section displays correctly" classname="homepage.spec.ts" time="0.011">
+<failure message="homepage.spec.ts:14:7 hero section displays correctly" type="FAILURE">
+<![CDATA[  [firefox] › homepage.spec.ts:14:7 › Homepage › hero section displays correctly ───────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\firefox-1487\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › navigation is present" classname="homepage.spec.ts" time="0.014">
+<failure message="homepage.spec.ts:21:7 navigation is present" type="FAILURE">
+<![CDATA[  [firefox] › homepage.spec.ts:21:7 › Homepage › navigation is present ─────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\firefox-1487\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › page loads without errors" classname="homepage.spec.ts" time="0.008">
+<failure message="homepage.spec.ts:31:7 page loads without errors" type="FAILURE">
+<![CDATA[  [firefox] › homepage.spec.ts:31:7 › Homepage › page loads without errors ─────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\firefox-1487\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › basic responsive design" classname="homepage.spec.ts" time="0.008">
+<failure message="homepage.spec.ts:41:7 basic responsive design" type="FAILURE">
+<![CDATA[  [firefox] › homepage.spec.ts:41:7 › Homepage › basic responsive design ───────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\firefox-1487\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="homepage.spec.ts" timestamp="2025-06-13T06:21:46.408Z" hostname="webkit" tests="5" failures="5" skipped="0" time="0.058" errors="0">
+<testcase name="Homepage › has correct title" classname="homepage.spec.ts" time="0.011">
+<failure message="homepage.spec.ts:10:7 has correct title" type="FAILURE">
+<![CDATA[  [webkit] › homepage.spec.ts:10:7 › Homepage › has correct title ──────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\webkit-2182\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › hero section displays correctly" classname="homepage.spec.ts" time="0.013">
+<failure message="homepage.spec.ts:14:7 hero section displays correctly" type="FAILURE">
+<![CDATA[  [webkit] › homepage.spec.ts:14:7 › Homepage › hero section displays correctly ────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\webkit-2182\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › navigation is present" classname="homepage.spec.ts" time="0.01">
+<failure message="homepage.spec.ts:21:7 navigation is present" type="FAILURE">
+<![CDATA[  [webkit] › homepage.spec.ts:21:7 › Homepage › navigation is present ──────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\webkit-2182\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › page loads without errors" classname="homepage.spec.ts" time="0.014">
+<failure message="homepage.spec.ts:31:7 page loads without errors" type="FAILURE">
+<![CDATA[  [webkit] › homepage.spec.ts:31:7 › Homepage › page loads without errors ──────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\webkit-2182\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › basic responsive design" classname="homepage.spec.ts" time="0.01">
+<failure message="homepage.spec.ts:41:7 basic responsive design" type="FAILURE">
+<![CDATA[  [webkit] › homepage.spec.ts:41:7 › Homepage › basic responsive design ────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\webkit-2182\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="homepage.spec.ts" timestamp="2025-06-13T06:21:46.408Z" hostname="Mobile Chrome" tests="5" failures="5" skipped="0" time="0.055" errors="0">
+<testcase name="Homepage › has correct title" classname="homepage.spec.ts" time="0.009">
+<failure message="homepage.spec.ts:10:7 has correct title" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › homepage.spec.ts:10:7 › Homepage › has correct title ───────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\chromium_headless_shell-1178\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › hero section displays correctly" classname="homepage.spec.ts" time="0.009">
+<failure message="homepage.spec.ts:14:7 hero section displays correctly" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › homepage.spec.ts:14:7 › Homepage › hero section displays correctly ─────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\chromium_headless_shell-1178\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › navigation is present" classname="homepage.spec.ts" time="0.015">
+<failure message="homepage.spec.ts:21:7 navigation is present" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › homepage.spec.ts:21:7 › Homepage › navigation is present ───────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\chromium_headless_shell-1178\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › page loads without errors" classname="homepage.spec.ts" time="0.011">
+<failure message="homepage.spec.ts:31:7 page loads without errors" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › homepage.spec.ts:31:7 › Homepage › page loads without errors ───────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\chromium_headless_shell-1178\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › basic responsive design" classname="homepage.spec.ts" time="0.011">
+<failure message="homepage.spec.ts:41:7 basic responsive design" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › homepage.spec.ts:41:7 › Homepage › basic responsive design ─────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\chromium_headless_shell-1178\chrome-win\headless_shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="homepage.spec.ts" timestamp="2025-06-13T06:21:46.408Z" hostname="Mobile Safari" tests="5" failures="5" skipped="0" time="0.06" errors="0">
+<testcase name="Homepage › has correct title" classname="homepage.spec.ts" time="0.011">
+<failure message="homepage.spec.ts:10:7 has correct title" type="FAILURE">
+<![CDATA[  [Mobile Safari] › homepage.spec.ts:10:7 › Homepage › has correct title ───────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\webkit-2182\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › hero section displays correctly" classname="homepage.spec.ts" time="0.015">
+<failure message="homepage.spec.ts:14:7 hero section displays correctly" type="FAILURE">
+<![CDATA[  [Mobile Safari] › homepage.spec.ts:14:7 › Homepage › hero section displays correctly ─────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\webkit-2182\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › navigation is present" classname="homepage.spec.ts" time="0.011">
+<failure message="homepage.spec.ts:21:7 navigation is present" type="FAILURE">
+<![CDATA[  [Mobile Safari] › homepage.spec.ts:21:7 › Homepage › navigation is present ───────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\webkit-2182\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › page loads without errors" classname="homepage.spec.ts" time="0.011">
+<failure message="homepage.spec.ts:31:7 page loads without errors" type="FAILURE">
+<![CDATA[  [Mobile Safari] › homepage.spec.ts:31:7 › Homepage › page loads without errors ───────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\webkit-2182\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Homepage › basic responsive design" classname="homepage.spec.ts" time="0.012">
+<failure message="homepage.spec.ts:41:7 basic responsive design" type="FAILURE">
+<![CDATA[  [Mobile Safari] › homepage.spec.ts:41:7 › Homepage › basic responsive design ─────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\webkit-2182\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="homepage.spec.ts" timestamp="2025-06-13T06:21:46.408Z" hostname="Microsoft Edge" tests="5" failures="5" skipped="0" time="35.51" errors="0">
+<testcase name="Homepage › has correct title" classname="homepage.spec.ts" time="7.233">
+<failure message="homepage.spec.ts:10:7 has correct title" type="FAILURE">
+<![CDATA[  [Microsoft Edge] › homepage.spec.ts:10:7 › Homepage › has correct title ──────────────────────────
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage-has-correct-title-Microsoft-Edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\homepage-Homepage-has-correct-title-Microsoft-Edge\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › hero section displays correctly" classname="homepage.spec.ts" time="7.917">
+<failure message="homepage.spec.ts:14:7 hero section displays correctly" type="FAILURE">
+<![CDATA[  [Microsoft Edge] › homepage.spec.ts:14:7 › Homepage › hero section displays correctly ────────────
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage-hero-section-displays-correctly-Microsoft-Edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\homepage-Homepage-hero-section-displays-correctly-Microsoft-Edge\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › navigation is present" classname="homepage.spec.ts" time="7.591">
+<failure message="homepage.spec.ts:21:7 navigation is present" type="FAILURE">
+<![CDATA[  [Microsoft Edge] › homepage.spec.ts:21:7 › Homepage › navigation is present ──────────────────────
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage-navigation-is-present-Microsoft-Edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\homepage-Homepage-navigation-is-present-Microsoft-Edge\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › page loads without errors" classname="homepage.spec.ts" time="6.416">
+<failure message="homepage.spec.ts:31:7 page loads without errors" type="FAILURE">
+<![CDATA[  [Microsoft Edge] › homepage.spec.ts:31:7 › Homepage › page loads without errors ──────────────────
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage-page-loads-without-errors-Microsoft-Edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\homepage-Homepage-page-loads-without-errors-Microsoft-Edge\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › basic responsive design" classname="homepage.spec.ts" time="6.353">
+<failure message="homepage.spec.ts:41:7 basic responsive design" type="FAILURE">
+<![CDATA[  [Microsoft Edge] › homepage.spec.ts:41:7 › Homepage › basic responsive design ────────────────────
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage-basic-responsive-design-Microsoft-Edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\homepage-Homepage-basic-responsive-design-Microsoft-Edge\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="homepage.spec.ts" timestamp="2025-06-13T06:21:46.408Z" hostname="Google Chrome" tests="5" failures="5" skipped="0" time="30.476" errors="0">
+<testcase name="Homepage › has correct title" classname="homepage.spec.ts" time="6.253">
+<failure message="homepage.spec.ts:10:7 has correct title" type="FAILURE">
+<![CDATA[  [Google Chrome] › homepage.spec.ts:10:7 › Homepage › has correct title ───────────────────────────
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage-has-correct-title-Google-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\homepage-Homepage-has-correct-title-Google-Chrome\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › hero section displays correctly" classname="homepage.spec.ts" time="6.368">
+<failure message="homepage.spec.ts:14:7 hero section displays correctly" type="FAILURE">
+<![CDATA[  [Google Chrome] › homepage.spec.ts:14:7 › Homepage › hero section displays correctly ─────────────
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage-hero-section-displays-correctly-Google-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\homepage-Homepage-hero-section-displays-correctly-Google-Chrome\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › navigation is present" classname="homepage.spec.ts" time="5.919">
+<failure message="homepage.spec.ts:21:7 navigation is present" type="FAILURE">
+<![CDATA[  [Google Chrome] › homepage.spec.ts:21:7 › Homepage › navigation is present ───────────────────────
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage-navigation-is-present-Google-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\homepage-Homepage-navigation-is-present-Google-Chrome\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › page loads without errors" classname="homepage.spec.ts" time="5.931">
+<failure message="homepage.spec.ts:31:7 page loads without errors" type="FAILURE">
+<![CDATA[  [Google Chrome] › homepage.spec.ts:31:7 › Homepage › page loads without errors ───────────────────
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage-page-loads-without-errors-Google-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\homepage-Homepage-page-loads-without-errors-Google-Chrome\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Homepage › basic responsive design" classname="homepage.spec.ts" time="6.005">
+<failure message="homepage.spec.ts:41:7 basic responsive design" type="FAILURE">
+<![CDATA[  [Google Chrome] › homepage.spec.ts:41:7 › Homepage › basic responsive design ─────────────────────
+
+    Error: browserContext.newPage: Executable doesn't exist at C:\Users\drupa\AppData\Local\ms-playwright\ffmpeg-1011\ffmpeg-win64.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\homepage-Homepage-basic-responsive-design-Google-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\homepage-Homepage-basic-responsive-design-Google-Chrome\test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

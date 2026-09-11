@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Day17 Regression (Local)" tests="37" time="0.000">
+  <testsuite name="01-Auth / Buyer Login" id="6d3e2bf4-3cfd-494a-8914-54fbe9568279" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="01AuthBuyerLogin">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 01-Auth / Buyer Login.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="01-Auth / Seller Login" id="ea904ac6-4cf7-4f50-82da-61d094f91653" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="01AuthSellerLogin">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 01-Auth / Seller Login.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:2).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="01-Auth / Admin Login" id="ef366011-bff0-4ef7-be5c-983c098c7d38" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="01AuthAdminLogin">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 01-Auth / Admin Login.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:3).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="02-Day17-Setup / [Seller] Create Product D" id="d8eaab25-4d52-47b2-bc98-2576292f7a46" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="02Day17SetupSellerCreateProductD">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 02-Day17-Setup / [Seller] Create Product D.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:4).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="02-Day17-Setup / [Seller] Create Product E" id="226565d6-3d1f-4e0e-afa9-ee2165346a27" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="02Day17SetupSellerCreateProductE">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 02-Day17-Setup / [Seller] Create Product E.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:5).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="02-Day17-Setup / [Admin] Approve Product D" id="282ab423-e077-4b36-8418-5e953971151c" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="02Day17SetupAdminApproveProductD">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 02-Day17-Setup / [Admin] Approve Product D.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:6).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="02-Day17-Setup / [Seller] Create Product F (For Favorite)" id="b9f3b509-92f9-44c8-9745-c4ca818b95b2" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="02Day17SetupSellerCreateProductFForFavorite">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 02-Day17-Setup / [Seller] Create Product F (For Favorite).]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:7).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="02-Day17-Setup / [Admin] Approve Product E" id="fe061077-54ca-48a7-b63f-3863f7dadb97" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="02Day17SetupAdminApproveProductE">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 02-Day17-Setup / [Admin] Approve Product E.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:8).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="02-Day17-Setup / [Admin] Approve Product F" id="dbee67ca-9831-4854-b3c8-3bc5aff14950" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="02Day17SetupAdminApproveProductF">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 02-Day17-Setup / [Admin] Approve Product F.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:9).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="02-Day17-Setup / [Buyer] Create Order D" id="51b1f97e-639d-43ed-b15c-1059c7971ec2" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="02Day17SetupBuyerCreateOrderD">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 02-Day17-Setup / [Buyer] Create Order D.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:10).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="02-Day17-Setup / [Buyer] Pay Order D" id="b848f9d4-e506-43b1-bb6b-eb4c1ffda287" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="02Day17SetupBuyerPayOrderD">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 02-Day17-Setup / [Buyer] Pay Order D.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:11).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="02-Day17-Setup / [Buyer] Pay Order D Repeat Idempotent" id="bd890db0-7e30-4c9b-813d-ea9ab0fc0519" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="02Day17SetupBuyerPayOrderDRepeatIdempotent">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 02-Day17-Setup / [Buyer] Pay Order D Repeat Idempotent.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:12).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="02-Day17-Setup / [Buyer] Create Order E" id="d92a61c1-1f54-4f2a-9c9b-652387d50257" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="02Day17SetupBuyerCreateOrderE">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 02-Day17-Setup / [Buyer] Create Order E.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:13).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="02-Day17-Setup / [Public] Payment Callback E First" id="9f358bef-baf0-4a95-a9c0-cae3b9a940ae" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="02Day17SetupPublicPaymentCallbackEFirst">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 02-Day17-Setup / [Public] Payment Callback E First.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:14).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="02-Day17-Setup / [Public] Payment Callback E Repeat Idempotent" id="fe694fb3-8d54-4507-9be7-92afab1e7053" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="02Day17SetupPublicPaymentCallbackERepeatIdempotent">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 02-Day17-Setup / [Public] Payment Callback E Repeat Idempotent.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:15).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="02-Day17-Setup / [Seller] Ship Order D" id="4bcfc1cd-7618-49c3-a0a4-d2ed11a99b27" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="02Day17SetupSellerShipOrderD">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 02-Day17-Setup / [Seller] Ship Order D.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:16).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="02-Day17-Setup / [Buyer] Confirm Receipt D" id="95f03ced-d8ac-40b4-9868-6fa6bd93a7e6" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="02Day17SetupBuyerConfirmReceiptD">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 02-Day17-Setup / [Buyer] Confirm Receipt D.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:17).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="03-Day17-MP-CRUD / [Buyer] Favorite Product F" id="1b21f2ec-21f2-4453-a8f7-c7c33fff94ed" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="03Day17MpCrudBuyerFavoriteProductF">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 03-Day17-MP-CRUD / [Buyer] Favorite Product F.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:18).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="03-Day17-MP-CRUD / [Buyer] Favorites Page" id="ffbe361f-4577-41fa-95ac-fd8be9cd366c" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="03Day17MpCrudBuyerFavoritesPage">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 03-Day17-MP-CRUD / [Buyer] Favorites Page.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:19).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="03-Day17-MP-CRUD / [Buyer] Create Review For Order D" id="2764833c-274f-4167-851f-2e28efc8824d" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="03Day17MpCrudBuyerCreateReviewForOrderD">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 03-Day17-MP-CRUD / [Buyer] Create Review For Order D.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:20).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="03-Day17-MP-CRUD / [Buyer] List My Reviews" id="f3080661-6528-40e9-a8de-b18ca7e2349b" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="03Day17MpCrudBuyerListMyReviews">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 03-Day17-MP-CRUD / [Buyer] List My Reviews.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:21).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="03-Day17-MP-CRUD / [Buyer] List Product Reviews D" id="7921ab86-0c70-43ac-9e06-7e9c1c771ade" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="03Day17MpCrudBuyerListProductReviewsD">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 03-Day17-MP-CRUD / [Buyer] List Product Reviews D.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:22).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="04-Day17-Pagination-And-Mixed / [Buyer] Addresses Page" id="2a66e4f4-a191-4fd9-b318-b55437661386" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="04Day17PaginationAndMixedBuyerAddressesPage">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 04-Day17-Pagination-And-Mixed / [Buyer] Addresses Page.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:23).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="04-Day17-Pagination-And-Mixed / [Buyer] Credit Logs Page" id="10a719ff-0958-41ab-99c5-a236afaf7ee5" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="04Day17PaginationAndMixedBuyerCreditLogsPage">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 04-Day17-Pagination-And-Mixed / [Buyer] Credit Logs Page.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:24).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="04-Day17-Pagination-And-Mixed / [Admin] Credit Logs Page" id="bd54a0cc-180d-45f1-b863-4cffec1dcbef" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="04Day17PaginationAndMixedAdminCreditLogsPage">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 04-Day17-Pagination-And-Mixed / [Admin] Credit Logs Page.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:25).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="04-Day17-Pagination-And-Mixed / [Admin] Product Violations Page" id="d946273e-9d66-43e7-adf5-e96451113ee3" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="04Day17PaginationAndMixedAdminProductViolationsPage">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 04-Day17-Pagination-And-Mixed / [Admin] Product Violations Page.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:26).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="04-Day17-Pagination-And-Mixed / [Admin] Ship Timeout Tasks Page" id="0bd2763a-627d-48df-a23f-98024c4c2ca6" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="04Day17PaginationAndMixedAdminShipTimeoutTasksPage">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 04-Day17-Pagination-And-Mixed / [Admin] Ship Timeout Tasks Page.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:27).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="04-Day17-Pagination-And-Mixed / [Admin] Refund Tasks Page" id="38b6c170-6b15-49d3-96be-64c9af063957" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="04Day17PaginationAndMixedAdminRefundTasksPage">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 04-Day17-Pagination-And-Mixed / [Admin] Refund Tasks Page.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:28).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="04-Day17-Pagination-And-Mixed / [Admin] Ship Reminder Tasks Page" id="0126ad4f-dac9-4447-9504-c35f70390ea4" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="04Day17PaginationAndMixedAdminShipReminderTasksPage">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 04-Day17-Pagination-And-Mixed / [Admin] Ship Reminder Tasks Page.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:29).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="05-Day17-Idempotency-And-Async / [Buyer] Send Order Message First" id="3a5312f1-4226-4b31-b918-4755481810d2" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="05Day17IdempotencyAndAsyncBuyerSendOrderMessageFirst">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 05-Day17-Idempotency-And-Async / [Buyer] Send Order Message First.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:30).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="05-Day17-Idempotency-And-Async / [Buyer] Send Order Message Repeat Idempotent" id="825b9131-4b85-44c2-bfcf-a5fab69cbfa8" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="05Day17IdempotencyAndAsyncBuyerSendOrderMessageRepeatIdempotent">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 05-Day17-Idempotency-And-Async / [Buyer] Send Order Message Repeat Idempotent.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:31).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="05-Day17-Idempotency-And-Async / [Admin] Outbox Metrics" id="065f0b25-77f9-41bd-9c0c-c47caf69b4d5" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="05Day17IdempotencyAndAsyncAdminOutboxMetrics">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 05-Day17-Idempotency-And-Async / [Admin] Outbox Metrics.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:32).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="05-Day17-Idempotency-And-Async / [Admin] Outbox Publish Once" id="bc0426ff-d0fd-4775-b158-a24dc81f1e36" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="05Day17IdempotencyAndAsyncAdminOutboxPublishOnce">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 05-Day17-Idempotency-And-Async / [Admin] Outbox Publish Once.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:33).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="05-Day17-Idempotency-And-Async / [Admin] Run Ship Timeout Once" id="69bdffcf-3a3b-4d85-92ab-87060c5e289f" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="05Day17IdempotencyAndAsyncAdminRunShipTimeoutOnce">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 05-Day17-Idempotency-And-Async / [Admin] Run Ship Timeout Once.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:34).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="05-Day17-Idempotency-And-Async / [Admin] Run Ship Timeout Once Repeat" id="200fc027-ff51-4020-8460-1616438fb3fd" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="05Day17IdempotencyAndAsyncAdminRunShipTimeoutOnceRepeat">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 05-Day17-Idempotency-And-Async / [Admin] Run Ship Timeout Once Repeat.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:35).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="05-Day17-Idempotency-And-Async / [Admin] Run Refund Once" id="74424494-3c0f-47fd-a549-a7238d24d067" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="05Day17IdempotencyAndAsyncAdminRunRefundOnce">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 05-Day17-Idempotency-And-Async / [Admin] Run Refund Once.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:36).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="05-Day17-Idempotency-And-Async / [Admin] Run Ship Reminder Once" id="ce2b23e0-d482-4f52-ae9a-b66c7ff08268" timestamp="2026-02-24T15:32:19.406Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:8080
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+---
+testScriptError: "undefined" is not valid JSON
+---
+]]></system-err>
+    <testcase name="HTTP 200" time="0.000" classname="05Day17IdempotencyAndAsyncAdminRunShipReminderOnce">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: c8d2807f-95f8-4a8f-b240-2d89ae23b9d8.]]>
+        <![CDATA[Collection name: Day17 Regression (Local).]]>
+        <![CDATA[Request name: 05-Day17-Idempotency-And-Async / [Admin] Run Ship Reminder Once.]]>
+        <![CDATA[Test description: HTTP 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:37).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+</testsuites>

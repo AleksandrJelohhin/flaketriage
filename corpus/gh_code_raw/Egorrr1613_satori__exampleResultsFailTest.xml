@@ -1,0 +1,79 @@
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="79.335965">
+<testsuite name="../__fixtures__/global/global.setup.ts" timestamp="2024-05-04T18:42:14.158Z" hostname="setup" tests="1" failures="0" skipped="0" time="0.754" errors="0">
+<testcase name="Set env and download browser wallet extensions" classname="../__fixtures__/global/global.setup.ts" time="0.754">
+<system-out>
+<![CDATA[Содержимое директории /Users/egorreutov/learn/satori_auto/satori_auto/tests/extensions-data/metamask-chrome-11.13.1 успешно удалено.
+Содержимое директории /Users/egorreutov/learn/satori_auto/satori_auto/tests/extensions-data/keplr-extension-manifest-v2-v0.12.58 успешно удалено.
+current working dir: /Users/egorreutov/learn/satori_auto/satori_auto
+[E2E-TEST] MetaMask Download URL:  https://github.com/MetaMask/metamask-extension/releases/download/v11.13.1/metamask-chrome-11.13.1.zip
+dataFolderWithReserveZipExtensionPath /Users/egorreutov/learn/satori_auto/satori_auto/tests/reserve-extensions/metamask-chrome-11.13.1
+pathToReserveArchive /Users/egorreutov/learn/satori_auto/satori_auto/tests/reserve-extensions/metamask-chrome-11.13.1.zip
+created dataFolderPath /Users/egorreutov/learn/satori_auto/satori_auto/tests/extensions-data/metamask-chrome-11.13.1
+pathToArchive /Users/egorreutov/learn/satori_auto/satori_auto/tests/extensions-data/metamask-chrome-11.13.1/metamask-chrome-11.13.1.zip
+unzip: 569.764ms
+unlinkSync: 0.523ms
+Download-mm: 608.028ms
+current working dir: /Users/egorreutov/learn/satori_auto/satori_auto
+[E2E-TEST] Keplr Download URL:  https://github.com/chainapsis/keplr-wallet/releases/download/v0.12.58/keplr-extension-manifest-v2-v0.12.58.zip
+dataFolderWithReserveZipExtensionPath /Users/egorreutov/learn/satori_auto/satori_auto/tests/reserve-extensions/keplr-extension-manifest-v2-v0.12.58
+pathToReserveArchive /Users/egorreutov/learn/satori_auto/satori_auto/tests/reserve-extensions/keplr-extension-manifest-v2-v0.12.58.zip
+created dataFolderPath /Users/egorreutov/learn/satori_auto/satori_auto/tests/extensions-data/keplr-extension-manifest-v2-v0.12.58
+pathToArchive /Users/egorreutov/learn/satori_auto/satori_auto/tests/extensions-data/keplr-extension-manifest-v2-v0.12.58/keplr-extension-manifest-v2-v0.12.58.zip
+unzip: 129.657ms
+unlinkSync: 0.185ms
+Download-keplr: 141.133ms
+
+[[ATTACHMENT|test-results/global.setup.ts-Set-env-an-f707a-d-browser-wallet-extensions-setup/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="satori.spec.ts" timestamp="2024-05-04T18:42:14.158Z" hostname="chromium" tests="1" failures="1" skipped="0" time="76.595" errors="0">
+<testcase name="Order run" classname="satori.spec.ts" time="76.595">
+<failure message="satori.spec.ts:10:1 Order run" type="FAILURE">
+<![CDATA[  [chromium] › satori.spec.ts:10:1 › Order run ─────────────────────────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: false
+    Received: true
+
+       9 |
+      10 | testMetaMask('Order run', async ({ context, satoriPage }) => {
+    > 11 |     expect(true).toBe(false);
+         |                  ^
+      12 |     await satoriPage.page
+      13 |         .locator('header')
+      14 |         .filter({ hasText: 'ProTradeVaultsPortfolioReferralLeaderboardMoreConnect Wallet' })
+
+        at /Users/egorreutov/learn/satori_auto/satori_auto/tests/e2e/satori.spec.ts:11:18
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/satori-Order-run-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/satori-Order-run-chromium/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/satori-Order-run-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/satori-Order-run-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/satori-Order-run-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/satori-Order-run-chromium/test-failed-2.png]]
+
+[[ATTACHMENT|test-results/satori-Order-run-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Cypress E2E - 결제·주문 흐름" tests="12" failures="1" errors="0" skipped="0" time="148.234">
+  <testsuite name="checkout_flow.cy.js" tests="6" failures="1" errors="0" skipped="0" time="78.512" timestamp="2026-05-28T22:14:03">
+    <properties>
+      <property name="browser" value="Chrome 124.0"/>
+      <property name="cypress.version" value="13.6.4"/>
+      <property name="env" value="staging"/>
+    </properties>
+    <testcase classname="checkout_flow" name="장바구니에서 결제 페이지로 이동" time="6.421"/>
+    <testcase classname="checkout_flow" name="배송지 선택 시 배송비 자동 계산" time="9.103"/>
+    <testcase classname="checkout_flow" name="신용카드 결제 - 정상 승인" time="14.882"/>
+    <testcase classname="checkout_flow" name="카카오페이 간편결제 리다이렉트" time="18.330"/>
+    <testcase classname="checkout_flow" name="결제 중복 클릭 방지 (idempotency)" time="12.444">
+      <failure type="AssertionError" message="중복 클릭 시 두 번째 요청도 PG로 전달됨">
+expected POST /api/payments to be called 1 time, but was called 2 times.
+  at Object.checkPaymentIdempotency (checkout_flow.cy.js:142:14)
+  at Context.&lt;anonymous&gt; (checkout_flow.cy.js:128:5)
+      </failure>
+    </testcase>
+    <testcase classname="checkout_flow" name="결제 실패 시 주문 롤백 + 재고 복원" time="17.332"/>
+  </testsuite>
+  <testsuite name="order_management.cy.js" tests="6" failures="0" errors="0" skipped="0" time="69.722" timestamp="2026-05-28T22:16:14">
+    <testcase classname="order_management" name="주문 생성 후 주문번호 발급" time="8.221"/>
+    <testcase classname="order_management" name="주문 상태 PAID 전이 확인" time="6.143"/>
+    <testcase classname="order_management" name="주문 취소 (PAID 단계)" time="11.504"/>
+    <testcase classname="order_management" name="부분 취소 - 일부 항목만" time="14.882"/>
+    <testcase classname="order_management" name="교환 요청 - 사진 첨부 필수" time="13.992"/>
+    <testcase classname="order_management" name="반품 요청 - 배송비 차감 계산" time="14.980"/>
+  </testsuite>
+</testsuites>

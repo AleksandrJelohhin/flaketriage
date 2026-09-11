@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ApplicationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-07-14T16:34:58" hostname="MBPvonSabrina2.fritz.box" time="0.421">
+  <properties/>
+  <testcase name="testRoot" classname="ApplicationTest" time="0.421">
+    <failure message="java.lang.AssertionError: expected:&lt;200 OK&gt; but was:&lt;404 Not Found&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;200 OK&gt; but was:&lt;404 Not Found&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at kotlin.test.junit.JUnitAsserter.assertEquals(JUnitSupport.kt:32)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:63)
+	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:62)
+	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at ApplicationTest$testRoot$1.invokeSuspend(ApplicationTest.kt:11)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:280)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:85)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:59)
+	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source)
+	at io.ktor.server.testing.TestApplicationKt.testApplication(TestApplication.kt:329)
+	at io.ktor.server.testing.TestApplicationKt.testApplication(TestApplication.kt:287)
+	at ApplicationTest.testRoot(ApplicationTest.kt:9)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:60)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[2024-07-14 18:34:58.576 [Test worker @coroutine#1] TRACE i.ktor.client.plugins.HttpPlainText - Adding Accept-Charset=UTF-8 to http:///chat/myGravelBike/jobRad/jobRad
+2024-07-14 18:34:58.618 [DefaultDispatcher-worker-1 @call-context#2] INFO  ktor.test - No ktor.deployment.watch patterns specified, automatic reload is not active.
+2024-07-14 18:34:58.787 [DefaultDispatcher-worker-1 @call-context#2] INFO  ktor.test - Application started in 0.173 seconds.
+2024-07-14 18:34:58.788 [DefaultDispatcher-worker-3 @coroutine#4] INFO  ktor.test - Responding at http://localhost:80
+2024-07-14 18:34:58.788 [DefaultDispatcher-worker-3 @coroutine#4] INFO  ktor.test - Responding at https://localhost:443
+2024-07-14 18:34:58.809 [DefaultDispatcher-worker-1 @request#2] TRACE io.ktor.routing.Routing - Trace for [chat, myGravelBike, jobRad, jobRad]
+/, segment:0 -> SUCCESS @ /
+  /json, segment:0 -> FAILURE "Selector didn't match" @ /json
+  /static, segment:0 -> FAILURE "Selector didn't match" @ /static
+  /chat, segment:1 -> SUCCESS @ /chat
+    /chat/{sessionId}, segment:2 -> SUCCESS; Parameters [sessionId=[myGravelBike]] @ /chat/{sessionId}
+      /chat/{sessionId}/{userId}, segment:3 -> SUCCESS; Parameters [userId=[jobRad]] @ /chat/{sessionId}/{userId}
+        /chat/{sessionId}/{userId}/{role}, segment:4 -> SUCCESS; Parameters [role=[jobRad]] @ /chat/{sessionId}/{userId}/{role}
+          /chat/{sessionId}/{userId}/{role}/(method:GET), segment:4 -> SUCCESS @ /chat/{sessionId}/{userId}/{role}/(method:GET)
+            /chat/{sessionId}/{userId}/{role}/(method:GET)/(header:Connection = Upgrade), segment:4 -> FAILURE "Selector didn't match" @ /chat/{sessionId}/{userId}/{role}/(method:GET)/(header:Connection = Upgrade)
+Matched routes:
+  No results
+Route resolve result:
+  FAILURE "No matched subtrees found" @ /
+2024-07-14 18:34:58.817 [DefaultDispatcher-worker-1 @request#2] TRACE i.k.s.p.c.ContentNegotiation - Skipping response body transformation from HttpStatusCode to OutgoingContent for the GET /chat/myGravelBike/jobRad/jobRad request because the HttpStatusCode type is ignored. See [ContentNegotiationConfig::ignoreType].
+2024-07-14 18:34:58.825 [Test worker @coroutine#1] TRACE i.k.client.plugins.HttpCallValidator - Validating response for request http://localhost/chat/myGravelBike/jobRad/jobRad
+2024-07-14 18:34:58.825 [Test worker @coroutine#1] TRACE i.k.c.p.DefaultResponseValidation - Skipping default response validation for http://localhost/chat/myGravelBike/jobRad/jobRad
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

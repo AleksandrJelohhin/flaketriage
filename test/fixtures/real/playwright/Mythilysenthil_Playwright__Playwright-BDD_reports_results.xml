@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<testsuite name="Cucumber" time="20.979" tests="2" skipped="0" failures="2" errors="0" timestamp="2026-07-03T06:02:47.489Z">
+  <testcase classname="User Authentication tests" name="Login should be success" time="10.615">
+    <failure type="Error" message="function timed out, ensure the promise resolves within 5000 milliseconds"><![CDATA[Error: function timed out, ensure the promise resolves within 5000 milliseconds
+    at Timeout.<anonymous> (C:\Users\Navee\OneDrive\Documents\Expleo training\PlayWright\Playwright-BDD\node_modules\@cucumber\cucumber\src\time.ts:50:14)
+    at listOnTimeout (node:internal/timers:594:17)
+    at processTimers (node:internal/timers:529:7)]]></failure>
+    <system-out><![CDATA[Given User navigates to the application.....................................passed
+And User click the Account menu.............................................passed
+And User click on the login link............................................passed
+And User enter the email as "mythily@gmail.com".............................passed
+And User enter the password as "mythil".....................................passed
+When User click on the login button.........................................passed
+Then My Account should be displayed.........................................failed]]></system-out>
+  </testcase>
+  <testcase classname="User Registration tests" name="Valid registration" time="10.323">
+    <failure type="Error" message="function timed out, ensure the promise resolves within 5000 milliseconds"><![CDATA[Error: function timed out, ensure the promise resolves within 5000 milliseconds
+    at Timeout.<anonymous> (C:\Users\Navee\OneDrive\Documents\Expleo training\PlayWright\Playwright-BDD\node_modules\@cucumber\cucumber\src\time.ts:50:14)
+    at listOnTimeout (node:internal/timers:594:17)
+    at processTimers (node:internal/timers:529:7)]]></failure>
+    <system-out><![CDATA[Given User navigated to the application.....................................passed
+And User clicks the Account menu............................................passed
+And User click on the register link.........................................passed
+And User enter the first name as "Mythily"..................................passed
+And User enter the last name as "S".........................................passed
+And User enter the Email as "Mythily1414@gmail.com".........................passed
+And User enter the telephone as "1234567890"................................passed
+And User enter the Password as "mythily"....................................passed
+And User enter the conform password as "mythily"............................passed
+And User click the policy check box.........................................passed
+When User click on the continue button......................................passed
+Then success should be displayed............................................failed]]></system-out>
+  </testcase>
+</testsuite>

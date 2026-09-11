@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pytest" tests="4" failures="1" errors="0" skipped="1" time="1.234">
+  <testcase classname="tests.test_user" name="test_user_creation" time="0.234" file="tests/test_user.py" line="10">
+  </testcase>
+  <testcase classname="tests.test_user" name="test_user_email_validation" time="0.567" file="tests/test_user.py" line="25">
+    <failure message="AssertionError: assert 'invalid' == 'valid'">
+tests/test_user.py:28: AssertionError
+FAILED tests/test_user.py::test_user_email_validation - AssertionError: assert 'invalid' == 'valid'
+    </failure>
+  </testcase>
+  <testcase classname="tests.test_user" name="test_user_password_hash" time="0.123" file="tests/test_user.py" line="35">
+  </testcase>
+  <testcase classname="tests.test_user" name="test_user_admin_permissions" time="0.0" file="tests/test_user.py" line="50">
+    <skipped type="pytest.skip" message="Requires admin setup"/>
+  </testcase>
+</testsuite>

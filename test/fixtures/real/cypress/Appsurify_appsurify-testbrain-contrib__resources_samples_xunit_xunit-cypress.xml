@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="57.738" tests="1" failures="2">
+    <testsuite name="Root Suite" timestamp="2023-05-30T02:42:03" tests="0"
+               file="browser-tests/tests/chemistry/CreateMoleculeFromRegistrationTable-test.ts"
+               time="0.000" failures="0">
+    </testsuite>
+    <testsuite name="Create" timestamp="2023-05-30T02:42:03" tests="1" time="57.658"
+               failures="2">
+        <testcase
+                name="Create When using a registration table, user can create a molecule and specify its chemical structure TST-784"
+                time="9.849"
+                classname="When using a registration table, user can create a molecule and specify its chemical structure TST-784">
+            <failure
+                    message="Seems like the response of https://browsertesting-w9c0aobx4r.bnch.us:9998/1/api/entries/etr_4dVMERX1/structured-tables/78551dbd-5973-45a4-9dd0-20b79350ed64/action/registration-submit has status code 500. Status Message: 500 (Internal Server Error). If this is expected, please pass the status code to the setUpTest() function"
+                    type="Error"><![CDATA[Error: Seems like the response of
+                https://browsertesting-w9c0aobx4r.bnch.us:9998/1/api/entries/etr_4dVMERX1/structured-tables/78551dbd-5973-45a4-9dd0-20b79350ed64/action/registration-submit
+                has status code 500. Status Message: 500 (Internal Server Error). If
+                this is expected, please pass the status code to the setUpTest()
+                function
+                at checkForResponseErrors
+                (https://test.bnch.us:9998/__cypress/tests?p=browser-tests/tests/chemistry/CreateMoleculeFromRegistrationTable-test.ts:85:11)
+                at $Cy.onResponse
+                (https://test.bnch.us:9998/__cypress/tests?p=browser-tests/tests/chemistry/CreateMoleculeFromRegistrationTable-test.ts:121:9)]]>
+            </failure>
+        </testcase>
+        <testcase
+                name="Create When using a registration table, user can create a molecule and specify its chemical structure TST-784"
+                time="9.849"
+                classname="When using a registration table, user can create a molecule and specify its chemical structure TST-784">
+            <failure message="Defects Testing"></failure>
+        </testcase>
+        <testcase
+                name="Create &quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;"
+                time="9.849"
+                classname="&quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;">
+            <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  &gt; 
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application
+
+Because this error occurred during a `after all` hook we are skipping all of the remaining tests.
+
+Although you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail"
+                     type="CypressError"><![CDATA[CypressError: The following error
+                originated from your application code, not from Cypress. It was caused
+                by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+
+                Because this error occurred during a `after all` hook we are skipping
+                all of the remaining tests.
+
+                Although you have test retries enabled, we do not retry tests when
+                `before all` or `after all` hooks fail
+                Error: The following error originated from your application code, not
+                from Cypress. It was caused by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+                Error
+                ]]>
+            </failure>
+        </testcase>
+        <testcase
+                name="Create &quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;"
+                time="9.849"
+                classname="&quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;">
+            <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  &gt; 
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+https://on.cypress.io/uncaught-exception-from-application
+
+Because this error occurred during a `after all` hook we are skipping all of the remaining tests.
+
+Although you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail"
+                     type="CypressError"><![CDATA[CypressError: The following error
+                originated from your application code, not from Cypress. It was caused
+                by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+
+                Because this error occurred during a `after all` hook we are skipping
+                all of the remaining tests.
+
+                Although you have test retries enabled, we do not retry tests when
+                `before all` or `after all` hooks fail
+                Error: The following error originated from your application code, not
+                from Cypress. It was caused by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+                Error
+                ]]>
+            </failure>
+        </testcase>
+        <testcase
+                name="Create &quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;"
+                time="9.849"
+                classname="&quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;">
+            <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  &gt; 
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+Because this error occurred during a `after all` hook we are skipping all of the remaining tests.
+
+Although you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail"
+                     type="CypressError"><![CDATA[CypressError: The following error
+                originated from your application code, not from Cypress. It was caused
+                by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+
+                Because this error occurred during a `after all` hook we are skipping
+                all of the remaining tests.
+
+                Although you have test retries enabled, we do not retry tests when
+                `before all` or `after all` hooks fail
+                Error: The following error originated from your application code, not
+                from Cypress. It was caused by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+                Error
+                ]]>
+            </failure>
+        </testcase>
+        <testcase
+                name="Create &quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;"
+                time="9.849"
+                classname="&quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;">
+            <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  &gt; 
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application
+
+Because this error occurred during a `after all` hook we are skipping all of the remaining tests.
+
+Although you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail"
+                     type="CypressError"><![CDATA[CypressError: The following error
+                originated from your application code, not from Cypress. It was caused
+                by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+
+                Because this error occurred during a `after all` hook we are skipping
+                all of the remaining tests.
+
+                Although you have test retries enabled, we do not retry tests when
+                `before all` or `after all` hooks fail
+                Error: The following error originated from your application code, not
+                from Cypress. It was caused by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+                Error
+                ]]>
+            </failure>
+        </testcase>
+        <testcase
+                name="Create &quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;"
+                time="9.849"
+                classname="&quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;">
+            <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  &gt; 
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable
+
+Because this error occurred during a `after all` hook we are skipping all of the remaining tests.
+
+Although you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail"
+                     type="CypressError"><![CDATA[CypressError: The following error
+                originated from your application code, not from Cypress. It was caused
+                by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+
+                Because this error occurred during a `after all` hook we are skipping
+                all of the remaining tests.
+
+                Although you have test retries enabled, we do not retry tests when
+                `before all` or `after all` hooks fail
+                Error: The following error originated from your application code, not
+                from Cypress. It was caused by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+                Error
+                ]]>
+            </failure>
+        </testcase>
+        <testcase
+                name="Create &quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;"
+                time="9.849"
+                classname="&quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;">
+            <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  &gt; 
+
+originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+Because this error occurred during a `after all` hook we are skipping all of the remaining tests.
+
+Although you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail"
+                     type="CypressError"><![CDATA[CypressError: The following error
+                originated from your application code, not from Cypress. It was caused
+                by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+
+                Because this error occurred during a `after all` hook we are skipping
+                all of the remaining tests.
+
+                Although you have test retries enabled, we do not retry tests when
+                `before all` or `after all` hooks fail
+                Error: The following error originated from your application code, not
+                from Cypress. It was caused by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+                Error
+                ]]>
+            </failure>
+        </testcase>
+        <testcase
+                name="Create &quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;"
+                time="9.849"
+                classname="&quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;">
+            <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  &gt; 
+
+When Cypress detects uncaught errorstion it will automatically fail the current test.
+
+This behavior is configurable, 
+
+https://on.cypress.io/uncaught-exception-from-application
+
+Because this error occurred during a `after all` hook we are skipping all of the remaining tests.
+
+Although you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail"
+                     type="CypressError"><![CDATA[CypressError: The following error
+                originated from your application code, not from Cypress. It was caused
+                by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+
+                Because this error occurred during a `after all` hook we are skipping
+                all of the remaining tests.
+
+                Although you have test retries enabled, we do not retry tests when
+                `before all` or `after all` hooks fail
+                Error: The following error originated from your application code, not
+                from Cypress. It was caused by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+                Error
+                ]]>
+            </failure>
+        </testcase>
+        <testcase
+                name="Create &quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;"
+                time="9.849"
+                classname="&quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;">
+            <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  &gt; 
+
+When Cypraught errors originating from your application itomatically fail the current test.
+
+This behavior is configurable, and you can chohis off by listening to the `uncaught:exception` event.
+
+https://on.cypress.ioion
+
+Because this err we are skipping all of the remaining tests.
+
+Although you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail"
+                     type="CypressError"><![CDATA[CypressError: The following error
+                originated from your application code, not from Cypress. It was caused
+                by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+
+                Because this error occurred during a `after all` hook we are skipping
+                all of the remaining tests.
+
+                Although you have test retries enabled, we do not retry tests when
+                `before all` or `after all` hooks fail
+                Error: The following error originated from your application code, not
+                from Cypress. It was caused by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+                Error
+                ]]>
+            </failure>
+        </testcase>
+        <testcase
+                name="Create &quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;"
+                time="9.849"
+                classname="&quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;">
+            <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  &gt; 
+
+When Cypress detects uncaught e
+Although you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail"
+                     type="CypressError"><![CDATA[CypressError: The following error
+                originated from your application code, not from Cypress. It was caused
+                by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught er
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+
+                Because this error occurred during a `after all` hook we are skipping
+                all of the remaining tests.
+
+                Although you have test retries enabled, we do not retry tests when
+                `before all` or `after all` hooks fail
+                Error: The following error originated from your application code, not
+                from Cypress. It was caused by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+                Error
+                ]]>
+            </failure>
+        </testcase>
+        <testcase
+                name="Create &quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;"
+                time="9.849"
+                classname="&quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;">
+            <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  &gt; 
+
+When Cypress detects ing a `after all` hook we are skipping all of the remaining tests.
+
+Although you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail"
+                     type="CypressError"><![CDATA[CypressError: The following error
+                originated from your application code, not from Cypress. It was caused
+                by an unhandled promise rejection.
+
+                >
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+
+                Because this error occurred during a `after all` hook we are skipping
+                all of the remaining tests.
+
+                Although you have test retries enabled, we do not retry tests when
+                `before all` or `after all` hooks fail
+                Error: The following error originated from your application code, not
+                from Cypress. It was caused by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+                Error
+                ]]>
+            </failure>
+        </testcase>
+        <testcase
+                name="Create &quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;"
+                time="9.849"
+                classname="&quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;">
+            <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  &gt; 
+
+When Cypress detectduring a `after all` hook we are skipping all of the remaining tests.
+
+Although you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail"
+                     type="CypressError"><![CDATA[CypressError: The following error
+                originated from your application code, not from Cypress. It was caused
+                by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaugh
+                https://on.cypress.io/uncaught-exception-from-application
+
+                Because this error occurred during a `after all` hook we are skipping
+                all of the remaining tests.
+
+                Although you have test retries enabled, we do not retry tests when
+                `before all` or `after all` hooks fail
+                Error: The following error originated from your application code, not
+                from Cypress. It was caused by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+                Error
+                ]]>
+            </failure>
+        </testcase>
+        <testcase
+                name="Create &quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;"
+                time="9.849"
+                classname="&quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;">
+            <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  &gt; 
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-excapplication
+
+Although you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail"
+                     type="CypressError"><![CDATA[CypressError: The following error
+                originated from your application code, not from Cypress. It was caused
+                by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and
+                https://on.cypress.io/uncaught-excep
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+                Error
+                ]]>
+            </failure>
+        </testcase>
+        <testcase
+                name="Create &quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;"
+                time="9.849"
+                classname="&quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;">
+            <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  &gt; 
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+
+This behavior is configurable, an
+Because this error occurred during a `after all` hook we are skipping all of the remaining tests.
+ `before all` or `after all` hooks fail" type="CypressError"><![CDATA[CypressError: The
+                following error originated from your application code, not from Cypress.
+                It was caused by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+
+                Because this error occurred during a `after all` hook we are skipping
+                all of the remaining tests.
+
+                Although you have t
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                This behavior isan choose to turn this off by listening to the
+                `uncaught:exception` event.
+
+                https://on.cy
+                ]]>
+            </failure>
+        </testcase>
+        <testcase
+                name="Create &quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;"
+                time="9.849"
+                classname="&quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;">
+            <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  &gt; 
+
+When Cypress detects uncaught errors orir is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.
+
+https://on.cypress.io/uncaught-exception-from-application
+
+Because this error occurred during a `after all` hook we are skipping all of the remaining tests.
+do not retry tests when `before all` or `after all` hooks fail" type="CypressError">
+                <![CDATA[CypressError: The following error originated from your
+                application code, not from Cypress. It was caused by an unhandled
+                promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https:/
+                Because this error occurred during a `after all` hook we are skipping
+                all of the remaining tests.
+
+                Although you have test retries enabled, we do not retry tests when
+                `before all` or `after all` hooks fail
+                Error: The following error originated from your application code, not
+                from Cypress. It was caused by an unhandled promise rejection.
+
+                >
+
+                When Cypress detects uncaught errors originating from your application
+                it will automatically fail the current test.
+
+                Thiurable, and you can choose to turn this off by listening to the
+                `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+                Error
+                ]]>
+            </failure>
+        </testcase>
+        <testcase
+                name="Create &quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;"
+                time="9.849"
+                classname="&quot;after all&quot; hook for &quot;When using a registration table, user can create a molecule and specify its chemical structure TST-784&quot;">
+            <failure message="The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.
+
+  &gt; 
+
+When Cypress detects uncaught errors originating from your application it will automatically fail the current test.
+This behavior is configu
+Although you have test retries enabled, we do not retry tests when `before all` or `after all` hooks fail"
+                     type="CypressError"><![CDATA[CypressError: The following error
+                originated from your application code, not from Cypress. It was caused
+                by an unhandled promise rejection.
+
+                >
+                originating from your application it will automatically fail the current
+                test.
+
+                This behavior is configurable, and you can choose to turn this off by
+                listening to the `uncaught:exception` event.
+
+                https://on.cypress.io/uncaught-exception-from-application
+
+                Because this error occurred during a `after all` hook we are skipping
+                all of the remaining tests.
+
+                https://on.cypress.io/uncaught-exception-from-application
+                Error
+                ]]>
+            </failure>
+        </testcase>
+    </testsuite>
+</testsuites>

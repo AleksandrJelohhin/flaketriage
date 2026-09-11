@@ -1,0 +1,230 @@
+<testsuites id="" name="" tests="2" failures="2" skipped="0" errors="0" time="140.861758">
+<testsuite name="e2e\calls.spec.ts" timestamp="2026-02-21T01:21:34.270Z" hostname="chromium" tests="2" failures="2" skipped="0" time="227.769" errors="0">
+<testcase name="Appels Audio et Vidéo › Appel audio entre deux utilisateurs" classname="e2e\calls.spec.ts" time="113.96">
+<failure message="calls.spec.ts:5:3 Appel audio entre deux utilisateurs" type="FAILURE">
+<![CDATA[  [chromium] › e2e\calls.spec.ts:5:3 › Appels Audio et Vidéo › Appel audio entre deux utilisateurs ─
+
+    TimeoutError: page.waitForURL: Timeout 30000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation to "**/chat/*" until "load"
+    ============================================================
+
+      34 |     await page1.getByPlaceholder('pseudo_utilisateur').fill('testuser2');
+      35 |     await page1.getByRole('button', { name: 'Ajouter', exact: true }).click();
+    > 36 |     await page1.waitForURL('**/chat/*', { timeout: 30000 });
+         |                 ^
+      37 |     // On suppose qu'il y a un bouton d'appel audio à côté du contact
+      38 |     // Il faudra adapter le sélecteur en fonction de l'UI réelle
+      39 |     await page1.click('button[aria-label="Appel vocal"]');
+        at c:\Users\john\Nephtys\test\e2e\calls.spec.ts:36:17
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: page.waitForURL: Timeout 30000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation to "**/chat/*" until "load"
+    ============================================================
+
+      34 |     await page1.getByPlaceholder('pseudo_utilisateur').fill('testuser2');
+      35 |     await page1.getByRole('button', { name: 'Ajouter', exact: true }).click();
+    > 36 |     await page1.waitForURL('**/chat/*', { timeout: 30000 });
+         |                 ^
+      37 |     // On suppose qu'il y a un bouton d'appel audio à côté du contact
+      38 |     // Il faudra adapter le sélecteur en fonction de l'UI réelle
+      39 |     await page1.click('button[aria-label="Appel vocal"]');
+        at c:\Users\john\Nephtys\test\e2e\calls.spec.ts:36:17
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium-retry1\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: page.waitForURL: Timeout 30000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation to "**/chat/*" until "load"
+    ============================================================
+
+      34 |     await page1.getByPlaceholder('pseudo_utilisateur').fill('testuser2');
+      35 |     await page1.getByRole('button', { name: 'Ajouter', exact: true }).click();
+    > 36 |     await page1.waitForURL('**/chat/*', { timeout: 30000 });
+         |                 ^
+      37 |     // On suppose qu'il y a un bouton d'appel audio à côté du contact
+      38 |     // Il faudra adapter le sélecteur en fonction de l'UI réelle
+      39 |     await page1.click('button[aria-label="Appel vocal"]');
+        at c:\Users\john\Nephtys\test\e2e\calls.spec.ts:36:17
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium-retry2\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium-retry2\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium\test-failed-2.png]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium-retry1\test-failed-2.png]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium-retry1\trace.zip]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium-retry2\test-failed-2.png]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--e6328-dio-entre-deux-utilisateurs-chromium-retry2\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Appels Audio et Vidéo › Appel vidéo entre deux utilisateurs" classname="e2e\calls.spec.ts" time="113.809">
+<failure message="calls.spec.ts:63:3 Appel vidéo entre deux utilisateurs" type="FAILURE">
+<![CDATA[  [chromium] › e2e\calls.spec.ts:63:3 › Appels Audio et Vidéo › Appel vidéo entre deux utilisateurs 
+
+    TimeoutError: page.waitForURL: Timeout 30000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation to "**/chat/*" until "load"
+    ============================================================
+
+      92 |     await page1.getByPlaceholder('pseudo_utilisateur').fill('testuser2');
+      93 |     await page1.getByRole('button', { name: 'Ajouter', exact: true }).click();
+    > 94 |     await page1.waitForURL('**/chat/*', { timeout: 30000 });
+         |                 ^
+      95 |     // On suppose qu'il y a un bouton d'appel vidéo à côté du contact
+      96 |     await page1.click('button[aria-label="Appel vidéo"]');
+      97 |
+        at c:\Users\john\Nephtys\test\e2e\calls.spec.ts:94:17
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: page.waitForURL: Timeout 30000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation to "**/chat/*" until "load"
+    ============================================================
+
+      92 |     await page1.getByPlaceholder('pseudo_utilisateur').fill('testuser2');
+      93 |     await page1.getByRole('button', { name: 'Ajouter', exact: true }).click();
+    > 94 |     await page1.waitForURL('**/chat/*', { timeout: 30000 });
+         |                 ^
+      95 |     // On suppose qu'il y a un bouton d'appel vidéo à côté du contact
+      96 |     await page1.click('button[aria-label="Appel vidéo"]');
+      97 |
+        at c:\Users\john\Nephtys\test\e2e\calls.spec.ts:94:17
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium-retry1\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: page.waitForURL: Timeout 30000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation to "**/chat/*" until "load"
+    ============================================================
+
+      92 |     await page1.getByPlaceholder('pseudo_utilisateur').fill('testuser2');
+      93 |     await page1.getByRole('button', { name: 'Ajouter', exact: true }).click();
+    > 94 |     await page1.waitForURL('**/chat/*', { timeout: 30000 });
+         |                 ^
+      95 |     // On suppose qu'il y a un bouton d'appel vidéo à côté du contact
+      96 |     await page1.click('button[aria-label="Appel vidéo"]');
+      97 |
+        at c:\Users\john\Nephtys\test\e2e\calls.spec.ts:94:17
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium-retry2\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium-retry2\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium\test-failed-2.png]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium-retry1\test-failed-2.png]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium-retry1\trace.zip]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium-retry2\test-failed-2.png]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\e2e-calls-Appels-Audio-et--80023-déo-entre-deux-utilisateurs-chromium-retry2\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

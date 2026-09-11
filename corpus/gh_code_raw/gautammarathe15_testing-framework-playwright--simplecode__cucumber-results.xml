@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<testsuite failures="1" skipped="0" name="cucumber-js" time="3.517763198" tests="1">
+  <testcase classname="Cinépolis Movie Booking Flow" name="Successfully select a seat in Row B and proceed" time="3.517763198">
+    <failure type="TypeError" message="Cannot read properties of undefined (reading 'getByRole')"><![CDATA[TypeError: Cannot read properties of undefined (reading 'getByRole')
+    at new CinepolisHomePage (G:\Playwright_class\projectsetup\pages\cineHomePage.js:6:35)
+    at World.<anonymous> (G:\Playwright_class\projectsetup\features\step_definitions\cinepolisindia.steps.js:12:16)]]></failure>
+    <system-out><![CDATA[Given I navigate to the Cinépolis homepage................................failed
+And I select "Pune" as my city...........................................skipped
+And I choose the cinema "Cinépolis Seasons" and movie "RAJA SHIVAJI (M...skipped
+When I select the first available date and time..........................skipped
+And I select the first available seat in Row "B".........................skipped
+Then I should be navigated to the Booking Summary page...................skipped]]></system-out>
+  </testcase>
+</testsuite>

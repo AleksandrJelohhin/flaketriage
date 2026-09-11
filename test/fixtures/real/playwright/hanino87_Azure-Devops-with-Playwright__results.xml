@@ -1,0 +1,95 @@
+<testsuites id="" name="" tests="6" failures="1" skipped="0" errors="0" time="47.1148">
+<testsuite name="example.spec.js" timestamp="2024-10-31T13:09:27.391Z" hostname="chromium" tests="2" failures="1" skipped="0" time="39.605" errors="0">
+<testcase name="has title" classname="example.spec.js" time="2.353">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/example-has-title-chromium/video.webm]]
+
+[[ATTACHMENT|test-results/example-has-title-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="get started link" classname="example.spec.js" time="37.252">
+<failure message="example.spec.js:11:1 get started link" type="FAILURE">
+<![CDATA[  [chromium] › example.spec.js:11:1 › get started link ─────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+      - navigating to "https://playwright.dev/", waiting until "load"
+
+
+      10 |
+      11 | test('get started link', async ({ page }) => {
+    > 12 |   await page.goto('https://playwright.dev/');
+         |              ^
+      13 |
+      14 |   // Click the get started link.
+      15 |   await page.getByRole('link', { name: 'Get started' }).click();
+
+        at /Users/hanino/Desktop/my_project_pipline_in_azure/Azure-Devops-with-Playwright/tests/example.spec.js:12:14
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/example-get-started-link-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/example-get-started-link-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/example-get-started-link-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/example-get-started-link-chromium/video.webm]]
+
+[[ATTACHMENT|test-results/example-get-started-link-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="example.spec.js" timestamp="2024-10-31T13:09:27.391Z" hostname="firefox" tests="2" failures="0" skipped="0" time="8.029" errors="0">
+<testcase name="has title" classname="example.spec.js" time="3.381">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/example-has-title-firefox/video.webm]]
+
+[[ATTACHMENT|test-results/example-has-title-firefox/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="get started link" classname="example.spec.js" time="4.648">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/example-get-started-link-firefox/video.webm]]
+
+[[ATTACHMENT|test-results/example-get-started-link-firefox/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="example.spec.js" timestamp="2024-10-31T13:09:27.391Z" hostname="webkit" tests="2" failures="0" skipped="0" time="8.192" errors="0">
+<testcase name="has title" classname="example.spec.js" time="3.826">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/example-has-title-webkit/video.webm]]
+
+[[ATTACHMENT|test-results/example-has-title-webkit/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="get started link" classname="example.spec.js" time="4.366">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/example-get-started-link-webkit/video.webm]]
+
+[[ATTACHMENT|test-results/example-get-started-link-webkit/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="20.630" tests="18" failures="10">
+  <testsuite name="Root Suite" timestamp="2025-10-24T09:52:38" tests="0" file="cypress/integration/calc.spec.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Calc" timestamp="2025-10-24T09:52:38" tests="18" time="20.625" failures="10">
+    <testcase name="Calc get the title" time="0.148" classname="get the title">
+    </testcase>
+    <testcase name="Calc can type operands" time="0.566" classname="can type operands">
+    </testcase>
+    <testcase name="Calc can click add" time="1.037" classname="can click add">
+    </testcase>
+    <testcase name="Calc can click multiply" time="0.933" classname="can click multiply">
+    </testcase>
+    <testcase name="Calc can click substract (using fixture)" time="0.000" classname="can click substract (using fixture)">
+      <failure message="`cy.server()` was removed in Cypress version 12.0.0. Please update to use `cy.intercept()` instead.
+
+https://on.cypress.io/intercept" type="CypressError"><![CDATA[CypressError: `cy.server()` was removed in Cypress version 12.0.0. Please update to use `cy.intercept()` instead.
+
+https://on.cypress.io/intercept
+    at Context.server (http://calc-web/__cypress/runner/cypress_runner.js:138889:75)
+    at wrapped (http://calc-web/__cypress/runner/cypress_runner.js:145569:43)
+From Your Spec Code:
+    at Context.eval (webpack:///./cypress/integration/calc.spec.js:37:7)]]></failure>
+    </testcase>
+    <testcase name="Calc increases the history log" time="0.000" classname="increases the history log">
+      <failure message="Timed out retrying after 1000ms: expected 4 to equal 3" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 1000ms: expected 4 to equal 3
+    at Context.eval (webpack:///./cypress/integration/calc.spec.js:53:5)]]></failure>
+    </testcase>
+    <testcase name="Calc can click divide" time="0.000" classname="can click divide">
+      <failure message="Timed out retrying after 1000ms: expected &apos;&lt;div#result-area&gt;&apos; to have text &apos;Result: 5&apos;, but the text was &apos;Result: 5.0&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 1000ms: expected '<div#result-area>' to have text 'Result: 5', but the text was 'Result: 5.0'
+    at Context.eval (webpack:///./cypress/integration/calc.spec.js:61:27)]]></failure>
+    </testcase>
+    <testcase name="Calc can click divide with decimals" time="0.917" classname="can click divide with decimals">
+    </testcase>
+    <testcase name="Calc handles division by zero" time="0.000" classname="handles division by zero">
+      <failure message="Timed out retrying after 1000ms: expected &apos;&lt;div#result-area&gt;&apos; to contain &apos;Error&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 1000ms: expected '<div#result-area>' to contain 'Error'
+    at Context.eval (webpack:///./cypress/integration/calc.spec.js:77:27)]]></failure>
+    </testcase>
+    <testcase name="Calc can click power" time="0.938" classname="can click power">
+    </testcase>
+    <testcase name="Calc can click power with negative exponent" time="0.911" classname="can click power with negative exponent">
+    </testcase>
+    <testcase name="Calc can click square root" time="0.000" classname="can click square root">
+      <failure message="Timed out retrying after 1000ms: expected &apos;&lt;div#result-area&gt;&apos; to have text &apos;Result: 4&apos;, but the text was &apos;Result: 4.0&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 1000ms: expected '<div#result-area>' to have text 'Result: 4', but the text was 'Result: 4.0'
+    at Context.eval (webpack:///./cypress/integration/calc.spec.js:100:27)]]></failure>
+    </testcase>
+    <testcase name="Calc can click square root of decimal" time="0.785" classname="can click square root of decimal">
+    </testcase>
+    <testcase name="Calc handles square root of negative number" time="0.000" classname="handles square root of negative number">
+      <failure message="Timed out retrying after 1000ms: expected &apos;&lt;div#result-area&gt;&apos; to contain &apos;Error&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 1000ms: expected '<div#result-area>' to contain 'Error'
+    at Context.eval (webpack:///./cypress/integration/calc.spec.js:114:27)]]></failure>
+    </testcase>
+    <testcase name="Calc can click log10" time="0.000" classname="can click log10">
+      <failure message="Timed out retrying after 1000ms: expected &apos;&lt;div#result-area&gt;&apos; to have text &apos;Result: 2&apos;, but the text was &apos;Result: 2.0&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 1000ms: expected '<div#result-area>' to have text 'Result: 2', but the text was 'Result: 2.0'
+    at Context.eval (webpack:///./cypress/integration/calc.spec.js:121:27)]]></failure>
+    </testcase>
+    <testcase name="Calc can click log10 of 1000" time="0.000" classname="can click log10 of 1000">
+      <failure message="Timed out retrying after 1000ms: expected &apos;&lt;div#result-area&gt;&apos; to have text &apos;Result: 3&apos;, but the text was &apos;Result: 3.0&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 1000ms: expected '<div#result-area>' to have text 'Result: 3', but the text was 'Result: 3.0'
+    at Context.eval (webpack:///./cypress/integration/calc.spec.js:128:27)]]></failure>
+    </testcase>
+    <testcase name="Calc handles log10 of zero" time="0.000" classname="handles log10 of zero">
+      <failure message="Timed out retrying after 1000ms: expected &apos;&lt;div#result-area&gt;&apos; to contain &apos;Error&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 1000ms: expected '<div#result-area>' to contain 'Error'
+    at Context.eval (webpack:///./cypress/integration/calc.spec.js:135:27)]]></failure>
+    </testcase>
+    <testcase name="Calc handles log10 of negative number" time="0.000" classname="handles log10 of negative number">
+      <failure message="Timed out retrying after 1000ms: expected &apos;&lt;div#result-area&gt;&apos; to contain &apos;Error&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 1000ms: expected '<div#result-area>' to contain 'Error'
+    at Context.eval (webpack:///./cypress/integration/calc.spec.js:142:27)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

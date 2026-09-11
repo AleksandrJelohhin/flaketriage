@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2046.1930" tests="34" failures="12">
+  <testsuite name="Root Suite" timestamp="2021-04-22T13:55:56" tests="0" file="tests/cypress/tests/adminSearch.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Search: Search in Local Cluster" timestamp="2021-04-22T13:56:06" tests="6" time="196.2460" failures="0">
+    <testcase name="Search: Search in Local Cluster [P1][Sev1][search] should load the search page" time="12.4960" classname="[P1][Sev1][search] should load the search page">
+    </testcase>
+    <testcase name="Search: Search in Local Cluster [P1][Sev1][search] should not see any cluster and namespace" time="102.5950" classname="[P1][Sev1][search] should not see any cluster and namespace">
+    </testcase>
+    <testcase name="Search: Search in Local Cluster [P1][Sev1][search] should create namespace from create resource UI" time="11.4410" classname="[P1][Sev1][search] should create namespace from create resource UI">
+    </testcase>
+    <testcase name="Search: Search in Local Cluster [P1][Sev1][search] should verify that namespace already exist" time="9.0080" classname="[P1][Sev1][search] should verify that namespace already exist">
+    </testcase>
+    <testcase name="Search: Search in Local Cluster [P1][Sev1][search] should create deployment from create resource UI" time="22.0000" classname="[P1][Sev1][search] should create deployment from create resource UI">
+    </testcase>
+    <testcase name="Search: Search in Local Cluster [P1][Sev1][search] should verify that deployment resource exist" time="38.7060" classname="[P1][Sev1][search] should verify that deployment resource exist">
+    </testcase>
+  </testsuite>
+  <testsuite name="search resources" timestamp="2021-04-22T13:59:13" tests="11" time="1315.9620" failures="0">
+    <testcase name="Search: Search in Local Cluster search resources [P3][Sev3][search] should have expected count of relationships" time="100.5280" classname="[P3][Sev3][search] should have expected count of relationships">
+    </testcase>
+    <testcase name="Search: Search in Local Cluster search resources [P1][Sev1][search] should work kind filter for deployment" time="122.9810" classname="[P1][Sev1][search] should work kind filter for deployment">
+    </testcase>
+    <testcase name="Search: Search in Local Cluster search resources [P1][Sev1][search] should work kind filter for pod" time="119.3260" classname="[P1][Sev1][search] should work kind filter for pod">
+    </testcase>
+    <testcase name="Search: Search in Local Cluster search resources [P2][Sev2][search] should see pod logs" time="117.8100" classname="[P2][Sev2][search] should see pod logs">
+    </testcase>
+    <testcase name="Search: Search in Local Cluster search resources [P2][Sev2][search] should delete pod" time="129.3800" classname="[P2][Sev2][search] should delete pod">
+    </testcase>
+    <testcase name="Search: Search in Local Cluster search resources [P3][Sev3][search] should scale deployment" time="131.7270" classname="[P3][Sev3][search] should scale deployment">
+    </testcase>
+    <testcase name="Search: Search in Local Cluster search resources [P3][Sev3][search] should verify that the deployment scaled" time="123.4370" classname="[P3][Sev3][search] should verify that the deployment scaled">
+    </testcase>
+    <testcase name="Search: Search in Local Cluster search resources [P2][Sev2][search] should delete deployment" time="109.2860" classname="[P2][Sev2][search] should delete deployment">
+    </testcase>
+    <testcase name="Search: Search in Local Cluster search resources [P2][Sev2][search] should validate deployment was deleted" time="123.9070" classname="[P2][Sev2][search] should validate deployment was deleted">
+    </testcase>
+    <testcase name="Search: Search in Local Cluster search resources [P2][Sev2][search] should delete namespace" time="128.1330" classname="[P2][Sev2][search] should delete namespace">
+    </testcase>
+    <testcase name="Search: Search in Local Cluster search resources [P2][Sev2][search] should validate namespace was deleted" time="109.4470" classname="[P2][Sev2][search] should validate namespace was deleted">
+    </testcase>
+  </testsuite>
+  <testsuite name="Search: Search in Managed Cluster" timestamp="2021-04-22T14:22:18" tests="6" time="111.5040" failures="4">
+    <testcase name="Search: Search in Managed Cluster [P1][Sev1][search] should load the search page" time="11.1090" classname="[P1][Sev1][search] should load the search page">
+    </testcase>
+    <testcase name="Search: Search in Managed Cluster [P1][Sev1][search] should not see any cluster and namespace" time="10.8080" classname="[P1][Sev1][search] should not see any cluster and namespace">
+    </testcase>
+    <testcase name="Search: Search in Managed Cluster [P1][Sev1][search] should create namespace from create resource UI" time="19.5360" classname="[P1][Sev1][search] should create namespace from create resource UI">
+      <failure message="Timed out retrying after 15000ms: Expected to find element: `.bx--checkbox-wrapper input[name=&quot;undefined&quot;]`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 15000ms: Expected to find element: `.bx--checkbox-wrapper input[name="undefined"]`, but never found it.
+    at Object.whenSelectTargetCluster (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1371:8)
+    at Context.eval (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1102:30)]]></failure>
+    </testcase>
+    <testcase name="Search: Search in Managed Cluster [P1][Sev1][search] should verify that namespace already exist" time="20.1830" classname="[P1][Sev1][search] should verify that namespace already exist">
+      <failure message="Timed out retrying after 15000ms: Expected to find element: `.bx--checkbox-wrapper input[name=&quot;undefined&quot;]`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 15000ms: Expected to find element: `.bx--checkbox-wrapper input[name="undefined"]`, but never found it.
+    at Object.whenSelectTargetCluster (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1371:8)
+    at Context.eval (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1109:30)]]></failure>
+    </testcase>
+    <testcase name="Search: Search in Managed Cluster [P1][Sev1][search] should create deployment from create resource UI" time="19.7450" classname="[P1][Sev1][search] should create deployment from create resource UI">
+      <failure message="Timed out retrying after 15000ms: Expected to find element: `.bx--checkbox-wrapper input[name=&quot;undefined&quot;]`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 15000ms: Expected to find element: `.bx--checkbox-wrapper input[name="undefined"]`, but never found it.
+    at Object.whenSelectTargetCluster (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1371:8)
+    at Context.eval (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1116:30)]]></failure>
+    </testcase>
+    <testcase name="Search: Search in Managed Cluster [P1][Sev1][search] should verify that deployment resource exist" time="30.1230" classname="[P1][Sev1][search] should verify that deployment resource exist">
+      <failure message="Timed out retrying after 15000ms: Expected to find element: `.bx--checkbox-wrapper input[name=&quot;undefined&quot;]`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 15000ms: Expected to find element: `.bx--checkbox-wrapper input[name="undefined"]`, but never found it.
+    at Object.whenSelectTargetCluster (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1371:8)
+    at Context.eval (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1125:30)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="search resources" timestamp="2021-04-22T14:27:10" tests="11" time="422.4810" failures="8">
+    <testcase name="Search: Search in Managed Cluster search resources [P3][Sev3][search] should have expected count of relationships" time="14.8180" classname="[P3][Sev3][search] should have expected count of relationships">
+      <failure message="Timed out retrying after 2000ms: Expected to find element: `.pf-l-gallery`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 2000ms: Expected to find element: `.pf-l-gallery`, but never found it.
+    at Object.whenExpandRelationshipTiles (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1494:8)
+    at Context.eval (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1140:28)]]></failure>
+    </testcase>
+    <testcase name="Search: Search in Managed Cluster search resources [P1][Sev1][search] should work kind filter for deployment" time="34.1760" classname="[P1][Sev1][search] should work kind filter for deployment">
+      <failure message="Timed out retrying after 15000ms: expected &apos;&lt;li#ReactTags-0.is-disabled&gt;&apos; to have a length above 1 but got 1" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 15000ms: expected '<li#ReactTags-0.is-disabled>' to have a length above 1 but got 1
+    at Object.whenSuggestionsAreAvailable (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1649:21)
+    at Object.whenEnterTextInSearchBar (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1670:17)
+    at Object.whenFilterByKind (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1685:15)
+    at Context.eval (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1149:27)]]></failure>
+    </testcase>
+    <testcase name="Search: Search in Managed Cluster search resources [P1][Sev1][search] should work kind filter for pod" time="36.7440" classname="[P1][Sev1][search] should work kind filter for pod">
+      <failure message="Timed out retrying after 15000ms: expected &apos;&lt;li#ReactTags-0.is-disabled&gt;&apos; to have a length above 1 but got 1" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 15000ms: expected '<li#ReactTags-0.is-disabled>' to have a length above 1 but got 1
+    at Object.whenSuggestionsAreAvailable (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1649:21)
+    at Object.whenEnterTextInSearchBar (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1670:17)
+    at Object.whenFilterByKind (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1685:15)
+    at Context.eval (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1154:27)]]></failure>
+    </testcase>
+    <testcase name="Search: Search in Managed Cluster search resources [P2][Sev2][search] should see pod logs" time="37.9790" classname="[P2][Sev2][search] should see pod logs">
+      <failure message="Timed out retrying after 15000ms: expected &apos;&lt;li#ReactTags-0.is-disabled&gt;&apos; to have a length above 1 but got 1" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 15000ms: expected '<li#ReactTags-0.is-disabled>' to have a length above 1 but got 1
+    at Object.whenSuggestionsAreAvailable (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1649:21)
+    at Object.whenEnterTextInSearchBar (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1670:17)
+    at Object.whenFilterByKind (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1685:15)
+    at Context.eval (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1159:27)]]></failure>
+    </testcase>
+    <testcase name="Search: Search in Managed Cluster search resources [P2][Sev2][search] should delete pod" time="39.9660" classname="[P2][Sev2][search] should delete pod">
+      <failure message="Timed out retrying after 15000ms: expected &apos;&lt;li#ReactTags-0.is-disabled&gt;&apos; to have a length above 1 but got 1" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 15000ms: expected '<li#ReactTags-0.is-disabled>' to have a length above 1 but got 1
+    at Object.whenSuggestionsAreAvailable (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1649:21)
+    at Object.whenEnterTextInSearchBar (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1670:17)
+    at Object.whenFilterByKind (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1685:15)
+    at Context.eval (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1167:27)]]></failure>
+    </testcase>
+    <testcase name="Search: Search in Managed Cluster search resources [P3][Sev3][search] should scale deployment" time="43.2060" classname="[P3][Sev3][search] should scale deployment">
+      <failure message="Timed out retrying after 15000ms: expected &apos;&lt;li#ReactTags-0.is-disabled&gt;&apos; to have a length above 1 but got 1" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 15000ms: expected '<li#ReactTags-0.is-disabled>' to have a length above 1 but got 1
+    at Object.whenSuggestionsAreAvailable (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1649:21)
+    at Object.whenEnterTextInSearchBar (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1670:17)
+    at Object.whenFilterByKind (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1685:15)
+    at Context.eval (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1174:27)]]></failure>
+    </testcase>
+    <testcase name="Search: Search in Managed Cluster search resources [P3][Sev3][search] should verify that the deployment scaled" time="45.2860" classname="[P3][Sev3][search] should verify that the deployment scaled">
+      <failure message="Timed out retrying after 15000ms: expected &apos;&lt;li#ReactTags-0.is-disabled&gt;&apos; to have a length above 1 but got 1" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 15000ms: expected '<li#ReactTags-0.is-disabled>' to have a length above 1 but got 1
+    at Object.whenSuggestionsAreAvailable (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1649:21)
+    at Object.whenEnterTextInSearchBar (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1670:17)
+    at Object.whenFilterByKind (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1685:15)
+    at Context.eval (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1183:27)]]></failure>
+    </testcase>
+    <testcase name="Search: Search in Managed Cluster search resources [P2][Sev2][search] should delete deployment" time="46.7270" classname="[P2][Sev2][search] should delete deployment">
+      <failure message="Timed out retrying after 15000ms: expected &apos;&lt;li#ReactTags-0.is-disabled&gt;&apos; to have a length above 1 but got 1" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 15000ms: expected '<li#ReactTags-0.is-disabled>' to have a length above 1 but got 1
+    at Object.whenSuggestionsAreAvailable (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1649:21)
+    at Object.whenEnterTextInSearchBar (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1670:17)
+    at Object.whenFilterByKind (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1685:15)
+    at Context.eval (https://multicloud-console.apps.ocp4-az-3.az.dev06.red-chesterfield.com/__cypress/tests?p=tests/cypress/tests/adminSearch.spec.js:1190:27)]]></failure>
+    </testcase>
+    <testcase name="Search: Search in Managed Cluster search resources [P2][Sev2][search] should validate deployment was deleted" time="44.4300" classname="[P2][Sev2][search] should validate deployment was deleted">
+    </testcase>
+    <testcase name="Search: Search in Managed Cluster search resources [P2][Sev2][search] should delete namespace" time="56.7500" classname="[P2][Sev2][search] should delete namespace">
+    </testcase>
+    <testcase name="Search: Search in Managed Cluster search resources [P2][Sev2][search] should validate namespace was deleted" time="22.3990" classname="[P2][Sev2][search] should validate namespace was deleted">
+    </testcase>
+  </testsuite>
+</testsuites>

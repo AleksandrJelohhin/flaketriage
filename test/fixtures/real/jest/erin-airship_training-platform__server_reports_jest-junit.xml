@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="19" failures="1" errors="0" time="1.009">
+  <testsuite name="controllers/__tests__/example.test.ts" errors="0" failures="1" skipped="0" timestamp="2024-08-12T13:47:59" time="0.425" tests="1">
+    <testcase classname="Examples Controller" name="should return a 200 when examples are found" time="0.004">
+      <failure>Error: expect(jest.fn()).toHaveBeenCalledTimes(expected)
+
+Expected number of calls: 1
+Received number of calls: 0
+    at /Users/erin.isbell/code/training-platform/server/controllers/__tests__/example.test.ts:28:38
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (/Users/erin.isbell/code/training-platform/server/controllers/__tests__/example.test.ts:28:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="controllers/__tests__/users.test.ts" errors="0" failures="0" skipped="0" timestamp="2024-08-12T13:48:00" time="0.072" tests="13">
+    <testcase classname="Users Controller › getUsers" name="should return a 200 status and list of users" time="0.004">
+    </testcase>
+    <testcase classname="Users Controller › getUsers" name="should return a 500 status if an error occurs" time="0.001">
+    </testcase>
+    <testcase classname="Users Controller › getUserById" name="should return a 200 status and the user if found" time="0">
+    </testcase>
+    <testcase classname="Users Controller › getUserById" name="should return a 404 status if the user is not found" time="0.001">
+    </testcase>
+    <testcase classname="Users Controller › getUserById" name="should return a 500 status if an error occurs" time="0">
+    </testcase>
+    <testcase classname="Users Controller › createUser" name="should return a 201 status and the created user" time="0.001">
+    </testcase>
+    <testcase classname="Users Controller › createUser" name="should return a 500 status if an error occurs" time="0">
+    </testcase>
+    <testcase classname="Users Controller › updateUser" name="should return a 200 status and the updated user if successful" time="0.001">
+    </testcase>
+    <testcase classname="Users Controller › updateUser" name="should return a 404 status if the user is not found" time="0">
+    </testcase>
+    <testcase classname="Users Controller › updateUser" name="should return a 500 status if an error occurs" time="0.001">
+    </testcase>
+    <testcase classname="Users Controller › deleteUser" name="should return a 200 status and the deleted user if successful" time="0">
+    </testcase>
+    <testcase classname="Users Controller › deleteUser" name="should return a 404 status if the user is not found" time="0.001">
+    </testcase>
+    <testcase classname="Users Controller › deleteUser" name="should return a 500 status if an error occurs" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="controllers/__tests__/courses.test.ts" errors="0" failures="0" skipped="0" timestamp="2024-08-12T13:48:00" time="0.061" tests="3">
+    <testcase classname="Courses Controller › getCourses" name="should return a 200 status and list of courses" time="0.003">
+    </testcase>
+    <testcase classname="Courses Controller › getCourseById" name="should return a 200 status and the course if found" time="0">
+    </testcase>
+    <testcase classname="Courses Controller › createCourse" name="should return a 201 status and the created course" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="models/__test__/users.test.ts" errors="0" failures="0" skipped="0" timestamp="2024-08-12T13:48:00" time="0.048" tests="2">
+    <testcase classname="Users Model › getUserById" name="should get a user by id" time="0.001">
+    </testcase>
+    <testcase classname="Users Model › getUserById" name="should throw an error if user not found" time="0.002">
+    </testcase>
+  </testsuite>
+</testsuites>

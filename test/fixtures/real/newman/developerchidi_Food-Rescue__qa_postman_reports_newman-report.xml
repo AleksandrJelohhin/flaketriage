@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Food Rescue API Integration" tests="20" time="0.000">
+  <testsuite name="Auth / Register Donor - Success" id="4bc47109-fc1b-47aa-b07f-1535d05860c2" timestamp="2026-04-05T22:41:22.992Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+]]></system-err>
+    <testcase name="Status is 201" time="0.000" classname="AuthRegisterDonorSuccess">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Auth / Register Donor - Success.]]>
+        <![CDATA[Test description: Status is 201.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response has userId" time="0.000" classname="AuthRegisterDonorSuccess">
+      <failure type="AssertionFailure" message="expected {} to have property 'userId'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Auth / Register Donor - Success.]]>
+        <![CDATA[Test description: Response has userId.]]>
+        <![CDATA[Error message: expected {} to have property 'userId'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected {} to have property 'userId'
+   at Object.eval sandbox-script.js:2:1).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth / Register Receiver - Success" id="19e96b78-8828-4fef-be22-fef018b76c0b" timestamp="2026-04-05T22:41:22.992Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+]]></system-err>
+    <testcase name="Status is 201" time="0.000" classname="AuthRegisterReceiverSuccess">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Auth / Register Receiver - Success.]]>
+        <![CDATA[Test description: Status is 201.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response has userId" time="0.000" classname="AuthRegisterReceiverSuccess">
+      <failure type="AssertionFailure" message="expected undefined to be a string">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Auth / Register Receiver - Success.]]>
+        <![CDATA[Test description: Response has userId.]]>
+        <![CDATA[Error message: expected undefined to be a string.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a string
+   at Object.eval sandbox-script.js:2:2).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth / Register Intruder - Success" id="caeaccda-5d79-4b4c-9231-fe93c0900a37" timestamp="2026-04-05T22:41:22.992Z" tests="1" failures="1" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+]]></system-err>
+    <testcase name="Status is 201" time="0.000" classname="AuthRegisterIntruderSuccess">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Auth / Register Intruder - Success.]]>
+        <![CDATA[Test description: Status is 201.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:3).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth / Register Duplicate Donor - Conflict" id="b62bb56f-ece1-485e-a258-2d398612e9d8" timestamp="2026-04-05T22:41:22.992Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+]]></system-err>
+    <testcase name="Status is 400" time="0.000" classname="AuthRegisterDuplicateDonorConflict">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Auth / Register Duplicate Donor - Conflict.]]>
+        <![CDATA[Test description: Status is 400.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:4).]]>
+      </failure>
+    </testcase>
+    <testcase name="Has conflict error message" time="0.000" classname="AuthRegisterDuplicateDonorConflict">
+      <failure type="AssertionFailure" message="expected {} to have property 'error'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Auth / Register Duplicate Donor - Conflict.]]>
+        <![CDATA[Test description: Has conflict error message.]]>
+        <![CDATA[Error message: expected {} to have property 'error'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected {} to have property 'error'
+   at Object.eval sandbox-script.js:2:4).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth / Login Donor - Success" id="88bf8639-818b-4fe0-a96a-395e2a03fa78" timestamp="2026-04-05T22:41:22.992Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+testScriptError: Cannot read properties of undefined (reading 'id')
+---
+]]></system-err>
+    <testcase name="Status is 200" time="0.000" classname="AuthLoginDonorSuccess">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Auth / Login Donor - Success.]]>
+        <![CDATA[Test description: Status is 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:5).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth / Login Receiver - Success" id="f5eb655d-e57e-44b8-84d7-cb21528c0a66" timestamp="2026-04-05T22:41:22.992Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+testScriptError: Cannot read properties of undefined (reading 'id')
+---
+]]></system-err>
+    <testcase name="Status is 200" time="0.000" classname="AuthLoginReceiverSuccess">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Auth / Login Receiver - Success.]]>
+        <![CDATA[Test description: Status is 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:6).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth / Login Intruder - Success" id="e90aa07a-c711-48e1-ac4b-2ba6f38f80f1" timestamp="2026-04-05T22:41:22.992Z" tests="1" failures="1" errors="2" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+testScriptError: Cannot read properties of undefined (reading 'id')
+---
+]]></system-err>
+    <testcase name="Status is 200" time="0.000" classname="AuthLoginIntruderSuccess">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Auth / Login Intruder - Success.]]>
+        <![CDATA[Test description: Status is 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:7).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Auth / Login - Wrong Password" id="a6639a04-dfd7-4fd0-9db0-f4293a3bcd0f" timestamp="2026-04-05T22:41:22.992Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+]]></system-err>
+    <testcase name="Status is 401" time="0.000" classname="AuthLoginWrongPassword">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Auth / Login - Wrong Password.]]>
+        <![CDATA[Test description: Status is 401.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:8).]]>
+      </failure>
+    </testcase>
+    <testcase name="Error exists" time="0.000" classname="AuthLoginWrongPassword">
+      <failure type="AssertionFailure" message="expected {} to have property 'error'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Auth / Login - Wrong Password.]]>
+        <![CDATA[Test description: Error exists.]]>
+        <![CDATA[Error message: expected {} to have property 'error'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected {} to have property 'error'
+   at Object.eval sandbox-script.js:2:8).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Posts / Get Available Posts - Public" id="04fa2773-e613-46cb-8a4e-2b4dcc2d8931" timestamp="2026-04-05T22:41:22.992Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+]]></system-err>
+    <testcase name="Status is 200" time="0.000" classname="PostsGetAvailablePostsPublic">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Posts / Get Available Posts - Public.]]>
+        <![CDATA[Test description: Status is 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:9).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response is array" time="0.000" classname="PostsGetAvailablePostsPublic">
+      <failure type="AssertionFailure" message="expected {} to be an array">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Posts / Get Available Posts - Public.]]>
+        <![CDATA[Test description: Response is array.]]>
+        <![CDATA[Error message: expected {} to be an array.]]>
+        <![CDATA[Stacktrace: AssertionError: expected {} to be an array
+   at Object.eval sandbox-script.js:2:9).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Posts / Create Post - Unauthorized" id="77ea0635-7b8a-4640-a53c-14a73424fb98" timestamp="2026-04-05T22:41:22.992Z" tests="1" failures="1" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+]]></system-err>
+    <testcase name="Status is 401" time="0.000" classname="PostsCreatePostUnauthorized">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Posts / Create Post - Unauthorized.]]>
+        <![CDATA[Test description: Status is 401.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:10).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Posts / Create Post - Success" id="60aa0421-858f-4146-98a3-8268492ef21e" timestamp="2026-04-05T22:41:22.992Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+]]></system-err>
+    <testcase name="Status is 200" time="0.000" classname="PostsCreatePostSuccess">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Posts / Create Post - Success.]]>
+        <![CDATA[Test description: Status is 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:11).]]>
+      </failure>
+    </testcase>
+    <testcase name="Post schema basic" time="0.000" classname="PostsCreatePostSuccess">
+      <failure type="AssertionFailure" message="expected {} to have property 'id'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Posts / Create Post - Success.]]>
+        <![CDATA[Test description: Post schema basic.]]>
+        <![CDATA[Error message: expected {} to have property 'id'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected {} to have property 'id'
+   at Object.eval sandbox-script.js:2:11).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Posts / Create Post - Invalid Payload" id="bd2267c1-6c0f-423c-97fc-90814d05e508" timestamp="2026-04-05T22:41:22.992Z" tests="1" failures="1" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+]]></system-err>
+    <testcase name="Status is 400" time="0.000" classname="PostsCreatePostInvalidPayload">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Posts / Create Post - Invalid Payload.]]>
+        <![CDATA[Test description: Status is 400.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:12).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Posts / Get Post By ID - Success" id="3bbb69dc-4112-49ae-ab10-00db97b8baef" timestamp="2026-04-05T22:41:22.992Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+]]></system-err>
+    <testcase name="Status is 200" time="0.000" classname="PostsGetPostByIdSuccess">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Posts / Get Post By ID - Success.]]>
+        <![CDATA[Test description: Status is 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:13).]]>
+      </failure>
+    </testcase>
+    <testcase name="Post id matches" time="0.000" classname="PostsGetPostByIdSuccess">
+      <failure type="AssertionFailure" message="expected undefined to deeply equal null">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Posts / Get Post By ID - Success.]]>
+        <![CDATA[Test description: Post id matches.]]>
+        <![CDATA[Error message: expected undefined to deeply equal null.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to deeply equal null
+   at Object.eval sandbox-script.js:2:13).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Donations / Create Donation - Unauthorized" id="6b049fe4-1b2f-450b-9c85-44d97ae42730" timestamp="2026-04-05T22:41:22.992Z" tests="1" failures="1" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+]]></system-err>
+    <testcase name="Status is 401" time="0.000" classname="DonationsCreateDonationUnauthorized">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Donations / Create Donation - Unauthorized.]]>
+        <![CDATA[Test description: Status is 401.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:14).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Donations / Create Donation - Validation Fail (Delivery Missing Info)" id="7f46fa24-d931-4fc7-a0a9-38673af132e1" timestamp="2026-04-05T22:41:22.992Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+]]></system-err>
+    <testcase name="Status is 400" time="0.000" classname="DonationsCreateDonationValidationFailDeliveryMissingInfo">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Donations / Create Donation - Validation Fail (Delivery Missing Info).]]>
+        <![CDATA[Test description: Status is 400.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:15).]]>
+      </failure>
+    </testcase>
+    <testcase name="Field errors exist" time="0.000" classname="DonationsCreateDonationValidationFailDeliveryMissingInfo">
+      <failure type="AssertionFailure" message="expected {} to have property 'fieldErrors'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Donations / Create Donation - Validation Fail (Delivery Missing Info).]]>
+        <![CDATA[Test description: Field errors exist.]]>
+        <![CDATA[Error message: expected {} to have property 'fieldErrors'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected {} to have property 'fieldErrors'
+   at Object.eval sandbox-script.js:2:15).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Donations / Create Donation - Success" id="010b5677-60f2-422d-9376-75d0fd1deb6f" timestamp="2026-04-05T22:41:22.992Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+]]></system-err>
+    <testcase name="Status is 200" time="0.000" classname="DonationsCreateDonationSuccess">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Donations / Create Donation - Success.]]>
+        <![CDATA[Test description: Status is 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:16).]]>
+      </failure>
+    </testcase>
+    <testcase name="Donation schema basic" time="0.000" classname="DonationsCreateDonationSuccess">
+      <failure type="AssertionFailure" message="expected {} to have property 'id'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Donations / Create Donation - Success.]]>
+        <![CDATA[Test description: Donation schema basic.]]>
+        <![CDATA[Error message: expected {} to have property 'id'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected {} to have property 'id'
+   at Object.eval sandbox-script.js:2:16).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Donations / Create Donation - Conflict/Oversell" id="0cbeda8c-c3b9-4a5a-981e-48ad9021bcd7" timestamp="2026-04-05T22:41:22.992Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+]]></system-err>
+    <testcase name="Status is 400" time="0.000" classname="DonationsCreateDonationConflictOversell">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Donations / Create Donation - Conflict/Oversell.]]>
+        <![CDATA[Test description: Status is 400.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:17).]]>
+      </failure>
+    </testcase>
+    <testcase name="Conflict message exists" time="0.000" classname="DonationsCreateDonationConflictOversell">
+      <failure type="AssertionFailure" message="expected {} to have property 'error'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Donations / Create Donation - Conflict/Oversell.]]>
+        <![CDATA[Test description: Conflict message exists.]]>
+        <![CDATA[Error message: expected {} to have property 'error'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected {} to have property 'error'
+   at Object.eval sandbox-script.js:2:17).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Donations / Get Donation Detail - Forbidden for Intruder" id="696add52-8b29-416c-910d-f2dcf022c32e" timestamp="2026-04-05T22:41:22.992Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+]]></system-err>
+    <testcase name="Status is 403" time="0.000" classname="DonationsGetDonationDetailForbiddenForIntruder">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Donations / Get Donation Detail - Forbidden for Intruder.]]>
+        <![CDATA[Test description: Status is 403.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:18).]]>
+      </failure>
+    </testcase>
+    <testcase name="Forbidden error exists" time="0.000" classname="DonationsGetDonationDetailForbiddenForIntruder">
+      <failure type="AssertionFailure" message="expected undefined to deeply equal 'Forbidden'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Donations / Get Donation Detail - Forbidden for Intruder.]]>
+        <![CDATA[Test description: Forbidden error exists.]]>
+        <![CDATA[Error message: expected undefined to deeply equal 'Forbidden'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to deeply equal 'Forbidden'
+   at Object.eval sandbox-script.js:2:18).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Donations / Verify QR - Receiver Role Should Fail" id="5ebe9a04-9b96-4c06-b4d5-c76c1ffb1f84" timestamp="2026-04-05T22:41:22.992Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+]]></system-err>
+    <testcase name="Status is 400" time="0.000" classname="DonationsVerifyQrReceiverRoleShouldFail">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Donations / Verify QR - Receiver Role Should Fail.]]>
+        <![CDATA[Test description: Status is 400.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:19).]]>
+      </failure>
+    </testcase>
+    <testcase name="Permission error exists" time="0.000" classname="DonationsVerifyQrReceiverRoleShouldFail">
+      <failure type="AssertionFailure" message="expected {} to have property 'error'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Donations / Verify QR - Receiver Role Should Fail.]]>
+        <![CDATA[Test description: Permission error exists.]]>
+        <![CDATA[Error message: expected {} to have property 'error'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected {} to have property 'error'
+   at Object.eval sandbox-script.js:2:19).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Donations / Verify QR - Donor Success" id="07e2824c-3116-47d6-bf2a-98e4755a5bcc" timestamp="2026-04-05T22:41:22.992Z" tests="2" failures="2" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+
+---
+]]></system-err>
+    <testcase name="Status is 200" time="0.000" classname="DonationsVerifyQrDonorSuccess">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Donations / Verify QR - Donor Success.]]>
+        <![CDATA[Test description: Status is 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:20).]]>
+      </failure>
+    </testcase>
+    <testcase name="Donation marked completed" time="0.000" classname="DonationsVerifyQrDonorSuccess">
+      <failure type="AssertionFailure" message="expected undefined to deeply equal 'COMPLETED'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 9efb6eb4-c212-4aa6-b865-c8ff3d31fd6d.]]>
+        <![CDATA[Collection name: Food Rescue API Integration.]]>
+        <![CDATA[Request name: Donations / Verify QR - Donor Success.]]>
+        <![CDATA[Test description: Donation marked completed.]]>
+        <![CDATA[Error message: expected undefined to deeply equal 'COMPLETED'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to deeply equal 'COMPLETED'
+   at Object.eval sandbox-script.js:2:20).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+</testsuites>

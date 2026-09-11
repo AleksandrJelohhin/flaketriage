@@ -1,0 +1,1053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="63" failures="39" errors="0" time="114.963">
+  <testsuite name="my-progress-bar" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:12" time="8.119" tests="1">
+    <testcase classname="my-progress-bar renders" name="my-progress-bar renders" time="0.161">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;toString&apos;)
+    at MyProgressBar.toString [as render] (D:\Sanjeet\StencilJS\stenciljs-components\src\components\my-progress-bar\my-progress-bar.tsx:13:61)
+    at callRender (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\internal\testing\index.js:1925:39)
+    at updateComponent (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\internal\testing\index.js:1877:5)
+    at D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\internal\testing\index.js:1855:38
+    at enqueue (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\internal\testing\index.js:1860:6)
+    at dispatchHooks (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\internal\testing\index.js:1855:10)
+    at dispatch (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\internal\testing\index.js:1819:26)
+    at drain (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\internal\testing\index.js:228:28)
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="test-counter" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:12" time="8.179" tests="1">
+    <testcase classname="test-counter renders" name="test-counter renders" time="0.211">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  -  1
++ Received  + 15
+
+  &lt;test-counter&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;div&gt;
++       Test Counter
++     &lt;/div&gt;
++     &lt;div&gt;
++       &lt;slot&gt;
++         Count:
++       &lt;/slot&gt;
++       0
++     &lt;/div&gt;
++     &lt;test-button buttonid=&quot;add-button&quot; color=&quot;green&quot;&gt;
++       Add
++     &lt;/test-button&gt;
++     &lt;test-button buttonid=&quot;subtract-button&quot; color=&quot;red&quot;&gt;
++       Subtract
++     &lt;/test-button&gt;
+    &lt;/template&gt;
+  &lt;/test-counter&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\test-counter\test\test-counter.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="app-profile" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:12" time="8.242" tests="1">
+    <testcase classname="app-profile renders" name="app-profile renders" time="0.151">
+      <failure>TypeError: window.atob is not a function
+    at atob (D:\Sanjeet\StencilJS\stenciljs-components\src\utils\utils.ts:11:26)
+    at new AppProfile (D:\Sanjeet\StencilJS\stenciljs-components\src\components\app-profile\app-profile.tsx:18:39)
+    at initializeComponent (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\internal\testing\index.js:2298:9)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="my-button" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:12" time="9.18" tests="1">
+    <testcase classname="my-button renders" name="my-button renders" time="1.084">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  -  1
++ Received  + 12
+
+  &lt;my-button&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;h1&gt;
++       My Button component
++     &lt;/h1&gt;
++     &lt;h1&gt;
++       0
++     &lt;/h1&gt;
++     &lt;slot name=&quot;choose&quot;&gt;&lt;/slot&gt;
++     &lt;h2 class=&quot;api data dynamic&quot;&gt;
++       loading...
++     &lt;/h2&gt;
++     &lt;slot&gt;&lt;/slot&gt;
++     &lt;button&gt;&lt;/button&gt;
+    &lt;/template&gt;
+  &lt;/my-button&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\my-button\test\my-button.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="combo-box" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:21" time="1.552" tests="1">
+    <testcase classname="combo-box renders" name="combo-box renders" time="0.063">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  - 1
++ Received  + 8
+
+  &lt;combo-box&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;div class=&quot;dropdown-list&quot;&gt;
++       &lt;label class=&quot;dropdown&quot;&gt;
++         &lt;input id=&quot;combo-input&quot; readonly=&quot;&quot; type=&quot;text&quot;&gt;
++       &lt;/label&gt;
++       &lt;ul class=&quot;ulClass&quot;&gt;
++         &lt;li&gt;&lt;/li&gt;
++       &lt;/ul&gt;
++     &lt;/div&gt;
+    &lt;/template&gt;
+  &lt;/combo-box&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\combo-box\test\combo-box.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="my-name" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:21" time="1.696" tests="1">
+    <testcase classname="my-name renders" name="my-name renders" time="0.078">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  - 0
++ Received  + 6
+
+  &lt;my-name&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+      &lt;slot&gt;&lt;/slot&gt;
++     &lt;h1&gt;
++       Hello, my name is . My State is 2
++     &lt;/h1&gt;
++     &lt;button&gt;
++       Test
++     &lt;/button&gt;
+    &lt;/template&gt;
+  &lt;/my-name&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\my-name\test\my-name.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="my-dashboard" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:21" time="1.614" tests="1">
+    <testcase classname="my-dashboard renders" name="my-dashboard renders" time="0.079">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  - 1
++ Received  + 9
+
+  &lt;my-dashboard&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;ion-app&gt;
++       &lt;ion-page&gt;
++         &lt;ion-router&gt;
++           &lt;ion-route component=&quot;app-home&quot; url=&quot;/&quot;&gt;&lt;/ion-route&gt;
++           &lt;ion-route component=&quot;app-profile&quot; url=&quot;/profile/:name&quot;&gt;&lt;/ion-route&gt;
++         &lt;/ion-router&gt;
++         &lt;ion-nav&gt;&lt;/ion-nav&gt;
++       &lt;/ion-page&gt;
++     &lt;/ion-app&gt;
+    &lt;/template&gt;
+  &lt;/my-dashboard&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\my-dashboard\test\my-dashboard.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="test-button" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:21" time="2.027" tests="1">
+    <testcase classname="test-button renders" name="test-button renders" time="0.023">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  - 1
++ Received  + 7
+
+  &lt;test-button&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;h1&gt;
++       Test Button
++     &lt;/h1&gt;
++     &lt;button class=&quot;button-default&quot;&gt;
++       &lt;slot&gt;&lt;/slot&gt;
++     &lt;/button&gt;
++     &lt;div class=&quot;test-button&quot;&gt;&lt;/div&gt;
+    &lt;/template&gt;
+  &lt;/test-button&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\test-button\test\test-button.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="stop-watch" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:22" time="2.67" tests="1">
+    <testcase classname="stop-watch renders" name="stop-watch renders" time="0.066">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  -  1
++ Received  + 17
+
+  &lt;stop-watch&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;div class=&quot;watch-wrapper&quot;&gt;
++       &lt;div class=&quot;watch&quot;&gt;
++         &lt;div class=&quot;unit&quot;&gt;&lt;/div&gt;
++         &lt;div class=&quot;sep&quot;&gt;
++           :
++         &lt;/div&gt;
++         &lt;div class=&quot;unit&quot;&gt;&lt;/div&gt;
++         &lt;div class=&quot;sep&quot;&gt;
++           :
++         &lt;/div&gt;
++         &lt;div class=&quot;unit&quot;&gt;&lt;/div&gt;
++         &lt;div class=&quot;sep&quot;&gt;
++           :
++         &lt;/div&gt;
++         &lt;div class=&quot;unit&quot;&gt;&lt;/div&gt;
++       &lt;/div&gt;
++     &lt;/div&gt;
+    &lt;/template&gt;
+  &lt;/stop-watch&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\stop-watch\test\stop-watch.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="nice-alert" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:22" time="2.765" tests="1">
+    <testcase classname="nice-alert renders" name="nice-alert renders" time="0.031">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  -  1
++ Received  + 11
+
+  &lt;nice-alert&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;div&gt;
++       &lt;div class=&quot;message&quot;&gt;&lt;/div&gt;
++       &lt;div class=&quot;actions&quot;&gt;
++         &lt;button&gt;
++           Yes
++         &lt;/button&gt;
++         &lt;button&gt;
++           No
++         &lt;/button&gt;
++       &lt;/div&gt;
++     &lt;/div&gt;
+    &lt;/template&gt;
+  &lt;/nice-alert&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\nice-alert\test\nice-alert.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="my-card" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:22" time="3.744" tests="1">
+    <testcase classname="my-card renders" name="my-card renders" time="0.836">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  -  1
++ Received  + 23
+
+  &lt;my-card&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;div class=&quot;my-card-wrapper&quot;&gt;
++       &lt;h1&gt;
++         My Card
++       &lt;/h1&gt;
++       &lt;h1&gt;
++         Hi, I am
++       &lt;/h1&gt;
++       &lt;h5&gt;
++         loading...
++       &lt;/h5&gt;
++       &lt;button class=&quot;btn-stencil&quot;&gt;
++         Stencil
++       &lt;/button&gt;
++       &lt;button class=&quot;btn-react&quot;&gt;
++         React
++       &lt;/button&gt;
++       &lt;h&gt;&lt;/h&gt;
++       &lt;h3&gt;
++         Two way data binding in stencil
++       &lt;/h3&gt;
++       &lt;input class=&quot;my-input-textbox&quot; type=&quot;text&quot;&gt;
++       this is child one
++     &lt;/div&gt;
+    &lt;/template&gt;
+  &lt;/my-card&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\my-card\test\my-card.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="custom-text-input" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:24" time="4.442" tests="1">
+    <testcase classname="custom-text-input renders" name="custom-text-input renders" time="0.133">
+      <failure>TypeError: this.internals.setFormValue is not a function
+    at CustomTextInput.setFormValue [as __componentWillLoad] (D:\Sanjeet\StencilJS\stenciljs-components\src\components\custom-text-input\custom-text-input.tsx:32:20)
+    at CustomTextInput.Cstr.componentWillLoad (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10885:28)
+    at safeCall (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\internal\testing\index.js:2046:30)
+    at dispatchHooks (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\internal\testing\index.js:1842:22)
+    at dispatch (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\internal\testing\index.js:1819:26)
+    at drain (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\internal\testing\index.js:228:28)
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="slider-component" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:25" time="5.623" tests="1">
+    <testcase classname="slider-component renders" name="slider-component renders" time="0.035">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  - 1
++ Received  + 1
+
+  &lt;slider-component&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;input max=&quot;10&quot; min=&quot;0&quot; name=&quot;points&quot; type=&quot;range&quot;&gt;
+    &lt;/template&gt;
+  &lt;/slider-component&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\slider-component\test\slider-component.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="search-world" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:25" time="5.637" tests="1">
+    <testcase classname="search-world renders" name="search-world renders" time="0.274">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  -  1
++ Received  + 13
+
+  &lt;search-world&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;div class=&quot;main-search-div&quot;&gt;
++       &lt;h1&gt;
++         Search World
++       &lt;/h1&gt;
++       &lt;input class=&quot;my-input-textbox&quot; type=&quot;text&quot;&gt;
++       &lt;button class=&quot;btn-react&quot;&gt;
++         Search it!
++       &lt;/button&gt;
++       &lt;hr&gt;
++       &lt;br&gt;
++       &lt;br&gt;
++       &lt;table id=&quot;api-table&quot;&gt;&lt;/table&gt;
++     &lt;/div&gt;
+    &lt;/template&gt;
+  &lt;/search-world&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\search-world\test\search-world.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="custom-form" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:28" time="7.093" tests="1">
+    <testcase classname="custom-form renders" name="custom-form renders" time="0.168">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  -  1
++ Received  + 42
+
+  &lt;custom-form&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;form&gt;
++       &lt;h1&gt;
++         Custom form
++       &lt;/h1&gt;
++       &lt;combo-box allowinput=&quot;&quot; label=&quot;Select/Type:&quot;&gt;&lt;/combo-box&gt;
++       &lt;custom-text-input form-associated=&quot;&quot;&gt;&lt;/custom-text-input&gt;
++       &lt;label&gt;
++         Email:
++         &lt;input type=&quot;email&quot;&gt;
++       &lt;/label&gt;
++       &lt;br&gt;
++       &lt;label&gt;
++         Phone:
++         &lt;input type=&quot;phone&quot;&gt;
++       &lt;/label&gt;
++       &lt;br&gt;
++       &lt;select&gt;
++         &lt;option value=&quot;volvo&quot;&gt;
++           Volvo
++         &lt;/option&gt;
++         &lt;option value=&quot;saab&quot;&gt;
++           Saab
++         &lt;/option&gt;
++         &lt;option value=&quot;mercedes&quot;&gt;
++           Mercedes
++         &lt;/option&gt;
++         &lt;option value=&quot;audi&quot;&gt;
++           Audi
++         &lt;/option&gt;
++       &lt;/select&gt;
++       &lt;br&gt;
++       &lt;select&gt;
++         &lt;option value=&quot;101&quot;&gt;
++           Mark
++         &lt;/option&gt;
++         &lt;option selected=&quot;&quot; value=&quot;102&quot;&gt;
++           Smith
++         &lt;/option&gt;
++       &lt;/select&gt;
++       &lt;br&gt;
++       &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
++     &lt;/form&gt;
+    &lt;/template&gt;
+  &lt;/custom-form&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\custom-form\test\custom-form.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="parent-component" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:31" time="4.724" tests="1">
+    <testcase classname="parent-component renders" name="parent-component renders" time="0.331">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  - 1
++ Received  + 5
+
+  &lt;parent-component&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;label&gt;
++       Parent Component:
++       &lt;input type=&quot;text&quot;&gt;
++     &lt;/label&gt;
++     &lt;embed-component&gt;&lt;/embed-component&gt;
+    &lt;/template&gt;
+  &lt;/parent-component&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\parent-component\test\parent-component.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="embed-component" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:30" time="5.35" tests="1">
+    <testcase classname="embed-component renders" name="embed-component renders" time="0.34">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  - 1
++ Received  + 7
+
+  &lt;embed-component&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;div&gt;
++       Child Component favorite color is blue
++     &lt;/div&gt;
++     &lt;label&gt;
++       Embeded Component:
++       &lt;input type=&quot;text&quot;&gt;
++     &lt;/label&gt;
+    &lt;/template&gt;
+  &lt;/embed-component&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\embed-component\test\embed-component.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="app-home" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:31" time="4.642" tests="1">
+    <testcase classname="app-home renders" name="app-home renders" time="0.207">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  -  1
++ Received  + 24
+
+  &lt;app-home&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;ion-header&gt;
++       &lt;ion-toolbar color=&quot;primary&quot;&gt;
++         &lt;ion-title&gt;
++           Ionic PWA Toolkit
++         &lt;/ion-title&gt;
++       &lt;/ion-toolbar&gt;
++     &lt;/ion-header&gt;
++     &lt;div&gt;
++       &lt;p&gt;
++         &lt;users-cards&gt;&lt;/users-cards&gt;
++         &lt;hr&gt;
++         &lt;users-cards columns=&quot;4&quot;&gt;&lt;/users-cards&gt;
++       &lt;/p&gt;
++       &lt;p&gt;
++         Welcome to the Ionic PWA Toolkit. You can use this starter to build entire PWAs all with web components using Stencil and ionic/core! Check out the readme for everything that comes in this starter out of the box and Check out our docs on
++         &lt;a href=&quot;https://stenciljs.com&quot;&gt;
++           stenciljs.com
++         &lt;/a&gt;
++         to get started.
++       &lt;/p&gt;
++       &lt;ion-button href=&quot;/profile/stencil&quot;&gt;
++         Profile page
++       &lt;/ion-button&gt;
++     &lt;/div&gt;
+    &lt;/template&gt;
+  &lt;/app-home&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\app-home\test\app-home.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="complex-ionic-form" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:36" time="2.22" tests="1">
+    <testcase classname="complex-ionic-form renders" name="complex-ionic-form renders" time="0.051">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  -  1
++ Received  + 57
+
+  &lt;complex-ionic-form&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;div&gt;
++       &lt;form&gt;
++         &lt;h1&gt;
++           Complex form built entirely with Ionic components
++         &lt;/h1&gt;
++         &lt;ion-item&gt;
++           &lt;ion-label position=&quot;stacked&quot;&gt;
++             Name
++           &lt;/ion-label&gt;
++           &lt;ion-input required=&quot;&quot; value=&quot;&quot;&gt;&lt;/ion-input&gt;
++         &lt;/ion-item&gt;
++         &lt;ion-item&gt;
++           &lt;ion-label position=&quot;stacked&quot;&gt;
++             Email
++           &lt;/ion-label&gt;
++           &lt;ion-input required=&quot;&quot; type=&quot;email&quot; value=&quot;&quot;&gt;&lt;/ion-input&gt;
++         &lt;/ion-item&gt;
++         &lt;ion-item&gt;
++           &lt;ion-label position=&quot;stacked&quot;&gt;
++             Password
++           &lt;/ion-label&gt;
++           &lt;ion-input required=&quot;&quot; type=&quot;password&quot; value=&quot;&quot;&gt;&lt;/ion-input&gt;
++         &lt;/ion-item&gt;
++         &lt;ion-item&gt;
++           &lt;ion-label position=&quot;stacked&quot;&gt;
++             Confirm Password
++           &lt;/ion-label&gt;
++           &lt;ion-input required=&quot;&quot; type=&quot;password&quot; value=&quot;&quot;&gt;&lt;/ion-input&gt;
++         &lt;/ion-item&gt;
++         &lt;ion-item&gt;
++           &lt;ion-label&gt;
++             Options
++           &lt;/ion-label&gt;
++           &lt;ion-select value=&quot;&quot;&gt;
++             &lt;ion-select-option value=&quot;option1&quot;&gt;
++               Option 1
++             &lt;/ion-select-option&gt;
++             &lt;ion-select-option value=&quot;option2&quot;&gt;
++               Option 2
++             &lt;/ion-select-option&gt;
++             &lt;ion-select-option value=&quot;option3&quot;&gt;
++               Option 3
++             &lt;/ion-select-option&gt;
++           &lt;/ion-select&gt;
++         &lt;/ion-item&gt;
++         &lt;ion-item&gt;
++           &lt;ion-label position=&quot;stacked&quot;&gt;
++             Comments
++           &lt;/ion-label&gt;
++           &lt;ion-textarea value=&quot;&quot;&gt;&lt;/ion-textarea&gt;
++         &lt;/ion-item&gt;
++         &lt;ion-button expand=&quot;full&quot; type=&quot;submit&quot;&gt;
++           Submit
++         &lt;/ion-button&gt;
++         &lt;ion-alert header=&quot;Alert&quot; message=&quot;&quot;&gt;&lt;/ion-alert&gt;
++       &lt;/form&gt;
++     &lt;/div&gt;
+    &lt;/template&gt;
+  &lt;/complex-ionic-form&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\complex-ionic-form\test\complex-ionic-form.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="embed-component" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:40:12" time="26.739" tests="1">
+    <testcase classname="embed-component renders" name="embed-component renders" time="18.722">
+    </testcase>
+  </testsuite>
+  <testsuite name="simple-form" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:42" time="1.746" tests="1">
+    <testcase classname="simple-form renders" name="simple-form renders" time="0.245">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  -  1
++ Received  + 73
+
+  &lt;simple-form&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;ion-app&gt;
++       &lt;ion-page class=&quot;show-page&quot;&gt;
++         &lt;ion-header&gt;
++           &lt;ion-toolbar color=&quot;primary&quot;&gt;
++             &lt;ion-title&gt;
++               Ionic PWA Simple Form Component
++             &lt;/ion-title&gt;
++           &lt;/ion-toolbar&gt;
++         &lt;/ion-header&gt;
++         &lt;h1&gt;
++           Simple Form built using Ionic components only
++         &lt;/h1&gt;
++         &lt;form&gt;
++           &lt;ion-item&gt;
++             &lt;ion-label position=&quot;floating&quot;&gt;
++               Name
++             &lt;/ion-label&gt;
++             &lt;ion-input required=&quot;&quot; type=&quot;text&quot; value=&quot;&quot;&gt;&lt;/ion-input&gt;
++           &lt;/ion-item&gt;
++           &lt;ion-item&gt;
++             &lt;ion-label position=&quot;floating&quot;&gt;
++               Email
++             &lt;/ion-label&gt;
++             &lt;ion-input required=&quot;&quot; type=&quot;email&quot; value=&quot;&quot;&gt;&lt;/ion-input&gt;
++           &lt;/ion-item&gt;
++           &lt;ion-button expand=&quot;full&quot; type=&quot;submit&quot;&gt;
++             Submit
++           &lt;/ion-button&gt;
++         &lt;/form&gt;
++         &lt;ion-card&gt;
++           &lt;ion-card-header&gt;
++             &lt;ion-card-title&gt;
++               My Stencil Component
++             &lt;/ion-card-title&gt;
++           &lt;/ion-card-header&gt;
++           &lt;ion-card-content&gt;
++             &lt;p&gt;
++               This is a Stencil component using Ionic under the hood!
++             &lt;/p&gt;
++             &lt;ion-button&gt;
++               Click Me!
++             &lt;/ion-button&gt;
++           &lt;/ion-card-content&gt;
++         &lt;/ion-card&gt;
++         &lt;p&gt;
++           Hello, World! I&apos;m
++         &lt;/p&gt;
++         &lt;p&gt;
++           these are my friends, and .
++         &lt;/p&gt;
++         &lt;p&gt;
++           &quot;Timer&quot;: 1730630443820
++         &lt;/p&gt;
++         &lt;p class=&quot;app-profile&quot;&gt;
++           &lt;p&gt;
++             My name was passed in through a route param!
++           &lt;/p&gt;
++         &lt;/p&gt;
++         &lt;ion-button&gt;
++           Profile page
++         &lt;/ion-button&gt;
++         &lt;ion-list&gt;
++           &lt;ion-item&gt;
++             &lt;ion-label&gt;
++               I&apos;m an example text...
++             &lt;/ion-label&gt;
++             &lt;ion-button&gt;
++               Example button
++             &lt;/ion-button&gt;
++           &lt;/ion-item&gt;
++         &lt;/ion-list&gt;
++       &lt;/ion-page&gt;
++     &lt;/ion-app&gt;
+    &lt;/template&gt;
+  &lt;/simple-form&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\simple-form\test\simple-form.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="my-component" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:12" time="31.156" tests="2">
+    <testcase classname="my-component renders" name="my-component renders" time="18.324">
+    </testcase>
+    <testcase classname="my-component renders changes to the name data" name="my-component renders changes to the name data" time="4.343">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;Hello, World! I&apos;m James&quot;
+Received: &quot;Hello, World! I&apos;m &quot;
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\my-component\my-component.e2e.ts:22:33)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="my-progress-ring" errors="0" failures="2" skipped="0" timestamp="2024-11-03T10:40:12" time="34.488" tests="2">
+    <testcase classname="my-progress-ring renders" name="my-progress-ring renders" time="22.889">
+      <failure>Error: App did not load in allowed time. Please ensure the content loads a stencil application.
+    at waitForStencil (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10535:11)
+    at e2eSetContent (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10528:3)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\my-progress-ring\test\my-progress-ring.e2e.ts:6:5)</failure>
+    </testcase>
+    <testcase classname="my-progress-ring should render textContent" name="my-progress-ring should render textContent" time="2.842">
+      <failure>TypeError: Cannot read properties of null (reading &apos;textContent&apos;)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\my-progress-ring\test\my-progress-ring.e2e.ts:15:20)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="lazy-img" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:42" time="7.161" tests="1">
+    <testcase classname="lazy-img renders" name="lazy-img renders" time="0.141">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  - 1
++ Received  + 1
+
+  &lt;lazy-img&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;img&gt;
+    &lt;/template&gt;
+  &lt;/lazy-img&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\lazy-img\test\lazy-img.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="users-cards" errors="0" failures="3" skipped="0" timestamp="2024-11-03T10:40:45" time="5.868" tests="3">
+    <testcase classname="users-cards renders" name="users-cards renders" time="0.44">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  - 1
++ Received  + 1
+
+  &lt;users-cards&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;ion-grid class=&quot;ion-cards-container&quot;&gt;&lt;/ion-grid&gt;
+    &lt;/template&gt;
+  &lt;/users-cards&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\users-cards\test\users-cards.spec.tsx:40:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="rendering should work without parameters" name="rendering should work without parameters" time="0.284">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;map&apos;)
+    at newSpecPage (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10737:39)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\users-cards\test\users-cards.spec.tsx:70:22)
+    at Promise.then.completed (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\run.js:121:9)
+    at run (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="rendering should work with parameters" name="rendering should work with parameters" time="0.038">
+      <failure>TypeError: Cannot read properties of undefined (reading &apos;map&apos;)
+    at newSpecPage (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10737:39)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\users-cards\test\users-cards.spec.tsx:82:22)
+    at Promise.then.completed (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\run.js:121:9)
+    at run (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="stop-watch-box" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:42" time="19.948" tests="1">
+    <testcase classname="stop-watch-box renders" name="stop-watch-box renders" time="0.043">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  -  1
++ Received  + 16
+
+  &lt;stop-watch-box&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;div class=&quot;watch-box&quot;&gt;
++       &lt;div class=&quot;watch-container&quot;&gt;
++         &lt;stop-watch hours=&quot;00&quot; milliseconds=&quot;00&quot; minutes=&quot;00&quot; seconds=&quot;00&quot;&gt;&lt;/stop-watch&gt;
++       &lt;/div&gt;
++       &lt;div class=&quot;actions-container&quot;&gt;
++         &lt;button&gt;
++           Start
++         &lt;/button&gt;
++         &lt;button disabled=&quot;&quot;&gt;
++           Stop
++         &lt;/button&gt;
++         &lt;button&gt;
++           Clear
++         &lt;/button&gt;
++       &lt;/div&gt;
++     &lt;/div&gt;
+    &lt;/template&gt;
+  &lt;/stop-watch-box&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\stop-watch-box\test\stop-watch-box.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="slider-component" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:51" time="10.951" tests="1">
+    <testcase classname="slider-component renders" name="slider-component renders" time="8.363">
+      <failure>Error: App did not load in allowed time. Please ensure the content loads a stencil application.
+    at waitForStencil (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10535:11)
+    at e2eSetContent (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10528:3)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\slider-component\test\slider-component.e2e.ts:6:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="lazy-img" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:40:44" time="18.953" tests="1">
+    <testcase classname="lazy-img renders" name="lazy-img renders" time="5.337">
+    </testcase>
+  </testsuite>
+  <testsuite name="my-card" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:42" time="20.548" tests="1">
+    <testcase classname="my-card renders" name="my-card renders" time="6.413">
+      <failure>Error: App did not load in allowed time. Please ensure the content loads a stencil application.
+    at waitForStencil (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10535:11)
+    at e2eSetContent (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10528:3)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\my-card\test\my-card.e2e.ts:6:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="my-payment-gateway" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:49" time="13.854" tests="1">
+    <testcase classname="my-payment-gateway renders" name="my-payment-gateway renders" time="10.794">
+      <failure>Error: App did not load in allowed time. Please ensure the content loads a stencil application.
+    at waitForStencil (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10535:11)
+    at e2eSetContent (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10528:3)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\my-payment-gateway\test\my-payment-gateway.e2e.ts:6:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="test-counter" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:40:45" time="18.556" tests="1">
+    <testcase classname="test-counter renders" name="test-counter renders" time="4.324">
+    </testcase>
+  </testsuite>
+  <testsuite name="search-world" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:40:47" time="17.015" tests="1">
+    <testcase classname="search-world renders" name="search-world renders" time="5.945">
+    </testcase>
+  </testsuite>
+  <testsuite name="my-rich-text-editor" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:41:03" time="4.592" tests="1">
+    <testcase classname="my-rich-text-editor renders" name="my-rich-text-editor renders" time="2.816">
+    </testcase>
+  </testsuite>
+  <testsuite name="test-button" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:41:03" time="5.948" tests="1">
+    <testcase classname="test-button renders" name="test-button renders" time="1.144">
+    </testcase>
+  </testsuite>
+  <testsuite name="stop-watch" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:41:03" time="6.122" tests="1">
+    <testcase classname="stop-watch renders" name="stop-watch renders" time="0.837">
+    </testcase>
+  </testsuite>
+  <testsuite name="stop-watch-box" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:41:02" time="7.062" tests="1">
+    <testcase classname="stop-watch-box renders" name="stop-watch-box renders" time="5.399">
+    </testcase>
+  </testsuite>
+  <testsuite name="my-payment-gateway" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:40:12" time="57.336" tests="1">
+    <testcase classname="my-payment-gateway renders" name="my-payment-gateway renders" time="46.754">
+      <failure>Error: thrown: &quot;Exceeded timeout of 45000 ms for a test.
+Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout.&quot;
+    at D:\Sanjeet\StencilJS\stenciljs-components\src\components\my-payment-gateway\test\my-payment-gateway.spec.tsx:5:3
+    at _dispatchDescribe (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\index.js:91:26)
+    at describe (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\index.js:55:5)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\my-payment-gateway\test\my-payment-gateway.spec.tsx:4:1)
+    at Runtime._execModule (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-runtime\build\index.js:1439:24)
+    at Runtime._loadModule (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-runtime\build\index.js:1022:12)
+    at Runtime.requireModule (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-runtime\build\index.js:882:12)
+    at jestAdapter (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at runTestInternal (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\jest-runner\build\testWorker.js:106:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="custom-text-input" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:41:10" time="4.538" tests="1">
+    <testcase classname="custom-text-input renders" name="custom-text-input renders" time="1.909">
+    </testcase>
+  </testsuite>
+  <testsuite name="my-name" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:41:14" time="2.94" tests="1">
+    <testcase classname="my-name renders" name="my-name renders" time="0.959">
+    </testcase>
+  </testsuite>
+  <testsuite name="nice-alert" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:41:09" time="9.581" tests="1">
+    <testcase classname="nice-alert renders" name="nice-alert renders" time="2.794">
+    </testcase>
+  </testsuite>
+  <testsuite name="app-profile" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:41:02" time="19.482" tests="1">
+    <testcase classname="app-profile renders" name="app-profile renders" time="9.407">
+      <failure>Error: App did not load in allowed time. Please ensure the content loads a stencil application.
+    at waitForStencil (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10535:11)
+    at e2eSetContent (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10528:3)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\app-profile\test\app-profile.e2e.ts:6:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="app-home" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:41:08" time="13.772" tests="1">
+    <testcase classname="app-home renders" name="app-home renders" time="10.085">
+      <failure>Error: App did not load in allowed time. Please ensure the content loads a stencil application.
+    at waitForStencil (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10535:11)
+    at e2eSetContent (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10528:3)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\app-home\test\app-home.e2e.ts:6:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="parent-component" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:41:09" time="12.203" tests="1">
+    <testcase classname="parent-component renders" name="parent-component renders" time="8.525">
+      <failure>Error: App did not load in allowed time. Please ensure the content loads a stencil application.
+    at waitForStencil (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10535:11)
+    at e2eSetContent (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10528:3)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\parent-component\test\parent-component.e2e.ts:6:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="combo-box" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:41:04" time="17.586" tests="1">
+    <testcase classname="combo-box renders" name="combo-box renders" time="11.502">
+      <failure>Error: App did not load in allowed time. Please ensure the content loads a stencil application.
+    at waitForStencil (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10535:11)
+    at e2eSetContent (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10528:3)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\combo-box\test\combo-box.e2e.ts:6:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="custom-form" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:41:22" time="10.024" tests="1">
+    <testcase classname="custom-form renders" name="custom-form renders" time="4.91">
+    </testcase>
+  </testsuite>
+  <testsuite name="format" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:41:03" time="31.617" tests="4">
+    <testcase classname="format returns empty string for no names defined" name="format returns empty string for no names defined" time="0.045">
+    </testcase>
+    <testcase classname="format formats just first names" name="format formats just first names" time="0.002">
+    </testcase>
+    <testcase classname="format formats first and last names" name="format formats first and last names" time="0.007">
+    </testcase>
+    <testcase classname="format formats first, middle and last names" name="format formats first, middle and last names" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="complex-ionic-form" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:41:11" time="26.477" tests="1">
+    <testcase classname="complex-ionic-form renders" name="complex-ionic-form renders" time="6.909">
+    </testcase>
+  </testsuite>
+  <testsuite name="simple-form" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:41:18" time="18.828" tests="1">
+    <testcase classname="simple-form renders" name="simple-form renders" time="11.629">
+      <failure>Error: App did not load in allowed time. Please ensure the content loads a stencil application.
+    at waitForStencil (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10535:11)
+    at e2eSetContent (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10528:3)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\simple-form\test\simple-form.e2e.ts:6:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="my-dashboard" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:41:22" time="16.379" tests="1">
+    <testcase classname="my-dashboard renders" name="my-dashboard renders" time="10.868">
+      <failure>Error: App did not load in allowed time. Please ensure the content loads a stencil application.
+    at waitForStencil (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10535:11)
+    at e2eSetContent (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:10528:3)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\my-dashboard\test\my-dashboard.e2e.ts:6:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="my-component" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:41:34" time="8.585" tests="2">
+    <testcase classname="my-component renders" name="my-component renders" time="0.076">
+    </testcase>
+    <testcase classname="my-component renders with values" name="my-component renders with values" time="0.019">
+    </testcase>
+  </testsuite>
+  <testsuite name="my-button" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:41:22" time="24.091" tests="1">
+    <testcase classname="my-button renders" name="my-button renders" time="5.41">
+    </testcase>
+  </testsuite>
+  <testsuite name="my-progress-bar" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:41:17" time="29.343" tests="1">
+    <testcase classname="my-progress-bar renders" name="my-progress-bar renders" time="8.649">
+    </testcase>
+  </testsuite>
+  <testsuite name="my-pie-chart" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:41:22" time="25.647" tests="1">
+    <testcase classname="my-pie-chart renders" name="my-pie-chart renders" time="10.803">
+    </testcase>
+  </testsuite>
+  <testsuite name="my-rich-text-editor" errors="0" failures="1" skipped="0" timestamp="2024-11-03T10:41:37" time="11.956" tests="1">
+    <testcase classname="my-rich-text-editor renders" name="my-rich-text-editor renders" time="0.081">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  -  1
++ Received  + 12
+
+  &lt;my-rich-text-editor&gt;
+    &lt;template shadowrootmode=&quot;open&quot;&gt;
+-     &lt;slot&gt;&lt;/slot&gt;
++     &lt;div&gt;
++       &lt;h1&gt;
++         RTF editor
++       &lt;/h1&gt;
++       &lt;div id=&quot;editor-788&quot;&gt;&lt;/div&gt;
++       &lt;button&gt;
++         Get Content/Save
++       &lt;/button&gt;
++       &lt;button&gt;
++         Clear Content
++       &lt;/button&gt;
++     &lt;/div&gt;
+    &lt;/template&gt;
+  &lt;/my-rich-text-editor&gt;
+    at compareHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5558:24)
+    at Object.toEqualHtml3 (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\@stencil\core\testing\index.js:5514:10)
+    at __EXTERNAL_MATCHER_TRAP__ (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:325:30)
+    at Object.throwingMatcher [as toEqualHtml] (D:\Sanjeet\StencilJS\stenciljs-components\node_modules\expect\build\index.js:326:15)
+    at Object.&lt;anonymous&gt; (D:\Sanjeet\StencilJS\stenciljs-components\src\components\my-rich-text-editor\test\my-rich-text-editor.spec.tsx:10:23)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="users-cards" errors="0" failures="0" skipped="0" timestamp="2024-11-03T10:41:32" time="29.958" tests="1">
+    <testcase classname="users-cards renders" name="users-cards renders" time="3.716">
+    </testcase>
+  </testsuite>
+</testsuites>

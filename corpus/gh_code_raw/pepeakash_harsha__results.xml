@@ -1,0 +1,265 @@
+<testsuites id="" name="" tests="7" failures="4" skipped="0" errors="0" time="641.173273">
+<testsuite name="ClientApp.spec.ts" timestamp="2024-10-25T14:43:44.025Z" hostname="chromium" tests="1" failures="1" skipped="0" time="150.042" errors="0">
+<testcase name="@Webst Client App login" classname="ClientApp.spec.ts" time="150.042">
+<failure message="ClientApp.spec.ts:3:5 @Webst Client App login" type="FAILURE">
+<![CDATA[  [chromium] › ClientApp.spec.ts:3:5 › @Webst Client App login ─────────────────────────────────────
+
+    Test timeout of 50000ms exceeded.
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 50000ms exceeded.
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 50000ms exceeded.
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="ClientAppOtherWay.spec.ts" timestamp="2024-10-25T14:43:44.025Z" hostname="chromium" tests="1" failures="1" skipped="0" time="150.113" errors="0">
+<testcase name="@Webst Client App login" classname="ClientAppOtherWay.spec.ts" time="150.113">
+<failure message="ClientAppOtherWay.spec.ts:3:5 @Webst Client App login" type="FAILURE">
+<![CDATA[  [chromium] › ClientAppOtherWay.spec.ts:3:5 › @Webst Client App login ─────────────────────────────
+
+    Test timeout of 50000ms exceeded.
+
+    Error: locator.waitFor: Test timeout of 50000ms exceeded.
+    Call log:
+      - waiting for locator('.card-body b').first() to be visible
+
+
+      11 |   await page.getByRole("button", { name: "Login" }).click();
+      12 |   await page.waitForLoadState("networkidle");
+    > 13 |   await page.locator(".card-body b").first().waitFor();
+         |                                              ^
+      14 |
+      15 |   await page
+      16 |     .locator(".card-body")
+
+        at D:\Jaykirti\harsha_playwright\harsha\tests\ClientAppOtherWay.spec.ts:13:46
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 50000ms exceeded.
+
+    Error: locator.waitFor: Test timeout of 50000ms exceeded.
+    Call log:
+      - waiting for locator('.card-body b').first() to be visible
+
+
+      11 |   await page.getByRole("button", { name: "Login" }).click();
+      12 |   await page.waitForLoadState("networkidle");
+    > 13 |   await page.locator(".card-body b").first().waitFor();
+         |                                              ^
+      14 |
+      15 |   await page
+      16 |     .locator(".card-body")
+
+        at D:\Jaykirti\harsha_playwright\harsha\tests\ClientAppOtherWay.spec.ts:13:46
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 50000ms exceeded.
+
+    Error: locator.waitFor: Test timeout of 50000ms exceeded.
+    Call log:
+      - waiting for locator('.card-body b').first() to be visible
+
+
+      11 |   await page.getByRole("button", { name: "Login" }).click();
+      12 |   await page.waitForLoadState("networkidle");
+    > 13 |   await page.locator(".card-body b").first().waitFor();
+         |                                              ^
+      14 |
+      15 |   await page
+      16 |     .locator(".card-body")
+
+        at D:\Jaykirti\harsha_playwright\harsha\tests\ClientAppOtherWay.spec.ts:13:46
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="ClientAppPO.spec.js" timestamp="2024-10-25T14:43:44.025Z" hostname="chromium" tests="1" failures="1" skipped="0" time="150.151" errors="0">
+<testcase name="@Webs Client App login for ZARA COAT 3" classname="ClientAppPO.spec.js" time="150.151">
+<failure message="ClientAppPO.spec.js:15:3 @Webs Client App login for ZARA COAT 3" type="FAILURE">
+<![CDATA[  [chromium] › ClientAppPO.spec.js:15:3 › @Webs Client App login for ZARA COAT 3 ───────────────────
+
+    Test timeout of 50000ms exceeded.
+
+    Error: locator.click: Test timeout of 50000ms exceeded.
+    Call log:
+      - waiting for locator('[routerlink*=\'cart\']')
+
+
+       at ..\pageobjects\DashboardPage.js:30
+
+      28 |
+      29 |   async navigateToCart() {
+    > 30 |     await this.cart.click();
+         |                     ^
+      31 |   }
+      32 | }
+      33 | module.exports = { DashboardPage };
+
+        at DashboardPage.navigateToCart (D:\Jaykirti\harsha_playwright\harsha\pageobjects\DashboardPage.js:30:21)
+        at D:\Jaykirti\harsha_playwright\harsha\tests\ClientAppPO.spec.js:23:25
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 50000ms exceeded.
+
+    Error: locator.click: Test timeout of 50000ms exceeded.
+    Call log:
+      - waiting for locator('[routerlink*=\'cart\']')
+
+
+       at ..\pageobjects\DashboardPage.js:30
+
+      28 |
+      29 |   async navigateToCart() {
+    > 30 |     await this.cart.click();
+         |                     ^
+      31 |   }
+      32 | }
+      33 | module.exports = { DashboardPage };
+
+        at DashboardPage.navigateToCart (D:\Jaykirti\harsha_playwright\harsha\pageobjects\DashboardPage.js:30:21)
+        at D:\Jaykirti\harsha_playwright\harsha\tests\ClientAppPO.spec.js:23:25
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 50000ms exceeded.
+
+    Error: locator.click: Test timeout of 50000ms exceeded.
+    Call log:
+      - waiting for locator('[routerlink*=\'cart\']')
+
+
+       at ..\pageobjects\DashboardPage.js:30
+
+      28 |
+      29 |   async navigateToCart() {
+    > 30 |     await this.cart.click();
+         |                     ^
+      31 |   }
+      32 | }
+      33 | module.exports = { DashboardPage };
+
+        at DashboardPage.navigateToCart (D:\Jaykirti\harsha_playwright\harsha\pageobjects\DashboardPage.js:30:21)
+        at D:\Jaykirti\harsha_playwright\harsha\tests\ClientAppPO.spec.js:23:25
+]]>
+</failure>
+<system-out>
+<![CDATA[[]
+[]
+[]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ClientAppPO.spec.ts" timestamp="2024-10-25T14:43:44.025Z" hostname="chromium" tests="1" failures="1" skipped="0" time="150.133" errors="0">
+<testcase name="@Webs Client App login for ZARA COAT 3" classname="ClientAppPO.spec.ts" time="150.133">
+<failure message="ClientAppPO.spec.ts:15:7 @Webs Client App login for ZARA COAT 3" type="FAILURE">
+<![CDATA[  [chromium] › ClientAppPO.spec.ts:15:7 › @Webs Client App login for ZARA COAT 3 ───────────────────
+
+    Test timeout of 50000ms exceeded.
+
+    Error: locator.click: Test timeout of 50000ms exceeded.
+    Call log:
+      - waiting for locator('[routerlink*=\'cart\']')
+
+
+       at ..\pageobjects_ts\DashboardPage.ts:37
+
+      35 |
+      36 |   async navigateToCart() {
+    > 37 |     await this.cart.click();
+         |                     ^
+      38 |   }
+      39 | }
+      40 |
+
+        at DashboardPage.navigateToCart (D:\Jaykirti\harsha_playwright\harsha\pageobjects_ts\DashboardPage.ts:37:21)
+        at D:\Jaykirti\harsha_playwright\harsha\tests\ClientAppPO.spec.ts:24:25
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 50000ms exceeded.
+
+    Error: locator.click: Test timeout of 50000ms exceeded.
+    Call log:
+      - waiting for locator('[routerlink*=\'cart\']')
+
+
+       at ..\pageobjects_ts\DashboardPage.ts:37
+
+      35 |
+      36 |   async navigateToCart() {
+    > 37 |     await this.cart.click();
+         |                     ^
+      38 |   }
+      39 | }
+      40 |
+
+        at DashboardPage.navigateToCart (D:\Jaykirti\harsha_playwright\harsha\pageobjects_ts\DashboardPage.ts:37:21)
+        at D:\Jaykirti\harsha_playwright\harsha\tests\ClientAppPO.spec.ts:24:25
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 50000ms exceeded.
+
+    Error: locator.click: Test timeout of 50000ms exceeded.
+    Call log:
+      - waiting for locator('[routerlink*=\'cart\']')
+
+
+       at ..\pageobjects_ts\DashboardPage.ts:37
+
+      35 |
+      36 |   async navigateToCart() {
+    > 37 |     await this.cart.click();
+         |                     ^
+      38 |   }
+      39 | }
+      40 |
+
+        at DashboardPage.navigateToCart (D:\Jaykirti\harsha_playwright\harsha\pageobjects_ts\DashboardPage.ts:37:21)
+        at D:\Jaykirti\harsha_playwright\harsha\tests\ClientAppPO.spec.ts:24:25
+]]>
+</failure>
+<system-out>
+<![CDATA[[]
+[]
+[]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="MoreValidations.spec.ts" timestamp="2024-10-25T14:43:44.025Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.722" errors="0">
+<testcase name="@Web Popup validations" classname="MoreValidations.spec.ts" time="4.722">
+<system-out>
+<![CDATA[13,522
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="UIBasicstest.spec.ts" timestamp="2024-10-25T14:43:44.025Z" hostname="chromium" tests="2" failures="0" skipped="0" time="8.476" errors="0">
+<testcase name="@Web Browser context playwright test" classname="UIBasicstest.spec.ts" time="6.061">
+<system-out>
+<![CDATA[LoginPage Practise | Rahul Shetty Academy
+Incorrect username/password.
+iphone X
+Samsung Note 8
+[ [32m'iphone X'[39m, [32m'Samsung Note 8'[39m, [32m'Nokia Edge'[39m, [32m'Blackberry'[39m ]
+]]>
+</system-out>
+</testcase>
+<testcase name="@Web UI Controls" classname="UIBasicstest.spec.ts" time="2.415">
+<system-out>
+<![CDATA[[33mtrue[39m
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

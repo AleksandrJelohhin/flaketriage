@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Probar la funcionalidad del formulario web." tests="12" skipped="0" failures="9" errors="0" timestamp="2025-05-25T01:10:16" hostname="ISIIS" time="20.929">
+  <properties/>
+  <testcase name="Verificar que no se muestren alertas al completar correctamente el formulario" classname="Probar la funcionalidad del formulario web." time="7.451">
+    <failure message="java.lang.AssertionError: expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at org.testng.Assert.assertFalse(Assert.java:89)
+	at pages.BasePage.elementoNoPresente(BasePage.java:113)
+	at pages.FormularioPage.noAlertas(FormularioPage.java:129)
+	at steps.FormularioSteps.validacionNoAlertas(FormularioSteps.java:37)
+	at ✽.no debería aparecer ninguna alerta(file:///C:/Desafio_2/src/test/resources/Formulario.feature:8)
+</failure>
+  </testcase>
+  <testcase name="Validar que se generen alertas cuando no se ingresan datos en el formulario" classname="Probar la funcionalidad del formulario web." time="0.949"/>
+  <testcase name="Validar la alerta mostrada al ingresar un nombre no válido #1" classname="Probar la funcionalidad del formulario web." time="1.297">
+    <failure message="java.lang.AssertionError: expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at pages.BasePage.validarVisuvilidad(BasePage.java:92)
+	at pages.FormularioPage.visibiMensaNombre(FormularioPage.java:90)
+	at steps.FormularioSteps.validarAlertaNombre(FormularioSteps.java:47)
+	at ✽.debería aparecer una alerta en el campo de nombre(file:///C:/Desafio_2/src/test/resources/Formulario.feature:20)
+</failure>
+  </testcase>
+  <testcase name="Validar la alerta mostrada al ingresar un nombre no válido #2" classname="Probar la funcionalidad del formulario web." time="1.258">
+    <failure message="java.lang.AssertionError: expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at pages.BasePage.validarVisuvilidad(BasePage.java:92)
+	at pages.FormularioPage.visibiMensaNombre(FormularioPage.java:90)
+	at steps.FormularioSteps.validarAlertaNombre(FormularioSteps.java:47)
+	at ✽.debería aparecer una alerta en el campo de nombre(file:///C:/Desafio_2/src/test/resources/Formulario.feature:20)
+</failure>
+  </testcase>
+  <testcase name="Validar la alerta mostrada al ingresar un nombre no válido #3" classname="Probar la funcionalidad del formulario web." time="1.353">
+    <failure message="java.lang.AssertionError: expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at pages.BasePage.validarVisuvilidad(BasePage.java:92)
+	at pages.FormularioPage.visibiMensaNombre(FormularioPage.java:90)
+	at steps.FormularioSteps.validarAlertaNombre(FormularioSteps.java:47)
+	at ✽.debería aparecer una alerta en el campo de nombre(file:///C:/Desafio_2/src/test/resources/Formulario.feature:20)
+</failure>
+  </testcase>
+  <testcase name="Validar que se muestre una alerta al ingresar un correo electrónico inválido #1" classname="Probar la funcionalidad del formulario web." time="1.277">
+    <failure message="java.lang.AssertionError: expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at pages.BasePage.validarVisuvilidad(BasePage.java:92)
+	at pages.FormularioPage.visibiMensaEmail(FormularioPage.java:95)
+	at steps.FormularioSteps.validarAlertaEmail(FormularioSteps.java:52)
+	at ✽.debería aparecer una alerta en el campo de email(file:///C:/Desafio_2/src/test/resources/Formulario.feature:32)
+</failure>
+  </testcase>
+  <testcase name="Validar que se muestre una alerta al ingresar un correo electrónico inválido #2" classname="Probar la funcionalidad del formulario web." time="1.243">
+    <failure message="java.lang.AssertionError: expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at pages.BasePage.validarVisuvilidad(BasePage.java:92)
+	at pages.FormularioPage.visibiMensaEmail(FormularioPage.java:95)
+	at steps.FormularioSteps.validarAlertaEmail(FormularioSteps.java:52)
+	at ✽.debería aparecer una alerta en el campo de email(file:///C:/Desafio_2/src/test/resources/Formulario.feature:32)
+</failure>
+  </testcase>
+  <testcase name="Validar que se muestre una alerta al ingresar un correo electrónico inválido #3" classname="Probar la funcionalidad del formulario web." time="1.25">
+    <failure message="java.lang.AssertionError: expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at pages.BasePage.validarVisuvilidad(BasePage.java:92)
+	at pages.FormularioPage.visibiMensaEmail(FormularioPage.java:95)
+	at steps.FormularioSteps.validarAlertaEmail(FormularioSteps.java:52)
+	at ✽.debería aparecer una alerta en el campo de email(file:///C:/Desafio_2/src/test/resources/Formulario.feature:32)
+</failure>
+  </testcase>
+  <testcase name="Validar que se muestre una alerta al ingresar un correo electrónico inválido #4" classname="Probar la funcionalidad del formulario web." time="1.421">
+    <failure message="java.lang.AssertionError: expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at pages.BasePage.validarVisuvilidad(BasePage.java:92)
+	at pages.FormularioPage.visibiMensaEmail(FormularioPage.java:95)
+	at steps.FormularioSteps.validarAlertaEmail(FormularioSteps.java:52)
+	at ✽.debería aparecer una alerta en el campo de email(file:///C:/Desafio_2/src/test/resources/Formulario.feature:32)
+</failure>
+  </testcase>
+  <testcase name="Comprobar que los textos del formulario no contengan errores ortográficos" classname="Probar la funcionalidad del formulario web." time="0.599">
+    <failure message="java.lang.AssertionError: expected [Tu Nombre:] but found [Nombre:]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Tu Nombre:] but found [Nombre:]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at pages.BasePage.identificarTexto(BasePage.java:121)
+	at pages.FormularioPage.validarTexto(FormularioPage.java:137)
+	at steps.FormularioSteps.validarOrtografia(FormularioSteps.java:57)
+	at ✽.todos los textos del formulario deberian tener la ortografía correcta(file:///C:/Desafio_2/src/test/resources/Formulario.feature:44)
+</failure>
+  </testcase>
+  <testcase name="Confirmar el envío exitoso del formulario con datos válidos" classname="Probar la funcionalidad del formulario web." time="1.598"/>
+  <testcase name="Validar que se muestre una alerta al intentar enviar el formulario vacío" classname="Probar la funcionalidad del formulario web." time="1.232"/>
+  <system-out><![CDATA[
+@Formulario @FormularioCorrecto
+Scenario: Verificar que no se muestren alertas al completar correctamente el formulario ?[90m# src/test/resources/Formulario.feature:5?[0m
+  ?[32mGiven ?[0m?[32mel usuario navega a la pagina del formulario?[0m                                    ?[90m# steps.FormularioSteps.navegarFormulario()?[0m
+
+    Embedding Pantallazo del paso [image/png 45383 bytes]
+
+  ?[32mWhen ?[0m?[32mingresa datos vÃ¡lidos en todos los campos?[0m                                        ?[90m# steps.FormularioSteps.ingresarDatosCompletos()?[0m
+
+    Embedding Pantallazo del paso [image/png 49438 bytes]
+
+  ?[31mThen ?[0m?[31mno deberÃ­a aparecer ninguna alerta?[0m                                               ?[90m# steps.FormularioSteps.validacionNoAlertas()?[0m
+      ?[31mjava.lang.AssertionError: expected [false] but found [true]
+      	at org.testng.Assert.fail(Assert.java:111)
+      	at org.testng.Assert.failNotEquals(Assert.java:1590)
+      	at org.testng.Assert.assertFalse(Assert.java:79)
+      	at org.testng.Assert.assertFalse(Assert.java:89)
+      	at pages.BasePage.elementoNoPresente(BasePage.java:113)
+      	at pages.FormularioPage.noAlertas(FormularioPage.java:129)
+      	at steps.FormularioSteps.validacionNoAlertas(FormularioSteps.java:37)
+      	at âœ½.no deberÃ­a aparecer ninguna alerta(file:///C:/Desafio_2/src/test/resources/Formulario.feature:8)?[0m
+
+    Embedding Pantallazo del paso [image/png 49438 bytes]
+
+
+    Revisar la imagen adjunta en este reporte del escenario fallido.
+
+
+    Embedding Pantallazo del error [image/png 49438 bytes]
+
+
+@Formulario @FormularioSinDatos
+Scenario: Validar que se generen alertas cuando no se ingresan datos en el formulario ?[90m# src/test/resources/Formulario.feature:11?[0m
+  ?[32mGiven ?[0m?[32mel usuario navega a la pagina del formulario?[0m                                  ?[90m# steps.FormularioSteps.navegarFormulario()?[0m
+
+    Embedding Pantallazo del paso [image/png 45383 bytes]
+
+  ?[32mWhen ?[0m?[32mno ingresa datos en los campos?[0m                                                 ?[90m# steps.FormularioSteps.noIngresaDatos()?[0m
+
+    Embedding Pantallazo del paso [image/png 30925 bytes]
+
+  ?[32mThen ?[0m?[32mdeberÃ­a aparecer una alerta en los campos principales?[0m                          ?[90m# steps.FormularioSteps.validarAlertas()?[0m
+
+    Embedding Pantallazo del paso [image/png 30925 bytes]
+
+
+@Formulario @FormularioNombre
+Scenario Outline: Validar la alerta mostrada al ingresar un nombre no vÃ¡lido ?[90m# src/test/resources/Formulario.feature:24?[0m
+  ?[32mGiven ?[0m?[32mel usuario navega a la pagina del formulario?[0m                         ?[90m# steps.FormularioSteps.navegarFormulario()?[0m
+
+    Embedding Pantallazo del paso [image/png 45383 bytes]
+
+  ?[32mWhen ?[0m?[32mingresa el nombre ?[0m?[32m?[1mBGR?[0m                                                 ?[90m# steps.FormularioSteps.datoFaltanteNombre(java.lang.String)?[0m
+
+    Embedding Pantallazo del paso [image/png 49444 bytes]
+
+  ?[31mThen ?[0m?[31mdeberÃ­a aparecer una alerta en el campo de nombre?[0m                     ?[90m# steps.FormularioSteps.validarAlertaNombre()?[0m
+      ?[31mjava.lang.AssertionError: expected [true] but found [false]
+      	at org.testng.Assert.fail(Assert.java:111)
+      	at org.testng.Assert.failNotEquals(Assert.java:1590)
+      	at org.testng.Assert.assertTrue(Assert.java:57)
+      	at org.testng.Assert.assertTrue(Assert.java:67)
+      	at pages.BasePage.validarVisuvilidad(BasePage.java:92)
+      	at pages.FormularioPage.visibiMensaNombre(FormularioPage.java:90)
+      	at steps.FormularioSteps.validarAlertaNombre(FormularioSteps.java:47)
+      	at âœ½.deberÃ­a aparecer una alerta en el campo de nombre(file:///C:/Desafio_2/src/test/resources/Formulario.feature:20)?[0m
+
+    Embedding Pantallazo del paso [image/png 49444 bytes]
+
+
+    Revisar la imagen adjunta en este reporte del escenario fallido.
+
+
+    Embedding Pantallazo del error [image/png 49444 bytes]
+
+
+@Formulario @FormularioNombre
+Scenario Outline: Validar la alerta mostrada al ingresar un nombre no vÃ¡lido ?[90m# src/test/resources/Formulario.feature:25?[0m
+  ?[32mGiven ?[0m?[32mel usuario navega a la pagina del formulario?[0m                         ?[90m# steps.FormularioSteps.navegarFormulario()?[0m
+
+    Embedding Pantallazo del paso [image/png 45383 bytes]
+
+  ?[32mWhen ?[0m?[32mingresa el nombre ?[0m?[32m?[1m@re$?[0m                                                ?[90m# steps.FormularioSteps.datoFaltanteNombre(java.lang.String)?[0m
+
+    Embedding Pantallazo del paso [image/png 49438 bytes]
+
+  ?[31mThen ?[0m?[31mdeberÃ­a aparecer una alerta en el campo de nombre?[0m                     ?[90m# steps.FormularioSteps.validarAlertaNombre()?[0m
+      ?[31mjava.lang.AssertionError: expected [true] but found [false]
+      	at org.testng.Assert.fail(Assert.java:111)
+      	at org.testng.Assert.failNotEquals(Assert.java:1590)
+      	at org.testng.Assert.assertTrue(Assert.java:57)
+      	at org.testng.Assert.assertTrue(Assert.java:67)
+      	at pages.BasePage.validarVisuvilidad(BasePage.java:92)
+      	at pages.FormularioPage.visibiMensaNombre(FormularioPage.java:90)
+      	at steps.FormularioSteps.validarAlertaNombre(FormularioSteps.java:47)
+      	at âœ½.deberÃ­a aparecer una alerta en el campo de nombre(file:///C:/Desafio_2/src/test/resources/Formulario.feature:20)?[0m
+
+    Embedding Pantallazo del paso [image/png 49438 bytes]
+
+
+    Revisar la imagen adjunta en este reporte del escenario fallido.
+
+
+    Embedding Pantallazo del error [image/png 49438 bytes]
+
+
+@Formulario @FormularioNombre
+Scenario Outline: Validar la alerta mostrada al ingresar un nombre no vÃ¡lido ?[90m# src/test/resources/Formulario.feature:26?[0m
+  ?[32mGiven ?[0m?[32mel usuario navega a la pagina del formulario?[0m                         ?[90m# steps.FormularioSteps.navegarFormulario()?[0m
+
+    Embedding Pantallazo del paso [image/png 45383 bytes]
+
+  ?[32mWhen ?[0m?[32mingresa el nombre ?[0m?[32m?[1m2708?[0m                                                ?[90m# steps.FormularioSteps.datoFaltanteNombre(java.lang.String)?[0m
+
+    Embedding Pantallazo del paso [image/png 49438 bytes]
+
+  ?[31mThen ?[0m?[31mdeberÃ­a aparecer una alerta en el campo de nombre?[0m                     ?[90m# steps.FormularioSteps.validarAlertaNombre()?[0m
+      ?[31mjava.lang.AssertionError: expected [true] but found [false]
+      	at org.testng.Assert.fail(Assert.java:111)
+      	at org.testng.Assert.failNotEquals(Assert.java:1590)
+      	at org.testng.Assert.assertTrue(Assert.java:57)
+      	at org.testng.Assert.assertTrue(Assert.java:67)
+      	at pages.BasePage.validarVisuvilidad(BasePage.java:92)
+      	at pages.FormularioPage.visibiMensaNombre(FormularioPage.java:90)
+      	at steps.FormularioSteps.validarAlertaNombre(FormularioSteps.java:47)
+      	at âœ½.deberÃ­a aparecer una alerta en el campo de nombre(file:///C:/Desafio_2/src/test/resources/Formulario.feature:20)?[0m
+
+    Embedding Pantallazo del paso [image/png 49438 bytes]
+
+
+    Revisar la imagen adjunta en este reporte del escenario fallido.
+
+
+    Embedding Pantallazo del error [image/png 49438 bytes]
+
+
+@Formulario @FormularioEmail
+Scenario Outline: Validar que se muestre una alerta al ingresar un correo electrÃ³nico invÃ¡lido ?[90m# src/test/resources/Formulario.feature:36?[0m
+  ?[32mGiven ?[0m?[32mel usuario navega a la pagina del formulario?[0m                                           ?[90m# steps.FormularioSteps.navegarFormulario()?[0m
+
+    Embedding Pantallazo del paso [image/png 45383 bytes]
+
+  ?[32mWhen ?[0m?[32mingresa el email ?[0m?[32m?[1mcorreodeprueba@gmail?[0m                                                   ?[90m# steps.FormularioSteps.datoFaltanteEmail(java.lang.String)?[0m
+
+    Embedding Pantallazo del paso [image/png 49022 bytes]
+
+  ?[31mThen ?[0m?[31mdeberÃ­a aparecer una alerta en el campo de email?[0m                                        ?[90m# steps.FormularioSteps.validarAlertaEmail()?[0m
+      ?[31mjava.lang.AssertionError: expected [true] but found [false]
+      	at org.testng.Assert.fail(Assert.java:111)
+      	at org.testng.Assert.failNotEquals(Assert.java:1590)
+      	at org.testng.Assert.assertTrue(Assert.java:57)
+      	at org.testng.Assert.assertTrue(Assert.java:67)
+      	at pages.BasePage.validarVisuvilidad(BasePage.java:92)
+      	at pages.FormularioPage.visibiMensaEmail(FormularioPage.java:95)
+      	at steps.FormularioSteps.validarAlertaEmail(FormularioSteps.java:52)
+      	at âœ½.deberÃ­a aparecer una alerta en el campo de email(file:///C:/Desafio_2/src/test/resources/Formulario.feature:32)?[0m
+
+    Embedding Pantallazo del paso [image/png 49022 bytes]
+
+
+    Revisar la imagen adjunta en este reporte del escenario fallido.
+
+
+    Embedding Pantallazo del error [image/png 49022 bytes]
+
+
+@Formulario @FormularioEmail
+Scenario Outline: Validar que se muestre una alerta al ingresar un correo electrÃ³nico invÃ¡lido ?[90m# src/test/resources/Formulario.feature:37?[0m
+  ?[32mGiven ?[0m?[32mel usuario navega a la pagina del formulario?[0m                                           ?[90m# steps.FormularioSteps.navegarFormulario()?[0m
+
+    Embedding Pantallazo del paso [image/png 45383 bytes]
+
+  ?[32mWhen ?[0m?[32mingresa el email ?[0m?[32m?[1mcorreodeprueba2gmail.com?[0m                                               ?[90m# steps.FormularioSteps.datoFaltanteEmail(java.lang.String)?[0m
+
+    Embedding Pantallazo del paso [image/png 46896 bytes]
+
+  ?[31mThen ?[0m?[31mdeberÃ­a aparecer una alerta en el campo de email?[0m                                        ?[90m# steps.FormularioSteps.validarAlertaEmail()?[0m
+      ?[31mjava.lang.AssertionError: expected [true] but found [false]
+      	at org.testng.Assert.fail(Assert.java:111)
+      	at org.testng.Assert.failNotEquals(Assert.java:1590)
+      	at org.testng.Assert.assertTrue(Assert.java:57)
+      	at org.testng.Assert.assertTrue(Assert.java:67)
+      	at pages.BasePage.validarVisuvilidad(BasePage.java:92)
+      	at pages.FormularioPage.visibiMensaEmail(FormularioPage.java:95)
+      	at steps.FormularioSteps.validarAlertaEmail(FormularioSteps.java:52)
+      	at âœ½.deberÃ­a aparecer una alerta en el campo de email(file:///C:/Desafio_2/src/test/resources/Formulario.feature:32)?[0m
+
+    Embedding Pantallazo del paso [image/png 46896 bytes]
+
+
+    Revisar la imagen adjunta en este reporte del escenario fallido.
+
+
+    Embedding Pantallazo del error [image/png 46896 bytes]
+
+
+@Formulario @FormularioEmail
+Scenario Outline: Validar que se muestre una alerta al ingresar un correo electrÃ³nico invÃ¡lido ?[90m# src/test/resources/Formulario.feature:38?[0m
+  ?[32mGiven ?[0m?[32mel usuario navega a la pagina del formulario?[0m                                           ?[90m# steps.FormularioSteps.navegarFormulario()?[0m
+
+    Embedding Pantallazo del paso [image/png 45383 bytes]
+
+  ?[32mWhen ?[0m?[32mingresa el email ?[0m?[32m?[1mcorre##"!deprueba**@gmail.com?[0m                                          ?[90m# steps.FormularioSteps.datoFaltanteEmail(java.lang.String)?[0m
+
+    Embedding Pantallazo del paso [image/png 49087 bytes]
+
+  ?[31mThen ?[0m?[31mdeberÃ­a aparecer una alerta en el campo de email?[0m                                        ?[90m# steps.FormularioSteps.validarAlertaEmail()?[0m
+      ?[31mjava.lang.AssertionError: expected [true] but found [false]
+      	at org.testng.Assert.fail(Assert.java:111)
+      	at org.testng.Assert.failNotEquals(Assert.java:1590)
+      	at org.testng.Assert.assertTrue(Assert.java:57)
+      	at org.testng.Assert.assertTrue(Assert.java:67)
+      	at pages.BasePage.validarVisuvilidad(BasePage.java:92)
+      	at pages.FormularioPage.visibiMensaEmail(FormularioPage.java:95)
+      	at steps.FormularioSteps.validarAlertaEmail(FormularioSteps.java:52)
+      	at âœ½.deberÃ­a aparecer una alerta en el campo de email(file:///C:/Desafio_2/src/test/resources/Formulario.feature:32)?[0m
+
+    Embedding Pantallazo del paso [image/png 49087 bytes]
+
+
+    Revisar la imagen adjunta en este reporte del escenario fallido.
+
+
+    Embedding Pantallazo del error [image/png 49087 bytes]
+
+
+@Formulario @FormularioEmail
+Scenario Outline: Validar que se muestre una alerta al ingresar un correo electrÃ³nico invÃ¡lido ?[90m# src/test/resources/Formulario.feature:39?[0m
+  ?[32mGiven ?[0m?[32mel usuario navega a la pagina del formulario?[0m                                           ?[90m# steps.FormularioSteps.navegarFormulario()?[0m
+
+    Embedding Pantallazo del paso [image/png 45383 bytes]
+
+  ?[32mWhen ?[0m?[32mingresa el email ?[0m?[32m?[1mcorreo de prueba @gmail .com?[0m                                           ?[90m# steps.FormularioSteps.datoFaltanteEmail(java.lang.String)?[0m
+
+    Embedding Pantallazo del paso [image/png 49054 bytes]
+
+  ?[31mThen ?[0m?[31mdeberÃ­a aparecer una alerta en el campo de email?[0m                                        ?[90m# steps.FormularioSteps.validarAlertaEmail()?[0m
+      ?[31mjava.lang.AssertionError: expected [true] but found [false]
+      	at org.testng.Assert.fail(Assert.java:111)
+      	at org.testng.Assert.failNotEquals(Assert.java:1590)
+      	at org.testng.Assert.assertTrue(Assert.java:57)
+      	at org.testng.Assert.assertTrue(Assert.java:67)
+      	at pages.BasePage.validarVisuvilidad(BasePage.java:92)
+      	at pages.FormularioPage.visibiMensaEmail(FormularioPage.java:95)
+      	at steps.FormularioSteps.validarAlertaEmail(FormularioSteps.java:52)
+      	at âœ½.deberÃ­a aparecer una alerta en el campo de email(file:///C:/Desafio_2/src/test/resources/Formulario.feature:32)?[0m
+
+    Embedding Pantallazo del paso [image/png 49054 bytes]
+
+
+    Revisar la imagen adjunta en este reporte del escenario fallido.
+
+
+    Embedding Pantallazo del error [image/png 49054 bytes]
+
+
+@Formulario @FormularioOrtografia
+Scenario: Comprobar que los textos del formulario no contengan errores ortogrÃ¡ficos ?[90m# src/test/resources/Formulario.feature:42?[0m
+  ?[32mGiven ?[0m?[32mel usuario navega a la pagina del formulario?[0m                                ?[90m# steps.FormularioSteps.navegarFormulario()?[0m
+
+    Embedding Pantallazo del paso [image/png 45383 bytes]
+
+  ?[31mThen ?[0m?[31mtodos los textos del formulario deberian tener la ortografÃ­a correcta?[0m        ?[90m# steps.FormularioSteps.validarOrtografia()?[0m
+      ?[31mjava.lang.AssertionError: expected [Tu Nombre:] but found [Nombre:]
+      	at org.testng.Assert.fail(Assert.java:111)
+      	at org.testng.Assert.failNotEquals(Assert.java:1590)
+      	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+      	at org.testng.Assert.assertEquals(Assert.java:132)
+      	at org.testng.Assert.assertEquals(Assert.java:656)
+      	at org.testng.Assert.assertEquals(Assert.java:666)
+      	at pages.BasePage.identificarTexto(BasePage.java:121)
+      	at pages.FormularioPage.validarTexto(FormularioPage.java:137)
+      	at steps.FormularioSteps.validarOrtografia(FormularioSteps.java:57)
+      	at âœ½.todos los textos del formulario deberian tener la ortografÃ­a correcta(file:///C:/Desafio_2/src/test/resources/Formulario.feature:44)?[0m
+
+    Embedding Pantallazo del paso [image/png 45383 bytes]
+
+
+    Revisar la imagen adjunta en este reporte del escenario fallido.
+
+
+    Embedding Pantallazo del error [image/png 45383 bytes]
+
+
+@Formulario @EnviarFormulario @EnviarConDatos
+Scenario: Confirmar el envÃ­o exitoso del formulario con datos vÃ¡lidos ?[90m# src/test/resources/Formulario.feature:47?[0m
+  ?[32mGiven ?[0m?[32mel usuario navega a la pagina del formulario?[0m                  ?[90m# steps.FormularioSteps.navegarFormulario()?[0m
+
+    Embedding Pantallazo del paso [image/png 45383 bytes]
+
+  ?[32mWhen ?[0m?[32mingresa datos vÃ¡lidos en todos los campos?[0m                      ?[90m# steps.FormularioSteps.ingresarDatosCompletos()?[0m
+
+    Embedding Pantallazo del paso [image/png 49438 bytes]
+
+  ?[32mThen ?[0m?[32mel formulario se debe enviar de forma correcta?[0m                 ?[90m# steps.FormularioSteps.enviarFormulario()?[0m
+
+    Embedding Pantallazo del paso [image/png 45383 bytes]
+
+
+@Formulario @EnviarFormulario @EnviarSinDatos
+Scenario: Validar que se muestre una alerta al intentar enviar el formulario vacÃ­o ?[90m# src/test/resources/Formulario.feature:53?[0m
+  ?[32mGiven ?[0m?[32mel usuario navega a la pagina del formulario?[0m                               ?[90m# steps.FormularioSteps.navegarFormulario()?[0m
+
+    Embedding Pantallazo del paso [image/png 45383 bytes]
+
+  ?[32mWhen ?[0m?[32mno ingresa datos en los campos?[0m                                              ?[90m# steps.FormularioSteps.noIngresaDatos()?[0m
+
+    Embedding Pantallazo del paso [image/png 30925 bytes]
+
+  ?[32mThen ?[0m?[32mel formulario debe mostrar una alerta?[0m                                       ?[90m# steps.FormularioSteps.enviarFormularioVacio()?[0m
+
+    Embedding Pantallazo del paso [image/png 45383 bytes]
+
+]]></system-out>
+  <system-err><![CDATA[may. 24, 2025 8:10:18 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 136
+may. 24, 2025 8:10:18 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 136.0.7103.114. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>

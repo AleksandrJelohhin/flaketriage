@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Playwright Test Results" tests="10" failures="2" skipped="1" time="17.350">
+  <testsuite name="Authentication Tests" tests="3" failures="0" skipped="1" time="6.100" timestamp="2026-04-26T10:15:30Z">
+    <testcase name="should log in with valid credentials" classname="tests.auth" time="2.500" file="tests/auth.spec.ts"/>
+    <testcase name="should fail with invalid password" classname="tests.auth" time="1.800" file="tests/auth.spec.ts"/>
+    <testcase name="should display remember me option" classname="tests.auth" time="0" file="tests/auth.spec.ts">
+      <skipped/>
+    </testcase>
+  </testsuite>
+  <testsuite name="Dashboard" tests="5" failures="1" skipped="0" time="8.850" timestamp="2026-04-26T10:15:37Z">
+    <testsuite name="User Profile" tests="2" failures="1" skipped="0" time="4.700" timestamp="2026-04-26T10:15:37Z">
+      <testcase name="should display user profile" classname="tests.dashboard.UserProfile" time="1.200" file="tests/dashboard.spec.ts"/>
+      <testcase name="should update profile picture" classname="tests.dashboard.UserProfile" time="3.500" file="tests/dashboard.spec.ts">
+        <failure message="Expected element to be visible">Error: Expected element to be visible
+  at test/dashboard.spec.ts:75:20
+  at processTicksAndRejections (internal/timers.js:1:1)</failure>
+      </testcase>
+    </testsuite>
+    <testsuite name="Settings" tests="1" failures="0" skipped="0" time="2.100" timestamp="2026-04-26T10:15:42Z">
+      <testcase name="should save preferences" classname="tests.dashboard.Settings" time="2.100" file="tests/dashboard.spec.ts"/>
+    </testsuite>
+  </testsuite>
+  <testsuite name="Search Functionality" tests="1" failures="1" skipped="0" time="5.600" timestamp="2026-04-26T10:15:46Z">
+    <testcase name="should search for products" classname="tests.search" time="5.600" file="tests/search.spec.ts">
+      <failure message="Timeout waiting for search results">TimeoutError: Timeout waiting for search results
+  at test/search.spec.ts:25:15
+  at processTicksAndRejections (internal/timers.js:1:1)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

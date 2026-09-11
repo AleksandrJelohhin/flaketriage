@@ -1,0 +1,89 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="2" errors="0" time="26.665467">
+<testsuite name="src/__tests__/customer.home.spec.ts" timestamp="2025-08-07T15:09:22.358Z" hostname="" tests="1" failures="1" skipped="0" time="24.426" errors="0">
+<testcase name="Register and Login and navigate to Home page" classname="src/__tests__/customer.home.spec.ts" time="24.426">
+<failure message="customer.home.spec.ts:8:1 Register and Login and navigate to Home page" type="FAILURE">
+<![CDATA[  src/__tests__/customer.home.spec.ts:8:1 › Register and Login and navigate to Home page ───────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toHaveText(expected)
+
+    Locator: locator('p.smalltext')
+    Expected string: "p.smallText b"
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toHaveText" with timeout 5000ms
+      - waiting for locator('p.smalltext')
+
+
+       at src/pages/customerRegistrationPage.ts:36
+
+      34 |         // Verify Successful registraion by checking the small text Welcome
+      35 |         const smallTextWelcome = `p.smallText b`;
+    > 36 |         await expect(this.page.locator(`p.smalltext`)).toHaveText(smallTextWelcome);
+         |                                                        ^
+      37 |
+      38 |         return {username: customerData.username, password: customerData.password };
+      39 |
+        at RegisterPage.registerCustomer (/home/nik/parabank-playwright-bdd/src/pages/customerRegistrationPage.ts:36:56)
+        at /home/nik/parabank-playwright-bdd/src/__tests__/customer.home.spec.ts:19:33
+
+    Error Context: test-results/src-__tests__-customer.hom-e5cb1-n-and-navigate-to-Home-page/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toHaveText(expected)
+
+    Locator: locator('p.smalltext')
+    Expected string: "p.smallText b"
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toHaveText" with timeout 5000ms
+      - waiting for locator('p.smalltext')
+
+
+       at src/pages/customerRegistrationPage.ts:36
+
+      34 |         // Verify Successful registraion by checking the small text Welcome
+      35 |         const smallTextWelcome = `p.smallText b`;
+    > 36 |         await expect(this.page.locator(`p.smalltext`)).toHaveText(smallTextWelcome);
+         |                                                        ^
+      37 |
+      38 |         return {username: customerData.username, password: customerData.password };
+      39 |
+        at RegisterPage.registerCustomer (/home/nik/parabank-playwright-bdd/src/pages/customerRegistrationPage.ts:36:56)
+        at /home/nik/parabank-playwright-bdd/src/__tests__/customer.home.spec.ts:19:33
+
+    Error Context: test-results/src-__tests__-customer.hom-e5cb1-n-and-navigate-to-Home-page-retry1/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/src-__tests__-customer.hom-e5cb1-n-and-navigate-to-Home-page/error-context.md]]
+
+[[ATTACHMENT|test-results/src-__tests__-customer.hom-e5cb1-n-and-navigate-to-Home-page-retry1/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="src/__tests__/customer.login.spec.ts" timestamp="2025-08-07T15:09:22.358Z" hostname="" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Login Page › should login successfully with valid credentials" classname="src/__tests__/customer.login.spec.ts" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="src/__tests__/customer.registration.spec.ts" timestamp="2025-08-07T15:09:22.358Z" hostname="" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Register a new customer" classname="src/__tests__/customer.registration.spec.ts" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>

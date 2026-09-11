@@ -1,0 +1,48 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="5.862462999999523">
+<testsuite name="TC_01_checkoutWorkflow.test.js" timestamp="2025-05-17T21:02:05.806Z" hostname="Chrome" tests="1" failures="1" skipped="0" time="2.471" errors="0">
+<testcase name="Login as a standard user to complete the checkout workflow › Login to App as a standard user" classname="TC_01_checkoutWorkflow.test.js" time="2.471">
+<failure message="TC_01_checkoutWorkflow.test.js:41:6 Login to App as a standard user" type="FAILURE">
+<![CDATA[  [Chrome] › TC_01_checkoutWorkflow.test.js:41:6 › Login as a standard user to complete the checkout workflow › Login to App as a standard user › Select the product sort container option as “Price (high to low) 
+
+    TypeError: productsPage.selectHighToLowFromDropDown is not a function
+
+      66 | 			`Select the product sort container option as “Price (high to low)`,
+      67 | 			async () => {
+    > 68 | 				await productsPage.selectHighToLowFromDropDown()
+         | 				                   ^
+      69 | 				const firstItem = await productsPage.getFirstItemFromInventory()
+      70 | 				expect(firstItem).toContain(fleeceJacket)
+      71 | 				const lastItem = await productsPage.getLastItemFromInventory()
+
+        at C:\Personal\Playwright-JavaScript-SauceDemo\tests\TC_01_checkoutWorkflow.test.js:68:24
+        at C:\Personal\Playwright-JavaScript-SauceDemo\tests\TC_01_checkoutWorkflow.test.js:65:14
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\TC_01_checkoutWorkflow-Login-as-a-standard-use-ee6c5-eckout-workflow-Login-to-App-as-a-standard-user-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\TC_01_checkoutWorkflow-Login-as-a-standard-use-ee6c5-eckout-workflow-Login-to-App-as-a-standard-user-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\TC_01_checkoutWorkflow-Login-as-a-standard-use-ee6c5-eckout-workflow-Login-to-App-as-a-standard-user-Chrome\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\TC_01_checkoutWorkflow-Login-as-a-standard-use-ee6c5-eckout-workflow-Login-to-App-as-a-standard-user-Chrome\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\TC_01_checkoutWorkflow-Login-as-a-standard-use-ee6c5-eckout-workflow-Login-to-App-as-a-standard-user-Chrome\video.webm]]
+
+[[ATTACHMENT|..\test-results\TC_01_checkoutWorkflow-Login-as-a-standard-use-ee6c5-eckout-workflow-Login-to-App-as-a-standard-user-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\TC_01_checkoutWorkflow-Login-as-a-standard-use-ee6c5-eckout-workflow-Login-to-App-as-a-standard-user-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

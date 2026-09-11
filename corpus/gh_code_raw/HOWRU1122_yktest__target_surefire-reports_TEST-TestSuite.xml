@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="341.105" tests="151" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/yaokai/IdeaProjects/yktest/target/test-classes:/Users/yaokai/IdeaProjects/yktest/target/classes:/Users/yaokai/.m2/repository/org/apache/httpcomponents/httpclient/4.5.9/httpclient-4.5.9.jar:/Users/yaokai/.m2/repository/org/apache/httpcomponents/httpcore/4.4.11/httpcore-4.4.11.jar:/Users/yaokai/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/yaokai/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/yaokai/.m2/repository/org/json/json/20170516/json-20170516.jar:/Users/yaokai/.m2/repository/mysql/mysql-connector-java/8.0.18/mysql-connector-java-8.0.18.jar:/Users/yaokai/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/Users/yaokai/.m2/repository/com/relevantcodes/extentreports/2.41.1/extentreports-2.41.1.jar:/Users/yaokai/.m2/repository/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar:/Users/yaokai/.m2/repository/org/xerial/sqlite-jdbc/3.8.11.1/sqlite-jdbc-3.8.11.1.jar:/Users/yaokai/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/Users/yaokai/.m2/repository/org/mongodb/mongodb-driver/3.0.4/mongodb-driver-3.0.4.jar:/Users/yaokai/.m2/repository/org/mongodb/bson/3.0.4/bson-3.0.4.jar:/Users/yaokai/.m2/repository/org/mongodb/mongodb-driver-core/3.0.4/mongodb-driver-core-3.0.4.jar:/Users/yaokai/.m2/repository/com/vimalselvam/testng-extentsreport/1.3.1/testng-extentsreport-1.3.1.jar:/Users/yaokai/.m2/repository/org/testng/testng/6.10/testng-6.10.jar:/Users/yaokai/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar:/Users/yaokai/.m2/repository/com/google/guava/guava/20.0/guava-20.0.jar:/Users/yaokai/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar:/Users/yaokai/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/Users/yaokai/.m2/repository/com/alibaba/fastjson/1.2.46/fastjson-1.2.46.jar:/Users/yaokai/.m2/repository/org/projectlombok/lombok/1.16.22/lombok-1.16.22.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.0.2.RELEASE/spring-boot-starter-web-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-starter/2.0.2.RELEASE/spring-boot-starter-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot/2.0.2.RELEASE/spring-boot-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.2.RELEASE/spring-boot-autoconfigure-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.0.2.RELEASE/spring-boot-starter-logging-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/yaokai/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/yaokai/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.10.0/log4j-to-slf4j-2.10.0.jar:/Users/yaokai/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/Users/yaokai/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/Users/yaokai/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/Users/yaokai/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.0.2.RELEASE/spring-boot-starter-json-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.5/jackson-databind-2.9.5.jar:/Users/yaokai/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/Users/yaokai/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.5/jackson-core-2.9.5.jar:/Users/yaokai/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.5/jackson-datatype-jdk8-2.9.5.jar:/Users/yaokai/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.5/jackson-datatype-jsr310-2.9.5.jar:/Users/yaokai/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.5/jackson-module-parameter-names-2.9.5.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.0.2.RELEASE/spring-boot-starter-tomcat-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.31/tomcat-embed-core-8.5.31.jar:/Users/yaokai/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/8.5.31/tomcat-embed-el-8.5.31.jar:/Users/yaokai/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.31/tomcat-embed-websocket-8.5.31.jar:/Users/yaokai/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.9.Final/hibernate-validator-6.0.9.Final.jar:/Users/yaokai/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/Users/yaokai/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/yaokai/.m2/repository/org/springframework/spring-web/5.0.6.RELEASE/spring-web-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/spring-beans/5.0.6.RELEASE/spring-beans-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/spring-webmvc/5.0.6.RELEASE/spring-webmvc-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/spring-aop/5.0.6.RELEASE/spring-aop-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/spring-context/5.0.6.RELEASE/spring-context-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/spring-expression/5.0.6.RELEASE/spring-expression-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/io/springfox/springfox-swagger-ui/2.6.1/springfox-swagger-ui-2.6.1.jar:/Users/yaokai/.m2/repository/io/springfox/springfox-spring-web/2.6.1/springfox-spring-web-2.6.1.jar:/Users/yaokai/.m2/repository/io/springfox/springfox-swagger2/2.6.1/springfox-swagger2-2.6.1.jar:/Users/yaokai/.m2/repository/io/swagger/swagger-annotations/1.5.10/swagger-annotations-1.5.10.jar:/Users/yaokai/.m2/repository/io/swagger/swagger-models/1.5.10/swagger-models-1.5.10.jar:/Users/yaokai/.m2/repository/io/springfox/springfox-spi/2.6.1/springfox-spi-2.6.1.jar:/Users/yaokai/.m2/repository/io/springfox/springfox-core/2.6.1/springfox-core-2.6.1.jar:/Users/yaokai/.m2/repository/io/springfox/springfox-schema/2.6.1/springfox-schema-2.6.1.jar:/Users/yaokai/.m2/repository/io/springfox/springfox-swagger-common/2.6.1/springfox-swagger-common-2.6.1.jar:/Users/yaokai/.m2/repository/com/fasterxml/classmate/1.3.1/classmate-1.3.1.jar:/Users/yaokai/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar:/Users/yaokai/.m2/repository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/plugin/spring-plugin-metadata/1.2.0.RELEASE/spring-plugin-metadata-1.2.0.RELEASE.jar:/Users/yaokai/.m2/repository/org/mapstruct/mapstruct/1.0.0.Final/mapstruct-1.0.0.Final.jar:/Users/yaokai/.m2/repository/org/mybatis/spring/boot/mybatis-spring-boot-starter/2.0.0/mybatis-spring-boot-starter-2.0.0.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.0.8.RELEASE/spring-boot-starter-jdbc-2.0.8.RELEASE.jar:/Users/yaokai/.m2/repository/com/zaxxer/HikariCP/2.7.9/HikariCP-2.7.9.jar:/Users/yaokai/.m2/repository/org/springframework/spring-jdbc/5.0.12.RELEASE/spring-jdbc-5.0.12.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/spring-tx/5.0.12.RELEASE/spring-tx-5.0.12.RELEASE.jar:/Users/yaokai/.m2/repository/org/mybatis/spring/boot/mybatis-spring-boot-autoconfigure/2.0.0/mybatis-spring-boot-autoconfigure-2.0.0.jar:/Users/yaokai/.m2/repository/org/mybatis/mybatis/3.5.0/mybatis-3.5.0.jar:/Users/yaokai/.m2/repository/org/mybatis/mybatis-spring/2.0.0/mybatis-spring-2.0.0.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.0.2.RELEASE/spring-boot-starter-test-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-test/2.0.2.RELEASE/spring-boot-test-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.0.2.RELEASE/spring-boot-test-autoconfigure-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/yaokai/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/yaokai/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/yaokai/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/yaokai/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/yaokai/.m2/repository/org/assertj/assertj-core/3.9.1/assertj-core-3.9.1.jar:/Users/yaokai/.m2/repository/org/mockito/mockito-core/2.15.0/mockito-core-2.15.0.jar:/Users/yaokai/.m2/repository/net/bytebuddy/byte-buddy/1.7.9/byte-buddy-1.7.9.jar:/Users/yaokai/.m2/repository/net/bytebuddy/byte-buddy-agent/1.7.9/byte-buddy-agent-1.7.9.jar:/Users/yaokai/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/Users/yaokai/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/yaokai/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/Users/yaokai/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/Users/yaokai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/yaokai/.m2/repository/org/springframework/spring-core/5.0.6.RELEASE/spring-core-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/spring-jcl/5.0.6.RELEASE/spring-jcl-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/spring-test/5.0.6.RELEASE/spring-test-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/org/xmlunit/xmlunit-core/2.5.1/xmlunit-core-2.5.1.jar:/Users/yaokai/.m2/repository/org/springframework/retry/spring-retry/1.2.5.RELEASE/spring-retry-1.2.5.RELEASE.jar:/Users/yaokai/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/2.21.0/surefire-testng-utils-2.21.0.jar:/Users/yaokai/.m2/repository/org/apache/maven/surefire/surefire-grouper/2.21.0/surefire-grouper-2.21.0.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/yaokai/IdeaProjects/yktest/target/surefire/surefirebooter263972394849232984.jar /Users/yaokai/IdeaProjects/yktest/target/surefire 2020-04-28T17-24-29_286-jvmRun1 surefire5067759183750824359tmp surefire_03622553354527465102tmp"/>
+    <property name="surefire.test.class.path" value="/Users/yaokai/IdeaProjects/yktest/target/test-classes:/Users/yaokai/IdeaProjects/yktest/target/classes:/Users/yaokai/.m2/repository/org/apache/httpcomponents/httpclient/4.5.9/httpclient-4.5.9.jar:/Users/yaokai/.m2/repository/org/apache/httpcomponents/httpcore/4.4.11/httpcore-4.4.11.jar:/Users/yaokai/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/yaokai/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/yaokai/.m2/repository/org/json/json/20170516/json-20170516.jar:/Users/yaokai/.m2/repository/mysql/mysql-connector-java/8.0.18/mysql-connector-java-8.0.18.jar:/Users/yaokai/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/Users/yaokai/.m2/repository/com/relevantcodes/extentreports/2.41.1/extentreports-2.41.1.jar:/Users/yaokai/.m2/repository/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar:/Users/yaokai/.m2/repository/org/xerial/sqlite-jdbc/3.8.11.1/sqlite-jdbc-3.8.11.1.jar:/Users/yaokai/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/Users/yaokai/.m2/repository/org/mongodb/mongodb-driver/3.0.4/mongodb-driver-3.0.4.jar:/Users/yaokai/.m2/repository/org/mongodb/bson/3.0.4/bson-3.0.4.jar:/Users/yaokai/.m2/repository/org/mongodb/mongodb-driver-core/3.0.4/mongodb-driver-core-3.0.4.jar:/Users/yaokai/.m2/repository/com/vimalselvam/testng-extentsreport/1.3.1/testng-extentsreport-1.3.1.jar:/Users/yaokai/.m2/repository/org/testng/testng/6.10/testng-6.10.jar:/Users/yaokai/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar:/Users/yaokai/.m2/repository/com/google/guava/guava/20.0/guava-20.0.jar:/Users/yaokai/.m2/repository/com/aventstack/extentreports/3.0.6/extentreports-3.0.6.jar:/Users/yaokai/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/Users/yaokai/.m2/repository/com/alibaba/fastjson/1.2.46/fastjson-1.2.46.jar:/Users/yaokai/.m2/repository/org/projectlombok/lombok/1.16.22/lombok-1.16.22.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.0.2.RELEASE/spring-boot-starter-web-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-starter/2.0.2.RELEASE/spring-boot-starter-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot/2.0.2.RELEASE/spring-boot-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.2.RELEASE/spring-boot-autoconfigure-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.0.2.RELEASE/spring-boot-starter-logging-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/yaokai/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/yaokai/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.10.0/log4j-to-slf4j-2.10.0.jar:/Users/yaokai/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/Users/yaokai/.m2/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/Users/yaokai/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/Users/yaokai/.m2/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.0.2.RELEASE/spring-boot-starter-json-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.5/jackson-databind-2.9.5.jar:/Users/yaokai/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/Users/yaokai/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.5/jackson-core-2.9.5.jar:/Users/yaokai/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.5/jackson-datatype-jdk8-2.9.5.jar:/Users/yaokai/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.5/jackson-datatype-jsr310-2.9.5.jar:/Users/yaokai/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.5/jackson-module-parameter-names-2.9.5.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.0.2.RELEASE/spring-boot-starter-tomcat-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.31/tomcat-embed-core-8.5.31.jar:/Users/yaokai/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/8.5.31/tomcat-embed-el-8.5.31.jar:/Users/yaokai/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.31/tomcat-embed-websocket-8.5.31.jar:/Users/yaokai/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.9.Final/hibernate-validator-6.0.9.Final.jar:/Users/yaokai/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/Users/yaokai/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/yaokai/.m2/repository/org/springframework/spring-web/5.0.6.RELEASE/spring-web-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/spring-beans/5.0.6.RELEASE/spring-beans-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/spring-webmvc/5.0.6.RELEASE/spring-webmvc-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/spring-aop/5.0.6.RELEASE/spring-aop-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/spring-context/5.0.6.RELEASE/spring-context-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/spring-expression/5.0.6.RELEASE/spring-expression-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/io/springfox/springfox-swagger-ui/2.6.1/springfox-swagger-ui-2.6.1.jar:/Users/yaokai/.m2/repository/io/springfox/springfox-spring-web/2.6.1/springfox-spring-web-2.6.1.jar:/Users/yaokai/.m2/repository/io/springfox/springfox-swagger2/2.6.1/springfox-swagger2-2.6.1.jar:/Users/yaokai/.m2/repository/io/swagger/swagger-annotations/1.5.10/swagger-annotations-1.5.10.jar:/Users/yaokai/.m2/repository/io/swagger/swagger-models/1.5.10/swagger-models-1.5.10.jar:/Users/yaokai/.m2/repository/io/springfox/springfox-spi/2.6.1/springfox-spi-2.6.1.jar:/Users/yaokai/.m2/repository/io/springfox/springfox-core/2.6.1/springfox-core-2.6.1.jar:/Users/yaokai/.m2/repository/io/springfox/springfox-schema/2.6.1/springfox-schema-2.6.1.jar:/Users/yaokai/.m2/repository/io/springfox/springfox-swagger-common/2.6.1/springfox-swagger-common-2.6.1.jar:/Users/yaokai/.m2/repository/com/fasterxml/classmate/1.3.1/classmate-1.3.1.jar:/Users/yaokai/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar:/Users/yaokai/.m2/repository/org/springframework/plugin/spring-plugin-core/1.2.0.RELEASE/spring-plugin-core-1.2.0.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/plugin/spring-plugin-metadata/1.2.0.RELEASE/spring-plugin-metadata-1.2.0.RELEASE.jar:/Users/yaokai/.m2/repository/org/mapstruct/mapstruct/1.0.0.Final/mapstruct-1.0.0.Final.jar:/Users/yaokai/.m2/repository/org/mybatis/spring/boot/mybatis-spring-boot-starter/2.0.0/mybatis-spring-boot-starter-2.0.0.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.0.8.RELEASE/spring-boot-starter-jdbc-2.0.8.RELEASE.jar:/Users/yaokai/.m2/repository/com/zaxxer/HikariCP/2.7.9/HikariCP-2.7.9.jar:/Users/yaokai/.m2/repository/org/springframework/spring-jdbc/5.0.12.RELEASE/spring-jdbc-5.0.12.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/spring-tx/5.0.12.RELEASE/spring-tx-5.0.12.RELEASE.jar:/Users/yaokai/.m2/repository/org/mybatis/spring/boot/mybatis-spring-boot-autoconfigure/2.0.0/mybatis-spring-boot-autoconfigure-2.0.0.jar:/Users/yaokai/.m2/repository/org/mybatis/mybatis/3.5.0/mybatis-3.5.0.jar:/Users/yaokai/.m2/repository/org/mybatis/mybatis-spring/2.0.0/mybatis-spring-2.0.0.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.0.2.RELEASE/spring-boot-starter-test-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-test/2.0.2.RELEASE/spring-boot-test-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.0.2.RELEASE/spring-boot-test-autoconfigure-2.0.2.RELEASE.jar:/Users/yaokai/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/yaokai/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/yaokai/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/yaokai/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/yaokai/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/yaokai/.m2/repository/org/assertj/assertj-core/3.9.1/assertj-core-3.9.1.jar:/Users/yaokai/.m2/repository/org/mockito/mockito-core/2.15.0/mockito-core-2.15.0.jar:/Users/yaokai/.m2/repository/net/bytebuddy/byte-buddy/1.7.9/byte-buddy-1.7.9.jar:/Users/yaokai/.m2/repository/net/bytebuddy/byte-buddy-agent/1.7.9/byte-buddy-agent-1.7.9.jar:/Users/yaokai/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar:/Users/yaokai/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/yaokai/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/Users/yaokai/.m2/repository/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar:/Users/yaokai/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/yaokai/.m2/repository/org/springframework/spring-core/5.0.6.RELEASE/spring-core-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/spring-jcl/5.0.6.RELEASE/spring-jcl-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/org/springframework/spring-test/5.0.6.RELEASE/spring-test-5.0.6.RELEASE.jar:/Users/yaokai/.m2/repository/org/xmlunit/xmlunit-core/2.5.1/xmlunit-core-2.5.1.jar:/Users/yaokai/.m2/repository/org/springframework/retry/spring-retry/1.2.5.RELEASE/spring-retry-1.2.5.RELEASE.jar:/Users/yaokai/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/2.21.0/surefire-testng-utils-2.21.0.jar:/Users/yaokai/.m2/repository/org/apache/maven/surefire/surefire-grouper/2.21.0/surefire-grouper-2.21.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/yaokai"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/yaokai/IdeaProjects/yktest"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/yaokai/IdeaProjects/yktest/target/surefire/surefirebooter263972394849232984.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_172-b11"/>
+    <property name="user.name" value="yaokai"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.14.6"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="US-ASCII"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/yaokai/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/61/9ktr6__s653byk0k3_vl0zp00000gn/T/"/>
+    <property name="java.version" value="1.8.0_172"/>
+    <property name="user.dir" value="/Users/yaokai/IdeaProjects/yktest"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="idea.version2019.3.1" value="true"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/yaokai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.172-b11"/>
+    <property name="java.ext.dirs" value="/Users/yaokai/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="get_promotion_list on get_promotion_list(com.tester.cases.DouyinTest)" classname="com.tester.cases.DouyinTest" time="1.349"/>
+  <testcase name="video_comment on video_comment(com.tester.cases.Douyinv1Test)" classname="com.tester.cases.Douyinv1Test" time="0.282"/>
+  <testcase name="user_info on user_info(com.tester.cases.Douyinv1Test)" classname="com.tester.cases.Douyinv1Test" time="0.286"/>
+  <testcase name="user_goods on user_goods(com.tester.cases.Douyinv1Test)" classname="com.tester.cases.Douyinv1Test" time="1.209"/>
+  <testcase name="user_video on user_video(com.tester.cases.Douyinv1Test)" classname="com.tester.cases.Douyinv1Test" time="0.415"/>
+  <testcase name="get_user_following_list on get_user_following_list(com.tester.cases.DouyinLiteTest)" classname="com.tester.cases.DouyinLiteTest" time="0.691"/>
+  <testcase name="crawlShopVenderId on crawlShopVenderId(com.tester.cases.JingDongTest)" classname="com.tester.cases.JingDongTest" time="1.005"/>
+  <testcase name="crawlShopDetails on crawlShopDetails(com.tester.cases.JingDongTest)" classname="com.tester.cases.JingDongTest" time="0.92"/>
+  <testcase name="crawlSkuPrices on crawlSkuPrices(com.tester.cases.JingDongTest)" classname="com.tester.cases.JingDongTest" time="1.237"/>
+  <testcase name="crawlCommentsCounts on crawlCommentsCounts(com.tester.cases.JingDongTest)" classname="com.tester.cases.JingDongTest" time="3.021"/>
+  <testcase name="crawlPageByBrandName on crawlPageByBrandName(com.tester.cases.JingDongTest)" classname="com.tester.cases.JingDongTest" time="3.934"/>
+  <testcase name="crawlSkuCommentAndCount on crawlSkuCommentAndCount(com.tester.cases.JingDongTest)" classname="com.tester.cases.JingDongTest" time="1.551"/>
+  <testcase name="crawlSkuComment on crawlSkuComment(com.tester.cases.JingDongTest)" classname="com.tester.cases.JingDongTest" time="1.62"/>
+  <testcase name="crawlPageShopProducts on crawlPageShopProducts(com.tester.cases.JingDongTest)" classname="com.tester.cases.JingDongTest" time="4.891">
+    <failure message="&#10;### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure&#10;&#10;The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.&#10;### The error may exist in com/tester/dao/TestResultDao.java (best guess)&#10;### The error may involve com.tester.dao.TestResultDao.insertResult-Inline&#10;### The error occurred while setting parameters&#10;### SQL: INSERT INTO test_result(item,code, start_time,result,url,method,response) VALUES(?, ?, ?, ?,?,?,?)&#10;### Cause: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure&#10;&#10;The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.&#10;; Communications link failure&#10;&#10;The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure&#10;&#10;The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago." type="org.springframework.dao.RecoverableDataAccessException">org.springframework.dao.RecoverableDataAccessException: 
+
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+### The error may exist in com/tester/dao/TestResultDao.java (best guess)
+### The error may involve com.tester.dao.TestResultDao.insertResult-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO test_result(item,code, start_time,result,url,method,response) VALUES(?, ?, ?, ?,?,?,?)
+### Cause: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+; Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+	at com.tester.cases.JingDongTest.crawlPageShopProducts(JingDongTest.java:56)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: 
+Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+	at com.tester.cases.JingDongTest.crawlPageShopProducts(JingDongTest.java:56)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: 
+Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+	at com.tester.cases.JingDongTest.crawlPageShopProducts(JingDongTest.java:56)
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.tester.cases.JingDongTest.crawlPageShopProducts(JingDongTest.java:56)
+</failure>
+    <system-out><![CDATA[??
+2020-04-28 17:24:52.810 [main] WARN  com.zaxxer.hikari.pool.ProxyConnection - HikariPool-1 - Connection com.mysql.cj.jdbc.ConnectionImpl@546394ed marked as broken because of SQLSTATE(08S01), ErrorCode(0)
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:1414)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:1399)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.checkReadOnlySafeStatement(ClientPreparedStatement.java:307)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:317)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy65.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:59)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy79.insertResult(Unknown Source)
+	at com.tester.cases.JingDongTest.crawlPageShopProducts(JingDongTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:82)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:70)
+	at org.testng.TestRunner$1.run(TestRunner.java:675)
+	at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:975)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:706)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 982 milliseconds ago. The last packet sent successfully to the server was 1,030 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:539)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:703)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:642)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:128)
+	at com.mysql.cj.NativeSession.sendCommand(NativeSession.java:311)
+	at com.mysql.cj.NativeSession.queryServerVariable(NativeSession.java:1008)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:1406)
+	... 74 common frames omitted
+Caused by: java.io.EOFException: Can not read response from server. Expected to read 4 bytes, read 0 bytes before connection was unexpectedly lost.
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:67)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:533)
+	... 80 common frames omitted
+2020-04-28 17:24:52.826 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2020-04-28 17:24:52.898 [main] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1a01d7f0 (No operations allowed after connection closed.)
+2020-04-28 17:24:52.900 [main] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5856dbe4 (No operations allowed after connection closed.)
+2020-04-28 17:24:52.901 [main] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7e15f4d4 (No operations allowed after connection closed.)
+2020-04-28 17:24:52.903 [main] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5a058be5 (No operations allowed after connection closed.)
+2020-04-28 17:24:52.905 [main] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4eaf7902 (No operations allowed after connection closed.)
+2020-04-28 17:24:52.906 [main] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@20c812c8 (No operations allowed after connection closed.)
+2020-04-28 17:24:52.908 [main] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@71aaf151 (No operations allowed after connection closed.)
+2020-04-28 17:24:52.910 [main] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7061622 (No operations allowed after connection closed.)
+2020-04-28 17:24:52.912 [main] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@32d418a9 (No operations allowed after connection closed.)
+]]></system-out>
+  </testcase>
+  <testcase name="get_live_square_list on get_live_square_list(com.tester.cases.KuaiShouV1Test)" classname="com.tester.cases.KuaiShouV1Test" time="0.597"/>
+  <testcase name="get_live_top_users on get_live_top_users(com.tester.cases.KuaiShouV1Test)" classname="com.tester.cases.KuaiShouV1Test" time="1.885"/>
+  <testcase name="video_comment on video_comment(com.tester.cases.KuaiShouV1Test)" classname="com.tester.cases.KuaiShouV1Test" time="2.53"/>
+  <testcase name="get_comm_list on get_comm_list(com.tester.cases.KuaiShouV1Test)" classname="com.tester.cases.KuaiShouV1Test" time="0.612"/>
+  <testcase name="get_user_card_info on get_user_card_info(com.tester.cases.KuaiShouV1Test)" classname="com.tester.cases.KuaiShouV1Test" time="0.439"/>
+  <testcase name="get_live_detail on get_live_detail(com.tester.cases.KuaiShouV1Test)" classname="com.tester.cases.KuaiShouV1Test" time="0.815"/>
+  <testcase name="nearby_feed on nearby_feed(com.tester.cases.KuaiShouV1Test)" classname="com.tester.cases.KuaiShouV1Test" time="2.396"/>
+  <testcase name="video_detail on video_detail(com.tester.cases.KuaiShouV1Test)" classname="com.tester.cases.KuaiShouV1Test" time="5.473"/>
+  <testcase name="hot_feed on hot_feed(com.tester.cases.KuaiShouV1Test)" classname="com.tester.cases.KuaiShouV1Test" time="0.882"/>
+  <testcase name="get_live_users on get_live_users(com.tester.cases.KuaiShouV1Test)" classname="com.tester.cases.KuaiShouV1Test" time="0.906"/>
+  <testcase name="user_info on user_info(com.tester.cases.KuaiShouV1Test)" classname="com.tester.cases.KuaiShouV1Test" time="2.347"/>
+  <testcase name="share_video on share_video(com.tester.cases.KuaiShouV1Test)" classname="com.tester.cases.KuaiShouV1Test" time="0.41"/>
+  <testcase name="product_list on product_list(com.tester.cases.KuaiShouV1Test)" classname="com.tester.cases.KuaiShouV1Test" time="2.131"/>
+  <testcase name="get_live_square_refresh on get_live_square_refresh(com.tester.cases.KuaiShouV1Test)" classname="com.tester.cases.KuaiShouV1Test" time="0.529"/>
+  <testcase name="get_live_info on get_live_info(com.tester.cases.KuaiShouV1Test)" classname="com.tester.cases.KuaiShouV1Test" time="0.491"/>
+  <testcase name="get_live_district_rank on get_live_district_rank(com.tester.cases.KuaiShouV1Test)" classname="com.tester.cases.KuaiShouV1Test" time="3.793"/>
+  <testcase name="user_video on user_video(com.tester.cases.KuaiShouV1Test)" classname="com.tester.cases.KuaiShouV1Test" time="1.65"/>
+  <testcase name="note_comments on note_comments(com.tester.cases.XHSv1Test)" classname="com.tester.cases.XHSv1Test" time="1.801"/>
+  <testcase name="video_detail on video_detail(com.tester.cases.XHSv1Test)" classname="com.tester.cases.XHSv1Test" time="0.596"/>
+  <testcase name="user_search on user_search(com.tester.cases.XHSv1Test)" classname="com.tester.cases.XHSv1Test" time="6.056"/>
+  <testcase name="user_fans on user_fans(com.tester.cases.XHSv1Test)" classname="com.tester.cases.XHSv1Test" time="2.614"/>
+  <testcase name="user_info on user_info(com.tester.cases.XHSv1Test)" classname="com.tester.cases.XHSv1Test" time="0.534"/>
+  <testcase name="user_note on user_note(com.tester.cases.XHSv1Test)" classname="com.tester.cases.XHSv1Test" time="0.512"/>
+  <testcase name="note_detail on note_detail(com.tester.cases.XHSv1Test)" classname="com.tester.cases.XHSv1Test" time="0.35"/>
+  <testcase name="user_focus on user_focus(com.tester.cases.XHSv1Test)" classname="com.tester.cases.XHSv1Test" time="0.334"/>
+  <testcase name="user_video on user_video(com.tester.cases.XHSv1Test)" classname="com.tester.cases.XHSv1Test" time="0.492"/>
+  <testcase name="home_feed on home_feed(com.tester.cases.XHSv1Test)" classname="com.tester.cases.XHSv1Test" time="0.631"/>
+  <testcase name="get_shop_items on get_shop_items(com.tester.cases.TBAPPTest)" classname="com.tester.cases.TBAPPTest" time="8.655"/>
+  <testcase name="video_list on video_list(com.tester.cases.TBAPPTest)" classname="com.tester.cases.TBAPPTest" time="4.641"/>
+  <testcase name="live_detail on live_detail(com.tester.cases.TBAPPTest)" classname="com.tester.cases.TBAPPTest" time="2.036"/>
+  <testcase name="call_nums on call_nums(com.tester.cases.TBAPPTest)" classname="com.tester.cases.TBAPPTest" time="0.089"/>
+  <testcase name="channel_info on channel_info(com.tester.cases.TBAPPTest)" classname="com.tester.cases.TBAPPTest" time="2.312"/>
+  <testcase name="goods_list on goods_list(com.tester.cases.TBAPPTest)" classname="com.tester.cases.TBAPPTest" time="6.82"/>
+  <testcase name="broadcaster_info on broadcaster_info(com.tester.cases.TBAPPTest)" classname="com.tester.cases.TBAPPTest" time="5.903"/>
+  <testcase name="get_item_list on get_item_list(com.tester.cases.SumaitongTest)" classname="com.tester.cases.SumaitongTest" time="1.777"/>
+  <testcase name="get_shop_item on get_shop_item(com.tester.cases.SumaitongTest)" classname="com.tester.cases.SumaitongTest" time="0.879"/>
+  <testcase name="get_shop_feedback on get_shop_feedback(com.tester.cases.SumaitongTest)" classname="com.tester.cases.SumaitongTest" time="0.858"/>
+  <testcase name="get_shop_info_h5 on get_shop_info_h5(com.tester.cases.SumaitongTest)" classname="com.tester.cases.SumaitongTest" time="0.902"/>
+  <testcase name="get_shop_info_pc on get_shop_info_pc(com.tester.cases.SumaitongTest)" classname="com.tester.cases.SumaitongTest" time="0.621"/>
+  <testcase name="get_item_detial_h5 on get_item_detial_h5(com.tester.cases.SumaitongTest)" classname="com.tester.cases.SumaitongTest" time="2.315"/>
+  <testcase name="get_item_detial_pc on get_item_detial_pc(com.tester.cases.SumaitongTest)" classname="com.tester.cases.SumaitongTest" time="0.749"/>
+  <testcase name="get_item_feedback on get_item_feedback(com.tester.cases.SumaitongTest)" classname="com.tester.cases.SumaitongTest" time="0.838"/>
+  <testcase name="get_seller_info on get_seller_info(com.tester.cases.SumaitongTest)" classname="com.tester.cases.SumaitongTest" time="0.905"/>
+  <testcase name="hot_recommend on hot_recommend(com.tester.cases.DouyinAweTest)" classname="com.tester.cases.DouyinAweTest" time="4.236"/>
+  <testcase name="video_info on video_info(com.tester.cases.DouyinAweTest)" classname="com.tester.cases.DouyinAweTest" time="0.203"/>
+  <testcase name="get_promotion_list on get_promotion_list(com.tester.cases.DouyinAweTest)" classname="com.tester.cases.DouyinAweTest" time="0.47"/>
+  <testcase name="get_aweme_comment on get_aweme_comment(com.tester.cases.DouyinAweTest)" classname="com.tester.cases.DouyinAweTest" time="0.463"/>
+  <testcase name="user_info on user_info(com.tester.cases.DouyinAweTest)" classname="com.tester.cases.DouyinAweTest" time="0.446"/>
+  <testcase name="user_room on user_room(com.tester.cases.DouyinAweTest)" classname="com.tester.cases.DouyinAweTest" time="0.259"/>
+  <testcase name="get_user_info on get_user_info(com.tester.cases.DouyinAweTest)" classname="com.tester.cases.DouyinAweTest" time="2.405"/>
+  <testcase name="user_hot_video on user_hot_video(com.tester.cases.DouyinAweTest)" classname="com.tester.cases.DouyinAweTest" time="3.228"/>
+  <testcase name="get_aweme_info on get_aweme_info(com.tester.cases.DouyinAweTest)" classname="com.tester.cases.DouyinAweTest" time="1.485"/>
+  <testcase name="get_aweme_list on get_aweme_list(com.tester.cases.DouyinAweTest)" classname="com.tester.cases.DouyinAweTest" time="8.622"/>
+  <testcase name="user_video on user_video(com.tester.cases.DouyinAweTest)" classname="com.tester.cases.DouyinAweTest" time="2.271"/>
+  <testcase name="items on items(com.tester.cases.JingDongCPSTest)" classname="com.tester.cases.JingDongCPSTest" time="0.37"/>
+  <testcase name="homepage_shops on homepage_shops(com.tester.cases.MeiTuanTest)" classname="com.tester.cases.MeiTuanTest" time="7.579"/>
+  <testcase name="shop_comments on shop_comments(com.tester.cases.MeiTuanTest)" classname="com.tester.cases.MeiTuanTest" time="15.582"/>
+  <testcase name="call_nums on call_nums(com.tester.cases.MeiTuanTest)" classname="com.tester.cases.MeiTuanTest" time="0.09"/>
+  <testcase name="shop_foods on shop_foods(com.tester.cases.MeiTuanTest)" classname="com.tester.cases.MeiTuanTest" time="6.401"/>
+  <testcase name="user_info on user_info(com.tester.cases.DouyinShareTest)" classname="com.tester.cases.DouyinShareTest" time="0.431"/>
+  <testcase name="user_video on user_video(com.tester.cases.DouyinShareTest)" classname="com.tester.cases.DouyinShareTest" time="3.559"/>
+  <testcase name="get_goods_detail on get_goods_detail(com.tester.cases.TBTest)" classname="com.tester.cases.TBTest" time="0.534"/>
+  <testcase name="get_good_goods on get_good_goods(com.tester.cases.TBTest)" classname="com.tester.cases.TBTest" time="0.615"/>
+  <testcase name="get_questions on get_questions(com.tester.cases.TBTest)" classname="com.tester.cases.TBTest" time="2.012"/>
+  <testcase name="get_ask_tag on get_ask_tag(com.tester.cases.TBTest)" classname="com.tester.cases.TBTest" time="0.418"/>
+  <testcase name="get_tb_comment on get_tb_comment(com.tester.cases.TBTest)" classname="com.tester.cases.TBTest" time="2.319"/>
+  <testcase name="get_daren_feed on get_daren_feed(com.tester.cases.TBTest)" classname="com.tester.cases.TBTest" time="0.767"/>
+  <testcase name="get_daren_info on get_daren_info(com.tester.cases.TBTest)" classname="com.tester.cases.TBTest" time="0.922"/>
+  <testcase name="get_mall_similar_goods on get_mall_similar_goods(com.tester.cases.PddTest)" classname="com.tester.cases.PddTest" time="0.311"/>
+  <testcase name="get_goods_detail on get_goods_detail(com.tester.cases.PddTest)" classname="com.tester.cases.PddTest" time="0.631"/>
+  <testcase name="get_limited_seckill on get_limited_seckill(com.tester.cases.PddTest)" classname="com.tester.cases.PddTest" time="0.296"/>
+  <testcase name="get_daily_good_mall on get_daily_good_mall(com.tester.cases.PddTest)" classname="com.tester.cases.PddTest" time="1.215"/>
+  <testcase name="get_mall_info on get_mall_info(com.tester.cases.PddTest)" classname="com.tester.cases.PddTest" time="0.903"/>
+  <testcase name="get_fenlei_goods on get_fenlei_goods(com.tester.cases.PddTest)" classname="com.tester.cases.PddTest" time="34.107"/>
+  <testcase name="get_similar_goods on get_similar_goods(com.tester.cases.PddTest)" classname="com.tester.cases.PddTest" time="2.152"/>
+  <testcase name="get_hot_goods on get_hot_goods(com.tester.cases.PddTest)" classname="com.tester.cases.PddTest" time="0.288"/>
+  <testcase name="get_clearance_sale_goods on get_clearance_sale_goods(com.tester.cases.PddTest)" classname="com.tester.cases.PddTest" time="1.088"/>
+  <testcase name="get_mall_most_goods on get_mall_most_goods(com.tester.cases.PddTest)" classname="com.tester.cases.PddTest" time="29.261"/>
+  <testcase name="get_99_goods on get_99_goods(com.tester.cases.PddTest)" classname="com.tester.cases.PddTest" time="0.594"/>
+  <testcase name="get_new_clothes_goods on get_new_clothes_goods(com.tester.cases.PddTest)" classname="com.tester.cases.PddTest" time="2.267"/>
+  <testcase name="get_love_shopping_goods on get_love_shopping_goods(com.tester.cases.PddTest)" classname="com.tester.cases.PddTest" time="1.525"/>
+  <testcase name="get_electrical_goods on get_electrical_goods(com.tester.cases.PddTest)" classname="com.tester.cases.PddTest" time="0.811"/>
+  <testcase name="get_pdd_date on get_pdd_date(com.tester.cases.PddTest)" classname="com.tester.cases.PddTest" time="0.811"/>
+  <testcase name="get_subsidy_goods on get_subsidy_goods(com.tester.cases.PddTest)" classname="com.tester.cases.PddTest" time="0.712"/>
+  <testcase name="get_cat_id_list on get_cat_id_list(com.tester.cases.PddTest)" classname="com.tester.cases.PddTest" time="0.052"/>
+  <testcase name="ice_shopping_tab on ice_shopping_tab(com.tester.cases.DuTest)" classname="com.tester.cases.DuTest" time="5.671"/>
+  <testcase name="sold_list on sold_list(com.tester.cases.DuTest)" classname="com.tester.cases.DuTest" time="1.641"/>
+  <testcase name="call_nums on call_nums(com.tester.cases.DuTest)" classname="com.tester.cases.DuTest" time="0.075"/>
+  <testcase name="item_detail on item_detail(com.tester.cases.DuTest)" classname="com.tester.cases.DuTest" time="1.573"/>
+  <testcase name="ice_shopping on ice_shopping(com.tester.cases.DuTest)" classname="com.tester.cases.DuTest" time="2.03"/>
+  <testcase name="get_shop_items on get_shop_items(com.tester.cases.AlibabaTest)" classname="com.tester.cases.AlibabaTest" time="4.145"/>
+  <testcase name="get_search_list on get_search_list(com.tester.cases.AlibabaTest)" classname="com.tester.cases.AlibabaTest" time="2.644"/>
+  <testcase name="get_item_info_h5 on get_item_info_h5(com.tester.cases.AlibabaTest)" classname="com.tester.cases.AlibabaTest" time="0.783"/>
+  <testcase name="get_comment_list on get_comment_list(com.tester.cases.AlibabaTest)" classname="com.tester.cases.AlibabaTest" time="0.924"/>
+  <testcase name="get_product_info on get_product_info(com.tester.cases.AlibabaTest)" classname="com.tester.cases.AlibabaTest" time="0.027"/>
+  <testcase name="get_cate_info on get_cate_info(com.tester.cases.AlibabaTest)" classname="com.tester.cases.AlibabaTest" time="3.357"/>
+  <testcase name="item_list on item_list(com.tester.cases.KaoLaTest)" classname="com.tester.cases.KaoLaTest" time="0.806"/>
+  <testcase name="shop_info on shop_info(com.tester.cases.KaoLaTest)" classname="com.tester.cases.KaoLaTest" time="2.649"/>
+  <testcase name="shop_item on shop_item(com.tester.cases.KaoLaTest)" classname="com.tester.cases.KaoLaTest" time="1.408"/>
+  <testcase name="item_detail on item_detail(com.tester.cases.KaoLaTest)" classname="com.tester.cases.KaoLaTest" time="1.117"/>
+  <testcase name="leaf_cate on leaf_cate(com.tester.cases.KaoLaTest)" classname="com.tester.cases.KaoLaTest" time="0.576"/>
+  <testcase name="item_comm on item_comm(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="0.211"/>
+  <testcase name="item_info on item_info(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="0.212"/>
+  <testcase name="shop_font on shop_font(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="0.253"/>
+  <testcase name="shop_info on shop_info(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="1.842"/>
+  <testcase name="item_price on item_price(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="0.21"/>
+  <testcase name="note_comments on note_comments(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="1.599"/>
+  <testcase name="call_nums on call_nums(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="0.077"/>
+  <testcase name="shop_items on shop_items(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="0.471"/>
+  <testcase name="channel_refresh on channel_refresh(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="0.27"/>
+  <testcase name="video_detail on video_detail(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="4.543"/>
+  <testcase name="item_search on item_search(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="0.356"/>
+  <testcase name="user_search on user_search(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="1.687"/>
+  <testcase name="topic_notes on topic_notes(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="1.576"/>
+  <testcase name="user_fans on user_fans(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="1.588"/>
+  <testcase name="user_info on user_info(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="1.575"/>
+  <testcase name="user_note on user_note(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="3.088"/>
+  <testcase name="note_detail on note_detail(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="1.689"/>
+  <testcase name="user_focus on user_focus(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="1.583"/>
+  <testcase name="user_video on user_video(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="1.999"/>
+  <testcase name="note_search on note_search(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="1.595"/>
+  <testcase name="home_feed on home_feed(com.tester.cases.XHSv2Test)" classname="com.tester.cases.XHSv2Test" time="1.6"/>
+  <testcase name="get_live_square_list on get_live_square_list(com.tester.cases.KuaiShouV2Test)" classname="com.tester.cases.KuaiShouV2Test" time="1.982"/>
+  <testcase name="get_live_top_users on get_live_top_users(com.tester.cases.KuaiShouV2Test)" classname="com.tester.cases.KuaiShouV2Test" time="1.783"/>
+  <testcase name="video_comment on video_comment(com.tester.cases.KuaiShouV2Test)" classname="com.tester.cases.KuaiShouV2Test" time="1.013"/>
+  <testcase name="call_nums on call_nums(com.tester.cases.KuaiShouV2Test)" classname="com.tester.cases.KuaiShouV2Test" time="0.081"/>
+  <testcase name="nearby_feed on nearby_feed(com.tester.cases.KuaiShouV2Test)" classname="com.tester.cases.KuaiShouV2Test" time="0.749"/>
+  <testcase name="video_detail on video_detail(com.tester.cases.KuaiShouV2Test)" classname="com.tester.cases.KuaiShouV2Test" time="7.12"/>
+  <testcase name="hot_feed on hot_feed(com.tester.cases.KuaiShouV2Test)" classname="com.tester.cases.KuaiShouV2Test" time="1.299"/>
+  <testcase name="get_live_users on get_live_users(com.tester.cases.KuaiShouV2Test)" classname="com.tester.cases.KuaiShouV2Test" time="1.64"/>
+  <testcase name="user_info on user_info(com.tester.cases.KuaiShouV2Test)" classname="com.tester.cases.KuaiShouV2Test" time="0.681"/>
+  <testcase name="share_video on share_video(com.tester.cases.KuaiShouV2Test)" classname="com.tester.cases.KuaiShouV2Test" time="9.218"/>
+  <testcase name="product_list on product_list(com.tester.cases.KuaiShouV2Test)" classname="com.tester.cases.KuaiShouV2Test" time="0.277"/>
+  <testcase name="get_live_square_refresh on get_live_square_refresh(com.tester.cases.KuaiShouV2Test)" classname="com.tester.cases.KuaiShouV2Test" time="0.656"/>
+  <testcase name="get_live_info on get_live_info(com.tester.cases.KuaiShouV2Test)" classname="com.tester.cases.KuaiShouV2Test" time="0.765"/>
+  <testcase name="get_live_district_rank on get_live_district_rank(com.tester.cases.KuaiShouV2Test)" classname="com.tester.cases.KuaiShouV2Test" time="3.071"/>
+  <testcase name="user_video on user_video(com.tester.cases.KuaiShouV2Test)" classname="com.tester.cases.KuaiShouV2Test" time="1.478"/>
+</testsuite>

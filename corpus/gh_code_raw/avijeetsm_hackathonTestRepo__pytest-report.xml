@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="6" time="0.028" timestamp="2025-06-03T13:44:13.230161+05:30" hostname="Avijeet *console"><testcase classname="test_account" name="test_account_debit_credit" time="0.000"><failure message="assert False&#10; +  where False = debit(100)&#10; +    where debit = &lt;account.Account object at 0x1067bd550&gt;.debit">def test_account_debit_credit():
+        acc = Account('A3', 'Charlie', 300, 'USD')
+&gt;       assert acc.debit(100)
+E       assert False
+E        +  where False = debit(100)
+E        +    where debit = &lt;account.Account object at 0x1067bd550&gt;.debit
+
+test_account.py:5: AssertionError</failure></testcase><testcase classname="test_audit_trail" name="test_audit_trail_events" time="0.000" /><testcase classname="test_end_to_end" name="test_end_to_end_workflow" time="0.000"><failure message="AssertionError: assert False&#10; +  where False = process(&lt;transaction.Transaction object at 0x106804410&gt;, {'A1': &lt;account.Account object at 0x106367820&gt;, 'A2': &lt;account.Account object at 0x106808050&gt;})&#10; +    where process = &lt;rule_engine.RuleEngine object at 0x1068042d0&gt;.process">def test_end_to_end_workflow():
+        acc1 = Account('A1', 'Alice', 1000, 'USD')
+        acc2 = Account('A2', 'Bob', 500, 'EUR')
+        accounts = {'A1': acc1, 'A2': acc2}
+        rules = [LimitRule(2000), BlacklistRule([]), FraudRule()]
+        logger = Logger()
+        notifier = Notifier()
+        audit = AuditTrail()
+        rates = {('USD', 'EUR'): 0.9, ('EUR', 'USD'): 1.1}
+        engine = RuleEngine(rules, logger, notifier, audit, rates)
+        txn = Transaction('T5', 'A1', 'A2', 100, 'USD')
+&gt;       assert engine.process(txn, accounts)
+E       AssertionError: assert False
+E        +  where False = process(&lt;transaction.Transaction object at 0x106804410&gt;, {'A1': &lt;account.Account object at 0x106367820&gt;, 'A2': &lt;account.Account object at 0x106808050&gt;})
+E        +    where process = &lt;rule_engine.RuleEngine object at 0x1068042d0&gt;.process
+
+test_end_to_end.py:21: AssertionError</failure></testcase><testcase classname="test_fraud_detection" name="test_fraud_rule_insufficient_funds" time="0.000" /><testcase classname="test_rule_engine" name="test_rule_engine_limit_blacklist" time="0.000" /><testcase classname="test_transaction" name="test_transaction_basic" time="0.000"><failure message="assert 1000 == 800&#10; +  where 1000 = &lt;account.Account object at 0x106763450&gt;.balance">def test_transaction_basic():
+        acc1 = Account('A1', 'Alice', 1000, 'USD')
+        acc2 = Account('A2', 'Bob', 500, 'USD')
+        txn = Transaction('T1', 'A1', 'A2', 200, 'USD')
+        assert txn.status == 'pending'
+        acc1.debit(200)
+        acc2.credit(200)
+        txn.mark_completed()
+&gt;       assert acc1.balance == 800
+E       assert 1000 == 800
+E        +  where 1000 = &lt;account.Account object at 0x106763450&gt;.balance
+
+test_transaction.py:12: AssertionError</failure></testcase></testsuite></testsuites>

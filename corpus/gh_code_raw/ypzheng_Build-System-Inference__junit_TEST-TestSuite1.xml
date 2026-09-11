@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="0" hostname="eduroamguest-3-033.sys.cs.local" name="TestSuite1" skipped="0" tests="1" time="0.0" timestamp="2017-12-14T16:39:18">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="env.XPC_SERVICE_NAME" value="0" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="env.SECURITYSESSIONID" value="186a7" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/classes" />
+    <property name="env.TMPDIR" value="/var/folders/zw/b3353fdj3yqgnv6zpp7ypybc0000gn/T/" />
+    <property name="env.PWD" value="/Users/caitlynzheng/eclipse-workspace/BSI" />
+    <property name="env.LANG" value="en_US.UTF-8" />
+    <property name="env.LESS" value="-R" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/usr/local/Cellar/ant/1.10.1/libexec" />
+    <property name="java.runtime.version" value="1.8.0_152-b16" />
+    <property name="env.Apple_PubSub_Socket_Render" value="/private/tmp/com.apple.launchd.JPD9AETZEd/Render" />
+    <property name="user.name" value="caitlynzheng" />
+    <property name="env.USER" value="caitlynzheng" />
+    <property name="env.SHELL" value="/bin/zsh" />
+    <property name="env.__CF_USER_TEXT_ENCODING" value="0x1F5:0x0:0x0" />
+    <property name="env.PATH" value="/Users/caitlynzheng/.Pokemon-Terminal:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/caitlynzheng/Library/Android/sdk/build-tools/26.0.2:/Users/caitlynzheng/Library/Android/sdk:/Users/caitlynzheng/research/defects4j/framework/bin:/Users/caitlynzheng/research/defects4j/major/bin" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="env.XPC_FLAGS" value="0x0" />
+    <property name="ant.project.name" value="BSI" />
+    <property name="env.LC_CTYPE" value="en_US.UTF-8" />
+    <property name="java.version" value="1.8.0_152" />
+    <property name="user.timezone" value="" />
+    <property name="env.JAVA_MAIN_CLASS_77230" value="org.apache.tools.ant.launch.Launcher" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.SHLVL" value="2" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="52.0" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre" />
+    <property name="env.ANDROID_HOME" value="/usr/local/share/android-sdk" />
+    <property name="env.ZSH" value="/Users/caitlynzheng/.oh-my-zsh" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.LOGNAME" value="caitlynzheng" />
+    <property name="ant.file" value="/Users/caitlynzheng/eclipse-workspace/BSI/build.xml" />
+    <property name="os.version" value="10.13.2" />
+    <property name="env.TERM_PROGRAM_VERSION" value="400" />
+    <property name="ant.file.BSI" value="/Users/caitlynzheng/eclipse-workspace/BSI/build.xml" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="25.152-b16" />
+    <property name="ant.library.dir" value="/usr/local/Cellar/ant/1.10.1/libexec/lib" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="env.JAVA_HOME" value="/Library/Java/Home" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="env.TERM" value="xterm-256color" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="env.LSCOLORS" value="Gxfxcxdxbxegedabagacad" />
+    <property name="user.home" value="/Users/caitlynzheng" />
+    <property name="target" value="1.8" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="env.TERM_PROGRAM" value="Apple_Terminal" />
+    <property name="env.PAGER" value="less" />
+    <property name="java.library.path" value="/Users/caitlynzheng/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="gopherProxySet" value="false" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="java.class.path" value="/Users/caitlynzheng/eclipse-workspace/BSI/bin:/Users/caitlynzheng/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar:/Users/caitlynzheng/.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar:/Users/caitlynzheng/eclipse-workspace/BSI/lib/ant-launcher-1.10.1.jar:/Users/caitlynzheng/eclipse-workspace/BSI/lib/ant-1.10.1.jar:/usr/local/Cellar/ant/1.10.1/libexec/lib/junit-3.8.2.jar:/usr/local/Cellar/ant/1.10.1/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.10.1/libexec/lib/ant.jar:/usr/local/Cellar/ant/1.10.1/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.10.1/libexec/lib/ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner TestSuite1 skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/caitlynzheng/eclipse-workspace/BSI/junit/TEST-TestSuite1.xml crashfile=/Users/caitlynzheng/eclipse-workspace/BSI/junitvmwatcher3628057799992681046.properties propsfile=/Users/caitlynzheng/eclipse-workspace/BSI/junit804687420551685096.properties" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.1 compiled on February 2 2017" />
+    <property name="env.TERM_SESSION_ID" value="1986949F-AAEC-4080-BE04-568EAB8D40CD" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.HOME" value="/Users/caitlynzheng" />
+    <property name="java.io.tmpdir" value="/var/folders/zw/b3353fdj3yqgnv6zpp7ypybc0000gn/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="env.SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.u4bqYwZDZ0/Listeners" />
+    <property name="ant.file.type.BSI" value="file" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="os.arch" value="x86_64" />
+    <property name="java.ext.dirs" value="/Users/caitlynzheng/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="user.dir" value="/Users/caitlynzheng/eclipse-workspace/BSI" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="/Users/caitlynzheng/eclipse-workspace/BSI" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="/usr/local/Cellar/ant/1.10.1/libexec/lib/ant.jar" />
+    <property name="source" value="1.8" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="ant.project.invoked-targets" value="test" />
+  </properties>
+  <error message="TestSuite1" type="java.lang.ClassNotFoundException">java.lang.ClassNotFoundException: TestSuite1
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+</error>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="14.2" tests="3" failures="1">
+  <testsuite name="Login" timestamp="2026-07-29T02:30:00" tests="3" time="14.2" failures="1">
+    <testcase name="Login logs in with valid credentials" classname="logs in with valid credentials" time="5.1">
+      <failure message="Timed out retrying after 4000ms" type="AssertionError">AssertionError: Timed out retrying after 4000ms
+    at Context.eval (webpack:///./cypress/e2e/login.cy.ts:22:14)</failure>
+    </testcase>
+    <testcase name="Login logs in with valid credentials" classname="logs in with valid credentials" time="4.6"/>
+    <testcase name="Login rejects a bad password" classname="rejects a bad password" time="4.5"/>
+  </testsuite>
+</testsuites>

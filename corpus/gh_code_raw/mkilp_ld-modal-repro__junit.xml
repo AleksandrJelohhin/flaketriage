@@ -1,0 +1,41 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="6.796014">
+<testsuite name="example.spec.ts" timestamp="2023-10-25T15:31:42.510Z" hostname="chromium" tests="1" failures="1" skipped="0" time="5.208" errors="0">
+<testcase name="Custom Filter: Selected Filters Area" classname="example.spec.ts" time="5.208">
+<failure message="example.spec.ts:3:5 Custom Filter: Selected Filters Area" type="FAILURE">
+<![CDATA[  [chromium] › example.spec.ts:3:5 › Custom Filter: Selected Filters Area ──────────────────────────
+
+    Error: locator.click: Target closed
+    =========================== logs ===========================
+    waiting for locator('_react=LdSelect').locator('_react=LdOption').first()
+      locator resolved to <ld-option value="test" selected="false" disabled="false" c…>…</ld-option>
+    attempting click action
+      waiting for element to be visible, enabled and stable
+        element is not visible - waiting...
+    ============================================================
+
+       8 |       .locator("_react=LdOption")
+       9 |       .nth(0)
+    > 10 |       .click();
+         |        ^
+      11 | });
+      12 |
+
+        at C:\Users\m229531\WebstormProjects\ldmodal\tests\example.spec.ts:10:8
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\example-Custom-Filter-Selected-Filters-Area-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\example-Custom-Filter-Selected-Filters-Area-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\example-Custom-Filter-Selected-Filters-Area-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

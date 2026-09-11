@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="drivy.LessonControllerSpec" tests="1" skipped="0" failures="1" errors="0" timestamp="2015-08-14T17:57:35" hostname="172-16-14-163.DYNAPOOL.NYU.EDU" time="1.701">
+  <properties/>
+  <testcase name="test something" classname="drivy.LessonControllerSpec" time="1.701">
+    <failure message="Condition not satisfied:&#10;&#10;true == false&#10;     |&#10;     false&#10;" type="org.spockframework.runtime.SpockComparisonFailure">Condition not satisfied:
+
+true == false
+     |
+     false
+
+	at drivy.LessonControllerSpec.test something(LessonControllerSpec.groovy:20)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

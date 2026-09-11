@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="2" failures="1" hostname="borrero-Satellite-L745" name="com.timeshots.blacklabel.onlinedirectory.UserControllerSpec" tests="7" time="6.997" timestamp="2014-07-19T10:40:20">
+  <properties />
+  <testcase classname="com.timeshots.blacklabel.onlinedirectory.UserControllerSpec" name="Test the index action returns the correct model" time="5.272" />
+  <testcase classname="com.timeshots.blacklabel.onlinedirectory.UserControllerSpec" name="Test the create action returns the correct model" time="0.273" />
+  <testcase classname="com.timeshots.blacklabel.onlinedirectory.UserControllerSpec" name="Test the save action correctly persists an instance" time="0.648">
+    <error message="Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead " type="org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException">org.codehaus.groovy.grails.web.servlet.mvc.exceptions.CannotRedirectException: Cannot redirect for object [null] it is not a domain or has no identifier. Use an explicit redirect instead 
+	at com.timeshots.blacklabel.onlinedirectory.UserController.tt__save_closure9_closure14(UserController.groovy:45)
+	at com.timeshots.blacklabel.onlinedirectory.UserController.$tt__save(UserController.groovy:42)
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:51)
+</error>
+  </testcase>
+  <testcase classname="com.timeshots.blacklabel.onlinedirectory.UserControllerSpec" name="Test that the show action returns the correct model" time="0.153" />
+  <testcase classname="com.timeshots.blacklabel.onlinedirectory.UserControllerSpec" name="Test that the edit action returns the correct model" time="0.113" />
+  <testcase classname="com.timeshots.blacklabel.onlinedirectory.UserControllerSpec" name="Test the update action performs an update on a valid domain instance" time="0.354">
+    <error message="Cannot get property &apos;id&apos; on null object" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot get property &apos;id&apos; on null object
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:118)
+</error>
+  </testcase>
+  <testcase classname="com.timeshots.blacklabel.onlinedirectory.UserControllerSpec" name="Test that the delete action deletes an instance if it exists" time="0.152">
+    <failure message="Condition not satisfied:&#xa;&#xa;User.count() == 1&#xa;     |       |&#xa;     0       false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+User.count() == 1
+     |       |
+     0       false
+
+	at com.timeshots.blacklabel.onlinedirectory.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:137)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+****************** Test Second Line
+****************** Test Third Line
+****************** Test Fourth Line
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-out>
+  <system-err><![CDATA[--Output from Test the index action returns the correct model--
+--Output from Test the create action returns the correct model--
+--Output from Test the save action correctly persists an instance--
+--Output from Test that the show action returns the correct model--
+--Output from Test that the edit action returns the correct model--
+--Output from Test the update action performs an update on a valid domain instance--
+--Output from Test that the delete action deletes an instance if it exists--
+]]></system-err>
+</testsuite>

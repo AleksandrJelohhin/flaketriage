@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="MoodleApiTest" file="/app/tests/MoodleApiTest.php" tests="9" assertions="26" errors="3" warnings="0" failures="2" skipped="0" time="0.126245">
+    <testcase name="testGetUser" class="MoodleApiTest" classname="MoodleApiTest" file="/app/tests/MoodleApiTest.php" line="24" assertions="3" time="0.032808"/>
+    <testcase name="testGetCourseGradeCategories" class="MoodleApiTest" classname="MoodleApiTest" file="/app/tests/MoodleApiTest.php" line="32" assertions="6" time="0.015420">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">MoodleApiTest::testGetCourseGradeCategories
+Failed asserting that actual size 3 matches expected size 4.
+
+/app/tests/MoodleApiTest.php:41</failure>
+    </testcase>
+    <testcase name="testGetGradeReportSelfEnrol" class="MoodleApiTest" classname="MoodleApiTest" file="/app/tests/MoodleApiTest.php" line="44" assertions="5" time="0.014941"/>
+    <testcase name="testGetGradeReportCourse" class="MoodleApiTest" classname="MoodleApiTest" file="/app/tests/MoodleApiTest.php" line="59" assertions="1" time="0.014736">
+      <error type="PHPUnit\Framework\Error\Warning">MoodleApiTest::testGetGradeReportCourse
+Undefined array key 0
+
+/app/tests/MoodleApiTest.php:64</error>
+    </testcase>
+    <testcase name="testGetSelfEnrolCourse" class="MoodleApiTest" classname="MoodleApiTest" file="/app/tests/MoodleApiTest.php" line="70" assertions="7" time="0.014832"/>
+    <testcase name="testRegisterUser" class="MoodleApiTest" classname="MoodleApiTest" file="/app/tests/MoodleApiTest.php" line="84" assertions="2" time="0.002241"/>
+    <testcase name="testGetCourse" class="MoodleApiTest" classname="MoodleApiTest" file="/app/tests/MoodleApiTest.php" line="116" assertions="0" time="0.011924">
+      <error type="PHPUnit\Framework\Error\Warning">MoodleApiTest::testGetCourse
+Undefined array key "courses"
+
+/app/src/MoodleApi.php:380
+/app/tests/MoodleApiTest.php:119</error>
+    </testcase>
+    <testcase name="testGetCourses" class="MoodleApiTest" classname="MoodleApiTest" file="/app/tests/MoodleApiTest.php" line="127" assertions="1" time="0.018406">
+      <error type="PHPUnit\Framework\Error\Warning">MoodleApiTest::testGetCourses
+Undefined array key 0
+
+/app/tests/MoodleApiTest.php:131</error>
+    </testcase>
+    <testcase name="testCanHandleServerAddressToBaseUrl" class="MoodleApiTest" classname="MoodleApiTest" file="/app/tests/MoodleApiTest.php" line="137" assertions="1" time="0.000937">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">MoodleApiTest::testCanHandleServerAddressToBaseUrl
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+-'http://moodle:80801'
++'http://moodle:8080'
+
+/app/tests/MoodleApiTest.php:139</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

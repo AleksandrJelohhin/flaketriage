@@ -1,0 +1,65 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="37.347027000000004">
+<testsuite name="bacoffice\backoffice-001.spec.ts" timestamp="2024-06-09T16:05:50.779Z" hostname="Chrome" tests="3" failures="1" skipped="0" time="31.82" errors="0">
+<testcase name="Login with invalid email @login (Qase ID: 1)" classname="bacoffice\backoffice-001.spec.ts" time="0.61">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\bacoffice-backoffice-001-Login-with-invalid-email-login-Qase-ID-1--Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Login with invalid password @login (Qase ID: 2)" classname="bacoffice\backoffice-001.spec.ts" time="0.583">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\bacoffice-backoffice-001-Login-with-invalid-password-login-Qase-ID-2--Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Login with valid credential @login (Qase ID: 3)" classname="bacoffice\backoffice-001.spec.ts" time="30.627">
+<failure message="backoffice-001.spec.ts:43:5 Login with valid credential @login (Qase ID: 3)" type="FAILURE">
+<![CDATA[  [Chrome] › bacoffice\backoffice-001.spec.ts:43:5 › Login with valid credential @login (Qase ID: 3) › Check the dashboard is displayed › LogInPage.isSearchInputVisible 
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByPlaceholder('Search by user info') to be visible
+
+
+      50 |     });
+      51 |     await test.step('Check the dashboard is displayed', async () => {
+    > 52 |         expect(await logInPage.isSearchInputVisible()).toBe(true);
+         |                                ^
+      53 |     });
+      54 | });
+      55 |
+
+        at D:\QA_A\ballerine_WR\test_repo\tests\specs\bacoffice\backoffice-001.spec.ts:52:32
+        at D:\QA_A\ballerine_WR\test_repo\tests\specs\bacoffice\backoffice-001.spec.ts:51:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\bacoffice-backoffice-001-Login-with-valid-credential-login-Qase-ID-3--Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\bacoffice-backoffice-001-Login-with-valid-credential-login-Qase-ID-3--Chrome\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\bacoffice-backoffice-001-Login-with-valid-credential-login-Qase-ID-3--Chrome\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\bacoffice-backoffice-001-Login-with-valid-credential-login-Qase-ID-3--Chrome\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\bacoffice-backoffice-001-Login-with-valid-credential-login-Qase-ID-3--Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\bacoffice-backoffice-001-Login-with-valid-credential-login-Qase-ID-3--Chrome\trace.zip]]
+
+[[ATTACHMENT|..\test-results\bacoffice-backoffice-001-Login-with-valid-credential-login-Qase-ID-3--Chrome\test-failed-2.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

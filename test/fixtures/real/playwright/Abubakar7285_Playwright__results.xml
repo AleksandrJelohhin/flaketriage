@@ -1,0 +1,112 @@
+<testsuites id="" name="" tests="4" failures="1" skipped="0" errors="1" time="178.351549">
+<testsuite name="admin.spec.js" timestamp="2026-09-03T06:59:09.734Z" hostname="chromium" tests="1" failures="0" skipped="0" time="60.774" errors="1">
+<testcase name="open admin" classname="admin.spec.js" time="60.774">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\admin-open-admin-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\admin-open-admin-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\admin-open-admin-chromium\trace.zip]]
+]]>
+</system-out>
+<error message="Test timeout of 60000ms exceeded while setting up &quot;adminPage&quot;." type="Error">
+<![CDATA[  [chromium] › admin.spec.js:3:1 › open admin ──────────────────────────────────────────────────────
+
+    Test timeout of 60000ms exceeded while setting up "adminPage".
+
+    Error: locator.click: Test timeout of 60000ms exceeded.
+    Call log:
+      - waiting for locator('a[href *= "admin1"]')
+
+
+       at ..\pages\AdminPage.js:10
+
+       8 |     }
+       9 |     async open() {
+    > 10 |         await this.menu.click();
+         |                         ^
+      11 |     }
+      12 |     async searchUser() {
+      13 |         await console.log("admin page ....");
+        at AdminPage.open (D:\PlaywrightAutomation\Playwright\pages\AdminPage.js:10:25)
+        at Object.adminPage (D:\PlaywrightAutomation\Playwright\fixtures\fixture.js:33:21)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\admin-open-admin-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\admin-open-admin-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\admin-open-admin-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\admin-open-admin-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="leave.spec.js" timestamp="2026-09-03T06:59:09.734Z" hostname="chromium" tests="1" failures="0" skipped="0" time="28.965" errors="0">
+<testcase name="Apply leave" classname="leave.spec.js" time="28.965">
+</testcase>
+</testsuite>
+<testsuite name="PIM.spec.js" timestamp="2026-09-03T06:59:09.734Z" hostname="chromium" tests="2" failures="1" skipped="0" time="81.734" errors="0">
+<testcase name="PIM Module › Add Employee" classname="PIM.spec.js" time="48.032">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\PIM-PIM-Module-Add-Employee-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\PIM-PIM-Module-Add-Employee-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\PIM-PIM-Module-Add-Employee-chromium\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [chromium] › PIM.spec.js:6:3 › PIM Module › Add Employee ─────────────────────────────────────────
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /viewPersonalDetails/
+    Received string:  "https://opensource-demo.orangehrmlive.com/web/index.php/pim/addEmployee"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        9 × unexpected value "https://opensource-demo.orangehrmlive.com/web/index.php/pim/addEmployee"
+
+
+       at ..\pages\PIMPage.js:28
+
+      26 |     }
+      27 |     async verifyEmployeeAdded() {
+    > 28 |         await expect(this.page).toHaveURL(/viewPersonalDetails/);
+         |                                 ^
+      29 |         await expect(this.empDetails).toBeVisible()
+      30 |     }
+      31 |     async searchEmployee(searchName) {
+        at PIMPage.verifyEmployeeAdded (D:\PlaywrightAutomation\Playwright\pages\PIMPage.js:28:33)
+        at D:\PlaywrightAutomation\Playwright\tests\PIM.spec.js:8:19
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\PIM-PIM-Module-Add-Employee-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\PIM-PIM-Module-Add-Employee-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\PIM-PIM-Module-Add-Employee-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\PIM-PIM-Module-Add-Employee-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="PIM Module › Search Employee" classname="PIM.spec.js" time="33.702">
+</testcase>
+</testsuite>
+</testsuites>

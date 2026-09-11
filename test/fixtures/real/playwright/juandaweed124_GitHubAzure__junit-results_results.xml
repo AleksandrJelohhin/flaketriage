@@ -1,0 +1,328 @@
+<testsuites id="" name="" tests="6" failures="2" skipped="0" errors="0" time="204.35525">
+<testsuite name="pruebaValiQC.spec.ts" timestamp="2025-04-26T17:53:39.958Z" hostname="chromium" tests="6" failures="2" skipped="0" time="191.571" errors="0">
+<testcase name="Crear Unidad de medida" classname="pruebaValiQC.spec.ts" time="8.837">
+<system-out>
+<![CDATA[✅ Login exitoso
+✅ Unidad de medida creada correctamente
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Crear-Unidad-de-medida-chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Crear Seccion" classname="pruebaValiQC.spec.ts" time="9.231">
+<system-out>
+<![CDATA[✅ Login exitoso
+✅ Sección creada exitosamente
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Crear-Seccion-chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Crear Analito" classname="pruebaValiQC.spec.ts" time="90.664">
+<failure message="pruebaValiQC.spec.ts:81:5 Crear Analito" type="FAILURE">
+<![CDATA[  [chromium] › pruebaValiQC.spec.ts:81:5 › Crear Analito ───────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('#mat-option-54').getByText('Seccion Automatizada 1')
+
+
+      104 |   await page.getByRole('spinbutton', { name: 'Nivel' }).fill('3');
+      105 |     await page.locator('#mat-mdc-form-field-label-14').getByText('Sección').click();
+    > 106 |   await page.locator('#mat-option-54').getByText('Seccion Automatizada 1').click();
+          |                                                                            ^
+      107 |   await page.locator('#mat-select-value-5').click();
+      108 |   await page.getByText('Cuantitativo').click();
+      109 |   await page.locator('#mat-mdc-slide-toggle-6-button').click();
+        at C:\Automatizacion\GitHubAzure\tests\pruebaValiQC.spec.ts:106:76
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\pruebaValiQC-Crear-Analito-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\pruebaValiQC-Crear-Analito-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('#mat-option-54').getByText('Seccion Automatizada 1')
+
+
+      104 |   await page.getByRole('spinbutton', { name: 'Nivel' }).fill('3');
+      105 |     await page.locator('#mat-mdc-form-field-label-14').getByText('Sección').click();
+    > 106 |   await page.locator('#mat-option-54').getByText('Seccion Automatizada 1').click();
+          |                                                                            ^
+      107 |   await page.locator('#mat-select-value-5').click();
+      108 |   await page.getByText('Cuantitativo').click();
+      109 |   await page.locator('#mat-mdc-slide-toggle-6-button').click();
+        at C:\Automatizacion\GitHubAzure\tests\pruebaValiQC.spec.ts:106:76
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\pruebaValiQC-Crear-Analito-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\pruebaValiQC-Crear-Analito-chromium-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\pruebaValiQC-Crear-Analito-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\pruebaValiQC-Crear-Analito-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('#mat-option-54').getByText('Seccion Automatizada 1')
+
+
+      104 |   await page.getByRole('spinbutton', { name: 'Nivel' }).fill('3');
+      105 |     await page.locator('#mat-mdc-form-field-label-14').getByText('Sección').click();
+    > 106 |   await page.locator('#mat-option-54').getByText('Seccion Automatizada 1').click();
+          |                                                                            ^
+      107 |   await page.locator('#mat-select-value-5').click();
+      108 |   await page.getByText('Cuantitativo').click();
+      109 |   await page.locator('#mat-mdc-slide-toggle-6-button').click();
+        at C:\Automatizacion\GitHubAzure\tests\pruebaValiQC.spec.ts:106:76
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\pruebaValiQC-Crear-Analito-chromium-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\pruebaValiQC-Crear-Analito-chromium-retry2\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[✅ Login exitoso
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Crear-Analito-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Crear-Analito-chromium\error-context.md]]
+✅ Login exitoso
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Crear-Analito-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Crear-Analito-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Crear-Analito-chromium-retry1\trace.zip]]
+✅ Login exitoso
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Crear-Analito-chromium-retry2\video.webm]]
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Crear-Analito-chromium-retry2\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Crear Lote" classname="pruebaValiQC.spec.ts" time="10.241">
+<system-out>
+<![CDATA[bHB5BIPK
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Crear-Lote-chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Lote Materiales de Control QCI" classname="pruebaValiQC.spec.ts" time="45.792">
+<failure message="pruebaValiQC.spec.ts:150:7 Lote Materiales de Control QCI" type="FAILURE">
+<![CDATA[  [chromium] › pruebaValiQC.spec.ts:150:7 › Lote Materiales de Control QCI ─────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('alert', { name: 'Registro creado' })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - expect.toBeVisible with timeout 5000ms
+      - waiting for getByRole('alert', { name: 'Registro creado' })
+
+
+      172 | await page.locator('#mat-mdc-slide-toggle-6-button').click();
+      173 | await page.getByRole('button', { name: 'Guardar' }).click();
+    > 174 | await expect(page.getByRole('alert', { name: 'Registro creado' })).toBeVisible();
+          |                                                                    ^
+      175 | await page.close();
+      176 | });
+      177 |
+        at C:\Automatizacion\GitHubAzure\tests\pruebaValiQC.spec.ts:174:68
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\pruebaValiQC-Lote-Materiales-de-Control-QCI-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\pruebaValiQC-Lote-Materiales-de-Control-QCI-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('alert', { name: 'Registro creado' })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - expect.toBeVisible with timeout 5000ms
+      - waiting for getByRole('alert', { name: 'Registro creado' })
+
+
+      172 | await page.locator('#mat-mdc-slide-toggle-6-button').click();
+      173 | await page.getByRole('button', { name: 'Guardar' }).click();
+    > 174 | await expect(page.getByRole('alert', { name: 'Registro creado' })).toBeVisible();
+          |                                                                    ^
+      175 | await page.close();
+      176 | });
+      177 |
+        at C:\Automatizacion\GitHubAzure\tests\pruebaValiQC.spec.ts:174:68
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\pruebaValiQC-Lote-Materiales-de-Control-QCI-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\pruebaValiQC-Lote-Materiales-de-Control-QCI-chromium-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\pruebaValiQC-Lote-Materiales-de-Control-QCI-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\pruebaValiQC-Lote-Materiales-de-Control-QCI-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('alert', { name: 'Registro creado' })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - expect.toBeVisible with timeout 5000ms
+      - waiting for getByRole('alert', { name: 'Registro creado' })
+
+
+      172 | await page.locator('#mat-mdc-slide-toggle-6-button').click();
+      173 | await page.getByRole('button', { name: 'Guardar' }).click();
+    > 174 | await expect(page.getByRole('alert', { name: 'Registro creado' })).toBeVisible();
+          |                                                                    ^
+      175 | await page.close();
+      176 | });
+      177 |
+        at C:\Automatizacion\GitHubAzure\tests\pruebaValiQC.spec.ts:174:68
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\pruebaValiQC-Lote-Materiales-de-Control-QCI-chromium-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\pruebaValiQC-Lote-Materiales-de-Control-QCI-chromium-retry2\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\pruebaValiQC-Lote-Materiales-de-Control-QCI-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Lote-Materiales-de-Control-QCI-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Lote-Materiales-de-Control-QCI-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Lote-Materiales-de-Control-QCI-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Lote-Materiales-de-Control-QCI-chromium-retry1\trace.zip]]
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Lote-Materiales-de-Control-QCI-chromium-retry2\video.webm]]
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Lote-Materiales-de-Control-QCI-chromium-retry2\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Consumo de excel" classname="pruebaValiQC.spec.ts" time="26.806">
+<system-out>
+<![CDATA[Valor de dropdownValue: 'Biologia Molecular'
+Se encontraron 56 opciones en la lista desplegable
+Opción encontrada: 'Quimica'
+Opción encontrada: 'Hematologia'
+Opción encontrada: 'Prueba'
+Opción encontrada: 'Prueba 2'
+Opción encontrada: 'Biología Molecular'
+Opción encontrada: 'Especiales'
+Opción encontrada: 'Infecciosas'
+Opción encontrada: 'Ingles'
+Opción encontrada: 'Microbiología'
+Opción encontrada: 'Pruebaqa'
+Opción encontrada: 'Marcadores'
+Opción encontrada: 'Inmunología'
+Opción encontrada: 'Inmunología'
+Opción encontrada: 'Seccionlog01'
+Opción encontrada: 'Seccion Jorge'
+Opción encontrada: 'Sección 21'
+Opción encontrada: 'Microbiologia Adn'
+Opción encontrada: 'Blood'
+Opción encontrada: 'Seccion Juan Qa Modif'
+Opción encontrada: 'Seccion Seguridad'
+Opción encontrada: 'Seccion Duplicar'
+Opción encontrada: 'Seccion Noviembre'
+Opción encontrada: 'Seccion Septiembre Final'
+Opción encontrada: 'Seccion Mani'
+Opción encontrada: 'Seccion Desde Cero'
+Opción encontrada: 'Seccion Regresion Full Octubre'
+Opción encontrada: 'Seccion Validar Duplicar Lote'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Quimica Modif'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Diciembre 2024'
+Opción encontrada: 'Seccion Enero 2025'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Juan Simulacion'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Prueba Video Modif'
+Opción encontrada: 'Seccion Nuevo Diseño Modif'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Front  Modif'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Automatizada 1'
+Opción encontrada: 'Seccion Automatizada 1'
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Consumo-de-excel-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Consumo-de-excel-chromium\error-context.md]]
+Valor de dropdownValue: 'Especiales'
+Se encontraron 56 opciones en la lista desplegable
+Opción encontrada: 'Quimica'
+Opción encontrada: 'Hematologia'
+Opción encontrada: 'Prueba'
+Opción encontrada: 'Prueba 2'
+Opción encontrada: 'Biología Molecular'
+Opción encontrada: 'Especiales'
+Seleccionando opción: 'Especiales'
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Consumo-de-excel-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|..\test-results\pruebaValiQC-Consumo-de-excel-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[Error: No se encontró la opción 'Biologia Molecular' en la lista desplegable.
+]]>
+</system-err>
+</testcase>
+</testsuite>
+</testsuites>

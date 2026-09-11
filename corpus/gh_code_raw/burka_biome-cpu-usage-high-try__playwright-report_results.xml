@@ -1,0 +1,629 @@
+<testsuites id="" name="" tests="12" failures="9" skipped="0" errors="0" time="22.107560000000003">
+<testsuite name="documentation.spec.ts" timestamp="2025-06-26T13:48:50.166Z" hostname="chromium" tests="4" failures="3" skipped="0" time="38.215" errors="0">
+<testcase name="Biome.js Documentation › should load documentation page" classname="documentation.spec.ts" time="11.794">
+<failure message="documentation.spec.ts:8:3 should load documentation page" type="FAILURE">
+<![CDATA[  [chromium] › documentation.spec.ts:8:3 › Biome.js Documentation › should load documentation page ─
+
+    Error: Timed out 5000ms waiting for expect(page).toHaveTitle(expected)
+
+    Locator: locator(':root')
+    Expected pattern: /Reference/
+    Received string:  "404 | Biome"
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+      - waiting for locator(':root')
+        9 × locator resolved to <html lang="en" dir="ltr" data-has-hero="" data-theme="light" class="astro-zhibqghj">…</html>
+          - unexpected value "404 | Biome"
+
+
+       7 |
+       8 |   test("should load documentation page", async ({ page }) => {
+    >  9 |     await expect(page).toHaveTitle(/Reference/);
+         |                        ^
+      10 |     await expect(page.locator("h1")).toContainText("Reference");
+      11 |   });
+      12 |
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:9:24
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-chromium/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(page).toHaveTitle(expected)
+
+    Locator: locator(':root')
+    Expected pattern: /Reference/
+    Received string:  "404 | Biome"
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+      - waiting for locator(':root')
+        9 × locator resolved to <html lang="en" dir="ltr" data-has-hero="" data-theme="light" class="astro-zhibqghj">…</html>
+          - unexpected value "404 | Biome"
+
+
+       7 |
+       8 |   test("should load documentation page", async ({ page }) => {
+    >  9 |     await expect(page).toHaveTitle(/Reference/);
+         |                        ^
+      10 |     await expect(page.locator("h1")).toContainText("Reference");
+      11 |   });
+      12 |
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:9:24
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-chromium-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-chromium-retry1/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-chromium-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Biome.js Documentation › should navigate between documentation sections" classname="documentation.spec.ts" time="1.893">
+</testcase>
+<testcase name="Biome.js Documentation › should have working pagination" classname="documentation.spec.ts" time="11.751">
+<failure message="documentation.spec.ts:24:3 should have working pagination" type="FAILURE">
+<![CDATA[  [chromium] › documentation.spec.ts:24:3 › Biome.js Documentation › should have working pagination 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('link', { name: /next/i })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('link', { name: /next/i })
+
+
+      27 |
+      28 |     // Verify navigation buttons
+    > 29 |     await expect(nextButton).toBeVisible();
+         |                              ^
+      30 |     await expect(prevButton).toBeVisible();
+      31 |
+      32 |     // Navigate to next page
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:29:30
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-chromium/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('link', { name: /next/i })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('link', { name: /next/i })
+
+
+      27 |
+      28 |     // Verify navigation buttons
+    > 29 |     await expect(nextButton).toBeVisible();
+         |                              ^
+      30 |     await expect(prevButton).toBeVisible();
+      31 |
+      32 |     // Navigate to next page
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:29:30
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-chromium-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-chromium-retry1/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-chromium-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Biome.js Documentation › should handle mobile responsive layout" classname="documentation.spec.ts" time="12.777">
+<failure message="documentation.spec.ts:38:3 should handle mobile responsive layout" type="FAILURE">
+<![CDATA[  [chromium] › documentation.spec.ts:38:3 › Biome.js Documentation › should handle mobile responsive layout 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('button', { name: /menu/i })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('button', { name: /menu/i })
+
+
+      42 |     // Check for mobile menu button
+      43 |     const menuButton = page.getByRole("button", { name: /menu/i });
+    > 44 |     await expect(menuButton).toBeVisible();
+         |                              ^
+      45 |
+      46 |     // Open mobile menu
+      47 |     await menuButton.click();
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:44:30
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-chromium/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('button', { name: /menu/i })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('button', { name: /menu/i })
+
+
+      42 |     // Check for mobile menu button
+      43 |     const menuButton = page.getByRole("button", { name: /menu/i });
+    > 44 |     await expect(menuButton).toBeVisible();
+         |                              ^
+      45 |
+      46 |     // Open mobile menu
+      47 |     await menuButton.click();
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:44:30
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-chromium-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-chromium/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-chromium-retry1/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-chromium-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="documentation.spec.ts" timestamp="2025-06-26T13:48:50.166Z" hostname="firefox" tests="4" failures="3" skipped="0" time="49.97" errors="0">
+<testcase name="Biome.js Documentation › should load documentation page" classname="documentation.spec.ts" time="13.926">
+<failure message="documentation.spec.ts:8:3 should load documentation page" type="FAILURE">
+<![CDATA[  [firefox] › documentation.spec.ts:8:3 › Biome.js Documentation › should load documentation page ──
+
+    Error: Timed out 5000ms waiting for expect(page).toHaveTitle(expected)
+
+    Locator: locator(':root')
+    Expected pattern: /Reference/
+    Received string:  "404 | Biome"
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+      - waiting for locator(':root')
+        8 × locator resolved to <html lang="en" dir="ltr" data-has-hero="" data-theme="light" class="astro-zhibqghj">…</html>
+          - unexpected value "404 | Biome"
+
+
+       7 |
+       8 |   test("should load documentation page", async ({ page }) => {
+    >  9 |     await expect(page).toHaveTitle(/Reference/);
+         |                        ^
+      10 |     await expect(page.locator("h1")).toContainText("Reference");
+      11 |   });
+      12 |
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:9:24
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-firefox/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(page).toHaveTitle(expected)
+
+    Locator: locator(':root')
+    Expected pattern: /Reference/
+    Received string:  "404 | Biome"
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+      - waiting for locator(':root')
+        8 × locator resolved to <html lang="en" dir="ltr" data-has-hero="" data-theme="light" class="astro-zhibqghj">…</html>
+          - unexpected value "404 | Biome"
+
+
+       7 |
+       8 |   test("should load documentation page", async ({ page }) => {
+    >  9 |     await expect(page).toHaveTitle(/Reference/);
+         |                        ^
+      10 |     await expect(page.locator("h1")).toContainText("Reference");
+      11 |   });
+      12 |
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:9:24
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-firefox-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-firefox/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-firefox-retry1/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-firefox-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Biome.js Documentation › should navigate between documentation sections" classname="documentation.spec.ts" time="6.662">
+</testcase>
+<testcase name="Biome.js Documentation › should have working pagination" classname="documentation.spec.ts" time="14.795">
+<failure message="documentation.spec.ts:24:3 should have working pagination" type="FAILURE">
+<![CDATA[  [firefox] › documentation.spec.ts:24:3 › Biome.js Documentation › should have working pagination ─
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('link', { name: /next/i })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('link', { name: /next/i })
+
+
+      27 |
+      28 |     // Verify navigation buttons
+    > 29 |     await expect(nextButton).toBeVisible();
+         |                              ^
+      30 |     await expect(prevButton).toBeVisible();
+      31 |
+      32 |     // Navigate to next page
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:29:30
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-firefox/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('link', { name: /next/i })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('link', { name: /next/i })
+
+
+      27 |
+      28 |     // Verify navigation buttons
+    > 29 |     await expect(nextButton).toBeVisible();
+         |                              ^
+      30 |     await expect(prevButton).toBeVisible();
+      31 |
+      32 |     // Navigate to next page
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:29:30
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-firefox-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-firefox/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-firefox-retry1/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-firefox-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Biome.js Documentation › should handle mobile responsive layout" classname="documentation.spec.ts" time="14.587">
+<failure message="documentation.spec.ts:38:3 should handle mobile responsive layout" type="FAILURE">
+<![CDATA[  [firefox] › documentation.spec.ts:38:3 › Biome.js Documentation › should handle mobile responsive layout 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('button', { name: /menu/i })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('button', { name: /menu/i })
+
+
+      42 |     // Check for mobile menu button
+      43 |     const menuButton = page.getByRole("button", { name: /menu/i });
+    > 44 |     await expect(menuButton).toBeVisible();
+         |                              ^
+      45 |
+      46 |     // Open mobile menu
+      47 |     await menuButton.click();
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:44:30
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-firefox/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('button', { name: /menu/i })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('button', { name: /menu/i })
+
+
+      42 |     // Check for mobile menu button
+      43 |     const menuButton = page.getByRole("button", { name: /menu/i });
+    > 44 |     await expect(menuButton).toBeVisible();
+         |                              ^
+      45 |
+      46 |     // Open mobile menu
+      47 |     await menuButton.click();
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:44:30
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-firefox-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-firefox/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-firefox-retry1/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-firefox-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="documentation.spec.ts" timestamp="2025-06-26T13:48:50.166Z" hostname="webkit" tests="4" failures="3" skipped="0" time="44.523" errors="0">
+<testcase name="Biome.js Documentation › should load documentation page" classname="documentation.spec.ts" time="13.302">
+<failure message="documentation.spec.ts:8:3 should load documentation page" type="FAILURE">
+<![CDATA[  [webkit] › documentation.spec.ts:8:3 › Biome.js Documentation › should load documentation page ───
+
+    Error: Timed out 5000ms waiting for expect(page).toHaveTitle(expected)
+
+    Locator: locator(':root')
+    Expected pattern: /Reference/
+    Received string:  "404 | Biome"
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+      - waiting for locator(':root')
+        9 × locator resolved to <html lang="en" dir="ltr" data-has-hero="" data-theme="light" class="astro-zhibqghj">…</html>
+          - unexpected value "404 | Biome"
+
+
+       7 |
+       8 |   test("should load documentation page", async ({ page }) => {
+    >  9 |     await expect(page).toHaveTitle(/Reference/);
+         |                        ^
+      10 |     await expect(page.locator("h1")).toContainText("Reference");
+      11 |   });
+      12 |
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:9:24
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-webkit/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(page).toHaveTitle(expected)
+
+    Locator: locator(':root')
+    Expected pattern: /Reference/
+    Received string:  "404 | Biome"
+    Call log:
+      - Expect "toHaveTitle" with timeout 5000ms
+      - waiting for locator(':root')
+        9 × locator resolved to <html lang="en" dir="ltr" data-has-hero="" data-theme="light" class="astro-zhibqghj">…</html>
+          - unexpected value "404 | Biome"
+
+
+       7 |
+       8 |   test("should load documentation page", async ({ page }) => {
+    >  9 |     await expect(page).toHaveTitle(/Reference/);
+         |                        ^
+      10 |     await expect(page.locator("h1")).toContainText("Reference");
+      11 |   });
+      12 |
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:9:24
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-webkit-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-webkit/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-webkit-retry1/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-39dee-uld-load-documentation-page-webkit-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Biome.js Documentation › should navigate between documentation sections" classname="documentation.spec.ts" time="4.488">
+</testcase>
+<testcase name="Biome.js Documentation › should have working pagination" classname="documentation.spec.ts" time="13.289">
+<failure message="documentation.spec.ts:24:3 should have working pagination" type="FAILURE">
+<![CDATA[  [webkit] › documentation.spec.ts:24:3 › Biome.js Documentation › should have working pagination ──
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('link', { name: /next/i })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('link', { name: /next/i })
+
+
+      27 |
+      28 |     // Verify navigation buttons
+    > 29 |     await expect(nextButton).toBeVisible();
+         |                              ^
+      30 |     await expect(prevButton).toBeVisible();
+      31 |
+      32 |     // Navigate to next page
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:29:30
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-webkit/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('link', { name: /next/i })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('link', { name: /next/i })
+
+
+      27 |
+      28 |     // Verify navigation buttons
+    > 29 |     await expect(nextButton).toBeVisible();
+         |                              ^
+      30 |     await expect(prevButton).toBeVisible();
+      31 |
+      32 |     // Navigate to next page
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:29:30
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-webkit-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-webkit/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-webkit-retry1/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-fbe7d-uld-have-working-pagination-webkit-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Biome.js Documentation › should handle mobile responsive layout" classname="documentation.spec.ts" time="13.444">
+<failure message="documentation.spec.ts:38:3 should handle mobile responsive layout" type="FAILURE">
+<![CDATA[  [webkit] › documentation.spec.ts:38:3 › Biome.js Documentation › should handle mobile responsive layout 
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('button', { name: /menu/i })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('button', { name: /menu/i })
+
+
+      42 |     // Check for mobile menu button
+      43 |     const menuButton = page.getByRole("button", { name: /menu/i });
+    > 44 |     await expect(menuButton).toBeVisible();
+         |                              ^
+      45 |
+      46 |     // Open mobile menu
+      47 |     await menuButton.click();
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:44:30
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-webkit/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('button', { name: /menu/i })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('button', { name: /menu/i })
+
+
+      42 |     // Check for mobile menu button
+      43 |     const menuButton = page.getByRole("button", { name: /menu/i });
+    > 44 |     await expect(menuButton).toBeVisible();
+         |                              ^
+      45 |
+      46 |     // Open mobile menu
+      47 |     await menuButton.click();
+        at /home/flob/work/biome-high-cpu/biome-high-cpu-6541/tests/documentation.spec.ts:44:30
+
+    Error Context: ../test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-webkit-retry1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-webkit/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-webkit-retry1/error-context.md]]
+
+[[ATTACHMENT|../test-results/documentation-Biome-js-Doc-a3136-le-mobile-responsive-layout-webkit-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

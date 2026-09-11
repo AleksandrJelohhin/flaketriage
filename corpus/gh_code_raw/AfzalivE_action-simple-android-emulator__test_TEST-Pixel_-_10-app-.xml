@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.spacebitlabs.plantly.EntryTest" tests="4" failures="1" errors="0" skipped="0" time="9.14" timestamp="2021-02-06T04:28:33" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel - 10" />
+    <property name="flavor" value="" />
+    <property name="project" value="app" />
+  </properties>
+  <testcase name="createEntry" classname="com.spacebitlabs.plantly.EntryTest" time="0.144" />
+  <testcase name="tappingFabOpensAddPlant" classname="com.spacebitlabs.plantly.PlantListTest" time="2.183">
+    <failure>androidx.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: 'not is displayed on the screen to the user' doesn't match the selected view.
+Expected: not is displayed on the screen to the user
+Got: "FloatingActionButton{id=2131296558, res-name=save, visibility=VISIBLE, width=147, height=147, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams&#64;62dfa35, tag=null, root-is-layout-requested=false, has-input-connection=false, x=891.0, y=1542.0}"
+
+at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+at java.lang.Thread.getStackTrace(Thread.java:1720)
+at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:16)
+at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:36)
+at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:103)
+at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:31)
+at com.spacebitlabs.plantly.PlantListTest$AddPlantRobot$Assertions.addPlantIsShown(PlantListTest.kt:36)
+at com.spacebitlabs.plantly.PlantListTest.tappingFabOpensAddPlant(PlantListTest.kt:22)
+at java.lang.reflect.Method.invoke(Native Method)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:154)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:56)
+at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:395)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2189)
+Caused by: junit.framework.AssertionFailedError: 'not is displayed on the screen to the user' doesn't match the selected view.
+Expected: not is displayed on the screen to the user
+Got: "FloatingActionButton{id=2131296558, res-name=save, visibility=VISIBLE, width=147, height=147, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams&#64;62dfa35, tag=null, root-is-layout-requested=false, has-input-connection=false, x=891.0, y=1542.0}"
+
+at androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:17)
+at androidx.test.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:15)
+at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:10)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:11)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:2)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at android.os.Handler.handleCallback(Handler.java:883)
+at android.os.Handler.dispatchMessage(Handler.java:100)
+at android.os.Looper.loop(Looper.java:214)
+at android.app.ActivityThread.main(ActivityThread.java:7356)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
+</failure>
+  </testcase>
+  <testcase name="createPlant" classname="com.spacebitlabs.plantly.PlantStoreTest" time="0.229" />
+  <testcase name="createPlant" classname="com.spacebitlabs.plantly.PlantTest" time="0.058" />
+</testsuite>

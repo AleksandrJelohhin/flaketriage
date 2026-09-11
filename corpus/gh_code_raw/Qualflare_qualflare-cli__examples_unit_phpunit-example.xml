@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="UserTest" file="/app/tests/UserTest.php" tests="4" assertions="12" errors="0" failures="1" skipped="1" time="1.234">
+    <testcase name="testUserCreation" class="Tests\UserTest" classname="Tests.UserTest" file="/app/tests/UserTest.php" line="15" assertions="3" time="0.234">
+    </testcase>
+    <testcase name="testUserAuthentication" class="Tests\UserTest" classname="Tests.UserTest" file="/app/tests/UserTest.php" line="30" assertions="4" time="0.345">
+    </testcase>
+    <testcase name="testUserEmailValidation" class="Tests\UserTest" classname="Tests.UserTest" file="/app/tests/UserTest.php" line="45" assertions="3" time="0.156">
+      <failure type="PHPUnit\Framework\ExpectationFailedException">
+Tests\UserTest::testUserEmailValidation
+Failed asserting that 'invalid-email' matches pattern '/^[\w-]+@[\w-]+\.[a-z]+$/i'.
+
+/app/tests/UserTest.php:48
+      </failure>
+    </testcase>
+    <testcase name="testUserRoleAssignment" class="Tests\UserTest" classname="Tests.UserTest" file="/app/tests/UserTest.php" line="60" assertions="0" time="0.0">
+      <skipped>Role system not yet implemented</skipped>
+    </testcase>
+  </testsuite>
+</testsuites>

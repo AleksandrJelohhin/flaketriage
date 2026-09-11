@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ui.SampleTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2025-04-29T14:24:19.506Z" hostname="ETECH-PG03QSRW" time="35.937">
+  <properties/>
+  <testcase name="sampleParallelTest1" classname="ui.SampleTest" time="11.055">
+    <failure message="com.microsoft.playwright.TimeoutError: Error {&#10;  message='Timeout 10000ms exceeded.&#10;  name='TimeoutError&#10;  stack='TimeoutError: Timeout 10000ms exceeded.&#10;    at ProgressController.run (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\progress.js:87:26)&#10;    at Frame.waitForSelector (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\frames.js:619:23)&#10;    at FrameDispatcher.waitForSelector (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\frameDispatcher.js:100:103)&#10;    at FrameDispatcher._handleCommand (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:84:40)&#10;    at DispatcherConnection.dispatch (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:351:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;[role='navigation'] a:has-text('Getting Started')&quot;) to be visible&#10;" type="com.microsoft.playwright.TimeoutError">com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\progress.js:87:26)
+    at Frame.waitForSelector (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\frames.js:619:23)
+    at FrameDispatcher.waitForSelector (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\frameDispatcher.js:100:103)
+    at FrameDispatcher._handleCommand (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:84:40)
+    at DispatcherConnection.dispatch (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:351:39)
+}
+Call log:
+- waiting for locator(&quot;[role='navigation'] a:has-text('Getting Started')&quot;) to be visible
+
+	at app//com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at app//com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at app//com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+	at app//com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at app//com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1060)
+	at app//com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1050)
+	at app//com.microsoft.playwright.impl.PageImpl.lambda$waitForSelector$91(PageImpl.java:1449)
+	at app//com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at app//com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at app//com.microsoft.playwright.impl.PageImpl.waitForSelector(PageImpl.java:1448)
+	at app//utils.WaitUtils.waitForElement(WaitUtils.java:23)
+	at app//ui.SampleTest.sampleParallelTest1(SampleTest.java:19)
+	at java.base@21.0.7/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base@21.0.7/java.lang.reflect.Method.invoke(Method.java:580)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\progress.js:87:26)
+    at Frame.waitForSelector (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\frames.js:619:23)
+    at FrameDispatcher.waitForSelector (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\frameDispatcher.js:100:103)
+    at FrameDispatcher._handleCommand (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:84:40)
+    at DispatcherConnection.dispatch (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:351:39)
+}
+Call log:
+- waiting for locator(&quot;[role='navigation'] a:has-text('Getting Started')&quot;) to be visible
+
+	at app//com.microsoft.playwright.impl.Connection.dispatch(Connection.java:252)
+	at app//com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+	at app//com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 23 more
+</failure>
+  </testcase>
+  <testcase name="sampleParallelTest2" classname="ui.SampleTest" time="30.943">
+    <failure message="com.microsoft.playwright.TimeoutError: Error {&#10;  message='Timeout 30000ms exceeded.&#10;  name='TimeoutError&#10;  stack='TimeoutError: Timeout 30000ms exceeded.&#10;    at ProgressController.run (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\progress.js:87:26)&#10;    at Frame.waitForSelector (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\frames.js:619:23)&#10;    at FrameDispatcher.waitForSelector (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\frameDispatcher.js:100:103)&#10;    at FrameDispatcher._handleCommand (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:84:40)&#10;    at DispatcherConnection.dispatch (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:351:39)&#10;}&#10;Call log:&#10;- waiting for locator(&quot;text=Installation&quot;) to be visible&#10;" type="com.microsoft.playwright.TimeoutError">com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\progress.js:87:26)
+    at Frame.waitForSelector (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\frames.js:619:23)
+    at FrameDispatcher.waitForSelector (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\frameDispatcher.js:100:103)
+    at FrameDispatcher._handleCommand (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:84:40)
+    at DispatcherConnection.dispatch (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:351:39)
+}
+Call log:
+- waiting for locator(&quot;text=Installation&quot;) to be visible
+
+	at app//com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at app//com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
+	at app//com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
+	at app//com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
+	at app//com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1060)
+	at app//com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1050)
+	at app//com.microsoft.playwright.impl.PageImpl.lambda$waitForSelector$91(PageImpl.java:1449)
+	at app//com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at app//com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
+	at app//com.microsoft.playwright.impl.PageImpl.waitForSelector(PageImpl.java:1448)
+	at app//utils.WaitUtils.waitForElement(WaitUtils.java:23)
+	at app//utils.WaitUtils.waitForElement(WaitUtils.java:17)
+	at app//ui.SampleTest.sampleParallelTest2(SampleTest.java:38)
+	at java.base@21.0.7/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base@21.0.7/java.lang.reflect.Method.invoke(Method.java:580)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base@21.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base@21.0.7/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\progress.js:87:26)
+    at Frame.waitForSelector (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\frames.js:619:23)
+    at FrameDispatcher.waitForSelector (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\frameDispatcher.js:100:103)
+    at FrameDispatcher._handleCommand (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:84:40)
+    at DispatcherConnection.dispatch (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:351:39)
+}
+Call log:
+- waiting for locator(&quot;text=Installation&quot;) to be visible
+
+	at app//com.microsoft.playwright.impl.Connection.dispatch(Connection.java:252)
+	at app//com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
+	at app//com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
+	... 24 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[19:54:18.633 [TestNG-test=Gradle test-1] INFO base.PlaywrightManager -- Created new chrome browser page in headless mode for thread 40
+19:54:19.535 [TestNG-test=Gradle test-1] INFO utils.WaitUtils -- Waiting for element: .todo-list li
+19:54:25.433 [TestNG-test=Gradle test-3] INFO utils.WaitUtils -- Waiting for element: text=Installation
+19:54:30.560 [TestNG-test=Gradle test-2] ERROR utils.WaitUtils -- Element not found: [role='navigation'] a:has-text('Getting Started')
+19:54:30.560 [TestNG-test=Gradle test-2] ERROR ui.SampleTest -- Failed in sampleParallelTest1: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\progress.js:87:26)
+    at Frame.waitForSelector (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\frames.js:619:23)
+    at FrameDispatcher.waitForSelector (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\frameDispatcher.js:100:103)
+    at FrameDispatcher._handleCommand (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:84:40)
+    at DispatcherConnection.dispatch (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:351:39)
+}
+Call log:
+- waiting for locator("[role='navigation'] a:has-text('Getting Started')") to be visible
+
+19:54:30.994 [TestNG-test=Gradle test-2] INFO BaseTest -- Screenshot saved to: test-output/screenshots/sampleParallelTest1.png
+19:54:55.443 [TestNG-test=Gradle test-3] ERROR utils.WaitUtils -- Element not found: text=Installation
+19:54:55.443 [TestNG-test=Gradle test-3] ERROR ui.SampleTest -- Failed in sampleParallelTest2: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\progress.js:87:26)
+    at Frame.waitForSelector (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\frames.js:619:23)
+    at FrameDispatcher.waitForSelector (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\frameDispatcher.js:100:103)
+    at FrameDispatcher._handleCommand (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:84:40)
+    at DispatcherConnection.dispatch (C:\Users\knagaraj\AppData\Local\Temp\playwright-java-9909006879793558483\package\lib\server\dispatchers\dispatcher.js:351:39)
+}
+Call log:
+- waiting for locator("text=Installation") to be visible
+
+19:54:55.859 [TestNG-test=Gradle test-3] INFO BaseTest -- Screenshot saved to: test-output/screenshots/sampleParallelTest2.png
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

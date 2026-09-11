@@ -1,0 +1,152 @@
+<testsuites id="" name="" tests="3" failures="3" skipped="0" errors="0" time="66.277208">
+<testsuite name="erp.spec.js" timestamp="2025-12-02T11:54:36.831Z" hostname="chromium" tests="1" failures="1" skipped="0" time="63.674" errors="0">
+<testcase name="ERP - login and load HRM Employees grid" classname="erp.spec.js" time="63.674">
+<failure message="erp.spec.js:108:1 ERP - login and load HRM Employees grid" type="FAILURE">
+<![CDATA[  [chromium] › erp.spec.js:108:1 › ERP - login and load HRM Employees grid › Navigate and login ────
+
+    Test timeout of 60000ms exceeded.
+
+    Error: page.screenshot: Target page, context or browser has been closed
+
+      139 |     });
+      140 |   } catch (e) {
+    > 141 |     await page.screenshot({
+          |                ^
+      142 |       path: path.join("artifacts", "error.png"),
+      143 |       fullPage: true,
+      144 |     });
+        at C:\Users\moham\MK_Work\bA_Nijjara_ERPsys\tests\erp.spec.js:141:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="erp.spec.js" timestamp="2025-12-02T11:54:36.831Z" hostname="firefox" tests="1" failures="1" skipped="0" time="61.625" errors="0">
+<testcase name="ERP - login and load HRM Employees grid" classname="erp.spec.js" time="61.625">
+<failure message="erp.spec.js:108:1 ERP - login and load HRM Employees grid" type="FAILURE">
+<![CDATA[  [firefox] › erp.spec.js:108:1 › ERP - login and load HRM Employees grid › Navigate and login ─────
+
+    Test timeout of 60000ms exceeded.
+
+    Error: page.screenshot: Target page, context or browser has been closed
+
+      139 |     });
+      140 |   } catch (e) {
+    > 141 |     await page.screenshot({
+          |                ^
+      142 |       path: path.join("artifacts", "error.png"),
+      143 |       fullPage: true,
+      144 |     });
+        at C:\Users\moham\MK_Work\bA_Nijjara_ERPsys\tests\erp.spec.js:141:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-firefox\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-firefox\video.webm]]
+
+[[ATTACHMENT|..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-firefox\error-context.md]]
+
+[[ATTACHMENT|..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="erp.spec.js" timestamp="2025-12-02T11:54:36.831Z" hostname="webkit" tests="1" failures="1" skipped="0" time="60.961" errors="0">
+<testcase name="ERP - login and load HRM Employees grid" classname="erp.spec.js" time="60.961">
+<failure message="erp.spec.js:108:1 ERP - login and load HRM Employees grid" type="FAILURE">
+<![CDATA[  [webkit] › erp.spec.js:108:1 › ERP - login and load HRM Employees grid › Navigate and login ──────
+
+    Test timeout of 60000ms exceeded.
+
+    Error: page.screenshot: Target page, context or browser has been closed
+
+      139 |     });
+      140 |   } catch (e) {
+    > 141 |     await page.screenshot({
+          |                ^
+      142 |       path: path.join("artifacts", "error.png"),
+      143 |       fullPage: true,
+      144 |     });
+        at C:\Users\moham\MK_Work\bA_Nijjara_ERPsys\tests\erp.spec.js:141:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-webkit\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-webkit\video.webm]]
+
+[[ATTACHMENT|..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-webkit\error-context.md]]
+
+[[ATTACHMENT|..\test-results\erp-ERP---login-and-load-HRM-Employees-grid-webkit\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,156 @@
+<testsuites id="" name="" tests="5" failures="5" skipped="0" errors="0" time="4.098209">
+<testsuite name="smoke.spec.js" timestamp="2026-03-25T13:50:31.313Z" hostname="" tests="5" failures="5" skipped="0" time="0.056" errors="0">
+<testcase name="observability page renders shell" classname="smoke.spec.js" time="0.001">
+<failure message="smoke.spec.js:3:1 observability page renders shell" type="FAILURE">
+<![CDATA[  smoke.spec.js:3:1 › observability page renders shell ─────────────────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at /home/gulsameer/.cache/ms-playwright/chromium_headless_shell-1208/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/smoke-observability-page-renders-shell/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/smoke-observability-page-renders-shell/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/smoke-observability-page-renders-shell/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="lineage page renders map controls" classname="smoke.spec.js" time="0.001">
+<failure message="smoke.spec.js:9:1 lineage page renders map controls" type="FAILURE">
+<![CDATA[  smoke.spec.js:9:1 › lineage page renders map controls ────────────────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at /home/gulsameer/.cache/ms-playwright/chromium_headless_shell-1208/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/smoke-lineage-page-renders-map-controls/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/smoke-lineage-page-renders-map-controls/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/smoke-lineage-page-renders-map-controls/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="settings page renders environment section" classname="smoke.spec.js" time="0.001">
+<failure message="smoke.spec.js:15:1 settings page renders environment section" type="FAILURE">
+<![CDATA[  smoke.spec.js:15:1 › settings page renders environment section ───────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at /home/gulsameer/.cache/ms-playwright/chromium_headless_shell-1208/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/smoke-settings-page-renders-environment-section/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/smoke-settings-page-renders-environment-section/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/smoke-settings-page-renders-environment-section/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="reporting page renders export action" classname="smoke.spec.js" time="0.001">
+<failure message="smoke.spec.js:21:1 reporting page renders export action" type="FAILURE">
+<![CDATA[  smoke.spec.js:21:1 › reporting page renders export action ────────────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at /home/gulsameer/.cache/ms-playwright/chromium_headless_shell-1208/chrome-linux/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/smoke-reporting-page-renders-export-action/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/smoke-reporting-page-renders-export-action/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/smoke-reporting-page-renders-export-action/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="boms API endpoint is reachable" classname="smoke.spec.js" time="0.052">
+<failure message="smoke.spec.js:27:1 boms API endpoint is reachable" type="FAILURE">
+<![CDATA[  smoke.spec.js:27:1 › boms API endpoint is reachable ──────────────────────────────────────────────
+
+    Error: apiRequestContext.get: connect ECONNREFUSED 127.0.0.1:8000
+    Call log:
+      - → GET http://127.0.0.1:8000/api/boms?limit=1
+        - user-agent: Playwright/1.58.2 (arm64; ubuntu 24.04) node/20.19
+        - accept: */*
+        - accept-encoding: gzip,deflate,br
+
+
+      26 |
+      27 | test("boms API endpoint is reachable", async ({ request }) => {
+    > 28 |   const response = await request.get("/api/boms?limit=1");
+         |                                  ^
+      29 |   const bodyText = await response.text();
+      30 |   expect(response.ok(), bodyText).toBeTruthy();
+      31 |   const body = JSON.parse(bodyText);
+        at /home/gulsameer/qub_projects/ai-bom-of-materials-for-digital-asset-strategies-using-layer-2-blockchain/tests/e2e/smoke.spec.js:28:34
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/smoke-boms-API-endpoint-is-reachable/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/smoke-boms-API-endpoint-is-reachable/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/smoke-boms-API-endpoint-is-reachable/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

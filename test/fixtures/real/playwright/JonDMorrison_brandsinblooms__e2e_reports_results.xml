@@ -1,0 +1,220 @@
+<testsuites id="" name="" tests="15" failures="8" skipped="3" errors="0" time="22.658273">
+<testsuite name="analytics-dashboard.spec.ts" timestamp="2026-04-15T05:21:33.901Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Admin dashboard shell › cost and analytics health pages render inside the admin shell" classname="analytics-dashboard.spec.ts" time="0">
+<properties>
+<property name="skip" value="Admin browser coverage requires TEST_ADMIN_EMAIL and TEST_ADMIN_PASSWORD.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="dashboard-navigation.spec.ts" timestamp="2026-04-15T05:21:33.901Z" hostname="firefox" tests="2" failures="0" skipped="0" time="38.594" errors="0">
+<testcase name="Dashboard topbar interactions › search, user menu, and report problem dialog match the current shell" classname="dashboard-navigation.spec.ts" time="17.284">
+</testcase>
+<testcase name="Dashboard topbar interactions › authenticated users can move between the current tenant entry routes" classname="dashboard-navigation.spec.ts" time="21.31">
+</testcase>
+</testsuite>
+<testsuite name="sidebar-navigation.spec.ts" timestamp="2026-04-15T05:21:33.901Z" hostname="firefox" tests="2" failures="0" skipped="0" time="34.024" errors="0">
+<testcase name="Dashboard shell navigation › integrations route exposes the current shell controls" classname="sidebar-navigation.spec.ts" time="16.846">
+</testcase>
+<testcase name="Dashboard shell navigation › sidebar arrow-key navigation follows the live focus model" classname="sidebar-navigation.spec.ts" time="17.178">
+</testcase>
+</testsuite>
+<testsuite name="analytics-dashboard.spec.ts" timestamp="2026-04-15T05:21:33.901Z" hostname="webkit" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Admin dashboard shell › cost and analytics health pages render inside the admin shell" classname="analytics-dashboard.spec.ts" time="0">
+<properties>
+<property name="skip" value="Admin browser coverage requires TEST_ADMIN_EMAIL and TEST_ADMIN_PASSWORD.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="dashboard-navigation.spec.ts" timestamp="2026-04-15T05:21:33.901Z" hostname="webkit" tests="2" failures="2" skipped="0" time="0.005" errors="0">
+<testcase name="Dashboard topbar interactions › search, user menu, and report problem dialog match the current shell" classname="dashboard-navigation.spec.ts" time="0.002">
+<failure message="dashboard-navigation.spec.ts:3:3 search, user menu, and report problem dialog match the current shell" type="FAILURE">
+<![CDATA[  [webkit] › dashboard-navigation.spec.ts:3:3 › Dashboard topbar interactions › search, user menu, and report problem dialog match the current shell 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Please install them with the following command:      ║
+    ║                                                      ║
+    ║     sudo npx playwright install-deps                 ║
+    ║                                                      ║
+    ║ Alternatively, use apt:                              ║
+    ║     sudo apt-get install libevent-2.1-7t64\          ║
+    ║         libgstreamer-plugins-bad1.0-0\               ║
+    ║         libavif16                                    ║
+    ║                                                      ║
+    ║ <3 Playwright Team                                   ║
+    ╚══════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Dashboard topbar interactions › authenticated users can move between the current tenant entry routes" classname="dashboard-navigation.spec.ts" time="0.003">
+<failure message="dashboard-navigation.spec.ts:39:3 authenticated users can move between the current tenant entry routes" type="FAILURE">
+<![CDATA[  [webkit] › dashboard-navigation.spec.ts:39:3 › Dashboard topbar interactions › authenticated users can move between the current tenant entry routes 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Please install them with the following command:      ║
+    ║                                                      ║
+    ║     sudo npx playwright install-deps                 ║
+    ║                                                      ║
+    ║ Alternatively, use apt:                              ║
+    ║     sudo apt-get install libevent-2.1-7t64\          ║
+    ║         libgstreamer-plugins-bad1.0-0\               ║
+    ║         libavif16                                    ║
+    ║                                                      ║
+    ║ <3 Playwright Team                                   ║
+    ╚══════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="sidebar-navigation.spec.ts" timestamp="2026-04-15T05:21:33.901Z" hostname="webkit" tests="2" failures="2" skipped="0" time="0.005" errors="0">
+<testcase name="Dashboard shell navigation › integrations route exposes the current shell controls" classname="sidebar-navigation.spec.ts" time="0.002">
+<failure message="sidebar-navigation.spec.ts:3:3 integrations route exposes the current shell controls" type="FAILURE">
+<![CDATA[  [webkit] › sidebar-navigation.spec.ts:3:3 › Dashboard shell navigation › integrations route exposes the current shell controls 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Please install them with the following command:      ║
+    ║                                                      ║
+    ║     sudo npx playwright install-deps                 ║
+    ║                                                      ║
+    ║ Alternatively, use apt:                              ║
+    ║     sudo apt-get install libevent-2.1-7t64\          ║
+    ║         libgstreamer-plugins-bad1.0-0\               ║
+    ║         libavif16                                    ║
+    ║                                                      ║
+    ║ <3 Playwright Team                                   ║
+    ╚══════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Dashboard shell navigation › sidebar arrow-key navigation follows the live focus model" classname="sidebar-navigation.spec.ts" time="0.003">
+<failure message="sidebar-navigation.spec.ts:27:3 sidebar arrow-key navigation follows the live focus model" type="FAILURE">
+<![CDATA[  [webkit] › sidebar-navigation.spec.ts:27:3 › Dashboard shell navigation › sidebar arrow-key navigation follows the live focus model 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Please install them with the following command:      ║
+    ║                                                      ║
+    ║     sudo npx playwright install-deps                 ║
+    ║                                                      ║
+    ║ Alternatively, use apt:                              ║
+    ║     sudo apt-get install libevent-2.1-7t64\          ║
+    ║         libgstreamer-plugins-bad1.0-0\               ║
+    ║         libavif16                                    ║
+    ║                                                      ║
+    ║ <3 Playwright Team                                   ║
+    ╚══════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="analytics-dashboard.spec.ts" timestamp="2026-04-15T05:21:33.901Z" hostname="Mobile Safari" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Admin dashboard shell › cost and analytics health pages render inside the admin shell" classname="analytics-dashboard.spec.ts" time="0">
+<properties>
+<property name="skip" value="Admin browser coverage requires TEST_ADMIN_EMAIL and TEST_ADMIN_PASSWORD.">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="dashboard-navigation.spec.ts" timestamp="2026-04-15T05:21:33.901Z" hostname="Mobile Safari" tests="2" failures="2" skipped="0" time="0.003" errors="0">
+<testcase name="Dashboard topbar interactions › search, user menu, and report problem dialog match the current shell" classname="dashboard-navigation.spec.ts" time="0.001">
+<failure message="dashboard-navigation.spec.ts:3:3 search, user menu, and report problem dialog match the current shell" type="FAILURE">
+<![CDATA[  [Mobile Safari] › dashboard-navigation.spec.ts:3:3 › Dashboard topbar interactions › search, user menu, and report problem dialog match the current shell 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Please install them with the following command:      ║
+    ║                                                      ║
+    ║     sudo npx playwright install-deps                 ║
+    ║                                                      ║
+    ║ Alternatively, use apt:                              ║
+    ║     sudo apt-get install libevent-2.1-7t64\          ║
+    ║         libgstreamer-plugins-bad1.0-0\               ║
+    ║         libavif16                                    ║
+    ║                                                      ║
+    ║ <3 Playwright Team                                   ║
+    ╚══════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Dashboard topbar interactions › authenticated users can move between the current tenant entry routes" classname="dashboard-navigation.spec.ts" time="0.002">
+<failure message="dashboard-navigation.spec.ts:39:3 authenticated users can move between the current tenant entry routes" type="FAILURE">
+<![CDATA[  [Mobile Safari] › dashboard-navigation.spec.ts:39:3 › Dashboard topbar interactions › authenticated users can move between the current tenant entry routes 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Please install them with the following command:      ║
+    ║                                                      ║
+    ║     sudo npx playwright install-deps                 ║
+    ║                                                      ║
+    ║ Alternatively, use apt:                              ║
+    ║     sudo apt-get install libevent-2.1-7t64\          ║
+    ║         libgstreamer-plugins-bad1.0-0\               ║
+    ║         libavif16                                    ║
+    ║                                                      ║
+    ║ <3 Playwright Team                                   ║
+    ╚══════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="sidebar-navigation.spec.ts" timestamp="2026-04-15T05:21:33.901Z" hostname="Mobile Safari" tests="2" failures="2" skipped="0" time="0.006" errors="0">
+<testcase name="Dashboard shell navigation › integrations route exposes the current shell controls" classname="sidebar-navigation.spec.ts" time="0.004">
+<failure message="sidebar-navigation.spec.ts:3:3 integrations route exposes the current shell controls" type="FAILURE">
+<![CDATA[  [Mobile Safari] › sidebar-navigation.spec.ts:3:3 › Dashboard shell navigation › integrations route exposes the current shell controls 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Please install them with the following command:      ║
+    ║                                                      ║
+    ║     sudo npx playwright install-deps                 ║
+    ║                                                      ║
+    ║ Alternatively, use apt:                              ║
+    ║     sudo apt-get install libevent-2.1-7t64\          ║
+    ║         libgstreamer-plugins-bad1.0-0\               ║
+    ║         libavif16                                    ║
+    ║                                                      ║
+    ║ <3 Playwright Team                                   ║
+    ╚══════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Dashboard shell navigation › sidebar arrow-key navigation follows the live focus model" classname="sidebar-navigation.spec.ts" time="0.002">
+<failure message="sidebar-navigation.spec.ts:27:3 sidebar arrow-key navigation follows the live focus model" type="FAILURE">
+<![CDATA[  [Mobile Safari] › sidebar-navigation.spec.ts:27:3 › Dashboard shell navigation › sidebar arrow-key navigation follows the live focus model 
+
+    Error: browserType.launch: 
+    ╔══════════════════════════════════════════════════════╗
+    ║ Host system is missing dependencies to run browsers. ║
+    ║ Please install them with the following command:      ║
+    ║                                                      ║
+    ║     sudo npx playwright install-deps                 ║
+    ║                                                      ║
+    ║ Alternatively, use apt:                              ║
+    ║     sudo apt-get install libevent-2.1-7t64\          ║
+    ║         libgstreamer-plugins-bad1.0-0\               ║
+    ║         libavif16                                    ║
+    ║                                                      ║
+    ║ <3 Playwright Team                                   ║
+    ╚══════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

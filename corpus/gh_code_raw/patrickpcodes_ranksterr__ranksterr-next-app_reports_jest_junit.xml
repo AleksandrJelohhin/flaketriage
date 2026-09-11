@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="2" failures="2" errors="0" time="8.196">
+  <testsuite name="Navbar" errors="0" failures="2" skipped="0" timestamp="2024-09-24T23:47:37" time="6.788" tests="2">
+    <testcase classname="Navbar displays the correct title based on the current path" name="Navbar displays the correct title based on the current path" time="0.066">
+      <failure>TestingLibraryElementError: Unable to find an element with the text: Home. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;nav
+      class=&quot;navbar p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-40&quot;
+    &gt;
+      &lt;button
+        class=&quot;text-gray-800 dark:text-gray-200&quot;
+      &gt;
+        &lt;svg
+          class=&quot;lucide lucide-menu&quot;
+          fill=&quot;none&quot;
+          height=&quot;24&quot;
+          stroke=&quot;currentColor&quot;
+          stroke-linecap=&quot;round&quot;
+          stroke-linejoin=&quot;round&quot;
+          stroke-width=&quot;2&quot;
+          viewBox=&quot;0 0 24 24&quot;
+          width=&quot;24&quot;
+          xmlns=&quot;http://www.w3.org/2000/svg&quot;
+        &gt;
+          &lt;line
+            x1=&quot;4&quot;
+            x2=&quot;20&quot;
+            y1=&quot;12&quot;
+            y2=&quot;12&quot;
+          /&gt;
+          &lt;line
+            x1=&quot;4&quot;
+            x2=&quot;20&quot;
+            y1=&quot;6&quot;
+            y2=&quot;6&quot;
+          /&gt;
+          &lt;line
+            x1=&quot;4&quot;
+            x2=&quot;20&quot;
+            y1=&quot;18&quot;
+            y2=&quot;18&quot;
+          /&gt;
+        &lt;/svg&gt;
+      &lt;/button&gt;
+      &lt;h1&gt;
+        Ranksterr
+      &lt;/h1&gt;
+      &lt;button
+        class=&quot;testbutton p-2 rounded&quot;
+      &gt;
+        Light Mode
+      &lt;/button&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\@testing-library\dom\dist\config.js:37:19)
+    at C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\@testing-library\dom\dist\query-helpers.js:76:38
+    at C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\@testing-library\dom\dist\query-helpers.js:52:17
+    at C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\@testing-library\dom\dist\query-helpers.js:95:19
+    at Object.&lt;anonymous&gt; (C:\Data\Repositories\ranksterr\ranksterr-web-app\__tests__\Navbar.Test.tsx:14:19)
+    at Promise.then.completed (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\run.js:121:9)
+    at run (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    </testcase>
+    <testcase classname="Navbar toggles dark mode when the button is clicked" name="Navbar toggles dark mode when the button is clicked" time="0.209">
+      <failure>TestingLibraryElementError: Unable to find an accessible element with the role &quot;button&quot; and name `/dark mode/i`
+
+Here are the accessible roles:
+
+  navigation:
+
+  Name &quot;&quot;:
+  &lt;nav
+    class=&quot;navbar p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-40&quot;
+  /&gt;
+
+  --------------------------------------------------
+  button:
+
+  Name &quot;&quot;:
+  &lt;button
+    class=&quot;text-gray-800 dark:text-gray-200&quot;
+  /&gt;
+
+  Name &quot;Light Mode&quot;:
+  &lt;button
+    class=&quot;testbutton p-2 rounded&quot;
+  /&gt;
+
+  --------------------------------------------------
+  heading:
+
+  Name &quot;Ranksterr&quot;:
+  &lt;h1 /&gt;
+
+  --------------------------------------------------
+
+Ignored nodes: comments, script, style
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;nav
+      class=&quot;navbar p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-40&quot;
+    &gt;
+      &lt;button
+        class=&quot;text-gray-800 dark:text-gray-200&quot;
+      &gt;
+        &lt;svg
+          class=&quot;lucide lucide-menu&quot;
+          fill=&quot;none&quot;
+          height=&quot;24&quot;
+          stroke=&quot;currentColor&quot;
+          stroke-linecap=&quot;round&quot;
+          stroke-linejoin=&quot;round&quot;
+          stroke-width=&quot;2&quot;
+          viewBox=&quot;0 0 24 24&quot;
+          width=&quot;24&quot;
+          xmlns=&quot;http://www.w3.org/2000/svg&quot;
+        &gt;
+          &lt;line
+            x1=&quot;4&quot;
+            x2=&quot;20&quot;
+            y1=&quot;12&quot;
+            y2=&quot;12&quot;
+          /&gt;
+          &lt;line
+            x1=&quot;4&quot;
+            x2=&quot;20&quot;
+            y1=&quot;6&quot;
+            y2=&quot;6&quot;
+          /&gt;
+          &lt;line
+            x1=&quot;4&quot;
+            x2=&quot;20&quot;
+            y1=&quot;18&quot;
+            y2=&quot;18&quot;
+          /&gt;
+        &lt;/svg&gt;
+      &lt;/button&gt;
+      &lt;h1&gt;
+        Ranksterr
+      &lt;/h1&gt;
+      &lt;button
+        class=&quot;testbutton p-2 rounded&quot;
+      &gt;
+        Light Mode
+      &lt;/button&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\@testing-library\dom\dist\config.js:37:19)
+    at C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\@testing-library\dom\dist\query-helpers.js:76:38
+    at C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\@testing-library\dom\dist\query-helpers.js:52:17
+    at C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\@testing-library\dom\dist\query-helpers.js:95:19
+    at Object.&lt;anonymous&gt; (C:\Data\Repositories\ranksterr\ranksterr-web-app\__tests__\Navbar.Test.tsx:18:35)
+    at Promise.then.completed (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\run.js:121:9)
+    at run (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Data\Repositories\ranksterr\ranksterr-web-app\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

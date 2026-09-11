@@ -1,0 +1,43 @@
+{
+  "name": "flaketriage",
+  "version": "1.0.0",
+  "private": true,
+  "license": "BUSL-1.1",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "flaketriage": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:action": "esbuild action/index.ts --bundle --platform=node --target=node20 --format=esm --packages=external --banner:js=\"import{createRequire}from'node:module';const require=createRequire(import.meta.url);\" --outfile=action/dist/index.js",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@actions/core": "^3.0.1",
+    "@actions/github": "^9.1.1",
+    "@anthropic-ai/bedrock-sdk": "^0.33.5",
+    "@anthropic-ai/foundry-sdk": "^0.4.6",
+    "@anthropic-ai/sdk": "^0.125.0",
+    "@anthropic-ai/vertex-sdk": "^0.19.8",
+    "better-sqlite3": "^11.10.0",
+    "commander": "^12.1.0",
+    "fast-xml-parser": "^5.11.1",
+    "simple-git": "^3.36.0",
+    "yaml": "^2.9.0",
+    "zod": "^4.6.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^20.14.0",
+    "@vitest/coverage-v8": "^4.1.11",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.13",
+    "typescript": "^5.5.0",
+    "vitest": "^4.1.11"
+  }
+}

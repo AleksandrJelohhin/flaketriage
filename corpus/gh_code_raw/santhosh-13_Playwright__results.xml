@@ -1,0 +1,41 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="1.8254059999999999">
+<testsuite name="ApiTests.spec.js" timestamp="2025-07-06T08:09:24.065Z" hostname="chromium" tests="1" failures="1" skipped="0" time="0.674" errors="0">
+<testcase name="Create User" classname="ApiTests.spec.js" time="0.674">
+<failure message="ApiTests.spec.js:12:6 Create User" type="FAILURE">
+<![CDATA[  [chromium] › ApiTests.spec.js:12:6 › Create User ─────────────────────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 201
+    Received: 401
+
+      23 |     
+      24 |     console.log(await response.json())
+    > 25 |     expect(await response.status()).toBe(201)
+         |                                     ^
+      26 |     var res = await response.json()
+      27 |     userid=res.id
+      28 |     
+        at C:\Users\ASUS\Documents\playwrightautomation\tests\ApiTests.spec.js:25:37
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\ApiTests-Create-User-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\ApiTests-Create-User-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[{
+  error: 'Missing API key.',
+  how_to_get_one: 'https://reqres.in/signup'
+}
+
+[[ATTACHMENT|test-results\ApiTests-Create-User-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

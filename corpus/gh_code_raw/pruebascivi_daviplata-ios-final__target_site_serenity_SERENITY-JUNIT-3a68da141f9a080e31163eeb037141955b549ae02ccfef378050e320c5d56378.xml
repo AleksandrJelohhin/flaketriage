@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Modulo Meter plata" skipped="0" tests="1" time="291.07" timestamp="2024-07-11 05:22:39"><testcase name="CP04239M_SYS_Validar proceso de meter plata al daviplata a traves de PSE Subtipo M35"><error message="An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1012:14b8:9486:2645%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: io.appium.java_client.AppiumDriver&#10;Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 17.5, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008101-000E35003688801E, webStorageEnabled: false}&#10;Session ID: 2873043e-2848-40cb-a3f1-709f3ec6762e&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1012:14b8:9486:2645%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'&#10;Driver info: driver.version: AppiumDriver" type="org.openqa.selenium.WebDriverException">An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1012:14b8:9486:2645%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 17.5, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008101-000E35003688801E, webStorageEnabled: false}
+Session ID: 2873043e-2848-40cb-a3f1-709f3ec6762e
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1012:14b8:9486:2645%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: AppiumDriver</error><system-err>An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1012:14b8:9486:2645%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {autoAcceptAlerts: true, automationName: XCUITest, browserName: , bundleId: com.daviplatavalid.lab, databaseEnabled: false, deviceName: iPhone 12, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, newCommandTimeout: 240, noReset: false, platform: MAC, platformName: MAC, platformVersion: 17.5, showXcodelog: true, skipUnlock: true, takesScreenshot: true, udid: 00008101-000E35003688801E, webStorageEnabled: false}
+Session ID: 2873043e-2848-40cb-a3f1-709f3ec6762e
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'JPDONGUT-JW37PV36DC', ip: 'fe80:0:0:0:1012:14b8:9486:2645%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.3.1', java.version: '1.8.0_411'
+Driver info: driver.version: AppiumDriver
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
+io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+daviplata.nacional.iOS.definitions.Hooks.FinalizarTests(Hooks.java:90)
+cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+daviplata.nacional.iOS.runners.RunnerPersonalizado.run(RunnerPersonalizado.java:63)
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+</system-err></testcase></testsuite>

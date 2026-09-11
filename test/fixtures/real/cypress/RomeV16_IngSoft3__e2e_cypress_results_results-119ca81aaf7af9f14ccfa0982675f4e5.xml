@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.776" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2025-11-28T04:59:14" tests="0" file="cypress/e2e/update_employee.cy.ts" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Update employee" timestamp="2025-11-28T04:59:14" tests="1" time="0.760" failures="1">
+    <testcase name="Update employee edits the last employee and verifies the change" time="0.000" classname="edits the last employee and verifies the change">
+      <failure message="`cy.visit()` failed trying to load:
+
+http://localhost:3001/employees
+
+We attempted to make an http request to this URL but the request failed without a response.
+
+We received this error at the network level:
+
+  &gt; Error: connect ECONNREFUSED 127.0.0.1:3001
+
+Common situations why this would fail:
+  - you don&apos;t have internet access
+  - you forgot to run / boot your web server
+  - your web server isn&apos;t accessible
+  - you have weird network configuration settings on your computer" type="CypressError"><![CDATA[CypressError: `cy.visit()` failed trying to load:
+
+http://localhost:3001/employees
+
+We attempted to make an http request to this URL but the request failed without a response.
+
+We received this error at the network level:
+
+  > Error: connect ECONNREFUSED 127.0.0.1:3001
+
+Common situations why this would fail:
+  - you don't have internet access
+  - you forgot to run / boot your web server
+  - your web server isn't accessible
+  - you have weird network configuration settings on your computer
+    at <unknown> (http://localhost:3001/__cypress/runner/cypress_runner.js:131916:74)
+    at visitFailedByErr (http://localhost:3001/__cypress/runner/cypress_runner.js:131315:12)
+    at <unknown> (http://localhost:3001/__cypress/runner/cypress_runner.js:131915:11)
+    at tryCatcher (http://localhost:3001/__cypress/runner/cypress_runner.js:1807:23)
+    at Promise._settlePromiseFromHandler (http://localhost:3001/__cypress/runner/cypress_runner.js:1519:31)
+    at Promise._settlePromise (http://localhost:3001/__cypress/runner/cypress_runner.js:1576:18)
+    at Promise._settlePromise0 (http://localhost:3001/__cypress/runner/cypress_runner.js:1621:10)
+    at Promise._settlePromises (http://localhost:3001/__cypress/runner/cypress_runner.js:1697:18)
+    at _drainQueueStep (http://localhost:3001/__cypress/runner/cypress_runner.js:2407:12)
+    at _drainQueue (http://localhost:3001/__cypress/runner/cypress_runner.js:2400:9)
+    at Async._drainQueues (http://localhost:3001/__cypress/runner/cypress_runner.js:2416:5)
+    at Async.drainQueues (http://localhost:3001/__cypress/runner/cypress_runner.js:2286:14)
+From Your Spec Code:
+    at Context.eval (webpack://tp07-e2e/./cypress/e2e/update_employee.cy.ts:4:0)
+
+From Node.js Internals:
+  Error: connect ECONNREFUSED 127.0.0.1:3001
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1495:16)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

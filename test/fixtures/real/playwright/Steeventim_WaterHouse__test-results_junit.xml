@@ -1,0 +1,55 @@
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="13.918211000000127">
+<testsuite name="example.spec.ts" timestamp="2026-01-28T17:48:02.777Z" hostname="chromium" tests="2" failures="1" skipped="0" time="3.092" errors="0">
+<testcase name="Example Test Suite › should load homepage" classname="example.spec.ts" time="2.778">
+</testcase>
+<testcase name="Example Test Suite › should create user and login via OTP/PIN" classname="example.spec.ts" time="0.314">
+<failure message="example.spec.ts:10:7 should create user and login via OTP/PIN" type="FAILURE">
+<![CDATA[  [chromium] › example.spec.ts:10:7 › Example Test Suite › should create user and login via OTP/PIN 
+
+    SyntaxError: Unexpected token < in JSON at position 0
+
+      15 |     const sendOtpRes = await request.post('/api/auth/send-otp', { data: { phoneNumber } });
+      16 |     expect(sendOtpRes.ok()).toBeTruthy();
+    > 17 |     const { otp, requestId } = await sendOtpRes.json();
+         |                                ^
+      18 |     // 3. Vérifier l'OTP
+      19 |     const verifyRes = await request.post('/api/auth/verify-otp', { data: { phoneNumber, otp, requestId } });
+      20 |     expect(verifyRes.ok()).toBeTruthy();
+        at /home/tims/Dev1.0/WaterHouse/tests/e2e/example.spec.ts:17:32
+
+    TypeError: fetch failed
+
+       at ../support/fixtures/factories/user-factory.ts:49
+
+      47 |     for (const userId of this.createdUsers) {
+      48 |       if (!userId) continue;
+    > 49 |       await fetch(`${base.replace(/\/$/, '')}/users/${userId}`, { method: 'DELETE' });
+         |       ^
+      50 |     }
+      51 |     this.createdUsers = [];
+      52 |   }
+        at UserFactory.cleanup (/home/tims/Dev1.0/WaterHouse/tests/support/fixtures/factories/user-factory.ts:49:7)
+        at Object.userFactory (/home/tims/Dev1.0/WaterHouse/tests/support/fixtures/index.ts:12:5)
+    [cause]: Error: connect ECONNREFUSED 127.0.0.1:3001
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../test-results/example-Example-Test-Suite-8ada9--user-and-login-via-OTP-PIN-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../test-results/example-Example-Test-Suite-8ada9--user-and-login-via-OTP-PIN-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|example-Example-Test-Suite-8ada9--user-and-login-via-OTP-PIN-chromium/trace.zip]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[UserFactory.createUser network failed for URL=http://localhost:3001/api/users: fetch failed — falling back to local user
+]]>
+</system-err>
+</testcase>
+</testsuite>
+</testsuites>

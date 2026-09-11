@@ -1,0 +1,7 @@
+node_modules/
+/dist/
+coverage/
+*.tsbuildinfo
+.flaketriage/
+
+# action/dist/index.js is the bundled Action entrypoint — it MUST be committed.

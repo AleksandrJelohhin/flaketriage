@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="1" failures="1" errors="0" time="0.335">
+  <testsuite name="index.test.js" errors="0" failures="1" skipped="0" timestamp="2022-11-09T11:52:23" time="0.311" tests="1">
+    <testcase classname="test main express message" name="responds to /" time="0.026">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+- Expected  - 1
++ Received  + 1
+
+- Hello Word!
++ Hello World!
+  ↵
+    at Object.toBe (/home/carlos/Projects/advance/adv-wp6/dependent-devops-javascript-soscarlos/index.test.js:9:31)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="348.148" tests="16" skipped="0" failures="16" errors="0">
+<testcase classname="Complete Checkout Mission - End-to-End Shopping Flow" name="Complete shopping mission - Full checkout flow" time="21.559">
+<failure type="org.openqa.selenium.UnhandledAlertException" message="unexpected alert open: {Alert text : Sign up successful.}
+  (Session info: chrome=137.0.7151.69): Sign up successful.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2d1e4cfb979035e7d3c36d5c4b11fd8, findElement {using=id, value=signInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2d1e4cfb979035e7d3c36d5c4b11fd8">
+<![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Sign up successful.}
+  (Session info: chrome=137.0.7151.69): Sign up successful.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2d1e4cfb979035e7d3c36d5c4b11fd8, findElement {using=id, value=signInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2d1e4cfb979035e7d3c36d5c4b11fd8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy3/jdk.proxy3.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1374)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1358)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.kestrel.web.pages.SignUpPage.signUp(SignUpPage.java:54)
+	at com.kestrel.web.stepdefs.WebStepDefinitions.iRegisterWithCredentials(WebStepDefinitions.java:176)
+	at ?.I register with credentials "kestrel_shopper" and "mission123"(classpath:features/web/Web%20CheckoutMission.feature:14)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kestrel agent is positioned at Demoblaze homepage.....................passed
+Given I am on the homepage..................................................passed
+When I navigate to sign up..................................................passed
+And I register with credentials "kestrel_shopper" and "mission123"..........failed
+Then registration should be successful......................................skipped
+When I login with credentials "kestrel_shopper" and "mission123"............skipped
+Then I should be successfully authenticated.................................skipped
+When I browse to "Phones" category..........................................skipped
+And I select product "Samsung galaxy s6"....................................skipped
+And I add product to cart...................................................skipped
+Then product should be added to cart........................................skipped
+When I browse to "Laptops" category.........................................skipped
+And I select product "Sony vaio i5".........................................skipped
+Then second product should be added to cart.................................skipped
+When I navigate to cart.....................................................skipped
+Then I should see both products in cart.....................................skipped
+And cart total should be calculated.........................................skipped
+When I proceed to checkout..................................................skipped
+And I fill checkout form with mission details...............................skipped
+And I complete the purchase.................................................skipped
+Then order should be confirmed..............................................skipped
+And confirmation message should appear......................................skipped
+And order ID should be generated............................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Complete Checkout Mission - End-to-End Shopping Flow" name="Guest checkout with product selection" time="18.944">
+<failure type="org.opentest4j.AssertionFailedError" message="Homepage should be loaded ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;">
+<![CDATA[org.opentest4j.AssertionFailedError: Homepage should be loaded ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.kestrel.web.stepdefs.WebStepDefinitions.kestrelAgentIsPositionedAtDemoblazeHomepage(WebStepDefinitions.java:42)
+	at ?.Kestrel agent is positioned at Demoblaze homepage(classpath:features/web/Web%20CheckoutMission.feature:8)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kestrel agent is positioned at Demoblaze homepage.....................failed
+Given I am browsing as guest user...........................................skipped
+When I select product "Nokia lumia 1520"....................................skipped
+And I add product to cart...................................................skipped
+And I proceed to checkout as guest..........................................skipped
+And I fill guest checkout form..............................................skipped
+And I complete guest purchase...............................................skipped
+Then guest order should be confirmed........................................skipped
+And guest confirmation should appear........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Complete Checkout Mission - End-to-End Shopping Flow" name="Incomplete checkout form validation" time="11.718">
+<failure/>
+<system-out><![CDATA[
+Given Kestrel agent is positioned at Demoblaze homepage.....................passed
+Given I have products in cart ready for checkout............................passed
+When I proceed to checkout..................................................passed
+And I attempt purchase with incomplete form.................................undefined
+Then form validation should trigger.........................................skipped
+And required field errors should appear.....................................skipped
+And purchase should be prevented............................................skipped
+And form should remain on checkout page.....................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Complete Checkout Mission - End-to-End Shopping Flow" name="Checkout with invalid payment details" time="18.046">
+<failure type="org.opentest4j.AssertionFailedError" message="Homepage should be loaded ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;">
+<![CDATA[org.opentest4j.AssertionFailedError: Homepage should be loaded ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.kestrel.web.stepdefs.WebStepDefinitions.kestrelAgentIsPositionedAtDemoblazeHomepage(WebStepDefinitions.java:42)
+	at ?.Kestrel agent is positioned at Demoblaze homepage(classpath:features/web/Web%20CheckoutMission.feature:8)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kestrel agent is positioned at Demoblaze homepage.....................failed
+Given I have completed shopping cart setup..................................skipped
+When I proceed to checkout..................................................skipped
+And I fill form with invalid payment details................................skipped
+And I attempt purchase......................................................skipped
+Then payment validation should fail.........................................skipped
+And error message should indicate invalid card..............................skipped
+And checkout should remain on payment page..................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Demoblaze Shopping Cart Operations" name="Product reconnaissance and acquisition" time="16.305">
+<failure type="org.opentest4j.AssertionFailedError" message="Homepage should be loaded ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;">
+<![CDATA[org.opentest4j.AssertionFailedError: Homepage should be loaded ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.kestrel.web.stepdefs.WebStepDefinitions.kestrelAgentIsPositionedAtDemoblazeHomepage(WebStepDefinitions.java:42)
+	at ?.Kestrel agent is positioned at Demoblaze homepage(classpath:features/web/Web%20ShoppingCart.feature:8)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kestrel agent is positioned at Demoblaze homepage.....................failed
+And I am authenticated as "testuser"........................................skipped
+Given I am browsing the product catalog.....................................skipped
+When I select a product "Samsung galaxy s6".................................skipped
+And I add the product to cart...............................................skipped
+Then product should be added successfully...................................skipped
+And cart counter should be updated..........................................skipped
+And product should appear in cart...........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Demoblaze Shopping Cart Operations" name="Multi-product cart assembly" time="8.315">
+<failure type="org.openqa.selenium.UnhandledAlertException" message="unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=137.0.7151.69): Wrong password.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [36f15a2e5f918319e8d368b2a3502d1e, findElement {using=id, value=logInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57398}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57398/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 36f15a2e5f918319e8d368b2a3502d1e">
+<![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=137.0.7151.69): Wrong password.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [36f15a2e5f918319e8d368b2a3502d1e, findElement {using=id, value=logInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57398}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57398/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 36f15a2e5f918319e8d368b2a3502d1e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy3/jdk.proxy3.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1374)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1358)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.kestrel.web.pages.LoginPage.clickLoginSubmit(LoginPage.java:103)
+	at com.kestrel.web.pages.LoginPage.login(LoginPage.java:117)
+	at com.kestrel.web.stepdefs.WebStepDefinitions.iAmAuthenticatedAs(WebStepDefinitions.java:248)
+	at ?.I am authenticated as "testuser"(classpath:features/web/Web%20ShoppingCart.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kestrel agent is positioned at Demoblaze homepage.....................passed
+And I am authenticated as "testuser"........................................failed
+Given I am browsing the product catalog.....................................skipped
+When I add multiple products to cart........................................skipped
+Then all products should be in cart.........................................skipped
+And cart total should be calculated correctly...............................skipped
+And product details should be preserved.....................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Demoblaze Shopping Cart Operations" name="Cart modification operations" time="8.724">
+<failure type="org.openqa.selenium.UnhandledAlertException" message="unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=137.0.7151.69): Wrong password.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34997ace67bcd52016d9aad43ceed8d8, findElement {using=id, value=logInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57429/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34997ace67bcd52016d9aad43ceed8d8">
+<![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=137.0.7151.69): Wrong password.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [34997ace67bcd52016d9aad43ceed8d8, findElement {using=id, value=logInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57429/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34997ace67bcd52016d9aad43ceed8d8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy3/jdk.proxy3.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1374)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1358)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.kestrel.web.pages.LoginPage.clickLoginSubmit(LoginPage.java:103)
+	at com.kestrel.web.pages.LoginPage.login(LoginPage.java:117)
+	at com.kestrel.web.stepdefs.WebStepDefinitions.iAmAuthenticatedAs(WebStepDefinitions.java:248)
+	at ?.I am authenticated as "testuser"(classpath:features/web/Web%20ShoppingCart.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kestrel agent is positioned at Demoblaze homepage.....................passed
+And I am authenticated as "testuser"........................................failed
+Given I have products in my cart............................................skipped
+When I remove "Sony vaio i5" from cart......................................skipped
+Then product should be removed successfully.................................skipped
+And cart total should be recalculated.......................................skipped
+And remaining products should be intact.....................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Demoblaze Shopping Cart Operations" name="Product details verification" time="16.011">
+<failure type="org.opentest4j.AssertionFailedError" message="Homepage should be loaded ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;">
+<![CDATA[org.opentest4j.AssertionFailedError: Homepage should be loaded ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.kestrel.web.stepdefs.WebStepDefinitions.kestrelAgentIsPositionedAtDemoblazeHomepage(WebStepDefinitions.java:42)
+	at ?.Kestrel agent is positioned at Demoblaze homepage(classpath:features/web/Web%20ShoppingCart.feature:8)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kestrel agent is positioned at Demoblaze homepage.....................failed
+And I am authenticated as "testuser"........................................skipped
+Given I am viewing product "Samsung galaxy s6"..............................skipped
+When I examine product specifications.......................................skipped
+Then product price should be displayed......................................skipped
+And product description should be available.................................skipped
+And product images should be loaded.........................................skipped
+And "Add to cart" button should be functional...............................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Demoblaze Shopping Cart Operations" name="Cart operations without authentication" time="72.343">
+<failure type="org.openqa.selenium.UnhandledAlertException" message="unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=137.0.7151.69): Wrong password.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2a8a9ce5683ebd7a85d734e03acbc98, findElement {using=id, value=logInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57510}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57510/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f2a8a9ce5683ebd7a85d734e03acbc98">
+<![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=137.0.7151.69): Wrong password.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f2a8a9ce5683ebd7a85d734e03acbc98, findElement {using=id, value=logInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57510}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57510/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f2a8a9ce5683ebd7a85d734e03acbc98
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy3/jdk.proxy3.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1374)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1358)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.kestrel.web.pages.LoginPage.clickLoginSubmit(LoginPage.java:103)
+	at com.kestrel.web.pages.LoginPage.login(LoginPage.java:117)
+	at com.kestrel.web.stepdefs.WebStepDefinitions.iAmAuthenticatedAs(WebStepDefinitions.java:248)
+	at ?.I am authenticated as "testuser"(classpath:features/web/Web%20ShoppingCart.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kestrel agent is positioned at Demoblaze homepage.....................passed
+And I am authenticated as "testuser"........................................failed
+Given I am not authenticated................................................skipped
+When I attempt to add product to cart.......................................skipped
+Then authentication prompt should appear....................................skipped
+And product should not be added.............................................skipped
+And cart should remain empty................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Demoblaze Shopping Cart Operations" name="Empty cart checkout attempt" time="96.465">
+<failure type="java.lang.RuntimeException" message="Web scenario setup failed">
+<![CDATA[java.lang.RuntimeException: Web scenario setup failed
+	at com.kestrel.utils.Hooks.beforeWebScenario(Hooks.java:94)
+Caused by: java.lang.RuntimeException: Navigation failed after retries
+	at com.kestrel.utils.DriverManager.navigateTo(DriverManager.java:275)
+	at com.kestrel.utils.Hooks.beforeWebScenario(Hooks.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.lambda$runTestCase$4(CucumberEngineExecutionContext.java:112)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runTestCase(CucumberEngineExecutionContext.java:109)
+	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:168)
+	at io.cucumber.junit.platform.engine.NodeDescriptor$PickleDescriptor.execute(NodeDescriptor.java:90)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:76)
+	at org.junit.platform.suite.engine.SuiteLauncher.execute(SuiteLauncher.java:63)
+	at org.junit.platform.suite.engine.SuiteTestDescriptor.execute(SuiteTestDescriptor.java:128)
+	at org.junit.platform.suite.engine.SuiteTestEngine.lambda$execute$0(SuiteTestEngine.java:73)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.junit.platform.suite.engine.SuiteTestEngine.execute(SuiteTestEngine.java:73)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=137.0.7151.69)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e0235987f4f8759f11cc6a03be77d95d, get {url=https://www.demoblaze.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57562}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57562/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e0235987f4f8759f11cc6a03be77d95d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:305)
+	at com.kestrel.utils.DriverManager.navigateTo(DriverManager.java:261)
+	... 103 more
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kestrel agent is positioned at Demoblaze homepage.....................skipped
+And I am authenticated as "testuser"........................................skipped
+Given my cart is empty......................................................skipped
+When I attempt to proceed to checkout.......................................skipped
+Then empty cart warning should appear.......................................skipped
+And checkout should be prevented............................................skipped
+And cart page should remain visible.........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Demoblaze Shopping Cart Operations" name="Product reconnaissance and acquisition" time="9.121">
+<failure type="org.openqa.selenium.UnhandledAlertException" message="unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=137.0.7151.69): Wrong password.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6fd9451a8e3d05a0a668c69a3f4e7c4, findElement {using=id, value=logInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57605/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f6fd9451a8e3d05a0a668c69a3f4e7c4">
+<![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=137.0.7151.69): Wrong password.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6fd9451a8e3d05a0a668c69a3f4e7c4, findElement {using=id, value=logInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57605/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f6fd9451a8e3d05a0a668c69a3f4e7c4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy3/jdk.proxy3.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1374)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1358)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.kestrel.web.pages.LoginPage.clickLoginSubmit(LoginPage.java:103)
+	at com.kestrel.web.pages.LoginPage.login(LoginPage.java:117)
+	at com.kestrel.web.stepdefs.WebStepDefinitions.iAmAuthenticatedAs(WebStepDefinitions.java:248)
+	at ?.I am authenticated as "testuser"(classpath:features/web/Web%20authentitcation.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kestrel agent is positioned at Demoblaze homepage.....................passed
+And I am authenticated as "testuser"........................................failed
+Given I am browsing the product catalog.....................................skipped
+When I select a product "Samsung galaxy s6".................................skipped
+And I add the product to cart...............................................skipped
+Then product should be added successfully...................................skipped
+And cart counter should be updated..........................................skipped
+And product should appear in cart...........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Demoblaze Shopping Cart Operations" name="Multi-product cart assembly" time="8.415">
+<failure type="org.openqa.selenium.UnhandledAlertException" message="unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=137.0.7151.69): Wrong password.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [28eb51e89fdacd6ff21ec5e058c11501, findElement {using=id, value=logInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57630}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57630/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28eb51e89fdacd6ff21ec5e058c11501">
+<![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=137.0.7151.69): Wrong password.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [28eb51e89fdacd6ff21ec5e058c11501, findElement {using=id, value=logInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57630}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57630/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28eb51e89fdacd6ff21ec5e058c11501
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy3/jdk.proxy3.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1374)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1358)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.kestrel.web.pages.LoginPage.clickLoginSubmit(LoginPage.java:103)
+	at com.kestrel.web.pages.LoginPage.login(LoginPage.java:117)
+	at com.kestrel.web.stepdefs.WebStepDefinitions.iAmAuthenticatedAs(WebStepDefinitions.java:248)
+	at ?.I am authenticated as "testuser"(classpath:features/web/Web%20authentitcation.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kestrel agent is positioned at Demoblaze homepage.....................passed
+And I am authenticated as "testuser"........................................failed
+Given I am browsing the product catalog.....................................skipped
+When I add multiple products to cart........................................skipped
+Then all products should be in cart.........................................skipped
+And cart total should be calculated correctly...............................skipped
+And product details should be preserved.....................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Demoblaze Shopping Cart Operations" name="Cart modification operations" time="17.13">
+<failure type="org.opentest4j.AssertionFailedError" message="Homepage should be loaded ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;">
+<![CDATA[org.opentest4j.AssertionFailedError: Homepage should be loaded ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at com.kestrel.web.stepdefs.WebStepDefinitions.kestrelAgentIsPositionedAtDemoblazeHomepage(WebStepDefinitions.java:42)
+	at ?.Kestrel agent is positioned at Demoblaze homepage(classpath:features/web/Web%20authentitcation.feature:8)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kestrel agent is positioned at Demoblaze homepage.....................failed
+And I am authenticated as "testuser"........................................skipped
+Given I have products in my cart............................................skipped
+When I remove "Sony vaio i5" from cart......................................skipped
+Then product should be removed successfully.................................skipped
+And cart total should be recalculated.......................................skipped
+And remaining products should be intact.....................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Demoblaze Shopping Cart Operations" name="Product details verification" time="8.058">
+<failure type="org.openqa.selenium.UnhandledAlertException" message="unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=137.0.7151.69): Wrong password.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23d9272fc241bfabcb63c8df7c554e79, findElement {using=id, value=logInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57679}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57679/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23d9272fc241bfabcb63c8df7c554e79">
+<![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=137.0.7151.69): Wrong password.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [23d9272fc241bfabcb63c8df7c554e79, findElement {using=id, value=logInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57679}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57679/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 23d9272fc241bfabcb63c8df7c554e79
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy3/jdk.proxy3.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1374)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1358)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.kestrel.web.pages.LoginPage.clickLoginSubmit(LoginPage.java:103)
+	at com.kestrel.web.pages.LoginPage.login(LoginPage.java:117)
+	at com.kestrel.web.stepdefs.WebStepDefinitions.iAmAuthenticatedAs(WebStepDefinitions.java:248)
+	at ?.I am authenticated as "testuser"(classpath:features/web/Web%20authentitcation.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kestrel agent is positioned at Demoblaze homepage.....................passed
+And I am authenticated as "testuser"........................................failed
+Given I am viewing product "Samsung galaxy s6"..............................skipped
+When I examine product specifications.......................................skipped
+Then product price should be displayed......................................skipped
+And product description should be available.................................skipped
+And product images should be loaded.........................................skipped
+And "Add to cart" button should be functional...............................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Demoblaze Shopping Cart Operations" name="Cart operations without authentication" time="7.721">
+<failure type="org.openqa.selenium.UnhandledAlertException" message="unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=137.0.7151.69): Wrong password.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a9a19f6dfd70e08c4ddd15e28aeea309, findElement {using=id, value=logInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57701/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a9a19f6dfd70e08c4ddd15e28aeea309">
+<![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=137.0.7151.69): Wrong password.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a9a19f6dfd70e08c4ddd15e28aeea309, findElement {using=id, value=logInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57701/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a9a19f6dfd70e08c4ddd15e28aeea309
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy3/jdk.proxy3.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1374)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1358)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.kestrel.web.pages.LoginPage.clickLoginSubmit(LoginPage.java:103)
+	at com.kestrel.web.pages.LoginPage.login(LoginPage.java:117)
+	at com.kestrel.web.stepdefs.WebStepDefinitions.iAmAuthenticatedAs(WebStepDefinitions.java:248)
+	at ?.I am authenticated as "testuser"(classpath:features/web/Web%20authentitcation.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kestrel agent is positioned at Demoblaze homepage.....................passed
+And I am authenticated as "testuser"........................................failed
+Given I am not authenticated................................................skipped
+When I attempt to add product to cart.......................................skipped
+Then authentication prompt should appear....................................skipped
+And product should not be added.............................................skipped
+And cart should remain empty................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Demoblaze Shopping Cart Operations" name="Empty cart checkout attempt" time="7.814">
+<failure type="org.openqa.selenium.UnhandledAlertException" message="unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=137.0.7151.69): Wrong password.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53845b590f7465cfb38c6da83b610fe5, findElement {using=id, value=logInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57723}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57723/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53845b590f7465cfb38c6da83b610fe5">
+<![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=137.0.7151.69): Wrong password.
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53845b590f7465cfb38c6da83b610fe5, findElement {using=id, value=logInModal}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\azka1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57723}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57723/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 53845b590f7465cfb38c6da83b610fe5
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy3/jdk.proxy3.$Proxy32.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.isInvisible(ExpectedConditions.java:1374)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$48.apply(ExpectedConditions.java:1358)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.kestrel.web.pages.LoginPage.clickLoginSubmit(LoginPage.java:103)
+	at com.kestrel.web.pages.LoginPage.login(LoginPage.java:117)
+	at com.kestrel.web.stepdefs.WebStepDefinitions.iAmAuthenticatedAs(WebStepDefinitions.java:248)
+	at ?.I am authenticated as "testuser"(classpath:features/web/Web%20authentitcation.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Kestrel agent is positioned at Demoblaze homepage.....................passed
+And I am authenticated as "testuser"........................................failed
+Given my cart is empty......................................................skipped
+When I attempt to proceed to checkout.......................................skipped
+Then empty cart warning should appear.......................................skipped
+And checkout should be prevented............................................skipped
+And cart page should remain visible.........................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

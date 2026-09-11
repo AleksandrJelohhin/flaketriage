@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="com.flakeguard.api.PolicyEngineTest" tests="6" skipped="1" failures="2" errors="0" timestamp="2023-10-01T10:30:00" hostname="gradle-ci" time="3.456">
+    <properties>
+      <property name="gradle.version" value="8.3"/>
+      <property name="gradle.task.name" value="test"/>
+      <property name="java.version" value="17.0.7"/>
+      <property name="kotlin.version" value="1.9.10"/>
+      <property name="test.executor" value="Gradle Test Executor 12"/>
+    </properties>
+    
+    <testcase name="shouldLoadPolicyFromFile()" classname="com.flakeguard.api.PolicyEngineTest" time="0.567"/>
+    
+    <testcase name="shouldValidateConfigurationSchema()" classname="com.flakeguard.api.PolicyEngineTest" time="0.234">
+      <failure message="Schema validation failed" type="org.junit.jupiter.api.AssertionFailedError">
+org.junit.jupiter.api.AssertionFailedError: Schema validation failed ==> expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at com.flakeguard.api.PolicyEngineTest.shouldValidateConfigurationSchema(PolicyEngineTest.java:89)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      </failure>
+      <system-out><![CDATA[
+Debug output from test execution:
+- Configuration file: .flakeguard.yml
+- Schema version: 1.0
+- Validation result: false
+      ]]></system-out>
+    </testcase>
+    
+    <testcase name="shouldCacheConfigurationWithTTL()" classname="com.flakeguard.api.PolicyEngineTest" time="0.456">
+      <failure message="Cache TTL not respected" type="org.junit.jupiter.api.AssertionFailedError">
+org.junit.jupiter.api.AssertionFailedError: Cache TTL not respected ==> 
+Expected cache to be expired after 6 seconds, but it was still valid
+Configuration was loaded at: 2023-10-01T10:30:01.123Z
+Current time: 2023-10-01T10:30:07.456Z
+	at com.flakeguard.api.PolicyEngineTest.shouldCacheConfigurationWithTTL(PolicyEngineTest.java:125)
+      </failure>
+    </testcase>
+    
+    <testcase name="shouldApplyTeamOverrides()" classname="com.flakeguard.api.PolicyEngineTest" time="0.789"/>
+    
+    <testcase name="shouldHandleGitHubAPIFailures()" classname="com.flakeguard.api.PolicyEngineTest" time="0.345">
+      <skipped>GitHub API integration test skipped in CI environment</skipped>
+    </testcase>
+    
+    <testcase name="shouldProvideDetailedDecisionRationale()" classname="com.flakeguard.api.PolicyEngineTest" time="1.065">
+      <system-out><![CDATA[
+Test execution details:
+- Policy decision: QUARANTINE
+- Confidence: 0.87
+- Reason: High flakiness score (0.82) exceeds threshold (0.7)
+- Test cases evaluated: 25
+      ]]></system-out>
+    </testcase>
+    
+    <system-out><![CDATA[
+PolicyEngineTest completed
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 3.456 sec
+Memory usage: Initial=128MB, Peak=256MB, Final=189MB
+    ]]></system-out>
+  </testsuite>
+  
+  <testsuite name="com.flakeguard.api.FlakeDetectorTest" tests="4" skipped="0" failures="1" errors="0" timestamp="2023-10-01T10:30:03" hostname="gradle-ci" time="2.345">
+    <testcase name="shouldDetectIntermittentFailures()" classname="com.flakeguard.api.FlakeDetectorTest" time="0.678">
+      <system-out><![CDATA[Test pattern analysis:
+Pattern: PASS-FAIL-PASS-FAIL-PASS
+Intermittency score: 0.85
+Classification: HIGHLY_INTERMITTENT]]></system-out>
+    </testcase>
+    
+    <testcase name="shouldCalculateFlakeScoreWithConfidence()" classname="com.flakeguard.api.FlakeDetectorTest" time="0.567"/>
+    
+    <testcase name="shouldIdentifyErrorPatterns()" classname="com.flakeguard.api.FlakeDetectorTest" time="0.789">
+      <failure message="Error pattern not correctly identified" type="org.junit.jupiter.api.AssertionFailedError">
+org.junit.jupiter.api.AssertionFailedError: Error pattern not correctly identified
+Expected error pattern: TIMEOUT
+Actual error pattern: CONNECTION_REFUSED
+Test run messages analyzed:
+- "java.net.ConnectException: Connection refused"
+- "java.util.concurrent.TimeoutException: Request timeout"
+- "java.net.ConnectException: Connection refused"
+	at com.flakeguard.api.FlakeDetectorTest.shouldIdentifyErrorPatterns(FlakeDetectorTest.java:156)
+      </failure>
+    </testcase>
+    
+    <testcase name="shouldHandleLargeTestHistory()" classname="com.flakeguard.api.FlakeDetectorTest" time="0.311">
+      <system-out><![CDATA[Performance test results:
+- Test history size: 10,000 runs
+- Processing time: 311ms
+- Memory overhead: 15MB
+- Analysis accuracy: 94.7%]]></system-out>
+    </testcase>
+  </testsuite>
+  
+  <testsuite name="com.flakeguard.api.integration.GitHubIntegrationTest" tests="3" skipped="2" failures="0" errors="0" timestamp="2023-10-01T10:30:05" hostname="gradle-ci" time="1.234">
+    <testcase name="shouldProcessWorkflowRunWebhook()" classname="com.flakeguard.api.integration.GitHubIntegrationTest" time="1.234">
+      <system-out><![CDATA[GitHub webhook processed:
+- Repository: flakeguard/test-repo
+- Workflow run ID: 6789012345
+- Artifacts downloaded: 3
+- Test results parsed: 156 test cases]]></system-out>
+    </testcase>
+    
+    <testcase name="shouldCreateCheckRunWithResults()" classname="com.flakeguard.api.integration.GitHubIntegrationTest" time="0.000">
+      <skipped>Check run creation requires valid GitHub token</skipped>
+    </testcase>
+    
+    <testcase name="shouldHandleArtifactDownloadFailure()" classname="com.flakeguard.api.integration.GitHubIntegrationTest" time="0.000">
+      <skipped>Network simulation not available in CI</skipped>
+    </testcase>
+  </testsuite>
+</testsuites>

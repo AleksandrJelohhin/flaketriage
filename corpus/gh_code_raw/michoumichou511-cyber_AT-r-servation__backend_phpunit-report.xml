@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\Users\loulou\ProjetFinFormation\backend\phpunit.xml" tests="6" assertions="4" errors="2" failures="0" skipped="0" time="3.064599">
+    <testsuite name="Feature" tests="6" assertions="4" errors="2" failures="0" skipped="0" time="3.064599">
+      <testsuite name="Tests\Feature\RolePermissionsTest" file="C:\Users\loulou\ProjetFinFormation\backend\tests\Feature\RolePermissionsTest.php" tests="6" assertions="4" errors="2" failures="0" skipped="0" time="3.064599">
+        <testcase name="test_utilisateur_cannot_access_admin_dashboard" file="C:\Users\loulou\ProjetFinFormation\backend\tests\Feature\RolePermissionsTest.php" line="28" class="Tests\Feature\RolePermissionsTest" classname="Tests.Feature.RolePermissionsTest" assertions="1" time="1.432924"/>
+        <testcase name="test_admin_can_access_admin_dashboard" file="C:\Users\loulou\ProjetFinFormation\backend\tests\Feature\RolePermissionsTest.php" line="36" class="Tests\Feature\RolePermissionsTest" classname="Tests.Feature.RolePermissionsTest" assertions="1" time="0.275950"/>
+        <testcase name="test_utilisateur_cannot_access_validations_list" file="C:\Users\loulou\ProjetFinFormation\backend\tests\Feature\RolePermissionsTest.php" line="44" class="Tests\Feature\RolePermissionsTest" classname="Tests.Feature.RolePermissionsTest" assertions="1" time="0.749497"/>
+        <testcase name="test_validateur_can_access_validations_list" file="C:\Users\loulou\ProjetFinFormation\backend\tests\Feature\RolePermissionsTest.php" line="52" class="Tests\Feature\RolePermissionsTest" classname="Tests.Feature.RolePermissionsTest" assertions="1" time="0.316592"/>
+        <testcase name="test_utilisateur_can_only_see_own_missions" file="C:\Users\loulou\ProjetFinFormation\backend\tests\Feature\RolePermissionsTest.php" line="60" class="Tests\Feature\RolePermissionsTest" classname="Tests.Feature.RolePermissionsTest" assertions="0" time="0.183801">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\RolePermissionsTest::test_utilisateur_can_only_see_own_missions&#13;
+Illuminate\Database\QueryException: SQLSTATE[23000]: Integrity constraint violation: 19 CHECK constraint failed: statut (Connection: sqlite, SQL: insert into "missions" ("user_id", "titre", "description", "numero_unique", "destination", "date_depart", "date_retour", "statut", "updated_at", "created_at") values (3, Mission user, Desc, MISS-USER-1, Paris, 2025-05-01, 2025-05-05, en_attente, 2026-03-11 16:47:29, 2026-03-11 16:47:29))
+&#13;
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:826
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:780
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1219
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Support\helpers.php:485
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1218
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Support\Traits\ForwardsCalls.php:23
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:2540
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:2556
+C:\Users\loulou\ProjetFinFormation\backend\tests\Feature\RolePermissionsTest.php:63</error>
+        </testcase>
+        <testcase name="test_admin_can_see_all_missions" file="C:\Users\loulou\ProjetFinFormation\backend\tests\Feature\RolePermissionsTest.php" line="94" class="Tests\Feature\RolePermissionsTest" classname="Tests.Feature.RolePermissionsTest" assertions="0" time="0.105835">
+          <error type="Illuminate\Database\QueryException">Tests\Feature\RolePermissionsTest::test_admin_can_see_all_missions&#13;
+Illuminate\Database\QueryException: SQLSTATE[23000]: Integrity constraint violation: 19 CHECK constraint failed: statut (Connection: sqlite, SQL: insert into "missions" ("user_id", "titre", "description", "numero_unique", "destination", "date_depart", "date_retour", "statut", "updated_at", "created_at") values (3, Mission user, Desc, MISS-USER-2, Paris, 2025-05-01, 2025-05-05, en_attente, 2026-03-11 16:47:29, 2026-03-11 16:47:29))
+&#13;
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:826
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:780
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:559
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Connection.php:523
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php:32
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php:3853
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:2235
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1436
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1401
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:1240
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1219
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Support\helpers.php:485
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php:1218
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Support\Traits\ForwardsCalls.php:23
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:2540
+C:\Users\loulou\ProjetFinFormation\backend\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:2556
+C:\Users\loulou\ProjetFinFormation\backend\tests\Feature\RolePermissionsTest.php:96</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
