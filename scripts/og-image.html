@@ -1,0 +1,32 @@
+<!--
+  Source for docs/og.png, the 1200x630 social share image.
+  Regenerate from the repo root (Chrome or Edge, headless):
+
+    chrome --headless=new --hide-scrollbars --force-device-scale-factor=1 \
+      --window-size=1200,630 --virtual-time-budget=8000 \
+      --screenshot=docs/og.png "file://$PWD/scripts/og-image.html"
+-->
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;500&display=block" rel="stylesheet">
+<style>
+html,body{margin:0;width:1200px;height:630px;overflow:hidden;background:#FBFAF7;color:#1A1A17}
+.page{box-sizing:border-box;width:1200px;height:630px;padding:64px 72px 56px;display:flex;flex-direction:column;
+  background-image:repeating-linear-gradient(#FBFAF7 0 47px,#EFECE4 47px 48px)}
+.top{display:flex;justify-content:space-between;align-items:baseline}
+.wm{font:44px/1 "Newsreader",Georgia,serif;letter-spacing:-.01em}
+.tag{font:500 17px/1 "JetBrains Mono",Consolas,monospace;color:#6B6862;letter-spacing:.06em;text-transform:uppercase}
+h1{font:400 74px/1.06 "Newsreader",Georgia,serif;letter-spacing:-.02em;margin:52px 0 0;max-width:1000px}
+.card{margin-top:auto;background:#fff;border:1px solid #E3E0D8;border-radius:6px;padding:20px 26px;font:400 21px/1.55 "JetBrains Mono",Consolas,monospace}
+.row{white-space:nowrap}
+.n{color:#C2352B;font-weight:500} .i{color:#8A8880;font-weight:500}
+.m{color:#6B6862}
+</style></head>
+<body><div class="page">
+  <div class="top"><div class="wm">FlakeTriage</div><div class="tag">Flaky test detection · GitHub Action</div></div>
+  <h1>Your test failed. Did you break it, or is CI just noisy?</h1>
+  <div class="card">
+    <div class="row"><span class="n">● Needs you</span>  checkout.spec.ts › applies discount code <span class="m">→ discount.ts:88</span></div>
+    <div class="row"><span class="i">○ Safe to ignore</span>  auth.spec.ts › refreshes token <span class="m">— passed on retry</span></div>
+  </div>
+</div></body></html>
