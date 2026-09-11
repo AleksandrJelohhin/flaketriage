@@ -1,0 +1,73 @@
+name: Bug report
+description: FlakeTriage gave a wrong verdict, crashed, or failed to parse a report
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! A minimal JUnit XML file that reproduces the problem is the
+        single most useful thing you can attach. Please redact secrets, internal hostnames
+        and file paths before pasting.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What went wrong?
+      options:
+        - Wrong verdict (e.g. flaky reported as regression)
+        - Report could not be parsed / failures missing
+        - Crash or error message
+        - PR comment / job summary looks wrong
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened, and what did you expect?
+      placeholder: "FlakeTriage said `cart.spec › sums items` is flaky, but it fails on every run since commit abc123."
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: FlakeTriage output
+      description: The PR comment, job summary, or CLI output (`--format text` or `--format json`).
+      render: text
+  - type: textarea
+    id: junit
+    attributes:
+      label: JUnit XML sample
+      description: The smallest report (or failing `<testcase>`) that shows the problem.
+      render: xml
+  - type: input
+    id: framework
+    attributes:
+      label: Test framework and reporter
+      placeholder: "pytest 8.3 --junitxml, jest-junit 16, Maven Surefire 3.2, ..."
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: How are you running FlakeTriage?
+      options:
+        - GitHub Action (AleksandrJelohhin/flaketriage@v1)
+        - CLI
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: FlakeTriage version
+      placeholder: "v1.0.2"
+  - type: dropdown
+    id: llm
+    attributes:
+      label: LLM provider
+      options:
+        - None (--no-llm)
+        - Anthropic / Bedrock / Vertex / Foundry
+        - Gemini
+        - OpenAI
+        - Local / OpenAI-compatible
+        - Custom

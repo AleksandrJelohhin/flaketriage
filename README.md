@@ -20,6 +20,11 @@ and the pull request diff, and posts **one short, actionable verdict** on the PR
   a model (Claude, Gemini, OpenAI, or a local LLM), redacted, in one batched call.
   Works fully offline with `--no-llm`.
 
+<p align="center">
+  <img src="docs/pr-comment.png" width="720"
+       alt="FlakeTriage PR comment: one failure blamed on the exact line the PR changed, one flaky test and one infrastructure failure marked safe to ignore">
+</p>
+
 ## Contents
 
 - [Quick start: GitHub Action](#quick-start-github-action)
@@ -208,6 +213,7 @@ which evicts entries after 7 days and is branch-scoped. See
 
 - [action/README.md](action/README.md) — GitHub Action inputs, outputs, history caching
 - [test/fixtures/real/README.md](test/fixtures/real/README.md) — the real-world test corpus
+- [CONTRIBUTING.md](CONTRIBUTING.md) — dev setup, where things live, good first issues
 
 ### Develop
 

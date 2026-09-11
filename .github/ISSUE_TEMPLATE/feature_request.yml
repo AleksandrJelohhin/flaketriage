@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest a new framework, infra signature, output format, or other improvement
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      placeholder: "Our Azure Pipelines runs produce paths like /home/vsts/work/1/s/..., so the same failure gets different fingerprints."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like FlakeTriage to do?
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example input
+      description: A JUnit XML snippet, failure message, or stack trace that shows the case (redact secrets).
+      render: text
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution
+      options:
+        - label: I'd be willing to open a pull request for this

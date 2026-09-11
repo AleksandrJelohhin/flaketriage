@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation
+    url: https://aleksandrjelohhin.github.io/flaketriage/
+    about: Quick start, how verdicts are made, supported frameworks and LLM providers.
