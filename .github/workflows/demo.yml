@@ -86,7 +86,7 @@ jobs:
 
       - name: FlakeTriage
         id: flaketriage
-        uses: ./action
+        uses: ./
         with:
           reports: demo-reports/**/*.xml
           db-path: .flaketriage/demo-history.db

@@ -54,7 +54,7 @@ jobs:
 
       - run: npm test || true         # your tests, writing JUnit XML; keep going on failure
 
-      - uses: AleksandrJelohhin/flaketriage/action@v1
+      - uses: AleksandrJelohhin/flaketriage@v1
         with:
           reports: "**/junit*.xml"
           fail-on: regression         # only real regressions turn the build red

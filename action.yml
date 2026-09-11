@@ -94,16 +94,16 @@ runs:
 
     # The action ships a bundled entrypoint but its runtime deps (incl. the
     # native better-sqlite3) are installed here, at the action checkout root
-    # (action.yml lives in the action/ subdirectory).
+    # (action.yml lives at the repo root; the bundle is in action/dist/).
     - name: Install FlakeTriage runtime
       shell: bash
       run: npm ci --omit=dev --no-audit --fund=false
-      working-directory: ${{ github.action_path }}/..
+      working-directory: ${{ github.action_path }}
 
     - name: FlakeTriage
       id: flaketriage
       shell: bash
-      run: node "$GITHUB_ACTION_PATH/dist/index.js"
+      run: node "$GITHUB_ACTION_PATH/action/dist/index.js"
       env:
         INPUT_REPORTS: ${{ inputs.reports }}
         INPUT_WORKING-DIRECTORY: ${{ inputs.working-directory }}

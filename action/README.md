@@ -27,7 +27,7 @@ jobs:
       # … your build + test steps that produce JUnit XML …
       - run: ./gradlew test || true      # keep going so FlakeTriage can classify
 
-      - uses: AleksandrJelohhin/flaketriage/action@v1
+      - uses: AleksandrJelohhin/flaketriage@v1
         with:
           reports: "**/build/test-results/**/*.xml"
           anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}   # optional
