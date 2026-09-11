@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aleksandrjelohhin.github.io/flaketriage/sitemap.xml
