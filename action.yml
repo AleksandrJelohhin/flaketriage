@@ -1,7 +1,7 @@
 name: FlakeTriage
 description: >-
-  Decide whether a failing CI test is a flake or a real regression, and post a
-  short verdict on the pull request.
+  Flaky test detection for pull requests: tell flaky tests from real
+  regressions using JUnit XML, test history and diff blame.
 author: FlakeTriage
 branding:
   icon: filter
