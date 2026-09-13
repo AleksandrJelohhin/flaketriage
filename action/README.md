@@ -42,7 +42,7 @@ test step already writes, and let that step continue on failure (`|| true`,
 
 | input | default | notes |
 |---|---|---|
-| `reports` | `**/junit*.xml,**/TEST-*.xml` | comma- or newline-separated globs |
+| `reports` | `**/junit*.xml,**/TEST-*.xml` | comma- or newline-separated globs; `.json` files are read as Playwright JSON reports, which keep the retried-then-passed tests that Playwright's JUnit output hides |
 | `working-directory` | `.` | repo checkout path |
 | `db-path` | `.flaketriage/history.db` | history DB (within `working-directory`) |
 | `fail-on` | `regression` | `regression` \| `any` \| `never` |
@@ -55,7 +55,8 @@ test step already writes, and let that step continue on failure (`|| true`,
 
 ## Outputs
 
-`regressions`, `needs-attention`, `failed`, `cost-usd`, `report-markdown`, `report-summary`,
+`regressions`, `needs-attention`, `failed`, `flaky` (tests that passed only after
+failing first; never fails the build), `cost-usd`, `report-markdown`, `report-summary`,
 `report-json`.
 
 ## The sticky comment

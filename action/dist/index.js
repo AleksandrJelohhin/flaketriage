@@ -28,6 +28,14 @@ var JUnitParseError = class extends FlakeTriageError {
     this.source = options?.source;
   }
 };
+var PlaywrightReportParseError = class extends FlakeTriageError {
+  /** Path or label of the offending report, when known. */
+  source;
+  constructor(message, options) {
+    super("PLAYWRIGHT_PARSE", message, options);
+    this.source = options?.source;
+  }
+};
 var GitContextError = class extends FlakeTriageError {
   constructor(message, options) {
     super("GIT_CONTEXT", message, options);
@@ -1063,6 +1071,98 @@ function parseJUnitFile(path) {
   return parseJUnitXml(xml, path);
 }
 
+// src/ingest/playwright.ts
+import { readFileSync as readFileSync3 } from "node:fs";
+var ANSI2 = /\u001b\[[0-9;]*[A-Za-z]/g;
+var FAILED_ATTEMPT = /* @__PURE__ */ new Set(["failed", "timedOut", "interrupted"]);
+function stripAnsi(text) {
+  if (text === void 0) return null;
+  const clean = text.replace(ANSI2, "").trim();
+  return clean.length > 0 ? clean : null;
+}
+function toFailure2(result) {
+  const error = result?.error ?? result?.errors?.[0];
+  const text = stripAnsi(error?.message);
+  const firstLine2 = text?.split(/\r?\n/)[0]?.trim() ?? null;
+  return {
+    // Playwright's JUnit `message` is the first line without the "Error: " prefix.
+    message: firstLine2 ? firstLine2.replace(/^Error:\s*/, "") : null,
+    type: null,
+    stack: stripAnsi(error?.stack) ?? text
+  };
+}
+function statusOf(test, last) {
+  switch (test.status) {
+    case "skipped":
+      return "skipped";
+    case "expected":
+    case "flaky":
+      return "passed";
+    default:
+      return last?.status === "timedOut" || last?.status === "interrupted" ? "error" : "failed";
+  }
+}
+function toTestResult2(spec, test, describePath) {
+  const results = test.results ?? [];
+  const last = results[results.length - 1];
+  const suite = stableSuite(spec.file ?? "<unknown-file>");
+  const name = [...describePath, spec.title ?? "<unnamed>"].join(" \u203A ");
+  const status = statusOf(test, last);
+  const failedAttempts = results.filter((r) => FAILED_ATTEMPT.has(r.status ?? ""));
+  let failure = null;
+  if (status === "failed" || status === "error") {
+    failure = failedAttempts.length > 0 ? toFailure2(failedAttempts[failedAttempts.length - 1]) : { message: "expected to fail, but passed", type: null, stack: null };
+  }
+  const skip = test.annotations?.find((a) => a.type === "skip" || a.type === "fixme");
+  return {
+    suite,
+    name,
+    testKey: testKey(suite, name),
+    status,
+    durationMs: results.length > 0 ? results.reduce((sum, r) => sum + (r.duration ?? 0), 0) : null,
+    file: null,
+    failure,
+    skipReason: status === "skipped" ? skip?.description?.trim() || "skipped" : null,
+    retries: status === "passed" ? failedAttempts.map(toFailure2) : []
+  };
+}
+function walkSuite2(suite, describePath, out) {
+  for (const spec of suite.specs ?? []) {
+    for (const test of spec.tests ?? []) out.push(toTestResult2(spec, test, describePath));
+  }
+  for (const child of suite.suites ?? []) {
+    walkSuite2(child, [...describePath, child.title ?? ""], out);
+  }
+}
+function parsePlaywrightJson(json, source) {
+  let doc;
+  try {
+    doc = JSON.parse(json);
+  } catch (cause) {
+    throw new PlaywrightReportParseError("malformed JSON", { cause, source: source ?? "" });
+  }
+  const report = doc;
+  if (typeof report !== "object" || report === null || typeof report.config !== "object" || !Array.isArray(report.suites)) {
+    throw new PlaywrightReportParseError(
+      "not a Playwright JSON report (expected top-level `config` and `suites`)",
+      { source: source ?? "" }
+    );
+  }
+  const out = [];
+  for (const fileSuite of report.suites) walkSuite2(fileSuite, [], out);
+  return out;
+}
+function parsePlaywrightFile(path) {
+  let json;
+  try {
+    json = readFileSync3(path, "utf8");
+  } catch (cause) {
+    throw new PlaywrightReportParseError(`cannot read report: ${path}`, { cause, source: path });
+  }
+  if (json.charCodeAt(0) === 65279) json = json.slice(1);
+  return parsePlaywrightJson(json, path);
+}
+
 // src/llm/providers/anthropic.ts
 import Anthropic from "@anthropic-ai/sdk";
 import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
@@ -1551,7 +1651,7 @@ function buildUserPayload(input, limits = DEFAULT_LIMITS) {
 }
 
 // src/pipeline.ts
-import { readFileSync as readFileSync3 } from "node:fs";
+import { readFileSync as readFileSync4 } from "node:fs";
 import { dirname as dirname2, isAbsolute, join as join3, resolve } from "node:path";
 
 // src/core/blame.ts
@@ -1914,7 +2014,7 @@ function makeImportsResolver(repoRoot) {
     try {
       const abs = resolve(repoRoot, file);
       if (abs.startsWith(resolve(repoRoot))) {
-        const src = readFileSync3(abs, "utf8");
+        const src = readFileSync4(abs, "utf8");
         const dir = dirname2(file.replace(/\\/g, "/"));
         out = parseImports(src).flatMap((spec) => resolveSpec(spec, dir)).filter((p) => Boolean(p));
       }
@@ -2618,7 +2718,8 @@ async function runFlakeTriage(opts) {
   const parseFailures = [];
   for (const file of reportFiles) {
     try {
-      results.push(...parseJUnitFile(file));
+      const parsed = file.toLowerCase().endsWith(".json") ? parsePlaywrightFile(file) : parseJUnitFile(file);
+      results.push(...parsed);
     } catch (e) {
       parseFailures.push({ file, message: e instanceof Error ? e.message : String(e) });
     }

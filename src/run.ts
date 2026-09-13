@@ -20,6 +20,7 @@ import { discoverReports, DEFAULT_REPORT_GLOBS } from "./ingest/discover.js";
 import { readCommitDiff, readGitContext } from "./ingest/git.js";
 import { parseJUnitFile } from "./ingest/junit.js";
 import type { TestResult } from "./ingest/junit.js";
+import { parsePlaywrightFile } from "./ingest/playwright.js";
 import { resolveProvider } from "./llm/providers/index.js";
 import type { ResolveOptions } from "./llm/providers/index.js";
 import { redact } from "./llm/payload.js";
@@ -109,7 +110,9 @@ export async function runFlakeTriage(
   const parseFailures: { file: string; message: string }[] = [];
   for (const file of reportFiles) {
     try {
-      results.push(...parseJUnitFile(file));
+      // Playwright's JSON report keeps retry attempts that its JUnit output hides.
+      const parsed = file.toLowerCase().endsWith(".json") ? parsePlaywrightFile(file) : parseJUnitFile(file);
+      results.push(...parsed);
     } catch (e) {
       parseFailures.push({ file, message: e instanceof Error ? e.message : String(e) });
     }
