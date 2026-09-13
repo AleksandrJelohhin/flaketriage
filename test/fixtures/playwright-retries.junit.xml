@@ -1,0 +1,79 @@
+<testsuites id="" name="" tests="6" failures="1" skipped="1" errors="0" time="1.498172">
+<testsuite name="cart.spec.ts" timestamp="2026-09-13T20:12:22.982Z" hostname="" tests="5" failures="1" skipped="1" time="0.025" errors="0">
+<testcase name="cart › adds an item" classname="cart.spec.ts" time="0.005">
+</testcase>
+<testcase name="cart › applies discount code" classname="cart.spec.ts" time="0.007">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\..\test-results\cart-cart-applies-discount-code\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="cart › checkout › rejects an expired card" classname="cart.spec.ts" time="0.009">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\..\test-results\cart-cart-checkout-rejects-an-expired-card\error-context.md]]
+
+[[ATTACHMENT|..\..\..\test-results\cart-cart-checkout-rejects-an-expired-card-retry1\error-context.md]]
+]]>
+</system-out>
+<failure message="expect(received).toBe(expected) // Object.is equality" type="expect.toBe">
+<![CDATA[  cart.spec.ts:15:9 › cart › checkout › rejects an expired card ────────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "approved"
+    Received: "declined"
+
+      14 |     // Fails on every attempt.
+      15 |     test("rejects an expired card", async () => {
+    > 16 |       expect("declined").toBe("approved");
+         |                          ^
+      17 |     });
+      18 |   });
+      19 | });
+        at C:\ft-fixture\tests\cart.spec.ts:16:26
+
+    Error Context: ..\..\..\test-results\cart-cart-checkout-rejects-an-expired-card\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "approved"
+    Received: "declined"
+
+      14 |     // Fails on every attempt.
+      15 |     test("rejects an expired card", async () => {
+    > 16 |       expect("declined").toBe("approved");
+         |                          ^
+      17 |     });
+      18 |   });
+      19 | });
+        at C:\ft-fixture\tests\cart.spec.ts:16:26
+
+    Error Context: ..\..\..\test-results\cart-cart-checkout-rejects-an-expired-card-retry1\error-context.md
+]]>
+</failure>
+</testcase>
+<testcase name="gift wrapping" classname="cart.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="empty cart shows a hint" classname="cart.spec.ts" time="0.004">
+</testcase>
+</testsuite>
+<testsuite name="nested\search.spec.ts" timestamp="2026-09-13T20:12:22.982Z" hostname="" tests="1" failures="0" skipped="0" time="0.01" errors="0">
+<testcase name="suggestions appear" classname="nested\search.spec.ts" time="0.01">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\..\..\test-results\nested-search-suggestions-appear\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

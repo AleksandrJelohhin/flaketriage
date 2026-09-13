@@ -122,7 +122,7 @@ can*, ⚪ *Safe to ignore* — not by taxonomy.
 Most of the signal is deterministic. The LLM is the last step, not the first.
 
 1. **Ingest** — parse JUnit / xUnit XML (nested suites, Surefire rerun markers,
-   CDATA, malformed real-world files).
+   CDATA, malformed real-world files) or a Playwright JSON report.
 2. **Normalize and fingerprint** — strip timestamps, UUIDs, ports, temp paths and
    vendor stack frames, then hash. Same fingerprint means the same failure.
 3. **History** — every run goes into a local SQLite timeline (persisted between CI
@@ -151,6 +151,13 @@ failing reports from 212 public repositories**, including:
 Java (Maven Surefire, Gradle, TestNG) · Python (pytest) · JavaScript/TypeScript
 (Jest, Vitest, Playwright, Cypress, Mocha) · PHP (PHPUnit) · Ruby (RSpec) ·
 Go (gotestsum) · k6 load tests · CTest and other xUnit emitters.
+
+**Playwright with retries:** point `reports` at Playwright's JSON report
+(`reporter: [["json", { outputFile: "playwright-report.json" }]]`) instead of its
+JUnit file. Playwright's JUnit reporter writes a test that failed and then passed
+on retry as a plain pass, so those flakes only show up in the JSON report. Both
+formats give the same test keys, so history carries over. Don't pass both files
+for the same run, or every test is counted twice.
 
 ## LLM providers (optional)
 

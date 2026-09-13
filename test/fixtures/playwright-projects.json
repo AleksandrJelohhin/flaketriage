@@ -1,0 +1,889 @@
+{
+  "config": {
+    "argv": [],
+    "configFile": "C:\\ft-fixture\\playwright.projects.config.ts",
+    "rootDir": "C:/ft-fixture/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/ft-fixture/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/ft-fixture/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/ft-fixture/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/ft-fixture/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "out-projects/playwright-report.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "out-projects/playwright-junit.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 12,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "cart.spec.ts",
+      "file": "cart.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "gift wrapping",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "location": {
+                    "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                    "line": 21,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-13T20:14:08.209Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                        "line": 21,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1981448f0b79506fb670-fb115aa0246c048f40b7",
+          "file": "cart.spec.ts",
+          "line": 21,
+          "column": 6
+        },
+        {
+          "title": "empty cart shows a hint",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-13T20:14:08.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1981448f0b79506fb670-f2105743eb12d48d1ece",
+          "file": "cart.spec.ts",
+          "line": 23,
+          "column": 5
+        },
+        {
+          "title": "gift wrapping",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "location": {
+                    "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                    "line": 21,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-13T20:14:08.200Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                        "line": 21,
+                        "column": 6
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1981448f0b79506fb670-b3a8105b48afd630b76b",
+          "file": "cart.spec.ts",
+          "line": 21,
+          "column": 6
+        },
+        {
+          "title": "empty cart shows a hint",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 5,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-13T20:14:08.201Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1981448f0b79506fb670-40fda7a6082a37f40428",
+          "file": "cart.spec.ts",
+          "line": 23,
+          "column": 5
+        }
+      ],
+      "suites": [
+        {
+          "title": "cart",
+          "file": "cart.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "adds an item",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-13T20:14:07.145Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1981448f0b79506fb670-b9b4d8d9639265215a54",
+              "file": "cart.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "applies discount code",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2,
+                      "error": {
+                        "message": "Error: simulated flake on the first attempt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                        "stack": "Error: simulated flake on the first attempt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at C:\\ft-fixture\\tests\\cart.spec.ts:10:68",
+                        "location": {
+                          "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                          "column": 68,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m   \u001b[90m// Fails on the first attempt only, so it passes on retry: Playwright reports it as flaky.\u001b[39m\n \u001b[90m  9 |\u001b[39m   test(\u001b[32m\"applies discount code\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     expect(testInfo\u001b[33m.\u001b[39mretry\u001b[33m,\u001b[39m \u001b[32m\"simulated flake on the first attempt\"\u001b[39m)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mdescribe(\u001b[32m\"checkout\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                            "column": 68,
+                            "line": 10
+                          },
+                          "message": "Error: simulated flake on the first attempt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n   8 |   // Fails on the first attempt only, so it passes on retry: Playwright reports it as flaky.\n   9 |   test(\"applies discount code\", async ({}, testInfo) => {\n> 10 |     expect(testInfo.retry, \"simulated flake on the first attempt\").toBeGreaterThan(0);\n     |                                                                    ^\n  11 |   });\n  12 |\n  13 |   test.describe(\"checkout\", () => {\n    at C:\\ft-fixture\\tests\\cart.spec.ts:10:68"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-13T20:14:07.176Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\ft-fixture\\test-results\\cart-cart-applies-discount-code-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                        "column": 68,
+                        "line": 10
+                      }
+                    },
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-09-13T20:14:07.520Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "1981448f0b79506fb670-c80914d38a39a7090c80",
+              "file": "cart.spec.ts",
+              "line": 9,
+              "column": 7
+            },
+            {
+              "title": "adds an item",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-13T20:14:07.146Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1981448f0b79506fb670-7e9e0369471d367a3647",
+              "file": "cart.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "applies discount code",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 5,
+                      "error": {
+                        "message": "Error: simulated flake on the first attempt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                        "stack": "Error: simulated flake on the first attempt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at C:\\ft-fixture\\tests\\cart.spec.ts:10:68",
+                        "location": {
+                          "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                          "column": 68,
+                          "line": 10
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  8 |\u001b[39m   \u001b[90m// Fails on the first attempt only, so it passes on retry: Playwright reports it as flaky.\u001b[39m\n \u001b[90m  9 |\u001b[39m   test(\u001b[32m\"applies discount code\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m     expect(testInfo\u001b[33m.\u001b[39mretry\u001b[33m,\u001b[39m \u001b[32m\"simulated flake on the first attempt\"\u001b[39m)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m   test\u001b[33m.\u001b[39mdescribe(\u001b[32m\"checkout\"\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                            "column": 68,
+                            "line": 10
+                          },
+                          "message": "Error: simulated flake on the first attempt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n   8 |   // Fails on the first attempt only, so it passes on retry: Playwright reports it as flaky.\n   9 |   test(\"applies discount code\", async ({}, testInfo) => {\n> 10 |     expect(testInfo.retry, \"simulated flake on the first attempt\").toBeGreaterThan(0);\n     |                                                                    ^\n  11 |   });\n  12 |\n  13 |   test.describe(\"checkout\", () => {\n    at C:\\ft-fixture\\tests\\cart.spec.ts:10:68"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-13T20:14:07.177Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\ft-fixture\\test-results\\cart-cart-applies-discount-code-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                        "column": 68,
+                        "line": 10
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-09-13T20:14:07.525Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "1981448f0b79506fb670-ca00ba0746a2e27b4455",
+              "file": "cart.spec.ts",
+              "line": 9,
+              "column": 7
+            }
+          ],
+          "suites": [
+            {
+              "title": "checkout",
+              "file": "cart.spec.ts",
+              "line": 13,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "rejects an expired card",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 3,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mapprov\u001b[27med\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mdeclin\u001b[27med\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mapprov\u001b[27med\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mdeclin\u001b[27med\"\u001b[39m\n    at C:\\ft-fixture\\tests\\cart.spec.ts:16:26",
+                            "location": {
+                              "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                              "column": 26,
+                              "line": 16
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[90m// Fails on every attempt.\u001b[39m\n \u001b[90m 15 |\u001b[39m     test(\u001b[32m\"rejects an expired card\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m       expect(\u001b[32m\"declined\"\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"approved\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                                "column": 26,
+                                "line": 16
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mapprov\u001b[27med\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mdeclin\u001b[27med\"\u001b[39m\n\n  14 |     // Fails on every attempt.\n  15 |     test(\"rejects an expired card\", async () => {\n> 16 |       expect(\"declined\").toBe(\"approved\");\n     |                          ^\n  17 |     });\n  18 |   });\n  19 | });\n    at C:\\ft-fixture\\tests\\cart.spec.ts:16:26"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-13T20:14:07.556Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\ft-fixture\\test-results\\cart-cart-checkout-rejects-an-expired-card-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                            "column": 26,
+                            "line": 16
+                          }
+                        },
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 6,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mapprov\u001b[27med\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mdeclin\u001b[27med\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mapprov\u001b[27med\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mdeclin\u001b[27med\"\u001b[39m\n    at C:\\ft-fixture\\tests\\cart.spec.ts:16:26",
+                            "location": {
+                              "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                              "column": 26,
+                              "line": 16
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[90m// Fails on every attempt.\u001b[39m\n \u001b[90m 15 |\u001b[39m     test(\u001b[32m\"rejects an expired card\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m       expect(\u001b[32m\"declined\"\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"approved\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                                "column": 26,
+                                "line": 16
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mapprov\u001b[27med\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mdeclin\u001b[27med\"\u001b[39m\n\n  14 |     // Fails on every attempt.\n  15 |     test(\"rejects an expired card\", async () => {\n> 16 |       expect(\"declined\").toBe(\"approved\");\n     |                          ^\n  17 |     });\n  18 |   });\n  19 | });\n    at C:\\ft-fixture\\tests\\cart.spec.ts:16:26"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 1,
+                          "startTime": "2026-09-13T20:14:07.869Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\ft-fixture\\test-results\\cart-cart-checkout-rejects-an-expired-card-chromium-retry1\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                            "column": 26,
+                            "line": 16
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1981448f0b79506fb670-0a791d2ca32b0e9a982c",
+                  "file": "cart.spec.ts",
+                  "line": 15,
+                  "column": 9
+                },
+                {
+                  "title": "rejects an expired card",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 2,
+                          "status": "failed",
+                          "duration": 3,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mapprov\u001b[27med\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mdeclin\u001b[27med\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mapprov\u001b[27med\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mdeclin\u001b[27med\"\u001b[39m\n    at C:\\ft-fixture\\tests\\cart.spec.ts:16:26",
+                            "location": {
+                              "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                              "column": 26,
+                              "line": 16
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[90m// Fails on every attempt.\u001b[39m\n \u001b[90m 15 |\u001b[39m     test(\u001b[32m\"rejects an expired card\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m       expect(\u001b[32m\"declined\"\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"approved\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                                "column": 26,
+                                "line": 16
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mapprov\u001b[27med\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mdeclin\u001b[27med\"\u001b[39m\n\n  14 |     // Fails on every attempt.\n  15 |     test(\"rejects an expired card\", async () => {\n> 16 |       expect(\"declined\").toBe(\"approved\");\n     |                          ^\n  17 |     });\n  18 |   });\n  19 | });\n    at C:\\ft-fixture\\tests\\cart.spec.ts:16:26"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-13T20:14:07.557Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\ft-fixture\\test-results\\cart-cart-checkout-rejects-an-expired-card-firefox\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                            "column": 26,
+                            "line": 16
+                          }
+                        },
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 1,
+                          "status": "failed",
+                          "duration": 11,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mapprov\u001b[27med\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mdeclin\u001b[27med\"\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mapprov\u001b[27med\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mdeclin\u001b[27med\"\u001b[39m\n    at C:\\ft-fixture\\tests\\cart.spec.ts:16:26",
+                            "location": {
+                              "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                              "column": 26,
+                              "line": 16
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[90m// Fails on every attempt.\u001b[39m\n \u001b[90m 15 |\u001b[39m     test(\u001b[32m\"rejects an expired card\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m       expect(\u001b[32m\"declined\"\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[32m\"approved\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                                "column": 26,
+                                "line": 16
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"\u001b[7mapprov\u001b[27med\"\u001b[39m\nReceived: \u001b[31m\"\u001b[7mdeclin\u001b[27med\"\u001b[39m\n\n  14 |     // Fails on every attempt.\n  15 |     test(\"rejects an expired card\", async () => {\n> 16 |       expect(\"declined\").toBe(\"approved\");\n     |                          ^\n  17 |     });\n  18 |   });\n  19 | });\n    at C:\\ft-fixture\\tests\\cart.spec.ts:16:26"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 1,
+                          "startTime": "2026-09-13T20:14:07.856Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\ft-fixture\\test-results\\cart-cart-checkout-rejects-an-expired-card-firefox-retry1\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\ft-fixture\\tests\\cart.spec.ts",
+                            "column": 26,
+                            "line": 16
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "1981448f0b79506fb670-0bc2cf3e6ea0bcfdea00",
+                  "file": "cart.spec.ts",
+                  "line": 15,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "nested\\search.spec.ts",
+      "file": "nested/search.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "suggestions appear",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 6,
+                  "error": {
+                    "message": "Error: simulated flake on the first attempt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                    "stack": "Error: simulated flake on the first attempt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at C:\\ft-fixture\\tests\\nested\\search.spec.ts:5:66",
+                    "location": {
+                      "file": "C:\\ft-fixture\\tests\\nested\\search.spec.ts",
+                      "column": 66,
+                      "line": 5
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 3 |\u001b[39m \u001b[90m// A second flaky test in a nested folder, to see how file paths appear in each report.\u001b[39m\n \u001b[90m 4 |\u001b[39m test(\u001b[32m\"suggestions appear\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m   expect(testInfo\u001b[33m.\u001b[39mretry\u001b[33m,\u001b[39m \u001b[32m\"simulated flake on the first attempt\"\u001b[39m)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\ft-fixture\\tests\\nested\\search.spec.ts",
+                        "column": 66,
+                        "line": 5
+                      },
+                      "message": "Error: simulated flake on the first attempt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  3 | // A second flaky test in a nested folder, to see how file paths appear in each report.\n  4 | test(\"suggestions appear\", async ({}, testInfo) => {\n> 5 |   expect(testInfo.retry, \"simulated flake on the first attempt\").toBeGreaterThan(0);\n    |                                                                  ^\n  6 | });\n  7 |\n    at C:\\ft-fixture\\tests\\nested\\search.spec.ts:5:66"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-13T20:14:07.149Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\ft-fixture\\test-results\\nested-search-suggestions-appear-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\ft-fixture\\tests\\nested\\search.spec.ts",
+                    "column": 66,
+                    "line": 5
+                  }
+                },
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-09-13T20:14:07.505Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "flaky"
+            }
+          ],
+          "id": "042598496ab28076ada0-eb00f3b992a4c0a38607",
+          "file": "nested/search.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "suggestions appear",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "failed",
+                  "duration": 6,
+                  "error": {
+                    "message": "Error: simulated flake on the first attempt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                    "stack": "Error: simulated flake on the first attempt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at C:\\ft-fixture\\tests\\nested\\search.spec.ts:5:66",
+                    "location": {
+                      "file": "C:\\ft-fixture\\tests\\nested\\search.spec.ts",
+                      "column": 66,
+                      "line": 5
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 3 |\u001b[39m \u001b[90m// A second flaky test in a nested folder, to see how file paths appear in each report.\u001b[39m\n \u001b[90m 4 |\u001b[39m test(\u001b[32m\"suggestions appear\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({}\u001b[33m,\u001b[39m testInfo) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m   expect(testInfo\u001b[33m.\u001b[39mretry\u001b[33m,\u001b[39m \u001b[32m\"simulated flake on the first attempt\"\u001b[39m)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\ft-fixture\\tests\\nested\\search.spec.ts",
+                        "column": 66,
+                        "line": 5
+                      },
+                      "message": "Error: simulated flake on the first attempt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  3 | // A second flaky test in a nested folder, to see how file paths appear in each report.\n  4 | test(\"suggestions appear\", async ({}, testInfo) => {\n> 5 |   expect(testInfo.retry, \"simulated flake on the first attempt\").toBeGreaterThan(0);\n    |                                                                  ^\n  6 | });\n  7 |\n    at C:\\ft-fixture\\tests\\nested\\search.spec.ts:5:66"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-13T20:14:07.159Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\ft-fixture\\test-results\\nested-search-suggestions-appear-firefox\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\ft-fixture\\tests\\nested\\search.spec.ts",
+                    "column": 66,
+                    "line": 5
+                  }
+                },
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 4,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-09-13T20:14:07.506Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "flaky"
+            }
+          ],
+          "id": "042598496ab28076ada0-8fa4c5d55b25bbb32e1d",
+          "file": "nested/search.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-13T20:14:06.825Z",
+    "duration": 1423.627,
+    "expected": 4,
+    "skipped": 2,
+    "unexpected": 2,
+    "flaky": 4
+  }
+}

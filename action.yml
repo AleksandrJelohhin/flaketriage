@@ -9,7 +9,9 @@ branding:
 
 inputs:
   reports:
-    description: JUnit XML glob(s), comma- or newline-separated.
+    description: >-
+      Report glob(s), comma- or newline-separated. JUnit XML, or Playwright JSON
+      reports (.json), which keep retried-then-passed tests that JUnit hides.
     default: "**/junit*.xml,**/TEST-*.xml"
   working-directory:
     description: Path to the checked-out repository.
