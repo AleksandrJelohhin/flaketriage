@@ -84,9 +84,18 @@ export const INFRA_SIGNATURES: readonly InfraSignature[] = [
     pattern: /(?:chrome|chromium|firefox|webkit|browser|webdriver|geckodriver|chromedriver)[^\n]{0,60}(?:failed to (?:start|launch)|launch failed|crashed|not reachable)|session not created|unable to (?:connect to|obtain) .{0,40}(?:driver|browser)|Failed to connect to the bus/i,
     label: "browser / WebDriver launch failure",
   },
+
   {
     pattern: /Runner\.Worker.* exited with code|The runner has received a shutdown signal|The operation was canceled/i,
     label: "CI runner terminated",
+  },
+  {
+    pattern: /Cannot connect to the Docker daemon at unix:\/\/\/var\/run\/docker\.sock|error during connect: .*docker_engine/i,
+    label: "Docker daemon unreachable",
+  },
+  {
+    pattern: /\b429 Too Many Requests\b|toomanyrequests: You have reached your pull rate limit/i,
+    label: "rate limiting (HTTP 429)",
   },
 ];
 
