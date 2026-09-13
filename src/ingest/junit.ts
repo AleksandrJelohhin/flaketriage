@@ -48,8 +48,9 @@ export interface TestResult {
   skipReason: string | null;
   /**
    * Failures from earlier attempts of the SAME run (Surefire `<flakyFailure>` /
-   * `<rerunFailure>` …). Non-empty here is a strong in-run flake signal that the
-   * classifier consumes. Does not affect `status`.
+   * `<rerunFailure>` …). Non-empty here is a strong in-run flake signal: a passing
+   * test that has any is reported as `flake_confirmed` (see `core/flakyPass.ts`).
+   * Does not affect `status`.
    */
   retries: Failure[];
 }

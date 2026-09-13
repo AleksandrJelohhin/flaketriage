@@ -133,7 +133,7 @@ Most of the signal is deterministic. The LLM is the last step, not the first.
 
    | Verdict | Meaning |
    |---|---|
-   | `flake_confirmed` | Failed, then passed on retry of the same commit |
+   | `flake_confirmed` | Failed, then passed on retry: in the same run's report, or in another CI attempt of the same commit |
    | `infra_failure` | Matches a known infrastructure signature |
    | `always_failing` | Already failing before this change |
    | `flake_likely` | Flips pass/fail on unchanged code |

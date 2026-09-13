@@ -313,6 +313,24 @@ export class History {
   }
 
   /**
+   * Other attempts of `commitSha` in which `testKey` failed or errored, ascending.
+   * The mirror of {@link passedInAnotherAttempt}: a test that passes now after
+   * failing in another attempt of the same commit is a confirmed flake.
+   */
+  failedAttemptsOnCommit(commitSha: string, testKey: string, attempt: number): number[] {
+    const rows = this.db
+      .prepare<[string, string, number]>(
+        `SELECT DISTINCT ru.attempt AS attempt
+           FROM results r JOIN runs ru ON ru.id = r.run_id
+          WHERE ru.commit_sha = ? AND r.test_key = ? AND ru.attempt != ?
+            AND r.status IN ('failed', 'error')
+          ORDER BY ru.attempt`,
+      )
+      .all(commitSha, testKey, attempt) as { attempt: number }[];
+    return rows.map((r) => r.attempt);
+  }
+
+  /**
    * Full pass/fail timeline for one test, oldest first — one entry per recorded
    * run. Parametrised/repeated `<testcase>` entries that share a `test_key`
    * within a run are rolled up: the run counts as `failed` if any entry failed

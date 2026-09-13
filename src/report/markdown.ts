@@ -11,6 +11,7 @@ import type { TriagedResult, TriagedRun } from "../pipeline.js";
 import {
   accounting,
   BUCKET_META,
+  FLAKY_PASS_META,
   groupByAction,
   headline,
   testTitle,
@@ -25,10 +26,12 @@ const MAX_ITEMS_PER_GROUP = 8;
 export function renderMarkdown(run: TriagedRun): string {
   const { emoji, needsYou } = headline(run);
   const failures = run.triaged.length;
+  const flakes = run.flakes.length;
   const lines: string[] = [STICKY_MARKER];
 
   if (failures === 0) {
-    lines.push(`### ${emoji} FlakeTriage — no failures`, "", footer(run));
+    lines.push(`### ${emoji} FlakeTriage — no failures${flakes > 0 ? `, ${flakes} flaky` : ""}`);
+    lines.push(...flakySection(run), "", footer(run));
     return lines.join("\n");
   }
 
@@ -49,8 +52,22 @@ export function renderMarkdown(run: TriagedRun): string {
     if (hidden > 0) lines.push(`- …and ${hidden} more`);
   }
 
-  lines.push("", footer(run));
+  lines.push(...flakySection(run), "", footer(run));
   return lines.join("\n");
+}
+
+/** Passing tests that failed first, listed after the failure groups. Empty when none. */
+function flakySection(run: TriagedRun): string[] {
+  const n = run.flakes.length;
+  if (n === 0) return [];
+  const out = ["", `**${FLAKY_PASS_META.emoji} ${FLAKY_PASS_META.title} — ${n} flake${n === 1 ? "" : "s"}**`];
+  for (const item of run.flakes.slice(0, MAX_ITEMS_PER_GROUP)) {
+    out.push(`- \`${testTitle(item)}\``);
+    for (const sentence of item.verdict.evidence.slice(0, 2)) out.push(`  ${sentence}`);
+  }
+  const hidden = n - MAX_ITEMS_PER_GROUP;
+  if (hidden > 0) out.push(`- …and ${hidden} more`);
+  return out;
 }
 
 function bucketSummary(group: Group): string {

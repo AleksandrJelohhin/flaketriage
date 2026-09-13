@@ -16,6 +16,9 @@
  *                        same_hunk, medium otherwise)
  *   6. ambiguous       — hand to the LLM
  *
+ * Passing tests never reach this tree: {@link classifyPassedTest} in
+ * `core/flakyPass.ts` reports the flakes hiding in them.
+ *
  * Every verdict carries non-empty `evidence` — plain sentences a human can
  * verify with `flaketriage explain`. Empty evidence is a bug.
  */
