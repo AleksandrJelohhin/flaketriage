@@ -101,9 +101,55 @@ describe("rule 2 — infra_failure", () => {
     ["disk", "No space left on device"],
     ["browser", "session not created: chrome failed to start"],
   ];
+
   it.each(cases)("recognises %s", (_label, text) => {
     const v = classify(input({ current: { normalizedText: text } }));
     expect(v).toMatchObject({ kind: "infra_failure", confidence: "high" });
+  });
+
+  it("recognises Docker daemon unreachable", () => {
+    const v = classify(
+      input({
+        current: {
+          normalizedText:
+            "Cannot connect to the Docker daemon at unix:///var/run/docker.sock",
+        },
+      }),
+    );
+    expect(v).toMatchObject({ kind: "infra_failure", confidence: "high" });
+  });
+
+  it("does NOT recognise unrelated Docker text as daemon failure", () => {
+    const v = classify(
+      input({
+        current: {
+          normalizedText: "Docker image built successfully and container started",
+        },
+      }),
+    );
+    expect(v.kind).not.toBe("infra_failure");
+  });
+
+  it("recognises registry rate limiting", () => {
+    const v = classify(
+      input({
+        current: {
+          normalizedText: "429 Too Many Requests",
+        },
+      }),
+    );
+    expect(v).toMatchObject({ kind: "infra_failure", confidence: "high" });
+  });
+
+  it("does NOT recognise a test assertion for 429 as rate limiting", () => {
+    const v = classify(
+      input({
+        current: {
+          normalizedText: "expect(res.status).toBe(429)",
+        },
+      }),
+    );
+    expect(v.kind).not.toBe("infra_failure");
   });
 
   it("beats always_failing and real_regression", () => {
