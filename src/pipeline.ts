@@ -2,7 +2,8 @@
  * pipeline.ts — turn a parsed run into triaged verdicts.
  *
  * Orchestration layer: reads history + source files (I/O) and calls the pure
- * {@link classify} for every failure. Classification happens BEFORE the run is
+ * {@link classify} for every failure, and {@link classifyPassedTest} for every
+ * passing test (flakes that went green). Classification happens BEFORE the run is
  * recorded, so "prior history" means exactly that.
  */
 
@@ -14,6 +15,7 @@ import type { AnalyzedResult } from "./core/analyze.js";
 import { correlate, parseImports, parseStackFrames } from "./core/blame.js";
 import type { BlameLink } from "./core/blame.js";
 import { classify } from "./core/classify.js";
+import { classifyPassedTest } from "./core/flakyPass.js";
 import type { ClassifierInput, Verdict } from "./core/classify.js";
 import type { History } from "./core/history.js";
 import { normalizeFailure } from "./core/normalize.js";
@@ -49,6 +51,12 @@ export interface TriagedRun {
   skipped: number;
   /** failures + errors; the reporter orders them most-actionable-first. */
   triaged: TriagedResult[];
+  /**
+   * Passing tests with proof of flakiness: failed attempts in this run's report,
+   * or a failing attempt of the same commit in history. One entry per test key.
+   * Informational only: never counted as failures and never affects exit codes.
+   */
+  flakes: TriagedResult[];
   /** verdicts still `ambiguous` after the deterministic (and model) pass. */
   ambiguousCount: number;
   escalation?: EscalationSummary;
@@ -177,8 +185,42 @@ export function triageRun(
     passed,
     skipped,
     triaged,
+    flakes: findFlakyPasses(analyzed, git, attempt, history),
     ambiguousCount: triaged.filter((t) => t.verdict.kind === "ambiguous").length,
   };
+}
+
+/**
+ * Passing tests that failed first. Rows sharing a test key (parametrised tests,
+ * the same test in several Playwright projects) are reported once, with their
+ * in-run retries combined.
+ */
+function findFlakyPasses(
+  analyzed: AnalyzedResult[],
+  git: GitContext,
+  attempt: number,
+  history: History,
+): TriagedResult[] {
+  const passedByKey = new Map<string, AnalyzedResult[]>();
+  for (const result of analyzed) {
+    if (result.status !== "passed") continue;
+    const rows = passedByKey.get(result.testKey) ?? [];
+    rows.push(result);
+    passedByKey.set(result.testKey, rows);
+  }
+
+  const flakes: TriagedResult[] = [];
+  for (const [key, rows] of passedByKey) {
+    const retries = rows.flatMap((r) => r.retries);
+    const verdict = classifyPassedTest({
+      commitSha: git.commitSha,
+      attempt,
+      retries,
+      failedAttemptsOnCommit: history.failedAttemptsOnCommit(git.commitSha, key, attempt),
+    });
+    if (verdict) flakes.push({ result: { ...rows[0]!, retries }, verdict });
+  }
+  return flakes;
 }
 
 export function applyEscalation(run: TriagedRun, outcome: EscalationOutcome): TriagedRun {

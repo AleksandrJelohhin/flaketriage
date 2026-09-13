@@ -15,6 +15,7 @@ import type { TriagedResult, TriagedRun } from "../pipeline.js";
 import {
   accounting,
   BUCKET_META,
+  FLAKY_PASS_META,
   groupByAction,
   headline,
   testTitle,
@@ -35,7 +36,7 @@ export function renderSummary(run: TriagedRun): string {
   lines.push("", ...statsTable(run));
 
   if (failures === 0) {
-    lines.push("", "No failures on this run.");
+    lines.push("", "No failures on this run.", ...flakySection(run));
     return lines.join("\n");
   }
 
@@ -54,8 +55,23 @@ export function renderSummary(run: TriagedRun): string {
     }
   }
 
-  lines.push("", ...footer(run, acc));
+  lines.push(...flakySection(run), "", ...footer(run, acc));
   return lines.join("\n");
+}
+
+/** Passing tests that failed first. Empty when none. */
+function flakySection(run: TriagedRun): string[] {
+  const n = run.flakes.length;
+  if (n === 0) return [];
+  const lines = [
+    "",
+    `### ${FLAKY_PASS_META.emoji} ${FLAKY_PASS_META.title} (${n})`,
+    "",
+    "These tests passed, but only after failing first. They don't fail the build; " +
+      "left alone, they teach everyone to ignore red runs.",
+  ];
+  for (const item of run.flakes) lines.push("", ...renderItem(item, false));
+  return lines;
 }
 
 function runInfoLine(run: TriagedRun): string[] {
