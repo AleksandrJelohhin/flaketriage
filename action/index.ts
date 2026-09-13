@@ -123,6 +123,7 @@ async function main(): Promise<void> {
   core.setOutput("regressions", String(json.totals.regressions));
   core.setOutput("needs-attention", String(json.totals.needsYou));
   core.setOutput("failed", String(json.totals.failed));
+  core.setOutput("flaky", String(json.totals.flaky));
   core.setOutput("cost-usd", json.cost.usd.toFixed(4));
   core.setOutput("report-markdown", markdown);
   core.setOutput("report-summary", summary);

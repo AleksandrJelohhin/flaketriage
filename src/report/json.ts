@@ -21,6 +21,8 @@ export interface JsonReport {
     regressions: number;
     needsYou: number;
     ambiguous: number;
+    /** passing tests that failed first (see `flakes`). Not included in `failed`. */
+    flaky: number;
   };
   cost: { fromHistory: number; fromModel: number; usd: number };
   escalation?: {
@@ -55,6 +57,17 @@ export interface JsonReport {
       suggested_next_step: string;
     };
   }[];
+  /** passing tests with proof of an earlier failure; never affect the exit code. */
+  flakes: {
+    testKey: string;
+    suite: string;
+    name: string;
+    kind: string;
+    confidence: string;
+    evidence: string[];
+    /** failed attempts recorded in this run's report (0 when proven by another CI attempt). */
+    retries: number;
+  }[];
 }
 
 export function renderJsonReport(run: TriagedRun): JsonReport {
@@ -75,6 +88,7 @@ export function renderJsonReport(run: TriagedRun): JsonReport {
       regressions,
       needsYou,
       ambiguous: run.ambiguousCount,
+      flaky: run.flakes.length,
     },
     cost: { fromHistory: acc.fromHistory, fromModel: acc.fromModel, usd: acc.usd },
     ...(run.escalation
@@ -120,6 +134,15 @@ export function renderJsonReport(run: TriagedRun): JsonReport {
             },
           }
         : {}),
+    })),
+    flakes: run.flakes.map((t) => ({
+      testKey: t.result.testKey,
+      suite: t.result.suite,
+      name: t.result.name,
+      kind: t.verdict.kind,
+      confidence: t.verdict.confidence,
+      evidence: t.verdict.evidence,
+      retries: t.result.retries.length,
     })),
   };
 }

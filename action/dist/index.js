@@ -459,6 +459,21 @@ var History = class _History {
     return row !== void 0;
   }
   /**
+   * Other attempts of `commitSha` in which `testKey` failed or errored, ascending.
+   * The mirror of {@link passedInAnotherAttempt}: a test that passes now after
+   * failing in another attempt of the same commit is a confirmed flake.
+   */
+  failedAttemptsOnCommit(commitSha, testKey2, attempt) {
+    const rows = this.db.prepare(
+      `SELECT DISTINCT ru.attempt AS attempt
+           FROM results r JOIN runs ru ON ru.id = r.run_id
+          WHERE ru.commit_sha = ? AND r.test_key = ? AND ru.attempt != ?
+            AND r.status IN ('failed', 'error')
+          ORDER BY ru.attempt`
+    ).all(commitSha, testKey2, attempt);
+    return rows.map((r) => r.attempt);
+  }
+  /**
    * Full pass/fail timeline for one test, oldest first — one entry per recorded
    * run. Parametrised/repeated `<testcase>` entries that share a `test_key`
    * within a run are rolled up: the run counts as `failed` if any entry failed
@@ -1825,6 +1840,34 @@ function classify(input, opts = {}) {
   return AMBIGUOUS;
 }
 
+// src/core/flakyPass.ts
+var MAX_REASON = 160;
+function classifyPassedTest(input) {
+  const evidence = [];
+  if (input.retries.length > 0) {
+    const n = input.retries.length;
+    const first = input.retries[0];
+    const reason = firstLine(first.message ?? first.stack ?? first.type);
+    evidence.push(
+      `failed ${n === 1 ? "once" : `${n} times`}, then passed on retry in this run (attempt ${input.attempt})${reason ? ` \u2014 first failure: ${reason}` : ""}`
+    );
+  }
+  const failed = input.failedAttemptsOnCommit;
+  if (failed.length > 0) {
+    evidence.push(
+      `failed in attempt${failed.length === 1 ? "" : "s"} ${failed.join(", ")} of the same commit ${input.commitSha.slice(0, 7)} and passed in attempt ${input.attempt} \u2014 the code did not change between attempts`
+    );
+  }
+  if (evidence.length === 0) return null;
+  return { kind: "flake_confirmed", confidence: "high", source: "history", evidence };
+}
+function firstLine(text) {
+  if (!text) return null;
+  const line = text.split(/\r?\n/).map((l) => l.trim()).find((l) => l.length > 0);
+  if (!line) return null;
+  return line.length > MAX_REASON ? `${line.slice(0, MAX_REASON - 1)}\u2026` : line;
+}
+
 // src/pipeline.ts
 var SOURCE_EXT = /(?:[\w.@/\\-]+)\.(?:tsx?|jsx?|mjs|cjs|py|rb|java|kt|kts|go|php|cs|scala|swift|rs|c|cc|cpp|h|hpp)\b/gi;
 function referencedFiles(...blobs) {
@@ -1912,8 +1955,30 @@ function triageRun(results, git, attempt, history, opts = {}) {
     passed,
     skipped,
     triaged,
+    flakes: findFlakyPasses(analyzed, git, attempt, history),
     ambiguousCount: triaged.filter((t) => t.verdict.kind === "ambiguous").length
   };
+}
+function findFlakyPasses(analyzed, git, attempt, history) {
+  const passedByKey = /* @__PURE__ */ new Map();
+  for (const result of analyzed) {
+    if (result.status !== "passed") continue;
+    const rows = passedByKey.get(result.testKey) ?? [];
+    rows.push(result);
+    passedByKey.set(result.testKey, rows);
+  }
+  const flakes = [];
+  for (const [key, rows] of passedByKey) {
+    const retries = rows.flatMap((r) => r.retries);
+    const verdict = classifyPassedTest({
+      commitSha: git.commitSha,
+      attempt,
+      retries,
+      failedAttemptsOnCommit: history.failedAttemptsOnCommit(git.commitSha, key, attempt)
+    });
+    if (verdict) flakes.push({ result: { ...rows[0], retries }, verdict });
+  }
+  return flakes;
 }
 function applyEscalation(run, outcome) {
   const triaged = run.triaged.map((t) => {
@@ -2102,6 +2167,7 @@ var VERDICT_LABEL = {
   flake_confirmed: "confirmed flake",
   flake_likely: "likely flake"
 };
+var FLAKY_PASS_META = { emoji: "\u26AA", title: "Passed after retry" };
 function headline(run) {
   const regressions = run.triaged.filter((t) => t.verdict.kind === "real_regression").length;
   const needsYou = run.triaged.filter(
@@ -2173,7 +2239,8 @@ function renderJsonReport(run) {
       failed: run.triaged.length,
       regressions,
       needsYou,
-      ambiguous: run.ambiguousCount
+      ambiguous: run.ambiguousCount,
+      flaky: run.flakes.length
     },
     cost: { fromHistory: acc.fromHistory, fromModel: acc.fromModel, usd: acc.usd },
     ...run.escalation ? {
@@ -2213,6 +2280,15 @@ function renderJsonReport(run) {
           suggested_next_step: t.model.suggested_next_step
         }
       } : {}
+    })),
+    flakes: run.flakes.map((t) => ({
+      testKey: t.result.testKey,
+      suite: t.result.suite,
+      name: t.result.name,
+      kind: t.verdict.kind,
+      confidence: t.verdict.confidence,
+      evidence: t.verdict.evidence,
+      retries: t.result.retries.length
     }))
   };
 }
@@ -2223,9 +2299,11 @@ var MAX_ITEMS_PER_GROUP = 8;
 function renderMarkdown(run) {
   const { emoji, needsYou } = headline(run);
   const failures = run.triaged.length;
+  const flakes = run.flakes.length;
   const lines = [STICKY_MARKER];
   if (failures === 0) {
-    lines.push(`### ${emoji} FlakeTriage \u2014 no failures`, "", footer(run));
+    lines.push(`### ${emoji} FlakeTriage \u2014 no failures${flakes > 0 ? `, ${flakes} flaky` : ""}`);
+    lines.push(...flakySection(run), "", footer(run));
     return lines.join("\n");
   }
   lines.push(
@@ -2240,8 +2318,20 @@ function renderMarkdown(run) {
     const hidden = group.items.length - MAX_ITEMS_PER_GROUP;
     if (hidden > 0) lines.push(`- \u2026and ${hidden} more`);
   }
-  lines.push("", footer(run));
+  lines.push(...flakySection(run), "", footer(run));
   return lines.join("\n");
+}
+function flakySection(run) {
+  const n = run.flakes.length;
+  if (n === 0) return [];
+  const out = ["", `**${FLAKY_PASS_META.emoji} ${FLAKY_PASS_META.title} \u2014 ${n} flake${n === 1 ? "" : "s"}**`];
+  for (const item of run.flakes.slice(0, MAX_ITEMS_PER_GROUP)) {
+    out.push(`- \`${testTitle(item)}\``);
+    for (const sentence of item.verdict.evidence.slice(0, 2)) out.push(`  ${sentence}`);
+  }
+  const hidden = n - MAX_ITEMS_PER_GROUP;
+  if (hidden > 0) out.push(`- \u2026and ${hidden} more`);
+  return out;
 }
 function bucketSummary(group) {
   const n = group.items.length;
@@ -2323,7 +2413,7 @@ function renderSummary(run) {
   lines.push(...runInfoLine(run));
   lines.push("", ...statsTable(run));
   if (failures === 0) {
-    lines.push("", "No failures on this run.");
+    lines.push("", "No failures on this run.", ...flakySection2(run));
     return lines.join("\n");
   }
   lines.push(
@@ -2337,8 +2427,20 @@ function renderSummary(run) {
       lines.push("", ...renderItem2(item, group.bucket === "needs_you"));
     }
   }
-  lines.push("", ...footer2(run, acc));
+  lines.push(...flakySection2(run), "", ...footer2(run, acc));
   return lines.join("\n");
+}
+function flakySection2(run) {
+  const n = run.flakes.length;
+  if (n === 0) return [];
+  const lines = [
+    "",
+    `### ${FLAKY_PASS_META.emoji} ${FLAKY_PASS_META.title} (${n})`,
+    "",
+    "These tests passed, but only after failing first. They don't fail the build; left alone, they teach everyone to ignore red runs."
+  ];
+  for (const item of run.flakes) lines.push("", ...renderItem2(item, false));
+  return lines;
 }
 function runInfoLine(run) {
   const bits = [
@@ -2454,7 +2556,7 @@ function renderText(run, color = false) {
     )
   );
   if (failures === 0) {
-    out.push("", footer3(run, dim));
+    out.push(...flakyLines(run, bold, dim), "", footer3(run, dim));
     return out.join("\n");
   }
   if (needsYou > 0) out.push(dim(`   ${needsYou} need${needsYou === 1 ? "s" : ""} you`));
@@ -2463,8 +2565,14 @@ function renderText(run, color = false) {
     out.push("", bold(`${meta.emoji} ${meta.title}`));
     for (const item of group.items) out.push(...renderItem3(item, dim));
   }
-  out.push("", footer3(run, dim));
+  out.push(...flakyLines(run, bold, dim), "", footer3(run, dim));
   return out.join("\n");
+}
+function flakyLines(run, bold, dim) {
+  if (run.flakes.length === 0) return [];
+  const out = ["", bold(`${FLAKY_PASS_META.emoji} ${FLAKY_PASS_META.title}`)];
+  for (const item of run.flakes) out.push(...renderItem3(item, dim));
+  return out;
 }
 function renderItem3(item, dim) {
   const conf = ` [${item.verdict.confidence}]`;
@@ -2775,6 +2883,7 @@ async function main() {
   core.setOutput("regressions", String(json.totals.regressions));
   core.setOutput("needs-attention", String(json.totals.needsYou));
   core.setOutput("failed", String(json.totals.failed));
+  core.setOutput("flaky", String(json.totals.flaky));
   core.setOutput("cost-usd", json.cost.usd.toFixed(4));
   core.setOutput("report-markdown", markdown);
   core.setOutput("report-summary", summary2);

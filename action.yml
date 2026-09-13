@@ -65,6 +65,9 @@ outputs:
   failed:
     description: Total failing / errored tests.
     value: ${{ steps.flaketriage.outputs.failed }}
+  flaky:
+    description: Passing tests that failed first (in-run retries or another attempt of this commit).
+    value: ${{ steps.flaketriage.outputs.flaky }}
   cost-usd:
     description: Estimated LLM spend for this run, USD.
     value: ${{ steps.flaketriage.outputs.cost-usd }}
