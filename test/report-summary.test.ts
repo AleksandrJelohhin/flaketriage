@@ -18,6 +18,7 @@ function run(triagedItems: TriagedResult[], over: Partial<TriagedRun> = {}): Tri
     passed: 10,
     skipped: 0,
     triaged: triagedItems,
+    flakes: [],
     ambiguousCount: triagedItems.filter((t) => t.verdict.kind === "ambiguous").length,
     ...over,
   };
