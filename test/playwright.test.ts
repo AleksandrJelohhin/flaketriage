@@ -115,6 +115,34 @@ describe("parsePlaywrightJson", () => {
     expect(r!.failure?.message).toBe("Test timeout of 30000ms exceeded.");
   });
 
+  it("a test.fail() test that failed as expected is a clean pass, not a flake", () => {
+    const doc = {
+      config: {},
+      suites: [
+        {
+          title: "known.spec.ts",
+          file: "known.spec.ts",
+          specs: [
+            {
+              title: "known bug",
+              file: "known.spec.ts",
+              tests: [
+                {
+                  expectedStatus: "failed",
+                  status: "expected",
+                  annotations: [{ type: "fail" }],
+                  results: [{ status: "failed", duration: 5, error: { message: "Error: boom" } }],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    };
+    const [r] = parsePlaywrightJson(JSON.stringify(doc));
+    expect(r).toMatchObject({ status: "passed", retries: [], failure: null });
+  });
+
   it("rejects malformed JSON and JSON that is not a Playwright report", () => {
     expect(() => parsePlaywrightJson("{ nope", "x.json")).toThrow(PlaywrightReportParseError);
     expect(() => parsePlaywrightJson("{ nope")).toThrow(/malformed JSON/);

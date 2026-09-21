@@ -1123,7 +1123,8 @@ function toTestResult2(spec, test, describePath) {
     file: null,
     failure,
     skipReason: status === "skipped" ? skip?.description?.trim() || "skipped" : null,
-    retries: status === "passed" ? failedAttempts.map(toFailure2) : []
+    // Only "flaky" means failed-then-passed: a `test.fail()` test is "expected" with a failed attempt.
+    retries: test.status === "flaky" ? failedAttempts.map(toFailure2) : []
   };
 }
 function walkSuite2(suite, describePath, out) {
