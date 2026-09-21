@@ -6,6 +6,7 @@ import type { TriagedResult, TriagedRun } from "../pipeline.js";
 import {
   accounting,
   BUCKET_META,
+  FLAKY_PASS_META,
   groupByAction,
   headline,
   testTitle,
@@ -33,7 +34,7 @@ export function renderText(run: TriagedRun, color = false): string {
   );
 
   if (failures === 0) {
-    out.push("", footer(run, dim));
+    out.push(...flakyLines(run, bold, dim), "", footer(run, dim));
     return out.join("\n");
   }
   if (needsYou > 0) out.push(dim(`   ${needsYou} need${needsYou === 1 ? "s" : ""} you`));
@@ -44,8 +45,20 @@ export function renderText(run: TriagedRun, color = false): string {
     for (const item of group.items) out.push(...renderItem(item, dim));
   }
 
-  out.push("", footer(run, dim));
+  out.push(...flakyLines(run, bold, dim), "", footer(run, dim));
   return out.join("\n");
+}
+
+/** Passing tests that failed first. Empty when none. */
+function flakyLines(
+  run: TriagedRun,
+  bold: (s: string) => string,
+  dim: (s: string) => string,
+): string[] {
+  if (run.flakes.length === 0) return [];
+  const out = ["", bold(`${FLAKY_PASS_META.emoji} ${FLAKY_PASS_META.title}`)];
+  for (const item of run.flakes) out.push(...renderItem(item, dim));
+  return out;
 }
 
 function renderItem(item: TriagedResult, dim: (s: string) => string): string[] {

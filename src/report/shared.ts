@@ -38,6 +38,9 @@ export const VERDICT_LABEL: Record<VerdictKind, string> = {
   flake_likely: "likely flake",
 };
 
+/** Section for passing tests that failed first. Informational: never "needs you". */
+export const FLAKY_PASS_META = { emoji: "⚪", title: "Passed after retry" } as const;
+
 /** Verdicts that should not, on their own, turn a build red. */
 export function isBenign(kind: VerdictKind): boolean {
   return BUCKET_OF[kind] === "safe_to_ignore";

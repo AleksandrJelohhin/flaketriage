@@ -8,6 +8,7 @@
 export type FlakeTriageErrorCode =
   | "JUNIT_PARSE"
   | "JUNIT_EMPTY"
+  | "PLAYWRIGHT_PARSE"
   | "CONFIG_INVALID"
   | "HISTORY_IO"
   | "GIT_CONTEXT"
@@ -32,6 +33,17 @@ export class JUnitParseError extends FlakeTriageError {
 
   constructor(message: string, options?: { cause?: unknown; source?: string }) {
     super("JUNIT_PARSE", message, options);
+    this.source = options?.source;
+  }
+}
+
+/** Raised when a Playwright JSON report cannot be read, parsed, or is not a Playwright report. */
+export class PlaywrightReportParseError extends FlakeTriageError {
+  /** Path or label of the offending report, when known. */
+  readonly source: string | undefined;
+
+  constructor(message: string, options?: { cause?: unknown; source?: string }) {
+    super("PLAYWRIGHT_PARSE", message, options);
     this.source = options?.source;
   }
 }
