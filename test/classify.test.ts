@@ -100,10 +100,25 @@ describe("rule 2 — infra_failure", () => {
     ["OOM", "Container was OOMKilled"],
     ["disk", "No space left on device"],
     ["browser", "session not created: chrome failed to start"],
+    ["Docker daemon", "Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?"],
+    ["rootless Docker", "Cannot connect to the Docker daemon at unix:///run/user/1001/docker.sock. Is the docker daemon running?"],
+    ["DOCKER_HOST over tcp", "Cannot connect to the Docker daemon at tcp://localhost:<PORT>. Is the docker daemon running?"],
+    ["Docker on Windows", 'error during connect: Get "http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/containers/json": open //./pipe/docker_engine'],
+    ["registry pull rate limit", "Error response from daemon: toomanyrequests: You have reached your pull rate limit."],
   ];
   it.each(cases)("recognises %s", (_label, text) => {
     const v = classify(input({ current: { normalizedText: text } }));
     expect(v).toMatchObject({ kind: "infra_failure", confidence: "high" });
+  });
+
+  const notInfra: [string, string][] = [
+    ["unrelated Docker text", "Docker image built successfully and container started"],
+    // the app under test rate-limiting a request is a test result, not infrastructure
+    ["an app's own 429", "AssertionError: expected 200 but got 429 Too Many Requests"],
+  ];
+  it.each(notInfra)("does NOT treat %s as infra", (_label, text) => {
+    const v = classify(input({ current: { normalizedText: text } }));
+    expect(v.kind).not.toBe("infra_failure");
   });
 
   it("beats always_failing and real_regression", () => {

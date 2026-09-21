@@ -91,6 +91,17 @@ export const INFRA_SIGNATURES: readonly InfraSignature[] = [
     pattern: /Runner\.Worker.* exited with code|The runner has received a shutdown signal|The operation was canceled/i,
     label: "CI runner terminated",
   },
+  {
+    // any socket or host: default, rootless (/run/user/…), DOCKER_HOST=tcp://…, Windows named pipe
+    pattern: /Cannot connect to the Docker daemon at \S+|error during connect: .*docker_engine/i,
+    label: "Docker daemon unreachable",
+  },
+  {
+    // the registry's `toomanyrequests` error code, not a bare "429 Too Many Requests":
+    // that also appears when a test hits the rate limiting of the app under test.
+    pattern: /\btoomanyrequests:/i,
+    label: "container registry pull rate limit",
+  },
 ];
 
 export interface ClassifierInput {
