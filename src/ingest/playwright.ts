@@ -124,7 +124,8 @@ function toTestResult(spec: PwSpec, test: PwTest, describePath: string[]): TestR
     file: null,
     failure,
     skipReason: status === "skipped" ? (skip?.description?.trim() || "skipped") : null,
-    retries: status === "passed" ? failedAttempts.map(toFailure) : [],
+    // Only "flaky" means failed-then-passed: a `test.fail()` test is "expected" with a failed attempt.
+    retries: test.status === "flaky" ? failedAttempts.map(toFailure) : [],
   };
 }
 
